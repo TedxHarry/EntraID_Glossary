@@ -67,3 +67,8 @@ Sign-in logs in Log Analytics integrate with Microsoft Sentinel for alert rules,
 💬 **How quickly can your SOC team access and query Entra ID sign-in logs during an active incident, and is the 30-day retention window sufficient?** Sign-in log investigation is often the first step in an identity incident response. The difference between logs in a Log Analytics workspace (queryable in seconds) versus portal-only (limited filter options, slower) can make a real difference in response time. What's your team's current sign-in log access setup?
 
 #EntraID #SignInLog #SecurityOperations #IncidentResponse #MicrosoftEntra #SOC #IdentitySecurity
+<!-- nav -->
+
+---
+
+[← Audit Log: The Record of Every Identity Operation in Your Tenant](glossary-12-1-audit-log.md) | [Home](../README.md) | [Activity Report: The Trend View That Audit Logs and Sign-In Logs Don't Give You →](glossary-12-3-activity-report.md)

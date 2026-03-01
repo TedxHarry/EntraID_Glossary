@@ -67,3 +67,8 @@ High-risk grants to look for: application permissions for `Mail.ReadWrite.All`, 
 💬 **Does your organization have a formal process for reviewing admin consent requests and auditing existing application permission grants?** Consent sprawl is a real governance problem in mature Entra ID tenants: applications accumulate over-permissioned consents that nobody reviews. What's the most surprising over-privileged application consent your team has found during an audit?
 
 #EntraID #ConsentFramework #AdminConsent #OAuth2 #ApplicationPermissions #MicrosoftEntra #AppSecurity
+<!-- nav -->
+
+---
+
+[← Administrative Unit: Scoped Administration Without Multiple Tenants](glossary-13-13-admin-unit.md) | [Home](../README.md) | [Consent Experience: What Users See When an App Asks for Permission →](glossary-13-15-consent-experience.md)

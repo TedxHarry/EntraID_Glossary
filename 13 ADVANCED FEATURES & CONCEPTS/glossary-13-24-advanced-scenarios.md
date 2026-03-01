@@ -69,3 +69,8 @@ The 189 terms in this glossary series are the vocabulary. Advanced scenarios are
 💬 **What's the most complex multi-feature Entra ID scenario your organization has had to design or troubleshoot, and which combination of capabilities turned out to be more powerful together than you expected when you planned it?** The scenarios that reveal what Entra ID is really capable of are almost never the ones in the documentation. They're the ones that don't fit the standard patterns and require combining features in ways nobody thought to write down. What's the hardest identity problem you've solved, and how did you solve it?
 
 #EntraID #ZeroTrust #PrivilegedAccess #CrossTenantAccess #GlobalSecureAccess #MicrosoftEntra #IdentityArchitecture
+<!-- nav -->
+
+---
+
+[← Microsoft Entra Suite: The Consolidated Identity and Network Access Platform](glossary-13-23-microsoft-entra-suite.md) | [Home](../README.md) | *(end of series)* →

@@ -78,3 +78,8 @@ Entra ID access reviews can be configured to automatically apply review results:
 💬 **Has your organization run an access review and been surprised by how much access turned out to be inappropriate?** The first review of any group or application almost always surfaces more stale access than expected. What's the highest percentage of "should not have this" you've found in a single review?
 
 #EntraID #AccessReview #IdentityGovernance #MicrosoftEntra #LeastPrivilege #ComplianceManagement #IGA
+<!-- nav -->
+
+---
+
+[← Lifecycle Management: Identity Automation for the Entire Employee Journey](glossary-6-5-lifecycle-management.md) | [Home](../README.md) | [Access Certification: When "Reviewed" Has to Mean Something to an Auditor →](glossary-6-7-access-certification.md)

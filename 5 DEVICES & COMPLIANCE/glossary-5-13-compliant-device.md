@@ -83,3 +83,8 @@ Enabling a new compliance requirement for 2,000 devices without testing first, t
 💬 **Has your organization had an unexpected mass compliance failure when a new policy was rolled out?** Discovering that a policy you assumed was reasonable would block hundreds of users tends to drive more careful impact analysis on the next rollout. What was the trigger?
 
 #EntraID #DeviceCompliance #Intune #ConditionalAccess #ZeroTrust #MicrosoftEntra #EndpointSecurity
+<!-- nav -->
+
+---
+
+[← Managed Device: Enrolled Isn't the Same as Secure](glossary-5-12-managed-device.md) | [Home](../README.md) | [Non-Compliant Device: What Happens When the Device Fails Its Security Check →](glossary-5-14-non-compliant-device.md)

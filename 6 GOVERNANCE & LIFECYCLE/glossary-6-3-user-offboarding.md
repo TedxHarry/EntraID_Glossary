@@ -77,3 +77,8 @@ The sign-in logs and audit logs from the week before departure are the right pla
 💬 **Has your organization discovered active accounts belonging to departed employees during a security review?** It's one of the most common audit findings in identity programs, and the gap is almost always a manual offboarding process with no enforcement. What triggered your organization to address it?
 
 #EntraID #UserOffboarding #LifecycleManagement #IdentityGovernance #MicrosoftEntra #SecurityOperations #AccessControl
+<!-- nav -->
+
+---
+
+[← User Onboarding: The First Day Experience Is an Identity Problem](glossary-6-2-user-onboarding.md) | [Home](../README.md) | [Deprovisioning: Disabling the Entra ID Account Is Not Enough →](glossary-6-4-deprovisioning.md)

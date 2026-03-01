@@ -74,3 +74,8 @@ In Azure Container Apps and AKS, IMDS-based token acquisition works but the acce
 💬 **Have you ever called IMDS directly to debug a managed identity token acquisition problem, or does your team rely entirely on SDK abstractions?** Knowing the raw IMDS call is useful when DefaultAzureCredential returns an error and you need to isolate whether the problem is in the identity configuration or in the application code. What was the last managed identity debugging scenario where dropping down to a direct IMDS call helped?
 
 #EntraID #IMDS #ManagedIdentity #WorkloadIdentity #AzureSecurity #MicrosoftEntra #CloudSecurity
+<!-- nav -->
+
+---
+
+[← Federated Identity Credential: The Trust Configuration That Makes Keyless Auth Work](glossary-10-6-federated-identity-credential.md) | [Home](../README.md) | [Principal ID: The Identifier You Use When Giving a Managed Identity Permission →](glossary-10-8-principal-id.md)

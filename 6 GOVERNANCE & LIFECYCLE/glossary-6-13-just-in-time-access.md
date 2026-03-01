@@ -78,3 +78,8 @@ Start with Global Administrator. Convert permanent assignments to eligible. Set 
 💬 **What's the ratio of permanently-active admin roles to eligible PIM assignments in your organization?** The first time an organization audits this, the permanent assignment count is almost always higher than expected. What drove the move to JIT access, and what was the most common admin objection?
 
 #EntraID #JustInTimeAccess #PIM #PrivilegedIdentityManagement #ZeroTrust #MicrosoftEntra #LeastPrivilege
+<!-- nav -->
+
+---
+
+[← Auto-Provision: When Access Appears Without Anyone Creating It](glossary-6-12-auto-provision.md) | [Home](../README.md) | [Governance: The System That Keeps Access from Running Away from You →](glossary-6-14-governance.md)

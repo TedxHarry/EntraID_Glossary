@@ -78,3 +78,8 @@ Libraries that support OIDC discovery configure themselves automatically. You pr
 💬 **When you first understood that OAuth 2.0 and OpenID Connect were different things built on top of each other, did it change how you thought about the authentication flows you'd already built?** The distinction is fundamental but easy to miss when the library handles both transparently. What triggered the "oh, these are separate" moment?
 
 #EntraID #OpenIDConnect #OAuth2 #Authentication #CloudSecurity #MicrosoftEntra #AppDevelopment
+<!-- nav -->
+
+---
+
+[← OAuth 2.0: The Protocol That Solved a Problem We Didn't Realize Was a Problem](glossary-4-16-oauth2.md) | [Home](../README.md) | [SAML: The Protocol That Refuses to Die (and Sometimes Shouldn't) →](glossary-4-18-saml.md)

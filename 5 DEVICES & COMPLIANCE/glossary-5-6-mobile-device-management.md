@@ -68,3 +68,8 @@ For organizations that want to allow BYOD for low-sensitivity apps but require c
 💬 **How has your organization handled the BYOD vs MDM conversation with employees?** The personal device enrollment policy is one of the most contentious in enterprise mobile management. What was the tipping point that determined your approach?
 
 #EntraID #MDM #BYOD #MobileDeviceManagement #Intune #MicrosoftEntra #EndpointSecurity
+<!-- nav -->
+
+---
+
+[← Intune: What the Device Management Piece of Microsoft's Puzzle Actually Does](glossary-5-5-intune.md) | [Home](../README.md) | [Endpoint Manager: One Console, All Your Devices →](glossary-5-7-endpoint-manager.md)

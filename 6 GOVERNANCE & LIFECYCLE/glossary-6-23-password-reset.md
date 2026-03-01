@@ -79,3 +79,8 @@ Forcing a password change on next sign-in ensures the temporary password is imme
 💬 **What percentage of your organization's help desk tickets are password resets?** The answer before SSPR is almost always higher than expected. After SSPR adoption, the residual cases are almost always users who never registered. What drove your organization to invest in SSPR adoption?
 
 #EntraID #SSPR #PasswordReset #HelpDesk #MicrosoftEntra #Authentication #IdentityManagement
+<!-- nav -->
+
+---
+
+[← Account Lockout: How Entra ID Stops Password Guessing Without Locking Out Real Users](glossary-6-22-account-lockout.md) | [Home](../README.md) | [Risk Detection: How Entra ID Knows Something Looks Wrong →](../7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-1-risk-detection.md)

@@ -67,3 +67,8 @@ Before marking a Named Location as trusted or building policies around it, verif
 💬 **Have you ever discovered that a Named Location's IP range was misconfigured and causing policies to behave unexpectedly?** The private IP vs public IP confusion is by far the most common mistake. What was the sign-in log investigation that revealed the mismatch in your environment?
 
 #EntraID #IPAddressRange #NamedLocations #ConditionalAccess #MicrosoftEntra #NetworkSecurity #IdentitySecurity
+<!-- nav -->
+
+---
+
+[← Trusted Location: Teaching Conditional Access What "Safe" Looks Like](glossary-7-20-trusted-location.md) | [Home](../README.md) | [Legacy Authentication: The Open Door That MFA Can't Close →](glossary-7-22-legacy-authentication.md)

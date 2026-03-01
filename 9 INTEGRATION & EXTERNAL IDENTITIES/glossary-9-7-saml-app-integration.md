@@ -81,3 +81,8 @@ Some applications support automatic metadata refresh (they fetch Entra ID's meta
 💬 **What's the SAML configuration mistake you've made the most times?** The ACS URL with an HTTP vs HTTPS mismatch, the NameID format that works in the test tenant but not production, or the attribute claim that the application insists is required but isn't documented anywhere. What's the error you can diagnose fastest because you've seen it before?
 
 #EntraID #SAML #AppIntegration #SSO #MicrosoftEntra #EnterpriseApplications #IdentityFederation
+<!-- nav -->
+
+---
+
+[← OIDC in App Integration: Building Modern Authentication the Right Way](glossary-9-6-oidc-app-integration.md) | [Home](../README.md) | [SCIM: The Standard That Automates User Provisioning Across Applications →](glossary-9-8-scim.md)

@@ -80,3 +80,8 @@ Test emergency access accounts quarterly: sign in with each account, verify the 
 💬 **Does your organization have tested, documented emergency access accounts?** The organizations that don't find out the hard way, usually at the worst possible time. What was the scenario that convinced your organization to take break-glass accounts seriously?
 
 #EntraID #EmergencyAccess #BreakGlass #GlobalAdministrator #MicrosoftEntra #IdentityResilience #SecurityOperations
+<!-- nav -->
+
+---
+
+[← Identity Verification: Confirming the Person Behind the Account](glossary-6-19-identity-verification.md) | [Home](../README.md) | [Shared Accounts: Why "We All Use the Same Login" Is a Security Problem →](glossary-6-21-shared-accounts.md)

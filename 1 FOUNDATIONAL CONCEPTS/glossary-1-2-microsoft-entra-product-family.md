@@ -70,3 +70,8 @@ When you're starting out, focus on Entra ID first — deeply. Understanding the 
 **Your turn:** Which Entra products are you working with right now? Are you purely on Entra ID, or has your organization started using other products in the family? Curious what problems drove those decisions.
 
 #EntraID #MicrosoftEntra #CloudSecurity #IdentityManagement #ZeroTrust #AzureAD #IdentityAndAccess
+<!-- nav -->
+
+---
+
+[← What Is Microsoft Entra ID? The Foundation of Modern Identity](glossary-1-1-microsoft-entra-id.md) | [Home](../README.md) | [What Is a Tenant? (And Why Getting This Wrong Causes Real Problems) →](glossary-1-3-tenant.md)

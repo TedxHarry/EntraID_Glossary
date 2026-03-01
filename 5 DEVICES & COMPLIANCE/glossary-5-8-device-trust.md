@@ -67,3 +67,8 @@ This creates a gradient of access rather than a binary allow/deny, which is much
 💬 **Has your organization built a tiered access model based on device trust levels?** The move from binary "allowed or blocked" to a tiered model based on device state is one of the most meaningful Zero Trust improvements you can make. What did your trust tiers end up looking like?
 
 #EntraID #DeviceTrust #ZeroTrust #ConditionalAccess #DeviceCompliance #MicrosoftEntra #EndpointSecurity
+<!-- nav -->
+
+---
+
+[← Endpoint Manager: One Console, All Your Devices](glossary-5-7-endpoint-manager.md) | [Home](../README.md) | [Hybrid Entra Joined: The Device That Lives in Both Worlds →](glossary-5-9-hybrid-device.md)

@@ -76,3 +76,8 @@ This creates enforcement at two layers: Conditional Access blocks access from un
 💬 **Have you had the "I won't enroll my personal device" conversation and used App Protection Policies as the solution?** It's often the path that satisfies both security requirements and employee privacy concerns. What was the reaction when you explained the MAM-without-MDM model?
 
 #EntraID #AppProtectionPolicy #MAM #BYOD #Intune #MicrosoftEntra #MobileSecurity
+<!-- nav -->
+
+---
+
+[← Hybrid Entra Joined: The Device That Lives in Both Worlds](glossary-5-9-hybrid-device.md) | [Home](../README.md) | [Device State: The Real-Time Health Signal That Drives Access Decisions →](glossary-5-11-device-state.md)

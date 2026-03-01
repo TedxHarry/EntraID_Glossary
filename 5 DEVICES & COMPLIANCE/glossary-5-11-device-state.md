@@ -80,3 +80,8 @@ The sign-in logs are often the fastest path to a diagnosis. They show exactly wh
 💬 **Have you troubleshot a "one app works, another doesn't" situation and traced it back to different Conditional Access policies with different device state requirements?** It's a common support scenario that's easy to misdiagnose without looking at both the policy configuration and the actual device state at the time of the blocked sign-in. What's your go-to diagnostic approach?
 
 #EntraID #DeviceState #DeviceCompliance #ConditionalAccess #Intune #MicrosoftEntra #ZeroTrust
+<!-- nav -->
+
+---
+
+[← App Protection Policy: Managing the Data, Not the Device](glossary-5-10-app-protection-policy.md) | [Home](../README.md) | [Managed Device: Enrolled Isn't the Same as Secure →](glossary-5-12-managed-device.md)

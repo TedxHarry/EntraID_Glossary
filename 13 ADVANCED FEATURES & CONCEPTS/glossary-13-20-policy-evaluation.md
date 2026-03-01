@@ -83,3 +83,8 @@ The Conditional Access Insights and Reporting workbook aggregates sign-in log CA
 💬 **When you troubleshoot a CA-related access issue, do you go to the sign-in log CA tab first, or do you still find yourself manually reviewing individual policies?** The sign-in log CA details exist specifically to eliminate policy review as the diagnostic approach, but awareness of the tool is uneven across teams. What's the most complex CA evaluation scenario your team has had to untangle?
 
 #EntraID #ConditionalAccess #PolicyEvaluation #WhatIfTool #ZeroTrust #MicrosoftEntra #IdentitySecurity
+<!-- nav -->
+
+---
+
+[← CA Optimization Agent: Automated Recommendations for Conditional Access Policy Gaps](glossary-13-19-ca-optimization-agent.md) | [Home](../README.md) | [Microsoft Graph API: Programmatic Access to Everything in Your Entra ID Tenant →](glossary-13-21-graph-api.md)

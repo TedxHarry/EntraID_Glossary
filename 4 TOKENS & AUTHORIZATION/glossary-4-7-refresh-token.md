@@ -62,3 +62,8 @@ If a user's device becomes non-compliant after sign-in, the next refresh token e
 💬 **Have you had to troubleshoot a "keeps signing me out" complaint?** Nine times out of ten it traces back to either a sign-in frequency Conditional Access policy or a refresh token being invalidated by a policy change, password reset, or admin action. What was the root cause in your experience?
 
 #EntraID #RefreshToken #OAuth2 #CloudSecurity #MicrosoftEntra #IdentityManagement #ConditionalAccess
+<!-- nav -->
+
+---
+
+[← The ID Token: Proof of Who Signed In (Not a Key to the API)](glossary-4-6-id-token.md) | [Home](../README.md) | [Bearer Tokens: The Name That Tells You Everything About the Risk →](glossary-4-8-bearer-token.md)

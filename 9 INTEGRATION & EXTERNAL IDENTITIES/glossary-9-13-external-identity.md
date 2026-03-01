@@ -69,3 +69,8 @@ The common failure mode: external identity was set up to enable collaboration an
 💬 **Which type of external identity is most problematic to govern in your organization?** The B2B guest lifecycle is the most common pain point in corporate tenants. But organizations with CIAM deployments often find customer account management at scale to be the harder problem. Which external identity scenario generates the most operational challenges for your team?
 
 #EntraID #ExternalIdentity #B2BCollaboration #ExternalID #MicrosoftEntra #IdentityGovernance #CIAM
+<!-- nav -->
+
+---
+
+[← External User: Managing Access for People Who Don't Work for You](glossary-9-12-external-user.md) | [Home](../README.md) | [Entra External ID: Microsoft's Unified Platform for Non-Employee Identities →](glossary-9-14-entra-external-id.md)

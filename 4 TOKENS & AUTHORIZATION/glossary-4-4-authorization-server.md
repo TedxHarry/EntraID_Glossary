@@ -75,3 +75,8 @@ The authorization server is the trust anchor. Everything else is built on top of
 💬 **How has thinking about Entra ID as an authorization server (rather than just a user directory) changed how you approach identity architecture?** Or are you still mostly thinking in terms of "user accounts and permissions"? Both are valid starting points. The OAuth lens tends to become useful when you start integrating custom applications.
 
 #EntraID #OAuth2 #AuthorizationServer #CloudSecurity #MicrosoftEntra #IdentityPlatform #AppDevelopment
+<!-- nav -->
+
+---
+
+[← The Token Endpoint: The Server-Side Half Nobody Talks About](glossary-4-3-token-endpoint.md) | [Home](../README.md) | [Access Tokens: What's Actually Inside That Long String →](glossary-4-5-access-token.md)

@@ -57,3 +57,8 @@ For these applications, the practical solutions are:
 💬 **What is the biggest obstacle your organization faces in achieving broad passwordless authentication coverage?** The shared workstation problem, the legacy application last mile, and the FIDO2 key management overhead are the most commonly cited barriers. What percentage of your user population is currently using a passwordless primary method, and what's blocking the rest?
 
 #EntraID #PasswordlessAuthentication #FIDO2 #WindowsHello #TAP #MicrosoftEntra #ZeroTrust
+<!-- nav -->
+
+---
+
+[← Identity Correlations: Matching the Same Person Across Different Systems](glossary-13-4-identity-correlations.md) | [Home](../README.md) | [Real-Time Remediation: Automated Immediate Response to Identity Risks →](glossary-13-6-real-time-remediation.md)

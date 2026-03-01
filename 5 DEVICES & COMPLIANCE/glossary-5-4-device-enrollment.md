@@ -61,3 +61,8 @@ In the incident that opened this article, the fix was implementing App Protectio
 💬 **Has your organization struggled with the BYOD enrollment conversation? Getting employees to enroll personal devices in any form of management is a genuine challenge.** What framing or policy change made the difference in getting adoption?
 
 #EntraID #DeviceEnrollment #Intune #MDM #BYOD #MicrosoftEntra #EndpointManagement
+<!-- nav -->
+
+---
+
+[← Device Registration: Three Ways to Join a Device to Entra ID (They're Not the Same)](glossary-5-3-device-registration.md) | [Home](../README.md) | [Intune: What the Device Management Piece of Microsoft's Puzzle Actually Does →](glossary-5-5-intune.md)

@@ -75,3 +75,8 @@ The enrollment experience from the user's side: they open a sign-in on their man
 💬 **Has your team made the case for Windows Hello for Business yet?** The "it's just a PIN" objection is the most common pushback I encounter. How do you explain the TPM and key-binding concept to non-technical stakeholders?
 
 #EntraID #WindowsHello #Passwordless #CloudSecurity #MicrosoftEntra #PhishingResistant #EndpointSecurity
+<!-- nav -->
+
+---
+
+[← FIDO2: Why a Small USB Stick Can Eliminate Phishing from Your Attack Surface](glossary-3-6-fido2.md) | [Home](../README.md) | [Microsoft Authenticator: More Than a Code Generator →](glossary-3-8-microsoft-authenticator.md)

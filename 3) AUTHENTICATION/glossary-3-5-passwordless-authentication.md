@@ -73,3 +73,8 @@ The goal isn't flipping a switch. It's making passwordless the default path of l
 💬 **Has your organization started a passwordless rollout?** Which method are you leading with: Windows Hello, FIDO2 keys, or Authenticator? And what's been the user reaction so far?
 
 #EntraID #Passwordless #CloudSecurity #MicrosoftEntra #FIDO2 #WindowsHello #IdentityManagement
+<!-- nav -->
+
+---
+
+[← Multi-Factor Authentication: Why 99.9% Attack Prevention Still Has an Asterisk](glossary-3-4-mfa.md) | [Home](../README.md) | [FIDO2: Why a Small USB Stick Can Eliminate Phishing from Your Attack Surface →](glossary-3-6-fido2.md)

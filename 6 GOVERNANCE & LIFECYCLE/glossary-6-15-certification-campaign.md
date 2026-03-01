@@ -73,3 +73,8 @@ Quarter-end, fiscal year transitions, and immediately after large organizational
 💬 **Has your organization run an access certification campaign and found the response rate from reviewers lower than expected?** The gap between sending campaign notifications and receiving meaningful decisions is where most campaigns struggle. What changes improved engagement with your reviewers?
 
 #EntraID #CertificationCampaign #AccessReview #IdentityGovernance #MicrosoftEntra #Compliance #IGA
+<!-- nav -->
+
+---
+
+[← Governance: The System That Keeps Access from Running Away from You](glossary-6-14-governance.md) | [Home](../README.md) | [Bulk User Operations: When You Need to Change 500 Accounts at Once →](glossary-6-16-bulk-user-operations.md)

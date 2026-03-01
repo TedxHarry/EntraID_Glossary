@@ -55,3 +55,8 @@ The correct answer is client credentials. Service accounts are the wrong solutio
 💬 **Which grant type do you see misused most often in your organization?** The service account doing interactive sign-in to simulate client credentials is common. So is ROPC for legacy migration that never got migrated. What grant type pattern in your environment would you most want to replace with something more appropriate?
 
 #EntraID #AuthorizationGrant #OAuth2 #ClientCredentials #DeviceCodeFlow #MicrosoftEntra #AppDevelopment
+<!-- nav -->
+
+---
+
+[← Authorization Server: What Entra ID Is Actually Doing When It Issues a Token](glossary-11-4-authorization-server-deep-dive.md) | [Home](../README.md) | [Actor: When an Application Acts as the Middle Layer Between User and API →](glossary-11-6-actor-deep-dive.md)

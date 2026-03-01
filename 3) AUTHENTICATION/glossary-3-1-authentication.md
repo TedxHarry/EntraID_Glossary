@@ -72,3 +72,8 @@ Strong authentication is the floor. Build everything else on top of it.
 💬 **What authentication challenges are you dealing with right now?** Legacy protocols you're trying to block? Phishing-resistant methods you're rolling out? Users resisting MFA? Drop your current situation in the comments.
 
 #EntraID #Authentication #CloudSecurity #MicrosoftEntra #ZeroTrust #IdentityManagement #BeginnerContent
+<!-- nav -->
+
+---
+
+[← Admin Roles: The Keys to Your Tenant and Why You Need Far Fewer of Them](../2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-11-admin-role.md) | [Home](../README.md) | [What Actually Happens When You Click "Sign In" →](glossary-3-2-sign-in.md)

@@ -77,3 +77,8 @@ Automated provisioning solves all three.
 💬 **How many of your organization's applications have automated provisioning configured vs relying on manual account creation?** The gap between "Entra ID knows the user" and "every app the user needs has their account" is where most new hire friction lives. What was the first application you automated provisioning for?
 
 #EntraID #UserProvisioning #SCIM #IdentityGovernance #MicrosoftEntra #LifecycleManagement #Automation
+<!-- nav -->
+
+---
+
+[← Non-Compliant Device: What Happens When the Device Fails Its Security Check](../5%20DEVICES%20%26%20COMPLIANCE/glossary-5-14-non-compliant-device.md) | [Home](../README.md) | [User Onboarding: The First Day Experience Is an Identity Problem →](glossary-6-2-user-onboarding.md)

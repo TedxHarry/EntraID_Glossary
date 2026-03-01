@@ -57,3 +57,8 @@ Microsoft Entra Workload ID (the product layer on top of the base workload ident
 💬 **How many workload identities does your organization have in Entra ID, and how many of them are actively owned and governed?** The gap between "service principals that exist" and "service principals that someone is responsible for" is one of the hardest problems in enterprise identity security. What's your approach to workload identity governance?
 
 #EntraID #WorkloadIdentity #ServicePrincipal #ManagedIdentity #IdentityGovernance #MicrosoftEntra #CloudSecurity
+<!-- nav -->
+
+---
+
+[← External Tenant: The Entra ID Tenant Type Built for Your Customers](../9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-16-external-tenant.md) | [Home](../README.md) | [Managed Identity: Credentials That Azure Manages So You Don't Have To →](glossary-10-2-managed-identity.md)

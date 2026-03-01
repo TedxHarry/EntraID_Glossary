@@ -71,3 +71,8 @@ This setting is particularly important for organizations with strong partner rel
 💬 **Is your organization evaluating the transition from Azure AD B2C to Entra External ID external tenants, or is B2C meeting your needs well enough that migration isn't a priority?** The consolidation of Microsoft's external identity products is still in progress. What feature gap would have to close before you'd consider migrating an existing B2C deployment?
 
 #EntraID #EntraExternalID #ExternalIdentity #B2C #CIAM #MicrosoftEntra #CustomerIdentity
+<!-- nav -->
+
+---
+
+[← External Identity: The Broader Category Behind Every Non-Employee](glossary-9-13-external-identity.md) | [Home](../README.md) | [Workforce Tenant: The Corporate Identity Foundation Behind Every Employee Account →](glossary-9-15-workforce-tenant.md)

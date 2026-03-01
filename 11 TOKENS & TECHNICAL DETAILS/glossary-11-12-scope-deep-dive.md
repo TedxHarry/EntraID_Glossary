@@ -80,3 +80,8 @@ Incremental consent improves user experience (users consent to manageable, conte
 💬 **How granular is the scope design in your organization's internal APIs?** The gap between "one scope to rule them all" and "precise, minimal scopes for each operation" varies widely across teams. What drove the scope design decisions in the APIs your team owns, and what would you design differently now?
 
 #EntraID #OAuth2Scopes #APIPermissions #DelegatedPermissions #ApplicationPermissions #MicrosoftEntra #APISecurity
+<!-- nav -->
+
+---
+
+[← Audience: The Token Claim That Prevents One API's Token From Working on Another](glossary-11-11-audience-deep-dive.md) | [Home](../README.md) | [Audit Log: The Record of Every Identity Operation in Your Tenant →](../12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-1-audit-log.md)

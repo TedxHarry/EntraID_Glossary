@@ -55,3 +55,8 @@ The Compliance Manager score isn't a guarantee of compliance; it's a tool for id
 💬 **Which regulatory framework puts the most compliance pressure on your Entra ID configuration, and which control area requires the most ongoing effort to evidence?** Access reviews are the most commonly cited ongoing compliance effort. But organizations in regulated industries often find data residency and audit log retention more challenging. What's the compliance requirement that most drives your identity security investment?
 
 #EntraID #Compliance #GDPR #SOC2 #ISO27001 #IdentityGovernance #MicrosoftEntra #AuditEvidence
+<!-- nav -->
+
+---
+
+[← Security Alert: When Entra ID Tells You Something Is Wrong](glossary-12-4-security-alert.md) | [Home](../README.md) | [Attribute-Based Access Control: Access Decisions That Go Beyond Role Membership →](../13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-1-abac.md)

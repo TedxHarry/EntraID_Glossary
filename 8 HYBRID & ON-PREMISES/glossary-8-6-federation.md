@@ -75,3 +75,8 @@ The migration from ADFS to managed authentication is a defined process (staged r
 💬 **Is your organization still running ADFS for Microsoft 365 authentication, or have you migrated to managed authentication?** The organizations that migrated often cite certificate rotation anxiety as the thing they're most glad to have eliminated. What's keeping ADFS in place for organizations that haven't made the move?
 
 #EntraID #Federation #ADFS #HybridIdentity #MicrosoftEntra #Authentication #IdentityManagement
+<!-- nav -->
+
+---
+
+[← Pass-Through Authentication: Validating Cloud Sign-Ins Against On-Premises AD](glossary-8-5-pass-through-auth.md) | [Home](../README.md) | [Domain Services: Active Directory Without the Domain Controllers →](glossary-8-7-domain-services.md)

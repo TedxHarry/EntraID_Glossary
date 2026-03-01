@@ -65,3 +65,8 @@ For admin accounts: disable SSPR, require admin-initiated password reset with id
 💬 **Have you ever audited the SSPR verification methods that your users have registered and found methods that shouldn't be there?** The security questions that were set up during initial deployment and never changed, or the personal email address that's been the alternate recovery contact for five years, are common findings. What was the SSPR security gap that prompted a policy change?
 
 #EntraID #SSPR #PasswordReset #IdentitySecurity #MicrosoftEntra #AccountSecurity #MFA
+<!-- nav -->
+
+---
+
+[← Authentication Methods: Choosing the Right Mix for Your Security Posture](glossary-7-26-authentication-methods-security.md) | [Home](../README.md) | [Insider Risk: When the Threat Already Has a Badge →](glossary-7-28-insider-risk.md)

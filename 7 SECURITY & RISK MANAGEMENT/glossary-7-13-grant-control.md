@@ -75,3 +75,8 @@ Using grant controls when session controls are the right tool (and vice versa) i
 💬 **What combination of grant controls do you use for your most sensitive resources?** The "require MFA AND require compliant device" combination is a significant maturity step. Organizations that have it in place for admin portals and high-value data often note that the device compliance requirement was harder to implement than the MFA requirement. What was your experience?
 
 #EntraID #ConditionalAccess #GrantControl #MicrosoftEntra #ZeroTrust #DeviceCompliance #MFA
+<!-- nav -->
+
+---
+
+[← Condition: The Signals That Make Conditional Access Contextual](glossary-7-12-condition.md) | [Home](../README.md) | [Block Access: The Hardest Grant Control to Get Right →](glossary-7-14-block-access.md)

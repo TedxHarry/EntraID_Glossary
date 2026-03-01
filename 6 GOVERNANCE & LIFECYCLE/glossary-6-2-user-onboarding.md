@@ -74,3 +74,8 @@ Manager-driven onboarding reduces IT involvement in access decisions and puts th
 💬 **What's the single biggest friction point in your organization's current onboarding process?** The gap between "user created in Entra ID" and "user can do their job" is where most first-day frustration lives. Whether it's MFA registration, device provisioning, or app access, the bottleneck is usually the same for months until someone fixes it.
 
 #EntraID #UserOnboarding #LifecycleManagement #Provisioning #MicrosoftEntra #IdentityGovernance #ITOperations
+<!-- nav -->
+
+---
+
+[← User Provisioning: Accounts That Create Themselves (When It's Done Right)](glossary-6-1-user-provisioning.md) | [Home](../README.md) | [User Offboarding: The Day Someone Leaves Is the Day Access Has to Stop →](glossary-6-3-user-offboarding.md)

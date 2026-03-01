@@ -67,3 +67,8 @@ The choice isn't permanent. Starting with system-assigned and migrating to user-
 💬 **Does your team have a standard for when to use system-assigned versus user-assigned managed identity, or is it decided case by case?** Having an explicit policy saves the debate each time a new workload is built. What criteria does your team use to make the call?
 
 #EntraID #ManagedIdentity #UserAssignedManagedIdentity #WorkloadIdentity #AzureSecurity #MicrosoftEntra #CloudSecurity
+<!-- nav -->
+
+---
+
+[← System-Assigned Managed Identity: One Resource, One Identity, One Lifecycle](glossary-10-3-system-assigned-managed-identity.md) | [Home](../README.md) | [Workload Federation: Authenticating to Azure Without Storing Azure Credentials →](glossary-10-5-workload-federation.md)

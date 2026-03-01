@@ -69,3 +69,8 @@ For your own APIs, define scopes narrowly from the start. A scope of `orders.rea
 💬 **Have you audited the scopes your applications are using and found permissions that shouldn't be there?** Scope creep is one of the most common findings in identity security reviews: easy to accumulate over time, uncomfortable to clean up. What drove you to look, and what did you find?
 
 #EntraID #OAuth2 #Scope #LeastPrivilege #AppSecurity #MicrosoftGraph #CloudSecurity
+<!-- nav -->
+
+---
+
+[← Token Revocation: Why "I Disabled Their Account" Isn't Always Enough](glossary-4-10-token-revocation.md) | [Home](../README.md) | [Audience: The Token Knows Who It Was Meant For →](glossary-4-12-audience.md)

@@ -86,3 +86,8 @@ For cases where the work to migrate can't happen immediately, create a specific 
 💬 **What was the legacy auth offender that surprised you most when you started blocking it?** The printer scenario is almost universal. But the business-critical ERP system that nobody knew was using IMAP to send monthly reports is the one that causes the most painful conversation. What did your legacy auth block surface in your environment?
 
 #EntraID #LegacyAuthentication #ConditionalAccess #MicrosoftEntra #CredentialStuffing #IdentitySecurity #MFA
+<!-- nav -->
+
+---
+
+[← IP Address Range: The Building Block of Location-Based Access Control](glossary-7-21-ip-address-range.md) | [Home](../README.md) | [Session Control: Governing What Happens After Access Is Granted →](glossary-7-23-session-control.md)

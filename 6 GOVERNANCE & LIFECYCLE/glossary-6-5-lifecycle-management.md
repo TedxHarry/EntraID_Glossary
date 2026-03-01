@@ -72,3 +72,8 @@ The goal isn't to remove humans from access decisions. It's to remove humans fro
 💬 **Has your organization automated any part of the Joiner-Mover-Leaver cycle, and what was the first process you tackled?** The decision about where to start often comes down to where the most pain is: missed offboardings that create security risk, or slow onboarding that creates first-day frustration. Which drove your first automation investment?
 
 #EntraID #LifecycleManagement #JoinerMoverLeaver #IdentityGovernance #MicrosoftEntra #HRIntegration #Automation
+<!-- nav -->
+
+---
+
+[← Deprovisioning: Disabling the Entra ID Account Is Not Enough](glossary-6-4-deprovisioning.md) | [Home](../README.md) | [Access Review: The Audit That Finds What Accumulates Over Time →](glossary-6-6-access-review.md)

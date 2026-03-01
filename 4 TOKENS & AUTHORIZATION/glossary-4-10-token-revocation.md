@@ -80,3 +80,8 @@ CAE implementation in custom applications eliminates the window entirely for tho
 💬 **Have you had a situation where you needed to cut off access immediately and discovered the 60-minute gap?** It's the kind of thing that's easy to overlook until urgency makes it very real. How did your organization handle it, and did it change how you configured token lifetimes or Conditional Access afterward?
 
 #EntraID #TokenRevocation #OAuth2 #CloudSecurity #CAE #MicrosoftEntra #IdentityManagement
+<!-- nav -->
+
+---
+
+[← Token Lifetime: The Trade-Off Between Security and Not Annoying Your Users](glossary-4-9-token-lifetime.md) | [Home](../README.md) | [Scope: The Permission on the Label vs the Permission You Actually Need →](glossary-4-11-scope.md)

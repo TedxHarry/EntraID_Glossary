@@ -68,3 +68,8 @@ APIs that accept both delegated and application tokens need to handle this disti
 💬 **Have you investigated suspicious activity and found it was an authorized application doing something the user had forgotten they'd consented to?** It's one of the more common sources of unexpected access events. How does your organization track which apps users have granted permission to?
 
 #EntraID #OAuth2 #Actor #AppSecurity #AuditLogs #MicrosoftEntra #CloudSecurity
+<!-- nav -->
+
+---
+
+[← Authorization Grant: Four Ways to Get a Token (and When to Use Each)](glossary-4-13-authorization-grant.md) | [Home](../README.md) | [Subject: Whose Data Is This, Really? →](glossary-4-15-subject.md)

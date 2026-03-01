@@ -65,3 +65,8 @@ If an application needs longer than one-hour sessions, the correct implementatio
 💬 **Have you had to configure Token Lifetime Policies for a specific application in your tenant, and what drove the requirement?** The most common drivers are compliance requirements for high-security applications (shorter inactive times) and user experience requirements for productivity applications (avoiding excessive sign-out prompts). What lifetime configuration would most improve your users' experience while meeting your security requirements?
 
 #EntraID #TokenLifetime #OAuth2 #RefreshToken #ConditionalAccess #MicrosoftEntra #AppSecurity
+<!-- nav -->
+
+---
+
+[← Bearer Token: Why "Whoever Has It Can Use It" Is Both the Point and the Risk](glossary-11-8-bearer-token-deep-dive.md) | [Home](../README.md) | [Token Revocation: Why "Revoke All Tokens" Doesn't Mean Instant Lockout →](glossary-11-10-token-revocation-deep-dive.md)

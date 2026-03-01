@@ -70,3 +70,8 @@ Role assignments in ARM templates look like nested resources or separate resourc
 💬 **Does your team manage ARM role assignments for managed identities through infrastructure-as-code, or are they still applied manually through the portal?** The gap between "we use Terraform for everything" and "role assignments are done manually and undocumented" is common, especially for managed identity permissions that were configured during initial setup and never formalized. What would it take to get role assignments for workload identities into your IaC pipeline?
 
 #EntraID #AzureResourceManager #ManagedIdentity #RBAC #WorkloadIdentity #AzureSecurity #MicrosoftEntra
+<!-- nav -->
+
+---
+
+[← Principal ID: The Identifier You Use When Giving a Managed Identity Permission](glossary-10-8-principal-id.md) | [Home](../README.md) | [CAE for Workloads: Real-Time Token Revocation for Non-Human Identities →](glossary-10-10-cae-for-workloads.md)

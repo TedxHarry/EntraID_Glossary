@@ -82,3 +82,8 @@ FIDO2 security keys are the right choice for:
 💬 **Have you deployed FIDO2 security keys in your organization?** Which hardware did you choose, and what was the user experience feedback? The enrollment process is surprisingly straightforward once people have the key in hand.
 
 #EntraID #FIDO2 #Passwordless #CloudSecurity #MicrosoftEntra #PhishingResistant #YubiKey
+<!-- nav -->
+
+---
+
+[← Passwordless Authentication: Fixing the Right Problem](glossary-3-5-passwordless-authentication.md) | [Home](../README.md) | [Windows Hello for Business: It's Not Just a PIN →](glossary-3-7-windows-hello.md)

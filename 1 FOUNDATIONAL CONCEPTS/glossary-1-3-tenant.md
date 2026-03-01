@@ -66,3 +66,8 @@ The tenant is the foundation. Everything else sits on top of it. 🏢
 **Question for you:** Does your organization run one tenant or multiple? And if you're running multiple — was that a deliberate architectural decision, or something that evolved over time without a plan? I've seen both and the stories are always interesting.
 
 #EntraID #CloudSecurity #IdentityManagement #CloudIdentity #Microsoft365 #AzureAD #ITArchitecture
+<!-- nav -->
+
+---
+
+[← The Microsoft Entra Product Family: Why There's More Than Just Entra ID](glossary-1-2-microsoft-entra-product-family.md) | [Home](../README.md) | [Cloud-Based Identity: What It Actually Means When the Servers Aren't Yours →](glossary-1-4-cloud-based-identity.md)

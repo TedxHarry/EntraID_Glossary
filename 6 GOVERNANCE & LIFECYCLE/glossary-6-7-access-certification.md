@@ -76,3 +76,8 @@ Entitlement Management access packages (covered in Glossary#6.9) can have access
 💬 **Has your organization had an audit finding related to access certification evidence?** The gap between "we reviewed access" and "we can prove we reviewed access in the way the auditor requires" is where many compliance programs fail. What triggered the change in how your organization handles certification documentation?
 
 #EntraID #AccessCertification #IdentityGovernance #Compliance #MicrosoftEntra #AccessReview #AuditEvidence
+<!-- nav -->
+
+---
+
+[← Access Review: The Audit That Finds What Accumulates Over Time](glossary-6-6-access-review.md) | [Home](../README.md) | [Recertification: Access That Was Right Then Might Not Be Right Now →](glossary-6-8-recertification.md)

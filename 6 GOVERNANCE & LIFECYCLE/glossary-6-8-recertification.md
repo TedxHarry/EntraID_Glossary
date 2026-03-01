@@ -66,3 +66,8 @@ Calibrate frequency to sensitivity and risk. Privileged access: frequent. Genera
 💬 **What recertification frequency does your organization use for privileged admin roles?** The gap between "we certified this 11 months ago" and "we recertify this quarterly" is the difference between access governance as an annual checkbox and access governance as an operational control. What drove your current schedule?
 
 #EntraID #Recertification #AccessCertification #IdentityGovernance #MicrosoftEntra #Compliance #LeastPrivilege
+<!-- nav -->
+
+---
+
+[← Access Certification: When "Reviewed" Has to Mean Something to an Auditor](glossary-6-7-access-certification.md) | [Home](../README.md) | [Entitlement Management: Self-Service Access Without the Security Compromise →](glossary-6-9-entitlement-management.md)

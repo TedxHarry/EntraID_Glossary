@@ -65,3 +65,8 @@ When something does change (account disabled, policy updated, risk elevated), th
 💬 **Has your organization configured Conditional Access with the expectation that policy changes would take effect immediately for active sessions, and have you verified that CAE is actually enforcing this for the services you care about?** The gap between "we updated the policy" and "active sessions are now subject to it" varies significantly based on which services are involved and whether clients are CAE-capable. What's your process for validating policy change enforcement timing?
 
 #EntraID #ContinuousAuthorization #CAE #ContinuousAccessEvaluation #ZeroTrust #MicrosoftEntra #IdentitySecurity
+<!-- nav -->
+
+---
+
+[← Cloud-Based Sync (Advanced): Complex Synchronization Scenarios Beyond the Basics](glossary-13-2-cloud-sync-advanced.md) | [Home](../README.md) | [Identity Correlations: Matching the Same Person Across Different Systems →](glossary-13-4-identity-correlations.md)

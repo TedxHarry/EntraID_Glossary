@@ -67,3 +67,8 @@ For a Global Administrator, the worst case is complete tenant compromise. Phishi
 💬 **Has your organization differentiated authentication strength requirements between regular users and privileged accounts?** The conversation about "we have MFA" vs "we have phishing-resistant MFA for our admins" reflects a real security gap. What was the event or recommendation that drove the decision to require stronger methods for specific roles?
 
 #EntraID #AuthenticationStrength #PhishingResistant #MFA #MicrosoftEntra #FIDO2 #IdentitySecurity
+<!-- nav -->
+
+---
+
+[← Terms of Use: Making Consent Part of the Access Flow](glossary-7-24-terms-of-use.md) | [Home](../README.md) | [Authentication Methods: Choosing the Right Mix for Your Security Posture →](glossary-7-26-authentication-methods-security.md)

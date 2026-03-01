@@ -67,3 +67,8 @@ The relationship: App Registration defines what the app is. Enterprise Applicati
 💬 **What's the application in your environment that most needs Entra ID integration but hasn't been integrated yet?** The "we'll integrate it eventually" list exists in almost every organization. What's keeping the highest-value holdout from being connected, and what would it take to get there?
 
 #EntraID #AppIntegration #SSO #MicrosoftEntra #SaaS #ConditionalAccess #IdentityManagement
+<!-- nav -->
+
+---
+
+[← Domain Services: Active Directory Without the Domain Controllers](../8%20HYBRID%20%26%20ON-PREMISES/glossary-8-7-domain-services.md) | [Home](../README.md) | [Cloud Application: SaaS in Your Tenant's Security Perimeter →](glossary-9-2-cloud-application.md)

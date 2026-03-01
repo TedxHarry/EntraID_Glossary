@@ -63,3 +63,8 @@ The grant type determines what the token represents, who is accountable in audit
 💬 **Have you inherited an application using the wrong OAuth grant type and had to migrate it?** ROPC to Authorization Code is particularly painful in older enterprise apps. What drove the decision to migrate and how did you handle the transition?
 
 #EntraID #OAuth2 #AuthorizationGrant #AppDevelopment #MicrosoftEntra #CloudSecurity #IdentityPlatform
+<!-- nav -->
+
+---
+
+[← Audience: The Token Knows Who It Was Meant For](glossary-4-12-audience.md) | [Home](../README.md) | [Actor: The Application in the Token, and Why It Matters →](glossary-4-14-actor.md)

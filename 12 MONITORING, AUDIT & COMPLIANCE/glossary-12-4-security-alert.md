@@ -73,3 +73,8 @@ These policies block or remediate risk detections in real time without analyst i
 💬 **What percentage of the security alerts your team receives from Entra ID are actionable versus false positives?** The signal-to-noise ratio in identity security alerts varies significantly by environment: organizations with lots of remote workers, VPN usage, and international travel see higher false positive rates. What tuning has your team done to improve alert quality?
 
 #EntraID #SecurityAlert #IDProtection #IncidentResponse #MicrosoftEntra #SOC #ThreatDetection
+<!-- nav -->
+
+---
+
+[← Activity Report: The Trend View That Audit Logs and Sign-In Logs Don't Give You](glossary-12-3-activity-report.md) | [Home](../README.md) | [Compliance: How Entra ID Controls Map to the Regulations Your Auditors Ask About →](glossary-12-5-compliance.md)

@@ -80,3 +80,8 @@ When you see a sign-in failing at this stage, the Entra ID error page usually in
 💬 **Have you ever read the raw authorize request URL during a debugging session?** Once you know what each parameter means, a broken sign-in URL tells you almost everything you need to know about where the problem is. What's the most useful thing you've learned from reading OAuth request parameters directly?
 
 #EntraID #OAuth2 #AuthorizationEndpoint #AppDevelopment #MicrosoftEntra #IdentityPlatform #CloudSecurity
+<!-- nav -->
+
+---
+
+[← The Authorization Code: Why Sign-In Takes Two Steps Instead of One](glossary-4-1-authorization-code.md) | [Home](../README.md) | [The Token Endpoint: The Server-Side Half Nobody Talks About →](glossary-4-3-token-endpoint.md)

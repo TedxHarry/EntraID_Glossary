@@ -61,3 +61,8 @@ Workload CA conditions for managed identities are an evolving area. The practica
 💬 **Does your organization have Conditional Access policies targeting service principals, or is your CA policy coverage limited to user identities?** The gap between user CA coverage and workload CA coverage is significant in most enterprise tenants. What would be the first service principal in your environment you'd want to put a location-based restriction on?
 
 #EntraID #ConditionalAccessForWorkloads #WorkloadIdentity #ServicePrincipal #ZeroTrust #MicrosoftEntra #CloudSecurity
+<!-- nav -->
+
+---
+
+[← Long-Lived Tokens: Why 24-Hour Workload Tokens Are Safer Than You'd Think](glossary-10-11-llts.md) | [Home](../README.md) | [Authorization Code Flow: The OAuth Dance That Powers Most Modern Web App Sign-Ins →](../11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-1-authorization-code-flow.md)

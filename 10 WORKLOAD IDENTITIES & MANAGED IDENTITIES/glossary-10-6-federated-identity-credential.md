@@ -57,3 +57,8 @@ The choice between app registration and user-assigned managed identity for workl
 💬 **What was the first Federated Identity Credential configuration that worked correctly in your environment, and what took the most troubleshooting to get right?** The subject claim field trips up most people the first time. Did you hit the branch vs environment subject mismatch, or a different configuration issue?
 
 #EntraID #FederatedIdentityCredential #WorkloadFederation #GitHubActions #ManagedIdentity #MicrosoftEntra #DevSecOps
+<!-- nav -->
+
+---
+
+[← Workload Federation: Authenticating to Azure Without Storing Azure Credentials](glossary-10-5-workload-federation.md) | [Home](../README.md) | [Instance Metadata Service: The Local Endpoint That Gives Azure Resources Their Identity →](glossary-10-7-imds.md)

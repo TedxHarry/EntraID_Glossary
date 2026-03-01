@@ -75,3 +75,8 @@ Verification requirements should scale with what the verified identity will acce
 💬 **What does your organization use to verify someone's identity before granting access or recovering an account?** The gap between "we ask them their employee ID" and "we require cryptographic proof of identity" is wide, and most organizations are closer to the former. What's the highest-assurance verification step you currently use?
 
 #EntraID #IdentityVerification #VerifiedID #ZeroTrust #MicrosoftEntra #IdentityGovernance #AccessSecurity
+<!-- nav -->
+
+---
+
+[← Source of Authority: Which System Gets to Say Who You Are](glossary-6-18-source-of-authority.md) | [Home](../README.md) | [Emergency Access: The Account You Hope You Never Need →](glossary-6-20-emergency-access.md)

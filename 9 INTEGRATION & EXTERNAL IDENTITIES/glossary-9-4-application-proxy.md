@@ -72,3 +72,8 @@ Application Proxy supports multiple SSO mechanisms to provide seamless sign-in t
 💬 **Have you used Application Proxy to eliminate VPN requirements for specific applications?** The "we replaced VPN for most users with Application Proxy" outcome is compelling, but the application compatibility testing is where the work is. What was the application that required the most troubleshooting to publish correctly?
 
 #EntraID #ApplicationProxy #ZeroTrust #MicrosoftEntra #VPN #OnPremises #IdentitySecurity
+<!-- nav -->
+
+---
+
+[← Federated Application: When an App Trusts Entra ID to Prove Who You Are](glossary-9-3-federated-application.md) | [Home](../README.md) | [OAuth 2.0 in App Integration: How Modern Applications Request Access →](glossary-9-5-oauth2-app-integration.md)

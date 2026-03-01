@@ -60,3 +60,8 @@ If user department attributes in Entra ID aren't kept in sync with the HR system
 💬 **Has your organization hit the point where RBAC role proliferation is a management problem, and have you evaluated ABAC conditions as a solution?** The tipping point is usually when managing access requires creating more roles than teams can reasonably administer. What data segmentation or classification requirement is driving the most role proliferation in your environment?
 
 #EntraID #ABAC #AttributeBasedAccessControl #AzureRBAC #CustomSecurityAttributes #MicrosoftEntra #AccessControl
+<!-- nav -->
+
+---
+
+[← Compliance: How Entra ID Controls Map to the Regulations Your Auditors Ask About](../12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-5-compliance.md) | [Home](../README.md) | [Cloud-Based Sync (Advanced): Complex Synchronization Scenarios Beyond the Basics →](glossary-13-2-cloud-sync-advanced.md)

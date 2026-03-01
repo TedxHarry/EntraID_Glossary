@@ -68,3 +68,8 @@ The goal isn't to eliminate all IT involvement in access requests. It's to autom
 💬 **How do users in your organization currently request access to resources they don't have?** The mix of "send IT a ticket," "ask your manager to add you to the group," and "message the resource owner on Teams" is the standard starting point for most organizations. What's been the biggest driver toward a more structured request process?
 
 #EntraID #AccessRequest #EntitlementManagement #IdentityGovernance #MicrosoftEntra #MyAccess #SelfServiceIT
+<!-- nav -->
+
+---
+
+[← Entitlement Management: Self-Service Access Without the Security Compromise](glossary-6-9-entitlement-management.md) | [Home](../README.md) | [Approval Workflow: Who Decides, in What Order, and What Happens If They Don't →](glossary-6-11-approval-workflow.md)

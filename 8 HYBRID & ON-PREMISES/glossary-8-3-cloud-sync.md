@@ -69,3 +69,8 @@ The feature gap between Cloud Sync and Entra Connect has narrowed with each rele
 💬 **Have you migrated from Entra Connect to Cloud Sync, or deployed Cloud Sync for a new environment?** The operational overhead reduction is the most commonly cited benefit: no more scheduled maintenance windows for Connect upgrades, no more capacity planning for the sync server. What was the driver for your Cloud Sync adoption?
 
 #EntraID #CloudSync #HybridIdentity #EntraConnect #MicrosoftEntra #ActiveDirectory #DirectorySync
+<!-- nav -->
+
+---
+
+[← Entra Connect: The Engine Behind Hybrid Identity](glossary-8-2-entra-connect.md) | [Home](../README.md) | [Password Hash Sync: How On-Premises Passwords Work in the Cloud →](glossary-8-4-password-hash-sync.md)

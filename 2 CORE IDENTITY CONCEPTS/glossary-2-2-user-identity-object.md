@@ -90,3 +90,8 @@ Four checks. Covers a substantial majority of basic user access problems. 👤
 **Tell me:** What's the most unexpected user attribute issue you've had to troubleshoot? The UPN domain mismatch? A missing usage location blocking licenses? Or something stranger? I've seen some creative ones over the years.
 
 #EntraID #IdentityManagement #MicrosoftEntra #CloudSecurity #Microsoft365 #ITAdmin #BeginnerContent
+<!-- nav -->
+
+---
+
+[← Identity: The Word Everyone Uses and Almost Nobody Defines](glossary-2-1-identity.md) | [Home](../README.md) | [Service Principal: The Most Misunderstood Object in Entra ID →](glossary-2-3-service-principal.md)

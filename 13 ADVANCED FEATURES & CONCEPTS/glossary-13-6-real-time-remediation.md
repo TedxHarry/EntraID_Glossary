@@ -63,3 +63,8 @@ The recommended pattern: start with High risk thresholds for blocking, allow sel
 💬 **Has your organization implemented risk-based Conditional Access policies for real-time remediation, and what threshold calibration did you find works for your user population?** The tension between aggressive blocking (fewer compromised accounts, more false positive disruption) and permissive thresholds (fewer false positives, longer window for attacker access) is the core tuning challenge. Where did you land?
 
 #EntraID #RealTimeRemediation #IDProtection #ConditionalAccess #ZeroTrust #MicrosoftEntra #IncidentResponse
+<!-- nav -->
+
+---
+
+[← Passwordless Authentication (Advanced): Deployment Reality Beyond the Demo](glossary-13-5-passwordless-auth-advanced.md) | [Home](../README.md) | [UPN: The Sign-In Name That Looks Like an Email But Isn't Always One →](glossary-13-7-upn.md)

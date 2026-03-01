@@ -87,3 +87,8 @@ CAE shifts the security model from "tokens expire eventually" to "tokens are rev
 💬 **Have you used app-enforced restrictions or sign-in frequency controls to enable a use case that would otherwise have been "block it"?** The BYOD scenario where personal devices get read-only access is the classic example. What was the access scenario that session controls made possible without compromising data security?
 
 #EntraID #SessionControl #ConditionalAccess #MicrosoftEntra #MDCA #ZeroTrust #IdentitySecurity
+<!-- nav -->
+
+---
+
+[← Legacy Authentication: The Open Door That MFA Can't Close](glossary-7-22-legacy-authentication.md) | [Home](../README.md) | [Terms of Use: Making Consent Part of the Access Flow →](glossary-7-24-terms-of-use.md)

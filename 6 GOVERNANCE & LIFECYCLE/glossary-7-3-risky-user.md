@@ -81,3 +81,8 @@ Some user risk detections are offline: they're generated after analysis that tak
 💬 **Have you had an account flagged for leaked credentials that were actually from an external breach, not your environment?** The credential reuse scenario is one of the most common user risk detections. How did you handle the conversation with the user about why their work account was at risk because of a gaming site they'd forgotten about?
 
 #EntraID #RiskyUser #IDProtection #CredentialBreach #MicrosoftEntra #IdentitySecurity #ThreatIntelligence
+<!-- nav -->
+
+---
+
+[← Risky Sign-In: When the Authentication Looks Suspicious](../7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-2-risky-sign-in.md) | [Home](../README.md) | [ID Protection: Entra ID's Automated Threat Response System →](glossary-7-4-id-protection.md)

@@ -63,3 +63,8 @@ Correlation at joiner events (when a new account is created, check for existing 
 💬 **Does your organization have a process for detecting and resolving duplicate identities when a person's employment status changes (contractor to employee, acquisition, etc.)?** The identity duplication problem is common in environments with both contractor and employee populations, or after acquisitions. What's the most complex identity correlation scenario your team has had to resolve?
 
 #EntraID #IdentityCorrelations #HybridIdentity #DirectorySynchronization #IdentityGovernance #MicrosoftEntra #ImmutableId
+<!-- nav -->
+
+---
+
+[← Continuous Authorization: Shifting From "You Were Trusted" to "You Are Trusted Right Now"](glossary-13-3-continuous-authorization.md) | [Home](../README.md) | [Passwordless Authentication (Advanced): Deployment Reality Beyond the Demo →](glossary-13-5-passwordless-auth-advanced.md)

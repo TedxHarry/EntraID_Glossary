@@ -70,3 +70,8 @@ Understanding that OAuth 2.0 is specifically about authorization rather than aut
 💬 **When did it click for you that OAuth was about authorization, not authentication?** It's one of those distinctions that seems obvious once you understand it but creates real confusion before that. What's the clearest way you've found to explain it to someone new to identity concepts?
 
 #EntraID #OAuth2 #Authorization #IdentityProtocols #CloudSecurity #MicrosoftEntra #AppDevelopment
+<!-- nav -->
+
+---
+
+[← Subject: Whose Data Is This, Really?](glossary-4-15-subject.md) | [Home](../README.md) | [OpenID Connect: The Layer OAuth Was Missing →](glossary-4-17-oidc.md)

@@ -78,3 +78,8 @@ Templates reduce the activation energy for getting started. They don't replace u
 💬 **Did your organization use CA Templates as a starting point for your Conditional Access deployment, or did you build from scratch?** The template approach accelerates getting to a functional baseline, but the organizations that built from scratch often have cleaner, more intentional policy sets. What approach did you take and what would you do differently?
 
 #EntraID #ConditionalAccess #CATemplates #MicrosoftEntra #ZeroTrust #SecurityBaseline #IdentitySecurity
+<!-- nav -->
+
+---
+
+[← Sign-In Risk Level: Reading the Signals in a Single Authentication](glossary-7-30-sign-in-risk-level.md) | [Home](../README.md) | [CAE: When Access Tokens Get Revoked Mid-Session →](glossary-7-32-cae.md)

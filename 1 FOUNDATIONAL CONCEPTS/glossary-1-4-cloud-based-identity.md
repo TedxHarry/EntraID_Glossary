@@ -75,3 +75,8 @@ Cloud-based identity isn't universally easier. It's a different kind of work, wi
 **Tell me about your journey:** Is your organization cloud-only with Entra ID, still on-premises with AD, or somewhere in between? What's been the biggest adjustment in moving identity to the cloud — technical or cultural?
 
 #EntraID #CloudSecurity #CloudIdentity #IdentityManagement #ZeroTrust #DigitalTransformation #AzureAD
+<!-- nav -->
+
+---
+
+[← What Is a Tenant? (And Why Getting This Wrong Causes Real Problems)](glossary-1-3-tenant.md) | [Home](../README.md) | [Active Directory Isn't Dead. Here's Why That Matters. →](glossary-1-5-active-directory.md)

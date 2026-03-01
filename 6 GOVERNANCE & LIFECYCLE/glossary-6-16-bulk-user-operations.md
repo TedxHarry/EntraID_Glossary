@@ -82,3 +82,8 @@ Bulk license assignment is appropriate for initial migrations, one-time events, 
 💬 **What's the largest bulk user operation you've run, and what validation process did you use before executing it?** The combination of "this affects hundreds of accounts" and "if I get the CSV wrong" creates a specific kind of pre-execution anxiety. What's your checklist?
 
 #EntraID #BulkUserOperations #ITOperations #MicrosoftGraph #PowerShell #MicrosoftEntra #IdentityManagement
+<!-- nav -->
+
+---
+
+[← Certification Campaign: Access Review at Scale, on a Schedule](glossary-6-15-certification-campaign.md) | [Home](../README.md) | [User Attributes: The Properties That Drive Everything Else →](glossary-6-17-user-attributes.md)

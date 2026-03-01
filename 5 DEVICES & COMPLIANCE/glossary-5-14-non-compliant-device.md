@@ -71,3 +71,8 @@ The BitLocker-and-Windows-Update incident from the opening was resolved by tempo
 💬 **Has your organization had a mass compliance incident where a routine update or change caused widespread access blocks?** The scenario where something routine breaks compliance at scale is a good forcing function for reviewing grace period settings and remediation guidance. How did your team respond?
 
 #EntraID #NonCompliantDevice #DeviceCompliance #Intune #ConditionalAccess #MicrosoftEntra #EndpointSecurity
+<!-- nav -->
+
+---
+
+[← Compliant Device: The Security Baseline That Has to Be Earned Continuously](glossary-5-13-compliant-device.md) | [Home](../README.md) | [User Provisioning: Accounts That Create Themselves (When It's Done Right) →](../6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-1-user-provisioning.md)

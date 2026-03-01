@@ -74,3 +74,8 @@ In all of these, Entra ID exists alongside AD. They're not competitors in these 
 **I'm curious:** Are you still managing on-premises Active Directory, or has your organization gone cloud-only? If you're hybrid — what's making the full migration difficult? The technical barriers are usually more interesting than people expect.
 
 #EntraID #ActiveDirectory #CloudMigration #BeginnerContent #IdentityManagement #HybridIT #WindowsServer
+<!-- nav -->
+
+---
+
+[← Cloud-Based Identity: What It Actually Means When the Servers Aren't Yours](glossary-1-4-cloud-based-identity.md) | [Home](../README.md) | [Hybrid Identity: Living in Two Worlds at Once →](glossary-1-6-hybrid-identity.md)

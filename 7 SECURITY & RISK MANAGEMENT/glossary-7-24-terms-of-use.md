@@ -75,3 +75,8 @@ ToU also doesn't provide a legal guarantee that the acceptance is binding in all
 💬 **Have you used Terms of Use as a Conditional Access grant control for compliance or audit purposes?** The timestamp-and-identity audit trail it provides is often better evidence of policy acceptance than the traditional "sign here" onboarding document approach. What drove your organization to add ToU to your access policies?
 
 #EntraID #TermsOfUse #ConditionalAccess #Compliance #MicrosoftEntra #AuditTrail #IdentityGovernance
+<!-- nav -->
+
+---
+
+[← Session Control: Governing What Happens After Access Is Granted](glossary-7-23-session-control.md) | [Home](../README.md) | [Authentication Strength: Why Some MFA Is Stronger Than Others →](glossary-7-25-authentication-strength.md)

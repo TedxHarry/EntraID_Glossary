@@ -82,3 +82,8 @@ Domain Services is "AD-as-a-service." Microsoft handles the infrastructure. You 
 💬 **Have you used Domain Services to enable a legacy application lift-and-shift that couldn't use modern authentication?** The pattern of "everything modern goes to Entra ID, everything legacy gets Domain Services as a compatibility layer" is becoming common in cloud migrations. What was the application or workload that made Domain Services the right answer for your environment?
 
 #EntraID #DomainServices #HybridIdentity #MicrosoftEntra #Azure #LegacyAuthentication #CloudMigration
+<!-- nav -->
+
+---
+
+[← Federation: When Entra ID Trusts Another Identity Provider for Authentication](glossary-8-6-federation.md) | [Home](../README.md) | [App Integration: Connecting Applications to Entra ID for Authentication →](../9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-1-app-integration.md)

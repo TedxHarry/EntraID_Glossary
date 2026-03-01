@@ -76,3 +76,8 @@ That inventory is the map for building deprovisioning coverage, app by app.
 💬 **How many of your organization's SaaS applications have automated deprovisioning configured through Entra ID?** The gap between "we disabled the Entra ID account" and "all app accounts are removed" is where most offboarding security risk lives. What does your current deprovisioning coverage look like?
 
 #EntraID #Deprovisioning #LifecycleManagement #SCIM #IdentityGovernance #MicrosoftEntra #OffboardingProcess
+<!-- nav -->
+
+---
+
+[← User Offboarding: The Day Someone Leaves Is the Day Access Has to Stop](glossary-6-3-user-offboarding.md) | [Home](../README.md) | [Lifecycle Management: Identity Automation for the Entire Employee Journey →](glossary-6-5-lifecycle-management.md)

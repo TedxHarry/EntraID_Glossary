@@ -73,3 +73,8 @@ For Entra ID to provision to an application via SCIM, the application must imple
 💬 **What's the application in your environment where SCIM provisioning would save the most manual work if you had it?** The application that's still on the manual offboarding checklist because it doesn't support SCIM is almost universal. What's keeping your highest-pain application from being automated?
 
 #EntraID #SCIM #UserProvisioning #AppIntegration #MicrosoftEntra #IdentityGovernance #Automation
+<!-- nav -->
+
+---
+
+[← SAML in App Integration: The Enterprise Protocol That Refuses to Retire](glossary-9-7-saml-app-integration.md) | [Home](../README.md) | [B2B Collaboration: Giving External Partners Access Without Managing Their Identity →](glossary-9-9-b2b-collaboration.md)

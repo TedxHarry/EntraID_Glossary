@@ -65,3 +65,8 @@ The Microsoft Managed setting lets Microsoft's defaults evolve as security recom
 💬 **Has your organization enabled number matching and additional context for Authenticator push notifications, and have you seen a measurable reduction in MFA fatigue attack attempts since enabling them?** The gap between "we have MFA" and "we have MFA that's actually resistant to the attacks people use against MFA" is where many organizations find themselves after an incident. What authentication method changes has your team made after seeing the limits of basic push MFA?
 
 #EntraID #MicrosoftAuthenticator #Passkeys #NumberMatching #MFAFatigue #MicrosoftEntra #PhishingResistant
+<!-- nav -->
+
+---
+
+[← Microsoft Graph API: Programmatic Access to Everything in Your Entra ID Tenant](glossary-13-21-graph-api.md) | [Home](../README.md) | [Microsoft Entra Suite: The Consolidated Identity and Network Access Platform →](glossary-13-23-microsoft-entra-suite.md)

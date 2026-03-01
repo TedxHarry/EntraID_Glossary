@@ -61,3 +61,8 @@ The visibility alone is often the most valuable initial outcome. Before Intune, 
 💬 **What was the first Intune compliance or configuration policy your organization enabled, and what did it reveal about the current state of your device fleet?** The first compliance policy rollout often surfaces surprises about device health that nobody knew were there. What did you find?
 
 #EntraID #Intune #EndpointManagement #DeviceCompliance #MicrosoftEntra #ZeroTrust #MDM
+<!-- nav -->
+
+---
+
+[← Device Enrollment: The Difference Between Knowing a Device Exists and Managing It](glossary-5-4-device-enrollment.md) | [Home](../README.md) | [Mobile Device Management: The Trade-Off Between Control and Trust →](glossary-5-6-mobile-device-management.md)

@@ -64,3 +64,8 @@ A few properties worth understanding when debugging or reviewing app implementat
 💬 **Have you ever had to debug an authorization code flow?** The "invalid_grant" error from a code that expired or was already used is a rite of passage for anyone integrating OAuth applications with Entra ID. What was the culprit in your case?
 
 #EntraID #OAuth2 #AuthorizationCode #AppDevelopment #CloudSecurity #MicrosoftEntra #IdentityPlatform
+<!-- nav -->
+
+---
+
+[← Microsoft Authenticator: More Than a Code Generator](../3%29%20AUTHENTICATION/glossary-3-8-microsoft-authenticator.md) | [Home](../README.md) | [The Authorization Endpoint: Reading What That Long URL Is Actually Saying →](glossary-4-2-authorization-endpoint.md)

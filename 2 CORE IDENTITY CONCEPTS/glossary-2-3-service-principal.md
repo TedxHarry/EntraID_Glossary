@@ -70,3 +70,8 @@ Finding service principals is straightforward: in the Entra admin center, go to 
 **Your experience:** Has the app registration vs. service principal distinction tripped you up before? The "I configured permissions but the app still doesn't work" problem is one of the most common Entra ID support scenarios. Drop your troubleshooting story below.
 
 #EntraID #ServicePrincipal #AppRegistration #CloudSecurity #MicrosoftEntra #IdentityManagement #DeveloperIdentity
+<!-- nav -->
+
+---
+
+[← The User Object: What's Actually Inside (And Why It Matters More Than You Think)](glossary-2-2-user-identity-object.md) | [Home](../README.md) | [Groups in Entra ID: The Access Management Tool You Should Be Using More →](glossary-2-4-group.md)

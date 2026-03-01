@@ -57,3 +57,8 @@ For multi-tenant applications (where users from any Entra ID tenant can sign in)
 💬 **Has your application ever stored `sub` as a user identifier and then had to migrate to `oid` after a reregistration or multi-tenant expansion?** This data migration is painful. The right architecture decision is to use `oid` + `tid` from the start for persistent user keys in application databases. What identifier does your application currently use for user records?
 
 #EntraID #SubjectClaim #OAuth2 #OIDC #TokenClaims #MicrosoftEntra #AppDevelopment
+<!-- nav -->
+
+---
+
+[← Actor: When an Application Acts as the Middle Layer Between User and API](glossary-11-6-actor-deep-dive.md) | [Home](../README.md) | [Bearer Token: Why "Whoever Has It Can Use It" Is Both the Point and the Risk →](glossary-11-8-bearer-token-deep-dive.md)

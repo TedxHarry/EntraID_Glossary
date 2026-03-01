@@ -81,3 +81,8 @@ Administrators without MFA are the highest-value targets for attackers. Get that
 💬 **Where is your organization on MFA coverage?** Are you at 100% for all users, or are there holdouts? What's been the biggest obstacle to full deployment?
 
 #EntraID #MFA #MultifactorAuthentication #CloudSecurity #MicrosoftEntra #ZeroTrust #IdentityProtection
+<!-- nav -->
+
+---
+
+[← Authentication Methods: Not All Proof Is Created Equal](glossary-3-3-authentication-method.md) | [Home](../README.md) | [Passwordless Authentication: Fixing the Right Problem →](glossary-3-5-passwordless-authentication.md)

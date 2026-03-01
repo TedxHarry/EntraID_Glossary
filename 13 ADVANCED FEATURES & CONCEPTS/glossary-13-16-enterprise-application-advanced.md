@@ -57,3 +57,8 @@ The provisioning log (separate from the sign-in log and audit log) records each 
 💬 **Do you know how many enterprise applications are in your Entra ID tenant right now, and when the last ownership and permission review was conducted?** The enterprise application sprawl problem is common: every SaaS subscription, every developer experiment, every gallery app added for evaluation contributes to the count. What's your team's approach to keeping the enterprise application inventory current and governed?
 
 #EntraID #EnterpriseApplication #AppGovernance #AppRoles #SCIM #MicrosoftEntra #IdentityGovernance
+<!-- nav -->
+
+---
+
+[← Consent Experience: What Users See When an App Asks for Permission](glossary-13-15-consent-experience.md) | [Home](../README.md) | [Cross-Tenant Access: Controlling How Your Tenant Interacts With Other Entra ID Tenants →](glossary-13-17-cross-tenant-access.md)

@@ -71,3 +71,8 @@ These errors come back in the URL, not as HTTP error codes. The application must
 💬 **Which authorization endpoint parameter has caused the most debugging pain in your integrations?** Redirect URI mismatches are the most common complaint from developers. But nonce validation failures and PKCE mismatches cause confusing errors that aren't always obvious from the error message. What parameter trips up your team the most?
 
 #EntraID #AuthorizationEndpoint #OAuth2 #OIDC #MSAL #MicrosoftEntra #AppDevelopment
+<!-- nav -->
+
+---
+
+[← Authorization Code Flow: The OAuth Dance That Powers Most Modern Web App Sign-Ins](glossary-11-1-authorization-code-flow.md) | [Home](../README.md) | [Token Endpoint: Where Codes and Credentials Become Tokens →](glossary-11-3-token-endpoint-deep-dive.md)

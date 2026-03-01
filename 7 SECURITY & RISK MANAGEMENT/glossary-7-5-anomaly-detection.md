@@ -69,3 +69,8 @@ The analyst's 4,200-file download was caught because her baseline was clear and 
 💬 **Has anomaly detection in Entra ID caught something in your environment that traditional threshold-based rules would have missed?** The bulk file download scenario is common, but some of the more subtle behavioral detections are genuinely impressive. What was the anomaly that made you trust the system?
 
 #EntraID #AnomalyDetection #IDProtection #BehavioralAnalysis #MicrosoftEntra #IdentitySecurity #ThreatDetection
+<!-- nav -->
+
+---
+
+[← ID Protection: Entra ID's Automated Threat Response System](../6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-7-4-id-protection.md) | [Home](../README.md) | [Leaked Credentials: When Your Password Shows Up on the Dark Web →](glossary-7-6-leaked-credentials.md)

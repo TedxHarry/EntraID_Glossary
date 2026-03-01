@@ -71,3 +71,8 @@ A successful token response is a JSON object with:
 💬 **What's the most useful thing you've found by decoding an access token from the token endpoint during a debugging session?** JWT decoders like jwt.ms make it easy to see the actual claims Entra ID is issuing. Have you ever found a missing claim, wrong audience, or unexpected permission scope that explained a permission failure?
 
 #EntraID #TokenEndpoint #OAuth2 #ClientCredentials #MSAL #MicrosoftEntra #AppDevelopment
+<!-- nav -->
+
+---
+
+[← Authorization Endpoint: What's Actually in That Sign-In URL](glossary-11-2-authorization-endpoint-deep-dive.md) | [Home](../README.md) | [Authorization Server: What Entra ID Is Actually Doing When It Issues a Token →](glossary-11-4-authorization-server-deep-dive.md)

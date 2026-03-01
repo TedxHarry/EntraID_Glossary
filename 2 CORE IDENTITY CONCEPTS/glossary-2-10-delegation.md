@@ -62,3 +62,8 @@ Delegation is what reduces those blast radii. It takes organizational work — i
 **Real question:** Does your helpdesk team have more directory role permissions than they actually use? If you're not sure, that's worth checking. Run a role assignment report for User Administrator and see who's in it — the answer might surprise you.
 
 #EntraID #Delegation #LeastPrivilege #CloudSecurity #MicrosoftEntra #IdentityGovernance #ZeroTrust
+<!-- nav -->
+
+---
+
+[← "Role": One Word, Three Completely Different Things in Entra ID](glossary-2-9-role-identity-role.md) | [Home](../README.md) | [Admin Roles: The Keys to Your Tenant and Why You Need Far Fewer of Them →](glossary-2-11-admin-role.md)

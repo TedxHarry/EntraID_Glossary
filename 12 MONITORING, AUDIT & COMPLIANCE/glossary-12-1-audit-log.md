@@ -90,3 +90,8 @@ Audit logs cover the identity plane (identity administration operations). They d
 💬 **How far back can your organization query Entra ID audit logs today, and is that sufficient for your compliance requirements?** The gap between "we have 30 days of built-in audit logs" and "our compliance requirement is 12 months" is common and fixable with diagnostic settings export. Has your organization set up long-term audit log retention, and what drove the decision to do it (or not)?
 
 #EntraID #AuditLog #Compliance #IdentityGovernance #MicrosoftEntra #SecurityOperations #LogAnalytics
+<!-- nav -->
+
+---
+
+[← Scope: Defining and Validating What Applications Are Allowed to Do With Your API](../11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-12-scope-deep-dive.md) | [Home](../README.md) | [Sign-In Log: The Authentication Record Your Security Team Needs to Know Cold →](glossary-12-2-sign-in-log.md)

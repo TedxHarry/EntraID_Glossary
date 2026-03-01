@@ -60,3 +60,8 @@ The goal isn't perfection overnight. It's moving toward individual accountabilit
 💬 **Does your organization still have shared accounts in use anywhere?** The vendor portal shared login is almost universal. The critical infrastructure shared admin account is more concerning. What's your approach to managing the ones that can't be eliminated immediately?
 
 #EntraID #SharedAccounts #IdentityGovernance #Accountability #MicrosoftEntra #ZeroTrust #SecurityBasics
+<!-- nav -->
+
+---
+
+[← Emergency Access: The Account You Hope You Never Need](glossary-6-20-emergency-access.md) | [Home](../README.md) | [Account Lockout: How Entra ID Stops Password Guessing Without Locking Out Real Users →](glossary-6-22-account-lockout.md)

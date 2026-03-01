@@ -70,3 +70,8 @@ That last test is the one most teams skip. Testing the happy path confirms the A
 💬 **Have you built or reviewed an API and found the audience validation was missing or misconfigured?** It's a subtle check that's easy to skip when you're focused on getting the happy path working. What does your team's API security review checklist cover?
 
 #EntraID #OAuth2 #Audience #TokenSecurity #APIDesign #MicrosoftEntra #AppSecurity
+<!-- nav -->
+
+---
+
+[← Scope: The Permission on the Label vs the Permission You Actually Need](glossary-4-11-scope.md) | [Home](../README.md) | [Authorization Grant: Four Ways to Get a Token (and When to Use Each) →](glossary-4-13-authorization-grant.md)

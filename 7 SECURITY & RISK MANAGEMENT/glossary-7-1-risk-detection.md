@@ -74,3 +74,8 @@ For confirmed attacks, remediation actions include: confirm sign-in as compromis
 💬 **Has Entra ID ID Protection detected a genuine attack on an account in your organization?** The impossible travel detection is often the first one that makes people realize the scale of credential attacks happening in the background. What was the first risk detection that caught something real?
 
 #EntraID #RiskDetection #IDProtection #ThreatIntelligence #MicrosoftEntra #IdentitySecurity #ZeroTrust
+<!-- nav -->
+
+---
+
+[← Password Reset: Giving Users the Key to Their Own Lock](../6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-23-password-reset.md) | [Home](../README.md) | [Risky Sign-In: When the Authentication Looks Suspicious →](glossary-7-2-risky-sign-in.md)

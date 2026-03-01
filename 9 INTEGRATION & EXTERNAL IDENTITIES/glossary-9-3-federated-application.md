@@ -77,3 +77,8 @@ Federation moves authentication to Entra ID. It doesn't eliminate all identity m
 💬 **What SAML attribute mapping issue took the longest to debug in your environment?** The claim type mismatch where the application expects `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` but Entra ID is sending `email` is a classic one. What was the configuration issue that required reading the SAML trace to find?
 
 #EntraID #FederatedApplication #SAML #OIDC #SSO #MicrosoftEntra #AppIntegration
+<!-- nav -->
+
+---
+
+[← Cloud Application: SaaS in Your Tenant's Security Perimeter](glossary-9-2-cloud-application.md) | [Home](../README.md) | [Application Proxy: Publishing On-Premises Apps Without VPN →](glossary-9-4-application-proxy.md)

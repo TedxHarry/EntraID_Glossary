@@ -67,3 +67,8 @@ For organizations planning identity investments, the Entra Suite represents Micr
 💬 **Is your organization evaluating the Microsoft Entra Suite as a consolidated licensing option, and which component represents the biggest gap in your current identity security stack?** The Entra product family has expanded significantly beyond the core Entra ID directory service. What identity capabilities are you most actively looking at to extend your current Entra ID deployment?
 
 #EntraID #MicrosoftEntra #EntraSuite #GlobalSecureAccess #IdentityGovernance #ZeroTrust #CIEM
+<!-- nav -->
+
+---
+
+[← Microsoft Authenticator Advanced: Beyond Basic MFA to Modern Authentication](glossary-13-22-microsoft-authenticator-advanced.md) | [Home](../README.md) | [Advanced Scenarios: Where Entra ID Capabilities Combine to Solve Complex Problems →](glossary-13-24-advanced-scenarios.md)

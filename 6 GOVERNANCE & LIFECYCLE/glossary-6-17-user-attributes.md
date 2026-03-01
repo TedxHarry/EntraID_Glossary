@@ -91,3 +91,8 @@ Manual attribute maintenance in Entra ID is error-prone at scale. Automating the
 💬 **Have you traced a governance or provisioning failure back to a missing or inaccurate user attribute?** The "dynamic group didn't include the right people" failure mode almost always comes down to attribute data quality. What was the attribute, and what was the impact of the mismatch?
 
 #EntraID #UserAttributes #DynamicGroups #IdentityGovernance #MicrosoftEntra #HRIntegration #DirectoryManagement
+<!-- nav -->
+
+---
+
+[← Bulk User Operations: When You Need to Change 500 Accounts at Once](glossary-6-16-bulk-user-operations.md) | [Home](../README.md) | [Source of Authority: Which System Gets to Say Who You Are →](glossary-6-18-source-of-authority.md)

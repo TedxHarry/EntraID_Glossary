@@ -92,3 +92,8 @@ The error response from the token endpoint always includes an `error` field and 
 💬 **What's the most cryptic token endpoint error you've had to debug?** The `invalid_grant` on a refresh token that worked fine yesterday is a classic that sends people down long rabbit holes before they find the revocation event in the logs.
 
 #EntraID #OAuth2 #TokenEndpoint #AppDevelopment #MicrosoftEntra #IdentityPlatform #CloudSecurity
+<!-- nav -->
+
+---
+
+[← The Authorization Endpoint: Reading What That Long URL Is Actually Saying](glossary-4-2-authorization-endpoint.md) | [Home](../README.md) | [The Authorization Server: What Entra ID Is Actually Doing Behind the Scenes →](glossary-4-4-authorization-server.md)

@@ -57,3 +57,8 @@ Requires explicit cross-tenant access configuration on both sides: both tenants 
 💬 **Has your organization needed to configure partner-specific cross-tenant access settings for a major collaboration or post-acquisition scenario, and what was the most complex trust configuration you had to work through?** The cross-tenant access settings framework replaced a lot of manual workarounds for trusted partner scenarios. What was your B2B collaboration experience like before these controls were available?
 
 #EntraID #CrossTenantAccess #B2BCollaboration #B2BDirectConnect #CrossTenantSync #MicrosoftEntra #ExternalIdentity
+<!-- nav -->
+
+---
+
+[← Enterprise Application (Advanced): Governing the Applications in Your Tenant Beyond Basic Integration](glossary-13-16-enterprise-application-advanced.md) | [Home](../README.md) | [Tenant Restrictions: Controlling Which Microsoft Tenants Your Users Can Access →](glossary-13-18-tenant-restrictions.md)

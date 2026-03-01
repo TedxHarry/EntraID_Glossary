@@ -68,3 +68,8 @@ For new deployments without Exchange hybrid or device hybrid requirements, Cloud
 💬 **Has your organization's synchronization architecture evolved beyond a single forest to single tenant setup, and what were the most complex attribute mapping or scoping challenges you had to solve?** Multi-forest scenarios from mergers and acquisitions are the most common driver of advanced synchronization complexity. What decision in your sync configuration do you wish you'd made differently at the start?
 
 #EntraID #CloudSync #EntraConnect #HybridIdentity #DirectorySynchronization #MicrosoftEntra #MultiForest
+<!-- nav -->
+
+---
+
+[← Attribute-Based Access Control: Access Decisions That Go Beyond Role Membership](glossary-13-1-abac.md) | [Home](../README.md) | [Continuous Authorization: Shifting From "You Were Trusted" to "You Are Trusted Right Now" →](glossary-13-3-continuous-authorization.md)

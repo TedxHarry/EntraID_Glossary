@@ -62,3 +62,8 @@ For most Entra ID scenarios today, bearer tokens are what you'll work with. Hand
 💬 **Have you ever found an access token in a log file, a shared document, or a place it definitely shouldn't have been?** It happens more often than people realize, and most of the time it's not malicious, just someone debugging without thinking through where the output goes. What did you do when you found it?
 
 #EntraID #BearerToken #OAuth2 #CloudSecurity #MicrosoftEntra #AppSecurity #IdentityPlatform
+<!-- nav -->
+
+---
+
+[← Refresh Tokens: What "Keep Me Signed In" Is Actually Doing](glossary-4-7-refresh-token.md) | [Home](../README.md) | [Token Lifetime: The Trade-Off Between Security and Not Annoying Your Users →](glossary-4-9-token-lifetime.md)

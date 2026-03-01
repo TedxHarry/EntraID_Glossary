@@ -74,3 +74,8 @@ Get comfortable with identity as a concept — all three types, their distinct s
 **Think about your own environment:** How many different types of identities are you managing right now? Most people underestimate the workload identity count — the apps and services quietly authenticating in the background. Do you know how many service principals are active in your tenant?
 
 #EntraID #IdentityManagement #CloudSecurity #MicrosoftEntra #ZeroTrust #WorkloadIdentity #BeginnerContent
+<!-- nav -->
+
+---
+
+[← Hybrid Identity: Living in Two Worlds at Once](../1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md) | [Home](../README.md) | [The User Object: What's Actually Inside (And Why It Matters More Than You Think) →](glossary-2-2-user-identity-object.md)

@@ -80,3 +80,8 @@ Understanding hybrid identity isn't advanced material. It's practical reality. �
 **Where are you in your hybrid journey?** Are you managing a hybrid environment right now, planning a migration toward cloud-only, or starting fresh with cloud-first? What's the hardest part you've run into — the technology or convincing stakeholders that it's worth the effort?
 
 #EntraID #HybridIdentity #ActiveDirectory #CloudMigration #IdentityManagement #EntraConnect #Microsoft365
+<!-- nav -->
+
+---
+
+[← Active Directory Isn't Dead. Here's Why That Matters.](glossary-1-5-active-directory.md) | [Home](../README.md) | [Identity: The Word Everyone Uses and Almost Nobody Defines →](../2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-1-identity.md)
