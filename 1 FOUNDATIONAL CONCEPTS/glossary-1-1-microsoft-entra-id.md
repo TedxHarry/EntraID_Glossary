@@ -61,13 +61,6 @@ Start here. Get this solid. Everything else builds on it. 🔑
 
 ---
 
-🔗 **Related Terms:**
-- Glossary#1.3 - Tenant (where your Entra ID instance lives)
-- Glossary#1.5 - Active Directory (the on-premises predecessor)
-- Glossary#1.4 - Cloud-Based Identity (what makes Entra ID different from legacy systems)
-
----
-
 💬 **Over to you:** When did you first encounter Entra ID (or Azure AD)? Were you thrown in the deep end like my colleague, or did you have time to learn it properly? Drop your story in the comments, I read every one.
 > ✍️ *Written by **TedxHarry***
 
