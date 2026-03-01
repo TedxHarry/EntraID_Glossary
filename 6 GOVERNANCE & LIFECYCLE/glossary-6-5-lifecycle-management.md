@@ -75,4 +75,4 @@ The goal isn't to remove humans from access decisions. It's to remove humans fro
 
 ---
 
-[← Deprovisioning](glossary-6-4-deprovisioning.md) | [Home](../README.md) | [Access Review →](glossary-6-6-access-review.md)
+[← Deprovisioning](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-4-deprovisioning.md) | [🏠 Contents](/README) | [Access Review →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-6-access-review.md)

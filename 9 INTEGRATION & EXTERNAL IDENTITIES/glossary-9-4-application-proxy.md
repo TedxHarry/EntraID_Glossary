@@ -75,4 +75,4 @@ Application Proxy supports multiple SSO mechanisms to provide seamless sign-in t
 
 ---
 
-[← Federated Application](glossary-9-3-federated-application.md) | [Home](../README.md) | [OAuth 2.0 (App Integration Focus) →](glossary-9-5-oauth2-app-integration.md)
+[← Federated Application](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-3-federated-application.md) | [🏠 Contents](/README) | [OAuth 2.0 (App Integration Focus) →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-5-oauth2-app-integration.md)

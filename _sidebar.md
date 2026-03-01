@@ -1,6 +1,7 @@
-- [Home](/)
+- [🏠 Home](/)
+- [📚 Table of Contents](/README)
 
-- **Section 1: FOUNDATIONAL CONCEPTS**
+- **🏗️ 1. FOUNDATIONAL CONCEPTS**
   - [Microsoft Entra ID](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-1-microsoft-entra-id.md)
   - [Microsoft Entra Product Family](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-2-microsoft-entra-product-family.md)
   - [Tenant](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-3-tenant.md)
@@ -8,7 +9,7 @@
   - [Active Directory](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-5-active-directory.md)
   - [Hybrid Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md)
 
-- **Section 2: CORE IDENTITY CONCEPTS**
+- **🪪 2. CORE IDENTITY CONCEPTS**
   - [Identity](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-1-identity.md)
   - [User (Identity Object)](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-2-user-identity-object.md)
   - [Service Principal](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-3-service-principal.md)
@@ -21,7 +22,7 @@
   - [Delegation](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-10-delegation.md)
   - [Admin Role](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-11-admin-role.md)
 
-- **Section 3: AUTHENTICATION**
+- **🔑 3. AUTHENTICATION**
   - [Authentication](/3%20AUTHENTICATION/glossary-3-1-authentication.md)
   - [Sign-In](/3%20AUTHENTICATION/glossary-3-2-sign-in.md)
   - [Authentication Method](/3%20AUTHENTICATION/glossary-3-3-authentication-method.md)
@@ -31,7 +32,7 @@
   - [Windows Hello](/3%20AUTHENTICATION/glossary-3-7-windows-hello.md)
   - [Microsoft Authenticator](/3%20AUTHENTICATION/glossary-3-8-microsoft-authenticator.md)
 
-- **Section 4: TOKENS & AUTHORIZATION**
+- **🎫 4. TOKENS & AUTHORIZATION**
   - [Authorization Code](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-1-authorization-code.md)
   - [Authorization Endpoint](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-2-authorization-endpoint.md)
   - [Token Endpoint](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-3-token-endpoint.md)
@@ -52,7 +53,7 @@
   - [SAML](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-18-saml.md)
   - [Token Security](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-19-token-security.md)
 
-- **Section 5: DEVICES & COMPLIANCE**
+- **💻 5. DEVICES & COMPLIANCE**
   - [Device Compliance](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-1-device-compliance.md)
   - [Device Identity](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-2-device-identity.md)
   - [Device Registration](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-3-device-registration.md)
@@ -68,7 +69,7 @@
   - [Compliant Device](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-13-compliant-device.md)
   - [Non-Compliant Device](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-14-non-compliant-device.md)
 
-- **Section 6: GOVERNANCE & LIFECYCLE**
+- **♻️ 6. GOVERNANCE & LIFECYCLE**
   - [User Provisioning](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-1-user-provisioning.md)
   - [User Onboarding](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-2-user-onboarding.md)
   - [User Offboarding](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-3-user-offboarding.md)
@@ -93,7 +94,7 @@
   - [Account Lockout](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-22-account-lockout.md)
   - [Password Reset](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-23-password-reset.md)
 
-- **Section 7: SECURITY & RISK MANAGEMENT**
+- **🛡️ 7. SECURITY & RISK MANAGEMENT**
   - [Risk Detection](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-1-risk-detection.md)
   - [Risky Sign-In](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-2-risky-sign-in.md)
   - [Risky User](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-3-risky-user.md)
@@ -127,7 +128,7 @@
   - [CA Template](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-31-ca-template.md)
   - [CAE (Continuous Access Evaluation)](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-32-cae.md)
 
-- **Section 8: HYBRID & ON-PREMISES**
+- **🔄 8. HYBRID & ON-PREMISES**
   - [Directory Synchronization](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md)
   - [Entra Connect](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-2-entra-connect.md)
   - [Cloud Sync](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-3-cloud-sync.md)
@@ -136,7 +137,7 @@
   - [Federation](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-6-federation.md)
   - [Domain Services](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-7-domain-services.md)
 
-- **Section 9: INTEGRATION & EXTERNAL IDENTITIES**
+- **🔗 9. INTEGRATION & EXTERNAL IDENTITIES**
   - [App Integration](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-1-app-integration.md)
   - [Cloud Application](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-2-cloud-application.md)
   - [Federated Application](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-3-federated-application.md)
@@ -154,7 +155,7 @@
   - [Workforce Tenant](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-15-workforce-tenant.md)
   - [External Tenant](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-16-external-tenant.md)
 
-- **Section 10: WORKLOAD IDENTITIES & MANAGED IDENTITIES**
+- **⚙️ 10. WORKLOAD IDENTITIES & MANAGED IDENTITIES**
   - [Workload Identity](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-1-workload-identity.md)
   - [Managed Identity](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-2-managed-identity.md)
   - [System-Assigned Managed Identity](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-3-system-assigned-managed-identity.md)
@@ -168,7 +169,7 @@
   - [LLTs (Long Lived Tokens)](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-11-llts.md)
   - [Conditional Access for Workloads](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-12-ca-for-workloads.md)
 
-- **Section 11: TOKENS & TECHNICAL DETAILS**
+- **🔬 11. TOKENS & TECHNICAL DETAILS**
   - [Authorization Code Flow](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-1-authorization-code-flow.md)
   - [Authorization Endpoint (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-2-authorization-endpoint-deep-dive.md)
   - [Token Endpoint (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-3-token-endpoint-deep-dive.md)
@@ -182,14 +183,14 @@
   - [Audience (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-11-audience-deep-dive.md)
   - [Scope (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-12-scope-deep-dive.md)
 
-- **Section 12: MONITORING, AUDIT & COMPLIANCE**
+- **📊 12. MONITORING, AUDIT & COMPLIANCE**
   - [Audit Log](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-1-audit-log.md)
   - [Sign-In Log](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-2-sign-in-log.md)
   - [Activity Report](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-3-activity-report.md)
   - [Security Alert](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-4-security-alert.md)
   - [Compliance](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-5-compliance.md)
 
-- **Section 13: ADVANCED FEATURES & CONCEPTS**
+- **🚀 13. ADVANCED FEATURES & CONCEPTS**
   - [Attribute-Based Access Control (ABAC)](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-1-abac.md)
   - [Cloud-Based Sync (Advanced)](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-2-cloud-sync-advanced.md)
   - [Continuous Authorization (CAE)](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-3-continuous-authorization.md)

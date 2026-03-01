@@ -75,4 +75,4 @@ Administrative Units scope role assignments but don't create full isolation. Obj
 
 ---
 
-[← Custom Role](glossary-13-12-custom-role.md) | [Home](../README.md) | [Consent Framework →](glossary-13-14-consent-framework.md)
+[← Custom Role](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-12-custom-role.md) | [🏠 Contents](/README) | [Consent Framework →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-14-consent-framework.md)

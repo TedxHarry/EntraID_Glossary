@@ -86,4 +86,4 @@ Enabling a new compliance requirement for 2,000 devices without testing first, t
 
 ---
 
-[← Managed Device](glossary-5-12-managed-device.md) | [Home](../README.md) | [Non-Compliant Device →](glossary-5-14-non-compliant-device.md)
+[← Managed Device](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-12-managed-device.md) | [🏠 Contents](/README) | [Non-Compliant Device →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-14-non-compliant-device.md)

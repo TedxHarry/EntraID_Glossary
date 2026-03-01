@@ -90,4 +90,4 @@ The combination means both on-premises AD policy and Entra ID policy apply to ev
 
 ---
 
-[← Password Hash Sync](glossary-8-4-password-hash-sync.md) | [Home](../README.md) | [Federation →](glossary-8-6-federation.md)
+[← Password Hash Sync](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-4-password-hash-sync.md) | [🏠 Contents](/README) | [Federation →](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-6-federation.md)

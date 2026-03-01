@@ -86,4 +86,4 @@ Entra Connect Health (available with Entra ID P2) provides monitoring dashboards
 
 ---
 
-[← CAE (Continuous Access Evaluation)](../7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-32-cae.md) | [Home](../README.md) | [Entra Connect →](glossary-8-2-entra-connect.md)
+[← CAE (Continuous Access Evaluation)](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-32-cae.md) | [🏠 Contents](/README) | [Entra Connect →](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-2-entra-connect.md)

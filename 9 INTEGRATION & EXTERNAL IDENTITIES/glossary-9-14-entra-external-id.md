@@ -74,4 +74,4 @@ This setting is particularly important for organizations with strong partner rel
 
 ---
 
-[← External Identity](glossary-9-13-external-identity.md) | [Home](../README.md) | [Workforce Tenant →](glossary-9-15-workforce-tenant.md)
+[← External Identity](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-13-external-identity.md) | [🏠 Contents](/README) | [Workforce Tenant →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-15-workforce-tenant.md)

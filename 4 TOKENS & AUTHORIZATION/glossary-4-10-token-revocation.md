@@ -83,4 +83,4 @@ CAE implementation in custom applications eliminates the window entirely for tho
 
 ---
 
-[← Token Lifetime](glossary-4-9-token-lifetime.md) | [Home](../README.md) | [Scope →](glossary-4-11-scope.md)
+[← Token Lifetime](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-9-token-lifetime.md) | [🏠 Contents](/README) | [Scope →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-11-scope.md)

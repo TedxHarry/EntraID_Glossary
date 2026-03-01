@@ -87,4 +87,4 @@ Then, as compliance policies are tuned and devices pass reliably, the policy req
 
 ---
 
-[← Device State](glossary-5-11-device-state.md) | [Home](../README.md) | [Compliant Device →](glossary-5-13-compliant-device.md)
+[← Device State](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-11-device-state.md) | [🏠 Contents](/README) | [Compliant Device →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-13-compliant-device.md)

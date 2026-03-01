@@ -68,4 +68,4 @@ The identity needs to persist across resource replacements. If the same logical 
 
 ---
 
-[← Managed Identity](glossary-10-2-managed-identity.md) | [Home](../README.md) | [User-Assigned Managed Identity →](glossary-10-4-user-assigned-managed-identity.md)
+[← Managed Identity](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-2-managed-identity.md) | [🏠 Contents](/README) | [User-Assigned Managed Identity →](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-4-user-assigned-managed-identity.md)

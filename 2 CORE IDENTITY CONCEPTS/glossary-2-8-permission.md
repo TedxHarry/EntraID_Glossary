@@ -74,4 +74,4 @@ Before requesting any permission, ask: does this need to act on behalf of a user
 
 ---
 
-[← Access Control](glossary-2-7-access-control.md) | [Home](../README.md) | [Role (Identity Role) →](glossary-2-9-role-identity-role.md)
+[← Access Control](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-7-access-control.md) | [🏠 Contents](/README) | [Role (Identity Role) →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-9-role-identity-role.md)

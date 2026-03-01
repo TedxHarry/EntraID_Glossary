@@ -89,4 +89,4 @@ For cases where the work to migrate can't happen immediately, create a specific 
 
 ---
 
-[← IP Address Range](glossary-7-21-ip-address-range.md) | [Home](../README.md) | [Session Control →](glossary-7-23-session-control.md)
+[← IP Address Range](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-21-ip-address-range.md) | [🏠 Contents](/README) | [Session Control →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-23-session-control.md)

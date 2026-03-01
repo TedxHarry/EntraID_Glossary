@@ -73,4 +73,4 @@ The complementary controls for complete data governance: DLP policies in Microso
 
 ---
 
-[← Cross-Tenant Access](glossary-13-17-cross-tenant-access.md) | [Home](../README.md) | [CA Optimization Agent →](glossary-13-19-ca-optimization-agent.md)
+[← Cross-Tenant Access](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-17-cross-tenant-access.md) | [🏠 Contents](/README) | [CA Optimization Agent →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-19-ca-optimization-agent.md)

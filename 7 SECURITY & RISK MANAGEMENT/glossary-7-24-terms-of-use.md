@@ -78,4 +78,4 @@ ToU also doesn't provide a legal guarantee that the acceptance is binding in all
 
 ---
 
-[← Session Control](glossary-7-23-session-control.md) | [Home](../README.md) | [Authentication Strength →](glossary-7-25-authentication-strength.md)
+[← Session Control](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-23-session-control.md) | [🏠 Contents](/README) | [Authentication Strength →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-25-authentication-strength.md)

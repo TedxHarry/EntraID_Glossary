@@ -76,4 +76,4 @@ These policies block or remediate risk detections in real time without analyst i
 
 ---
 
-[← Activity Report](glossary-12-3-activity-report.md) | [Home](../README.md) | [Compliance →](glossary-12-5-compliance.md)
+[← Activity Report](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-3-activity-report.md) | [🏠 Contents](/README) | [Compliance →](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-5-compliance.md)

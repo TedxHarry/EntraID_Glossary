@@ -74,4 +74,4 @@ These errors come back in the URL, not as HTTP error codes. The application must
 
 ---
 
-[← Authorization Code Flow](glossary-11-1-authorization-code-flow.md) | [Home](../README.md) | [Token Endpoint (Deep Dive) →](glossary-11-3-token-endpoint-deep-dive.md)
+[← Authorization Code Flow](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-1-authorization-code-flow.md) | [🏠 Contents](/README) | [Token Endpoint (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-3-token-endpoint-deep-dive.md)

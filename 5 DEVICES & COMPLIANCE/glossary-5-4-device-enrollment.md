@@ -64,4 +64,4 @@ In the incident that opened this article, the fix was implementing App Protectio
 
 ---
 
-[← Device Registration](glossary-5-3-device-registration.md) | [Home](../README.md) | [Intune →](glossary-5-5-intune.md)
+[← Device Registration](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-3-device-registration.md) | [🏠 Contents](/README) | [Intune →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-5-intune.md)

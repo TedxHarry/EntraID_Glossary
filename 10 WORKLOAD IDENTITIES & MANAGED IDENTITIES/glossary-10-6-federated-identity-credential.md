@@ -60,4 +60,4 @@ The choice between app registration and user-assigned managed identity for workl
 
 ---
 
-[← Workload Federation](glossary-10-5-workload-federation.md) | [Home](../README.md) | [Instance Metadata Service (IMDS) →](glossary-10-7-imds.md)
+[← Workload Federation](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-5-workload-federation.md) | [🏠 Contents](/README) | [Instance Metadata Service (IMDS) →](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-7-imds.md)

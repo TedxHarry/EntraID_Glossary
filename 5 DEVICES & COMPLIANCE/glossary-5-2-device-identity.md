@@ -73,4 +73,4 @@ Disabling the device object prevents the device from getting new device-level to
 
 ---
 
-[← Device Compliance](glossary-5-1-device-compliance.md) | [Home](../README.md) | [Device Registration →](glossary-5-3-device-registration.md)
+[← Device Compliance](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-1-device-compliance.md) | [🏠 Contents](/README) | [Device Registration →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-3-device-registration.md)

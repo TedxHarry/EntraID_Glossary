@@ -78,4 +78,4 @@ For new integrations where you have a choice, OIDC. For existing applications th
 
 ---
 
-[← OIDC (OpenID Connect)](glossary-4-17-oidc.md) | [Home](../README.md) | [Token Security →](glossary-4-19-token-security.md)
+[← OIDC (OpenID Connect)](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-17-oidc.md) | [🏠 Contents](/README) | [Token Security →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-19-token-security.md)

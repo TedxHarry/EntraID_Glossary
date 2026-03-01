@@ -82,4 +82,4 @@ The guest lifecycle requires active management:
 
 ---
 
-[← SCIM](glossary-9-8-scim.md) | [Home](../README.md) | [B2C →](glossary-9-10-b2c.md)
+[← SCIM](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-8-scim.md) | [🏠 Contents](/README) | [B2C →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-10-b2c.md)

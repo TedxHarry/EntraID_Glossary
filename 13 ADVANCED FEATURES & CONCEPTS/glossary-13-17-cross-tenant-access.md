@@ -60,4 +60,4 @@ Requires explicit cross-tenant access configuration on both sides: both tenants 
 
 ---
 
-[← Enterprise Application (Advanced)](glossary-13-16-enterprise-application-advanced.md) | [Home](../README.md) | [Tenant Restrictions →](glossary-13-18-tenant-restrictions.md)
+[← Enterprise Application (Advanced)](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-16-enterprise-application-advanced.md) | [🏠 Contents](/README) | [Tenant Restrictions →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-18-tenant-restrictions.md)

@@ -70,4 +70,4 @@ Sign-in logs in Log Analytics integrate with Microsoft Sentinel for alert rules,
 
 ---
 
-[← Audit Log](glossary-12-1-audit-log.md) | [Home](../README.md) | [Activity Report →](glossary-12-3-activity-report.md)
+[← Audit Log](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-1-audit-log.md) | [🏠 Contents](/README) | [Activity Report →](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-3-activity-report.md)

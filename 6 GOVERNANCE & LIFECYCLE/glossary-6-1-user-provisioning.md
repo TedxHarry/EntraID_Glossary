@@ -80,4 +80,4 @@ Automated provisioning solves all three.
 
 ---
 
-[← Non-Compliant Device](../5%20DEVICES%20%26%20COMPLIANCE/glossary-5-14-non-compliant-device.md) | [Home](../README.md) | [User Onboarding →](glossary-6-2-user-onboarding.md)
+[← Non-Compliant Device](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-14-non-compliant-device.md) | [🏠 Contents](/README) | [User Onboarding →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-2-user-onboarding.md)

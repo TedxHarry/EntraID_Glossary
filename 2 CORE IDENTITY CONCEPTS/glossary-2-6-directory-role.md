@@ -74,4 +74,4 @@ Global Admin should be a last resort for break-glass scenarios and a small numbe
 
 ---
 
-[← Enterprise Application](glossary-2-5-enterprise-application.md) | [Home](../README.md) | [Access Control →](glossary-2-7-access-control.md)
+[← Enterprise Application](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-5-enterprise-application.md) | [🏠 Contents](/README) | [Access Control →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-7-access-control.md)

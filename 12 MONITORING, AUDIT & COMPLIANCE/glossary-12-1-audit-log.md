@@ -93,4 +93,4 @@ Audit logs cover the identity plane (identity administration operations). They d
 
 ---
 
-[← Scope (Deep Dive)](../11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-12-scope-deep-dive.md) | [Home](../README.md) | [Sign-In Log →](glossary-12-2-sign-in-log.md)
+[← Scope (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-12-scope-deep-dive.md) | [🏠 Contents](/README) | [Sign-In Log →](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-2-sign-in-log.md)

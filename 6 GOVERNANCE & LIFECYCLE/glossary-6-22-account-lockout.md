@@ -75,4 +75,4 @@ Resetting the password is the fastest resolution for a user who needs immediate 
 
 ---
 
-[← Shared Accounts](glossary-6-21-shared-accounts.md) | [Home](../README.md) | [Password Reset →](glossary-6-23-password-reset.md)
+[← Shared Accounts](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-21-shared-accounts.md) | [🏠 Contents](/README) | [Password Reset →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-23-password-reset.md)

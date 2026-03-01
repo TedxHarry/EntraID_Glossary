@@ -85,4 +85,4 @@ Bulk license assignment is appropriate for initial migrations, one-time events, 
 
 ---
 
-[← Certification Campaign](glossary-6-15-certification-campaign.md) | [Home](../README.md) | [User Attributes →](glossary-6-17-user-attributes.md)
+[← Certification Campaign](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-15-certification-campaign.md) | [🏠 Contents](/README) | [User Attributes →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-17-user-attributes.md)

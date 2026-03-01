@@ -84,4 +84,4 @@ Administrators without MFA are the highest-value targets for attackers. Get that
 
 ---
 
-[← Authentication Method](glossary-3-3-authentication-method.md) | [Home](../README.md) | [Passwordless Authentication →](glossary-3-5-passwordless-authentication.md)
+[← Authentication Method](/3%20AUTHENTICATION/glossary-3-3-authentication-method.md) | [🏠 Contents](/README) | [Passwordless Authentication →](/3%20AUTHENTICATION/glossary-3-5-passwordless-authentication.md)

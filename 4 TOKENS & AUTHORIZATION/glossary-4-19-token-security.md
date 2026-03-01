@@ -68,4 +68,4 @@ Depending on the token's permissions and how long it was accessible, a breach no
 
 ---
 
-[← SAML](glossary-4-18-saml.md) | [Home](../README.md) | [Device Compliance →](../5%20DEVICES%20%26%20COMPLIANCE/glossary-5-1-device-compliance.md)
+[← SAML](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-18-saml.md) | [🏠 Contents](/README) | [Device Compliance →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-1-device-compliance.md)

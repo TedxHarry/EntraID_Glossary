@@ -78,4 +78,4 @@ Several controls reduce the impact of leaked credential events:
 
 ---
 
-[← Anomaly Detection](glossary-7-5-anomaly-detection.md) | [Home](../README.md) | [Threat Intelligence →](glossary-7-7-threat-intelligence.md)
+[← Anomaly Detection](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-5-anomaly-detection.md) | [🏠 Contents](/README) | [Threat Intelligence →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-7-threat-intelligence.md)

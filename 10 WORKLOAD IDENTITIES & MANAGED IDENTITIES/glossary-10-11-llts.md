@@ -56,4 +56,4 @@ The security improvement from LLTs comes from the combination of reduced authent
 
 ---
 
-[← CAE for Workloads](glossary-10-10-cae-for-workloads.md) | [Home](../README.md) | [Conditional Access for Workloads →](glossary-10-12-ca-for-workloads.md)
+[← CAE for Workloads](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-10-cae-for-workloads.md) | [🏠 Contents](/README) | [Conditional Access for Workloads →](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-12-ca-for-workloads.md)

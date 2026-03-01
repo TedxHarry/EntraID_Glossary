@@ -65,4 +65,4 @@ Both YES means hybrid joined. If AzureAdJoined is NO but DomainJoined is YES, th
 
 ---
 
-[← Device Identity](glossary-5-2-device-identity.md) | [Home](../README.md) | [Device Enrollment →](glossary-5-4-device-enrollment.md)
+[← Device Identity](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-2-device-identity.md) | [🏠 Contents](/README) | [Device Enrollment →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-4-device-enrollment.md)

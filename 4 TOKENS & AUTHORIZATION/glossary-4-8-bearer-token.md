@@ -65,4 +65,4 @@ For most Entra ID scenarios today, bearer tokens are what you'll work with. Hand
 
 ---
 
-[← Refresh Token](glossary-4-7-refresh-token.md) | [Home](../README.md) | [Token Lifetime →](glossary-4-9-token-lifetime.md)
+[← Refresh Token](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-7-refresh-token.md) | [🏠 Contents](/README) | [Token Lifetime →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-9-token-lifetime.md)

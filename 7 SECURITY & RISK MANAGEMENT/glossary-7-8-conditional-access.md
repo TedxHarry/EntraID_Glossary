@@ -85,4 +85,4 @@ Skipping report-only mode is how organizations accidentally lock themselves out 
 
 ---
 
-[← Threat Intelligence](glossary-7-7-threat-intelligence.md) | [Home](../README.md) | [CA Policy →](glossary-7-9-ca-policy.md)
+[← Threat Intelligence](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-7-threat-intelligence.md) | [🏠 Contents](/README) | [CA Policy →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-9-ca-policy.md)

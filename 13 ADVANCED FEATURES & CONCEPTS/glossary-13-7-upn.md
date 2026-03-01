@@ -65,4 +65,4 @@ Alternate Login ID has limitations for some on-premises scenarios (Kerberos auth
 
 ---
 
-[← Real-Time Remediation](glossary-13-6-real-time-remediation.md) | [Home](../README.md) | [OID (Object ID) →](glossary-13-8-oid.md)
+[← Real-Time Remediation](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-6-real-time-remediation.md) | [🏠 Contents](/README) | [OID (Object ID) →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-8-oid.md)

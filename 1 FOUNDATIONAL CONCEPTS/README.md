@@ -1,18 +1,20 @@
-# Section 1: FOUNDATIONAL CONCEPTS
+# 🏗️ Section 1: FOUNDATIONAL CONCEPTS
 
-The starting point for everything. What Entra ID actually is, how tenants work, what makes cloud identity different from on-premises, and why most organizations live in a hybrid world.
+> The starting point for everything. What Entra ID actually is, how tenants work, what makes cloud identity different from on-premises, and why most organizations live in a hybrid world.
 
 ---
 
 ## Articles in this section
 
-1. [Microsoft Entra ID](glossary-1-1-microsoft-entra-id.md) — *The Foundation of Modern Identity*
-2. [Microsoft Entra Product Family](glossary-1-2-microsoft-entra-product-family.md) — *Why There's More Than Just Entra ID*
-3. [Tenant](glossary-1-3-tenant.md) — *(And Why Getting This Wrong Causes Real Problems)*
-4. [Cloud-Based Identity](glossary-1-4-cloud-based-identity.md) — *What It Actually Means When the Servers Aren't Yours*
-5. [Active Directory](glossary-1-5-active-directory.md) — *Here's Why That Matters.*
-6. [Hybrid Identity](glossary-1-6-hybrid-identity.md) — *Living in Two Worlds at Once*
+| # | Term | About |
+|---|------|-------|
+| 1 | [Microsoft Entra ID](glossary-1-1-microsoft-entra-id.md) | Microsoft Entra ID |
+| 2 | [Microsoft Entra Product Family](glossary-1-2-microsoft-entra-product-family.md) | Microsoft Entra Product Family |
+| 3 | [Tenant](glossary-1-3-tenant.md) | Tenant |
+| 4 | [Cloud-Based Identity](glossary-1-4-cloud-based-identity.md) | Cloud-Based Identity |
+| 5 | [Active Directory](glossary-1-5-active-directory.md) | Active Directory |
+| 6 | [Hybrid Identity](glossary-1-6-hybrid-identity.md) | Hybrid Identity |
 
 ---
 
-[← Back to Main Glossary](../README.md)
+[⬅️ Back to Table of Contents](/README)

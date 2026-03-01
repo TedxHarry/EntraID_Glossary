@@ -86,4 +86,4 @@ Require MFA raises the bar significantly. It doesn't make an account unbreakable
 
 ---
 
-[← Block Access](glossary-7-14-block-access.md) | [Home](../README.md) | [Require Device Compliance →](glossary-7-16-require-device-compliance.md)
+[← Block Access](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-14-block-access.md) | [🏠 Contents](/README) | [Require Device Compliance →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-16-require-device-compliance.md)

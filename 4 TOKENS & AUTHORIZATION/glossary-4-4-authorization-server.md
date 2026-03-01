@@ -78,4 +78,4 @@ The authorization server is the trust anchor. Everything else is built on top of
 
 ---
 
-[← Token Endpoint](glossary-4-3-token-endpoint.md) | [Home](../README.md) | [Access Token →](glossary-4-5-access-token.md)
+[← Token Endpoint](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-3-token-endpoint.md) | [🏠 Contents](/README) | [Access Token →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-5-access-token.md)

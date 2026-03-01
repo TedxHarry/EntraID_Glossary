@@ -78,4 +78,4 @@ Cloud-based identity isn't universally easier. It's a different kind of work, wi
 
 ---
 
-[← Tenant](glossary-1-3-tenant.md) | [Home](../README.md) | [Active Directory →](glossary-1-5-active-directory.md)
+[← Tenant](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-3-tenant.md) | [🏠 Contents](/README) | [Active Directory →](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-5-active-directory.md)

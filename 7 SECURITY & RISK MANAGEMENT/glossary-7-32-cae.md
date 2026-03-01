@@ -84,4 +84,4 @@ For high-security scenarios (admin accounts, sensitive data access), strict enfo
 
 ---
 
-[← CA Template](glossary-7-31-ca-template.md) | [Home](../README.md) | [Directory Synchronization →](../8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md)
+[← CA Template](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-31-ca-template.md) | [🏠 Contents](/README) | [Directory Synchronization →](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md)

@@ -65,4 +65,4 @@ Delegation is what reduces those blast radii. It takes organizational work — i
 
 ---
 
-[← Role (Identity Role)](glossary-2-9-role-identity-role.md) | [Home](../README.md) | [Admin Role →](glossary-2-11-admin-role.md)
+[← Role (Identity Role)](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-9-role-identity-role.md) | [🏠 Contents](/README) | [Admin Role →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-11-admin-role.md)

@@ -78,4 +78,4 @@ The enrollment experience from the user's side: they open a sign-in on their man
 
 ---
 
-[← FIDO2](glossary-3-6-fido2.md) | [Home](../README.md) | [Microsoft Authenticator →](glossary-3-8-microsoft-authenticator.md)
+[← FIDO2](/3%20AUTHENTICATION/glossary-3-6-fido2.md) | [🏠 Contents](/README) | [Microsoft Authenticator →](/3%20AUTHENTICATION/glossary-3-8-microsoft-authenticator.md)

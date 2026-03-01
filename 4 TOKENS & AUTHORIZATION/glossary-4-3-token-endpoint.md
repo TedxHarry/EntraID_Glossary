@@ -95,4 +95,4 @@ The error response from the token endpoint always includes an `error` field and 
 
 ---
 
-[← Authorization Endpoint](glossary-4-2-authorization-endpoint.md) | [Home](../README.md) | [Authorization Server →](glossary-4-4-authorization-server.md)
+[← Authorization Endpoint](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-2-authorization-endpoint.md) | [🏠 Contents](/README) | [Authorization Server →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-4-authorization-server.md)

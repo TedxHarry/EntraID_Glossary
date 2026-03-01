@@ -66,4 +66,4 @@ The recommended pattern: start with High risk thresholds for blocking, allow sel
 
 ---
 
-[← Passwordless Auth (Advanced)](glossary-13-5-passwordless-auth-advanced.md) | [Home](../README.md) | [UPN (User Principal Name) →](glossary-13-7-upn.md)
+[← Passwordless Auth (Advanced)](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-5-passwordless-auth-advanced.md) | [🏠 Contents](/README) | [UPN (User Principal Name) →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-7-upn.md)

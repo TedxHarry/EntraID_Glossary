@@ -63,4 +63,4 @@ If user department attributes in Entra ID aren't kept in sync with the HR system
 
 ---
 
-[← Compliance](../12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-5-compliance.md) | [Home](../README.md) | [Cloud-Based Sync (Advanced) →](glossary-13-2-cloud-sync-advanced.md)
+[← Compliance](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-5-compliance.md) | [🏠 Contents](/README) | [Cloud-Based Sync (Advanced) →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-2-cloud-sync-advanced.md)

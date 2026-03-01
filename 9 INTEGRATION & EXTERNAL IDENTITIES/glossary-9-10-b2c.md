@@ -70,4 +70,4 @@ The underlying need remains the same: organizations building consumer-facing app
 
 ---
 
-[← B2B Collaboration](glossary-9-9-b2b-collaboration.md) | [Home](../README.md) | [CIAM →](glossary-9-11-ciam.md)
+[← B2B Collaboration](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-9-b2b-collaboration.md) | [🏠 Contents](/README) | [CIAM →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-11-ciam.md)

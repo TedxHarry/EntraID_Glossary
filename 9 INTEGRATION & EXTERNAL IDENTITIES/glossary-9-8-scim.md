@@ -76,4 +76,4 @@ For Entra ID to provision to an application via SCIM, the application must imple
 
 ---
 
-[← SAML (App Integration Focus)](glossary-9-7-saml-app-integration.md) | [Home](../README.md) | [B2B Collaboration →](glossary-9-9-b2b-collaboration.md)
+[← SAML (App Integration Focus)](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-7-saml-app-integration.md) | [🏠 Contents](/README) | [B2B Collaboration →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-9-b2b-collaboration.md)

@@ -71,4 +71,4 @@ For new deployments without Exchange hybrid or device hybrid requirements, Cloud
 
 ---
 
-[← Attribute-Based Access Control (ABAC)](glossary-13-1-abac.md) | [Home](../README.md) | [Continuous Authorization (CAE) →](glossary-13-3-continuous-authorization.md)
+[← Attribute-Based Access Control (ABAC)](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-1-abac.md) | [🏠 Contents](/README) | [Continuous Authorization (CAE) →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-3-continuous-authorization.md)

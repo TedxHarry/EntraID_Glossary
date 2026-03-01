@@ -82,4 +82,4 @@ Forcing a password change on next sign-in ensures the temporary password is imme
 
 ---
 
-[← Account Lockout](glossary-6-22-account-lockout.md) | [Home](../README.md) | [Risk Detection →](../7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-1-risk-detection.md)
+[← Account Lockout](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-22-account-lockout.md) | [🏠 Contents](/README) | [Risk Detection →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-1-risk-detection.md)

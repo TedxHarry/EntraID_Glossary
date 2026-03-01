@@ -75,4 +75,4 @@ Strong authentication is the floor. Build everything else on top of it.
 
 ---
 
-[← Admin Role](../2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-11-admin-role.md) | [Home](../README.md) | [Sign-In →](glossary-3-2-sign-in.md)
+[← Admin Role](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-11-admin-role.md) | [🏠 Contents](/README) | [Sign-In →](/3%20AUTHENTICATION/glossary-3-2-sign-in.md)

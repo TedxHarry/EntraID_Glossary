@@ -83,4 +83,4 @@ Understanding hybrid identity isn't advanced material. It's practical reality. �
 
 ---
 
-[← Active Directory](glossary-1-5-active-directory.md) | [Home](../README.md) | [Identity →](../2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-1-identity.md)
+[← Active Directory](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-5-active-directory.md) | [🏠 Contents](/README) | [Identity →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-1-identity.md)

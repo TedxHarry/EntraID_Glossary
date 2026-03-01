@@ -73,4 +73,4 @@ A resource server that doesn't properly validate access tokens is accepting unsi
 
 ---
 
-[← Authorization Server](glossary-4-4-authorization-server.md) | [Home](../README.md) | [ID Token →](glossary-4-6-id-token.md)
+[← Authorization Server](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-4-authorization-server.md) | [🏠 Contents](/README) | [ID Token →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-6-id-token.md)

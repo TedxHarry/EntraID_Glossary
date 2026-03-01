@@ -80,4 +80,4 @@ This makes PIM-governed custom roles the right pattern for even helpdesk capabil
 
 ---
 
-[← Sync Agent](glossary-13-11-sync-agent.md) | [Home](../README.md) | [Admin Unit →](glossary-13-13-admin-unit.md)
+[← Sync Agent](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-11-sync-agent.md) | [🏠 Contents](/README) | [Admin Unit →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-13-admin-unit.md)

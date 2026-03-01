@@ -60,4 +60,4 @@ The provisioning log (separate from the sign-in log and audit log) records each 
 
 ---
 
-[← Consent Experience](glossary-13-15-consent-experience.md) | [Home](../README.md) | [Cross-Tenant Access →](glossary-13-17-cross-tenant-access.md)
+[← Consent Experience](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-15-consent-experience.md) | [🏠 Contents](/README) | [Cross-Tenant Access →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-17-cross-tenant-access.md)

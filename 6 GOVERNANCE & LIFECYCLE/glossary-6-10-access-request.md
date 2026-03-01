@@ -71,4 +71,4 @@ The goal isn't to eliminate all IT involvement in access requests. It's to autom
 
 ---
 
-[← Entitlement Management](glossary-6-9-entitlement-management.md) | [Home](../README.md) | [Approval Workflow →](glossary-6-11-approval-workflow.md)
+[← Entitlement Management](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-9-entitlement-management.md) | [🏠 Contents](/README) | [Approval Workflow →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-11-approval-workflow.md)

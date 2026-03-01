@@ -81,4 +81,4 @@ Start with Global Administrator. Convert permanent assignments to eligible. Set 
 
 ---
 
-[← Auto-Provision](glossary-6-12-auto-provision.md) | [Home](../README.md) | [Governance →](glossary-6-14-governance.md)
+[← Auto-Provision](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-12-auto-provision.md) | [🏠 Contents](/README) | [Governance →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-14-governance.md)

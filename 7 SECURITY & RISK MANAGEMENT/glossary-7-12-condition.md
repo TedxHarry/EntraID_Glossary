@@ -74,4 +74,4 @@ Testing condition behavior with the What If tool before enforcement is essential
 
 ---
 
-[← Assignment](glossary-7-11-assignment.md) | [Home](../README.md) | [Grant Control →](glossary-7-13-grant-control.md)
+[← Assignment](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-11-assignment.md) | [🏠 Contents](/README) | [Grant Control →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-13-grant-control.md)

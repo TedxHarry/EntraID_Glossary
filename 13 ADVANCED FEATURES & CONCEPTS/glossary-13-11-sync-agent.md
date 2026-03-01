@@ -63,4 +63,4 @@ Keeping agents updated matters: security fixes, bug fixes, and new feature suppo
 
 ---
 
-[← Service Account](glossary-13-10-service-account.md) | [Home](../README.md) | [Custom Role →](glossary-13-12-custom-role.md)
+[← Service Account](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-10-service-account.md) | [🏠 Contents](/README) | [Custom Role →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-12-custom-role.md)

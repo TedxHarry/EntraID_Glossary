@@ -77,4 +77,4 @@ Pass-Through Authentication and Federation are appropriate for specific requirem
 
 ---
 
-[← Cloud Sync](glossary-8-3-cloud-sync.md) | [Home](../README.md) | [Pass-Through Auth →](glossary-8-5-pass-through-auth.md)
+[← Cloud Sync](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-3-cloud-sync.md) | [🏠 Contents](/README) | [Pass-Through Auth →](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-5-pass-through-auth.md)

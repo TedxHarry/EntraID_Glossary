@@ -100,4 +100,4 @@ This is why exclusions need careful design. An exclusion from one policy doesn't
 
 ---
 
-[← Conditional Access](glossary-7-8-conditional-access.md) | [Home](../README.md) | [Zero Trust →](glossary-7-10-zero-trust.md)
+[← Conditional Access](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-8-conditional-access.md) | [🏠 Contents](/README) | [Zero Trust →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-10-zero-trust.md)

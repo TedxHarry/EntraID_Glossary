@@ -81,4 +81,4 @@ Most scenarios are the former. Block access is reserved for scenarios where the 
 
 ---
 
-[← Grant Control](glossary-7-13-grant-control.md) | [Home](../README.md) | [Require MFA →](glossary-7-15-require-mfa.md)
+[← Grant Control](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-13-grant-control.md) | [🏠 Contents](/README) | [Require MFA →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-15-require-mfa.md)

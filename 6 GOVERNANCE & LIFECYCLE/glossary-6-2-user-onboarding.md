@@ -77,4 +77,4 @@ Manager-driven onboarding reduces IT involvement in access decisions and puts th
 
 ---
 
-[← User Provisioning](glossary-6-1-user-provisioning.md) | [Home](../README.md) | [User Offboarding →](glossary-6-3-user-offboarding.md)
+[← User Provisioning](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-1-user-provisioning.md) | [🏠 Contents](/README) | [User Offboarding →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-3-user-offboarding.md)

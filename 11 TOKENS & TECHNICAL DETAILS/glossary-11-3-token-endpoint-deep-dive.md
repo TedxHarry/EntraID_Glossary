@@ -74,4 +74,4 @@ A successful token response is a JSON object with:
 
 ---
 
-[← Authorization Endpoint (Deep Dive)](glossary-11-2-authorization-endpoint-deep-dive.md) | [Home](../README.md) | [Authorization Server (Deep Dive) →](glossary-11-4-authorization-server-deep-dive.md)
+[← Authorization Endpoint (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-2-authorization-endpoint-deep-dive.md) | [🏠 Contents](/README) | [Authorization Server (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-4-authorization-server-deep-dive.md)

@@ -60,4 +60,4 @@ The `$batch` endpoint allows sending 20 Graph requests in a single HTTP call, dr
 
 ---
 
-[← Policy Evaluation](glossary-13-20-policy-evaluation.md) | [Home](../README.md) | [Microsoft Authenticator Advanced →](glossary-13-22-microsoft-authenticator-advanced.md)
+[← Policy Evaluation](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-20-policy-evaluation.md) | [🏠 Contents](/README) | [Microsoft Authenticator Advanced →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-22-microsoft-authenticator-advanced.md)

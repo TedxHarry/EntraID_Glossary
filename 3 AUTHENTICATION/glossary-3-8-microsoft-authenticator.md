@@ -76,4 +76,4 @@ For organizations early in their authentication journey, "Authenticator with pus
 
 ---
 
-[← Windows Hello](glossary-3-7-windows-hello.md) | [Home](../README.md) | [Authorization Code →](../4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-1-authorization-code.md)
+[← Windows Hello](/3%20AUTHENTICATION/glossary-3-7-windows-hello.md) | [🏠 Contents](/README) | [Authorization Code →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-1-authorization-code.md)

@@ -77,4 +77,4 @@ In all of these, Entra ID exists alongside AD. They're not competitors in these 
 
 ---
 
-[← Cloud-Based Identity](glossary-1-4-cloud-based-identity.md) | [Home](../README.md) | [Hybrid Identity →](glossary-1-6-hybrid-identity.md)
+[← Cloud-Based Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-4-cloud-based-identity.md) | [🏠 Contents](/README) | [Hybrid Identity →](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md)

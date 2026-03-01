@@ -69,4 +69,4 @@ The tenant is the foundation. Everything else sits on top of it. 🏢
 
 ---
 
-[← Microsoft Entra Product Family](glossary-1-2-microsoft-entra-product-family.md) | [Home](../README.md) | [Cloud-Based Identity →](glossary-1-4-cloud-based-identity.md)
+[← Microsoft Entra Product Family](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-2-microsoft-entra-product-family.md) | [🏠 Contents](/README) | [Cloud-Based Identity →](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-4-cloud-based-identity.md)

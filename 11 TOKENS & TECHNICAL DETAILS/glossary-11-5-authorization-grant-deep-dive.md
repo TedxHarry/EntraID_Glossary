@@ -58,4 +58,4 @@ The correct answer is client credentials. Service accounts are the wrong solutio
 
 ---
 
-[← Authorization Server (Deep Dive)](glossary-11-4-authorization-server-deep-dive.md) | [Home](../README.md) | [Actor (Deep Dive) →](glossary-11-6-actor-deep-dive.md)
+[← Authorization Server (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-4-authorization-server-deep-dive.md) | [🏠 Contents](/README) | [Actor (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-6-actor-deep-dive.md)

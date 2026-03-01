@@ -70,4 +70,4 @@ Before marking a Named Location as trusted or building policies around it, verif
 
 ---
 
-[← Trusted Location](glossary-7-20-trusted-location.md) | [Home](../README.md) | [Legacy Authentication →](glossary-7-22-legacy-authentication.md)
+[← Trusted Location](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-20-trusted-location.md) | [🏠 Contents](/README) | [Legacy Authentication →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-22-legacy-authentication.md)

@@ -73,4 +73,4 @@ Different teams tend to own different layers. The identity team manages director
 
 ---
 
-[← Permission](glossary-2-8-permission.md) | [Home](../README.md) | [Delegation →](glossary-2-10-delegation.md)
+[← Permission](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-8-permission.md) | [🏠 Contents](/README) | [Delegation →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-10-delegation.md)

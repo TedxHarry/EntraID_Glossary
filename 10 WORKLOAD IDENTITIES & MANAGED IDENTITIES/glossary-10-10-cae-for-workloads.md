@@ -62,4 +62,4 @@ Knowing which Azure services support CAE matters when designing incident respons
 
 ---
 
-[← Azure Resource Manager](glossary-10-9-azure-resource-manager.md) | [Home](../README.md) | [LLTs (Long Lived Tokens) →](glossary-10-11-llts.md)
+[← Azure Resource Manager](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-9-azure-resource-manager.md) | [🏠 Contents](/README) | [LLTs (Long Lived Tokens) →](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-11-llts.md)

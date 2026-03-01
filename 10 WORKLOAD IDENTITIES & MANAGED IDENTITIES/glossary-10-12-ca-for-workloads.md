@@ -64,4 +64,4 @@ Workload CA conditions for managed identities are an evolving area. The practica
 
 ---
 
-[← LLTs (Long Lived Tokens)](glossary-10-11-llts.md) | [Home](../README.md) | [Authorization Code Flow →](../11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-1-authorization-code-flow.md)
+[← LLTs (Long Lived Tokens)](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-11-llts.md) | [🏠 Contents](/README) | [Authorization Code Flow →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-1-authorization-code-flow.md)

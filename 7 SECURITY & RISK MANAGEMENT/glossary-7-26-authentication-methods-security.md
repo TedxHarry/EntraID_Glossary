@@ -73,4 +73,4 @@ Each phase improves the security posture. Not every organization needs to reach 
 
 ---
 
-[← Authentication Strength](glossary-7-25-authentication-strength.md) | [Home](../README.md) | [SSPR (Security Focus) →](glossary-7-27-sspr-security.md)
+[← Authentication Strength](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-25-authentication-strength.md) | [🏠 Contents](/README) | [SSPR (Security Focus) →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-27-sspr-security.md)

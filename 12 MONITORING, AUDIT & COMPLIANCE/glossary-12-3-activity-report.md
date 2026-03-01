@@ -62,4 +62,4 @@ The Graph Reporting API supports reports like `getAzureADApplicationSignInSummar
 
 ---
 
-[← Sign-In Log](glossary-12-2-sign-in-log.md) | [Home](../README.md) | [Security Alert →](glossary-12-4-security-alert.md)
+[← Sign-In Log](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-2-sign-in-log.md) | [🏠 Contents](/README) | [Security Alert →](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-4-security-alert.md)

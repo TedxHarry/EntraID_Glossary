@@ -62,4 +62,4 @@ For service accounts that must exist, the governance requirements:
 
 ---
 
-[← Global Secure Access](glossary-13-9-global-secure-access.md) | [Home](../README.md) | [Sync Agent →](glossary-13-11-sync-agent.md)
+[← Global Secure Access](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-9-global-secure-access.md) | [🏠 Contents](/README) | [Sync Agent →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-11-sync-agent.md)

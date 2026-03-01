@@ -73,4 +73,4 @@ Role assignments in ARM templates look like nested resources or separate resourc
 
 ---
 
-[← Principal ID](glossary-10-8-principal-id.md) | [Home](../README.md) | [CAE for Workloads →](glossary-10-10-cae-for-workloads.md)
+[← Principal ID](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-8-principal-id.md) | [🏠 Contents](/README) | [CAE for Workloads →](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-10-cae-for-workloads.md)

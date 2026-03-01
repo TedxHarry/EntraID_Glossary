@@ -90,4 +90,4 @@ Testing one user before enabling broad provisioning catches attribute mapping er
 
 ---
 
-[← Approval Workflow](glossary-6-11-approval-workflow.md) | [Home](../README.md) | [Just-in-Time Access →](glossary-6-13-just-in-time-access.md)
+[← Approval Workflow](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-11-approval-workflow.md) | [🏠 Contents](/README) | [Just-in-Time Access →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-13-just-in-time-access.md)

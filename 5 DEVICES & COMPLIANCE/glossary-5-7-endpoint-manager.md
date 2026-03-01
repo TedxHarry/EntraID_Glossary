@@ -80,4 +80,4 @@ Those three cover the daily operational tasks for most organizations.
 
 ---
 
-[← Mobile Device Management](glossary-5-6-mobile-device-management.md) | [Home](../README.md) | [Device Trust →](glossary-5-8-device-trust.md)
+[← Mobile Device Management](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-6-mobile-device-management.md) | [🏠 Contents](/README) | [Device Trust →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-8-device-trust.md)

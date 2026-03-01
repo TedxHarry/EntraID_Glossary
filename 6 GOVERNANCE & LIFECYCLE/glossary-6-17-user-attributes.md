@@ -94,4 +94,4 @@ Manual attribute maintenance in Entra ID is error-prone at scale. Automating the
 
 ---
 
-[← Bulk User Operations](glossary-6-16-bulk-user-operations.md) | [Home](../README.md) | [Source of Authority →](glossary-6-18-source-of-authority.md)
+[← Bulk User Operations](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-16-bulk-user-operations.md) | [🏠 Contents](/README) | [Source of Authority →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-18-source-of-authority.md)

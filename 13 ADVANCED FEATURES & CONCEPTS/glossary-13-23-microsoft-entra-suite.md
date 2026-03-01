@@ -70,4 +70,4 @@ For organizations planning identity investments, the Entra Suite represents Micr
 
 ---
 
-[← Microsoft Authenticator Advanced](glossary-13-22-microsoft-authenticator-advanced.md) | [Home](../README.md) | [Advanced Scenarios →](glossary-13-24-advanced-scenarios.md)
+[← Microsoft Authenticator Advanced](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-22-microsoft-authenticator-advanced.md) | [🏠 Contents](/README) | [Advanced Scenarios →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-24-advanced-scenarios.md)

@@ -70,4 +70,4 @@ Applications can be multi-tenant and registered in either tenant depending on th
 
 ---
 
-[← Workforce Tenant](glossary-9-15-workforce-tenant.md) | [Home](../README.md) | [Workload Identity →](../10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-1-workload-identity.md)
+[← Workforce Tenant](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-15-workforce-tenant.md) | [🏠 Contents](/README) | [Workload Identity →](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-1-workload-identity.md)

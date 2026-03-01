@@ -65,4 +65,4 @@ If a user's device becomes non-compliant after sign-in, the next refresh token e
 
 ---
 
-[← ID Token](glossary-4-6-id-token.md) | [Home](../README.md) | [Bearer Token →](glossary-4-8-bearer-token.md)
+[← ID Token](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-6-id-token.md) | [🏠 Contents](/README) | [Bearer Token →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-8-bearer-token.md)

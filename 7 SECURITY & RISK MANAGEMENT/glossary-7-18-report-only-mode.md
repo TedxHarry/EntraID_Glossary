@@ -96,4 +96,4 @@ Use both: What If for pre-deployment spot checking, Report-Only for observing re
 
 ---
 
-[← Require Authentication Strength](glossary-7-17-require-authentication-strength.md) | [Home](../README.md) | [Location →](glossary-7-19-location.md)
+[← Require Authentication Strength](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-17-require-authentication-strength.md) | [🏠 Contents](/README) | [Location →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-19-location.md)

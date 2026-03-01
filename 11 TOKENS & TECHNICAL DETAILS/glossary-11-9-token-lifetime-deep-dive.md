@@ -68,4 +68,4 @@ If an application needs longer than one-hour sessions, the correct implementatio
 
 ---
 
-[← Bearer Token (Deep Dive)](glossary-11-8-bearer-token-deep-dive.md) | [Home](../README.md) | [Token Revocation (Deep Dive) →](glossary-11-10-token-revocation-deep-dive.md)
+[← Bearer Token (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-8-bearer-token-deep-dive.md) | [🏠 Contents](/README) | [Token Revocation (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-10-token-revocation-deep-dive.md)

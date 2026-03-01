@@ -83,4 +83,4 @@ Role-assignable groups are deliberately restricted — they can only be managed 
 
 ---
 
-[← Service Principal](glossary-2-3-service-principal.md) | [Home](../README.md) | [Enterprise Application →](glossary-2-5-enterprise-application.md)
+[← Service Principal](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-3-service-principal.md) | [🏠 Contents](/README) | [Enterprise Application →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-5-enterprise-application.md)

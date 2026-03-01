@@ -72,4 +72,4 @@ The common failure mode: external identity was set up to enable collaboration an
 
 ---
 
-[← External User](glossary-9-12-external-user.md) | [Home](../README.md) | [Entra External ID →](glossary-9-14-entra-external-id.md)
+[← External User](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-12-external-user.md) | [🏠 Contents](/README) | [Entra External ID →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-14-entra-external-id.md)

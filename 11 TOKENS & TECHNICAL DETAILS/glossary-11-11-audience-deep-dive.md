@@ -72,4 +72,4 @@ The test: acquire a token for a different API and try to use it against your API
 
 ---
 
-[← Token Revocation (Deep Dive)](glossary-11-10-token-revocation-deep-dive.md) | [Home](../README.md) | [Scope (Deep Dive) →](glossary-11-12-scope-deep-dive.md)
+[← Token Revocation (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-10-token-revocation-deep-dive.md) | [🏠 Contents](/README) | [Scope (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-12-scope-deep-dive.md)

@@ -93,4 +93,4 @@ Four checks. Covers a substantial majority of basic user access problems. 👤
 
 ---
 
-[← Identity](glossary-2-1-identity.md) | [Home](../README.md) | [Service Principal →](glossary-2-3-service-principal.md)
+[← Identity](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-1-identity.md) | [🏠 Contents](/README) | [Service Principal →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-3-service-principal.md)

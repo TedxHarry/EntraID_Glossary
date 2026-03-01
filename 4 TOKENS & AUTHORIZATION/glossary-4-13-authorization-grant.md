@@ -66,4 +66,4 @@ The grant type determines what the token represents, who is accountable in audit
 
 ---
 
-[← Audience](glossary-4-12-audience.md) | [Home](../README.md) | [Actor →](glossary-4-14-actor.md)
+[← Audience](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-12-audience.md) | [🏠 Contents](/README) | [Actor →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-14-actor.md)

@@ -85,4 +85,4 @@ Domain Services is "AD-as-a-service." Microsoft handles the infrastructure. You 
 
 ---
 
-[← Federation](glossary-8-6-federation.md) | [Home](../README.md) | [App Integration →](../9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-1-app-integration.md)
+[← Federation](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-6-federation.md) | [🏠 Contents](/README) | [App Integration →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-1-app-integration.md)

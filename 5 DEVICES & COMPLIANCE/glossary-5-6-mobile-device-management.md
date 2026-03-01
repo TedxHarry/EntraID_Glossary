@@ -71,4 +71,4 @@ For organizations that want to allow BYOD for low-sensitivity apps but require c
 
 ---
 
-[← Intune](glossary-5-5-intune.md) | [Home](../README.md) | [Endpoint Manager →](glossary-5-7-endpoint-manager.md)
+[← Intune](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-5-intune.md) | [🏠 Contents](/README) | [Endpoint Manager →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-7-endpoint-manager.md)

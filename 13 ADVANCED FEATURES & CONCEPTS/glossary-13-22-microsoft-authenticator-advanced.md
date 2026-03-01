@@ -68,4 +68,4 @@ The Microsoft Managed setting lets Microsoft's defaults evolve as security recom
 
 ---
 
-[← Microsoft Graph API](glossary-13-21-graph-api.md) | [Home](../README.md) | [Microsoft Entra Suite →](glossary-13-23-microsoft-entra-suite.md)
+[← Microsoft Graph API](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-21-graph-api.md) | [🏠 Contents](/README) | [Microsoft Entra Suite →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-23-microsoft-entra-suite.md)

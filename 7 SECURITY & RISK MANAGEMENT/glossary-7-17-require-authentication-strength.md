@@ -83,4 +83,4 @@ Deployment sequence matters: register the required methods first, verify coverag
 
 ---
 
-[← Require Device Compliance](glossary-7-16-require-device-compliance.md) | [Home](../README.md) | [Report-Only Mode →](glossary-7-18-report-only-mode.md)
+[← Require Device Compliance](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-16-require-device-compliance.md) | [🏠 Contents](/README) | [Report-Only Mode →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-18-report-only-mode.md)

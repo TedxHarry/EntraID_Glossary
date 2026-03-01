@@ -72,4 +72,4 @@ The 189 terms in this glossary series are the vocabulary. Advanced scenarios are
 
 ---
 
-[← Microsoft Entra Suite](glossary-13-23-microsoft-entra-suite.md) | [Home](../README.md) | *(end of series)* →
+[← Microsoft Entra Suite](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-23-microsoft-entra-suite.md) | [🏠 Contents](/README) | *End of series* →

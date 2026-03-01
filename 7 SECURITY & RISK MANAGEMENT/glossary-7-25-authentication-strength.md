@@ -70,4 +70,4 @@ For a Global Administrator, the worst case is complete tenant compromise. Phishi
 
 ---
 
-[← Terms of Use](glossary-7-24-terms-of-use.md) | [Home](../README.md) | [Authentication Methods (Security Focus) →](glossary-7-26-authentication-methods-security.md)
+[← Terms of Use](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-24-terms-of-use.md) | [🏠 Contents](/README) | [Authentication Methods (Security Focus) →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-26-authentication-methods-security.md)

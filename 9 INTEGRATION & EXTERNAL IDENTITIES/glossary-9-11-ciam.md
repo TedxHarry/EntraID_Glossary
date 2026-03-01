@@ -68,4 +68,4 @@ A CIAM solution needs to handle the full customer identity lifecycle:
 
 ---
 
-[← B2C](glossary-9-10-b2c.md) | [Home](../README.md) | [External User →](glossary-9-12-external-user.md)
+[← B2C](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-10-b2c.md) | [🏠 Contents](/README) | [External User →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-12-external-user.md)

@@ -73,4 +73,4 @@ When you're starting out, focus on Entra ID first — deeply. Understanding the 
 
 ---
 
-[← Microsoft Entra ID](glossary-1-1-microsoft-entra-id.md) | [Home](../README.md) | [Tenant →](glossary-1-3-tenant.md)
+[← Microsoft Entra ID](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-1-microsoft-entra-id.md) | [🏠 Contents](/README) | [Tenant →](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-3-tenant.md)

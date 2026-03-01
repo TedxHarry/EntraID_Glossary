@@ -67,4 +67,4 @@ Tokens can extend to 24 hours safely. The main Microsoft 365 services already su
 
 ---
 
-[← Bearer Token](glossary-4-8-bearer-token.md) | [Home](../README.md) | [Token Revocation →](glossary-4-10-token-revocation.md)
+[← Bearer Token](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-8-bearer-token.md) | [🏠 Contents](/README) | [Token Revocation →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-10-token-revocation.md)

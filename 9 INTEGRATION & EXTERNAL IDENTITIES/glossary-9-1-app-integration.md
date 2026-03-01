@@ -70,4 +70,4 @@ The relationship: App Registration defines what the app is. Enterprise Applicati
 
 ---
 
-[← Domain Services](../8%20HYBRID%20%26%20ON-PREMISES/glossary-8-7-domain-services.md) | [Home](../README.md) | [Cloud Application →](glossary-9-2-cloud-application.md)
+[← Domain Services](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-7-domain-services.md) | [🏠 Contents](/README) | [Cloud Application →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-2-cloud-application.md)

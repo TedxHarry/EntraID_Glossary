@@ -85,4 +85,4 @@ An account at High risk that no one has investigated or remediated stays at High
 
 ---
 
-[← Insider Risk](glossary-7-28-insider-risk.md) | [Home](../README.md) | [Sign-In Risk Level →](glossary-7-30-sign-in-risk-level.md)
+[← Insider Risk](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-28-insider-risk.md) | [🏠 Contents](/README) | [Sign-In Risk Level →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-30-sign-in-risk-level.md)

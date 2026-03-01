@@ -85,4 +85,4 @@ The attacker in the opening scenario succeeded because the organization had impl
 
 ---
 
-[← CA Policy](glossary-7-9-ca-policy.md) | [Home](../README.md) | [Assignment →](glossary-7-11-assignment.md)
+[← CA Policy](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-9-ca-policy.md) | [🏠 Contents](/README) | [Assignment →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-11-assignment.md)

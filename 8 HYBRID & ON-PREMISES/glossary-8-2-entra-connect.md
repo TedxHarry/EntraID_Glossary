@@ -82,4 +82,4 @@ Both tools synchronize the same objects and support PHS. The choice depends on e
 
 ---
 
-[← Directory Synchronization](glossary-8-1-directory-synchronization.md) | [Home](../README.md) | [Cloud Sync →](glossary-8-3-cloud-sync.md)
+[← Directory Synchronization](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md) | [🏠 Contents](/README) | [Cloud Sync →](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-3-cloud-sync.md)

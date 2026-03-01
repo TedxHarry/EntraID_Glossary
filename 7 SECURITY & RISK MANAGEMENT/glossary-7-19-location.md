@@ -74,4 +74,4 @@ This interaction creates a compounding effect: sign-ins from trusted corporate l
 
 ---
 
-[← Report-Only Mode](glossary-7-18-report-only-mode.md) | [Home](../README.md) | [Trusted Location →](glossary-7-20-trusted-location.md)
+[← Report-Only Mode](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-18-report-only-mode.md) | [🏠 Contents](/README) | [Trusted Location →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-20-trusted-location.md)

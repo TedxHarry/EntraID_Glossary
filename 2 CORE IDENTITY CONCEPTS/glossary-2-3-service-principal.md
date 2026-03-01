@@ -73,4 +73,4 @@ Finding service principals is straightforward: in the Entra admin center, go to 
 
 ---
 
-[← User (Identity Object)](glossary-2-2-user-identity-object.md) | [Home](../README.md) | [Group →](glossary-2-4-group.md)
+[← User (Identity Object)](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-2-user-identity-object.md) | [🏠 Contents](/README) | [Group →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-4-group.md)

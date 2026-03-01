@@ -72,4 +72,4 @@ For your own APIs, define scopes narrowly from the start. A scope of `orders.rea
 
 ---
 
-[← Token Revocation](glossary-4-10-token-revocation.md) | [Home](../README.md) | [Audience →](glossary-4-12-audience.md)
+[← Token Revocation](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-10-token-revocation.md) | [🏠 Contents](/README) | [Audience →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-12-audience.md)

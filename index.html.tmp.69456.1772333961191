@@ -177,8 +177,8 @@
 
     /* ── Bold labels ────────────────────────────────────────────────── */
     .markdown-section strong {
-      color: #0055a5;
-      font-weight: 700;
+      color: #1a202c;
+      font-weight: 600;
     }
 
     /* ── Code ───────────────────────────────────────────────────────── */
@@ -330,8 +330,7 @@
         function(hook) {
           hook.doneEach(function() {
             document.querySelectorAll('.markdown-section p').forEach(function(p) {
-              var t = p.textContent;
-              if (t.includes('←') || t.includes('→') || t.includes('🏠')) {
+              if (p.textContent.includes('←') || p.textContent.includes('→')) {
                 p.classList.add('article-nav');
               }
             });

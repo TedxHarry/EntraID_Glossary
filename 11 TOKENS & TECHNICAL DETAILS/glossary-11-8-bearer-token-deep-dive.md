@@ -73,4 +73,4 @@ An application that handles bearer tokens correctly:
 
 ---
 
-[← Subject (Deep Dive)](glossary-11-7-subject-deep-dive.md) | [Home](../README.md) | [Token Lifetime (Deep Dive) →](glossary-11-9-token-lifetime-deep-dive.md)
+[← Subject (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-7-subject-deep-dive.md) | [🏠 Contents](/README) | [Token Lifetime (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-9-token-lifetime-deep-dive.md)

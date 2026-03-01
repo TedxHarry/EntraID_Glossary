@@ -78,4 +78,4 @@ The migration from ADFS to managed authentication is a defined process (staged r
 
 ---
 
-[← Pass-Through Auth](glossary-8-5-pass-through-auth.md) | [Home](../README.md) | [Domain Services →](glossary-8-7-domain-services.md)
+[← Pass-Through Auth](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-5-pass-through-auth.md) | [🏠 Contents](/README) | [Domain Services →](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-7-domain-services.md)

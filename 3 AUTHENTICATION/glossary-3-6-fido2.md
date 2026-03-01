@@ -85,4 +85,4 @@ FIDO2 security keys are the right choice for:
 
 ---
 
-[← Passwordless Authentication](glossary-3-5-passwordless-authentication.md) | [Home](../README.md) | [Windows Hello →](glossary-3-7-windows-hello.md)
+[← Passwordless Authentication](/3%20AUTHENTICATION/glossary-3-5-passwordless-authentication.md) | [🏠 Contents](/README) | [Windows Hello →](/3%20AUTHENTICATION/glossary-3-7-windows-hello.md)

@@ -77,4 +77,4 @@ Get comfortable with identity as a concept — all three types, their distinct s
 
 ---
 
-[← Hybrid Identity](../1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md) | [Home](../README.md) | [User (Identity Object) →](glossary-2-2-user-identity-object.md)
+[← Hybrid Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md) | [🏠 Contents](/README) | [User (Identity Object) →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-2-user-identity-object.md)

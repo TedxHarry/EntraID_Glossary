@@ -66,4 +66,4 @@ For organizations using the full Entra ID stack, GSA is the layer that closes th
 
 ---
 
-[← OID (Object ID)](glossary-13-8-oid.md) | [Home](../README.md) | [Service Account →](glossary-13-10-service-account.md)
+[← OID (Object ID)](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-8-oid.md) | [🏠 Contents](/README) | [Service Account →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-10-service-account.md)

@@ -76,4 +76,4 @@ Making this explicit in your identity governance documentation means provisionin
 
 ---
 
-[← User Attributes](glossary-6-17-user-attributes.md) | [Home](../README.md) | [Identity Verification →](glossary-6-19-identity-verification.md)
+[← User Attributes](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-17-user-attributes.md) | [🏠 Contents](/README) | [Identity Verification →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-19-identity-verification.md)

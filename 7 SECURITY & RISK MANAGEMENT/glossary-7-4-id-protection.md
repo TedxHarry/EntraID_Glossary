@@ -94,4 +94,4 @@ False positive rate drops over time as the system builds accurate baselines. New
 
 ---
 
-[← Risky User](glossary-7-3-risky-user.md) | [Home](../README.md) | [Anomaly Detection →](glossary-7-5-anomaly-detection.md)
+[← Risky User](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-3-risky-user.md) | [🏠 Contents](/README) | [Anomaly Detection →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-5-anomaly-detection.md)

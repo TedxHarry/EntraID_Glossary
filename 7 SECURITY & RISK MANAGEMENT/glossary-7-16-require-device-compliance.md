@@ -91,4 +91,4 @@ This is the recommended configuration for access to sensitive resources: both re
 
 ---
 
-[← Require MFA](glossary-7-15-require-mfa.md) | [Home](../README.md) | [Require Authentication Strength →](glossary-7-17-require-authentication-strength.md)
+[← Require MFA](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-15-require-mfa.md) | [🏠 Contents](/README) | [Require Authentication Strength →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-17-require-authentication-strength.md)

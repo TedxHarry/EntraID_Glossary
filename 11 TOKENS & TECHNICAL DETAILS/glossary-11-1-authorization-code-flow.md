@@ -56,4 +56,4 @@ Most developers implementing "Sign in with Microsoft" write a few lines of MSAL 
 
 ---
 
-[← Conditional Access for Workloads](../10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-12-ca-for-workloads.md) | [Home](../README.md) | [Authorization Endpoint (Deep Dive) →](glossary-11-2-authorization-endpoint-deep-dive.md)
+[← Conditional Access for Workloads](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-12-ca-for-workloads.md) | [🏠 Contents](/README) | [Authorization Endpoint (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-2-authorization-endpoint-deep-dive.md)

@@ -94,4 +94,4 @@ Applications built with MSAL don't implement the protocol directly. They call MS
 
 ---
 
-[← OAuth 2.0 (App Integration Focus)](glossary-9-5-oauth2-app-integration.md) | [Home](../README.md) | [SAML (App Integration Focus) →](glossary-9-7-saml-app-integration.md)
+[← OAuth 2.0 (App Integration Focus)](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-5-oauth2-app-integration.md) | [🏠 Contents](/README) | [SAML (App Integration Focus) →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-7-saml-app-integration.md)

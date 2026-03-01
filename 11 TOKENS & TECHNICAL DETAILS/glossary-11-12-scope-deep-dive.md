@@ -83,4 +83,4 @@ Incremental consent improves user experience (users consent to manageable, conte
 
 ---
 
-[← Audience (Deep Dive)](glossary-11-11-audience-deep-dive.md) | [Home](../README.md) | [Audit Log →](../12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-1-audit-log.md)
+[← Audience (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-11-audience-deep-dive.md) | [🏠 Contents](/README) | [Audit Log →](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-1-audit-log.md)

@@ -72,4 +72,4 @@ The analyst's 4,200-file download was caught because her baseline was clear and 
 
 ---
 
-[← ID Protection](glossary-7-4-id-protection.md) | [Home](../README.md) | [Leaked Credentials →](glossary-7-6-leaked-credentials.md)
+[← ID Protection](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-4-id-protection.md) | [🏠 Contents](/README) | [Leaked Credentials →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-6-leaked-credentials.md)

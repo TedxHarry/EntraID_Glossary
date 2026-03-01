@@ -82,4 +82,4 @@ Governance mechanisms that help:
 
 ---
 
-[← CIAM](glossary-9-11-ciam.md) | [Home](../README.md) | [External Identity →](glossary-9-13-external-identity.md)
+[← CIAM](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-11-ciam.md) | [🏠 Contents](/README) | [External Identity →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-13-external-identity.md)

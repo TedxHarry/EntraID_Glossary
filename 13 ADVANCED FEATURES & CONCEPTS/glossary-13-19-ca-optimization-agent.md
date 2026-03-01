@@ -70,4 +70,4 @@ These two tools work together. Recommendations tell you what should change. Insi
 
 ---
 
-[← Tenant Restrictions](glossary-13-18-tenant-restrictions.md) | [Home](../README.md) | [Policy Evaluation →](glossary-13-20-policy-evaluation.md)
+[← Tenant Restrictions](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-18-tenant-restrictions.md) | [🏠 Contents](/README) | [Policy Evaluation →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-20-policy-evaluation.md)

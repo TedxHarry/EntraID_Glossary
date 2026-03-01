@@ -58,4 +58,4 @@ The Compliance Manager score isn't a guarantee of compliance; it's a tool for id
 
 ---
 
-[← Security Alert](glossary-12-4-security-alert.md) | [Home](../README.md) | [Attribute-Based Access Control (ABAC) →](../13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-1-abac.md)
+[← Security Alert](/12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-4-security-alert.md) | [🏠 Contents](/README) | [Attribute-Based Access Control (ABAC) →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-1-abac.md)

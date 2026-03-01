@@ -62,4 +62,4 @@ The `sub` claim is still useful. It's the right identifier to use when you speci
 
 ---
 
-[← Actor](glossary-4-14-actor.md) | [Home](../README.md) | [OAuth 2.0 →](glossary-4-16-oauth2.md)
+[← Actor](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-14-actor.md) | [🏠 Contents](/README) | [OAuth 2.0 →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-16-oauth2.md)

@@ -66,4 +66,4 @@ Correlation at joiner events (when a new account is created, check for existing 
 
 ---
 
-[← Continuous Authorization (CAE)](glossary-13-3-continuous-authorization.md) | [Home](../README.md) | [Passwordless Auth (Advanced) →](glossary-13-5-passwordless-auth-advanced.md)
+[← Continuous Authorization (CAE)](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-3-continuous-authorization.md) | [🏠 Contents](/README) | [Passwordless Auth (Advanced) →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-5-passwordless-auth-advanced.md)

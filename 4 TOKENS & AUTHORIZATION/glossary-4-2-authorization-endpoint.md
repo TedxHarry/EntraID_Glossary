@@ -83,4 +83,4 @@ When you see a sign-in failing at this stage, the Entra ID error page usually in
 
 ---
 
-[← Authorization Code](glossary-4-1-authorization-code.md) | [Home](../README.md) | [Token Endpoint →](glossary-4-3-token-endpoint.md)
+[← Authorization Code](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-1-authorization-code.md) | [🏠 Contents](/README) | [Token Endpoint →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-3-token-endpoint.md)

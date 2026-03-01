@@ -83,4 +83,4 @@ Test emergency access accounts quarterly: sign in with each account, verify the 
 
 ---
 
-[← Identity Verification](glossary-6-19-identity-verification.md) | [Home](../README.md) | [Shared Accounts →](glossary-6-21-shared-accounts.md)
+[← Identity Verification](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-19-identity-verification.md) | [🏠 Contents](/README) | [Shared Accounts →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-21-shared-accounts.md)

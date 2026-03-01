@@ -79,4 +79,4 @@ This is why Trusted Locations work best as one layer in a defense-in-depth archi
 
 ---
 
-[← Location](glossary-7-19-location.md) | [Home](../README.md) | [IP Address Range →](glossary-7-21-ip-address-range.md)
+[← Location](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-19-location.md) | [🏠 Contents](/README) | [IP Address Range →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-21-ip-address-range.md)

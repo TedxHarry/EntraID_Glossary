@@ -72,4 +72,4 @@ The feature gap between Cloud Sync and Entra Connect has narrowed with each rele
 
 ---
 
-[← Entra Connect](glossary-8-2-entra-connect.md) | [Home](../README.md) | [Password Hash Sync →](glossary-8-4-password-hash-sync.md)
+[← Entra Connect](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-2-entra-connect.md) | [🏠 Contents](/README) | [Password Hash Sync →](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-4-password-hash-sync.md)

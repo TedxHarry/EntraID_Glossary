@@ -77,4 +77,4 @@ In Azure Container Apps and AKS, IMDS-based token acquisition works but the acce
 
 ---
 
-[← Federated Identity Credential](glossary-10-6-federated-identity-credential.md) | [Home](../README.md) | [Principal ID →](glossary-10-8-principal-id.md)
+[← Federated Identity Credential](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-6-federated-identity-credential.md) | [🏠 Contents](/README) | [Principal ID →](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-8-principal-id.md)

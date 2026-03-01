@@ -75,4 +75,4 @@ The right number of Global Admins for most organizations is two break-glass acco
 
 ---
 
-[← Delegation](glossary-2-10-delegation.md) | [Home](../README.md) | [Authentication →](../3%20AUTHENTICATION/glossary-3-1-authentication.md)
+[← Delegation](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-10-delegation.md) | [🏠 Contents](/README) | [Authentication →](/3%20AUTHENTICATION/glossary-3-1-authentication.md)

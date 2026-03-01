@@ -63,4 +63,4 @@ The goal isn't perfection overnight. It's moving toward individual accountabilit
 
 ---
 
-[← Emergency Access](glossary-6-20-emergency-access.md) | [Home](../README.md) | [Account Lockout →](glossary-6-22-account-lockout.md)
+[← Emergency Access](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-20-emergency-access.md) | [🏠 Contents](/README) | [Account Lockout →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-22-account-lockout.md)

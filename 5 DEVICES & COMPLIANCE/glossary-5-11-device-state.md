@@ -83,4 +83,4 @@ The sign-in logs are often the fastest path to a diagnosis. They show exactly wh
 
 ---
 
-[← App Protection Policy](glossary-5-10-app-protection-policy.md) | [Home](../README.md) | [Managed Device →](glossary-5-12-managed-device.md)
+[← App Protection Policy](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-10-app-protection-policy.md) | [🏠 Contents](/README) | [Managed Device →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-12-managed-device.md)

@@ -66,4 +66,4 @@ Getting there requires eliminating on-premises dependencies app by app. Once tho
 
 ---
 
-[← Device Trust](glossary-5-8-device-trust.md) | [Home](../README.md) | [App Protection Policy →](glossary-5-10-app-protection-policy.md)
+[← Device Trust](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-8-device-trust.md) | [🏠 Contents](/README) | [App Protection Policy →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-10-app-protection-policy.md)

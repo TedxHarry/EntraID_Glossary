@@ -64,4 +64,4 @@ The visibility alone is often the most valuable initial outcome. Before Intune, 
 
 ---
 
-[← Device Enrollment](glossary-5-4-device-enrollment.md) | [Home](../README.md) | [Mobile Device Management →](glossary-5-6-mobile-device-management.md)
+[← Device Enrollment](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-4-device-enrollment.md) | [🏠 Contents](/README) | [Mobile Device Management →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-6-mobile-device-management.md)

@@ -71,4 +71,4 @@ Start with groups. Define what each group grants before you create it. Assign pe
 
 ---
 
-[← Directory Role](glossary-2-6-directory-role.md) | [Home](../README.md) | [Permission →](glossary-2-8-permission.md)
+[← Directory Role](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-6-directory-role.md) | [🏠 Contents](/README) | [Permission →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-8-permission.md)

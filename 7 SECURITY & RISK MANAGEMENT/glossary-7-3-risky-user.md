@@ -84,4 +84,4 @@ Some user risk detections are offline: they're generated after analysis that tak
 
 ---
 
-[← Risky Sign-In](glossary-7-2-risky-sign-in.md) | [Home](../README.md) | [ID Protection →](glossary-7-4-id-protection.md)
+[← Risky Sign-In](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-2-risky-sign-in.md) | [🏠 Contents](/README) | [ID Protection →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-4-id-protection.md)

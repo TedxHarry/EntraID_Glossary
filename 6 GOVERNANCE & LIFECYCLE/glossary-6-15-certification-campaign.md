@@ -76,4 +76,4 @@ Quarter-end, fiscal year transitions, and immediately after large organizational
 
 ---
 
-[← Governance](glossary-6-14-governance.md) | [Home](../README.md) | [Bulk User Operations →](glossary-6-16-bulk-user-operations.md)
+[← Governance](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-14-governance.md) | [🏠 Contents](/README) | [Bulk User Operations →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-16-bulk-user-operations.md)

@@ -80,4 +80,4 @@ Disabling the account is faster than revoking tokens for stopping access to CAE-
 
 ---
 
-[← Token Lifetime (Deep Dive)](glossary-11-9-token-lifetime-deep-dive.md) | [Home](../README.md) | [Audience (Deep Dive) →](glossary-11-11-audience-deep-dive.md)
+[← Token Lifetime (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-9-token-lifetime-deep-dive.md) | [🏠 Contents](/README) | [Audience (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-11-audience-deep-dive.md)

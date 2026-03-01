@@ -72,4 +72,4 @@ The solution isn't blocking all unapproved applications (that creates friction w
 
 ---
 
-[← App Integration](glossary-9-1-app-integration.md) | [Home](../README.md) | [Federated Application →](glossary-9-3-federated-application.md)
+[← App Integration](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-1-app-integration.md) | [🏠 Contents](/README) | [Federated Application →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-3-federated-application.md)

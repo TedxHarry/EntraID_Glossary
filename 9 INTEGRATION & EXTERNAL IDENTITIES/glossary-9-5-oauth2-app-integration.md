@@ -71,4 +71,4 @@ Application permissions require admin consent (a tenant admin explicitly grants 
 
 ---
 
-[← Application Proxy](glossary-9-4-application-proxy.md) | [Home](../README.md) | [OIDC (App Integration Focus) →](glossary-9-6-oidc-app-integration.md)
+[← Application Proxy](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-4-application-proxy.md) | [🏠 Contents](/README) | [OIDC (App Integration Focus) →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-6-oidc-app-integration.md)

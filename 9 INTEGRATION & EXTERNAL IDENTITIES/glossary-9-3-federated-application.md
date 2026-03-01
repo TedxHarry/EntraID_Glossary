@@ -80,4 +80,4 @@ Federation moves authentication to Entra ID. It doesn't eliminate all identity m
 
 ---
 
-[← Cloud Application](glossary-9-2-cloud-application.md) | [Home](../README.md) | [Application Proxy →](glossary-9-4-application-proxy.md)
+[← Cloud Application](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-2-cloud-application.md) | [🏠 Contents](/README) | [Application Proxy →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-4-application-proxy.md)

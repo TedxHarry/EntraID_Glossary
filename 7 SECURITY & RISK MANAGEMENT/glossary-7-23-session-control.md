@@ -90,4 +90,4 @@ CAE shifts the security model from "tokens expire eventually" to "tokens are rev
 
 ---
 
-[← Legacy Authentication](glossary-7-22-legacy-authentication.md) | [Home](../README.md) | [Terms of Use →](glossary-7-24-terms-of-use.md)
+[← Legacy Authentication](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-22-legacy-authentication.md) | [🏠 Contents](/README) | [Terms of Use →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-24-terms-of-use.md)

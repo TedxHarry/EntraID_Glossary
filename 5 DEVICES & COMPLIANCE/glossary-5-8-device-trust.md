@@ -70,4 +70,4 @@ This creates a gradient of access rather than a binary allow/deny, which is much
 
 ---
 
-[← Endpoint Manager](glossary-5-7-endpoint-manager.md) | [Home](../README.md) | [Hybrid Device →](glossary-5-9-hybrid-device.md)
+[← Endpoint Manager](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-7-endpoint-manager.md) | [🏠 Contents](/README) | [Hybrid Device →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-9-hybrid-device.md)

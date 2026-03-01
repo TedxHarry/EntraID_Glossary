@@ -80,4 +80,4 @@ This is a real operational issue for teams that regularly rebuild resources (tes
 
 ---
 
-[← Instance Metadata Service (IMDS)](glossary-10-7-imds.md) | [Home](../README.md) | [Azure Resource Manager →](glossary-10-9-azure-resource-manager.md)
+[← Instance Metadata Service (IMDS)](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-7-imds.md) | [🏠 Contents](/README) | [Azure Resource Manager →](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-9-azure-resource-manager.md)

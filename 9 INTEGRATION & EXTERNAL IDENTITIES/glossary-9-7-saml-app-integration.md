@@ -84,4 +84,4 @@ Some applications support automatic metadata refresh (they fetch Entra ID's meta
 
 ---
 
-[← OIDC (App Integration Focus)](glossary-9-6-oidc-app-integration.md) | [Home](../README.md) | [SCIM →](glossary-9-8-scim.md)
+[← OIDC (App Integration Focus)](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-6-oidc-app-integration.md) | [🏠 Contents](/README) | [SCIM →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-8-scim.md)

@@ -70,4 +70,4 @@ High-risk grants to look for: application permissions for `Mail.ReadWrite.All`, 
 
 ---
 
-[← Admin Unit](glossary-13-13-admin-unit.md) | [Home](../README.md) | [Consent Experience →](glossary-13-15-consent-experience.md)
+[← Admin Unit](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-13-admin-unit.md) | [🏠 Contents](/README) | [Consent Experience →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-15-consent-experience.md)

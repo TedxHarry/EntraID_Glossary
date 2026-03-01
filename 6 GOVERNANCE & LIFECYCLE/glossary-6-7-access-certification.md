@@ -79,4 +79,4 @@ Entitlement Management access packages (covered in Glossary#6.9) can have access
 
 ---
 
-[← Access Review](glossary-6-6-access-review.md) | [Home](../README.md) | [Recertification →](glossary-6-8-recertification.md)
+[← Access Review](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-6-access-review.md) | [🏠 Contents](/README) | [Recertification →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-8-recertification.md)

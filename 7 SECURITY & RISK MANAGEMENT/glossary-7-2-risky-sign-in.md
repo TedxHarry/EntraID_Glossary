@@ -82,4 +82,4 @@ If confirmed as legitimate: dismiss the risk event as safe (teaches the system t
 
 ---
 
-[← Risk Detection](glossary-7-1-risk-detection.md) | [Home](../README.md) | [Risky User →](glossary-7-3-risky-user.md)
+[← Risk Detection](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-1-risk-detection.md) | [🏠 Contents](/README) | [Risky User →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-3-risky-user.md)

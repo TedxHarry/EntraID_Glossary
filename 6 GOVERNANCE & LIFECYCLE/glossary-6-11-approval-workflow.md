@@ -71,4 +71,4 @@ For compliance purposes, an audit trail showing "manager approved on March 15, d
 
 ---
 
-[← Access Request](glossary-6-10-access-request.md) | [Home](../README.md) | [Auto-Provision →](glossary-6-12-auto-provision.md)
+[← Access Request](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-10-access-request.md) | [🏠 Contents](/README) | [Auto-Provision →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-12-auto-provision.md)

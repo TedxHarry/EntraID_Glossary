@@ -78,4 +78,4 @@ Two categories you'll see in the logs, and they matter for understanding what yo
 
 ---
 
-[← Authentication](glossary-3-1-authentication.md) | [Home](../README.md) | [Authentication Method →](glossary-3-3-authentication-method.md)
+[← Authentication](/3%20AUTHENTICATION/glossary-3-1-authentication.md) | [🏠 Contents](/README) | [Authentication Method →](/3%20AUTHENTICATION/glossary-3-3-authentication-method.md)

@@ -73,4 +73,4 @@ Start here. Get this solid. Everything else builds on it. 🔑
 
 ---
 
-← *(start of series)* | [Home](../README.md) | [Microsoft Entra Product Family →](glossary-1-2-microsoft-entra-product-family.md)
+← *Start of series* | [🏠 Contents](/README) | [Microsoft Entra Product Family →](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-2-microsoft-entra-product-family.md)

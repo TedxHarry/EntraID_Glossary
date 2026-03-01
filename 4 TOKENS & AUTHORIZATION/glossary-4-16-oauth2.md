@@ -73,4 +73,4 @@ Understanding that OAuth 2.0 is specifically about authorization rather than aut
 
 ---
 
-[← Subject](glossary-4-15-subject.md) | [Home](../README.md) | [OIDC (OpenID Connect) →](glossary-4-17-oidc.md)
+[← Subject](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-15-subject.md) | [🏠 Contents](/README) | [OIDC (OpenID Connect) →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-17-oidc.md)

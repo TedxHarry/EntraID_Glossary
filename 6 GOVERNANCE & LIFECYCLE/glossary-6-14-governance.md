@@ -76,4 +76,4 @@ Organizations that implement governance to solve a compliance requirement often 
 
 ---
 
-[← Just-in-Time Access](glossary-6-13-just-in-time-access.md) | [Home](../README.md) | [Certification Campaign →](glossary-6-15-certification-campaign.md)
+[← Just-in-Time Access](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-13-just-in-time-access.md) | [🏠 Contents](/README) | [Certification Campaign →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-15-certification-campaign.md)

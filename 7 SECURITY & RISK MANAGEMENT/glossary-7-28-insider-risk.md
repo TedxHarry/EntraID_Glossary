@@ -85,4 +85,4 @@ Organizations deploying insider risk capabilities need a defined investigation p
 
 ---
 
-[← SSPR (Security Focus)](glossary-7-27-sspr-security.md) | [Home](../README.md) | [User Risk Level →](glossary-7-29-user-risk-level.md)
+[← SSPR (Security Focus)](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-27-sspr-security.md) | [🏠 Contents](/README) | [User Risk Level →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-29-user-risk-level.md)

@@ -77,4 +77,4 @@ OIDs are unique within a tenant, not across all of Entra ID. Two different Entra
 
 ---
 
-[← UPN (User Principal Name)](glossary-13-7-upn.md) | [Home](../README.md) | [Global Secure Access →](glossary-13-9-global-secure-access.md)
+[← UPN (User Principal Name)](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-7-upn.md) | [🏠 Contents](/README) | [Global Secure Access →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-9-global-secure-access.md)

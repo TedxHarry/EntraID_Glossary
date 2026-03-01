@@ -78,4 +78,4 @@ Verification requirements should scale with what the verified identity will acce
 
 ---
 
-[← Source of Authority](glossary-6-18-source-of-authority.md) | [Home](../README.md) | [Emergency Access →](glossary-6-20-emergency-access.md)
+[← Source of Authority](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-18-source-of-authority.md) | [🏠 Contents](/README) | [Emergency Access →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-20-emergency-access.md)

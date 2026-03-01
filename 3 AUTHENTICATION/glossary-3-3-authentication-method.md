@@ -75,4 +75,4 @@ The attacker who called twelve users and got them to approve push notifications 
 
 ---
 
-[← Sign-In](glossary-3-2-sign-in.md) | [Home](../README.md) | [Multi-Factor Authentication (MFA) →](glossary-3-4-mfa.md)
+[← Sign-In](/3%20AUTHENTICATION/glossary-3-2-sign-in.md) | [🏠 Contents](/README) | [Multi-Factor Authentication (MFA) →](/3%20AUTHENTICATION/glossary-3-4-mfa.md)

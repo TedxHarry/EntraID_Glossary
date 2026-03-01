@@ -64,4 +64,4 @@ The choice between them comes down to whether the identity needs to be shared ac
 
 ---
 
-[← Workload Identity](glossary-10-1-workload-identity.md) | [Home](../README.md) | [System-Assigned Managed Identity →](glossary-10-3-system-assigned-managed-identity.md)
+[← Workload Identity](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-1-workload-identity.md) | [🏠 Contents](/README) | [System-Assigned Managed Identity →](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-3-system-assigned-managed-identity.md)

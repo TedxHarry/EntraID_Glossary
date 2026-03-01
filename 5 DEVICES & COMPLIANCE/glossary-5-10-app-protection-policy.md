@@ -79,4 +79,4 @@ This creates enforcement at two layers: Conditional Access blocks access from un
 
 ---
 
-[← Hybrid Device](glossary-5-9-hybrid-device.md) | [Home](../README.md) | [Device State →](glossary-5-11-device-state.md)
+[← Hybrid Device](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-9-hybrid-device.md) | [🏠 Contents](/README) | [Device State →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-11-device-state.md)

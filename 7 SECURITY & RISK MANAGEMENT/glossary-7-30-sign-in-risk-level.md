@@ -77,4 +77,4 @@ High risk gets blocked rather than stepped up because at High confidence, a step
 
 ---
 
-[← User Risk Level](glossary-7-29-user-risk-level.md) | [Home](../README.md) | [CA Template →](glossary-7-31-ca-template.md)
+[← User Risk Level](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-29-user-risk-level.md) | [🏠 Contents](/README) | [CA Template →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-31-ca-template.md)

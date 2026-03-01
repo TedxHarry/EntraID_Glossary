@@ -91,4 +91,4 @@ Report-Only mode provides the same validation at scale across real sign-ins rath
 
 ---
 
-[← Zero Trust](glossary-7-10-zero-trust.md) | [Home](../README.md) | [Condition →](glossary-7-12-condition.md)
+[← Zero Trust](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-10-zero-trust.md) | [🏠 Contents](/README) | [Condition →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-12-condition.md)

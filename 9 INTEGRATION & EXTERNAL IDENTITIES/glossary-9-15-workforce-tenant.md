@@ -72,4 +72,4 @@ A single organization doing both things runs both. The retail bank with 3,000 em
 
 ---
 
-[← Entra External ID](glossary-9-14-entra-external-id.md) | [Home](../README.md) | [External Tenant →](glossary-9-16-external-tenant.md)
+[← Entra External ID](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-14-entra-external-id.md) | [🏠 Contents](/README) | [External Tenant →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-16-external-tenant.md)

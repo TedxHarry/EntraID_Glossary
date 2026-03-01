@@ -78,4 +78,4 @@ Using grant controls when session controls are the right tool (and vice versa) i
 
 ---
 
-[← Condition](glossary-7-12-condition.md) | [Home](../README.md) | [Block Access →](glossary-7-14-block-access.md)
+[← Condition](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-12-condition.md) | [🏠 Contents](/README) | [Block Access →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-14-block-access.md)

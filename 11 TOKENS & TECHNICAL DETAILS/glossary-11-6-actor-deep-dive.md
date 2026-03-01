@@ -70,4 +70,4 @@ This is the most common OBO implementation failure: the downstream API permissio
 
 ---
 
-[← Authorization Grant (Deep Dive)](glossary-11-5-authorization-grant-deep-dive.md) | [Home](../README.md) | [Subject (Deep Dive) →](glossary-11-7-subject-deep-dive.md)
+[← Authorization Grant (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-5-authorization-grant-deep-dive.md) | [🏠 Contents](/README) | [Subject (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-7-subject-deep-dive.md)

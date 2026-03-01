@@ -72,4 +72,4 @@ The MSAL libraries and common middleware like `passport-azure-ad` handle multi-t
 
 ---
 
-[← Token Endpoint (Deep Dive)](glossary-11-3-token-endpoint-deep-dive.md) | [Home](../README.md) | [Authorization Grant (Deep Dive) →](glossary-11-5-authorization-grant-deep-dive.md)
+[← Token Endpoint (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-3-token-endpoint-deep-dive.md) | [🏠 Contents](/README) | [Authorization Grant (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-5-authorization-grant-deep-dive.md)

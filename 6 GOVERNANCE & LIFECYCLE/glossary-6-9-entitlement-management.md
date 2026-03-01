@@ -79,4 +79,4 @@ Package the common requests. Leave the edge cases as IT tickets for now. The red
 
 ---
 
-[← Recertification](glossary-6-8-recertification.md) | [Home](../README.md) | [Access Request →](glossary-6-10-access-request.md)
+[← Recertification](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-8-recertification.md) | [🏠 Contents](/README) | [Access Request →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-10-access-request.md)

@@ -74,4 +74,4 @@ The BitLocker-and-Windows-Update incident from the opening was resolved by tempo
 
 ---
 
-[← Compliant Device](glossary-5-13-compliant-device.md) | [Home](../README.md) | [User Provisioning →](../6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-1-user-provisioning.md)
+[← Compliant Device](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-13-compliant-device.md) | [🏠 Contents](/README) | [User Provisioning →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-1-user-provisioning.md)

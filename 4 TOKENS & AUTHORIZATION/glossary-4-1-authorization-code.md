@@ -67,4 +67,4 @@ A few properties worth understanding when debugging or reviewing app implementat
 
 ---
 
-[← Microsoft Authenticator](../3%20AUTHENTICATION/glossary-3-8-microsoft-authenticator.md) | [Home](../README.md) | [Authorization Endpoint →](glossary-4-2-authorization-endpoint.md)
+[← Microsoft Authenticator](/3%20AUTHENTICATION/glossary-3-8-microsoft-authenticator.md) | [🏠 Contents](/README) | [Authorization Endpoint →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-2-authorization-endpoint.md)

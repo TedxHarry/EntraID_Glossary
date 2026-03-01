@@ -60,4 +60,4 @@ Microsoft Entra Workload ID (the product layer on top of the base workload ident
 
 ---
 
-[← External Tenant](../9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-16-external-tenant.md) | [Home](../README.md) | [Managed Identity →](glossary-10-2-managed-identity.md)
+[← External Tenant](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-16-external-tenant.md) | [🏠 Contents](/README) | [Managed Identity →](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-2-managed-identity.md)

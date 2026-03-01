@@ -68,4 +68,4 @@ When something does change (account disabled, policy updated, risk elevated), th
 
 ---
 
-[← Cloud-Based Sync (Advanced)](glossary-13-2-cloud-sync-advanced.md) | [Home](../README.md) | [Identity Correlations →](glossary-13-4-identity-correlations.md)
+[← Cloud-Based Sync (Advanced)](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-2-cloud-sync-advanced.md) | [🏠 Contents](/README) | [Identity Correlations →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-4-identity-correlations.md)

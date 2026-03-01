@@ -76,4 +76,4 @@ That's it. Once working, users click Salesforce in My Apps or their browser book
 
 ---
 
-[← Group](glossary-2-4-group.md) | [Home](../README.md) | [Directory Role →](glossary-2-6-directory-role.md)
+[← Group](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-4-group.md) | [🏠 Contents](/README) | [Directory Role →](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-6-directory-role.md)

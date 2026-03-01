@@ -76,4 +76,4 @@ The goal isn't flipping a switch. It's making passwordless the default path of l
 
 ---
 
-[← Multi-Factor Authentication (MFA)](glossary-3-4-mfa.md) | [Home](../README.md) | [FIDO2 →](glossary-3-6-fido2.md)
+[← Multi-Factor Authentication (MFA)](/3%20AUTHENTICATION/glossary-3-4-mfa.md) | [🏠 Contents](/README) | [FIDO2 →](/3%20AUTHENTICATION/glossary-3-6-fido2.md)

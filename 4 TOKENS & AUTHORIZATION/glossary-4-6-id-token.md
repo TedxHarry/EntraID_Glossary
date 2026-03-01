@@ -86,4 +86,4 @@ In practice, use a well-maintained OAuth/OIDC library for your platform rather t
 
 ---
 
-[← Access Token](glossary-4-5-access-token.md) | [Home](../README.md) | [Refresh Token →](glossary-4-7-refresh-token.md)
+[← Access Token](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-5-access-token.md) | [🏠 Contents](/README) | [Refresh Token →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-7-refresh-token.md)

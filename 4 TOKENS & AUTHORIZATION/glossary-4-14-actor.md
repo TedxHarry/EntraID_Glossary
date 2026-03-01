@@ -71,4 +71,4 @@ APIs that accept both delegated and application tokens need to handle this disti
 
 ---
 
-[← Authorization Grant](glossary-4-13-authorization-grant.md) | [Home](../README.md) | [Subject →](glossary-4-15-subject.md)
+[← Authorization Grant](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-13-authorization-grant.md) | [🏠 Contents](/README) | [Subject →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-15-subject.md)

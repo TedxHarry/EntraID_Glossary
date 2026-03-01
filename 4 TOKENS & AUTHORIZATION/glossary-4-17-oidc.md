@@ -81,4 +81,4 @@ Libraries that support OIDC discovery configure themselves automatically. You pr
 
 ---
 
-[← OAuth 2.0](glossary-4-16-oauth2.md) | [Home](../README.md) | [SAML →](glossary-4-18-saml.md)
+[← OAuth 2.0](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-16-oauth2.md) | [🏠 Contents](/README) | [SAML →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-18-saml.md)

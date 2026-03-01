@@ -79,4 +79,4 @@ That inventory is the map for building deprovisioning coverage, app by app.
 
 ---
 
-[← User Offboarding](glossary-6-3-user-offboarding.md) | [Home](../README.md) | [Lifecycle Management →](glossary-6-5-lifecycle-management.md)
+[← User Offboarding](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-3-user-offboarding.md) | [🏠 Contents](/README) | [Lifecycle Management →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-5-lifecycle-management.md)

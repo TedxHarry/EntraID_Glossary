@@ -81,4 +81,4 @@ Templates reduce the activation energy for getting started. They don't replace u
 
 ---
 
-[← Sign-In Risk Level](glossary-7-30-sign-in-risk-level.md) | [Home](../README.md) | [CAE (Continuous Access Evaluation) →](glossary-7-32-cae.md)
+[← Sign-In Risk Level](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-30-sign-in-risk-level.md) | [🏠 Contents](/README) | [CAE (Continuous Access Evaluation) →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-32-cae.md)

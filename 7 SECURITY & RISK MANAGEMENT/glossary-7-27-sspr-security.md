@@ -68,4 +68,4 @@ For admin accounts: disable SSPR, require admin-initiated password reset with id
 
 ---
 
-[← Authentication Methods (Security Focus)](glossary-7-26-authentication-methods-security.md) | [Home](../README.md) | [Insider Risk →](glossary-7-28-insider-risk.md)
+[← Authentication Methods (Security Focus)](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-26-authentication-methods-security.md) | [🏠 Contents](/README) | [Insider Risk →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-28-insider-risk.md)

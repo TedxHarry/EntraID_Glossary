@@ -77,4 +77,4 @@ For confirmed attacks, remediation actions include: confirm sign-in as compromis
 
 ---
 
-[← Password Reset](../6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-23-password-reset.md) | [Home](../README.md) | [Risky Sign-In →](glossary-7-2-risky-sign-in.md)
+[← Password Reset](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-23-password-reset.md) | [🏠 Contents](/README) | [Risky Sign-In →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-2-risky-sign-in.md)

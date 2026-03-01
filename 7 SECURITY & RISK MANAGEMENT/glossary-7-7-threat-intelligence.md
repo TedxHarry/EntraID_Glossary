@@ -79,4 +79,4 @@ This is why threat intelligence works alongside behavioral analysis and anomaly 
 
 ---
 
-[← Leaked Credentials](glossary-7-6-leaked-credentials.md) | [Home](../README.md) | [Conditional Access →](glossary-7-8-conditional-access.md)
+[← Leaked Credentials](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-6-leaked-credentials.md) | [🏠 Contents](/README) | [Conditional Access →](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-8-conditional-access.md)

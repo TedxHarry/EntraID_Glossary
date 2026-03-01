@@ -74,4 +74,4 @@ Defending against consent phishing: limit user consent to verified publishers, t
 
 ---
 
-[← Consent Framework](glossary-13-14-consent-framework.md) | [Home](../README.md) | [Enterprise Application (Advanced) →](glossary-13-16-enterprise-application-advanced.md)
+[← Consent Framework](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-14-consent-framework.md) | [🏠 Contents](/README) | [Enterprise Application (Advanced) →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-16-enterprise-application-advanced.md)

@@ -73,4 +73,4 @@ That last test is the one most teams skip. Testing the happy path confirms the A
 
 ---
 
-[← Scope](glossary-4-11-scope.md) | [Home](../README.md) | [Authorization Grant →](glossary-4-13-authorization-grant.md)
+[← Scope](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-11-scope.md) | [🏠 Contents](/README) | [Authorization Grant →](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-13-authorization-grant.md)

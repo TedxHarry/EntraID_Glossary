@@ -80,4 +80,4 @@ The sign-in logs and audit logs from the week before departure are the right pla
 
 ---
 
-[← User Onboarding](glossary-6-2-user-onboarding.md) | [Home](../README.md) | [Deprovisioning →](glossary-6-4-deprovisioning.md)
+[← User Onboarding](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-2-user-onboarding.md) | [🏠 Contents](/README) | [Deprovisioning →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-4-deprovisioning.md)

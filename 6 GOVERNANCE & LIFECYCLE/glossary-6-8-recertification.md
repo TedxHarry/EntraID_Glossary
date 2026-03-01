@@ -69,4 +69,4 @@ Calibrate frequency to sensitivity and risk. Privileged access: frequent. Genera
 
 ---
 
-[← Access Certification](glossary-6-7-access-certification.md) | [Home](../README.md) | [Entitlement Management →](glossary-6-9-entitlement-management.md)
+[← Access Certification](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-7-access-certification.md) | [🏠 Contents](/README) | [Entitlement Management →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-9-entitlement-management.md)

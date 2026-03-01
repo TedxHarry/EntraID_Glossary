@@ -60,4 +60,4 @@ For these applications, the practical solutions are:
 
 ---
 
-[← Identity Correlations](glossary-13-4-identity-correlations.md) | [Home](../README.md) | [Real-Time Remediation →](glossary-13-6-real-time-remediation.md)
+[← Identity Correlations](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-4-identity-correlations.md) | [🏠 Contents](/README) | [Real-Time Remediation →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-6-real-time-remediation.md)

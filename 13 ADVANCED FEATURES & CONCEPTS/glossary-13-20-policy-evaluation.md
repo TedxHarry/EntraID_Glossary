@@ -86,4 +86,4 @@ The Conditional Access Insights and Reporting workbook aggregates sign-in log CA
 
 ---
 
-[← CA Optimization Agent](glossary-13-19-ca-optimization-agent.md) | [Home](../README.md) | [Microsoft Graph API →](glossary-13-21-graph-api.md)
+[← CA Optimization Agent](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-19-ca-optimization-agent.md) | [🏠 Contents](/README) | [Microsoft Graph API →](/13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-21-graph-api.md)

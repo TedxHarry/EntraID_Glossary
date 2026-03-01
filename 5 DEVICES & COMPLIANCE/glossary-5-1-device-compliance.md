@@ -84,4 +84,4 @@ Conditional Access has separate conditions for "managed device" (Intune-enrolled
 
 ---
 
-[← Token Security](../4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-19-token-security.md) | [Home](../README.md) | [Device Identity →](glossary-5-2-device-identity.md)
+[← Token Security](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-19-token-security.md) | [🏠 Contents](/README) | [Device Identity →](/5%20DEVICES%20%26%20COMPLIANCE/glossary-5-2-device-identity.md)

@@ -81,4 +81,4 @@ Entra ID access reviews can be configured to automatically apply review results:
 
 ---
 
-[← Lifecycle Management](glossary-6-5-lifecycle-management.md) | [Home](../README.md) | [Access Certification →](glossary-6-7-access-certification.md)
+[← Lifecycle Management](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-5-lifecycle-management.md) | [🏠 Contents](/README) | [Access Certification →](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-7-access-certification.md)

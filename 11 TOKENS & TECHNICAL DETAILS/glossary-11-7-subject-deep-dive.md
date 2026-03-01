@@ -60,4 +60,4 @@ For multi-tenant applications (where users from any Entra ID tenant can sign in)
 
 ---
 
-[← Actor (Deep Dive)](glossary-11-6-actor-deep-dive.md) | [Home](../README.md) | [Bearer Token (Deep Dive) →](glossary-11-8-bearer-token-deep-dive.md)
+[← Actor (Deep Dive)](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-6-actor-deep-dive.md) | [🏠 Contents](/README) | [Bearer Token (Deep Dive) →](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-8-bearer-token-deep-dive.md)
