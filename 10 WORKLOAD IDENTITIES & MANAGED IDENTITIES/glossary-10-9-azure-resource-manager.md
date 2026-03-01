@@ -1,7 +1,7 @@
 # Azure Resource Manager
 *The Management Plane Where Managed Identity Permissions Live*
 
-**Part of Entra ID Glossary Series: Glossary#10.9 - Azure Resource Manager**
+📚 **Part of Entra ID Glossary Series: Glossary#10.9 - Azure Resource Manager**
 
 ---
 
@@ -69,6 +69,8 @@ Role assignments in ARM templates look like nested resources or separate resourc
 ---
 
 💬 **Does your team manage ARM role assignments for managed identities through infrastructure-as-code, or are they still applied manually through the portal?** The gap between "we use Terraform for everything" and "role assignments are done manually and undocumented" is common, especially for managed identity permissions that were configured during initial setup and never formalized. What would it take to get role assignments for workload identities into your IaC pipeline?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

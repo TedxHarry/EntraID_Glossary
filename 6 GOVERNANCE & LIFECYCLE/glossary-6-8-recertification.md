@@ -1,7 +1,7 @@
 # Recertification
 *Access That Was Right Then Might Not Be Right Now*
 
-**Part of Entra ID Glossary Series: Glossary#6.8 - Recertification**
+📚 **Part of Entra ID Glossary Series: Glossary#6.8 - Recertification**
 
 ---
 
@@ -26,7 +26,7 @@ In Microsoft Entra ID Governance, recertification is built into the access revie
 
 Each recurrence launches a new review instance. Reviewers receive notifications, evaluate current access, and certify or deny. The cycle repeats.
 
-## ⏱️ Why Recurrence Frequency Matters
+## 💡 ⏱️ Why Recurrence Frequency Matters
 
 Access drift is real and happens continuously. People change roles. Projects end. Contractors finish their engagements. Reorganizations shift reporting structures. Each change creates an opportunity for access to become misaligned with actual need.
 
@@ -65,6 +65,8 @@ Calibrate frequency to sensitivity and risk. Privileged access: frequent. Genera
 ---
 
 💬 **What recertification frequency does your organization use for privileged admin roles?** The gap between "we certified this 11 months ago" and "we recertify this quarterly" is the difference between access governance as an annual checkbox and access governance as an operational control. What drove your current schedule?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Zero Trust
 *The Security Model That Stopped Trusting Your Network*
 
-**Part of Entra ID Glossary Series: Glossary#7.10 - Zero Trust**
+📚 **Part of Entra ID Glossary Series: Glossary#7.10 - Zero Trust**
 
 ---
 
@@ -81,6 +81,8 @@ The attacker in the opening scenario succeeded because the organization had impl
 ---
 
 💬 **Where is your organization on the Zero Trust maturity journey?** Most organizations have MFA deployed. Fewer have device compliance enforced. Even fewer have risk-based access and JIT privilege. What's the next control you're working to implement, and what's the blocker?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

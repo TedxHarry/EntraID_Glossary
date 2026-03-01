@@ -1,7 +1,7 @@
 # Microsoft Graph API
 *Programmatic Access to Everything in Your Entra ID Tenant*
 
-**Part of Entra ID Glossary Series: Glossary#13.21 - Microsoft Graph API**
+📚 **Part of Entra ID Glossary Series: Glossary#13.21 - Microsoft Graph API**
 
 ---
 
@@ -56,6 +56,8 @@ The `$batch` endpoint allows sending 20 Graph requests in a single HTTP call, dr
 ---
 
 💬 **What Graph API operations does your team rely on for Entra ID automation, and have you migrated from the deprecated AzureAD and MSOnline PowerShell modules to the Microsoft Graph PowerShell module?** The migration from legacy modules to Graph PowerShell is one of those projects that's easy to defer until it becomes urgent. What was the most valuable automation your team built on Graph, and what would break if you lost API access to Entra ID?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

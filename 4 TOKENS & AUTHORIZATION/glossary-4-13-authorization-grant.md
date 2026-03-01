@@ -1,7 +1,7 @@
 # Authorization Grant
 *Four Ways to Get a Token (and When to Use Each)*
 
-**Part of Entra ID Glossary Series: Glossary#4.13 - Authorization Grant**
+📚 **Part of Entra ID Glossary Series: Glossary#4.13 - Authorization Grant**
 
 ---
 
@@ -62,6 +62,8 @@ The grant type determines what the token represents, who is accountable in audit
 ---
 
 💬 **Have you inherited an application using the wrong OAuth grant type and had to migrate it?** ROPC to Authorization Code is particularly painful in older enterprise apps. What drove the decision to migrate and how did you handle the transition?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

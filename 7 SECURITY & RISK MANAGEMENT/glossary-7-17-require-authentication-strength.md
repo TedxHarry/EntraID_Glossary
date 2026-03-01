@@ -1,7 +1,7 @@
 # Require Authentication Strength
 *Not All MFA Is Equal*
 
-**Part of Entra ID Glossary Series: Glossary#7.17 - Require Authentication Strength**
+📚 **Part of Entra ID Glossary Series: Glossary#7.17 - Require Authentication Strength**
 
 ---
 
@@ -79,6 +79,8 @@ Deployment sequence matters: register the required methods first, verify coverag
 ---
 
 💬 **Have you differentiated authentication strength requirements between regular users and privileged accounts?** The realization that "MFA enabled" isn't good enough for admin accounts, because SMS OTP is technically MFA, is often the catalyst for deploying FIDO2 keys or enforcing Windows Hello. What drove your organization to require stronger methods for privileged access?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

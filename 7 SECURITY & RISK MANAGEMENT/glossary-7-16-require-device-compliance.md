@@ -1,7 +1,7 @@
 # Require Device Compliance
 *The Grant Control That Stops Token Theft*
 
-**Part of Entra ID Glossary Series: Glossary#7.16 - Require Device Compliance**
+📚 **Part of Entra ID Glossary Series: Glossary#7.16 - Require Device Compliance**
 
 ---
 
@@ -87,6 +87,8 @@ This is the recommended configuration for access to sensitive resources: both re
 ---
 
 💬 **When you enforced Require Device Compliance, what was the first non-compliant device category that surprised you?** Often it's a device that's been in the environment for years and hasn't been updated because "it just works." What was the compliance failure that surfaced devices you didn't know were out of date?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

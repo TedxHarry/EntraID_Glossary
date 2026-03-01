@@ -1,7 +1,7 @@
 # Authorization Server
 *What Entra ID Is Actually Doing Behind the Scenes*
 
-**Part of Entra ID Glossary Series: Glossary#4.4 - Authorization Server**
+📚 **Part of Entra ID Glossary Series: Glossary#4.4 - Authorization Server**
 
 ---
 
@@ -74,6 +74,8 @@ The authorization server is the trust anchor. Everything else is built on top of
 ---
 
 💬 **How has thinking about Entra ID as an authorization server (rather than just a user directory) changed how you approach identity architecture?** Or are you still mostly thinking in terms of "user accounts and permissions"? Both are valid starting points. The OAuth lens tends to become useful when you start integrating custom applications.
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

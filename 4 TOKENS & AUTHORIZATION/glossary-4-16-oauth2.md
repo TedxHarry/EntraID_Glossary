@@ -1,7 +1,7 @@
 # OAuth 2.0
 *The Protocol That Solved a Problem We Didn't Realize Was a Problem*
 
-**Part of Entra ID Glossary Series: Glossary#4.16 - OAuth 2.0**
+📚 **Part of Entra ID Glossary Series: Glossary#4.16 - OAuth 2.0**
 
 ---
 
@@ -69,6 +69,8 @@ Understanding that OAuth 2.0 is specifically about authorization rather than aut
 ---
 
 💬 **When did it click for you that OAuth was about authorization, not authentication?** It's one of those distinctions that seems obvious once you understand it but creates real confusion before that. What's the clearest way you've found to explain it to someone new to identity concepts?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

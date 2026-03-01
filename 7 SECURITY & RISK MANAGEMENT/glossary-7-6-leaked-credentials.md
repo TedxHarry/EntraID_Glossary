@@ -1,7 +1,7 @@
 # Leaked Credentials
 *When Your Password Shows Up on the Dark Web*
 
-**Part of Entra ID Glossary Series: Glossary#7.6 - Leaked Credentials**
+📚 **Part of Entra ID Glossary Series: Glossary#7.6 - Leaked Credentials**
 
 ---
 
@@ -74,6 +74,8 @@ Several controls reduce the impact of leaked credential events:
 ---
 
 💬 **Have you had a leaked credentials detection fire in your tenant where the source was a completely unrelated third-party breach?** The credential reuse chain from a retail or gaming site to a corporate account is surprisingly common. How did you handle communicating it to the affected users without them feeling blamed for something that wasn't entirely their fault?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

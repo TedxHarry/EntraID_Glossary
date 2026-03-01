@@ -1,7 +1,7 @@
 # CIAM
 *Identity Management Designed for Customers, Not Employees*
 
-**Part of Entra ID Glossary Series: Glossary#9.11 - CIAM**
+📚 **Part of Entra ID Glossary Series: Glossary#9.11 - CIAM**
 
 ---
 
@@ -64,6 +64,8 @@ A CIAM solution needs to handle the full customer identity lifecycle:
 ---
 
 💬 **Has your organization evaluated CIAM requirements for a customer-facing application?** The moment when someone says "can we just put customers in our company's Active Directory?" is the moment CIAM becomes a real conversation. What requirements drove your organization to look at a dedicated CIAM platform?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

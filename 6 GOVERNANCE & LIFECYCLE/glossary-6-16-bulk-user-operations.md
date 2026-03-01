@@ -1,7 +1,7 @@
 # Bulk User Operations
 *When You Need to Change 500 Accounts at Once*
 
-**Part of Entra ID Glossary Series: Glossary#6.16 - Bulk User Operations**
+📚 **Part of Entra ID Glossary Series: Glossary#6.16 - Bulk User Operations**
 
 ---
 
@@ -81,6 +81,8 @@ Bulk license assignment is appropriate for initial migrations, one-time events, 
 ---
 
 💬 **What's the largest bulk user operation you've run, and what validation process did you use before executing it?** The combination of "this affects hundreds of accounts" and "if I get the CSV wrong" creates a specific kind of pre-execution anxiety. What's your checklist?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

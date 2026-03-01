@@ -1,7 +1,7 @@
 # Just-in-Time Access
 *Admin Privileges Should Be Borrowed, Not Owned*
 
-**Part of Entra ID Glossary Series: Glossary#6.13 - Just-in-Time Access**
+📚 **Part of Entra ID Glossary Series: Glossary#6.13 - Just-in-Time Access**
 
 ---
 
@@ -15,7 +15,7 @@ That reasoning makes intuitive sense and is exactly backwards from a security pe
 
 Just-in-time access is the architecture that removes that invitation.
 
-## ⏱️ What Just-in-Time Access Is
+## 📌 ⏱️ What Just-in-Time Access Is
 
 Just-in-time (JIT) access means privileged access is granted for a limited time, for a specific purpose, and only when it's actually needed. Between tasks that require admin privileges, the access doesn't exist. There's nothing to compromise.
 
@@ -77,6 +77,8 @@ Start with Global Administrator. Convert permanent assignments to eligible. Set 
 ---
 
 💬 **What's the ratio of permanently-active admin roles to eligible PIM assignments in your organization?** The first time an organization audits this, the permanent assignment count is almost always higher than expected. What drove the move to JIT access, and what was the most common admin objection?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

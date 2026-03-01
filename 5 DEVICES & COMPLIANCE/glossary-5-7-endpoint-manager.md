@@ -1,7 +1,7 @@
 # Endpoint Manager
 *One Console, All Your Devices*
 
-**Part of Entra ID Glossary Series: Glossary#5.7 - Endpoint Manager**
+📚 **Part of Entra ID Glossary Series: Glossary#5.7 - Endpoint Manager**
 
 ---
 
@@ -76,6 +76,8 @@ Those three cover the daily operational tasks for most organizations.
 ---
 
 💬 **Is your organization using Intune alone, Configuration Manager with co-management, or still fully on-premises management?** The migration from on-premises SCCM to cloud Intune management has been a multi-year journey for most large enterprises. What has been the biggest obstacle in your environment?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

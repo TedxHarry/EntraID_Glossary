@@ -1,7 +1,7 @@
 # LLTs (Long Lived Tokens)
 *Why 24-Hour Workload Tokens Are Safer Than You'd Think*
 
-**Part of Entra ID Glossary Series: Glossary#10.11 - LLTs (Long Lived Tokens)**
+📚 **Part of Entra ID Glossary Series: Glossary#10.11 - LLTs (Long Lived Tokens)**
 
 ---
 
@@ -52,6 +52,8 @@ The security improvement from LLTs comes from the combination of reduced authent
 ---
 
 💬 **Has your team measured the authentication overhead from frequent token acquisitions in high-volume workloads?** The shift from hourly to daily token acquisition sounds small, but for workloads making thousands of API calls per day, it can be meaningful. What Azure services are your workloads authenticating to most frequently, and are they CAE-capable?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

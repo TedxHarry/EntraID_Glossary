@@ -1,7 +1,7 @@
 # Admin Unit
 *Scoped Administration Without Multiple Tenants*
 
-**Part of Entra ID Glossary Series: Glossary#13.13 - Admin Unit**
+📚 **Part of Entra ID Glossary Series: Glossary#13.13 - Admin Unit**
 
 ---
 
@@ -71,6 +71,8 @@ Administrative Units scope role assignments but don't create full isolation. Obj
 ---
 
 💬 **Does your organization use Administrative Units for delegated administration, or do you manage all identity administration centrally?** The delegation model scales much better with AUs than with either global admin access or separate tenants. What organizational structure would benefit most from scoped administration in your environment?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Sign-In Risk Level
 *Reading the Signals in a Single Authentication*
 
-**Part of Entra ID Glossary Series: Glossary#7.30 - Sign-In Risk Level**
+📚 **Part of Entra ID Glossary Series: Glossary#7.30 - Sign-In Risk Level**
 
 ---
 
@@ -47,7 +47,7 @@ Sign-in risk is assembled from multiple detection types evaluated simultaneously
 
 **Password spray** 💧: Sign-in pattern consistent with a password spray attack: many failed attempts across multiple accounts from the same IP, then a successful attempt.
 
-## ⏱️ Real-Time vs Offline
+## 🔀 ⏱️ Real-Time vs Offline
 
 Not all sign-in risk detections happen instantly:
 
@@ -73,6 +73,8 @@ High risk gets blocked rather than stepped up because at High confidence, a step
 ---
 
 💬 **What's the most interesting high-risk sign-in you've investigated?** The impossible travel detections are often the clearest: the timeline makes it obvious an account is being used from two places simultaneously. But some of the malicious IP detections tell a more complex story about the infrastructure attackers are using. What did the investigation reveal?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

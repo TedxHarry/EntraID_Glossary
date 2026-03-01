@@ -1,7 +1,7 @@
 # User Onboarding
 *The First Day Experience Is an Identity Problem*
 
-**Part of Entra ID Glossary Series: Glossary#6.2 - User Onboarding**
+📚 **Part of Entra ID Glossary Series: Glossary#6.2 - User Onboarding**
 
 ---
 
@@ -48,7 +48,7 @@ The difference between a smooth first day and a frustrating one is how many of t
 - The user arrives to find their laptop isn't ready
 - They try to register MFA but their phone number wasn't entered during account creation
 
-## ⏰ Lifecycle Workflows: Automating the Sequence
+## ♻️ ⏰ Lifecycle Workflows: Automating the Sequence
 
 Microsoft Entra Lifecycle Workflows allow organizations to define automated task sequences triggered by identity events. For onboarding, a "Joiner" workflow can:
 
@@ -73,6 +73,8 @@ Manager-driven onboarding reduces IT involvement in access decisions and puts th
 ---
 
 💬 **What's the single biggest friction point in your organization's current onboarding process?** The gap between "user created in Entra ID" and "user can do their job" is where most first-day frustration lives. Whether it's MFA registration, device provisioning, or app access, the bottleneck is usually the same for months until someone fixes it.
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

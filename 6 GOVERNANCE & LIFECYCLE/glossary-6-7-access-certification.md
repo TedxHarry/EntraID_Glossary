@@ -1,7 +1,7 @@
 # Access Certification
 *When "Reviewed" Has to Mean Something to an Auditor*
 
-**Part of Entra ID Glossary Series: Glossary#6.7 - Access Certification**
+📚 **Part of Entra ID Glossary Series: Glossary#6.7 - Access Certification**
 
 ---
 
@@ -75,6 +75,8 @@ Entitlement Management access packages (covered in Glossary#6.9) can have access
 ---
 
 💬 **Has your organization had an audit finding related to access certification evidence?** The gap between "we reviewed access" and "we can prove we reviewed access in the way the auditor requires" is where many compliance programs fail. What triggered the change in how your organization handles certification documentation?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

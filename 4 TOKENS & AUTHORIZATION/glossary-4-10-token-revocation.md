@@ -1,7 +1,7 @@
 # Token Revocation
 *Why "I Disabled Their Account" Isn't Always Enough*
 
-**Part of Entra ID Glossary Series: Glossary#4.10 - Token Revocation**
+📚 **Part of Entra ID Glossary Series: Glossary#4.10 - Token Revocation**
 
 ---
 
@@ -79,6 +79,8 @@ CAE implementation in custom applications eliminates the window entirely for tho
 ---
 
 💬 **Have you had a situation where you needed to cut off access immediately and discovered the 60-minute gap?** It's the kind of thing that's easy to overlook until urgency makes it very real. How did your organization handle it, and did it change how you configured token lifetimes or Conditional Access afterward?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Legacy Authentication
 *The Open Door That MFA Can't Close*
 
-**Part of Entra ID Glossary Series: Glossary#7.22 - Legacy Authentication**
+📚 **Part of Entra ID Glossary Series: Glossary#7.22 - Legacy Authentication**
 
 ---
 
@@ -85,6 +85,8 @@ For cases where the work to migrate can't happen immediately, create a specific 
 ---
 
 💬 **What was the legacy auth offender that surprised you most when you started blocking it?** The printer scenario is almost universal. But the business-critical ERP system that nobody knew was using IMAP to send monthly reports is the one that causes the most painful conversation. What did your legacy auth block surface in your environment?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

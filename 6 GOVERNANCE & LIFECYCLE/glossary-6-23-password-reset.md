@@ -1,7 +1,7 @@
 # Password Reset
 *Giving Users the Key to Their Own Lock*
 
-**Part of Entra ID Glossary Series: Glossary#6.23 - Password Reset**
+📚 **Part of Entra ID Glossary Series: Glossary#6.23 - Password Reset**
 
 ---
 
@@ -78,6 +78,8 @@ Forcing a password change on next sign-in ensures the temporary password is imme
 ---
 
 💬 **What percentage of your organization's help desk tickets are password resets?** The answer before SSPR is almost always higher than expected. After SSPR adoption, the residual cases are almost always users who never registered. What drove your organization to invest in SSPR adoption?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

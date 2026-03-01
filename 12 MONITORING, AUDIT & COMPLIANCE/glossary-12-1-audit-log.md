@@ -1,7 +1,7 @@
 # Audit Log
 *The Record of Every Identity Operation in Your Tenant*
 
-**Part of Entra ID Glossary Series: Glossary#12.1 - Audit Log**
+📚 **Part of Entra ID Glossary Series: Glossary#12.1 - Audit Log**
 
 ---
 
@@ -31,7 +31,7 @@ Operations captured include:
 
 Each audit event includes: the date and time, the actor (who or what performed the operation), the target (which object was modified), the operation name, and the result (success or failure).
 
-## ⏰ Retention and Export
+## 📌 ⏰ Retention and Export
 
 Audit log retention in Entra ID depends on the license tier:
 
@@ -89,6 +89,8 @@ Audit logs cover the identity plane (identity administration operations). They d
 ---
 
 💬 **How far back can your organization query Entra ID audit logs today, and is that sufficient for your compliance requirements?** The gap between "we have 30 days of built-in audit logs" and "our compliance requirement is 12 months" is common and fixable with diagnostic settings export. Has your organization set up long-term audit log retention, and what drove the decision to do it (or not)?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Require MFA
 *The Grant Control That Changed Identity Security*
 
-**Part of Entra ID Glossary Series: Glossary#7.15 - Require MFA**
+📚 **Part of Entra ID Glossary Series: Glossary#7.15 - Require MFA**
 
 ---
 
@@ -82,6 +82,8 @@ Require MFA raises the bar significantly. It doesn't make an account unbreakable
 ---
 
 💬 **When you enabled MFA as a Conditional Access requirement, what was the biggest challenge during rollout?** The MFA registration coverage gap is the most common blocker. Did you encounter users who genuinely couldn't register because of device or connectivity constraints, and how did you handle the exceptions?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

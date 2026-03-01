@@ -1,7 +1,7 @@
 # Workload Federation
 *Authenticating to Azure Without Storing Azure Credentials*
 
-**Part of Entra ID Glossary Series: Glossary#10.5 - Workload Federation**
+📚 **Part of Entra ID Glossary Series: Glossary#10.5 - Workload Federation**
 
 ---
 
@@ -60,6 +60,8 @@ The security properties of workload federation are meaningfully better than stor
 ---
 
 💬 **Has your team migrated GitHub Actions or CI/CD pipelines from stored service principal secrets to workload federation?** The migration is usually straightforward and the security improvement is significant. What held your team back from making the switch, or what finally prompted you to do it?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

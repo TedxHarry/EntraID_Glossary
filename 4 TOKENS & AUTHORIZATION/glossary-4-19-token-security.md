@@ -1,7 +1,7 @@
 # Token Security
 *Treating Every Token Like the Key It Is*
 
-**Part of Entra ID Glossary Series: Glossary#4.19 - Token Security**
+📚 **Part of Entra ID Glossary Series: Glossary#4.19 - Token Security**
 
 ---
 
@@ -49,7 +49,7 @@ How tokens are stored between uses determines the attack surface at rest:
 
 🔴 **Log files**: Never log token values. Log files are shared with support teams, aggregated in SIEM systems, sent to vendors, and retained for years. An access token that appears in a log file at 2pm is a live credential sitting in a log file at 2pm.
 
-## ⏱️ Expiry: A Safety Net, Not a Strategy
+## 📌 ⏱️ Expiry: A Safety Net, Not a Strategy
 
 Short token lifetimes limit damage. A token stolen with 3 minutes remaining is useful for 3 minutes. A token stolen at issuance is useful for up to 60 minutes. This is why access tokens have short lifetimes by default, and why CAE-capable services can safely extend them to 24 hours while retaining real-time revocation capability.
 
@@ -64,6 +64,8 @@ Depending on the token's permissions and how long it was accessible, a breach no
 ---
 
 💬 **Have you found an access token somewhere it had no business being - a log file, a public repository, a chat message?** It happens more often than organizations realize, and it's usually not malicious, just someone debugging without thinking through where the output lands. What was the cleanup process?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

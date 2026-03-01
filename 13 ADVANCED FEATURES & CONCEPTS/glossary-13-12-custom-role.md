@@ -1,7 +1,7 @@
 # Custom Role
 *Administrative Permissions That Fit What Your Team Actually Needs*
 
-**Part of Entra ID Glossary Series: Glossary#13.12 - Custom Role**
+📚 **Part of Entra ID Glossary Series: Glossary#13.12 - Custom Role**
 
 ---
 
@@ -76,6 +76,8 @@ This makes PIM-governed custom roles the right pattern for even helpdesk capabil
 ---
 
 💬 **Does your organization use custom Entra ID roles to implement least-privilege administrative access, or are built-in roles covering most scenarios?** The gap between "we use Helpdesk Administrator because it's close enough" and "we have a custom role that includes exactly the permissions our helpdesk needs" matters for security posture. What's the administrative permission gap that most warrants a custom role in your environment?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

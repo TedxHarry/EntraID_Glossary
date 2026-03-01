@@ -1,7 +1,7 @@
 # OIDC (OpenID Connect)
 *The Layer OAuth Was Missing*
 
-**Part of Entra ID Glossary Series: Glossary#4.17 - OIDC (OpenID Connect)**
+📚 **Part of Entra ID Glossary Series: Glossary#4.17 - OIDC (OpenID Connect)**
 
 ---
 
@@ -77,6 +77,8 @@ Libraries that support OIDC discovery configure themselves automatically. You pr
 ---
 
 💬 **When you first understood that OAuth 2.0 and OpenID Connect were different things built on top of each other, did it change how you thought about the authentication flows you'd already built?** The distinction is fundamental but easy to miss when the library handles both transparently. What triggered the "oh, these are separate" moment?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

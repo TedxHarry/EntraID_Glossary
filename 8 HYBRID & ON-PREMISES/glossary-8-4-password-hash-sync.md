@@ -1,7 +1,7 @@
 # Password Hash Sync
 *How On-Premises Passwords Work in the Cloud*
 
-**Part of Entra ID Glossary Series: Glossary#8.4 - Password Hash Sync**
+📚 **Part of Entra ID Glossary Series: Glossary#8.4 - Password Hash Sync**
 
 ---
 
@@ -73,6 +73,8 @@ Pass-Through Authentication and Federation are appropriate for specific requirem
 ---
 
 💬 **When you evaluated authentication methods for your hybrid environment, what drove your decision between PHS, PTA, and Federation?** The "passwords in the cloud" concern often comes up during PHS evaluations. How did you address that concern, and did the leaked credentials detection capability factor into your decision?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

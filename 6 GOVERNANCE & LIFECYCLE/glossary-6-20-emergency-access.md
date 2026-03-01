@@ -1,7 +1,7 @@
 # Emergency Access
 *The Account You Hope You Never Need*
 
-**Part of Entra ID Glossary Series: Glossary#6.20 - Emergency Access**
+📚 **Part of Entra ID Glossary Series: Glossary#6.20 - Emergency Access**
 
 ---
 
@@ -79,6 +79,8 @@ Test emergency access accounts quarterly: sign in with each account, verify the 
 ---
 
 💬 **Does your organization have tested, documented emergency access accounts?** The organizations that don't find out the hard way, usually at the worst possible time. What was the scenario that convinced your organization to take break-glass accounts seriously?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

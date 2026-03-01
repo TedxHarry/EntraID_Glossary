@@ -1,7 +1,7 @@
 # Identity Verification
 *Confirming the Person Behind the Account*
 
-**Part of Entra ID Glossary Series: Glossary#6.19 - Identity Verification**
+📚 **Part of Entra ID Glossary Series: Glossary#6.19 - Identity Verification**
 
 ---
 
@@ -74,6 +74,8 @@ Verification requirements should scale with what the verified identity will acce
 ---
 
 💬 **What does your organization use to verify someone's identity before granting access or recovering an account?** The gap between "we ask them their employee ID" and "we require cryptographic proof of identity" is wide, and most organizations are closer to the former. What's the highest-assurance verification step you currently use?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Continuous Authorization (CAE)
 *Shifting From "You Were Trusted" to "You Are Trusted Right Now"*
 
-**Part of Entra ID Glossary Series: Glossary#13.3 - Continuous Authorization (CAE)**
+📚 **Part of Entra ID Glossary Series: Glossary#13.3 - Continuous Authorization (CAE)**
 
 ---
 
@@ -64,6 +64,8 @@ When something does change (account disabled, policy updated, risk elevated), th
 ---
 
 💬 **Has your organization configured Conditional Access with the expectation that policy changes would take effect immediately for active sessions, and have you verified that CAE is actually enforcing this for the services you care about?** The gap between "we updated the policy" and "active sessions are now subject to it" varies significantly based on which services are involved and whether clients are CAE-capable. What's your process for validating policy change enforcement timing?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

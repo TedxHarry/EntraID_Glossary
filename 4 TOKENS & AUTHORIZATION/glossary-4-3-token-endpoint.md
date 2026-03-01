@@ -1,7 +1,7 @@
 # Token Endpoint
 *The Server-Side Half Nobody Talks About*
 
-**Part of Entra ID Glossary Series: Glossary#4.3 - Token Endpoint**
+📚 **Part of Entra ID Glossary Series: Glossary#4.3 - Token Endpoint**
 
 ---
 
@@ -91,6 +91,8 @@ The error response from the token endpoint always includes an `error` field and 
 ---
 
 💬 **What's the most cryptic token endpoint error you've had to debug?** The `invalid_grant` on a refresh token that worked fine yesterday is a classic that sends people down long rabbit holes before they find the revocation event in the logs.
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

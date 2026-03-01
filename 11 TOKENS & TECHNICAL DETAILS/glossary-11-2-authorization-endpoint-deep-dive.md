@@ -1,7 +1,7 @@
 # Authorization Endpoint (Deep Dive)
 *What's Actually in That Sign-In URL*
 
-**Part of Entra ID Glossary Series: Glossary#11.2 - Authorization Endpoint (Deep Dive)**
+📚 **Part of Entra ID Glossary Series: Glossary#11.2 - Authorization Endpoint (Deep Dive)**
 
 ---
 
@@ -70,6 +70,8 @@ These errors come back in the URL, not as HTTP error codes. The application must
 ---
 
 💬 **Which authorization endpoint parameter has caused the most debugging pain in your integrations?** Redirect URI mismatches are the most common complaint from developers. But nonce validation failures and PKCE mismatches cause confusing errors that aren't always obvious from the error message. What parameter trips up your team the most?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Authentication Method
 *Not All Proof Is Created Equal*
 
-**Part of Entra ID Glossary Series: Glossary#3.3 - Authentication Method**
+📚 **Part of Entra ID Glossary Series: Glossary#3.3 - Authentication Method**
 
 ---
 
@@ -71,6 +71,8 @@ The attacker who called twelve users and got them to approve push notifications 
 ---
 
 💬 **What authentication methods are you running in your environment?** Are you still on SMS for some user populations? What's been the biggest barrier to moving toward phishing-resistant methods?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

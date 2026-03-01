@@ -1,7 +1,7 @@
 # Managed Device
 *Enrolled Isn't the Same as Secure*
 
-**Part of Entra ID Glossary Series: Glossary#5.12 - Managed Device**
+📚 **Part of Entra ID Glossary Series: Glossary#5.12 - Managed Device**
 
 ---
 
@@ -83,6 +83,8 @@ Then, as compliance policies are tuned and devices pass reliably, the policy req
 ---
 
 💬 **When your organization ran its first Conditional Access report on device management state, what percentage of accesses were coming from unmanaged devices?** The gap between "we think our devices are managed" and "here's what's actually hitting our apps" is often surprising. What did the data show?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

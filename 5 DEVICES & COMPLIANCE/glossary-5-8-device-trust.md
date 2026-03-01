@@ -1,7 +1,7 @@
 # Device Trust
 *Not All Devices Are Equally Trustworthy (And Entra ID Knows It)*
 
-**Part of Entra ID Glossary Series: Glossary#5.8 - Device Trust**
+📚 **Part of Entra ID Glossary Series: Glossary#5.8 - Device Trust**
 
 ---
 
@@ -66,6 +66,8 @@ This creates a gradient of access rather than a binary allow/deny, which is much
 ---
 
 💬 **Has your organization built a tiered access model based on device trust levels?** The move from binary "allowed or blocked" to a tiered model based on device state is one of the most meaningful Zero Trust improvements you can make. What did your trust tiers end up looking like?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

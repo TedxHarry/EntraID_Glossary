@@ -1,7 +1,7 @@
 # Entra Connect
 *The Engine Behind Hybrid Identity*
 
-**Part of Entra ID Glossary Series: Glossary#8.2 - Entra Connect**
+📚 **Part of Entra ID Glossary Series: Glossary#8.2 - Entra Connect**
 
 ---
 
@@ -78,6 +78,8 @@ Both tools synchronize the same objects and support PHS. The choice depends on e
 ---
 
 💬 **What was the most challenging Entra Connect configuration decision you've made in a complex hybrid environment?** The multi-forest scenarios, the UPN mismatches between AD and existing cloud accounts, or the custom attribute mapping requirements are where Connect's complexity becomes visible. What required the most troubleshooting to get right?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

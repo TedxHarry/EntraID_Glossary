@@ -1,7 +1,7 @@
 # User Provisioning
 *Accounts That Create Themselves (When It's Done Right)*
 
-**Part of Entra ID Glossary Series: Glossary#6.1 - User Provisioning**
+📚 **Part of Entra ID Glossary Series: Glossary#6.1 - User Provisioning**
 
 ---
 
@@ -76,6 +76,8 @@ Automated provisioning solves all three.
 ---
 
 💬 **How many of your organization's applications have automated provisioning configured vs relying on manual account creation?** The gap between "Entra ID knows the user" and "every app the user needs has their account" is where most new hire friction lives. What was the first application you automated provisioning for?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

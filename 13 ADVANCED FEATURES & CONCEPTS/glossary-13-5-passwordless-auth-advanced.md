@@ -1,7 +1,7 @@
 # Passwordless Auth (Advanced)
 *Deployment Reality Beyond the Demo*
 
-**Part of Entra ID Glossary Series: Glossary#13.5 - Passwordless Auth (Advanced)**
+📚 **Part of Entra ID Glossary Series: Glossary#13.5 - Passwordless Auth (Advanced)**
 
 ---
 
@@ -56,6 +56,8 @@ For these applications, the practical solutions are:
 ---
 
 💬 **What is the biggest obstacle your organization faces in achieving broad passwordless authentication coverage?** The shared workstation problem, the legacy application last mile, and the FIDO2 key management overhead are the most commonly cited barriers. What percentage of your user population is currently using a passwordless primary method, and what's blocking the rest?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

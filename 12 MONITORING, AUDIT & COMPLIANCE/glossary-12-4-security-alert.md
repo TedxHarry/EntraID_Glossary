@@ -1,7 +1,7 @@
 # Security Alert
 *When Entra ID Tells You Something Is Wrong*
 
-**Part of Entra ID Glossary Series: Glossary#12.4 - Security Alert**
+📚 **Part of Entra ID Glossary Series: Glossary#12.4 - Security Alert**
 
 ---
 
@@ -72,6 +72,8 @@ These policies block or remediate risk detections in real time without analyst i
 ---
 
 💬 **What percentage of the security alerts your team receives from Entra ID are actionable versus false positives?** The signal-to-noise ratio in identity security alerts varies significantly by environment: organizations with lots of remote workers, VPN usage, and international travel see higher false positive rates. What tuning has your team done to improve alert quality?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Microsoft Entra Suite
 *The Consolidated Identity and Network Access Platform*
 
-**Part of Entra ID Glossary Series: Glossary#13.23 - Microsoft Entra Suite**
+📚 **Part of Entra ID Glossary Series: Glossary#13.23 - Microsoft Entra Suite**
 
 ---
 
@@ -66,6 +66,8 @@ For organizations planning identity investments, the Entra Suite represents Micr
 ---
 
 💬 **Is your organization evaluating the Microsoft Entra Suite as a consolidated licensing option, and which component represents the biggest gap in your current identity security stack?** The Entra product family has expanded significantly beyond the core Entra ID directory service. What identity capabilities are you most actively looking at to extend your current Entra ID deployment?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

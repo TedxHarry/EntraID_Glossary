@@ -1,7 +1,7 @@
 # Refresh Token
 *What "Keep Me Signed In" Is Actually Doing*
 
-**Part of Entra ID Glossary Series: Glossary#4.7 - Refresh Token**
+📚 **Part of Entra ID Glossary Series: Glossary#4.7 - Refresh Token**
 
 ---
 
@@ -17,7 +17,7 @@ Its job is simple: when the access token expires, the application presents the r
 
 This is the mechanism behind "keep me signed in." It's not that the access token stays valid forever. It's that the application keeps quietly trading in the refresh token for new access tokens as each one expires.
 
-## ⏱️ How Long Refresh Tokens Last
+## 🔧 ⏱️ How Long Refresh Tokens Last
 
 Refresh token lifetime in Entra ID isn't a single fixed value. It's a sliding window with a maximum:
 
@@ -61,6 +61,8 @@ If a user's device becomes non-compliant after sign-in, the next refresh token e
 ---
 
 💬 **Have you had to troubleshoot a "keeps signing me out" complaint?** Nine times out of ten it traces back to either a sign-in frequency Conditional Access policy or a refresh token being invalidated by a policy change, password reset, or admin action. What was the root cause in your experience?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

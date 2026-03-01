@@ -1,7 +1,7 @@
 # Attribute-Based Access Control (ABAC)
 *Access Decisions That Go Beyond Role Membership*
 
-**Part of Entra ID Glossary Series: Glossary#13.1 - Attribute-Based Access Control (ABAC)**
+📚 **Part of Entra ID Glossary Series: Glossary#13.1 - Attribute-Based Access Control (ABAC)**
 
 ---
 
@@ -59,6 +59,8 @@ If user department attributes in Entra ID aren't kept in sync with the HR system
 ---
 
 💬 **Has your organization hit the point where RBAC role proliferation is a management problem, and have you evaluated ABAC conditions as a solution?** The tipping point is usually when managing access requires creating more roles than teams can reasonably administer. What data segmentation or classification requirement is driving the most role proliferation in your environment?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

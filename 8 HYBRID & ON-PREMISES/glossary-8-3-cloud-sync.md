@@ -1,7 +1,7 @@
 # Cloud Sync
 *The Lighter Path to Hybrid Identity*
 
-**Part of Entra ID Glossary Series: Glossary#8.3 - Cloud Sync**
+📚 **Part of Entra ID Glossary Series: Glossary#8.3 - Cloud Sync**
 
 ---
 
@@ -68,6 +68,8 @@ The feature gap between Cloud Sync and Entra Connect has narrowed with each rele
 ---
 
 💬 **Have you migrated from Entra Connect to Cloud Sync, or deployed Cloud Sync for a new environment?** The operational overhead reduction is the most commonly cited benefit: no more scheduled maintenance windows for Connect upgrades, no more capacity planning for the sync server. What was the driver for your Cloud Sync adoption?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

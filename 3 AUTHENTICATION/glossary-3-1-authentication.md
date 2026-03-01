@@ -1,7 +1,7 @@
 # Authentication
 *The Question Behind Every Sign-In*
 
-**Part of Entra ID Glossary Series: Glossary#3.1 - Authentication**
+📚 **Part of Entra ID Glossary Series: Glossary#3.1 - Authentication**
 
 ---
 
@@ -71,6 +71,8 @@ Strong authentication is the floor. Build everything else on top of it.
 ---
 
 💬 **What authentication challenges are you dealing with right now?** Legacy protocols you're trying to block? Phishing-resistant methods you're rolling out? Users resisting MFA? Drop your current situation in the comments.
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

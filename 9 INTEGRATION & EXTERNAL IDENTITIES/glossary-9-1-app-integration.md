@@ -1,7 +1,7 @@
 # App Integration
 *Connecting Applications to Entra ID for Authentication*
 
-**Part of Entra ID Glossary Series: Glossary#9.1 - App Integration**
+📚 **Part of Entra ID Glossary Series: Glossary#9.1 - App Integration**
 
 ---
 
@@ -66,6 +66,8 @@ The relationship: App Registration defines what the app is. Enterprise Applicati
 ---
 
 💬 **What's the application in your environment that most needs Entra ID integration but hasn't been integrated yet?** The "we'll integrate it eventually" list exists in almost every organization. What's keeping the highest-value holdout from being connected, and what would it take to get there?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

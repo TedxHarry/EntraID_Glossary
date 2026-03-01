@@ -1,7 +1,7 @@
 # Token Lifetime
 *The Trade-Off Between Security and Not Annoying Your Users*
 
-**Part of Entra ID Glossary Series: Glossary#4.9 - Token Lifetime**
+📚 **Part of Entra ID Glossary Series: Glossary#4.9 - Token Lifetime**
 
 ---
 
@@ -11,7 +11,7 @@ The developers on the same project had a different view. Their app made API call
 
 Both teams were right. Token lifetime is a genuine trade-off, not a setting you just make as small as possible. Understanding the defaults, the levers, and the modern approach (CAE) helps you find a configuration that works for both security and users.
 
-## ⏱️ The Default Token Lifetimes
+## 🎫 ⏱️ The Default Token Lifetimes
 
 Entra ID ships with these defaults:
 
@@ -63,6 +63,8 @@ Tokens can extend to 24 hours safely. The main Microsoft 365 services already su
 ---
 
 💬 **Has token lifetime configuration caused friction in your environment?** Users complaining about sign-out frequency, developers complaining about token refresh load, or security teams pushing for shorter lifetimes than is practical? What compromise did you land on?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

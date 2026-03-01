@@ -1,7 +1,7 @@
 # Scope (Deep Dive)
 *Defining and Validating What Applications Are Allowed to Do With Your API*
 
-**Part of Entra ID Glossary Series: Glossary#11.12 - Scope (Deep Dive)**
+📚 **Part of Entra ID Glossary Series: Glossary#11.12 - Scope (Deep Dive)**
 
 ---
 
@@ -79,6 +79,8 @@ Incremental consent improves user experience (users consent to manageable, conte
 ---
 
 💬 **How granular is the scope design in your organization's internal APIs?** The gap between "one scope to rule them all" and "precise, minimal scopes for each operation" varies widely across teams. What drove the scope design decisions in the APIs your team owns, and what would you design differently now?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

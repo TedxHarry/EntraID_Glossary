@@ -1,7 +1,7 @@
 # Device Compliance
 *When the Device Has to Earn Its Access*
 
-**Part of Entra ID Glossary Series: Glossary#5.1 - Device Compliance**
+📚 **Part of Entra ID Glossary Series: Glossary#5.1 - Device Compliance**
 
 ---
 
@@ -61,7 +61,7 @@ Compliance policies are configured in Intune and typically include:
 
 Each requirement that fails contributes to a non-compliant status. One failing requirement = non-compliant, regardless of how many others pass.
 
-## ⏱️ Compliance Evaluation Timing
+## 📌 ⏱️ Compliance Evaluation Timing
 
 Intune doesn't evaluate compliance in real-time every second. Devices check in on a schedule (typically every 8 hours for Windows, more frequently after a sync is forced). After a compliance policy change, there's a window before all devices have been re-evaluated.
 
@@ -80,6 +80,8 @@ Conditional Access has separate conditions for "managed device" (Intune-enrolled
 ---
 
 💬 **Have you had a situation where a Conditional Access compliance requirement blocked a user who was surprised it was possible?** The moment someone realizes their device's security state directly affects their application access is usually when the conversation about patch management gets a lot more productive. What changed after that?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Sign-In
 *What Actually Happens When You Click "Sign In"*
 
-**Part of Entra ID Glossary Series: Glossary#3.2 - Sign-In**
+📚 **Part of Entra ID Glossary Series: Glossary#3.2 - Sign-In**
 
 ---
 
@@ -74,6 +74,8 @@ Two categories you'll see in the logs, and they matter for understanding what yo
 ---
 
 💬 **Have you ever solved a sign-in issue by reading the logs directly?** What did they reveal that wasn't obvious from the user's description? Sign-in logs have a way of telling a very different story than "it just doesn't work."
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

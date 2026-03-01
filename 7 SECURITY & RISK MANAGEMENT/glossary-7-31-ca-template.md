@@ -1,7 +1,7 @@
 # CA Template
 *Microsoft's Starting Points for Conditional Access*
 
-**Part of Entra ID Glossary Series: Glossary#7.31 - CA Template**
+📚 **Part of Entra ID Glossary Series: Glossary#7.31 - CA Template**
 
 ---
 
@@ -77,6 +77,8 @@ Templates reduce the activation energy for getting started. They don't replace u
 ---
 
 💬 **Did your organization use CA Templates as a starting point for your Conditional Access deployment, or did you build from scratch?** The template approach accelerates getting to a functional baseline, but the organizations that built from scratch often have cleaner, more intentional policy sets. What approach did you take and what would you do differently?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

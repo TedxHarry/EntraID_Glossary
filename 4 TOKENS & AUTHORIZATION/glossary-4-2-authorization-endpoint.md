@@ -1,7 +1,7 @@
 # Authorization Endpoint
 *Reading What That Long URL Is Actually Saying*
 
-**Part of Entra ID Glossary Series: Glossary#4.2 - Authorization Endpoint**
+📚 **Part of Entra ID Glossary Series: Glossary#4.2 - Authorization Endpoint**
 
 ---
 
@@ -79,6 +79,8 @@ When you see a sign-in failing at this stage, the Entra ID error page usually in
 ---
 
 💬 **Have you ever read the raw authorize request URL during a debugging session?** Once you know what each parameter means, a broken sign-in URL tells you almost everything you need to know about where the problem is. What's the most useful thing you've learned from reading OAuth request parameters directly?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # CAE for Workloads
 *Real-Time Token Revocation for Non-Human Identities*
 
-**Part of Entra ID Glossary Series: Glossary#10.10 - CAE for Workloads**
+📚 **Part of Entra ID Glossary Series: Glossary#10.10 - CAE for Workloads**
 
 ---
 
@@ -58,6 +58,8 @@ Knowing which Azure services support CAE matters when designing incident respons
 ---
 
 💬 **Has your team ever had to respond to a compromised service principal, and how long did it take before the service principal's access actually stopped?** The gap between "we revoked the permissions" and "access actually stopped" is a real operational problem in incident response. CAE for workloads is meant to close that gap. Has it changed how your team thinks about workload identity incident response timelines?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Risky User
 *When the Account Itself Is Flagged, Not Just One Sign-In*
 
-**Part of Entra ID Glossary Series: Glossary#7.3 - Risky User**
+📚 **Part of Entra ID Glossary Series: Glossary#7.3 - Risky User**
 
 ---
 
@@ -80,6 +80,8 @@ Some user risk detections are offline: they're generated after analysis that tak
 ---
 
 💬 **Have you had an account flagged for leaked credentials that were actually from an external breach, not your environment?** The credential reuse scenario is one of the most common user risk detections. How did you handle the conversation with the user about why their work account was at risk because of a gaming site they'd forgotten about?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Microsoft Authenticator Advanced
 *Beyond Basic MFA to Modern Authentication*
 
-**Part of Entra ID Glossary Series: Glossary#13.22 - Microsoft Authenticator Advanced**
+📚 **Part of Entra ID Glossary Series: Glossary#13.22 - Microsoft Authenticator Advanced**
 
 ---
 
@@ -64,6 +64,8 @@ The Microsoft Managed setting lets Microsoft's defaults evolve as security recom
 ---
 
 💬 **Has your organization enabled number matching and additional context for Authenticator push notifications, and have you seen a measurable reduction in MFA fatigue attack attempts since enabling them?** The gap between "we have MFA" and "we have MFA that's actually resistant to the attacks people use against MFA" is where many organizations find themselves after an incident. What authentication method changes has your team made after seeing the limits of basic push MFA?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

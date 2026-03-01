@@ -1,7 +1,7 @@
 # Token Endpoint (Deep Dive)
 *Where Codes and Credentials Become Tokens*
 
-**Part of Entra ID Glossary Series: Glossary#11.3 - Token Endpoint (Deep Dive)**
+📚 **Part of Entra ID Glossary Series: Glossary#11.3 - Token Endpoint (Deep Dive)**
 
 ---
 
@@ -70,6 +70,8 @@ A successful token response is a JSON object with:
 ---
 
 💬 **What's the most useful thing you've found by decoding an access token from the token endpoint during a debugging session?** JWT decoders like jwt.ms make it easy to see the actual claims Entra ID is issuing. Have you ever found a missing claim, wrong audience, or unexpected permission scope that explained a permission failure?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

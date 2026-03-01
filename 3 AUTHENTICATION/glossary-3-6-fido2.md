@@ -1,7 +1,7 @@
 # FIDO2
 *Why a Small USB Stick Can Eliminate Phishing from Your Attack Surface*
 
-**Part of Entra ID Glossary Series: Glossary#3.6 - FIDO2**
+📚 **Part of Entra ID Glossary Series: Glossary#3.6 - FIDO2**
 
 ---
 
@@ -81,6 +81,8 @@ FIDO2 security keys are the right choice for:
 ---
 
 💬 **Have you deployed FIDO2 security keys in your organization?** Which hardware did you choose, and what was the user experience feedback? The enrollment process is surprisingly straightforward once people have the key in hand.
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

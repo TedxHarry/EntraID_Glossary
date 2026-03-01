@@ -1,7 +1,7 @@
 # Authentication Strength
 *Why Some MFA Is Stronger Than Others*
 
-**Part of Entra ID Glossary Series: Glossary#7.25 - Authentication Strength**
+📚 **Part of Entra ID Glossary Series: Glossary#7.25 - Authentication Strength**
 
 ---
 
@@ -66,6 +66,8 @@ For a Global Administrator, the worst case is complete tenant compromise. Phishi
 ---
 
 💬 **Has your organization differentiated authentication strength requirements between regular users and privileged accounts?** The conversation about "we have MFA" vs "we have phishing-resistant MFA for our admins" reflects a real security gap. What was the event or recommendation that drove the decision to require stronger methods for specific roles?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

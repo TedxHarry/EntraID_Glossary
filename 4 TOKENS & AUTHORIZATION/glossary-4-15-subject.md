@@ -1,7 +1,7 @@
 # Subject
 *Whose Data Is This, Really?*
 
-**Part of Entra ID Glossary Series: Glossary#4.15 - Subject**
+📚 **Part of Entra ID Glossary Series: Glossary#4.15 - Subject**
 
 ---
 
@@ -58,6 +58,8 @@ The `sub` claim is still useful. It's the right identifier to use when you speci
 ---
 
 💬 **Have you run into identifier issues where users were being confused or collisions were occurring in your application database?** The sub vs oid confusion is one of the more common mistakes in OAuth application development. What was the symptom that made you realize something was wrong?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

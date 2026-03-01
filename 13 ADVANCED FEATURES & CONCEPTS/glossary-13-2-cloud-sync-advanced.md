@@ -1,7 +1,7 @@
 # Cloud-Based Sync (Advanced)
 *Complex Synchronization Scenarios Beyond the Basics*
 
-**Part of Entra ID Glossary Series: Glossary#13.2 - Cloud-Based Sync (Advanced)**
+📚 **Part of Entra ID Glossary Series: Glossary#13.2 - Cloud-Based Sync (Advanced)**
 
 ---
 
@@ -67,6 +67,8 @@ For new deployments without Exchange hybrid or device hybrid requirements, Cloud
 ---
 
 💬 **Has your organization's synchronization architecture evolved beyond a single forest to single tenant setup, and what were the most complex attribute mapping or scoping challenges you had to solve?** Multi-forest scenarios from mergers and acquisitions are the most common driver of advanced synchronization complexity. What decision in your sync configuration do you wish you'd made differently at the start?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

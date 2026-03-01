@@ -1,7 +1,7 @@
 # Terms of Use
 *Making Consent Part of the Access Flow*
 
-**Part of Entra ID Glossary Series: Glossary#7.24 - Terms of Use**
+📚 **Part of Entra ID Glossary Series: Glossary#7.24 - Terms of Use**
 
 ---
 
@@ -74,6 +74,8 @@ ToU also doesn't provide a legal guarantee that the acceptance is binding in all
 ---
 
 💬 **Have you used Terms of Use as a Conditional Access grant control for compliance or audit purposes?** The timestamp-and-identity audit trail it provides is often better evidence of policy acceptance than the traditional "sign here" onboarding document approach. What drove your organization to add ToU to your access policies?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

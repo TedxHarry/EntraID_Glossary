@@ -1,7 +1,7 @@
 # Policy Evaluation
 *Understanding How Conditional Access Decisions Are Made*
 
-**Part of Entra ID Glossary Series: Glossary#13.20 - Policy Evaluation**
+📚 **Part of Entra ID Glossary Series: Glossary#13.20 - Policy Evaluation**
 
 ---
 
@@ -82,6 +82,8 @@ The Conditional Access Insights and Reporting workbook aggregates sign-in log CA
 ---
 
 💬 **When you troubleshoot a CA-related access issue, do you go to the sign-in log CA tab first, or do you still find yourself manually reviewing individual policies?** The sign-in log CA details exist specifically to eliminate policy review as the diagnostic approach, but awareness of the tool is uneven across teams. What's the most complex CA evaluation scenario your team has had to untangle?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

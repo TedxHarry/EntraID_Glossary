@@ -1,7 +1,7 @@
 # Advanced Scenarios
 *Where Entra ID Capabilities Combine to Solve Complex Problems*
 
-**Part of Entra ID Glossary Series: Glossary#13.24 - Advanced Scenarios**
+📚 **Part of Entra ID Glossary Series: Glossary#13.24 - Advanced Scenarios**
 
 ---
 
@@ -68,6 +68,8 @@ The 189 terms in this glossary series are the vocabulary. Advanced scenarios are
 ---
 
 💬 **What's the most complex multi-feature Entra ID scenario your organization has had to design or troubleshoot, and which combination of capabilities turned out to be more powerful together than you expected when you planned it?** The scenarios that reveal what Entra ID is really capable of are almost never the ones in the documentation. They're the ones that don't fit the standard patterns and require combining features in ways nobody thought to write down. What's the hardest identity problem you've solved, and how did you solve it?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

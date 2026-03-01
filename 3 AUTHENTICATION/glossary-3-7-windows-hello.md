@@ -1,7 +1,7 @@
 # Windows Hello
 *It's Not Just a PIN*
 
-**Part of Entra ID Glossary Series: Glossary#3.7 - Windows Hello**
+📚 **Part of Entra ID Glossary Series: Glossary#3.7 - Windows Hello**
 
 ---
 
@@ -74,6 +74,8 @@ The enrollment experience from the user's side: they open a sign-in on their man
 ---
 
 💬 **Has your team made the case for Windows Hello for Business yet?** The "it's just a PIN" objection is the most common pushback I encounter. How do you explain the TPM and key-binding concept to non-technical stakeholders?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Sign-In Log
 *The Authentication Record Your Security Team Needs to Know Cold*
 
-**Part of Entra ID Glossary Series: Glossary#12.2 - Sign-In Log**
+📚 **Part of Entra ID Glossary Series: Glossary#12.2 - Sign-In Log**
 
 ---
 
@@ -57,7 +57,7 @@ Separating these three streams prevents the non-interactive refresh token events
 
 **Unusual application access** 🔑: A user suddenly accessing applications they've never accessed before, especially administrative interfaces or sensitive data stores.
 
-## ⏰ Retention and Export
+## 📌 ⏰ Retention and Export
 
 Same retention as audit logs: 7 days for free tier, 30 days for P1/P2. Export to Log Analytics, Storage, or Event Hub via Diagnostic Settings. The same retention gap applies: compliance requirements often exceed 30 days.
 
@@ -66,6 +66,8 @@ Sign-in logs in Log Analytics integrate with Microsoft Sentinel for alert rules,
 ---
 
 💬 **How quickly can your SOC team access and query Entra ID sign-in logs during an active incident, and is the 30-day retention window sufficient?** Sign-in log investigation is often the first step in an identity incident response. The difference between logs in a Log Analytics workspace (queryable in seconds) versus portal-only (limited filter options, slower) can make a real difference in response time. What's your team's current sign-in log access setup?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

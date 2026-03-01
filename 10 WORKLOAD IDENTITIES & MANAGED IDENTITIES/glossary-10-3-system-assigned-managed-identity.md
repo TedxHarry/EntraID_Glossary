@@ -1,7 +1,7 @@
 # System-Assigned Managed Identity
 *One Resource, One Identity, One Lifecycle*
 
-**Part of Entra ID Glossary Series: Glossary#10.3 - System-Assigned Managed Identity**
+📚 **Part of Entra ID Glossary Series: Glossary#10.3 - System-Assigned Managed Identity**
 
 ---
 
@@ -64,6 +64,8 @@ The identity needs to persist across resource replacements. If the same logical 
 ---
 
 💬 **When did you first switch from system-assigned to user-assigned managed identity for a workload, and what drove the decision?** The transition usually happens when the one-to-one model creates operational friction, either through role assignment duplication or through losing assignments when resources are replaced. What scenario made user-assigned the better fit?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

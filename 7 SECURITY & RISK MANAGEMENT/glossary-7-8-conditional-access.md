@@ -1,7 +1,7 @@
 # Conditional Access
 *The Policy Engine That Makes "Never Trust, Always Verify" Real*
 
-**Part of Entra ID Glossary Series: Glossary#7.8 - Conditional Access**
+📚 **Part of Entra ID Glossary Series: Glossary#7.8 - Conditional Access**
 
 ---
 
@@ -81,6 +81,8 @@ Skipping report-only mode is how organizations accidentally lock themselves out 
 ---
 
 💬 **What's the most impactful Conditional Access policy your organization has implemented?** Requiring compliant devices is often the one that generates the most initial resistance and the most security value. What was the conversation like when you pushed the policy from report-only to enforcement?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

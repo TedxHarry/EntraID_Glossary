@@ -1,7 +1,7 @@
 # Intune
 *What the Device Management Piece of Microsoft's Puzzle Actually Does*
 
-**Part of Entra ID Glossary Series: Glossary#5.5 - Intune**
+📚 **Part of Entra ID Glossary Series: Glossary#5.5 - Intune**
 
 ---
 
@@ -60,6 +60,8 @@ The visibility alone is often the most valuable initial outcome. Before Intune, 
 ---
 
 💬 **What was the first Intune compliance or configuration policy your organization enabled, and what did it reveal about the current state of your device fleet?** The first compliance policy rollout often surfaces surprises about device health that nobody knew were there. What did you find?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

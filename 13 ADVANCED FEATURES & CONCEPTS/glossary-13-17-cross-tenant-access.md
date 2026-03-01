@@ -1,7 +1,7 @@
 # Cross-Tenant Access
 *Controlling How Your Tenant Interacts With Other Entra ID Tenants*
 
-**Part of Entra ID Glossary Series: Glossary#13.17 - Cross-Tenant Access**
+📚 **Part of Entra ID Glossary Series: Glossary#13.17 - Cross-Tenant Access**
 
 ---
 
@@ -56,6 +56,8 @@ Requires explicit cross-tenant access configuration on both sides: both tenants 
 ---
 
 💬 **Has your organization needed to configure partner-specific cross-tenant access settings for a major collaboration or post-acquisition scenario, and what was the most complex trust configuration you had to work through?** The cross-tenant access settings framework replaced a lot of manual workarounds for trusted partner scenarios. What was your B2B collaboration experience like before these controls were available?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

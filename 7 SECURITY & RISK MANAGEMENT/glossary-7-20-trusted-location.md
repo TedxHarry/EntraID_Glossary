@@ -1,7 +1,7 @@
 # Trusted Location
 *Teaching Conditional Access What "Safe" Looks Like*
 
-**Part of Entra ID Glossary Series: Glossary#7.20 - Trusted Location**
+📚 **Part of Entra ID Glossary Series: Glossary#7.20 - Trusted Location**
 
 ---
 
@@ -75,6 +75,8 @@ This is why Trusted Locations work best as one layer in a defense-in-depth archi
 ---
 
 💬 **How many Named Locations do you have defined as trusted in your tenant?** The difference between a clean, intentionally scoped set of trusted locations and an organically grown list of 40 IP ranges nobody can explain is significant. How often do you review and audit your trusted location definitions?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

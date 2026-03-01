@@ -1,7 +1,7 @@
 # Token Revocation (Deep Dive)
 *Why "Revoke All Tokens" Doesn't Mean Instant Lockout*
 
-**Part of Entra ID Glossary Series: Glossary#11.10 - Token Revocation (Deep Dive)**
+📚 **Part of Entra ID Glossary Series: Glossary#11.10 - Token Revocation (Deep Dive)**
 
 ---
 
@@ -23,7 +23,7 @@ Access tokens and refresh tokens have fundamentally different revocation archite
 
 This is the fundamental tension in JWT-based access token design: stateless tokens are efficient and scalable, but they can't be revoked before they expire without some additional mechanism.
 
-## ⏰ The Standard Revocation Gap
+## 📌 ⏰ The Standard Revocation Gap
 
 Without CAE, the revocation gap for access tokens is the remaining token lifetime. If an attacker has an access token that expires at 3:00 PM and you revoke the user's refresh tokens at 2:15 PM, the attacker retains access until 3:00 PM. That's up to one hour.
 
@@ -76,6 +76,8 @@ Disabling the account is faster than revoking tokens for stopping access to CAE-
 ---
 
 💬 **Has your organization's incident response playbook accounted for the access token revocation gap?** The gap between "we revoked the tokens" and "access actually stopped" surprises most teams the first time they encounter it in a real incident. Does your playbook distinguish between CAE-capable and non-CAE-capable services in the revocation workflow?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

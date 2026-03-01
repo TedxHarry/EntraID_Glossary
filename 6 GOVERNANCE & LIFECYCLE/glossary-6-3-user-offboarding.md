@@ -1,7 +1,7 @@
 # User Offboarding
 *The Day Someone Leaves Is the Day Access Has to Stop*
 
-**Part of Entra ID Glossary Series: Glossary#6.3 - User Offboarding**
+📚 **Part of Entra ID Glossary Series: Glossary#6.3 - User Offboarding**
 
 ---
 
@@ -76,6 +76,8 @@ The sign-in logs and audit logs from the week before departure are the right pla
 ---
 
 💬 **Has your organization discovered active accounts belonging to departed employees during a security review?** It's one of the most common audit findings in identity programs, and the gap is almost always a manual offboarding process with no enforcement. What triggered your organization to address it?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

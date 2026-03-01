@@ -1,7 +1,7 @@
 # Device State
 *The Real-Time Health Signal That Drives Access Decisions*
 
-**Part of Entra ID Glossary Series: Glossary#5.11 - Device State**
+📚 **Part of Entra ID Glossary Series: Glossary#5.11 - Device State**
 
 ---
 
@@ -56,7 +56,7 @@ When the user in the opening example tried to access SharePoint, Conditional Acc
 
 The compliance check used the most recent state Intune had reported. If Intune had checked in 6 hours ago and found the device compliant, that would still be the state Conditional Access saw. If Intune had checked in 2 hours ago and found the Windows update failed, that failure state was what Conditional Access saw.
 
-## ⏱️ State Evaluation Timing Matters
+## 📌 ⏱️ State Evaluation Timing Matters
 
 The 8-hour default Intune check-in interval means there's always a lag between a device changing state and Conditional Access acting on that change. A device that becomes non-compliant at 9am might not be blocked until Intune's next check-in at 5pm, depending on when the last check-in occurred.
 
@@ -79,6 +79,8 @@ The sign-in logs are often the fastest path to a diagnosis. They show exactly wh
 ---
 
 💬 **Have you troubleshot a "one app works, another doesn't" situation and traced it back to different Conditional Access policies with different device state requirements?** It's a common support scenario that's easy to misdiagnose without looking at both the policy configuration and the actual device state at the time of the blocked sign-in. What's your go-to diagnostic approach?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

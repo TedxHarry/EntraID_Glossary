@@ -1,7 +1,7 @@
 # Authorization Grant (Deep Dive)
 *Matching the Right OAuth Flow to the Right Scenario*
 
-**Part of Entra ID Glossary Series: Glossary#11.5 - Authorization Grant (Deep Dive)**
+📚 **Part of Entra ID Glossary Series: Glossary#11.5 - Authorization Grant (Deep Dive)**
 
 ---
 
@@ -54,6 +54,8 @@ The correct answer is client credentials. Service accounts are the wrong solutio
 ---
 
 💬 **Which grant type do you see misused most often in your organization?** The service account doing interactive sign-in to simulate client credentials is common. So is ROPC for legacy migration that never got migrated. What grant type pattern in your environment would you most want to replace with something more appropriate?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

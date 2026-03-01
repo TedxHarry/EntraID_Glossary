@@ -1,7 +1,7 @@
 # Non-Compliant Device
 *What Happens When the Device Fails Its Security Check*
 
-**Part of Entra ID Glossary Series: Glossary#5.14 - Non-Compliant Device**
+📚 **Part of Entra ID Glossary Series: Glossary#5.14 - Non-Compliant Device**
 
 ---
 
@@ -70,6 +70,8 @@ The BitLocker-and-Windows-Update incident from the opening was resolved by tempo
 ---
 
 💬 **Has your organization had a mass compliance incident where a routine update or change caused widespread access blocks?** The scenario where something routine breaks compliance at scale is a good forcing function for reviewing grace period settings and remediation guidance. How did your team respond?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

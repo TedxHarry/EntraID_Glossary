@@ -1,7 +1,7 @@
 # Authorization Server (Deep Dive)
 *What Entra ID Is Actually Doing When It Issues a Token*
 
-**Part of Entra ID Glossary Series: Glossary#11.4 - Authorization Server (Deep Dive)**
+📚 **Part of Entra ID Glossary Series: Glossary#11.4 - Authorization Server (Deep Dive)**
 
 ---
 
@@ -68,6 +68,8 @@ The MSAL libraries and common middleware like `passport-azure-ad` handle multi-t
 ---
 
 💬 **Has your team ever had to debug a token signature validation failure after a key rotation?** The JWKS caching problem shows up in non-standard token validation implementations, custom middleware, and some older libraries that don't handle key rotation correctly. What was the most unexpected thing you found when you looked at the raw token structure or the discovery document for the first time?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

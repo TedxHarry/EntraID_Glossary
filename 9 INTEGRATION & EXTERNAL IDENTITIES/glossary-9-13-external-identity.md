@@ -1,7 +1,7 @@
 # External Identity
 *The Broader Category Behind Every Non-Employee*
 
-**Part of Entra ID Glossary Series: Glossary#9.13 - External Identity**
+📚 **Part of Entra ID Glossary Series: Glossary#9.13 - External Identity**
 
 ---
 
@@ -68,6 +68,8 @@ The common failure mode: external identity was set up to enable collaboration an
 ---
 
 💬 **Which type of external identity is most problematic to govern in your organization?** The B2B guest lifecycle is the most common pain point in corporate tenants. But organizations with CIAM deployments often find customer account management at scale to be the harder problem. Which external identity scenario generates the most operational challenges for your team?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

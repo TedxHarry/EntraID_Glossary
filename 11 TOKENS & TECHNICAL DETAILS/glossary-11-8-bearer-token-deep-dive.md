@@ -1,7 +1,7 @@
 # Bearer Token (Deep Dive)
 *Why "Whoever Has It Can Use It" Is Both the Point and the Risk*
 
-**Part of Entra ID Glossary Series: Glossary#11.8 - Bearer Token (Deep Dive)**
+📚 **Part of Entra ID Glossary Series: Glossary#11.8 - Bearer Token (Deep Dive)**
 
 ---
 
@@ -69,6 +69,8 @@ An application that handles bearer tokens correctly:
 ---
 
 💬 **Has your team ever found an access token in a log file, a Slack message, a git commit, or any other unintended location?** The bearer token exposure in development tooling is more common than most teams track formally. What controls does your organization have for preventing token capture in logs and debugging output?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

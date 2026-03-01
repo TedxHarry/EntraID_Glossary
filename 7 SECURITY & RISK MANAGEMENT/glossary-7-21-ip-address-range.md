@@ -1,7 +1,7 @@
 # IP Address Range
 *The Building Block of Location-Based Access Control*
 
-**Part of Entra ID Glossary Series: Glossary#7.21 - IP Address Range**
+📚 **Part of Entra ID Glossary Series: Glossary#7.21 - IP Address Range**
 
 ---
 
@@ -66,6 +66,8 @@ Before marking a Named Location as trusted or building policies around it, verif
 ---
 
 💬 **Have you ever discovered that a Named Location's IP range was misconfigured and causing policies to behave unexpectedly?** The private IP vs public IP confusion is by far the most common mistake. What was the sign-in log investigation that revealed the mismatch in your environment?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

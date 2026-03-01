@@ -1,7 +1,7 @@
 # Cloud Application
 *SaaS in Your Tenant's Security Perimeter*
 
-**Part of Entra ID Glossary Series: Glossary#9.2 - Cloud Application**
+📚 **Part of Entra ID Glossary Series: Glossary#9.2 - Cloud Application**
 
 ---
 
@@ -68,6 +68,8 @@ The solution isn't blocking all unapproved applications (that creates friction w
 ---
 
 💬 **How many cloud applications are formally integrated with Entra ID in your tenant?** The gap between the number IT knows about and the number actually in use is almost always larger than expected. Has your organization done a shadow IT discovery exercise, and what did the results look like?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

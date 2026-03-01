@@ -1,7 +1,7 @@
 # Conditional Access for Workloads
 *Security Policies That Apply to Applications, Not Just People*
 
-**Part of Entra ID Glossary Series: Glossary#10.12 - Conditional Access for Workloads**
+📚 **Part of Entra ID Glossary Series: Glossary#10.12 - Conditional Access for Workloads**
 
 ---
 
@@ -60,6 +60,8 @@ Workload CA conditions for managed identities are an evolving area. The practica
 ---
 
 💬 **Does your organization have Conditional Access policies targeting service principals, or is your CA policy coverage limited to user identities?** The gap between user CA coverage and workload CA coverage is significant in most enterprise tenants. What would be the first service principal in your environment you'd want to put a location-based restriction on?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Workforce Tenant
 *The Corporate Identity Foundation Behind Every Employee Account*
 
-**Part of Entra ID Glossary Series: Glossary#9.15 - Workforce Tenant**
+📚 **Part of Entra ID Glossary Series: Glossary#9.15 - Workforce Tenant**
 
 ---
 
@@ -68,6 +68,8 @@ A single organization doing both things runs both. The retail bank with 3,000 em
 ---
 
 💬 **How many distinct Entra ID tenant types does your organization operate today?** Many organizations started with a single workforce tenant and have added external tenants, sandbox tenants, or B2C tenants as their identity needs expanded. What drove the first time your organization had to manage more than one Entra ID tenant?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

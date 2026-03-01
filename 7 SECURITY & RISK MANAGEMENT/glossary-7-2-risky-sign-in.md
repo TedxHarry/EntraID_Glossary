@@ -1,7 +1,7 @@
 # Risky Sign-In
 *When the Authentication Looks Suspicious*
 
-**Part of Entra ID Glossary Series: Glossary#7.2 - Risky Sign-In**
+📚 **Part of Entra ID Glossary Series: Glossary#7.2 - Risky Sign-In**
 
 ---
 
@@ -78,6 +78,8 @@ If confirmed as legitimate: dismiss the risk event as safe (teaches the system t
 ---
 
 💬 **Have you investigated a risky sign-in event and found it was a genuine attack rather than a false positive?** The investigation workflow differs significantly depending on the answer. What signals in the sign-in details made the call clear?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

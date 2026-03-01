@@ -1,7 +1,7 @@
 # Anomaly Detection
 *How Entra ID Learns What Normal Looks Like*
 
-**Part of Entra ID Glossary Series: Glossary#7.5 - Anomaly Detection**
+📚 **Part of Entra ID Glossary Series: Glossary#7.5 - Anomaly Detection**
 
 ---
 
@@ -68,6 +68,8 @@ The analyst's 4,200-file download was caught because her baseline was clear and 
 ---
 
 💬 **Has anomaly detection in Entra ID caught something in your environment that traditional threshold-based rules would have missed?** The bulk file download scenario is common, but some of the more subtle behavioral detections are genuinely impressive. What was the anomaly that made you trust the system?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

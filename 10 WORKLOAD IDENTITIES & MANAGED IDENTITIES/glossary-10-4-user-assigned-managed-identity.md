@@ -1,7 +1,7 @@
 # User-Assigned Managed Identity
 *One Identity Shared Across Many Resources*
 
-**Part of Entra ID Glossary Series: Glossary#10.4 - User-Assigned Managed Identity**
+📚 **Part of Entra ID Glossary Series: Glossary#10.4 - User-Assigned Managed Identity**
 
 ---
 
@@ -66,6 +66,8 @@ The choice isn't permanent. Starting with system-assigned and migrating to user-
 ---
 
 💬 **Does your team have a standard for when to use system-assigned versus user-assigned managed identity, or is it decided case by case?** Having an explicit policy saves the debate each time a new workload is built. What criteria does your team use to make the call?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

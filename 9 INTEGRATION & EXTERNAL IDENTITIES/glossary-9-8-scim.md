@@ -1,7 +1,7 @@
 # SCIM
 *The Standard That Automates User Provisioning Across Applications*
 
-**Part of Entra ID Glossary Series: Glossary#9.8 - SCIM**
+📚 **Part of Entra ID Glossary Series: Glossary#9.8 - SCIM**
 
 ---
 
@@ -72,6 +72,8 @@ For Entra ID to provision to an application via SCIM, the application must imple
 ---
 
 💬 **What's the application in your environment where SCIM provisioning would save the most manual work if you had it?** The application that's still on the manual offboarding checklist because it doesn't support SCIM is almost universal. What's keeping your highest-pain application from being automated?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

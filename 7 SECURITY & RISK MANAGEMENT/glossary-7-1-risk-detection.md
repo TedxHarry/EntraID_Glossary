@@ -1,7 +1,7 @@
 # Risk Detection
 *How Entra ID Knows Something Looks Wrong*
 
-**Part of Entra ID Glossary Series: Glossary#7.1 - Risk Detection**
+📚 **Part of Entra ID Glossary Series: Glossary#7.1 - Risk Detection**
 
 ---
 
@@ -73,6 +73,8 @@ For confirmed attacks, remediation actions include: confirm sign-in as compromis
 ---
 
 💬 **Has Entra ID ID Protection detected a genuine attack on an account in your organization?** The impossible travel detection is often the first one that makes people realize the scale of credential attacks happening in the background. What was the first risk detection that caught something real?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

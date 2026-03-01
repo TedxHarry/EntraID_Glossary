@@ -1,7 +1,7 @@
 # Block Access
 *The Hardest Grant Control to Get Right*
 
-**Part of Entra ID Glossary Series: Glossary#7.14 - Block Access**
+📚 **Part of Entra ID Glossary Series: Glossary#7.14 - Block Access**
 
 ---
 
@@ -77,6 +77,8 @@ Most scenarios are the former. Block access is reserved for scenarios where the 
 ---
 
 💬 **Have you deployed a block access policy that caused an unexpected outage?** The legacy auth block catching a service account or the location block catching a traveling executive are both classic block-access war stories. What was the post-mortem lesson?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

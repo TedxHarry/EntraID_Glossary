@@ -1,7 +1,7 @@
 # Directory Synchronization
 *Bridging On-Premises Identity with the Cloud*
 
-**Part of Entra ID Glossary Series: Glossary#8.1 - Directory Synchronization**
+📚 **Part of Entra ID Glossary Series: Glossary#8.1 - Directory Synchronization**
 
 ---
 
@@ -82,6 +82,8 @@ Entra Connect Health (available with Entra ID P2) provides monitoring dashboards
 ---
 
 💬 **What was the first directory sync issue that caused a visible incident in your organization?** The sync failure that delays a new hire's access on their first day, or the attribute conflict that causes a user's email address to be wrong in the GAL, are the ones that get noticed quickly. What was your earliest sync incident and what did it change about how you monitor sync health?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

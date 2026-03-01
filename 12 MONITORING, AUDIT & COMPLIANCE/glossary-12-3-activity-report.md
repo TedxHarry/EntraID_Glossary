@@ -1,7 +1,7 @@
 # Activity Report
 *The Trend View That Audit Logs and Sign-In Logs Don't Give You*
 
-**Part of Entra ID Glossary Series: Glossary#12.3 - Activity Report**
+📚 **Part of Entra ID Glossary Series: Glossary#12.3 - Activity Report**
 
 ---
 
@@ -58,6 +58,8 @@ The Graph Reporting API supports reports like `getAzureADApplicationSignInSummar
 ---
 
 💬 **Which Entra ID activity report has been most useful for demonstrating security posture progress to leadership in your organization?** The authentication methods usage report is frequently cited for security initiatives. The application usage report is valuable for IT optimization. Which report gave you a number that changed how your organization thought about identity security?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

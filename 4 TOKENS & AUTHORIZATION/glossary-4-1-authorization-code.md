@@ -1,7 +1,7 @@
 # Authorization Code
 *Why Sign-In Takes Two Steps Instead of One*
 
-**Part of Entra ID Glossary Series: Glossary#4.1 - Authorization Code**
+📚 **Part of Entra ID Glossary Series: Glossary#4.1 - Authorization Code**
 
 ---
 
@@ -63,6 +63,8 @@ A few properties worth understanding when debugging or reviewing app implementat
 ---
 
 💬 **Have you ever had to debug an authorization code flow?** The "invalid_grant" error from a code that expired or was already used is a rite of passage for anyone integrating OAuth applications with Entra ID. What was the culprit in your case?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

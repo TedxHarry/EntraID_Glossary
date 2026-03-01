@@ -1,7 +1,7 @@
 # Workload Identity
 *When the Thing Connecting to Your Systems Isn't a Person*
 
-**Part of Entra ID Glossary Series: Glossary#10.1 - Workload Identity**
+📚 **Part of Entra ID Glossary Series: Glossary#10.1 - Workload Identity**
 
 ---
 
@@ -56,6 +56,8 @@ Microsoft Entra Workload ID (the product layer on top of the base workload ident
 ---
 
 💬 **How many workload identities does your organization have in Entra ID, and how many of them are actively owned and governed?** The gap between "service principals that exist" and "service principals that someone is responsible for" is one of the hardest problems in enterprise identity security. What's your approach to workload identity governance?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

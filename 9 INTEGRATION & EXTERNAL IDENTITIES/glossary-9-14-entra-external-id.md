@@ -1,7 +1,7 @@
 # Entra External ID
 *Microsoft's Unified Platform for Non-Employee Identities*
 
-**Part of Entra ID Glossary Series: Glossary#9.14 - Entra External ID**
+📚 **Part of Entra ID Glossary Series: Glossary#9.14 - Entra External ID**
 
 ---
 
@@ -70,6 +70,8 @@ This setting is particularly important for organizations with strong partner rel
 ---
 
 💬 **Is your organization evaluating the transition from Azure AD B2C to Entra External ID external tenants, or is B2C meeting your needs well enough that migration isn't a priority?** The consolidation of Microsoft's external identity products is still in progress. What feature gap would have to close before you'd consider migrating an existing B2C deployment?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

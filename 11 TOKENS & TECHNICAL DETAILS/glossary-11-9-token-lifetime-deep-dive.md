@@ -1,7 +1,7 @@
 # Token Lifetime (Deep Dive)
 *The Configuration Behind How Long Your Tokens Last*
 
-**Part of Entra ID Glossary Series: Glossary#11.9 - Token Lifetime (Deep Dive)**
+📚 **Part of Entra ID Glossary Series: Glossary#11.9 - Token Lifetime (Deep Dive)**
 
 ---
 
@@ -11,7 +11,7 @@ Except the app wasn't requesting a new token silently. It was redirecting the us
 
 The fix was in the application code, not the token lifetime configuration. But the investigation revealed how little the team understood about the default token lifetimes, which lifetimes were configurable, and which weren't.
 
-## ⏰ Default Token Lifetimes
+## 🎫 ⏰ Default Token Lifetimes
 
 Entra ID issues three types of tokens with distinct default lifetimes:
 
@@ -64,6 +64,8 @@ If an application needs longer than one-hour sessions, the correct implementatio
 ---
 
 💬 **Have you had to configure Token Lifetime Policies for a specific application in your tenant, and what drove the requirement?** The most common drivers are compliance requirements for high-security applications (shorter inactive times) and user experience requirements for productivity applications (avoiding excessive sign-out prompts). What lifetime configuration would most improve your users' experience while meeting your security requirements?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

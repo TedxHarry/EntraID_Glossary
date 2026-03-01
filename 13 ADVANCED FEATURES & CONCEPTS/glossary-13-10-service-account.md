@@ -1,7 +1,7 @@
 # Service Account
 *The Legacy Pattern That Managed Identity Is Replacing*
 
-**Part of Entra ID Glossary Series: Glossary#13.10 - Service Account**
+📚 **Part of Entra ID Glossary Series: Glossary#13.10 - Service Account**
 
 ---
 
@@ -58,6 +58,8 @@ For service accounts that must exist, the governance requirements:
 ---
 
 💬 **How many service accounts (user accounts used by applications) does your organization still have in Entra ID, and what's the plan for transitioning them to service principals or managed identities?** The count of legacy service accounts in an enterprise Entra ID tenant is often surprising. What's the biggest obstacle to converting your highest-risk service accounts to modern workload identity patterns?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

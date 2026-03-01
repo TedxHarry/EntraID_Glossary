@@ -1,7 +1,7 @@
 # External User
 *Managing Access for People Who Don't Work for You*
 
-**Part of Entra ID Glossary Series: Glossary#9.12 - External User**
+📚 **Part of Entra ID Glossary Series: Glossary#9.12 - External User**
 
 ---
 
@@ -78,6 +78,8 @@ Governance mechanisms that help:
 ---
 
 💬 **What does your external user governance process look like today?** The difference between organizations that have quarterly access reviews for guest accounts and those that haven't reviewed their guest list since it was created is often visible in the size and staleness of their guest user population. What would a clean-up of your current tenant's external users reveal?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

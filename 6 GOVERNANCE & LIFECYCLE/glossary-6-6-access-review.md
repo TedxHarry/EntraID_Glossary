@@ -1,7 +1,7 @@
 # Access Review
 *The Audit That Finds What Accumulates Over Time*
 
-**Part of Entra ID Glossary Series: Glossary#6.6 - Access Review**
+📚 **Part of Entra ID Glossary Series: Glossary#6.6 - Access Review**
 
 ---
 
@@ -77,6 +77,8 @@ Entra ID access reviews can be configured to automatically apply review results:
 ---
 
 💬 **Has your organization run an access review and been surprised by how much access turned out to be inappropriate?** The first review of any group or application almost always surfaces more stale access than expected. What's the highest percentage of "should not have this" you've found in a single review?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

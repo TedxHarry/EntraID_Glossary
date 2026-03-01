@@ -1,7 +1,7 @@
 # Audience
 *The Token Knows Who It Was Meant For*
 
-**Part of Entra ID Glossary Series: Glossary#4.12 - Audience**
+📚 **Part of Entra ID Glossary Series: Glossary#4.12 - Audience**
 
 ---
 
@@ -69,6 +69,8 @@ That last test is the one most teams skip. Testing the happy path confirms the A
 ---
 
 💬 **Have you built or reviewed an API and found the audience validation was missing or misconfigured?** It's a subtle check that's easy to skip when you're focused on getting the happy path working. What does your team's API security review checklist cover?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

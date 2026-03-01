@@ -1,7 +1,7 @@
 # Microsoft Authenticator
 *More Than a Code Generator*
 
-**Part of Entra ID Glossary Series: Glossary#3.8 - Microsoft Authenticator**
+📚 **Part of Entra ID Glossary Series: Glossary#3.8 - Microsoft Authenticator**
 
 ---
 
@@ -72,6 +72,8 @@ For organizations early in their authentication journey, "Authenticator with pus
 ---
 
 💬 **How many of your users have the Authenticator app registered and actually use it for sign-in?** And have you enabled number matching and additional context if you're using push notifications? The difference in attack resistance between plain push and number-matched push is significant.
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

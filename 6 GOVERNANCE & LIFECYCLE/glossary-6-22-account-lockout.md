@@ -1,7 +1,7 @@
 # Account Lockout
 *How Entra ID Stops Password Guessing Without Locking Out Real Users*
 
-**Part of Entra ID Glossary Series: Glossary#6.22 - Account Lockout**
+📚 **Part of Entra ID Glossary Series: Glossary#6.22 - Account Lockout**
 
 ---
 
@@ -71,6 +71,8 @@ Resetting the password is the fastest resolution for a user who needs immediate 
 ---
 
 💬 **Have you investigated a Smart Lockout event and found it was an actual attack rather than a user error?** The sign-in logs tell the story clearly when you know what to look for. What was the attack pattern, and what did your response look like?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

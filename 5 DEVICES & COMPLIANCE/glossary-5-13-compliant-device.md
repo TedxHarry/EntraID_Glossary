@@ -1,7 +1,7 @@
 # Compliant Device
 *The Security Baseline That Has to Be Earned Continuously*
 
-**Part of Entra ID Glossary Series: Glossary#5.13 - Compliant Device**
+📚 **Part of Entra ID Glossary Series: Glossary#5.13 - Compliant Device**
 
 ---
 
@@ -52,7 +52,7 @@ During each evaluation, Intune:
 
 That result is what Conditional Access reads. If the last check-in was 4 hours ago and the device was compliant then, Conditional Access still sees it as compliant, even if something changed in the past 4 hours. The state is only as current as the last check-in.
 
-## ⏱️ The Grace Period
+## 📌 ⏱️ The Grace Period
 
 Most compliance policies include a grace period: a window between when non-compliance is detected and when Conditional Access starts blocking access. The default is typically 0 or 1 day, but organizations often set 3 to 7 days for Windows.
 
@@ -82,6 +82,8 @@ Enabling a new compliance requirement for 2,000 devices without testing first, t
 ---
 
 💬 **Has your organization had an unexpected mass compliance failure when a new policy was rolled out?** Discovering that a policy you assumed was reasonable would block hundreds of users tends to drive more careful impact analysis on the next rollout. What was the trigger?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

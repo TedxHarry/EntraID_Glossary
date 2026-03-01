@@ -1,7 +1,7 @@
 # Shared Accounts
 *Why "We All Use the Same Login" Is a Security Problem*
 
-**Part of Entra ID Glossary Series: Glossary#6.21 - Shared Accounts**
+📚 **Part of Entra ID Glossary Series: Glossary#6.21 - Shared Accounts**
 
 ---
 
@@ -59,6 +59,8 @@ The goal isn't perfection overnight. It's moving toward individual accountabilit
 ---
 
 💬 **Does your organization still have shared accounts in use anywhere?** The vendor portal shared login is almost universal. The critical infrastructure shared admin account is more concerning. What's your approach to managing the ones that can't be eliminated immediately?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

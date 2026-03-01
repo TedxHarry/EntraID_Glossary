@@ -1,7 +1,7 @@
 # Session Control
 *Governing What Happens After Access Is Granted*
 
-**Part of Entra ID Glossary Series: Glossary#7.23 - Session Control**
+📚 **Part of Entra ID Glossary Series: Glossary#7.23 - Session Control**
 
 ---
 
@@ -19,7 +19,7 @@ The distinction matters: a user can satisfy all grant requirements (MFA, complia
 
 They answer the question: "We've decided to allow this user in. What limits should apply to what they can do?"
 
-## ⏱️ Sign-In Frequency
+## 📌 ⏱️ Sign-In Frequency
 
 Sign-in frequency controls how long a user's session remains valid before they're required to re-authenticate.
 
@@ -86,6 +86,8 @@ CAE shifts the security model from "tokens expire eventually" to "tokens are rev
 ---
 
 💬 **Have you used app-enforced restrictions or sign-in frequency controls to enable a use case that would otherwise have been "block it"?** The BYOD scenario where personal devices get read-only access is the classic example. What was the access scenario that session controls made possible without compromising data security?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # User Attributes
 *The Properties That Drive Everything Else*
 
-**Part of Entra ID Glossary Series: Glossary#6.17 - User Attributes**
+📚 **Part of Entra ID Glossary Series: Glossary#6.17 - User Attributes**
 
 ---
 
@@ -90,6 +90,8 @@ Manual attribute maintenance in Entra ID is error-prone at scale. Automating the
 ---
 
 💬 **Have you traced a governance or provisioning failure back to a missing or inaccurate user attribute?** The "dynamic group didn't include the right people" failure mode almost always comes down to attribute data quality. What was the attribute, and what was the impact of the mismatch?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

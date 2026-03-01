@@ -1,7 +1,7 @@
 # Federation
 *When Entra ID Trusts Another Identity Provider for Authentication*
 
-**Part of Entra ID Glossary Series: Glossary#8.6 - Federation**
+📚 **Part of Entra ID Glossary Series: Glossary#8.6 - Federation**
 
 ---
 
@@ -74,6 +74,8 @@ The migration from ADFS to managed authentication is a defined process (staged r
 ---
 
 💬 **Is your organization still running ADFS for Microsoft 365 authentication, or have you migrated to managed authentication?** The organizations that migrated often cite certificate rotation anxiety as the thing they're most glad to have eliminated. What's keeping ADFS in place for organizations that haven't made the move?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

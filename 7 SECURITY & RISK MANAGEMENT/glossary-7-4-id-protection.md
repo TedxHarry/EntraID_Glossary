@@ -1,7 +1,7 @@
 # ID Protection
 *Entra ID's Automated Threat Response System*
 
-**Part of Entra ID Glossary Series: Glossary#7.4 - ID Protection**
+📚 **Part of Entra ID Glossary Series: Glossary#7.4 - ID Protection**
 
 ---
 
@@ -90,6 +90,8 @@ False positive rate drops over time as the system builds accurate baselines. New
 ---
 
 💬 **When you first enabled ID Protection, what was the ratio of genuine attacks to false positives in the first month?** The initial calibration period is always noisier than steady state. What detection type generated the most false positives in your environment, and how long did it take to tune down?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

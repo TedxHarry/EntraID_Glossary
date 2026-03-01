@@ -1,7 +1,7 @@
 # Condition
 *The Signals That Make Conditional Access Contextual*
 
-**Part of Entra ID Glossary Series: Glossary#7.12 - Condition**
+📚 **Part of Entra ID Glossary Series: Glossary#7.12 - Condition**
 
 ---
 
@@ -70,6 +70,8 @@ Testing condition behavior with the What If tool before enforcement is essential
 ---
 
 💬 **Which condition type has generated the most unexpected behavior in your environment?** The client apps condition and legacy auth blocking tends to surface applications that teams didn't know were using basic auth. What was the legacy auth offender that surprised your team when you started blocking it?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

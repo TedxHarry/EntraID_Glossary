@@ -1,7 +1,7 @@
 # OAuth 2.0 (App Integration Focus)
 *How Modern Applications Request Access*
 
-**Part of Entra ID Glossary Series: Glossary#9.5 - OAuth 2.0 (App Integration Focus)**
+📚 **Part of Entra ID Glossary Series: Glossary#9.5 - OAuth 2.0 (App Integration Focus)**
 
 ---
 
@@ -67,6 +67,8 @@ Application permissions require admin consent (a tenant admin explicitly grants 
 ---
 
 💬 **What's the most over-permissioned application registration you've found in your tenant?** Application permissions that were granted broadly during development and never scoped down are common. Mail.ReadAll granted when only one mailbox needed to be read. Directory.ReadWrite.All when only a few attributes needed updating. What was the permission scope that prompted a least-privilege review?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

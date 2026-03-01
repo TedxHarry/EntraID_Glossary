@@ -1,7 +1,7 @@
 # Bearer Token
 *The Name That Tells You Everything About the Risk*
 
-**Part of Entra ID Glossary Series: Glossary#4.8 - Bearer Token**
+📚 **Part of Entra ID Glossary Series: Glossary#4.8 - Bearer Token**
 
 ---
 
@@ -61,6 +61,8 @@ For most Entra ID scenarios today, bearer tokens are what you'll work with. Hand
 ---
 
 💬 **Have you ever found an access token in a log file, a shared document, or a place it definitely shouldn't have been?** It happens more often than people realize, and most of the time it's not malicious, just someone debugging without thinking through where the output goes. What did you do when you found it?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

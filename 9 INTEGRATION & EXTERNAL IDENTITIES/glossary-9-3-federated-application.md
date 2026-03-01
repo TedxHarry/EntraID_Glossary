@@ -1,7 +1,7 @@
 # Federated Application
 *When an App Trusts Entra ID to Prove Who You Are*
 
-**Part of Entra ID Glossary Series: Glossary#9.3 - Federated Application**
+📚 **Part of Entra ID Glossary Series: Glossary#9.3 - Federated Application**
 
 ---
 
@@ -76,6 +76,8 @@ Federation moves authentication to Entra ID. It doesn't eliminate all identity m
 ---
 
 💬 **What SAML attribute mapping issue took the longest to debug in your environment?** The claim type mismatch where the application expects `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` but Entra ID is sending `email` is a classic one. What was the configuration issue that required reading the SAML trace to find?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

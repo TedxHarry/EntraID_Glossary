@@ -1,7 +1,7 @@
 # Governance
 *The System That Keeps Access from Running Away from You*
 
-**Part of Entra ID Glossary Series: Glossary#6.14 - Governance**
+📚 **Part of Entra ID Glossary Series: Glossary#6.14 - Governance**
 
 ---
 
@@ -72,6 +72,8 @@ Organizations that implement governance to solve a compliance requirement often 
 ---
 
 💬 **Where would you place your organization on the governance maturity scale?** Most teams know they have a governance gap somewhere: too many permanent admin assignments, groups without owners, app accounts that outlast the Entra ID account. What's the gap you're most aware of?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

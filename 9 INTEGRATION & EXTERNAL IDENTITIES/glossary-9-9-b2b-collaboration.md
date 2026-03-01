@@ -1,7 +1,7 @@
 # B2B Collaboration
 *Giving External Partners Access Without Managing Their Identity*
 
-**Part of Entra ID Glossary Series: Glossary#9.9 - B2B Collaboration**
+📚 **Part of Entra ID Glossary Series: Glossary#9.9 - B2B Collaboration**
 
 ---
 
@@ -78,6 +78,8 @@ The guest lifecycle requires active management:
 ---
 
 💬 **What's your organization's process for managing the lifecycle of guest users in your tenant?** The "guests who stayed long after the project ended" problem is universal. How do you handle the review and cleanup of stale guest access, and what prompted you to formalize the process?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

@@ -1,7 +1,7 @@
 # Device Registration
 *Three Ways to Join a Device to Entra ID (They're Not the Same)*
 
-**Part of Entra ID Glossary Series: Glossary#5.3 - Device Registration**
+📚 **Part of Entra ID Glossary Series: Glossary#5.3 - Device Registration**
 
 ---
 
@@ -61,6 +61,8 @@ Both YES means hybrid joined. If AzureAdJoined is NO but DomainJoined is YES, th
 ---
 
 💬 **Has your organization gone through a device registration migration, moving from Hybrid Entra Joined toward Entra Joined as you reduced on-premises dependencies?** The transition involves more than just joining devices differently. What were the on-premises dependencies that took the longest to resolve?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

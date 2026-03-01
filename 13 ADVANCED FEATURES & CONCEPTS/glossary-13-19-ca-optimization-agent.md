@@ -1,7 +1,7 @@
 # CA Optimization Agent
 *Automated Recommendations for Conditional Access Policy Gaps*
 
-**Part of Entra ID Glossary Series: Glossary#13.19 - CA Optimization Agent**
+📚 **Part of Entra ID Glossary Series: Glossary#13.19 - CA Optimization Agent**
 
 ---
 
@@ -66,6 +66,8 @@ These two tools work together. Recommendations tell you what should change. Insi
 ---
 
 💬 **Have you had a CA Optimization recommendation surface a gap that your team hadn't noticed, and how did you verify whether the finding was a genuine risk or an expected configuration?** The most common pattern is MFA coverage gaps appearing after user provisioning changes add users to groups that weren't in the original CA policy scope. What's been your most unexpected CA recommendation finding?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

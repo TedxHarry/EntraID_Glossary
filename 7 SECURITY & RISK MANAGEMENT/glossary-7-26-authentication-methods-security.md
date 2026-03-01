@@ -1,7 +1,7 @@
 # Authentication Methods (Security Focus)
 *Choosing the Right Mix for Your Security Posture*
 
-**Part of Entra ID Glossary Series: Glossary#7.26 - Authentication Methods (Security Focus)**
+📚 **Part of Entra ID Glossary Series: Glossary#7.26 - Authentication Methods (Security Focus)**
 
 ---
 
@@ -69,6 +69,8 @@ Each phase improves the security posture. Not every organization needs to reach 
 ---
 
 💬 **Which authentication method is your organization still using that you know you should phase out?** SMS as a backup method for admin accounts is a common one that persists long after everyone agrees it should go. What's keeping it in place, and what would it take to remove it?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

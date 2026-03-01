@@ -1,7 +1,7 @@
 # Consent Experience
 *What Users See When an App Asks for Permission*
 
-**Part of Entra ID Glossary Series: Glossary#13.15 - Consent Experience**
+📚 **Part of Entra ID Glossary Series: Glossary#13.15 - Consent Experience**
 
 ---
 
@@ -70,6 +70,8 @@ Defending against consent phishing: limit user consent to verified publishers, t
 ---
 
 💬 **Does your organization train users to evaluate consent prompts before accepting, and have you had any consent phishing incidents?** The consent phishing attack is underappreciated relative to credential phishing because it bypasses MFA. A consented OAuth token works regardless of the user's MFA registration. What's your organization's approach to consent phishing defense?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

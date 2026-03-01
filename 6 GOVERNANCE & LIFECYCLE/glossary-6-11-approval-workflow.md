@@ -1,7 +1,7 @@
 # Approval Workflow
 *Who Decides, in What Order, and What Happens If They Don't*
 
-**Part of Entra ID Glossary Series: Glossary#6.11 - Approval Workflow**
+📚 **Part of Entra ID Glossary Series: Glossary#6.11 - Approval Workflow**
 
 ---
 
@@ -36,7 +36,7 @@ In Microsoft Entra ID Governance access packages, approval workflows are configu
 
 **Self-approval with justification**: For lower-risk access, the policy can require a business justification without a human approver. The user provides the justification and access is granted automatically. Useful for resources that are broadly available but where an audit trail of stated justification is required.
 
-## ⏱️ Timeout and Escalation
+## 📌 ⏱️ Timeout and Escalation
 
 Every approval stage has a configured response window. If the approver doesn't respond within that window, one of three things happens depending on the policy:
 
@@ -67,6 +67,8 @@ For compliance purposes, an audit trail showing "manager approved on March 15, d
 ---
 
 💬 **Have you had an approval workflow fail operationally - an approver not reachable, a notification going to the wrong place, or a timeout expiring without anyone noticing?** The approval workflow design on paper and the approval workflow in practice often diverge significantly. What did you change to make it more reliable?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

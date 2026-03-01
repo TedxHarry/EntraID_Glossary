@@ -1,7 +1,7 @@
 # Access Request
 *The User's Side of the Access Conversation*
 
-**Part of Entra ID Glossary Series: Glossary#6.10 - Access Request**
+📚 **Part of Entra ID Glossary Series: Glossary#6.10 - Access Request**
 
 ---
 
@@ -67,6 +67,8 @@ The goal isn't to eliminate all IT involvement in access requests. It's to autom
 ---
 
 💬 **How do users in your organization currently request access to resources they don't have?** The mix of "send IT a ticket," "ask your manager to add you to the group," and "message the resource owner on Teams" is the standard starting point for most organizations. What's been the biggest driver toward a more structured request process?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

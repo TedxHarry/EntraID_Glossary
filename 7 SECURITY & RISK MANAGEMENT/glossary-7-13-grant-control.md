@@ -1,7 +1,7 @@
 # Grant Control
 *The Access Decision in Conditional Access*
 
-**Part of Entra ID Glossary Series: Glossary#7.13 - Grant Control**
+📚 **Part of Entra ID Glossary Series: Glossary#7.13 - Grant Control**
 
 ---
 
@@ -74,6 +74,8 @@ Using grant controls when session controls are the right tool (and vice versa) i
 ---
 
 💬 **What combination of grant controls do you use for your most sensitive resources?** The "require MFA AND require compliant device" combination is a significant maturity step. Organizations that have it in place for admin portals and high-value data often note that the device compliance requirement was harder to implement than the MFA requirement. What was your experience?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

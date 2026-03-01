@@ -1,7 +1,7 @@
 # Multi-Factor Authentication (MFA)
 *Why 99.9% Attack Prevention Still Has an Asterisk*
 
-**Part of Entra ID Glossary Series: Glossary#3.4 - Multi-Factor Authentication (MFA)**
+📚 **Part of Entra ID Glossary Series: Glossary#3.4 - Multi-Factor Authentication (MFA)**
 
 ---
 
@@ -80,6 +80,8 @@ Administrators without MFA are the highest-value targets for attackers. Get that
 ---
 
 💬 **Where is your organization on MFA coverage?** Are you at 100% for all users, or are there holdouts? What's been the biggest obstacle to full deployment?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

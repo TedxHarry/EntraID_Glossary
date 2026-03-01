@@ -1,7 +1,7 @@
 # UPN (User Principal Name)
 *The Sign-In Name That Looks Like an Email But Isn't Always One*
 
-**Part of Entra ID Glossary Series: Glossary#13.7 - UPN (User Principal Name)**
+📚 **Part of Entra ID Glossary Series: Glossary#13.7 - UPN (User Principal Name)**
 
 ---
 
@@ -61,6 +61,8 @@ Alternate Login ID has limitations for some on-premises scenarios (Kerberos auth
 ---
 
 💬 **Has your organization had to tackle a non-routable UPN suffix migration or a UPN/email alignment project, and what was the most disruptive part of the change?** The `.local` domain UPN migration is one of the most commonly underestimated hybrid identity remediation projects. What's the approach you took to minimize disruption to users and dependent applications?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---

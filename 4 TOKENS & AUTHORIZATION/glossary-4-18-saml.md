@@ -1,7 +1,7 @@
 # SAML
 *The Protocol That Refuses to Die (and Sometimes Shouldn't)*
 
-**Part of Entra ID Glossary Series: Glossary#4.18 - SAML**
+📚 **Part of Entra ID Glossary Series: Glossary#4.18 - SAML**
 
 ---
 
@@ -74,6 +74,8 @@ For new integrations where you have a choice, OIDC. For existing applications th
 ---
 
 💬 **What's the SAML integration that took you the longest to get working?** Attribute mapping problems and entity ID mismatches are the usual culprits. There's something about debugging a SAML authentication failure from a wall of XML that concentrates the mind. What was the eventual fix?
+> ✍️ *Written by **TedxHarry***
+
 <!-- nav -->
 
 ---
