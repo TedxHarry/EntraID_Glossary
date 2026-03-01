@@ -1,9 +1,18 @@
 # Refresh Token
 *What "Keep Me Signed In" Is Actually Doing*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.7 - Refresh Token**
 
 ---
+
+## 🎯 TL;DR
+
+- Refresh tokens are long-lived (90-day rolling window) credentials used to get new access tokens silently
+- They're stored securely by the app or auth library — never in a browser's session storage or cookies
+- Revocation happens via token revocation API, password change, sign-out, or Conditional Access policy change
+
 
 A user complained to me that she kept getting signed out of Microsoft 365 while working from home, even though she'd ticked "Keep me signed in" every time. Meanwhile her colleague, sitting next to her in the office on the same network, never got signed out. Same application. Same browser. Different experience.
 

@@ -1,9 +1,18 @@
 # Cloud Application
 *SaaS in Your Tenant's Security Perimeter*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#9.2 - Cloud Application**
 
 ---
+
+## 🎯 TL;DR
+
+- Cloud applications authenticate via Entra ID using OIDC/OAuth or SAML — no on-prem infrastructure needed
+- The Entra ID app gallery has thousands of pre-integrated cloud apps with one-click SSO configuration
+- Cloud app SSO eliminates per-app passwords — users sign in once and access all integrated apps
+
 
 A security audit found that employees were using 340 cloud applications. The IT team was aware of 23 of them. The other 317 were shadow IT: applications people had signed up for individually, using their work email, with no IT visibility or governance.
 

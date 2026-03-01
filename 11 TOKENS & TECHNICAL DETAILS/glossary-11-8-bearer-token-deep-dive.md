@@ -1,9 +1,18 @@
 # Bearer Token (Deep Dive)
 *Why "Whoever Has It Can Use It" Is Both the Point and the Risk*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#11.8 - Bearer Token (Deep Dive)**
 
 ---
+
+## 🎯 TL;DR
+
+- Bearer tokens carry all authorization in the token itself — no additional proof of possession needed by default
+- The 'bearer' in Authorization header: `Authorization: Bearer eyJ...`
+- mTLS-bound tokens (sender-constrained) require the client cert that matches a thumbprint claim in the token
+
 
 A developer found an access token in an application's debug log. The token had been printed during testing and the log file had been committed to the repository along with the rest of the debugging output. The repository was private, but eleven developers had access.
 

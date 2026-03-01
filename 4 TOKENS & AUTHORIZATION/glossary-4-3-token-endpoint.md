@@ -1,9 +1,18 @@
 # Token Endpoint
 *The Server-Side Half Nobody Talks About*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.3 - Token Endpoint**
 
 ---
+
+## 🎯 TL;DR
+
+- The token endpoint (`/token`) is where apps exchange codes for actual access/ID/refresh tokens
+- This is a server-to-server POST call — never done from a browser, keeping tokens out of logs
+- Different grant types use the same endpoint: authorization_code, client_credentials, refresh_token, etc.
+
 
 When I'm teaching OAuth to people who are new to it, I split the whiteboard in half. Left side: the authorization endpoint, browser-facing, user-visible, the part people experience. Right side: the token endpoint, server-to-server, invisible to the user, the part where tokens actually get issued.
 

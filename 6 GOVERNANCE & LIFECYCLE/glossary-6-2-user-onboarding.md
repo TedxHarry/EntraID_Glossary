@@ -1,9 +1,18 @@
 # User Onboarding
 *The First Day Experience Is an Identity Problem*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.2 - User Onboarding**
 
 ---
+
+## 🎯 TL;DR
+
+- User onboarding is the full process of setting up a new employee: creating accounts, assigning licenses, granting app access
+- Lifecycle Workflows automate onboarding tasks triggered by HR data (start date, department, role)
+- Access packages in Entitlement Management bundle resources for new employees by role or department
+
 
 I asked a group of IT professionals at a conference to raise their hands if a new employee had ever started and couldn't do meaningful work on their first day because they didn't have the right access.
 

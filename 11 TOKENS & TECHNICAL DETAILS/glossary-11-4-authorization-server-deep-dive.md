@@ -1,9 +1,18 @@
 # Authorization Server (Deep Dive)
 *What Entra ID Is Actually Doing When It Issues a Token*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#11.4 - Authorization Server (Deep Dive)**
 
 ---
+
+## 🎯 TL;DR
+
+- The authorization server validates: app registration exists, redirect URI matches, requested scopes are consented, Conditional Access passes
+- Entra ID AS issues signed JWTs using RS256 by default; public keys at `/.well-known/openid-configuration`
+- Multi-tenant apps: use `common` or `organizations` as tenant in URL; single-tenant: use tenant ID/domain
+
 
 From the developer's perspective, Entra ID is a black box. You send a request with credentials and scopes. You get back a token. What happens in between feels irrelevant until something breaks and you need to understand why Entra ID issued (or refused to issue) a specific token with specific claims.
 

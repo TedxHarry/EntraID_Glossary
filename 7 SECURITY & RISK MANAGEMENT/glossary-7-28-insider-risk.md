@@ -1,9 +1,18 @@
 # Insider Risk
 *When the Threat Already Has a Badge*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.28 - Insider Risk**
 
 ---
+
+## 🎯 TL;DR
+
+- Insider risk signals from Microsoft Purview can feed into Adaptive Protection in Entra ID
+- Adaptive Protection automatically applies stricter CA policies to users with elevated insider risk scores
+- Requires both Microsoft Purview Insider Risk Management and Entra ID P2 + the integration enabled
+
 
 A software engineer at a technology company gave notice. Two weeks later, on her last day, she downloaded 14,000 files from SharePoint. Source code, customer data, internal architecture documents. She had legitimate access to all of it. Her credentials were valid. Her actions didn't trigger any fraud detection.
 
@@ -82,6 +91,9 @@ Organizations deploying insider risk capabilities need a defined investigation p
 
 💬 **Has your organization implemented any form of insider risk monitoring?** The conversation about deploying it is often more complex than the technical setup because of privacy, legal, and cultural considerations. What was the hardest part of getting agreement to monitor insider risk signals?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Adaptive Protection (Insider Risk + CA integration) requires **Microsoft Purview Insider Risk Management** + **Entra ID P2**.
 
 <!-- nav -->
 

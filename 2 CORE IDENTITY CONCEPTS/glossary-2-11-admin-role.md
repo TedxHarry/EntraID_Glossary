@@ -1,9 +1,18 @@
 # Admin Role
 *The Keys to Your Tenant and Why You Need Far Fewer of Them*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.11 - Admin Role**
 
 ---
+
+## 🎯 TL;DR
+
+- Admin roles define what administrators can manage in Entra ID — from Global Admin (everything) to Helpdesk (limited)
+- Always use the least-privileged role for each task; Global Administrator should be used sparingly
+- Privileged Identity Management (PIM) provides just-in-time, time-bound, and approval-based admin role access
+
 
 The first thing I checked when I took over management of a new tenant was the Global Administrator list.
 
@@ -64,10 +73,9 @@ The right number of Global Admins for most organizations is two break-glass acco
 ---
 
 🔗 **Related Terms:**
-- Glossary#2.6 - Directory Role (the full picture of directory roles beyond just admin roles)
-- Glossary#2.10 - Delegation (how to give non-admins specific capabilities without full admin access)
-- Glossary#6.13 - Just-in-Time Access (the PIM model of activating access only when needed)
-
+- [Glossary#2.6 - Directory Role](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-6-directory-role.md) (the full picture of directory roles beyond just admin roles)
+- [Glossary#2.10 - Delegation](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-10-delegation.md) (how to give non-admins specific capabilities without full admin access)
+- [Glossary#6.13 - Just-in-Time Access](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-13-just-in-time-access.md) (the PIM model of activating access only when needed)
 ---
 
 **Check this now:** How many Global Administrators does your tenant have? Go to Entra admin center > Roles > Global Administrator > Assignments. If the number is higher than 5, you have work to do. What did you find?

@@ -1,9 +1,18 @@
 # Service Account
 *The Legacy Pattern That Managed Identity Is Replacing*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.10 - Service Account**
 
 ---
+
+## 🎯 TL;DR
+
+- Service accounts are non-human accounts used by applications and services to run processes and call APIs
+- In Entra ID, use managed identities or service principals instead of user accounts for service accounts
+- If legacy service accounts must exist: use long random passwords, never interactive login, audit regularly
+
 
 A penetration tester found a set of credentials in a configuration file on a compromised server. Username: `svc_reporting`. Password: `Reporting2019!`. The account had been created in 2019. The password had never been changed.
 

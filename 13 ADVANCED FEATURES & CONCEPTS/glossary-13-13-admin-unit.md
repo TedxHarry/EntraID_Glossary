@@ -1,9 +1,18 @@
 # Admin Unit
 *Scoped Administration Without Multiple Tenants*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.13 - Admin Unit**
 
 ---
+
+## 🎯 TL;DR
+
+- Administrative Units (AUs) scope admin permissions to a subset of users, groups, or devices
+- Example: Help Desk staff can only reset passwords for users in their department's AU
+- AUs enable decentralized administration without granting tenant-wide permissions to local admins
+
 
 A university had 47 colleges within a single Entra ID tenant. Each college had its own IT support staff. The IT staff at the School of Medicine needed to manage users in their college: reset passwords, update attributes, manage group memberships. But they shouldn't be able to touch users in the School of Engineering.
 
@@ -72,6 +81,9 @@ Administrative Units scope role assignments but don't create full isolation. Obj
 
 💬 **Does your organization use Administrative Units for delegated administration, or do you manage all identity administration centrally?** The delegation model scales much better with AUs than with either global admin access or separate tenants. What organizational structure would benefit most from scoped administration in your environment?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Administrative Units require **Entra ID P1**.
 
 <!-- nav -->
 

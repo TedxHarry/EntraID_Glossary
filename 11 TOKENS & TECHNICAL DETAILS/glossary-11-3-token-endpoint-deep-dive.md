@@ -1,9 +1,18 @@
 # Token Endpoint (Deep Dive)
 *Where Codes and Credentials Become Tokens*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#11.3 - Token Endpoint (Deep Dive)**
 
 ---
+
+## 🎯 TL;DR
+
+- The token endpoint (`/token`) issues access tokens, ID tokens, and refresh tokens in exchange for codes or credentials
+- Full URL: `https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token`
+- Required POST params: `grant_type`, `client_id`, `client_secret` (or assertion), `code` or `refresh_token`
+
 
 The authorization endpoint is where users interact. The token endpoint is where applications interact. No browser, no UI, no redirects. Just an HTTP POST from application code to Entra ID, and a JSON response with tokens.
 

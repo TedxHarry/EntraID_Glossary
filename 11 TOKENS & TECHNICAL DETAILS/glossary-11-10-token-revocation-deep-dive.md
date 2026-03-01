@@ -1,9 +1,18 @@
 # Token Revocation (Deep Dive)
 *Why "Revoke All Tokens" Doesn't Mean Instant Lockout*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#11.10 - Token Revocation (Deep Dive)**
 
 ---
+
+## 🎯 TL;DR
+
+- Token revocation cascades: revoke refresh token → all future access tokens from that refresh token are blocked
+- Access token revocation without CAE only works at expiry — there's no in-flight recall
+- Revocation events: password change, disable account, admin revoke (`revokeSignInSessions`), CA policy change
+
 
 A user's account was compromised. The security team confirmed it at 2:15 PM and immediately went to Entra ID to revoke all sessions. "Revoke all refresh tokens" button. Clicked. Done.
 

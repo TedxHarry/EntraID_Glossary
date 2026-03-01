@@ -1,9 +1,18 @@
 # Federated Identity Credential
 *The Trust Configuration That Makes Keyless Auth Work*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#10.6 - Federated Identity Credential**
 
 ---
+
+## 🎯 TL;DR
+
+- A Federated Identity Credential configures the trusted relationship on a user-assigned managed identity or app registration
+- Specifies: which issuer to trust, which subject claims to allow, what audience is expected
+- One application can have multiple federated credentials — for different environments (prod vs staging)
+
 
 A developer configured workload federation for their GitHub Actions workflow. They set up the app registration, assigned the right Azure roles, ran the workflow, and got an authentication error.
 

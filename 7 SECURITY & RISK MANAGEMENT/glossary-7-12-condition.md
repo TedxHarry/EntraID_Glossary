@@ -1,9 +1,18 @@
 # Condition
 *The Signals That Make Conditional Access Contextual*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.12 - Condition**
 
 ---
+
+## 🎯 TL;DR
+
+- Conditions are additional signals evaluated beyond authentication: sign-in risk, device platform, location, client app
+- Conditions narrow when a policy fires — without conditions, the policy applies to all matching assignments
+- Layer conditions to create precise policies: e.g., only trigger for unmanaged devices from outside trusted IPs
+
 
 Two sign-ins. Same user. Same application. Same credentials.
 

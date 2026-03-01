@@ -1,9 +1,18 @@
 # Enterprise Application
 *What the Portal Is Actually Showing You*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.5 - Enterprise Application**
 
 ---
+
+## 🎯 TL;DR
+
+- Enterprise Applications is the portal view of a service principal — where you configure SSO, user assignments, and provisioning
+- When you add a gallery app, Entra ID creates an enterprise application (service principal) in your tenant
+- This is where you grant admin consent and manage which users/groups can access the app
+
 
 Here's a conversation I've had more times than I can count:
 
@@ -65,10 +74,9 @@ That's it. Once working, users click Salesforce in My Apps or their browser book
 ---
 
 🔗 **Related Terms:**
-- Glossary#2.3 - Service Principal (what Enterprise Applications is actually displaying)
-- Glossary#9.1 - App Integration (the broader concept of connecting apps to Entra ID)
-- Glossary#6.1 - User Provisioning (the automated account creation feature configured in Enterprise Apps)
-
+- [Glossary#2.3 - Service Principal](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-3-service-principal.md) (what Enterprise Applications is actually displaying)
+- [Glossary#9.1 - App Integration](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-1-app-integration.md) (the broader concept of connecting apps to Entra ID)
+- [Glossary#6.1 - User Provisioning](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-1-user-provisioning.md) (the automated account creation feature configured in Enterprise Apps)
 ---
 
 **What apps are you integrating?** Whether it's a standard gallery app or a custom internal tool, the first SSO integration is always memorable. What was yours, and did it go smoothly or were there some surprises along the way?

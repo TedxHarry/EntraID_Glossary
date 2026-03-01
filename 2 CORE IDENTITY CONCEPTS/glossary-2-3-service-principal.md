@@ -1,9 +1,18 @@
 # Service Principal
 *The Most Misunderstood Object in Entra ID*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.3 - Service Principal**
 
 ---
+
+## 🎯 TL;DR
+
+- An App Registration is the global app definition; a Service Principal is the local instance in your tenant
+- Managed identities also create service principals — it's how Azure resources get Entra ID identities
+- Admin consent, user assignments, and Conditional Access targeting all happen on the service principal, not the registration
+
 
 Of all the concepts I explain to people learning Entra ID, service principals generate the most confused looks. Not because the idea is actually complicated, once you have the right mental model, it clicks quickly. The problem is that most explanations start in the wrong place.
 
@@ -61,11 +70,21 @@ Finding service principals is straightforward: in the Entra admin center, go to 
 
 ---
 
-🔗 **Related Terms:**
-- Glossary#2.1 - Identity (service principals are a type of identity)
-- Glossary#2.5 - Enterprise Application (the portal view of an app's service principal)
-- Glossary#10.2 - Managed Identity (a type of service principal managed by Azure)
 
+### 🔧 Quick Reference: PowerShell
+
+```powershell
+# Find all service principals
+Get-MgServicePrincipal -All | Select-Object DisplayName, Id, AppId | Sort-Object DisplayName
+
+# Get service principal by app name
+Get-MgServicePrincipal -Filter "displayName eq 'My App Name'"
+```
+
+🔗 **Related Terms:**
+- [Glossary#2.1 - Identity](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-1-identity.md) (service principals are a type of identity)
+- [Glossary#2.5 - Enterprise Application](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-5-enterprise-application.md) (the portal view of an app's service principal)
+- [Glossary#10.2 - Managed Identity](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-2-managed-identity.md) (a type of service principal managed by Azure)
 ---
 
 💬 **Your experience:** Has the app registration vs. service principal distinction tripped you up before? The "I configured permissions but the app still doesn't work" problem is one of the most common Entra ID support scenarios. Drop your troubleshooting story below.

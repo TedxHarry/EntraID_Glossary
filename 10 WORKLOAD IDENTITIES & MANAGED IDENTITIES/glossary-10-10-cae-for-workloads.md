@@ -1,9 +1,18 @@
 # CAE for Workloads
 *Real-Time Token Revocation for Non-Human Identities*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#10.10 - CAE for Workloads**
 
 ---
+
+## 🎯 TL;DR
+
+- CAE for workloads allows resource servers to revoke workload tokens mid-lifetime when conditions change
+- Without CAE, a workload token is valid until expiry even after the managed identity is disabled
+- CAE for workloads is newer than user CAE — check service support before relying on it
+
 
 A service principal had its permissions revoked at 9:47 AM. The security team revoked them because the associated application had a critical vulnerability disclosed that morning.
 
@@ -59,6 +68,9 @@ Knowing which Azure services support CAE matters when designing incident respons
 
 💬 **Has your team ever had to respond to a compromised service principal, and how long did it take before the service principal's access actually stopped?** The gap between "we revoked the permissions" and "access actually stopped" is a real operational problem in incident response. CAE for workloads is meant to close that gap. Has it changed how your team thinks about workload identity incident response timelines?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** CAE for workload identities requires **Entra ID Workload Identity Premium**.
 
 <!-- nav -->
 

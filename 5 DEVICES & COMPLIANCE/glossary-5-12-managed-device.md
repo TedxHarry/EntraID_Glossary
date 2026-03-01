@@ -1,9 +1,18 @@
 # Managed Device
 *Enrolled Isn't the Same as Secure*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#5.12 - Managed Device**
 
 ---
+
+## 🎯 TL;DR
+
+- A managed device is enrolled in Intune and receives policies, apps, and compliance checks from the organization
+- Management enables remote wipe, configuration enforcement, and detailed inventory
+- Not all managed devices are compliant — a device can be enrolled but fail compliance requirements
+
 
 A security audit came back with a finding: 23% of corporate devices accessing sensitive applications were "unmanaged." The IT team pushed back. "All our corporate devices are enrolled in Intune. How can they be unmanaged?"
 

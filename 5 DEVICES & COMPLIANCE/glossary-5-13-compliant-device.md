@@ -1,9 +1,18 @@
 # Compliant Device
 *The Security Baseline That Has to Be Earned Continuously*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#5.13 - Compliant Device**
 
 ---
+
+## 🎯 TL;DR
+
+- A compliant device satisfies all requirements defined in Intune's compliance policies
+- Compliance status is checked by Conditional Access when the 'Require compliant device' grant control is set
+- Compliance can be lost (patch deadline missed, encryption disabled) — CA will block non-compliant access
+
 
 A manager escalated a help desk ticket to me personally. One of her team members had been locked out of the company's finance application for two days. The user's account was active. MFA was working. The Conditional Access policy was correct.
 

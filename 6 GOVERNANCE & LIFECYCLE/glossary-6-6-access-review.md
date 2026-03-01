@@ -1,9 +1,18 @@
 # Access Review
 *The Audit That Finds What Accumulates Over Time*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.6 - Access Review**
 
 ---
+
+## 🎯 TL;DR
+
+- Access reviews are periodic assessments of who has access to what, with approval/removal workflow
+- Reviewers can be resource owners, managers, or the users themselves (self-attestation)
+- Access reviews are required for PIM role assignments and access packages — they enforce least-privilege over time
+
 
 A finance director completed an access review of her team's SharePoint permissions. She'd expected it to take 20 minutes. It took 2 hours because she kept stopping to ask questions.
 
@@ -78,6 +87,26 @@ Entra ID access reviews can be configured to automatically apply review results:
 
 💬 **Has your organization run an access review and been surprised by how much access turned out to be inappropriate?** The first review of any group or application almost always surfaces more stale access than expected. What's the highest percentage of "should not have this" you've found in a single review?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Access Reviews require **Entra ID P2** or **Entra ID Governance**. This is one of the most common reasons organizations upgrade from P1.
+
+
+### 🔧 Quick Reference: Graph API
+
+```bash
+# List all access reviews (Graph API)
+curl -H "Authorization: Bearer $TOKEN" \
+  "https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions"
+
+# Create an access review definition (PowerShell)
+New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter @{
+    displayName = "Quarterly Group Access Review"
+    scope = @{ query = "/groups/<group-id>/members"; queryType = "MicrosoftGraph" }
+    reviewers = @(@{ query = "/groups/<group-id>/owners"; queryType = "MicrosoftGraph" })
+    settings = @{ defaultDecision = "Deny"; autoApplyDecisionsEnabled = $true }
+}
+```
 
 <!-- nav -->
 

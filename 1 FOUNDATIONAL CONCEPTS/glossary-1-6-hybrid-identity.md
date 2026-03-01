@@ -1,9 +1,18 @@
 # Hybrid Identity
 *Living in Two Worlds at Once*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#1.6 - Hybrid Identity**
 
 ---
+
+## 🎯 TL;DR
+
+- Hybrid identity connects on-premises Active Directory with Entra ID so users have one identity in both places
+- Entra Connect Sync replicates AD objects to Entra ID; Entra Cloud Sync is the lighter modern replacement
+- Three auth models: Password Hash Sync (most resilient), Pass-Through Auth, or Federation (most complex)
+
 
 If I had to pick one concept that trips up aspiring Entra ID specialists more than any other, it's hybrid identity. Not because it's complicated in theory, the theory is actually pretty clean. It's because the *reality* is messier than the diagrams suggest, and when it breaks, it tends to break in the quietest, most confusing ways possible.
 
@@ -72,10 +81,9 @@ Understanding hybrid identity isn't advanced material. It's practical reality. �
 ---
 
 🔗 **Related Terms:**
-- Glossary#1.5 - Active Directory (the on-premises side of hybrid identity)
-- Glossary#1.4 - Cloud-Based Identity (the cloud side of the equation)
-- Glossary#8.1 - Directory Synchronization (the technical mechanism behind sync)
-
+- [Glossary#1.5 - Active Directory](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-5-active-directory.md) (the on-premises side of hybrid identity)
+- [Glossary#1.4 - Cloud-Based Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-4-cloud-based-identity.md) (the cloud side of the equation)
+- [Glossary#8.1 - Directory Synchronization](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md) (the technical mechanism behind sync)
 ---
 
 💬 **Where are you in your hybrid journey?** Are you managing a hybrid environment right now, planning a migration toward cloud-only, or starting fresh with cloud-first? What's the hardest part you've run into, the technology or convincing stakeholders that it's worth the effort?

@@ -1,9 +1,18 @@
 # Just-in-Time Access
 *Admin Privileges Should Be Borrowed, Not Owned*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.13 - Just-in-Time Access**
 
 ---
+
+## 🎯 TL;DR
+
+- Just-in-Time (JIT) access grants elevated permissions only when needed and removes them automatically when done
+- PIM implements JIT for privileged roles: request, approve, activate for limited time, auto-expire
+- JIT eliminates standing access — a critical Zero Trust principle to reduce blast radius of compromised accounts
+
 
 I asked an IT team to show me their Global Administrators. The list had 11 names.
 
@@ -78,6 +87,28 @@ Start with Global Administrator. Convert permanent assignments to eligible. Set 
 
 💬 **What's the ratio of permanently-active admin roles to eligible PIM assignments in your organization?** The first time an organization audits this, the permanent assignment count is almost always higher than expected. What drove the move to JIT access, and what was the most common admin objection?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** PIM (Just-in-Time access for Entra ID roles) requires **Entra ID P2**. Azure resource role PIM is included in Entra ID P2 as well.
+
+
+### 🔧 Quick Reference: PIM PowerShell
+
+```powershell
+# List all eligible role assignments (PIM)
+Get-MgRoleManagementDirectoryRoleEligibilitySchedule -All |
+    Select-Object PrincipalId, RoleDefinitionId, StartDateTime, EndDateTime
+
+# Activate an eligible role (as the user)
+New-MgRoleManagementDirectoryRoleAssignmentScheduleRequest -BodyParameter @{
+    action = "selfActivate"
+    principalId = "<your-object-id>"
+    roleDefinitionId = "<role-definition-id>"
+    directoryScopeId = "/"
+    scheduleInfo = @{ startDateTime = (Get-Date -Format o); expiration = @{ type = "afterDuration"; duration = "PT4H" } }
+    justification = "Needed for emergency break-glass account audit"
+}
+```
 
 <!-- nav -->
 

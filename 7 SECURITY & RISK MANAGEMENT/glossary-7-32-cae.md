@@ -1,9 +1,18 @@
 # CAE (Continuous Access Evaluation)
 *When Access Tokens Get Revoked Mid-Session*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.32 - CAE (Continuous Access Evaluation)**
 
 ---
+
+## 🎯 TL;DR
+
+- CAE allows resource servers (Exchange, SharePoint, Teams) to receive near-real-time revocation signals
+- Without CAE, a stolen token is valid until expiry (up to 75 min). With CAE, revocation happens in seconds
+- CAE requires: P1/P2 license, supported client app, supported resource, and CAE-enabled CA session control
+
 
 A user had a valid session open in Outlook. While they were working, an admin received a report that the account had been compromised. The admin disabled the user's account in Entra ID.
 
@@ -81,6 +90,9 @@ For high-security scenarios (admin accounts, sensitive data access), strict enfo
 
 💬 **Before you knew about CAE, did you realize there was a window between an account being disabled and access actually stopping?** The gap between "policy enforced" and "policy actually takes effect on active sessions" is surprising to many administrators. Has knowing about this gap changed how quickly you respond to account compromise incidents?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** CAE is available in **Entra ID P1 and P2**. The CAE session control in Conditional Access policies requires at least P1.
 
 <!-- nav -->
 

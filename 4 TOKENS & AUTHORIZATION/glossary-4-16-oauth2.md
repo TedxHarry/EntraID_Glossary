@@ -1,9 +1,18 @@
 # OAuth 2.0
 *The Protocol That Solved a Problem We Didn't Realize Was a Problem*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.16 - OAuth 2.0**
 
 ---
+
+## 🎯 TL;DR
+
+- OAuth 2.0 is an authorization framework — it grants apps access to resources, but does NOT authenticate users
+- It defines four roles: Resource Owner, Client, Authorization Server (Entra ID), and Resource Server (the API)
+- Read OAuth 2.0 first before diving into Authorization Code, Scopes, or OIDC — it's the foundation
+
 
 Before OAuth existed, if you wanted a third-party app to access your photos to print them, the only way to give it access was to hand over your email and password. The app could read your photos. It could also delete them, read your email, change your password, and do anything else your account allowed. You couldn't give it narrow access. It was everything or nothing.
 

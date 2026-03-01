@@ -1,9 +1,18 @@
 # Require MFA
 *The Grant Control That Changed Identity Security*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.15 - Require MFA**
 
 ---
+
+## 🎯 TL;DR
+
+- Require MFA is the most common CA grant control — forces step-up authentication for matching sign-ins
+- MFA can be satisfied by any registered method: Authenticator push, TOTP, FIDO2, SMS (weakest)
+- Per-user MFA is deprecated in favor of CA-based MFA — Conditional Access provides contextual targeting
+
 
 A company ran a phishing simulation. They sent a convincing fake email to 400 employees. 67 clicked the link. 23 entered their username and password on the fake login page.
 

@@ -1,9 +1,18 @@
 # Source of Authority
 *Which System Gets to Say Who You Are*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.18 - Source of Authority**
 
 ---
+
+## 🎯 TL;DR
+
+- Source of Authority (SOA) is the authoritative system that 'owns' a user's identity data
+- For synced users, the SOA is on-premises AD — changes must be made in AD, not in Entra ID
+- Cloud-only users have Entra ID as SOA; HR-provisioned users have the HR system as SOA
+
 
 An employee's name changed after marriage. She updated it in Workday herself, as HR had instructed. Two weeks later, her Entra ID display name still showed her old name. Teams showed the old name. Her email still delivered to the old address.
 

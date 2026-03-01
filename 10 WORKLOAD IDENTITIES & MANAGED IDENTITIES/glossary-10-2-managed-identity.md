@@ -1,9 +1,18 @@
 # Managed Identity
 *Credentials That Azure Manages So You Don't Have To*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#10.2 - Managed Identity**
 
 ---
+
+## 🎯 TL;DR
+
+- Managed identities are Azure-managed credentials for Azure resources — no secrets to store or rotate
+- System-assigned: tied to one resource's lifecycle. User-assigned: shared across multiple resources
+- Use managed identities for any Azure service that needs to call other Azure APIs — it's the secure default
+
 
 The connection string in the app config file had the Key Vault secret embedded in plain text. Not encrypted. Not in a secrets manager. Just sitting there, checked into the repository, visible to anyone with read access to the codebase.
 
@@ -61,6 +70,19 @@ The choice between them comes down to whether the identity needs to be shared ac
 
 💬 **Has your team moved from service principal secrets to managed identity for Azure workloads, or are connection strings and secrets still the primary authentication pattern?** The transition is usually incremental: one application at a time, starting with the highest-risk stored credentials. What was the first managed identity migration that made the pattern click for your team?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: Managed Identity Token
+
+```bash
+# Get a token from IMDS (run inside an Azure VM or App Service)
+curl -H "Metadata: true" \
+  "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/"
+
+# PowerShell equivalent (inside Azure VM)
+$response = Invoke-WebRequest -Uri "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://graph.microsoft.com/" -Headers @{Metadata="true"}
+($response.Content | ConvertFrom-Json).access_token
+```
 
 <!-- nav -->
 

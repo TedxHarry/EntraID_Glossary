@@ -1,9 +1,18 @@
 # Access Control
 *What It Actually Means When Everything Is Everywhere*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.7 - Access Control**
 
 ---
+
+## 🎯 TL;DR
+
+- Access control determines who can do what to which resource, based on identity, role, and context
+- Entra ID uses role-based access control (RBAC) for both admin permissions and application resource permissions
+- Conditional Access adds context (device, location, risk) on top of identity-based access decisions
+
 
 I once inherited an environment where the IT manager's answer to every access request was "just add them to the All Staff group." SharePoint permissions, Teams channels, Azure resources, application access, all of it collapsed into one giant group that eventually contained every person who'd ever worked there, including contractors who left two years ago.
 
@@ -60,10 +69,9 @@ Start with groups. Define what each group grants before you create it. Assign pe
 ---
 
 🔗 **Related Terms:**
-- Glossary#2.8 - Permission (the specific rights that access control grants or denies)
+- [Glossary#2.8 - Permission](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-8-permission.md) (the specific rights that access control grants or denies)
 - Glossary#2.9 - Role (Identity Role) (the named collections of permissions used in RBAC)
-- Glossary#7.8 - Conditional Access (the contextual enforcement layer of access control)
-
+- [Glossary#7.8 - Conditional Access](/7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-8-conditional-access.md) (the contextual enforcement layer of access control)
 ---
 
 **Honestly:** When you look at your current environment's access control, do you know why every permission exists? Or are there things that have accumulated over time that nobody quite remembers the reason for? That gap between "what we have" and "what we intended" is where access reviews come in.

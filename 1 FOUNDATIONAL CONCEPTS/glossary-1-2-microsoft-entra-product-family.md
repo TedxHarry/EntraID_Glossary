@@ -1,9 +1,18 @@
 # Microsoft Entra Product Family
 *Why There's More Than Just Entra ID*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#1.2 - Microsoft Entra Product Family**
 
 ---
+
+## 🎯 TL;DR
+
+- The Entra family spans Identity (Entra ID), Permissions Management, Verified ID, Internet Access, and Private Access
+- You can use individual products or buy the Entra Suite bundle for full coverage
+- Most organizations start with Entra ID and add products as Zero Trust maturity grows
+
 
 A while back I was helping a startup set up their identity infrastructure. Straightforward enough, 80 employees, Microsoft 365, a handful of SaaS apps. Entra ID handled everything beautifully.
 
@@ -62,10 +71,9 @@ When you're starting out, focus on Entra ID first, deeply. Understanding the fou
 ---
 
 🔗 **Related Terms:**
-- Glossary#1.1 - Microsoft Entra ID (the foundation product)
-- Glossary#9.14 - Entra External ID (external user management)
-- Glossary#10.1 - Workload Identity (non-human identities)
-
+- [Glossary#1.1 - Microsoft Entra ID](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-1-microsoft-entra-id.md) (the foundation product)
+- [Glossary#9.14 - Entra External ID](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-14-entra-external-id.md) (external user management)
+- [Glossary#10.1 - Workload Identity](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-1-workload-identity.md) (non-human identities)
 ---
 
 **Your turn:** Which Entra products are you working with right now? Are you purely on Entra ID, or has your organization started using other products in the family? Curious what problems drove those decisions.

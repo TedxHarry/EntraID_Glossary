@@ -1,9 +1,18 @@
 # Leaked Credentials
 *When Your Password Shows Up on the Dark Web*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.6 - Leaked Credentials**
 
 ---
+
+## 🎯 TL;DR
+
+- Leaked credentials are username/password pairs from data breaches that Microsoft monitors across the dark web
+- When a match is found for a tenant user, Identity Protection creates a high user risk event immediately
+- Response: force password reset immediately — the credential is compromised regardless of how the breach happened
+
 
 The breach happened at an online retailer. 42 million username/password combinations were exposed. The retailer wasn't a Microsoft customer. They had nothing to do with Entra ID.
 

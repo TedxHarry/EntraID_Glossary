@@ -1,9 +1,18 @@
 # Access Certification
 *When "Reviewed" Has to Mean Something to an Auditor*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.7 - Access Certification**
 
 ---
+
+## 🎯 TL;DR
+
+- Access certification is the formal process of having stakeholders confirm that user access is still needed
+- Failed certifications trigger automatic removal — 'recertify or lose access'
+- Required for compliance frameworks (SOX, ISO 27001) that mandate periodic access reviews
+
 
 The compliance auditor asked for evidence that privileged access to the financial system had been reviewed in the past 90 days. The IT team pulled together email threads, spreadsheets, and a SharePoint document that had been manually updated. The auditor looked at it for a few minutes and asked: "Who approved each individual access decision, and what evidence do you have that they actually reviewed it rather than rubber-stamped it?"
 

@@ -1,9 +1,18 @@
 # Principal ID
 *The Identifier You Use When Giving a Managed Identity Permission*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#10.8 - Principal ID**
 
 ---
+
+## 🎯 TL;DR
+
+- The Principal ID is the Object ID of the service principal created for a managed identity
+- Use Principal ID to assign RBAC roles to the managed identity in Azure resources
+- Don't confuse with Client ID — Client ID is the application ID used in code; Principal ID is for role assignment
+
 
 A developer enabled a managed identity on an App Service and then went to assign it the Key Vault Secrets User role on a Key Vault. In the role assignment dialog, under "Select members," they searched for the App Service name.
 

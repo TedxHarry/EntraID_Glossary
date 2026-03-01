@@ -1,9 +1,18 @@
 # Role (Identity Role)
 *One Word, Three Completely Different Things in Entra ID*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.9 - Role (Identity Role)**
 
 ---
+
+## 🎯 TL;DR
+
+- A role is a named collection of permissions; assigning a role grants all permissions in that collection
+- App roles are custom roles defined in App Registration for your own application's authorization logic
+- Directory roles (like Global Admin) use the same concept but grant permissions over Entra ID itself
+
 
 The conversation went sideways when the security architect asked, "What role does this service account have?"
 
@@ -62,10 +71,9 @@ Different teams tend to own different layers. The identity team manages director
 ---
 
 🔗 **Related Terms:**
-- Glossary#2.6 - Directory Role (the Entra ID administrative roles in detail)
-- Glossary#2.8 - Permission (what roles collect and assign)
-- Glossary#2.5 - Enterprise Application (where app role assignments are configured)
-
+- [Glossary#2.6 - Directory Role](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-6-directory-role.md) (the Entra ID administrative roles in detail)
+- [Glossary#2.8 - Permission](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-8-permission.md) (what roles collect and assign)
+- [Glossary#2.5 - Enterprise Application](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-5-enterprise-application.md) (where app role assignments are configured)
 ---
 
 💬 **Which "role" causes the most confusion in your team?** My experience is that app roles are the least understood, developers implement them but the IT admin team doesn't always know they exist. Is that true where you work?

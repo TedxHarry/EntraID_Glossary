@@ -1,9 +1,18 @@
 # ID Protection
 *Entra ID's Automated Threat Response System*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.4 - ID Protection**
 
 ---
+
+## 🎯 TL;DR
+
+- Identity Protection is the Entra ID P2 feature that generates risk detections and risk scores
+- It requires P2 licensing — risk policies are powerful but P2 is needed for the full feature set
+- Risk-based CA policies should require password change for high user risk, MFA for medium sign-in risk
+
 
 A security analyst joined a company that had 12,000 users and one person managing identity security part-time. Before he'd found a way to review sign-in logs manually at scale, he enabled ID Protection and connected it to Conditional Access.
 
@@ -91,6 +100,9 @@ False positive rate drops over time as the system builds accurate baselines. New
 
 💬 **When you first enabled ID Protection, what was the ratio of genuine attacks to false positives in the first month?** The initial calibration period is always noisier than steady state. What detection type generated the most false positives in your environment, and how long did it take to tune down?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Entra ID Protection is a **P2-only** feature. Without P2, you cannot see risk detections, risky users, or configure risk-based Conditional Access policies.
 
 <!-- nav -->
 

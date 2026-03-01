@@ -1,9 +1,18 @@
 # Consent Framework
 *How Applications Get Permission to Access Your Data*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.14 - Consent Framework**
 
 ---
+
+## 🎯 TL;DR
+
+- The Consent Framework is how users and admins authorize applications to access resources on their behalf
+- User consent = individual grants permission for their own data; Admin consent = tenant-wide grant for all users
+- Configure consent settings to require admin approval — prevents users from granting excessive permissions to unknown apps
+
 
 A developer registered an application that requested `Mail.ReadWrite.All` at the application level. Application-level permissions don't require a user to consent; they require an administrator to consent on behalf of the entire organization.
 
@@ -67,6 +76,9 @@ High-risk grants to look for: application permissions for `Mail.ReadWrite.All`, 
 
 💬 **Does your organization have a formal process for reviewing admin consent requests and auditing existing application permission grants?** Consent sprawl is a real governance problem in mature Entra ID tenants: applications accumulate over-permissioned consents that nobody reviews. What's the most surprising over-privileged application consent your team has found during an audit?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** The Consent Framework itself is free. Admin consent workflow (require admin approval for user consent) requires **Entra ID P1**.
 
 <!-- nav -->
 

@@ -1,9 +1,18 @@
 # Lifecycle Management
 *Identity Automation for the Entire Employee Journey*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.5 - Lifecycle Management**
 
 ---
+
+## 🎯 TL;DR
+
+- Lifecycle Management automates the full identity lifecycle: joiners, movers, and leavers
+- Lifecycle Workflows (Entra ID P2) trigger tasks based on attribute values: start date, department, termination date
+- Integrates with HR systems (Workday, SAP SuccessFactors) as the authoritative source of identity data
+
 
 A CISO told me her organization spent roughly 3 hours of IT staff time per new hire on access setup, and another 2 hours per departure on access removal. With 400 hires and departures per year, that was 2,000 hours of manual identity work annually.
 
@@ -72,6 +81,9 @@ The goal isn't to remove humans from access decisions. It's to remove humans fro
 
 💬 **Has your organization automated any part of the Joiner-Mover-Leaver cycle, and what was the first process you tackled?** The decision about where to start often comes down to where the most pain is: missed offboardings that create security risk, or slow onboarding that creates first-day frustration. Which drove your first automation investment?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Lifecycle Workflows require **Entra ID Governance** or **Entra ID P2**. Basic lifecycle (create/disable users) is available in Entra ID Free.
 
 <!-- nav -->
 

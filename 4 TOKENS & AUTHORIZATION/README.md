@@ -2,6 +2,10 @@
 
 > OAuth 2.0, OIDC, and SAML. How Entra ID proves identity to applications and what access tokens, ID tokens, and refresh tokens actually contain.
 
+> 📖 **Recommended reading order:** Start with **[Glossary#4.16 — OAuth 2.0](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-16-oauth2.md)** and **[Glossary#4.17 — OIDC](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-17-oidc.md)** before the earlier entries. OAuth 2.0 is the conceptual foundation; the rest of Section 4 builds on it.
+
+> 🔬 **Section 4 vs Section 11:** Section 4 covers concepts at the **practitioner level** — what each thing is and how to work with it. **[Section 11](/11%20TOKENS%20%26%20TECHNICAL%20DETAILS/README.md)** provides deep-dive technical internals of the same topics — read Section 4 first, then Section 11 when you need the full technical picture.
+
 ---
 
 ## Articles in this section

@@ -1,9 +1,18 @@
 # Authentication Strength
 *Why Some MFA Is Stronger Than Others*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.25 - Authentication Strength**
 
 ---
+
+## 🎯 TL;DR
+
+- Authentication strength is a CA feature to require specific authentication methods, not just 'any MFA'
+- Phishing-resistant strength requires FIDO2 or WHfB — SMS and push notifications don't qualify
+- Assign phishing-resistant strength to admin roles and high-value application access policies
+
 
 Two users both had MFA enabled. Both completed MFA before accessing their accounts.
 
@@ -67,6 +76,9 @@ For a Global Administrator, the worst case is complete tenant compromise. Phishi
 
 💬 **Has your organization differentiated authentication strength requirements between regular users and privileged accounts?** The conversation about "we have MFA" vs "we have phishing-resistant MFA for our admins" reflects a real security gap. What was the event or recommendation that drove the decision to require stronger methods for specific roles?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Authentication Strengths configuration requires **Entra ID P1**.
 
 <!-- nav -->
 

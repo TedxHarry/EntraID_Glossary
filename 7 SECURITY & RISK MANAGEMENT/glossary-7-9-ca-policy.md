@@ -1,9 +1,18 @@
 # CA Policy
 *Building the If-Then Logic of Access Control*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.9 - CA Policy**
 
 ---
+
+## 🎯 TL;DR
+
+- A CA policy is a specific IF-THEN rule: IF user is in Group A accessing App B from risky location, THEN require MFA
+- Multiple policies can apply to one sign-in — all applicable policies are evaluated and the strictest controls apply
+- Policies in Report-Only don't enforce — use this to test impact before enabling enforcement
+
 
 An organization had Conditional Access deployed. Their policy was: require MFA for all users, all apps.
 
@@ -97,6 +106,9 @@ This is why exclusions need careful design. An exclusion from one policy doesn't
 
 💬 **What's the trickiest CA policy interaction you've debugged?** The "why is this user being asked for MFA when they shouldn't be" investigation almost always comes down to an unexpected policy match. What was the policy that surprised you?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** CA policies require **Entra ID P1**. Risk-based conditions in CA policies (sign-in risk, user risk) require **Entra ID P2**.
 
 <!-- nav -->
 

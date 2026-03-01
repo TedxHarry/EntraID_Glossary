@@ -1,9 +1,18 @@
 # Active Directory
 *Here's Why That Matters.*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#1.5 - Active Directory**
 
 ---
+
+## 🎯 TL;DR
+
+- Active Directory (AD DS) is Microsoft's on-premises identity system using Kerberos and LDAP for Windows networks
+- It uses domains, forests, and domain controllers — concepts that don't map directly to Entra ID
+- Entra ID is not AD in the cloud; it's a fundamentally different system with a different protocol stack
+
 
 Every few months someone posts something along the lines of "Active Directory is legacy technology, just move everything to Entra ID." And every time, the comments fill up with experienced IT professionals gently (and sometimes not so gently) explaining why that's not how it works.
 
@@ -66,10 +75,9 @@ In all of these, Entra ID exists alongside AD. They're not competitors in these 
 ---
 
 🔗 **Related Terms:**
-- Glossary#1.6 - Hybrid Identity (when AD and Entra ID work together)
-- Glossary#1.4 - Cloud-Based Identity (what Entra ID is, by contrast)
-- Glossary#8.1 - Directory Synchronization (how AD and Entra ID stay in sync)
-
+- [Glossary#1.6 - Hybrid Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md) (when AD and Entra ID work together)
+- [Glossary#1.4 - Cloud-Based Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-4-cloud-based-identity.md) (what Entra ID is, by contrast)
+- [Glossary#8.1 - Directory Synchronization](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md) (how AD and Entra ID stay in sync)
 ---
 
 **I'm curious:** Are you still managing on-premises Active Directory, or has your organization gone cloud-only? If you're hybrid, what's making the full migration difficult? The technical barriers are usually more interesting than people expect.

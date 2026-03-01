@@ -1,9 +1,18 @@
 # Sign-In Log
 *The Authentication Record Your Security Team Needs to Know Cold*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#12.2 - Sign-In Log**
 
 ---
+
+## 🎯 TL;DR
+
+- Sign-in logs record every authentication event: interactive user, non-interactive, service principal, and managed identity
+- Each entry shows: user, app, result, CA policies evaluated, MFA method used, risk level, device
+- Sign-in logs are your first stop for troubleshooting access failures — search by user, app, or error code
+
 
 A SOC analyst got an alert: possible account compromise for a senior finance executive. The analyst opened the Entra ID sign-in logs for that account.
 
@@ -67,6 +76,18 @@ Sign-in logs in Log Analytics integrate with Microsoft Sentinel for alert rules,
 
 💬 **How quickly can your SOC team access and query Entra ID sign-in logs during an active incident, and is the 30-day retention window sufficient?** Sign-in log investigation is often the first step in an identity incident response. The difference between logs in a Log Analytics workspace (queryable in seconds) versus portal-only (limited filter options, slower) can make a real difference in response time. What's your team's current sign-in log access setup?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: PowerShell — Sign-in Logs
+
+```powershell
+# Get failed sign-ins for a specific user
+Get-MgAuditLogSignIn -Filter "userPrincipalName eq 'user@contoso.com' and status/errorCode ne 0" -Top 50 |
+    Select-Object CreatedDateTime, AppDisplayName, Status, ConditionalAccessStatus
+
+# Find sign-ins where MFA was not satisfied
+Get-MgAuditLogSignIn -Filter "authenticationRequirement eq 'multiFactorAuthentication' and status/errorCode ne 0" -Top 100
+```
 
 <!-- nav -->
 

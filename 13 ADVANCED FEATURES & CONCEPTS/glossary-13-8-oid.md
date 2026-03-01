@@ -1,9 +1,18 @@
 # OID (Object ID)
 *The Stable GUID That Should Be Your Application's User Key*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.8 - OID (Object ID)**
 
 ---
+
+## 🎯 TL;DR
+
+- OID (Object ID) is the immutable GUID assigned to every directory object: user, group, app, service principal
+- OID persists even when UPN, display name, or other attributes change — it's the true unique identifier
+- Use OID (not UPN or email) as the stable identifier in your application's database for user records
+
 
 An application stored user records keyed on UPN. For three years it worked. Then the organization went through a merger-driven rebranding. Everyone's email domain changed from `oldco.com` to `newco.com`. UPNs changed to match.
 

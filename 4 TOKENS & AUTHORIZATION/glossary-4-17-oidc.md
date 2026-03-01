@@ -1,9 +1,18 @@
 # OIDC (OpenID Connect)
 *The Layer OAuth Was Missing*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.17 - OIDC (OpenID Connect)**
 
 ---
+
+## 🎯 TL;DR
+
+- OpenID Connect (OIDC) is the identity layer built on top of OAuth 2.0 that adds user authentication
+- It introduces the ID token (JWT with user identity claims) alongside the access token
+- When you 'Sign in with Microsoft', you're using OIDC — OAuth alone can't tell you who the user is
+
 
 I was explaining OAuth 2.0 to a developer and they stopped me halfway through.
 

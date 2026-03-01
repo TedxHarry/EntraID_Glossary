@@ -1,9 +1,18 @@
 # Advanced Scenarios
 *Where Entra ID Capabilities Combine to Solve Complex Problems*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.24 - Advanced Scenarios**
 
 ---
+
+## 🎯 TL;DR
+
+- Advanced identity scenarios: multi-cloud identity, cross-tenant admin, decentralized identity (Verified ID), hybrid SSO
+- These scenarios combine multiple Entra ID features — plan architecture carefully before implementation
+- Start simple, add complexity only when business requirements demand it — identity complexity is a risk factor
+
 
 No single Entra ID feature solves the hard problems. The challenging scenarios that security and identity teams face in practice require combining multiple features in ways the documentation doesn't always spell out clearly. Understanding individual capabilities is necessary. Understanding how they work together at scale is what separates competent identity work from mature identity architecture.
 

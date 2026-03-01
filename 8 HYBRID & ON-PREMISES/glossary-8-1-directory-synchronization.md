@@ -1,9 +1,18 @@
 # Directory Synchronization
 *Bridging On-Premises Identity with the Cloud*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#8.1 - Directory Synchronization**
 
 ---
+
+## 🎯 TL;DR
+
+- Directory synchronization replicates identity objects from on-premises AD to Entra ID
+- Sync creates cloud representations of AD users, groups, and contacts — keeping both directories in sync
+- Entra Connect Sync (legacy) or Entra Cloud Sync (modern) are the two sync engines available
+
 
 A 3,000-person organization had run on-premises Active Directory for 12 years. Every user account, every group, every password was in their domain controllers. When they moved to Microsoft 365, they had a choice: recreate all 3,000 accounts in Entra ID manually, or synchronize them from AD.
 
@@ -83,6 +92,19 @@ Entra Connect Health (available with Entra ID P2) provides monitoring dashboards
 
 💬 **What was the first directory sync issue that caused a visible incident in your organization?** The sync failure that delays a new hire's access on their first day, or the attribute conflict that causes a user's email address to be wrong in the GAL, are the ones that get noticed quickly. What was your earliest sync incident and what did it change about how you monitor sync health?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: PowerShell — Check Sync Status
+
+```powershell
+# Check last sync time for your tenant
+(Get-MgOrganization).OnPremisesLastSyncDateTime
+
+# List sync errors
+Get-MgUser -Filter "onPremisesSyncEnabled eq true" -All |
+    Where-Object { $_.OnPremisesProvisioningErrors.Count -gt 0 } |
+    Select-Object UserPrincipalName, OnPremisesProvisioningErrors
+```
 
 <!-- nav -->
 

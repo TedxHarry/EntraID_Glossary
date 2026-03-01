@@ -1,9 +1,18 @@
 # User Attributes
 *The Properties That Drive Everything Else*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.17 - User Attributes**
 
 ---
+
+## 🎯 TL;DR
+
+- User attributes are the properties stored on a user object: UPN, department, manager, jobTitle, country, etc.
+- Attributes drive dynamic group membership rules and HR-driven provisioning mappings
+- Custom attributes (extension properties) allow storing org-specific data on user objects
+
 
 A dynamic group was supposed to automatically include all members of the Engineering department. Six engineers were in the group. Two were missing.
 

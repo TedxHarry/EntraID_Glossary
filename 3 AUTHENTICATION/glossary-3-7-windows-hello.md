@@ -1,9 +1,18 @@
 # Windows Hello
 *It's Not Just a PIN*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#3.7 - Windows Hello**
 
 ---
+
+## 🎯 TL;DR
+
+- Windows Hello for Business replaces passwords on Windows devices using a PIN + device-bound private key or biometric
+- The private key never leaves the device (stored in TPM); authentication is local, not password-based
+- WHfB is phishing-resistant because there's no password to steal and the key is bound to that specific device
+
 
 "So users just set a 4-digit PIN instead of a password? That sounds less secure."
 

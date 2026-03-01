@@ -1,9 +1,18 @@
 # Account Lockout
 *How Entra ID Stops Password Guessing Without Locking Out Real Users*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.22 - Account Lockout**
 
 ---
+
+## 🎯 TL;DR
+
+- Account lockout triggers after too many failed sign-in attempts to prevent brute force attacks
+- Smart Lockout in Entra ID distinguishes legitimate retry failures from attack patterns
+- Lockout thresholds and duration are configurable — balance security vs. legitimate user impact
+
 
 An attacker ran a credential stuffing attack against an organization's sign-in endpoint: 50,000 username/password combinations, all purchased from a previous breach. The attack ran for 6 hours.
 

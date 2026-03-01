@@ -1,9 +1,18 @@
 # Trusted Location
 *Teaching Conditional Access What "Safe" Looks Like*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.20 - Trusted Location**
 
 ---
+
+## 🎯 TL;DR
+
+- Trusted Locations are Named Locations marked as trusted — typically office IPs or known VPN exit nodes
+- CA policies can skip MFA for access from trusted locations to reduce friction for on-premises users
+- Be conservative: mark only truly controlled IPs as trusted — not home offices or coffee shops
+
 
 A Conditional Access policy required MFA for all users. The CISO wanted the security. The operations team wanted office workers to not be prompted every single morning. The argument went on for three weeks.
 

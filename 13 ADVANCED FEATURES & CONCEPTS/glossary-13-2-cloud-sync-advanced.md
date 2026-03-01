@@ -1,9 +1,18 @@
 # Cloud-Based Sync (Advanced)
 *Complex Synchronization Scenarios Beyond the Basics*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.2 - Cloud-Based Sync (Advanced)**
 
 ---
+
+## 🎯 TL;DR
+
+- Cloud Sync (advanced) supports complex multi-forest topologies, directory extensions, and cloud-to-on-prem writeback
+- Troubleshooting: check agent connectivity, provisioning logs, and object matching rules
+- Group writeback v2 lets Entra ID groups sync to on-prem AD — useful for legacy app group-based access
+
 
 A merger brought together two companies, each with its own on-premises Active Directory forest. The combined organization needed both forests synchronized to a single Entra ID tenant. One forest had 8,000 users. The other had 3,500. Their UPN suffixes overlapped. Their organizational unit structures were completely different.
 

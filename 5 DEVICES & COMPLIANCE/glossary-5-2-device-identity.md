@@ -1,9 +1,18 @@
 # Device Identity
 *When the Device Itself Has to Prove Who It Is*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#5.2 - Device Identity**
 
 ---
+
+## 🎯 TL;DR
+
+- Device identity is a device object registered in Entra ID, allowing it to be managed and trusted by policies
+- Devices can be Entra-registered (personal), Entra-joined (cloud-only corporate), or hybrid-joined (both)
+- Device identity enables device-based Conditional Access — stronger than user identity alone
+
 
 A user's laptop was stolen from a coffee shop. IT disabled the user's Entra ID account within the hour. What they didn't do was disable the device itself.
 
@@ -70,6 +79,17 @@ Disabling the device object prevents the device from getting new device-level to
 
 💬 **Has a lost or stolen device ever exposed a gap in your offboarding or incident response process?** The device object in Entra ID is often the last thing people think to disable, focusing entirely on the user account. What's in your current device incident response checklist?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: PowerShell
+
+```powershell
+# List all registered devices
+Get-MgDevice -All | Select-Object DisplayName, OperatingSystem, TrustType, IsManaged, IsCompliant
+
+# Find devices that are registered but not managed
+Get-MgDevice -All | Where-Object { $_.IsManaged -eq $false } | Select-Object DisplayName, TrustType
+```
 
 <!-- nav -->
 

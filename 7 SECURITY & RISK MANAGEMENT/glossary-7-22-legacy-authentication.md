@@ -1,9 +1,18 @@
 # Legacy Authentication
 *The Open Door That MFA Can't Close*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.22 - Legacy Authentication**
 
 ---
+
+## 🎯 TL;DR
+
+- Legacy authentication protocols (SMTP AUTH, POP3, IMAP, older Office clients) can't satisfy MFA
+- Blocking legacy auth is one of the highest-impact, lowest-disruption security improvements you can make
+- Create a CA policy: Block access for All Users where Client App = Legacy authentication clients
+
 
 An organization had MFA deployed. 100% of users had MFA registered. The Conditional Access policy requiring MFA had been running for six months. They felt protected.
 
@@ -86,6 +95,24 @@ For cases where the work to migrate can't happen immediately, create a specific 
 
 💬 **What was the legacy auth offender that surprised you most when you started blocking it?** The printer scenario is almost universal. But the business-critical ERP system that nobody knew was using IMAP to send monthly reports is the one that causes the most painful conversation. What did your legacy auth block surface in your environment?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: Block Legacy Auth
+
+```powershell
+# Create a CA policy to block legacy authentication
+$params = @{
+    displayName = "Block Legacy Authentication"
+    state = "enabledForReportingButNotEnforced"  # Start in Report-Only!
+    conditions = @{
+        users = @{ includeUsers = @("All") }
+        applications = @{ includeApplications = @("All") }
+        clientAppTypes = @("exchangeActiveSync", "other")
+    }
+    grantControls = @{ operator = "OR"; builtInControls = @("block") }
+}
+New-MgIdentityConditionalAccessPolicy -BodyParameter $params
+```
 
 <!-- nav -->
 

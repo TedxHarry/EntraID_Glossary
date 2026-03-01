@@ -1,9 +1,18 @@
 # Approval Workflow
 *Who Decides, in What Order, and What Happens If They Don't*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.11 - Approval Workflow**
 
 ---
+
+## 🎯 TL;DR
+
+- Approval workflows route access requests through one or more approvers before granting access
+- Approvers can be: specific users, group members, resource owners, or managers
+- Time-limited approvals automatically expire access — reducing long-lived standing access
+
 
 A sensitive access package had a two-stage approval: manager first, then the data owner. A manager approved in 2 hours. The data owner never responded. After 14 days, the request timed out and the user was denied access.
 

@@ -1,9 +1,18 @@
 # Attribute-Based Access Control (ABAC)
 *Access Decisions That Go Beyond Role Membership*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.1 - Attribute-Based Access Control (ABAC)**
 
 ---
+
+## 🎯 TL;DR
+
+- ABAC (Attribute-Based Access Control) grants access based on attributes of the user, resource, and environment
+- Azure ABAC uses condition expressions on role assignments: e.g., only access blobs with tag `Project=Alpha`
+- More granular than RBAC — reduces the number of role assignments needed for fine-grained control
+
 
 A financial services company had a data governance problem. Analysts in the Research department needed access to financial models. But not all financial models: only the ones tagged as belonging to their division, and only when those models were classified as internal or lower. Confidential-rated documents required a separate approval.
 
@@ -60,6 +69,9 @@ If user department attributes in Entra ID aren't kept in sync with the HR system
 
 💬 **Has your organization hit the point where RBAC role proliferation is a management problem, and have you evaluated ABAC conditions as a solution?** The tipping point is usually when managing access requires creating more roles than teams can reasonably administer. What data segmentation or classification requirement is driving the most role proliferation in your environment?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Azure ABAC (attribute conditions on role assignments) is included with Azure RBAC at no extra cost. Entra ID ABAC features may require P2.
 
 <!-- nav -->
 

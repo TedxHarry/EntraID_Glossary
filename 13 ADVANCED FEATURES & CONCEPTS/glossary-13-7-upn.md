@@ -1,9 +1,18 @@
 # UPN (User Principal Name)
 *The Sign-In Name That Looks Like an Email But Isn't Always One*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.7 - UPN (User Principal Name)**
 
 ---
+
+## 🎯 TL;DR
+
+- UPN (User Principal Name) is the user's sign-in name: user@domain.com format
+- UPN must match a verified domain in the tenant (or use the .onmicrosoft.com default)
+- UPN ≠ email — they can differ; in hybrid environments, ensure UPN is synced from AD correctly
+
 
 A user tried to sign in to Microsoft 365 with their company email address. It failed. They tried with their old username format. Also failed. IT took 20 minutes to figure out what was happening.
 

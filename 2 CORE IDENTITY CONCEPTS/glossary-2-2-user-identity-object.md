@@ -1,9 +1,18 @@
 # User (Identity Object)
 *What's Actually Inside (And Why It Matters More Than You Think)*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.2 - User (Identity Object)**
 
 ---
+
+## 🎯 TL;DR
+
+- A user object stores the identity data for a person: UPN, display name, department, licenses, and group memberships
+- User objects can be cloud-only (created in Entra ID) or synced from on-premises Active Directory
+- The Object ID is the immutable identifier; UPN and email can change without breaking app access
+
 
 "Just create a user" is one of those phrases that sounds simple until you've done it wrong a few times.
 
@@ -81,11 +90,21 @@ Four checks. Covers a substantial majority of basic user access problems. 👤
 
 ---
 
-🔗 **Related Terms:**
-- Glossary#2.1 - Identity (the broader concept the user object is an instance of)
-- Glossary#2.4 - Group (how users are organized for access management at scale)
-- Glossary#6.1 - User Provisioning (how users get created automatically)
 
+### 🔧 Quick Reference: PowerShell
+
+```powershell
+# Get a user by UPN
+Get-MgUser -UserId "user@contoso.com" | Select-Object DisplayName, Id, UserPrincipalName
+
+# Find users in a specific department
+Get-MgUser -Filter "department eq 'Engineering'" -All | Select-Object DisplayName, UserPrincipalName
+```
+
+🔗 **Related Terms:**
+- [Glossary#2.1 - Identity](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-1-identity.md) (the broader concept the user object is an instance of)
+- [Glossary#2.4 - Group](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-4-group.md) (how users are organized for access management at scale)
+- [Glossary#6.1 - User Provisioning](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-1-user-provisioning.md) (how users get created automatically)
 ---
 
 **Tell me:** What's the most unexpected user attribute issue you've had to troubleshoot? The UPN domain mismatch? A missing usage location blocking licenses? Or something stranger? I've seen some creative ones over the years.

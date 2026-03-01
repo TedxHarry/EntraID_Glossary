@@ -1,9 +1,18 @@
 # Conditional Access for Workloads
 *Security Policies That Apply to Applications, Not Just People*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#10.12 - Conditional Access for Workloads**
 
 ---
+
+## 🎯 TL;DR
+
+- Conditional Access for workloads applies policies to service principals and managed identities accessing resources
+- Requires Entra ID Workload Identity Premium license for non-human identities
+- Apply location-based and risk-based policies to workload identities accessing sensitive Microsoft APIs
+
 
 A security team configured Conditional Access policies for every user sign-in scenario. MFA for all users. Device compliance for accessing sensitive data. Location-based restrictions for privileged roles. Months of policy design and testing.
 
@@ -61,6 +70,9 @@ Workload CA conditions for managed identities are an evolving area. The practica
 
 💬 **Does your organization have Conditional Access policies targeting service principals, or is your CA policy coverage limited to user identities?** The gap between user CA coverage and workload CA coverage is significant in most enterprise tenants. What would be the first service principal in your environment you'd want to put a location-based restriction on?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Conditional Access for workload identities (service principals) requires **Entra ID Workload Identity Premium**.
 
 <!-- nav -->
 

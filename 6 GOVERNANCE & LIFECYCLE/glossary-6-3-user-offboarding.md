@@ -1,9 +1,18 @@
 # User Offboarding
 *The Day Someone Leaves Is the Day Access Has to Stop*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.3 - User Offboarding**
 
 ---
+
+## 🎯 TL;DR
+
+- User offboarding removes access when an employee leaves: disable account, revoke sessions, remove licenses
+- Immediate revocation requires disabling the account + using CAE to invalidate existing tokens
+- Lifecycle Workflows can automate offboarding triggered by HR systems when termination date arrives
+
 
 A security audit found 47 active accounts belonging to employees who had left in the previous 12 months. Not suspended. Not disabled. Active, with valid passwords, valid MFA registrations, and in some cases valid access tokens still within their window.
 
@@ -77,6 +86,23 @@ The sign-in logs and audit logs from the week before departure are the right pla
 
 💬 **Has your organization discovered active accounts belonging to departed employees during a security review?** It's one of the most common audit findings in identity programs, and the gap is almost always a manual offboarding process with no enforcement. What triggered your organization to address it?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: PowerShell — Offboarding Checklist
+
+```powershell
+# 1. Disable the user account
+Update-MgUser -UserId "leaver@contoso.com" -AccountEnabled $false
+
+# 2. Revoke all active sessions (tokens)
+Revoke-MgUserSignInSession -UserId "leaver@contoso.com"
+
+# 3. Remove all group memberships
+$userId = (Get-MgUser -UserId "leaver@contoso.com").Id
+Get-MgUserMemberOf -UserId $userId | ForEach-Object {
+    Remove-MgGroupMemberByRef -GroupId $_.Id -DirectoryObjectId $userId -ErrorAction SilentlyContinue
+}
+```
 
 <!-- nav -->
 

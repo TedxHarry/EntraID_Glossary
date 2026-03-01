@@ -1,9 +1,18 @@
 # Federation
 *When Entra ID Trusts Another Identity Provider for Authentication*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#8.6 - Federation**
 
 ---
+
+## 🎯 TL;DR
+
+- Federation (using AD FS or third-party IdP) delegates all authentication to the on-premises identity provider
+- Entra ID redirects sign-in to the federated IdP, which issues a SAML/WS-Fed assertion
+- Federation is the most complex option and creates a critical dependency on on-prem infrastructure
+
 
 A university had authentication working exactly how they wanted for 15 years. On-premises Active Directory Federation Services (ADFS). Their own token signing certificates. Strict control over authentication policies, session lifetimes, and claim transformations. Thousands of configurations built around their specific requirements.
 

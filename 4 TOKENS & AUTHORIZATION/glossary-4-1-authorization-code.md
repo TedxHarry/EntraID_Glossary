@@ -1,9 +1,18 @@
 # Authorization Code
 *Why Sign-In Takes Two Steps Instead of One*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.1 - Authorization Code**
 
 ---
+
+## 🎯 TL;DR
+
+- The authorization code is a short-lived, single-use token returned after user authentication before the actual token
+- It keeps actual tokens out of browser URLs (which appear in logs) by requiring a server-to-server exchange
+- PKCE extends this for public clients (mobile/SPA) that can't store a client secret securely
+
 
 A developer I mentored once asked me a genuinely good question: "Why does the OAuth flow need this intermediate code? If the user just authenticated, why not give the app the token directly? Why the extra step?"
 

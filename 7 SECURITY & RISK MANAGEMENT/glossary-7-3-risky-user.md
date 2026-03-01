@@ -1,9 +1,18 @@
 # Risky User
 *When the Account Itself Is Flagged, Not Just One Sign-In*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.3 - Risky User**
 
 ---
+
+## 🎯 TL;DR
+
+- A risky user is an account Identity Protection has flagged as potentially compromised
+- User risk persists across sessions until remediated — unlike sign-in risk which is per sign-in
+- Remediation: force password reset (risk dismissed), admin investigation and confirmation/dismissal
+
 
 The IT team got the alert on a Tuesday morning. An account in their tenant had been flagged as high user risk. The reason: Microsoft's threat intelligence had found the account's credentials in a fresh breach database published on a criminal forum the night before.
 
@@ -81,6 +90,24 @@ Some user risk detections are offline: they're generated after analysis that tak
 
 💬 **Have you had an account flagged for leaked credentials that were actually from an external breach, not your environment?** The credential reuse scenario is one of the most common user risk detections. How did you handle the conversation with the user about why their work account was at risk because of a gaming site they'd forgotten about?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Risky user detection and remediation policies require **Entra ID P2**.
+
+
+### 🔧 Quick Reference: PowerShell — Investigate Risky Users
+
+```powershell
+# List all risky users
+Get-MgRiskyUser -Filter "riskLevel eq 'high'" -All |
+    Select-Object UserPrincipalName, RiskLevel, RiskState, RiskLastUpdatedDateTime
+
+# Confirm a user as compromised (triggers risk remediation)
+Invoke-MgConfirmRiskyUserCompromised -UserIds @("<user-object-id>")
+
+# Dismiss user risk (mark as safe)
+Invoke-MgDismissRiskyUser -UserIds @("<user-object-id>")
+```
 
 <!-- nav -->
 

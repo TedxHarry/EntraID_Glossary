@@ -1,9 +1,18 @@
 # Scope (Deep Dive)
 *Defining and Validating What Applications Are Allowed to Do With Your API*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#11.12 - Scope (Deep Dive)**
 
 ---
+
+## 🎯 TL;DR
+
+- Scopes in tokens appear as a space-separated string in the `scp` claim (delegated) or `roles` claim (application)
+- Resource servers check `scp` to enforce API-level authorization (what can this token do?)
+- Minimal scope principle: only issue tokens with scopes the app actually needs
+
 
 An API was built with a single scope: `api://my-api/access`. Every application that needed to call the API got this scope. Three months later, the security team asked: "Can you show us which applications can only read data versus which ones can modify it?"
 

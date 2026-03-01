@@ -1,9 +1,18 @@
 # Bearer Token
 *The Name That Tells You Everything About the Risk*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.8 - Bearer Token**
 
 ---
+
+## 🎯 TL;DR
+
+- A bearer token is any token that grants access to whoever holds it — no additional proof of identity needed
+- This is why token security matters: steal the bearer token, get the access
+- Bearer tokens are sent as `Authorization: Bearer <token>` HTTP header in API requests
+
 
 In the early days of rail travel, you could buy a journey ticket that was tied to your name. Lose it, and whoever found it couldn't use it because the conductor would check your ID. Then there were platform tickets, cloakroom tokens, and bus passes: you paid once, and whoever holds the token rides the bus. No questions asked.
 

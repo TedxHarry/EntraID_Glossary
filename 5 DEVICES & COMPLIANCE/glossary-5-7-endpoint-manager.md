@@ -1,9 +1,18 @@
 # Endpoint Manager
 *One Console, All Your Devices*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#5.7 - Endpoint Manager**
 
 ---
+
+## 🎯 TL;DR
+
+- Microsoft Endpoint Manager (now Microsoft Intune) is the unified management console for devices and apps
+- It merged Intune (cloud) and Configuration Manager (on-prem SCCM) into one co-management platform
+- Co-management lets existing SCCM-managed devices be gradually migrated to cloud-first Intune management
+
 
 The naming history of Microsoft's device management products is genuinely confusing, and I've watched it trip people up in job interviews, vendor conversations, and Microsoft documentation for years.
 

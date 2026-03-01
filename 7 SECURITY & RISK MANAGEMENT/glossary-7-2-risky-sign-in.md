@@ -1,9 +1,18 @@
 # Risky Sign-In
 *When the Authentication Looks Suspicious*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.2 - Risky Sign-In**
 
 ---
+
+## 🎯 TL;DR
+
+- A risky sign-in is one flagged by Identity Protection as potentially not from the legitimate user
+- Sign-in risk levels: none, low, medium, high — each can trigger different CA policy responses
+- Remediating risky sign-ins: require MFA (self-remediation), or admin investigation + session revocation
+
 
 A senior manager's credentials had been phished three weeks earlier. She'd clicked a link in a convincing email, entered her password on a fake login page, and didn't realize it had happened. The attacker hadn't acted immediately.
 
@@ -79,6 +88,9 @@ If confirmed as legitimate: dismiss the risk event as safe (teaches the system t
 
 💬 **Have you investigated a risky sign-in event and found it was a genuine attack rather than a false positive?** The investigation workflow differs significantly depending on the answer. What signals in the sign-in details made the call clear?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Risky sign-in policies and Identity Protection reports require **Entra ID P2**.
 
 <!-- nav -->
 

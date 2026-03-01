@@ -1,9 +1,18 @@
 # Authorization Server
 *What Entra ID Is Actually Doing Behind the Scenes*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.4 - Authorization Server**
 
 ---
+
+## 🎯 TL;DR
+
+- The authorization server is the system that issues tokens after authenticating users and validating app registrations
+- In Microsoft's ecosystem, this is Entra ID at `login.microsoftonline.com/{tenant}`
+- It validates redirect URIs, enforces Conditional Access policies, and signs tokens with its private keys
+
 
 Most people interact with Entra ID through three things: the admin portal, the sign-in page, and whatever PowerShell commands they've memorized. That's fine for day-to-day administration. But it creates a mental model of Entra ID as a user management system with some policy features bolted on.
 

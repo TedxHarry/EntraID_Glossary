@@ -1,9 +1,18 @@
 # B2C
 *Identity Management for Your Customers, Not Your Employees*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#9.10 - B2C**
 
 ---
+
+## 🎯 TL;DR
+
+- Azure AD B2C is Microsoft's customer identity platform for building consumer-facing apps with social/local login
+- B2C is a separate tenant type — it's not the same as your organization's Entra ID tenant
+- B2C supports custom user flows and branded sign-in experiences with social providers (Google, Facebook)
+
 
 A retail bank built a mobile banking application. Their customers needed accounts. Not corporate Entra ID accounts with managed devices and Conditional Access policies. Not B2B guest accounts from partner organizations. Customer accounts: millions of them, self-registered, using personal email addresses and social logins, with a completely different experience than anything in their corporate identity infrastructure.
 

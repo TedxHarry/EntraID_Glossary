@@ -1,9 +1,18 @@
 # CA Template
 *Microsoft's Starting Points for Conditional Access*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.31 - CA Template**
 
 ---
+
+## 🎯 TL;DR
+
+- CA templates are pre-built, Microsoft-recommended CA policy configurations for common security scenarios
+- Examples: Require MFA for admins, Require phishing-resistant MFA for Azure management, Block legacy auth
+- Templates are a starting point — review and customize to match your organization's specific requirements
+
 
 An organization wanted to implement Conditional Access but didn't know where to start. Their tenant was empty of policies. Every time they sat down to design policies, the conversation turned into a two-hour debate about scope, exclusions, and whether to require compliant device for the warehouse team.
 

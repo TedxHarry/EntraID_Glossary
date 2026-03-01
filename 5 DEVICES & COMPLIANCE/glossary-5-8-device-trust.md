@@ -1,9 +1,18 @@
 # Device Trust
 *Not All Devices Are Equally Trustworthy (And Entra ID Knows It)*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#5.8 - Device Trust**
 
 ---
+
+## 🎯 TL;DR
+
+- Device trust is the level of confidence Entra ID places in a device based on how it was joined and managed
+- Highest trust: Entra-joined + Intune-managed + compliant. Lowest: unregistered personal device
+- Conditional Access evaluates device trust to make access decisions — not all trust levels grant the same access
+
 
 A consultant connected to a client's SharePoint from her personal laptop using her guest account. Same Conditional Access policy applied. Same user risk level. Completely different access experience from a corporate employee on a managed device.
 

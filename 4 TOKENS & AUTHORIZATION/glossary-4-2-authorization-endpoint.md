@@ -1,9 +1,18 @@
 # Authorization Endpoint
 *Reading What That Long URL Is Actually Saying*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.2 - Authorization Endpoint**
 
 ---
+
+## 🎯 TL;DR
+
+- The authorization endpoint (`/authorize`) is where users authenticate and grant consent to apps
+- After successful auth, it redirects to the app's redirect URI with an authorization code (or token in implicit flow)
+- Key parameters: `client_id`, `response_type`, `redirect_uri`, `scope`, `state`, `code_challenge`
+
 
 The first time I looked at a raw OAuth authorization request URL, it was in a browser's developer tools while debugging why a sign-in wasn't working. The URL was about 400 characters long, full of encoded characters and parameter names I half-recognised. I copy-pasted it into a text editor, broke it into parameters, and read it properly.
 

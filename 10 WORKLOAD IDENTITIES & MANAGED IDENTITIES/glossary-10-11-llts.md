@@ -1,9 +1,18 @@
 # LLTs (Long Lived Tokens)
 *Why 24-Hour Workload Tokens Are Safer Than You'd Think*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#10.11 - LLTs (Long Lived Tokens)**
 
 ---
+
+## 🎯 TL;DR
+
+- Long-Lived Token Secrets (LLTS) are client secrets with extended lifetimes — a security risk
+- Default secret lifetime is 2 years; reduce to 6-12 months max, or use certificates instead
+- Entra ID Workload Identity Premium provides real-time risk detection for workload credential compromise
+
 
 The instinct when thinking about token security is: shorter is safer. A one-hour token that's compromised has a one-hour blast radius. A 24-hour token that's compromised has a 24-hour blast radius. Shorter lifetimes mean shorter windows of exposure.
 

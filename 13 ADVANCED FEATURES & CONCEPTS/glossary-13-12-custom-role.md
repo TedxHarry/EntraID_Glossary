@@ -1,9 +1,18 @@
 # Custom Role
 *Administrative Permissions That Fit What Your Team Actually Needs*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.12 - Custom Role**
 
 ---
+
+## 🎯 TL;DR
+
+- Custom roles allow creating Entra ID admin roles with exactly the permissions needed — no more, no less
+- Custom roles reduce blast radius compared to built-in roles — an admin can only do what the custom role allows
+- Custom role creation requires Entra ID P1; management through PIM requires P2
+
 
 A helpdesk team needed to reset passwords for users. The built-in Helpdesk Administrator role did that, but it also let helpdesk staff reset passwords for other administrators, which the CISO was uncomfortable with.
 
@@ -77,6 +86,9 @@ This makes PIM-governed custom roles the right pattern for even helpdesk capabil
 
 💬 **Does your organization use custom Entra ID roles to implement least-privilege administrative access, or are built-in roles covering most scenarios?** The gap between "we use Helpdesk Administrator because it's close enough" and "we have a custom role that includes exactly the permissions our helpdesk needs" matters for security posture. What's the administrative permission gap that most warrants a custom role in your environment?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Creating custom Entra ID roles requires **Entra ID P1**. Managing custom roles with PIM (JIT activation) requires **Entra ID P2**.
 
 <!-- nav -->
 

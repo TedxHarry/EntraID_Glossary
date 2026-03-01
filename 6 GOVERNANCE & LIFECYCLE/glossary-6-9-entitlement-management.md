@@ -1,9 +1,18 @@
 # Entitlement Management
 *Self-Service Access Without the Security Compromise*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.9 - Entitlement Management**
 
 ---
+
+## 🎯 TL;DR
+
+- Entitlement Management bundles resources into Access Packages with policies for who can request and for how long
+- Access packages support multi-stage approval, automatic expiry, and access reviews on a schedule
+- Requires Entra ID P2 — designed to replace manual IT-driven access request processes
+
 
 A project manager needed access to three things for a new initiative: a SharePoint site, a Teams channel, and a Jira project. She opened three separate tickets. IT processed them over three separate days. She could start the project on day four.
 
@@ -76,6 +85,9 @@ Package the common requests. Leave the edge cases as IT tickets for now. The red
 
 💬 **What's the most common access request your IT team processes manually that could be packaged into an entitlement management access package?** The first package you create doesn't have to be complex. Even packaging one common three-group request eliminates a significant volume of tickets over a year. What would yours be?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Entitlement Management requires **Entra ID P2** or **Entra ID Governance**. Access packages, approval workflows, and auto-expiry are all P2 features.
 
 <!-- nav -->
 

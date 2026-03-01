@@ -1,9 +1,18 @@
 # User Risk Level
 *Understanding the Number Behind the Flag*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.29 - User Risk Level**
 
 ---
+
+## 🎯 TL;DR
+
+- User risk level is an aggregated score (none/low/medium/high) reflecting how likely an account is compromised
+- Unlike sign-in risk (per-session), user risk persists and accumulates across multiple risk events
+- High user risk should trigger: force password reset or block access until IT investigates
+
 
 An admin opened the Identity Protection dashboard and saw 14 users at High risk level, 47 at Medium, and 312 at Low. She had an hour before a meeting. She needed to know: which ones actually required immediate action?
 

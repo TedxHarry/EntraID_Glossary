@@ -1,9 +1,18 @@
 # Location
 *Using Where You Sign In to Shape What You Can Access*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.19 - Location**
 
 ---
+
+## 🎯 TL;DR
+
+- Named Locations define trusted IP ranges or countries in Conditional Access for location-based policies
+- Use to exclude the office network from MFA requirements, or block access from high-risk countries
+- Named locations don't replace device compliance — sophisticated attackers can route through trusted IPs
+
 
 A company's security team noticed an unusual pattern in their sign-in logs. Authentication attempts from IP addresses in countries where they had no employees, no offices, no partners, no operations. Hundreds of attempts per day. Most failing on password. A few succeeding.
 

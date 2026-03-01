@@ -1,9 +1,18 @@
 # Device Compliance
 *When the Device Has to Earn Its Access*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#5.1 - Device Compliance**
 
 ---
+
+## 🎯 TL;DR
+
+- Device compliance means a device meets your organization's security requirements configured in Intune
+- Non-compliant devices can be blocked by Conditional Access policies even for authenticated users
+- Compliance requirements: encryption enabled, OS patch level, firewall on, approved apps only
+
 
 A remote worker called on a Monday morning, unable to access SharePoint. She'd been using it from the same laptop for two years. Nothing had changed on her end.
 
@@ -81,6 +90,18 @@ Conditional Access has separate conditions for "managed device" (Intune-enrolled
 
 💬 **Have you had a situation where a Conditional Access compliance requirement blocked a user who was surprised it was possible?** The moment someone realizes their device's security state directly affects their application access is usually when the conversation about patch management gets a lot more productive. What changed after that?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: PowerShell
+
+```powershell
+# List all non-compliant devices
+Get-MgDeviceManagementManagedDevice -Filter "complianceState eq 'noncompliant'" -All |
+    Select-Object DeviceName, UserPrincipalName, ComplianceState, LastSyncDateTime
+
+# Get compliance policies
+Get-MgDeviceManagementDeviceCompliancePolicy | Select-Object DisplayName, Id
+```
 
 <!-- nav -->
 

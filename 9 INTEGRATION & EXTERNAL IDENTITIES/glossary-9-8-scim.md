@@ -1,9 +1,18 @@
 # SCIM
 *The Standard That Automates User Provisioning Across Applications*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#9.8 - SCIM**
 
 ---
+
+## 🎯 TL;DR
+
+- SCIM is the standard protocol for automated user provisioning to SaaS apps — create, update, deactivate accounts
+- Entra ID supports SCIM 2.0 for both inbound (HR to Entra) and outbound (Entra to app) provisioning
+- SCIM eliminates manual account creation in every app — a new hire is provisioned automatically everywhere
+
 
 An HR manager described their offboarding process. When an employee left, IT received an email. IT would then manually disable accounts in Active Directory, Salesforce, ServiceNow, GitHub, Jira, Confluence, Slack, and seven other applications. Each application had a different admin interface. Each one took 3-5 minutes. The whole process took 45 minutes per offboarding.
 

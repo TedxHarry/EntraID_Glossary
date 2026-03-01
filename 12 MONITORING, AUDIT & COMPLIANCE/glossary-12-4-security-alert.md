@@ -1,9 +1,18 @@
 # Security Alert
 *When Entra ID Tells You Something Is Wrong*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#12.4 - Security Alert**
 
 ---
+
+## 🎯 TL;DR
+
+- Security alerts from Identity Protection notify when high-risk users or risky sign-ins are detected
+- Alerts can be configured to notify via email and integrate with SIEM systems via Diagnostic Settings
+- Respond to alerts promptly — high user risk alerts often indicate active credential compromise
+
 
 A Monday morning. Identity team arrives. Overnight, Entra ID generated 14 security alerts. Eleven were "unfamiliar sign-in properties" for users who signed in from their home offices over the weekend, which the system hadn't seen before. Two were "atypical travel" for a VP who had flown cross-country Friday afternoon. One was "leaked credentials" for a service account whose password appeared in a data breach database.
 

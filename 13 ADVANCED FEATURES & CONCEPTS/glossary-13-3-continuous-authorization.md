@@ -1,9 +1,18 @@
 # Continuous Authorization (CAE)
 *Shifting From "You Were Trusted" to "You Are Trusted Right Now"*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.3 - Continuous Authorization (CAE)**
 
 ---
+
+## 🎯 TL;DR
+
+- Continuous Authorization evaluates access decisions continuously throughout a session, not just at sign-in
+- CAE is the Microsoft implementation — resource servers receive real-time revocation events from Entra ID
+- Without continuous authorization, a signed-in session persists even after account disable or policy change
+
 
 The traditional authorization model works like a photograph. The authentication happens at sign-in. Access is evaluated at that moment. A token is issued capturing that evaluation. For the next hour, the application trusts that photograph even though the world has moved on.
 

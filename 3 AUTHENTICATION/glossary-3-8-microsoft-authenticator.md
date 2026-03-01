@@ -1,9 +1,18 @@
 # Microsoft Authenticator
 *More Than a Code Generator*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#3.8 - Microsoft Authenticator**
 
 ---
+
+## 🎯 TL;DR
+
+- Microsoft Authenticator supports passwordless sign-in, TOTP codes, and push notification MFA
+- Number matching in push notifications defeats MFA fatigue attacks where attackers spam approve prompts
+- Authenticator also functions as an OATH TOTP authenticator and supports app lock for additional security
+
 
 When I ask IT admins how their users authenticate, the answer is usually some version of: "They use the Authenticator app, you know, for the six-digit codes."
 

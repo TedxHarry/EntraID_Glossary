@@ -1,9 +1,18 @@
 # SAML
 *The Protocol That Refuses to Die (and Sometimes Shouldn't)*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.18 - SAML**
 
 ---
+
+## 🎯 TL;DR
+
+- SAML 2.0 is an XML-based federation protocol used for enterprise SSO, especially with older apps
+- It uses signed XML assertions instead of JWTs, and flows through the browser via POST bindings
+- SAML is not going away — thousands of enterprise apps use it; Entra ID supports it alongside OIDC/OAuth
+
 
 I was brought in to help a company migrate their enterprise applications to Entra ID. Most of the modern SaaS apps integrated within a day or two using OIDC. Then we got to a 15-year-old on-premises HR system, still in active daily use by 400 employees. The vendor maintained it. SAML only. No OIDC support, no modern auth, no roadmap to add either.
 

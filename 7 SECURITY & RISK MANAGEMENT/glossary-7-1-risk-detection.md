@@ -1,9 +1,18 @@
 # Risk Detection
 *How Entra ID Knows Something Looks Wrong*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.1 - Risk Detection**
 
 ---
+
+## 🎯 TL;DR
+
+- Risk detections are machine-learning signals that indicate a sign-in or user account may be compromised
+- Examples: sign-in from anonymous IP, impossible travel, leaked credentials, malware-linked IP
+- Risk detections feed into sign-in risk score and user risk score used by Conditional Access policies
+
 
 A user signed in from Chicago at 9am. Two hours later, a sign-in attempt came from Singapore. No flight covers that distance in two hours. Nobody is in both places simultaneously.
 
@@ -74,6 +83,9 @@ For confirmed attacks, remediation actions include: confirm sign-in as compromis
 
 💬 **Has Entra ID ID Protection detected a genuine attack on an account in your organization?** The impossible travel detection is often the first one that makes people realize the scale of credential attacks happening in the background. What was the first risk detection that caught something real?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Risk detections in the portal require **Entra ID P2**. Basic risk reporting is available in P2 only — P1 has no access to Identity Protection risk data.
 
 <!-- nav -->
 

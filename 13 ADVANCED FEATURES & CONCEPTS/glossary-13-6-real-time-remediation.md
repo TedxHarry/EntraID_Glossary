@@ -1,9 +1,18 @@
 # Real-Time Remediation
 *Automated Immediate Response to Identity Risks*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.6 - Real-Time Remediation**
 
 ---
+
+## 🎯 TL;DR
+
+- Real-time remediation responds to risk events during an active sign-in: block, require MFA, require password reset
+- Identity Protection + Conditional Access risk policies implement real-time remediation
+- Self-remediation (user completes MFA → risk dismissed) reduces IT workload vs. manual investigation
+
 
 A SOC analyst used to start each morning with a queue of overnight identity alerts. Leaked credentials, impossible travel, unfamiliar sign-in properties. They'd triage each one, investigate the sign-in logs, contact the user if needed, force a password reset if confirmed, and close the ticket. By the time they finished, the incident from 2 AM had been sitting unaddressed for six or more hours.
 

@@ -1,9 +1,18 @@
 # Session Control
 *Governing What Happens After Access Is Granted*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.23 - Session Control**
 
 ---
+
+## 🎯 TL;DR
+
+- Session controls govern what happens during an already-granted session: download restrictions, sign-in frequency, CAE
+- Sign-in frequency forces re-authentication after a set interval (e.g., 4 hours for sensitive apps)
+- App-enforced restrictions work with SharePoint/Exchange to restrict download based on device compliance
+
 
 A healthcare organization needed to allow access to patient records from personal devices. Their nurses worked across multiple facilities and sometimes needed to access records on their own phones during shifts.
 

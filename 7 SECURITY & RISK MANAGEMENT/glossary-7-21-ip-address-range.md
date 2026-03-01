@@ -1,9 +1,18 @@
 # IP Address Range
 *The Building Block of Location-Based Access Control*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.21 - IP Address Range**
 
 ---
+
+## 🎯 TL;DR
+
+- IP address ranges in Named Locations use CIDR notation (e.g., 192.168.1.0/24) to define network ranges
+- Single IPs are /32; IPv6 ranges are also supported
+- Keep Named Locations updated — stale IP ranges can create security gaps or block legitimate users
+
 
 An organization asked me to help them understand why some users were still being prompted for MFA despite a policy that should have excluded their office. We opened the Named Location definition and found it: the IP range was entered as `10.0.0.0/8`. The office used `192.168.1.0/24`. The admin who set it up had used a private address range from memory instead of checking what the actual office IP was.
 

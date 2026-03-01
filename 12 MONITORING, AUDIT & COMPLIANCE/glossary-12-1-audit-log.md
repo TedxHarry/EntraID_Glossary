@@ -1,9 +1,18 @@
 # Audit Log
 *The Record of Every Identity Operation in Your Tenant*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#12.1 - Audit Log**
 
 ---
+
+## 🎯 TL;DR
+
+- Audit logs record all administrative changes in Entra ID: user creation, role assignment, policy change
+- Retained for 7 days (free), 30 days (P1), or longer with Log Analytics/Sentinel integration
+- Every compliance investigation starts with the audit log — who made what change, when, from where
+
 
 A Security Operations team got a ticket: a user's account had been granted Global Administrator two weeks ago, and nobody could explain who authorized it. The change had been made. The role was assigned. But there was no change management ticket, no approval record, no memory of the decision.
 
@@ -90,6 +99,20 @@ Audit logs cover the identity plane (identity administration operations). They d
 
 💬 **How far back can your organization query Entra ID audit logs today, and is that sufficient for your compliance requirements?** The gap between "we have 30 days of built-in audit logs" and "our compliance requirement is 12 months" is common and fixable with diagnostic settings export. Has your organization set up long-term audit log retention, and what drove the decision to do it (or not)?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: Graph API — Audit Logs
+
+```powershell
+# Get recent audit log entries (last 24 hours)
+$since = (Get-Date).AddDays(-1).ToString("o")
+Get-MgAuditLogDirectoryAudit -Filter "activityDateTime ge $since" -Top 50 |
+    Select-Object ActivityDisplayName, ActivityDateTime, Result, InitiatedBy
+
+# Filter audit logs to find role assignment changes
+Get-MgAuditLogDirectoryAudit -Filter "category eq 'RoleManagement'" -Top 100 |
+    Select-Object ActivityDisplayName, ActivityDateTime, InitiatedBy
+```
 
 <!-- nav -->
 

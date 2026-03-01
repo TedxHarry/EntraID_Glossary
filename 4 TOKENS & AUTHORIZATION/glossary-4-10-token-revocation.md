@@ -1,9 +1,18 @@
 # Token Revocation
 *Why "I Disabled Their Account" Isn't Always Enough*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.10 - Token Revocation**
 
 ---
+
+## 🎯 TL;DR
+
+- Token revocation invalidates tokens before they expire — triggered by password change, sign-out, or admin action
+- Access tokens can't be individually revoked in real-time without CAE — they're valid until expiry
+- Refresh token revocation is immediate; combined with short access token lifetimes, this limits exposure
+
 
 An IT manager called me forty minutes after she'd disabled an employee's account. The employee had been let go that morning under difficult circumstances, and the manager wanted to confirm their access was completely cut off. She'd disabled the account in Entra ID and revoked all sign-in sessions.
 

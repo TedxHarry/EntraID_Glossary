@@ -1,9 +1,18 @@
 # Identity
 *The Word Everyone Uses and Almost Nobody Defines*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.1 - Identity**
 
 ---
+
+## 🎯 TL;DR
+
+- An identity is any object that can be authenticated — user, service principal, managed identity, or device
+- Every identity gets a unique Object ID (OID) that persists even if the UPN or display name changes
+- Entra ID evaluates policies against identities, not just usernames, which enables fine-grained access control
+
 
 I counted once. In a 45-minute meeting about a security architecture review, the word "identity" came up 31 times. The project manager used it to mean "user accounts." The security architect used it to mean "authentication credentials." The developer used it to mean "the token." And I was using it to mean something slightly different from all three of them.
 
@@ -66,10 +75,9 @@ Get comfortable with identity as a concept, all three types, their distinct secu
 ---
 
 🔗 **Related Terms:**
-- Glossary#2.2 - User (the most common human identity object)
-- Glossary#2.3 - Service Principal (the workload identity object)
-- Glossary#10.2 - Managed Identity (the preferred type of workload identity in Azure)
-
+- [Glossary#2.2 - User (Identity Object)](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-2-user-identity-object.md) (the most common human identity object)
+- [Glossary#2.3 - Service Principal](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-3-service-principal.md) (the workload identity object)
+- [Glossary#10.2 - Managed Identity](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-2-managed-identity.md) (the preferred type of workload identity in Azure)
 ---
 
 **Think about your own environment:** How many different types of identities are you managing right now? Most people underestimate the workload identity count, the apps and services quietly authenticating in the background. Do you know how many service principals are active in your tenant?

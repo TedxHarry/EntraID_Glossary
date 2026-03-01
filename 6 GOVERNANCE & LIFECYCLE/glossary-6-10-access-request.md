@@ -1,9 +1,18 @@
 # Access Request
 *The User's Side of the Access Conversation*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.10 - Access Request**
 
 ---
+
+## 🎯 TL;DR
+
+- Access requests are user-initiated workflows to request new access through Entitlement Management access packages
+- Requests go through configured approval stages before access is granted
+- Users access the My Access portal (myaccess.microsoft.com) to browse and request available access packages
+
 
 A developer needed read access to the production logs for a service she'd been assigned to debug. She knew the resource existed. She didn't know who owned it, which team managed the Entra ID group controlling access, or how to submit the right request to the right person.
 

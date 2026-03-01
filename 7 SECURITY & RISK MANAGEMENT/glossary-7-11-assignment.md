@@ -1,9 +1,18 @@
 # Assignment
 *Who and What Your Conditional Access Policy Actually Covers*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.11 - Assignment**
 
 ---
+
+## 🎯 TL;DR
+
+- Assignments define the scope of a Conditional Access policy: which users, groups, roles, and apps it applies to
+- Excluding emergency access accounts from ALL policies is critical — never lock out break-glass accounts
+- Use groups for assignments rather than listing individual users — easier to manage and audit
+
 
 A team deployed a Conditional Access policy requiring MFA. They targeted "All users." They tested it, confirmed MFA was required, and marked the task complete.
 

@@ -1,9 +1,18 @@
 # Multi-Factor Authentication (MFA)
 *Why 99.9% Attack Prevention Still Has an Asterisk*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#3.4 - Multi-Factor Authentication (MFA)**
 
 ---
+
+## 🎯 TL;DR
+
+- MFA requires two or more verification factors: something you know, have, or are
+- Entra ID MFA is configured per-user, via Conditional Access, or via Security Defaults
+- Conditional Access MFA is the recommended approach — it applies contextually rather than always
+
 
 Microsoft published a statistic that gets quoted constantly in security circles: enabling MFA blocks 99.9% of automated account compromise attacks. That number is real and remarkable.
 
@@ -81,6 +90,22 @@ Administrators without MFA are the highest-value targets for attackers. Get that
 
 💬 **Where is your organization on MFA coverage?** Are you at 100% for all users, or are there holdouts? What's been the biggest obstacle to full deployment?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** MFA via Security Defaults is free. MFA via Conditional Access requires **Entra ID P1**. Per-user MFA requires no additional license but is deprecated.
+
+
+### 🔧 Quick Reference: PowerShell
+
+```powershell
+# Check MFA registration status per user
+Get-MgReportAuthenticationMethodUserRegistrationDetail -All |
+    Select-Object UserPrincipalName, IsMfaRegistered, IsMfaCapable |
+    Where-Object { -not $_.IsMfaRegistered }
+
+# Get the Authentication Methods Policy
+Get-MgPolicyAuthenticationMethodPolicy | Select-Object -ExpandProperty AuthenticationMethodConfigurations
+```
 
 <!-- nav -->
 

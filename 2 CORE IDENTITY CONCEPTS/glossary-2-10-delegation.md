@@ -1,9 +1,18 @@
 # Delegation
 *Giving People Just Enough Access, No More*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.10 - Delegation**
 
 ---
+
+## 🎯 TL;DR
+
+- Delegation lets one identity act on behalf of another — like an app calling Microsoft Graph as the signed-in user
+- Delegated permissions require a signed-in user; application permissions let apps act without user context
+- The `on_behalf_of` flow enables service-to-service calls that preserve the original user's identity
+
 
 The helpdesk team had one job that required admin access: resetting user passwords. That's it. Basic, common, essential. But the IT manager before me had solved this the easy way, just give them User Administrator. Problem solved.
 
@@ -54,10 +63,9 @@ Delegation is what reduces those blast radii. It takes organizational work, iden
 ---
 
 🔗 **Related Terms:**
-- Glossary#2.6 - Directory Role (the roles used in administrative delegation)
-- Glossary#2.8 - Permission (the specific rights delegated in OAuth2 flows)
-- Glossary#6.10 - Access Request (how users can request delegated access through Entitlement Management)
-
+- [Glossary#2.6 - Directory Role](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-6-directory-role.md) (the roles used in administrative delegation)
+- [Glossary#2.8 - Permission](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-8-permission.md) (the specific rights delegated in OAuth2 flows)
+- [Glossary#6.10 - Access Request](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-10-access-request.md) (how users can request delegated access through Entitlement Management)
 ---
 
 **Real question:** Does your helpdesk team have more directory role permissions than they actually use? If you're not sure, that's worth checking. Run a role assignment report for User Administrator and see who's in it, the answer might surprise you.

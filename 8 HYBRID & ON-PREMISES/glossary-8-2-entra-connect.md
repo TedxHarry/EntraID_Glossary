@@ -1,9 +1,18 @@
 # Entra Connect
 *The Engine Behind Hybrid Identity*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#8.2 - Entra Connect**
 
 ---
+
+## 🎯 TL;DR
+
+- Entra Connect Sync is the traditional server-based sync engine installed on-premises to sync AD to Entra ID
+- It supports complex scenarios: multiple forests, custom attribute mappings, device writeback
+- Microsoft is pushing toward Entra Cloud Sync for new deployments — Connect Sync will eventually be retired
+
 
 A migration project I worked on had a deceptively simple requirement: synchronize 8,000 users from on-premises Active Directory to Entra ID, preserving all existing Microsoft 365 licenses, mailbox configurations, and group memberships.
 

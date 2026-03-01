@@ -1,9 +1,18 @@
 # Authorization Grant
 *Four Ways to Get a Token (and When to Use Each)*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.13 - Authorization Grant**
 
 ---
+
+## 🎯 TL;DR
+
+- An authorization grant is a credential representing the resource owner's consent for the app to access resources
+- Grant types: authorization code (interactive), client credentials (app-only), device code, implicit (legacy)
+- Each grant type is designed for a specific app/scenario combination
+
 
 A developer asked me which OAuth flow they should use for their new application. Before I could answer, I needed to ask three questions back at them: Does the application have a user signing in? Is it server-side or running in a browser? Does it need to act as itself, or on behalf of the user?
 

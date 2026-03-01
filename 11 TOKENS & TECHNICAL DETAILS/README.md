@@ -2,6 +2,8 @@
 
 > Deep dives into the token internals introduced in Section 4: authorization code flow, endpoints, claims, and token security mechanics.
 
+> 📖 **Section 11 vs Section 4:** This section is for readers who have already covered **[Section 4 — Tokens & Authorization](/4%20TOKENS%20%26%20AUTHORIZATION/README.md)**. Section 4 explains the *what and why*; Section 11 explains the *exact how* — request parameters, token claim structures, flow mechanics, and security implications at the protocol level.
+
 ---
 
 ## Articles in this section

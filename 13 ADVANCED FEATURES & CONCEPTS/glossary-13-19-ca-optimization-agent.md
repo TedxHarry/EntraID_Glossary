@@ -1,9 +1,18 @@
 # CA Optimization Agent
 *Automated Recommendations for Conditional Access Policy Gaps*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.19 - CA Optimization Agent**
 
 ---
+
+## 🎯 TL;DR
+
+- CA Optimization Agent analyzes your CA policies and recommends improvements: gaps, overlaps, redundancies
+- Available in the Entra portal — run it to find policies that could be simplified or consolidated
+- Don't apply all recommendations blindly — validate each change in Report-Only mode first
+
 
 A security team finished an 18-month project to deploy Conditional Access across the organization. Forty-three policies. Multiple rounds of testing in report-only mode. They felt good about where they'd landed.
 

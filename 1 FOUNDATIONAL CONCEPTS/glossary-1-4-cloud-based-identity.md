@@ -1,9 +1,18 @@
 # Cloud-Based Identity
 *What It Actually Means When the Servers Aren't Yours*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#1.4 - Cloud-Based Identity**
 
 ---
+
+## 🎯 TL;DR
+
+- Cloud-based identity means your identity store lives in Microsoft's globally distributed datacenters, not your servers
+- Unlike on-premises AD, cloud identity scales instantly, requires no infrastructure, and integrates natively with SaaS apps
+- The tradeoff: you need internet connectivity; the benefit: built-in HA, compliance, and 99.99% SLA
+
 
 I remember the exact moment "cloud-based" stopped being a buzzword for me and became something concrete. I was standing in a server room at 11 PM, watching a blinking drive activity light on the domain controller, waiting to see if a failed hardware component was going to corrupt the Active Directory database. It didn't. We got lucky.
 
@@ -67,10 +76,9 @@ Cloud-based identity isn't universally easier. It's a different kind of work, wi
 ---
 
 🔗 **Related Terms:**
-- Glossary#1.5 - Active Directory (the on-premises predecessor, still relevant in hybrid setups)
-- Glossary#1.6 - Hybrid Identity (when on-premises and cloud coexist)
-- Glossary#1.3 - Tenant (your organization's dedicated space in Entra ID's cloud infrastructure)
-
+- [Glossary#1.5 - Active Directory](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-5-active-directory.md) (the on-premises predecessor, still relevant in hybrid setups)
+- [Glossary#1.6 - Hybrid Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md) (when on-premises and cloud coexist)
+- [Glossary#1.3 - Tenant](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-3-tenant.md) (your organization's dedicated space in Entra ID's cloud infrastructure)
 ---
 
 **Tell me about your journey:** Is your organization cloud-only with Entra ID, still on-premises with AD, or somewhere in between? What's been the biggest adjustment in moving identity to the cloud, technical or cultural?

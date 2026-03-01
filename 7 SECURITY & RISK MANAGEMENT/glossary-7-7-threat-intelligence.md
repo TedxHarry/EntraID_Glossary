@@ -1,9 +1,18 @@
 # Threat Intelligence
 *Why Entra ID Knows an IP Is Bad Before You Do*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.7 - Threat Intelligence**
 
 ---
+
+## 🎯 TL;DR
+
+- Microsoft Threat Intelligence feeds real-time signals into Identity Protection: known malicious IPs, TOR nodes, botnets
+- These signals generate risk detections even before any action is taken in your tenant
+- Threat intelligence is one of the strongest sources of risk signal — block access from known-bad IPs via CA
+
 
 An IP address showed up in a sign-in log. The security team had never seen it before. There was no obvious reason to flag it. It was registered to a hosting provider in Germany. The sign-in had used correct credentials. MFA was satisfied.
 
@@ -76,6 +85,9 @@ This is why threat intelligence works alongside behavioral analysis and anomaly 
 
 💬 **Have you ever investigated a sign-in that was flagged for malicious IP and traced the IP back to infrastructure you recognized as legitimate, like a shared VPN exit node or a cloud provider range?** The false positive scenarios from IP reputation are specific and predictable once you've seen them. What was your approach to resolving it without weakening the detection for genuine threats?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Threat intelligence-based risk detections are surfaced via Identity Protection, which requires **Entra ID P2**.
 
 <!-- nav -->
 

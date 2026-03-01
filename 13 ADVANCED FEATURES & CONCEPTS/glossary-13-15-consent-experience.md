@@ -1,9 +1,18 @@
 # Consent Experience
 *What Users See When an App Asks for Permission*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.15 - Consent Experience**
 
 ---
+
+## 🎯 TL;DR
+
+- The Consent Experience is the UI dialog that appears when a user or admin grants permissions to an app
+- It shows: app name, publisher, requested permissions — users should review carefully before consenting
+- Phishing apps often request excessive permissions — train users to be suspicious of unexpected consent prompts
+
 
 A user got a consent prompt for an application they'd never seen before. It was requesting permissions to read their email, read their contacts, and read files shared with them. The application was called "QuickProductivityHelper." The publisher was listed as "Unverified."
 

@@ -8,6 +8,10 @@
 
 > A comprehensive, experience-driven reference for Microsoft Entra ID (formerly Azure AD). Each entry explains not just *what* a term means, but *why* it matters and how it behaves in practice.
 
+> 💡 **How to read this glossary:** Each article includes a **difficulty badge** (🟢 Beginner / 🟡 Intermediate / 🔴 Advanced) and a **TL;DR** section at the top. New to identity? Start at Section 1 and read forward. Experienced practitioner? Jump to any section — each article is self-contained.
+
+> ⚠️ **Section 4 vs Section 11:** Both cover tokens and authorization. **Section 4** is the practitioner-level reference — concepts, use cases, and practical guidance. **Section 11** is technical deep-dives into the same topics — protocol mechanics, exact claim structures, and flow internals. Read Section 4 first, Section 11 when you need the full protocol detail.
+
 ---
 
 ## 📚 Table of Contents

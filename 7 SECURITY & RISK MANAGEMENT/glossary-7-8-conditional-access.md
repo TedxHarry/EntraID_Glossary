@@ -1,9 +1,18 @@
 # Conditional Access
 *The Policy Engine That Makes "Never Trust, Always Verify" Real*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.8 - Conditional Access**
 
 ---
+
+## 🎯 TL;DR
+
+- Conditional Access evaluates every sign-in against IF-THEN policies: IF conditions match, THEN enforce controls
+- Policies have three parts: Assignments (who/what), Conditions (signals), and Grant/Session Controls (outcome)
+- Deploy new policies in Report-Only mode first — going straight to enforcement risks locking people out
+
 
 A company had MFA deployed. They thought they were protected.
 
@@ -82,6 +91,24 @@ Skipping report-only mode is how organizations accidentally lock themselves out 
 
 💬 **What's the most impactful Conditional Access policy your organization has implemented?** Requiring compliant devices is often the one that generates the most initial resistance and the most security value. What was the conversation like when you pushed the policy from report-only to enforcement?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Conditional Access (beyond Security Defaults) requires **Entra ID P1** at minimum. Risk-based CA policies (using sign-in/user risk) require **Entra ID P2**.
+
+
+### 🔧 Quick Reference: Graph API — CA Policies
+
+```powershell
+# List all Conditional Access policies
+Get-MgIdentityConditionalAccessPolicy | Select-Object DisplayName, State, Id
+
+# Get policies in Report-Only mode
+Get-MgIdentityConditionalAccessPolicy -Filter "state eq 'enabledForReportingButNotEnforced'" |
+    Select-Object DisplayName, Id
+
+# Get sign-in logs for a specific policy (Graph API)
+# GET https://graph.microsoft.com/v1.0/auditLogs/signIns?$filter=appliedConditionalAccessPolicies/any(p:p/id eq '<policy-id>')
+```
 
 <!-- nav -->
 

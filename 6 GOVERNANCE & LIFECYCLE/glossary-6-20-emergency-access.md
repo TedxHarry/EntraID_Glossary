@@ -1,9 +1,18 @@
 # Emergency Access
 *The Account You Hope You Never Need*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.20 - Emergency Access**
 
 ---
+
+## 🎯 TL;DR
+
+- Emergency access accounts ('break glass') provide backup admin access when normal sign-in is impossible
+- They should be: cloud-only, permanent Global Admins, excluded from all CA policies, with MFA hardware FIDO2 key
+- Store credentials in a secure physical vault — these accounts should almost never be used
+
 
 An organization's Global Administrator was traveling when a Conditional Access policy change locked out all admin accounts. The policy required compliant devices. The admin was working from a hotel laptop. Non-compliant. Blocked.
 

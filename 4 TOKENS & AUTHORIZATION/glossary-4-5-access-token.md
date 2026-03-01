@@ -1,9 +1,18 @@
 # Access Token
 *What's Actually Inside That Long String*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.5 - Access Token**
 
 ---
+
+## 🎯 TL;DR
+
+- Access tokens are short-lived JWTs (typically 60–75 min) that prove an app is authorized to call an API
+- They contain claims: who the user is (`sub`), what app made the request (`appid`), and what's allowed (`scp`)
+- Access tokens are opaque to apps that receive them — the API validates them, the app just presents them
+
 
 An access token looks like a random string of characters about 1,500 characters long. Developers copy-paste them into Postman headers, IT pros see them flash past in Fiddler traces, and most people treat them as opaque blobs that either work or don't.
 
@@ -70,6 +79,20 @@ A resource server that doesn't properly validate access tokens is accepting unsi
 
 💬 **Have you ever decoded an access token to debug a permissions issue?** The moment when you paste a token into jwt.ms and see a `scp` claim that doesn't include what you expected is one of those instant "ah, that's why" moments. What did decoding a token reveal for you?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: Get a Token
+
+```powershell
+# Get an access token using MSAL (PowerShell module)
+Install-Module MSAL.PS -Scope CurrentUser
+$token = Get-MsalToken -ClientId "<app-client-id>" -TenantId "<tenant-id>" -Scopes "https://graph.microsoft.com/.default"
+$token.AccessToken  # JWT string
+
+# Decode the token (inspect claims)
+$parts = $token.AccessToken.Split(".")
+[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($parts[1] + "==")) | ConvertFrom-Json
+```
 
 <!-- nav -->
 

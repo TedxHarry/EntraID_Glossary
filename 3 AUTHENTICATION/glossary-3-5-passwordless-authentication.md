@@ -1,9 +1,18 @@
 # Passwordless Authentication
 *Fixing the Right Problem*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#3.5 - Passwordless Authentication**
 
 ---
+
+## 🎯 TL;DR
+
+- Passwordless authentication replaces passwords with phishing-resistant factors: FIDO2 keys, WHfB, or the Authenticator app
+- Passwords are the #1 attack vector; eliminating them dramatically reduces credential-based attack surface
+- Microsoft Authenticator passwordless uses your phone biometric + a number match challenge on screen
+
 
 Every year, security teams send out the same email. "Please update your password. It must be at least 14 characters, contain uppercase and lowercase letters, numbers, and symbols, and cannot match your last 12 passwords."
 
@@ -73,6 +82,19 @@ The goal isn't flipping a switch. It's making passwordless the default path of l
 
 💬 **Has your organization started a passwordless rollout?** Which method are you leading with: Windows Hello, FIDO2 keys, or Authenticator? And what's been the user reaction so far?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Passwordless authentication (FIDO2, WHfB, Authenticator) is included in **Entra ID Free** for up to 500K objects. No P1/P2 required for the methods themselves.
+
+
+### 🔧 Quick Reference: PowerShell
+
+```powershell
+# List users registered for passwordless methods
+Get-MgReportAuthenticationMethodUserRegistrationDetail -All |
+    Where-Object { $_.IsPasswordlessCapable -eq $true } |
+    Select-Object UserPrincipalName, MethodsRegistered
+```
 
 <!-- nav -->
 

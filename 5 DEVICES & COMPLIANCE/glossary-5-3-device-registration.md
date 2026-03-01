@@ -1,9 +1,18 @@
 # Device Registration
 *Three Ways to Join a Device to Entra ID (They're Not the Same)*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#5.3 - Device Registration**
 
 ---
+
+## 🎯 TL;DR
+
+- Device registration creates a device object in Entra ID and establishes a trust relationship
+- It generates a device certificate stored on the device that proves 'this is the registered device'
+- Registration is required before enrollment — you can't manage an unregistered device
+
 
 An admin asked me why a Conditional Access policy was blocking a user's device. The policy required "Hybrid Entra Joined" devices, and the device showed "Entra Registered" in the portal. The admin thought registered and joined were the same thing with different labels.
 

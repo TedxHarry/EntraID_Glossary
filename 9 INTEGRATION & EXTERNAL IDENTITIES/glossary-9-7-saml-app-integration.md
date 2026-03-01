@@ -1,9 +1,18 @@
 # SAML (App Integration Focus)
 *The Enterprise Protocol That Refuses to Retire*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#9.7 - SAML (App Integration Focus)**
 
 ---
+
+## 🎯 TL;DR
+
+- SAML app integration configures Entra ID as IdP with SAML assertions for legacy enterprise SSO
+- Required configuration: Entity ID, ACS URL, signing certificate, and attribute mappings (claims)
+- SAML certificate expiry is a common outage cause — monitor expiry and rotate before it expires
+
 
 The Salesforce integration request came in. Standard enterprise SaaS. The IT team knew it would be SAML before they opened the documentation. It's always SAML with Salesforce.
 

@@ -1,9 +1,18 @@
 # SSPR (Security Focus)
 *When Self-Service Password Reset Becomes an Attack Vector*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.27 - SSPR (Security Focus)**
 
 ---
+
+## 🎯 TL;DR
+
+- SSPR security requires users to register verification methods before they can self-reset
+- Strong SSPR methods: Authenticator app TOTP, email OTP. Weaker: SMS, security questions
+- Combine SSPR with SSPR writeback for hybrid environments — otherwise on-prem password stays unchanged
+
 
 An attacker had a target's email address and some publicly available personal information. They went to the organization's SSPR portal. The SSPR was configured to require security questions as the verification method. The questions: mother's maiden name, first pet, elementary school.
 

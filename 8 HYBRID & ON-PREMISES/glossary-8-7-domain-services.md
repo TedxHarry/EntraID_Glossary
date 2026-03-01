@@ -1,9 +1,18 @@
 # Domain Services
 *Active Directory Without the Domain Controllers*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#8.7 - Domain Services**
 
 ---
+
+## 🎯 TL;DR
+
+- Entra Domain Services provides managed AD DS (Kerberos/LDAP/NTLM) in Azure without domain controllers
+- Useful for lifting-and-shifting legacy apps that need domain join or Kerberos authentication
+- Users sync from Entra ID → Domain Services (one-way); you can't manage DS objects from AD DS directly
+
 
 A company was migrating everything to Azure. Their infrastructure, their applications, their workloads. The goal was to eliminate their on-premises data centers entirely.
 

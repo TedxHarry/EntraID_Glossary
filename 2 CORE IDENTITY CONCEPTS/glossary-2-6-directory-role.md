@@ -1,9 +1,18 @@
 # Directory Role
 *Why "Just Give Them Global Admin" Is the Worst Habit in Entra ID*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.6 - Directory Role**
 
 ---
+
+## 🎯 TL;DR
+
+- Directory roles (like Global Administrator, User Administrator) grant permissions to manage Entra ID itself
+- Use least-privilege: prefer User Administrator over Global Administrator for day-to-day user management
+- Privileged Identity Management (PIM) lets you make roles eligible rather than permanently assigned
+
 
 The first security audit I ran on an inherited Entra ID tenant turned up 23 Global Administrators.
 
@@ -62,9 +71,25 @@ Global Admin should be a last resort for break-glass scenarios and a small numbe
 
 ---
 
+
+### 🔧 Quick Reference: PowerShell
+
+```powershell
+# List all directory role assignments
+Get-MgDirectoryRole | ForEach-Object {
+    $role = $_
+    Get-MgDirectoryRoleMember -DirectoryRoleId $role.Id | ForEach-Object {
+        [PSCustomObject]@{ Role=$role.DisplayName; Member=$_.Id }
+    }
+}
+
+# Check if a user has a specific role
+Get-MgUserMemberOf -UserId "user@contoso.com" | Where-Object { $_.AdditionalProperties["@odata.type"] -eq "#microsoft.graph.directoryRole" }
+```
+
 🔗 **Related Terms:**
-- Glossary#2.11 - Admin Role (the most privileged directory roles and how to manage them safely)
-- Glossary#2.10 - Delegation (how to scope admin capabilities to specific subsets of users)
+- [Glossary#2.11 - Admin Role](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-11-admin-role.md) (the most privileged directory roles and how to manage them safely)
+- [Glossary#2.10 - Delegation](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-10-delegation.md) (how to scope admin capabilities to specific subsets of users)
 - Glossary#2.9 - Role (Identity Role) (roles across Entra ID, Azure, and applications, they're different)
 
 ---

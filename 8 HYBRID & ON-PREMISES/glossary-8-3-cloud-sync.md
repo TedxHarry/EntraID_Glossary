@@ -1,9 +1,18 @@
 # Cloud Sync
 *The Lighter Path to Hybrid Identity*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#8.3 - Cloud Sync**
 
 ---
+
+## 🎯 TL;DR
+
+- Entra Cloud Sync is the lightweight agent-based sync engine — no dedicated sync server required
+- It's installed as a small agent on AD domain controllers or member servers
+- Cloud Sync supports multi-forest and is the recommended approach for new hybrid deployments
+
 
 A mid-size organization was running Entra Connect on a dedicated Windows Server. The server needed patching, updates, and occasional troubleshooting. Every time Entra Connect released a new version, someone had to schedule maintenance to upgrade it. The sync infrastructure itself had become a thing to manage.
 

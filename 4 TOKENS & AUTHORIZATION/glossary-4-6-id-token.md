@@ -1,9 +1,18 @@
 # ID Token
 *Proof of Who Signed In (Not a Key to the API)*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#4.6 - ID Token**
 
 ---
+
+## 🎯 TL;DR
+
+- ID tokens are JWTs issued alongside access tokens that carry the authenticated user's identity claims
+- They're for the client app's consumption — never sent to APIs (use access tokens for that)
+- Key claims: `oid` (object ID), `upn`, `name`, `email`, `tid` (tenant ID), `nonce`
+
 
 I reviewed a developer's application code once and noticed they were calling Microsoft Graph like this: passing the ID token in the Authorization header where the access token should go. The API was returning 401 Unauthorized. The developer was confused because the user had clearly signed in successfully and the token was right there.
 

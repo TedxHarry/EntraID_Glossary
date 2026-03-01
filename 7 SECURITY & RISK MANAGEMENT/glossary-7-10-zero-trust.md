@@ -1,9 +1,18 @@
 # Zero Trust
 *The Security Model That Stopped Trusting Your Network*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.10 - Zero Trust**
 
 ---
+
+## 🎯 TL;DR
+
+- Zero Trust operates on 'never trust, always verify' — no implicit trust based on network location
+- Three principles: Verify explicitly (always authenticate and authorize), Use least privilege, Assume breach
+- Conditional Access is the technical implementation of Zero Trust for identity — every access request is verified
+
 
 The breach happened inside the perimeter. An attacker had gotten a foothold through a phishing email, established persistence on one endpoint, and spent three months moving laterally through a network that treated all internal traffic as trusted.
 

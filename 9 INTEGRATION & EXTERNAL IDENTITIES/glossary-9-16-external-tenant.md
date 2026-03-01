@@ -1,9 +1,18 @@
 # External Tenant
 *The Entra ID Tenant Type Built for Your Customers*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#9.16 - External Tenant**
 
 ---
+
+## 🎯 TL;DR
+
+- An external tenant is a dedicated Entra ID tenant configured for customer-facing applications (B2C/CIAM scenarios)
+- External tenants have consumer-friendly configuration: simpler registration, social IdPs, branded UI
+- Use external tenants for apps used by customers, not employees — keep workforce and customer identity separate
+
 
 A retail company has 5,000 employees and 3 million loyalty program members. Both populations need digital accounts. Both need to sign in to applications. Both need identity management.
 

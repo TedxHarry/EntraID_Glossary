@@ -1,9 +1,18 @@
 # Microsoft Entra ID
 *The Foundation of Modern Identity*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#1.1 - Microsoft Entra ID**
 
 ---
+
+## 🎯 TL;DR
+
+- Microsoft Entra ID is Microsoft's cloud identity platform — it answers **who you are** and **what you can access**
+- Every sign-in triggers authentication (verify identity) then authorization (issue token granting access)
+- It replaced Azure Active Directory in 2023 — same product, new name
+
 
 Three years ago, a colleague called me in a mild panic. She'd just started a new IT role and her manager told her to "get up to speed on Azure AD before Monday." By Friday afternoon she'd read six different Microsoft docs, watched four YouTube videos, and was somehow *more* confused than when she started. "What does it actually *do*?" she asked. "Like, in real life?"
 
@@ -62,10 +71,9 @@ Start here. Get this solid. Everything else builds on it. 🔑
 ---
 
 🔗 **Related Terms:**
-- Glossary#1.3 - Tenant (where your Entra ID instance lives)
-- Glossary#1.5 - Active Directory (the on-premises predecessor)
-- Glossary#1.4 - Cloud-Based Identity (what makes Entra ID different from legacy systems)
-
+- [Glossary#1.3 - Tenant](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-3-tenant.md) (where your Entra ID instance lives)
+- [Glossary#1.5 - Active Directory](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-5-active-directory.md) (the on-premises predecessor)
+- [Glossary#1.4 - Cloud-Based Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-4-cloud-based-identity.md) (what makes Entra ID different from legacy systems)
 ---
 
 💬 **Over to you:** When did you first encounter Entra ID (or Azure AD)? Were you thrown in the deep end like my colleague, or did you have time to learn it properly? Drop your story in the comments, I read every one.

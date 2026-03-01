@@ -1,9 +1,18 @@
 # Actor (Deep Dive)
 *When an Application Acts as the Middle Layer Between User and API*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#11.6 - Actor (Deep Dive)**
 
 ---
+
+## 🎯 TL;DR
+
+- The actor (`act`) claim identifies the intermediate service in OBO (on-behalf-of) chains
+- OBO flow: Service A calls Service B; B's token shows `sub`=original user, `act`=Service A
+- Enables end-to-end identity tracking through service chains without losing the original user context
+
 
 A three-tier application had a problem. The frontend called a middle-tier API. The middle-tier API called Microsoft Graph to read the user's calendar. But the Graph token the middle-tier received identified the middle-tier service itself, not the original user.
 

@@ -1,9 +1,18 @@
 # Tenant
 *(And Why Getting This Wrong Causes Real Problems)*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#1.3 - Tenant**
 
 ---
+
+## 🎯 TL;DR
+
+- A tenant is your organization's dedicated, isolated instance of Entra ID with its own users, apps, and policies
+- Tenants are identified by a unique domain (contoso.onmicrosoft.com) and a GUID (Tenant ID)
+- Everything in Entra ID — users, groups, apps, policies — lives inside a tenant
+
 
 The first time I had to explain tenants to a room full of IT pros, I used the wrong analogy. I said a tenant was "like a database." The blank stares told me I'd made a mistake. Then someone at the back said, "Is it like a virtual machine?" Closer, but no.
 
@@ -58,8 +67,8 @@ The tenant is the foundation. Everything else sits on top of it. 🏢
 ---
 
 🔗 **Related Terms:**
-- Glossary#1.1 - Microsoft Entra ID (the service that your tenant is an instance of)
-- Glossary#8.1 - Directory Synchronization (how on-premises AD objects get into your tenant)
+- [Glossary#1.1 - Microsoft Entra ID](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-1-microsoft-entra-id.md) (the service that your tenant is an instance of)
+- [Glossary#8.1 - Directory Synchronization](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md) (how on-premises AD objects get into your tenant)
 - Glossary#9.17 - Cross-Tenant Access (how tenants can trust each other)
 
 ---

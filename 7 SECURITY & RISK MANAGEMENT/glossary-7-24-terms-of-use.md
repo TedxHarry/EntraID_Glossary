@@ -1,9 +1,18 @@
 # Terms of Use
 *Making Consent Part of the Access Flow*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#7.24 - Terms of Use**
 
 ---
+
+## 🎯 TL;DR
+
+- Terms of Use presents a legal document that users must accept before accessing a resource
+- Acceptance is logged and can be required on a schedule (e.g., re-accept annually)
+- Use for: data handling agreements, contractor acceptable use policies, sensitive data access acknowledgments
+
 
 A healthcare organization had an acceptable use policy. It was a PDF on the intranet. New employees were supposed to read it during onboarding. Most didn't. When a nurse used a personal device to access patient records in a way that violated the policy, the organization had no evidence the nurse had ever agreed to the policy. The compliance investigation was complicated.
 

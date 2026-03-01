@@ -1,9 +1,18 @@
 # Workload Federation
 *Authenticating to Azure Without Storing Azure Credentials*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#10.5 - Workload Federation**
 
 ---
+
+## 🎯 TL;DR
+
+- Workload Identity Federation lets workloads outside Azure (GitHub Actions, GKE pods, AWS Lambda) authenticate to Entra ID without secrets
+- The external workload presents a token from its OIDC provider; Entra ID validates and exchanges it for an Entra token
+- Eliminates the need to store Entra ID secrets in GitHub/GCP/AWS environments
+
 
 A GitHub Actions workflow was deploying infrastructure to Azure. The workflow needed credentials to authenticate to Azure. The team stored a service principal client secret in GitHub Secrets.
 
@@ -61,6 +70,21 @@ The security properties of workload federation are meaningfully better than stor
 
 💬 **Has your team migrated GitHub Actions or CI/CD pipelines from stored service principal secrets to workload federation?** The migration is usually straightforward and the security improvement is significant. What held your team back from making the switch, or what finally prompted you to do it?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: Workload Federation Setup
+
+```powershell
+# Add a federated identity credential to an app registration
+# (allows GitHub Actions to authenticate without a client secret)
+$appId = "<your-app-object-id>"
+New-MgApplicationFederatedIdentityCredential -ApplicationId $appId -BodyParameter @{
+    name = "github-actions-prod"
+    issuer = "https://token.actions.githubusercontent.com"
+    subject = "repo:MyOrg/MyRepo:environment:production"
+    audiences = @("api://AzureADTokenExchange")
+}
+```
 
 <!-- nav -->
 

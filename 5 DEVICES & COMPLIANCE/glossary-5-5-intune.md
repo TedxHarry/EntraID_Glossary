@@ -1,9 +1,18 @@
 # Intune
 *What the Device Management Piece of Microsoft's Puzzle Actually Does*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#5.5 - Intune**
 
 ---
+
+## 🎯 TL;DR
+
+- Intune is Microsoft's cloud-based MDM and MAM service for managing devices and apps
+- It sets compliance policies (which Conditional Access checks) and configuration profiles (settings pushed to devices)
+- Intune integrates with Entra ID — device compliance status flows from Intune into CA policy evaluation
+
 
 An IT manager asked me if Intune was "basically just a thing you need to make Conditional Access device compliance work."
 
@@ -61,6 +70,9 @@ The visibility alone is often the most valuable initial outcome. Before Intune, 
 
 💬 **What was the first Intune compliance or configuration policy your organization enabled, and what did it reveal about the current state of your device fleet?** The first compliance policy rollout often surfaces surprises about device health that nobody knew were there. What did you find?
 > ✍️ *Written by **TedxHarry***
+
+
+> 🔑 **Licensing:** Microsoft Intune is licensed separately (Intune Plan 1 or as part of Microsoft 365 E3/E5). Intune is NOT included in Entra ID P1/P2 alone.
 
 <!-- nav -->
 

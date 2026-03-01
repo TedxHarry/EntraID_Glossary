@@ -1,9 +1,18 @@
 # Sync Agent
 *The On-Premises Software That Bridges Your Directory to the Cloud*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.11 - Sync Agent**
 
 ---
+
+## 🎯 TL;DR
+
+- Sync agents (Connect Sync, Cloud Sync agent) are the software bridges between on-prem AD and Entra ID
+- Monitor agent health — a failed agent stops synchronization without obvious user impact until attributes drift
+- Keep sync agents updated — outdated agents may not support new features or may have security vulnerabilities
+
 
 A hybrid identity team got an alert on a Tuesday morning: directory synchronization had failed. Users created in on-premises Active Directory in the last four hours hadn't appeared in Entra ID. The helpdesk was getting calls from new starters who couldn't access Microsoft 365.
 

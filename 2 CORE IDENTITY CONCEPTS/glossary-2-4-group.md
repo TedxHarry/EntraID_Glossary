@@ -1,9 +1,18 @@
 # Group
 *The Access Management Tool You Should Be Using More*
 
+> **Difficulty:** 🟢 Beginner
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.4 - Group**
 
 ---
+
+## 🎯 TL;DR
+
+- Groups aggregate users for easier assignment of licenses, roles, and app access
+- Security Groups control access; Microsoft 365 Groups include a mailbox, SharePoint site, and Teams workspace
+- Dynamic membership rules auto-add/remove users based on attributes like department or job title
+
 
 Early in my career I inherited an environment where permissions had been assigned directly to individual users for years. SharePoint sites, Teams channels, app roles, Azure resource access, all of it assigned user by user.
 
@@ -71,11 +80,21 @@ Role-assignable groups are deliberately restricted, they can only be managed by 
 
 ---
 
-🔗 **Related Terms:**
-- Glossary#2.2 - User (the primary member type in most groups)
-- Glossary#2.8 - Permission (what groups are most commonly used to assign)
-- Glossary#6.6 - Access Review (how you periodically verify group membership is still appropriate)
 
+### 🔧 Quick Reference: PowerShell
+
+```powershell
+# Get all dynamic groups
+Get-MgGroup -Filter "groupTypes/any(g:g eq 'DynamicMembership')" | Select-Object DisplayName, Id
+
+# Check group membership
+Get-MgGroupMember -GroupId "<group-object-id>" | Select-Object Id
+```
+
+🔗 **Related Terms:**
+- [Glossary#2.2 - User (Identity Object)](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-2-user-identity-object.md) (the primary member type in most groups)
+- [Glossary#2.8 - Permission](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-8-permission.md) (what groups are most commonly used to assign)
+- [Glossary#6.6 - Access Review](/6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-6-access-review.md) (how you periodically verify group membership is still appropriate)
 ---
 
 💬 **Over to you:** Are you using dynamic groups in your environment? If you're still on assigned membership for most things, what's holding you back, licensing, complexity, or just hasn't been prioritized yet? I'd genuinely like to know what the common blockers look like in practice.

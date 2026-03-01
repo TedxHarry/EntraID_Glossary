@@ -1,9 +1,18 @@
 # Microsoft Graph API
 *Programmatic Access to Everything in Your Entra ID Tenant*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.21 - Microsoft Graph API**
 
 ---
+
+## 🎯 TL;DR
+
+- Microsoft Graph API is the unified REST API for accessing all Microsoft 365 and Entra ID data and operations
+- Base URL: `https://graph.microsoft.com/v1.0/` (GA) or `/beta/` (preview features)
+- Use Graph for: user management, group management, sign-in log queries, CA policy management, and more
+
 
 An operations team was manually processing new hire requests every Monday morning. HR sent a spreadsheet. The team created user accounts, assigned licenses, added users to the right groups, and set up mailboxes. For 30 new hires, that was three hours of work. For 150 new hires at the end of a hiring surge, it was the entire morning.
 
@@ -57,6 +66,23 @@ The `$batch` endpoint allows sending 20 Graph requests in a single HTTP call, dr
 
 💬 **What Graph API operations does your team rely on for Entra ID automation, and have you migrated from the deprecated AzureAD and MSOnline PowerShell modules to the Microsoft Graph PowerShell module?** The migration from legacy modules to Graph PowerShell is one of those projects that's easy to defer until it becomes urgent. What was the most valuable automation your team built on Graph, and what would break if you lost API access to Entra ID?
 > ✍️ *Written by **TedxHarry***
+
+
+### 🔧 Quick Reference: Microsoft Graph
+
+```powershell
+# Install and connect to Graph
+Install-Module Microsoft.Graph -Scope CurrentUser
+Connect-MgGraph -Scopes "User.Read.All", "Group.Read.All", "AuditLog.Read.All"
+
+# Common Graph operations
+Get-MgUser -All | Measure-Object                    # Count all users
+Get-MgGroup -All | Where-Object { $_.GroupTypes -contains "DynamicMembership" }  # Dynamic groups
+Get-MgAuditLogSignIn -Top 10                       # Recent sign-ins
+
+# Raw Graph API call
+Invoke-MgGraphRequest -Method GET -Uri "https://graph.microsoft.com/v1.0/me"
+```
 
 <!-- nav -->
 

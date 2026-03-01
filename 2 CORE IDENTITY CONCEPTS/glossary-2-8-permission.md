@@ -1,9 +1,18 @@
 # Permission
 *Reading What You're Actually Granting*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#2.8 - Permission**
 
 ---
+
+## 🎯 TL;DR
+
+- Permissions define what an app can do: delegated (on behalf of a user) or application (app acts as itself)
+- Permissions must be both declared in App Registration AND granted via admin consent or user consent to take effect
+- Scope strings like `User.Read` or `Mail.ReadWrite` are how permissions are expressed in OAuth2 tokens
+
 
 A developer came to me once asking why their app wasn't working. They'd registered it in Entra ID, configured API permissions, even got admin consent granted. But the app kept getting 403 errors from Microsoft Graph.
 
@@ -62,11 +71,21 @@ Before requesting any permission, ask: does this need to act on behalf of a user
 
 ---
 
-🔗 **Related Terms:**
-- Glossary#2.7 - Access Control (the broader system permissions operate within)
-- Glossary#2.3 - Service Principal (where permission grants are recorded in your tenant)
-- Glossary#4.11 - Scope (how permissions are expressed in OAuth2 token requests)
 
+### 🔧 Quick Reference: PowerShell
+
+```powershell
+# List OAuth2 permission grants (delegated permissions consented by users)
+Get-MgOauth2PermissionGrant -All | Select-Object ClientId, Scope, ConsentType
+
+# List app role assignments (application permissions)
+Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId "<sp-object-id>"
+```
+
+🔗 **Related Terms:**
+- [Glossary#2.7 - Access Control](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-7-access-control.md) (the broader system permissions operate within)
+- [Glossary#2.3 - Service Principal](/2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-3-service-principal.md) (where permission grants are recorded in your tenant)
+- [Glossary#4.11 - Scope](/4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-11-scope.md) (how permissions are expressed in OAuth2 token requests)
 ---
 
 **Developer question:** What's the most over-privileged permission you've seen granted to an application, either something you inherited or something you caught before it went to production? The `Directory.ReadWrite.All` in a basic sign-in app is a classic.

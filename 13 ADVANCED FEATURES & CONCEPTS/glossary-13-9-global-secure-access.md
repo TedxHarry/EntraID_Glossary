@@ -1,9 +1,18 @@
 # Global Secure Access
 *Microsoft's Zero Trust Network Access Layer*
 
+> **Difficulty:** 🔴 Advanced
+
 📚 **Part of Entra ID Glossary Series: Glossary#13.9 - Global Secure Access**
 
 ---
+
+## 🎯 TL;DR
+
+- Global Secure Access (GSA) is Microsoft's SSE (Security Service Edge) platform for identity-aware network access
+- It includes Entra Internet Access (SWG for internet traffic) and Entra Private Access (ZTNA for on-prem apps)
+- GSA moves network security from perimeter-based to identity-centric — traffic flows through the GSA service
+
 
 A company had 4,000 remote employees. They connected to internal applications through a VPN. The VPN terminated at a central hub, routed all traffic through the corporate network, and provided access to everything on the internal network once connected.
 

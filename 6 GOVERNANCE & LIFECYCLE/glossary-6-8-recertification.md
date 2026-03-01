@@ -1,9 +1,18 @@
 # Recertification
 *Access That Was Right Then Might Not Be Right Now*
 
+> **Difficulty:** 🟡 Intermediate
+
 📚 **Part of Entra ID Glossary Series: Glossary#6.8 - Recertification**
 
 ---
+
+## 🎯 TL;DR
+
+- Recertification is a recurring access review — typically quarterly or annually for sensitive resources
+- Users who don't recertify within the deadline lose access automatically
+- PIM requires recertification for privileged roles; access packages support scheduled review campaigns
+
 
 A team lead certified her team's access to the HR system in January. Twelve members, all approved. Appropriate at the time.
 
