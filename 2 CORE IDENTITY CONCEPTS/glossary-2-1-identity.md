@@ -65,12 +65,6 @@ Get comfortable with identity as a concept, all three types, their distinct secu
 
 ---
 
-🔗 **Related Terms:**
-- Glossary#2.2 - User (the most common human identity object)
-- Glossary#2.3 - Service Principal (the workload identity object)
-- Glossary#10.2 - Managed Identity (the preferred type of workload identity in Azure)
-
----
 
 **Think about your own environment:** How many different types of identities are you managing right now? Most people underestimate the workload identity count, the apps and services quietly authenticating in the background. Do you know how many service principals are active in your tenant?
 > ✍️ *Written by **TedxHarry***
