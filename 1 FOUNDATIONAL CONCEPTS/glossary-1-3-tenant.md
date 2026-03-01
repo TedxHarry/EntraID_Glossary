@@ -57,13 +57,6 @@ The tenant is the foundation. Everything else sits on top of it. 🏢
 
 ---
 
-🔗 **Related Terms:**
-- Glossary#1.1 - Microsoft Entra ID (the service that your tenant is an instance of)
-- Glossary#8.1 - Directory Synchronization (how on-premises AD objects get into your tenant)
-- Glossary#9.17 - Cross-Tenant Access (how tenants can trust each other)
-
----
-
 💬 **Question for you:** Does your organization run one tenant or multiple? And if you're running multiple, was that a deliberate architectural decision, or something that evolved over time without a plan? I've seen both and the stories are always interesting.
 > ✍️ *Written by **TedxHarry***
 
