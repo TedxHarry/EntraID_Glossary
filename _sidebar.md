@@ -4,6 +4,8 @@
 ---
 
 - **🎓 ENTRA ID — ZERO TO ADMIN**
+- [📋 Table of Contents](/LEARNING%20PATH/TABLE-OF-CONTENTS.md)
+- [📝 Series Writing Prompt](/LEARNING%20PATH/SERIES-PROMPT.md)
 - **🟢 Unit 1: Getting Started**
   - [1.1 — What Is Entra ID?](/LEARNING%20PATH/UNIT%201%20-%20GETTING%20STARTED/1-1-what-is-entra-id.md)
 
