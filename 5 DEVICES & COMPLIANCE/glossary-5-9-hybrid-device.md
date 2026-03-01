@@ -61,8 +61,6 @@ Getting there requires eliminating on-premises dependencies app by app. Once tho
 ---
 
 💬 **Is your organization running hybrid joined devices as a permanent state or as a transitional step toward cloud-only?** The on-premises dependencies that force hybrid join are often the same ones driving the broader cloud migration timeline. Which legacy apps or services have been the hardest to move away from?
-
-#EntraID #HybridJoin #DeviceIdentity #EntraConnect #ZeroTrust #MicrosoftEntra #HybridIdentity
 <!-- nav -->
 
 ---

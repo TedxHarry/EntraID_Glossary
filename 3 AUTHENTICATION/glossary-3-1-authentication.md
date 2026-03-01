@@ -70,8 +70,6 @@ Strong authentication is the floor. Build everything else on top of it.
 ---
 
 💬 **What authentication challenges are you dealing with right now?** Legacy protocols you're trying to block? Phishing-resistant methods you're rolling out? Users resisting MFA? Drop your current situation in the comments.
-
-#EntraID #Authentication #CloudSecurity #MicrosoftEntra #ZeroTrust #IdentityManagement #BeginnerContent
 <!-- nav -->
 
 ---

@@ -63,8 +63,6 @@ The identity needs to persist across resource replacements. If the same logical 
 ---
 
 💬 **When did you first switch from system-assigned to user-assigned managed identity for a workload, and what drove the decision?** The transition usually happens when the one-to-one model creates operational friction, either through role assignment duplication or through losing assignments when resources are replaced. What scenario made user-assigned the better fit?
-
-#EntraID #ManagedIdentity #SystemAssignedManagedIdentity #WorkloadIdentity #AzureSecurity #MicrosoftEntra #CloudSecurity
 <!-- nav -->
 
 ---

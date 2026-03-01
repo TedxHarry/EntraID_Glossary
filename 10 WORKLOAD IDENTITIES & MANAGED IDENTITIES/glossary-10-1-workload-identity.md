@@ -55,8 +55,6 @@ Microsoft Entra Workload ID (the product layer on top of the base workload ident
 ---
 
 💬 **How many workload identities does your organization have in Entra ID, and how many of them are actively owned and governed?** The gap between "service principals that exist" and "service principals that someone is responsible for" is one of the hardest problems in enterprise identity security. What's your approach to workload identity governance?
-
-#EntraID #WorkloadIdentity #ServicePrincipal #ManagedIdentity #IdentityGovernance #MicrosoftEntra #CloudSecurity
 <!-- nav -->
 
 ---

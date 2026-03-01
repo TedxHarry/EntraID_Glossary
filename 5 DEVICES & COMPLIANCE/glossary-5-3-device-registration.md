@@ -60,8 +60,6 @@ Both YES means hybrid joined. If AzureAdJoined is NO but DomainJoined is YES, th
 ---
 
 💬 **Has your organization gone through a device registration migration, moving from Hybrid Entra Joined toward Entra Joined as you reduced on-premises dependencies?** The transition involves more than just joining devices differently. What were the on-premises dependencies that took the longest to resolve?
-
-#EntraID #DeviceRegistration #HybridJoin #EntraJoined #ZeroTrust #MicrosoftEntra #EndpointManagement
 <!-- nav -->
 
 ---

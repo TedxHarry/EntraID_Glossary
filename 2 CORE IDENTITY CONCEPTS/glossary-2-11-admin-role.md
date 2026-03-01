@@ -70,10 +70,8 @@ The right number of Global Admins for most organizations is two break-glass acco
 ---
 
 **Check this now:** How many Global Administrators does your tenant have? Go to Entra admin center > Roles > Global Administrator > Assignments. If the number is higher than 5, you have work to do. What did you find?
-
-#EntraID #AdminRoles #GlobalAdmin #CloudSecurity #PrivilegedAccess #MicrosoftEntra #ZeroTrust
 <!-- nav -->
 
 ---
 
-[← Delegation: Giving People Just Enough Access — No More](glossary-2-10-delegation.md) | [Home](../README.md) | [Authentication: The Question Behind Every Sign-In →](../3%29%20AUTHENTICATION/glossary-3-1-authentication.md)
+[← Delegation: Giving People Just Enough Access — No More](glossary-2-10-delegation.md) | [Home](../README.md) | [Authentication: The Question Behind Every Sign-In →](../3%20AUTHENTICATION/glossary-3-1-authentication.md)

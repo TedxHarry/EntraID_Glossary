@@ -72,8 +72,6 @@ High risk gets blocked rather than stepped up because at High confidence, a step
 ---
 
 💬 **What's the most interesting high-risk sign-in you've investigated?** The impossible travel detections are often the clearest: the timeline makes it obvious an account is being used from two places simultaneously. But some of the malicious IP detections tell a more complex story about the infrastructure attackers are using. What did the investigation reveal?
-
-#EntraID #SignInRiskLevel #IDProtection #MicrosoftEntra #ConditionalAccess #IdentitySecurity #ThreatDetection
 <!-- nav -->
 
 ---

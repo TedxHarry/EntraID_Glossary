@@ -74,8 +74,6 @@ Package the common requests. Leave the edge cases as IT tickets for now. The red
 ---
 
 💬 **What's the most common access request your IT team processes manually that could be packaged into an entitlement management access package?** The first package you create doesn't have to be complex. Even packaging one common three-group request eliminates a significant volume of tickets over a year. What would yours be?
-
-#EntraID #EntitlementManagement #IdentityGovernance #SelfServiceAccess #MicrosoftEntra #AccessManagement #IGA
 <!-- nav -->
 
 ---

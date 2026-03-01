@@ -68,8 +68,6 @@ An application that handles bearer tokens correctly:
 ---
 
 💬 **Has your team ever found an access token in a log file, a Slack message, a git commit, or any other unintended location?** The bearer token exposure in development tooling is more common than most teams track formally. What controls does your organization have for preventing token capture in logs and debugging output?
-
-#EntraID #BearerToken #OAuth2 #TokenSecurity #MicrosoftEntra #AppSecurity #APISecurity
 <!-- nav -->
 
 ---

@@ -63,8 +63,6 @@ If an application needs longer than one-hour sessions, the correct implementatio
 ---
 
 💬 **Have you had to configure Token Lifetime Policies for a specific application in your tenant, and what drove the requirement?** The most common drivers are compliance requirements for high-security applications (shorter inactive times) and user experience requirements for productivity applications (avoiding excessive sign-out prompts). What lifetime configuration would most improve your users' experience while meeting your security requirements?
-
-#EntraID #TokenLifetime #OAuth2 #RefreshToken #ConditionalAccess #MicrosoftEntra #AppSecurity
 <!-- nav -->
 
 ---

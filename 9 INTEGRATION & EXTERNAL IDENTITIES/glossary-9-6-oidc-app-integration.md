@@ -89,8 +89,6 @@ Applications built with MSAL don't implement the protocol directly. They call MS
 ---
 
 💬 **Has your team integrated a custom application with Entra ID using OIDC?** The moment when the redirect-based sign-in flow clicks for a developer who's never seen it before is recognizable. What was the hardest part of the integration to get right: the redirect URIs, the token validation, or the group/role claims configuration?
-
-#EntraID #OIDC #OpenIDConnect #AppIntegration #MicrosoftEntra #MSAL #DeveloperIdentity
 <!-- nav -->
 
 ---

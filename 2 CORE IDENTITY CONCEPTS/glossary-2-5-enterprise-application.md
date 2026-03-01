@@ -71,8 +71,6 @@ That's it. Once working, users click Salesforce in My Apps or their browser book
 ---
 
 **What apps are you integrating?** Whether it's a standard gallery app or a custom internal tool, the first SSO integration is always memorable. What was yours, and did it go smoothly or were there some surprises along the way?
-
-#EntraID #EnterpriseApplications #SingleSignOn #SSO #IdentityManagement #MicrosoftEntra #CloudSecurity
 <!-- nav -->
 
 ---

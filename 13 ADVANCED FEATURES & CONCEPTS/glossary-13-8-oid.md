@@ -72,8 +72,6 @@ OIDs are unique within a tenant, not across all of Entra ID. Two different Entra
 ---
 
 💬 **Does your organization's internal application development standard specify which user identifier to use for persistent user records?** The UPN-as-key antipattern causes real migration pain when it eventually breaks. Do your application teams default to OID, or does the choice get made ad hoc per project?
-
-#EntraID #ObjectID #OID #OAuth2 #TokenClaims #MicrosoftEntra #AppDevelopment
 <!-- nav -->
 
 ---

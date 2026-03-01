@@ -62,8 +62,6 @@ Tokens can extend to 24 hours safely. The main Microsoft 365 services already su
 ---
 
 💬 **Has token lifetime configuration caused friction in your environment?** Users complaining about sign-out frequency, developers complaining about token refresh load, or security teams pushing for shorter lifetimes than is practical? What compromise did you land on?
-
-#EntraID #TokenLifetime #OAuth2 #CAE #CloudSecurity #MicrosoftEntra #ConditionalAccess
 <!-- nav -->
 
 ---

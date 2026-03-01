@@ -74,8 +74,6 @@ This is why threat intelligence works alongside behavioral analysis and anomaly 
 ---
 
 💬 **Have you ever investigated a sign-in that was flagged for malicious IP and traced the IP back to infrastructure you recognized as legitimate, like a shared VPN exit node or a cloud provider range?** The false positive scenarios from IP reputation are specific and predictable once you've seen them. What was your approach to resolving it without weakening the detection for genuine threats?
-
-#EntraID #ThreatIntelligence #IDProtection #IPReputation #MicrosoftEntra #IdentitySecurity #RiskDetection
 <!-- nav -->
 
 ---

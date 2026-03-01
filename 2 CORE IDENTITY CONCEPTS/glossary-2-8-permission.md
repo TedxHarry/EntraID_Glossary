@@ -69,8 +69,6 @@ Before requesting any permission, ask: does this need to act on behalf of a user
 ---
 
 **Developer question:** What's the most over-privileged permission you've seen granted to an application — either something you inherited or something you caught before it went to production? The `Directory.ReadWrite.All` in a basic sign-in app is a classic.
-
-#EntraID #APIPermissions #CloudSecurity #MicrosoftGraph #MicrosoftEntra #AppDevelopment #LeastPrivilege
 <!-- nav -->
 
 ---

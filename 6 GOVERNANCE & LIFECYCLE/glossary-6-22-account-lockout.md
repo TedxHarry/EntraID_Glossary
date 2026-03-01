@@ -70,8 +70,6 @@ Resetting the password is the fastest resolution for a user who needs immediate 
 ---
 
 💬 **Have you investigated a Smart Lockout event and found it was an actual attack rather than a user error?** The sign-in logs tell the story clearly when you know what to look for. What was the attack pattern, and what did your response look like?
-
-#EntraID #AccountLockout #SmartLockout #BruteForce #MicrosoftEntra #IdentitySecurity #Authentication
 <!-- nav -->
 
 ---

@@ -69,8 +69,6 @@ Global Admin should be a last resort for break-glass scenarios and a small numbe
 ---
 
 **Question for you:** When you inherited or audited an Entra ID tenant, what did the role assignments look like? Were there surprises? I've yet to run an audit where everything was clean on the first pass.
-
-#EntraID #DirectoryRoles #CloudSecurity #IdentityManagement #MicrosoftEntra #LeastPrivilege #ITAdmin
 <!-- nav -->
 
 ---

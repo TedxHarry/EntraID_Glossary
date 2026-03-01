@@ -85,8 +85,6 @@ Testing one user before enabling broad provisioning catches attribute mapping er
 ---
 
 💬 **Which application in your environment generates the most manual provisioning work today that could be automated?** The combination of "frequently onboards new users" and "has a SCIM endpoint or gallery connector available" is the sweet spot for first automation projects. What's stopping the first connection from being made?
-
-#EntraID #AutoProvisioning #SCIM #IdentityGovernance #MicrosoftEntra #LifecycleManagement #Automation
 <!-- nav -->
 
 ---

@@ -80,8 +80,6 @@ Organizations deploying insider risk capabilities need a defined investigation p
 ---
 
 💬 **Has your organization implemented any form of insider risk monitoring?** The conversation about deploying it is often more complex than the technical setup because of privacy, legal, and cultural considerations. What was the hardest part of getting agreement to monitor insider risk signals?
-
-#EntraID #InsiderRisk #MicrosoftPurview #IdentitySecurity #MicrosoftEntra #DataLossPrevention #SecurityGovernance
 <!-- nav -->
 
 ---

@@ -55,8 +55,6 @@ The choice between app registration and user-assigned managed identity for workl
 ---
 
 💬 **What was the first Federated Identity Credential configuration that worked correctly in your environment, and what took the most troubleshooting to get right?** The subject claim field trips up most people the first time. Did you hit the branch vs environment subject mismatch, or a different configuration issue?
-
-#EntraID #FederatedIdentityCredential #WorkloadFederation #GitHubActions #ManagedIdentity #MicrosoftEntra #DevSecOps
 <!-- nav -->
 
 ---

@@ -70,8 +70,6 @@ The attacker who called twelve users and got them to approve push notifications 
 ---
 
 💬 **What authentication methods are you running in your environment?** Are you still on SMS for some user populations? What's been the biggest barrier to moving toward phishing-resistant methods?
-
-#EntraID #AuthenticationMethods #MFA #CloudSecurity #MicrosoftEntra #PhishingResistant #IdentityManagement
 <!-- nav -->
 
 ---

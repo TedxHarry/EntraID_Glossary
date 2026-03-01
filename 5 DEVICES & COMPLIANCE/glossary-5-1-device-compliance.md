@@ -79,8 +79,6 @@ Conditional Access has separate conditions for "managed device" (Intune-enrolled
 ---
 
 💬 **Have you had a situation where a Conditional Access compliance requirement blocked a user who was surprised it was possible?** The moment someone realizes their device's security state directly affects their application access is usually when the conversation about patch management gets a lot more productive. What changed after that?
-
-#EntraID #DeviceCompliance #Intune #ConditionalAccess #ZeroTrust #MicrosoftEntra #EndpointSecurity
 <!-- nav -->
 
 ---

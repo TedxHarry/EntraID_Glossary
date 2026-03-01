@@ -57,8 +57,6 @@ For service accounts that must exist, the governance requirements:
 ---
 
 💬 **How many service accounts (user accounts used by applications) does your organization still have in Entra ID, and what's the plan for transitioning them to service principals or managed identities?** The count of legacy service accounts in an enterprise Entra ID tenant is often surprising. What's the biggest obstacle to converting your highest-risk service accounts to modern workload identity patterns?
-
-#EntraID #ServiceAccount #ManagedIdentity #WorkloadIdentity #IdentityGovernance #MicrosoftEntra #CloudSecurity
 <!-- nav -->
 
 ---

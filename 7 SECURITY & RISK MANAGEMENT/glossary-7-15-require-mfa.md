@@ -81,8 +81,6 @@ Require MFA raises the bar significantly. It doesn't make an account unbreakable
 ---
 
 💬 **When you enabled MFA as a Conditional Access requirement, what was the biggest challenge during rollout?** The MFA registration coverage gap is the most common blocker. Did you encounter users who genuinely couldn't register because of device or connectivity constraints, and how did you handle the exceptions?
-
-#EntraID #MFA #ConditionalAccess #RequireMFA #MicrosoftEntra #IdentitySecurity #Phishing
 <!-- nav -->
 
 ---

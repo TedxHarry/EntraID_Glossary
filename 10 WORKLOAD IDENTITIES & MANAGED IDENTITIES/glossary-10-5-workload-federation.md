@@ -59,8 +59,6 @@ The security properties of workload federation are meaningfully better than stor
 ---
 
 💬 **Has your team migrated GitHub Actions or CI/CD pipelines from stored service principal secrets to workload federation?** The migration is usually straightforward and the security improvement is significant. What held your team back from making the switch, or what finally prompted you to do it?
-
-#EntraID #WorkloadFederation #GitHubActions #ManagedIdentity #ZeroTrust #MicrosoftEntra #DevSecOps
 <!-- nav -->
 
 ---

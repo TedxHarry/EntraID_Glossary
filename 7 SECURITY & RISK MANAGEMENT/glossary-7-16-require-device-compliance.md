@@ -86,8 +86,6 @@ This is the recommended configuration for access to sensitive resources: both re
 ---
 
 💬 **When you enforced Require Device Compliance, what was the first non-compliant device category that surprised you?** Often it's a device that's been in the environment for years and hasn't been updated because "it just works." What was the compliance failure that surfaced devices you didn't know were out of date?
-
-#EntraID #DeviceCompliance #ConditionalAccess #MicrosoftEntra #ZeroTrust #Intune #IdentitySecurity
 <!-- nav -->
 
 ---

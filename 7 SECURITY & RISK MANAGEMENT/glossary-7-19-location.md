@@ -69,8 +69,6 @@ This interaction creates a compounding effect: sign-ins from trusted corporate l
 ---
 
 💬 **Have you implemented country-based location blocking in Conditional Access?** The before and after comparison in sign-in logs is often striking: hundreds of failed authentication attempts from blocked countries that simply stop appearing after the policy goes live. What countries were generating the most attack traffic before you blocked them?
-
-#EntraID #ConditionalAccess #Location #NamedLocations #MicrosoftEntra #ZeroTrust #IdentitySecurity
 <!-- nav -->
 
 ---

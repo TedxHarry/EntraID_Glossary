@@ -77,8 +77,6 @@ Both tools synchronize the same objects and support PHS. The choice depends on e
 ---
 
 💬 **What was the most challenging Entra Connect configuration decision you've made in a complex hybrid environment?** The multi-forest scenarios, the UPN mismatches between AD and existing cloud accounts, or the custom attribute mapping requirements are where Connect's complexity becomes visible. What required the most troubleshooting to get right?
-
-#EntraID #EntraConnect #HybridIdentity #DirectorySync #MicrosoftEntra #ActiveDirectory #PasswordHashSync
 <!-- nav -->
 
 ---

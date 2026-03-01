@@ -67,8 +67,6 @@ The test: acquire a token for a different API and try to use it against your API
 ---
 
 💬 **Have you ever audited your organization's APIs for correct audience validation, and what did you find?** The token confusion vulnerability is more common than it should be, especially in APIs built by teams without OAuth expertise. What's the validation test your team runs to confirm a new API is correctly rejecting tokens not intended for it?
-
-#EntraID #AudienceClaim #OAuth2 #APISecurity #TokenValidation #MicrosoftEntra #AppSecurity
 <!-- nav -->
 
 ---

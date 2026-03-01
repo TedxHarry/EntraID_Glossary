@@ -82,8 +82,6 @@ Then, as compliance policies are tuned and devices pass reliably, the policy req
 ---
 
 💬 **When your organization ran its first Conditional Access report on device management state, what percentage of accesses were coming from unmanaged devices?** The gap between "we think our devices are managed" and "here's what's actually hitting our apps" is often surprising. What did the data show?
-
-#EntraID #ManagedDevice #Intune #ConditionalAccess #DeviceManagement #MicrosoftEntra #ZeroTrust
 <!-- nav -->
 
 ---

@@ -66,8 +66,6 @@ Start with groups. Define what each group grants before you create it. Assign pe
 ---
 
 **Honestly:** When you look at your current environment's access control, do you know why every permission exists? Or are there things that have accumulated over time that nobody quite remembers the reason for? That gap between "what we have" and "what we intended" is where access reviews come in.
-
-#EntraID #AccessControl #CloudSecurity #MicrosoftEntra #ZeroTrust #IdentityGovernance #ITSecurity
 <!-- nav -->
 
 ---

@@ -51,8 +51,6 @@ Most developers implementing "Sign in with Microsoft" write a few lines of MSAL 
 ---
 
 💬 **Has your team ever debugged an authorization code flow failure in production, and what was the root cause?** The most common failures are redirect URI mismatches, state parameter validation errors, and PKCE verifier mismatches. Which part of the flow has caused the most debugging time for your team?
-
-#EntraID #AuthorizationCodeFlow #OAuth2 #PKCE #MSAL #MicrosoftEntra #AppDevelopment
 <!-- nav -->
 
 ---

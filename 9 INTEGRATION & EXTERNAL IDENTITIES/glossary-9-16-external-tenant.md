@@ -65,8 +65,6 @@ Applications can be multi-tenant and registered in either tenant depending on th
 ---
 
 💬 **Is your organization running both a workforce tenant and an external tenant today, or is customer identity still handled separately from your Entra ID environment?** The decision to adopt external tenants versus continuing with B2C or a third-party CIAM platform comes up differently for every organization. What would have to be true about external tenants for you to migrate an existing B2C deployment?
-
-#EntraID #ExternalTenant #EntraExternalID #CIAM #CustomerIdentity #MicrosoftEntra #WorkforceTenant
 <!-- nav -->
 
 ---

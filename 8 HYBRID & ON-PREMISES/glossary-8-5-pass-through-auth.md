@@ -85,8 +85,6 @@ The combination means both on-premises AD policy and Entra ID policy apply to ev
 ---
 
 💬 **What drove your organization's decision to use Pass-Through Authentication instead of Password Hash Sync?** The regulatory requirement around passwords not leaving on-premises is the most common answer. But the resilience trade-off is often discovered later during an on-premises incident. How did you architect for that resilience?
-
-#EntraID #PassThroughAuthentication #HybridIdentity #MicrosoftEntra #ActiveDirectory #Authentication #IdentitySecurity
 <!-- nav -->
 
 ---

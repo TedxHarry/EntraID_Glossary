@@ -71,8 +71,6 @@ Making this explicit in your identity governance documentation means provisionin
 ---
 
 💬 **Has your organization had a conflict between what the HR system says and what Entra ID shows for a user's attributes?** The name-change scenario is one of the most visible, but department, manager, and title conflicts cause quieter but equally real problems. How did you resolve the authority question?
-
-#EntraID #SourceOfAuthority #IdentityGovernance #HRIntegration #MicrosoftEntra #UserProvisioning #DirectoryManagement
 <!-- nav -->
 
 ---

@@ -77,10 +77,8 @@ If confirmed as legitimate: dismiss the risk event as safe (teaches the system t
 ---
 
 💬 **Have you investigated a risky sign-in event and found it was a genuine attack rather than a false positive?** The investigation workflow differs significantly depending on the answer. What signals in the sign-in details made the call clear?
-
-#EntraID #RiskySignIn #IDProtection #ConditionalAccess #MicrosoftEntra #ThreatDetection #IdentitySecurity
 <!-- nav -->
 
 ---
 
-[← Risk Detection: How Entra ID Knows Something Looks Wrong](glossary-7-1-risk-detection.md) | [Home](../README.md) | [Risky User: When the Account Itself Is Flagged, Not Just One Sign-In →](../6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-7-3-risky-user.md)
+[← Risk Detection: How Entra ID Knows Something Looks Wrong](glossary-7-1-risk-detection.md) | [Home](../README.md) | [Risky User: When the Account Itself Is Flagged, Not Just One Sign-In →](glossary-7-3-risky-user.md)

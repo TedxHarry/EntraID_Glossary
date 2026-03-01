@@ -59,8 +59,6 @@ The choice between them comes down to whether the identity needs to be shared ac
 ---
 
 💬 **Has your team moved from service principal secrets to managed identity for Azure workloads, or are connection strings and secrets still the primary authentication pattern?** The transition is usually incremental: one application at a time, starting with the highest-risk stored credentials. What was the first managed identity migration that made the pattern click for your team?
-
-#EntraID #ManagedIdentity #WorkloadIdentity #AzureSecurity #MicrosoftEntra #CloudSecurity #CredentialManagement
 <!-- nav -->
 
 ---

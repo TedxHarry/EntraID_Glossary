@@ -68,8 +68,6 @@ A resource server that doesn't properly validate access tokens is accepting unsi
 ---
 
 💬 **Have you ever decoded an access token to debug a permissions issue?** The moment when you paste a token into jwt.ms and see a `scp` claim that doesn't include what you expected is one of those instant "ah, that's why" moments. What did decoding a token reveal for you?
-
-#EntraID #AccessToken #JWT #OAuth2 #AppDevelopment #CloudSecurity #MicrosoftEntra
 <!-- nav -->
 
 ---

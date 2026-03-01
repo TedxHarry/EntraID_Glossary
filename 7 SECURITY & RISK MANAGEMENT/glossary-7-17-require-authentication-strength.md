@@ -78,8 +78,6 @@ Deployment sequence matters: register the required methods first, verify coverag
 ---
 
 💬 **Have you differentiated authentication strength requirements between regular users and privileged accounts?** The realization that "MFA enabled" isn't good enough for admin accounts, because SMS OTP is technically MFA, is often the catalyst for deploying FIDO2 keys or enforcing Windows Hello. What drove your organization to require stronger methods for privileged access?
-
-#EntraID #AuthenticationStrength #PhishingResistant #ConditionalAccess #MicrosoftEntra #FIDO2 #IdentitySecurity
 <!-- nav -->
 
 ---

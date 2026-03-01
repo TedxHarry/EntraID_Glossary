@@ -26,6 +26,8 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 
 ## Section 1: FOUNDATIONAL CONCEPTS
 
+*The starting point for everything. What Entra ID actually is, how tenants work, what makes cloud identity different from on-premises, and why most organizations live in a hybrid world.*
+
 1. [What Is Microsoft Entra ID? The Foundation of Modern Identity](1%20FOUNDATIONAL%20CONCEPTS/glossary-1-1-microsoft-entra-id.md)
 2. [The Microsoft Entra Product Family: Why There's More Than Just Entra ID](1%20FOUNDATIONAL%20CONCEPTS/glossary-1-2-microsoft-entra-product-family.md)
 3. [What Is a Tenant? (And Why Getting This Wrong Causes Real Problems)](1%20FOUNDATIONAL%20CONCEPTS/glossary-1-3-tenant.md)
@@ -34,6 +36,8 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 6. [Hybrid Identity: Living in Two Worlds at Once](1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md)
 
 ## Section 2: CORE IDENTITY CONCEPTS
+
+*The objects Entra ID manages: users, groups, service principals, enterprise applications, directory roles, and permissions. Understanding these is prerequisite knowledge for everything else.*
 
 1. [Identity: The Word Everyone Uses and Almost Nobody Defines](2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-1-identity.md)
 2. [The User Object: What's Actually Inside (And Why It Matters More Than You Think)](2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-2-user-identity-object.md)
@@ -49,16 +53,20 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 
 ## Section 3: AUTHENTICATION
 
-1. [Authentication: The Question Behind Every Sign-In](3%29%20AUTHENTICATION/glossary-3-1-authentication.md)
-2. [What Actually Happens When You Click "Sign In"](3%29%20AUTHENTICATION/glossary-3-2-sign-in.md)
-3. [Authentication Methods: Not All Proof Is Created Equal](3%29%20AUTHENTICATION/glossary-3-3-authentication-method.md)
-4. [Multi-Factor Authentication: Why 99.9% Attack Prevention Still Has an Asterisk](3%29%20AUTHENTICATION/glossary-3-4-mfa.md)
-5. [Passwordless Authentication: Fixing the Right Problem](3%29%20AUTHENTICATION/glossary-3-5-passwordless-authentication.md)
-6. [FIDO2: Why a Small USB Stick Can Eliminate Phishing from Your Attack Surface](3%29%20AUTHENTICATION/glossary-3-6-fido2.md)
-7. [Windows Hello for Business: It's Not Just a PIN](3%29%20AUTHENTICATION/glossary-3-7-windows-hello.md)
-8. [Microsoft Authenticator: More Than a Code Generator](3%29%20AUTHENTICATION/glossary-3-8-microsoft-authenticator.md)
+*How sign-in actually works — from password to MFA to passwordless. Covers the authentication methods Entra ID supports and the tradeoffs between them.*
+
+1. [Authentication: The Question Behind Every Sign-In](3%20AUTHENTICATION/glossary-3-1-authentication.md)
+2. [What Actually Happens When You Click "Sign In"](3%20AUTHENTICATION/glossary-3-2-sign-in.md)
+3. [Authentication Methods: Not All Proof Is Created Equal](3%20AUTHENTICATION/glossary-3-3-authentication-method.md)
+4. [Multi-Factor Authentication: Why 99.9% Attack Prevention Still Has an Asterisk](3%20AUTHENTICATION/glossary-3-4-mfa.md)
+5. [Passwordless Authentication: Fixing the Right Problem](3%20AUTHENTICATION/glossary-3-5-passwordless-authentication.md)
+6. [FIDO2: Why a Small USB Stick Can Eliminate Phishing from Your Attack Surface](3%20AUTHENTICATION/glossary-3-6-fido2.md)
+7. [Windows Hello for Business: It's Not Just a PIN](3%20AUTHENTICATION/glossary-3-7-windows-hello.md)
+8. [Microsoft Authenticator: More Than a Code Generator](3%20AUTHENTICATION/glossary-3-8-microsoft-authenticator.md)
 
 ## Section 4: TOKENS & AUTHORIZATION
+
+*OAuth 2.0, OIDC, and SAML — how Entra ID proves identity to applications and what access tokens, ID tokens, and refresh tokens actually contain.*
 
 1. [The Authorization Code: Why Sign-In Takes Two Steps Instead of One](4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-1-authorization-code.md)
 2. [The Authorization Endpoint: Reading What That Long URL Is Actually Saying](4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-2-authorization-endpoint.md)
@@ -82,6 +90,8 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 
 ## Section 5: DEVICES & COMPLIANCE
 
+*Device identity, registration, and compliance. How Entra ID and Intune track whether a device should be trusted, and what happens when it isn't.*
+
 1. [Device Compliance: When the Device Has to Earn Its Access](5%20DEVICES%20%26%20COMPLIANCE/glossary-5-1-device-compliance.md)
 2. [Device Identity: When the Device Itself Has to Prove Who It Is](5%20DEVICES%20%26%20COMPLIANCE/glossary-5-2-device-identity.md)
 3. [Device Registration: Three Ways to Join a Device to Entra ID (They're Not the Same)](5%20DEVICES%20%26%20COMPLIANCE/glossary-5-3-device-registration.md)
@@ -98,6 +108,8 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 14. [Non-Compliant Device: What Happens When the Device Fails Its Security Check](5%20DEVICES%20%26%20COMPLIANCE/glossary-5-14-non-compliant-device.md)
 
 ## Section 6: GOVERNANCE & LIFECYCLE
+
+*User provisioning, access reviews, entitlement management, and lifecycle workflows. How organizations manage identity from onboarding through offboarding.*
 
 1. [User Provisioning: Accounts That Create Themselves (When It's Done Right)](6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-1-user-provisioning.md)
 2. [User Onboarding: The First Day Experience Is an Identity Problem](6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-2-user-onboarding.md)
@@ -122,43 +134,47 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 21. [Shared Accounts: Why "We All Use the Same Login" Is a Security Problem](6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-21-shared-accounts.md)
 22. [Account Lockout: How Entra ID Stops Password Guessing Without Locking Out Real Users](6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-22-account-lockout.md)
 23. [Password Reset: Giving Users the Key to Their Own Lock](6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-23-password-reset.md)
-24. [Risky User: When the Account Itself Is Flagged, Not Just One Sign-In](6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-7-3-risky-user.md)
-25. [ID Protection: Entra ID's Automated Threat Response System](6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-7-4-id-protection.md)
 
 ## Section 7: SECURITY & RISK MANAGEMENT
 
+*Risk detection, Identity Protection, Conditional Access, and Zero Trust. The security layer that sits on top of authentication and decides whether access is safe to grant.*
+
 1. [Risk Detection: How Entra ID Knows Something Looks Wrong](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-1-risk-detection.md)
 2. [Risky Sign-In: When the Authentication Looks Suspicious](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-2-risky-sign-in.md)
-3. [Anomaly Detection: How Entra ID Learns What Normal Looks Like](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-5-anomaly-detection.md)
-4. [Leaked Credentials: When Your Password Shows Up on the Dark Web](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-6-leaked-credentials.md)
-5. [Threat Intelligence: Why Entra ID Knows an IP Is Bad Before You Do](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-7-threat-intelligence.md)
-6. [Conditional Access: The Policy Engine That Makes "Never Trust, Always Verify" Real](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-8-conditional-access.md)
-7. [CA Policy: Building the If-Then Logic of Access Control](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-9-ca-policy.md)
-8. [Zero Trust: The Security Model That Stopped Trusting Your Network](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-10-zero-trust.md)
-9. [Assignment: Who and What Your Conditional Access Policy Actually Covers](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-11-assignment.md)
-10. [Condition: The Signals That Make Conditional Access Contextual](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-12-condition.md)
-11. [Grant Control: The Access Decision in Conditional Access](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-13-grant-control.md)
-12. [Block Access: The Hardest Grant Control to Get Right](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-14-block-access.md)
-13. [Require MFA: The Grant Control That Changed Identity Security](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-15-require-mfa.md)
-14. [Require Device Compliance: The Grant Control That Stops Token Theft](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-16-require-device-compliance.md)
-15. [Require Authentication Strength: Not All MFA Is Equal](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-17-require-authentication-strength.md)
-16. [Report-Only Mode: How to Test a Policy Without Breaking Production](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-18-report-only-mode.md)
-17. [Location: Using Where You Sign In to Shape What You Can Access](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-19-location.md)
-18. [Trusted Location: Teaching Conditional Access What "Safe" Looks Like](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-20-trusted-location.md)
-19. [IP Address Range: The Building Block of Location-Based Access Control](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-21-ip-address-range.md)
-20. [Legacy Authentication: The Open Door That MFA Can't Close](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-22-legacy-authentication.md)
-21. [Session Control: Governing What Happens After Access Is Granted](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-23-session-control.md)
-22. [Terms of Use: Making Consent Part of the Access Flow](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-24-terms-of-use.md)
-23. [Authentication Strength: Why Some MFA Is Stronger Than Others](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-25-authentication-strength.md)
-24. [Authentication Methods: Choosing the Right Mix for Your Security Posture](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-26-authentication-methods-security.md)
-25. [SSPR Security: When Self-Service Password Reset Becomes an Attack Vector](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-27-sspr-security.md)
-26. [Insider Risk: When the Threat Already Has a Badge](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-28-insider-risk.md)
-27. [User Risk Level: Understanding the Number Behind the Flag](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-29-user-risk-level.md)
-28. [Sign-In Risk Level: Reading the Signals in a Single Authentication](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-30-sign-in-risk-level.md)
-29. [CA Template: Microsoft's Starting Points for Conditional Access](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-31-ca-template.md)
-30. [CAE: When Access Tokens Get Revoked Mid-Session](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-32-cae.md)
+3. [Risky User: When the Account Itself Is Flagged, Not Just One Sign-In](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-3-risky-user.md)
+4. [ID Protection: Entra ID's Automated Threat Response System](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-4-id-protection.md)
+5. [Anomaly Detection: How Entra ID Learns What Normal Looks Like](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-5-anomaly-detection.md)
+6. [Leaked Credentials: When Your Password Shows Up on the Dark Web](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-6-leaked-credentials.md)
+7. [Threat Intelligence: Why Entra ID Knows an IP Is Bad Before You Do](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-7-threat-intelligence.md)
+8. [Conditional Access: The Policy Engine That Makes "Never Trust, Always Verify" Real](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-8-conditional-access.md)
+9. [CA Policy: Building the If-Then Logic of Access Control](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-9-ca-policy.md)
+10. [Zero Trust: The Security Model That Stopped Trusting Your Network](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-10-zero-trust.md)
+11. [Assignment: Who and What Your Conditional Access Policy Actually Covers](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-11-assignment.md)
+12. [Condition: The Signals That Make Conditional Access Contextual](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-12-condition.md)
+13. [Grant Control: The Access Decision in Conditional Access](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-13-grant-control.md)
+14. [Block Access: The Hardest Grant Control to Get Right](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-14-block-access.md)
+15. [Require MFA: The Grant Control That Changed Identity Security](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-15-require-mfa.md)
+16. [Require Device Compliance: The Grant Control That Stops Token Theft](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-16-require-device-compliance.md)
+17. [Require Authentication Strength: Not All MFA Is Equal](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-17-require-authentication-strength.md)
+18. [Report-Only Mode: How to Test a Policy Without Breaking Production](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-18-report-only-mode.md)
+19. [Location: Using Where You Sign In to Shape What You Can Access](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-19-location.md)
+20. [Trusted Location: Teaching Conditional Access What "Safe" Looks Like](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-20-trusted-location.md)
+21. [IP Address Range: The Building Block of Location-Based Access Control](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-21-ip-address-range.md)
+22. [Legacy Authentication: The Open Door That MFA Can't Close](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-22-legacy-authentication.md)
+23. [Session Control: Governing What Happens After Access Is Granted](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-23-session-control.md)
+24. [Terms of Use: Making Consent Part of the Access Flow](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-24-terms-of-use.md)
+25. [Authentication Strength: Why Some MFA Is Stronger Than Others](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-25-authentication-strength.md)
+26. [Authentication Methods: Choosing the Right Mix for Your Security Posture](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-26-authentication-methods-security.md)
+27. [SSPR Security: When Self-Service Password Reset Becomes an Attack Vector](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-27-sspr-security.md)
+28. [Insider Risk: When the Threat Already Has a Badge](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-28-insider-risk.md)
+29. [User Risk Level: Understanding the Number Behind the Flag](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-29-user-risk-level.md)
+30. [Sign-In Risk Level: Reading the Signals in a Single Authentication](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-30-sign-in-risk-level.md)
+31. [CA Template: Microsoft's Starting Points for Conditional Access](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-31-ca-template.md)
+32. [CAE: When Access Tokens Get Revoked Mid-Session](7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-32-cae.md)
 
 ## Section 8: HYBRID & ON-PREMISES
+
+*Entra Connect, Cloud Sync, password hash sync, and federation. How on-premises Active Directory and Entra ID coexist and stay in sync.*
 
 1. [Directory Synchronization: Bridging On-Premises Identity with the Cloud](8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md)
 2. [Entra Connect: The Engine Behind Hybrid Identity](8%20HYBRID%20%26%20ON-PREMISES/glossary-8-2-entra-connect.md)
@@ -169,6 +185,8 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 7. [Domain Services: Active Directory Without the Domain Controllers](8%20HYBRID%20%26%20ON-PREMISES/glossary-8-7-domain-services.md)
 
 ## Section 9: INTEGRATION & EXTERNAL IDENTITIES
+
+*Integrating apps with Entra ID via OAuth, OIDC, and SAML. B2B collaboration, B2C, and external identity scenarios.*
 
 1. [App Integration: Connecting Applications to Entra ID for Authentication](9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-1-app-integration.md)
 2. [Cloud Application: SaaS in Your Tenant's Security Perimeter](9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-2-cloud-application.md)
@@ -189,6 +207,8 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 
 ## Section 10: WORKLOAD IDENTITIES & MANAGED IDENTITIES
 
+*Identity for apps and services, not people. Managed identities, workload federation, and how non-human principals authenticate securely.*
+
 1. [Workload Identity: When the Thing Connecting to Your Systems Isn't a Person](10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-1-workload-identity.md)
 2. [Managed Identity: Credentials That Azure Manages So You Don't Have To](10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-2-managed-identity.md)
 3. [System-Assigned Managed Identity: One Resource, One Identity, One Lifecycle](10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-3-system-assigned-managed-identity.md)
@@ -203,6 +223,8 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 12. [Conditional Access for Workloads: Security Policies That Apply to Applications, Not Just People](10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-12-ca-for-workloads.md)
 
 ## Section 11: TOKENS & TECHNICAL DETAILS
+
+*Deep dives into the token internals introduced in Section 4 — authorization code flow, endpoints, claims, and token security mechanics.*
 
 1. [Authorization Code Flow: The OAuth Dance That Powers Most Modern Web App Sign-Ins](11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-1-authorization-code-flow.md)
 2. [Authorization Endpoint: What's Actually in That Sign-In URL](11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-2-authorization-endpoint-deep-dive.md)
@@ -219,6 +241,8 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 
 ## Section 12: MONITORING, AUDIT & COMPLIANCE
 
+*Audit logs, sign-in logs, security alerts, and activity reports. What Entra ID records, how long it keeps it, and how to make use of it.*
+
 1. [Audit Log: The Record of Every Identity Operation in Your Tenant](12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-1-audit-log.md)
 2. [Sign-In Log: The Authentication Record Your Security Team Needs to Know Cold](12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-2-sign-in-log.md)
 3. [Activity Report: The Trend View That Audit Logs and Sign-In Logs Don't Give You](12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-3-activity-report.md)
@@ -226,6 +250,8 @@ A comprehensive glossary of Microsoft Entra ID (formerly Azure Active Directory)
 5. [Compliance: How Entra ID Controls Map to the Regulations Your Auditors Ask About](12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-5-compliance.md)
 
 ## Section 13: ADVANCED FEATURES & CONCEPTS
+
+*ABAC, cross-tenant access, Global Secure Access, PIM deep dives, and multi-feature scenarios. Where individual capabilities combine into real architecture.*
 
 1. [Attribute-Based Access Control: Access Decisions That Go Beyond Role Membership](13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-1-abac.md)
 2. [Cloud-Based Sync (Advanced): Complex Synchronization Scenarios Beyond the Basics](13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-2-cloud-sync-advanced.md)
@@ -271,4 +297,4 @@ Each article in this glossary series goes beyond dictionary definitions. The ent
 
 ---
 
-*Part of the Entra ID Glossary Series — start at [Glossary #1.1: Microsoft Entra ID](1%20FOUNDATIONAL%20CONCEPTS/glossary-1-1-microsoft-entra-id.md)*
+*Start reading at [Glossary #1.1: Microsoft Entra ID](1%20FOUNDATIONAL%20CONCEPTS/glossary-1-1-microsoft-entra-id.md)*

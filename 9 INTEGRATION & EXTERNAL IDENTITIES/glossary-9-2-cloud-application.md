@@ -67,8 +67,6 @@ The solution isn't blocking all unapproved applications (that creates friction w
 ---
 
 💬 **How many cloud applications are formally integrated with Entra ID in your tenant?** The gap between the number IT knows about and the number actually in use is almost always larger than expected. Has your organization done a shadow IT discovery exercise, and what did the results look like?
-
-#EntraID #CloudApplication #SaaS #ShadowIT #MicrosoftEntra #ConditionalAccess #AppIntegration
 <!-- nav -->
 
 ---

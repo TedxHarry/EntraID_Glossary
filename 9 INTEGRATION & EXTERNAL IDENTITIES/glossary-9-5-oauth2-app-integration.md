@@ -66,8 +66,6 @@ Application permissions require admin consent (a tenant admin explicitly grants 
 ---
 
 💬 **What's the most over-permissioned application registration you've found in your tenant?** Application permissions that were granted broadly during development and never scoped down are common. Mail.ReadAll granted when only one mailbox needed to be read. Directory.ReadWrite.All when only a few attributes needed updating. What was the permission scope that prompted a least-privilege review?
-
-#EntraID #OAuth2 #AppIntegration #MicrosoftEntra #APIPermissions #ApplicationSecurity #IdentityDev
 <!-- nav -->
 
 ---

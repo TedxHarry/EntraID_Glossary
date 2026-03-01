@@ -58,8 +58,6 @@ Keeping agents updated matters: security fixes, bug fixes, and new feature suppo
 ---
 
 💬 **What monitoring do you have in place for your sync agent health, and how quickly does your team get alerted when synchronization fails?** The sync agent is critical infrastructure: when it fails, identity operations fail. But it's often under-monitored compared to other infrastructure. What's the longest synchronization outage your environment has experienced, and what caused it?
-
-#EntraID #SyncAgent #EntraConnect #CloudSync #HybridIdentity #DirectorySynchronization #MicrosoftEntra
 <!-- nav -->
 
 ---

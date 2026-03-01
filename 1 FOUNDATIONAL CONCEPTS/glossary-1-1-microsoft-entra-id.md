@@ -68,8 +68,6 @@ Start here. Get this solid. Everything else builds on it. 🔑
 ---
 
 **Over to you:** When did you first encounter Entra ID (or Azure AD)? Were you thrown in the deep end like my colleague, or did you have time to learn it properly? Drop your story in the comments — I read every one.
-
-#EntraID #MicrosoftEntra #CloudSecurity #BeginnerContent #IdentityManagement #AzureAD #Microsoft365
 <!-- nav -->
 
 ---

@@ -72,8 +72,6 @@ Get comfortable with identity as a concept — all three types, their distinct s
 ---
 
 **Think about your own environment:** How many different types of identities are you managing right now? Most people underestimate the workload identity count — the apps and services quietly authenticating in the background. Do you know how many service principals are active in your tenant?
-
-#EntraID #IdentityManagement #CloudSecurity #MicrosoftEntra #ZeroTrust #WorkloadIdentity #BeginnerContent
 <!-- nav -->
 
 ---

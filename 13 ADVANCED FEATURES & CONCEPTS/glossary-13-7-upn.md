@@ -60,8 +60,6 @@ Alternate Login ID has limitations for some on-premises scenarios (Kerberos auth
 ---
 
 💬 **Has your organization had to tackle a non-routable UPN suffix migration or a UPN/email alignment project, and what was the most disruptive part of the change?** The `.local` domain UPN migration is one of the most commonly underestimated hybrid identity remediation projects. What's the approach you took to minimize disruption to users and dependent applications?
-
-#EntraID #UPN #UserPrincipalName #HybridIdentity #DirectorySynchronization #MicrosoftEntra #IdentityManagement
 <!-- nav -->
 
 ---

@@ -68,8 +68,6 @@ Different teams tend to own different layers. The identity team manages director
 ---
 
 **Which "role" causes the most confusion in your team?** My experience is that app roles are the least understood — developers implement them but the IT admin team doesn't always know they exist. Is that true where you work?
-
-#EntraID #RBAC #AppRoles #IdentityManagement #CloudSecurity #MicrosoftEntra #AzureSecurity
 <!-- nav -->
 
 ---

@@ -66,8 +66,6 @@ For new deployments without Exchange hybrid or device hybrid requirements, Cloud
 ---
 
 💬 **Has your organization's synchronization architecture evolved beyond a single forest to single tenant setup, and what were the most complex attribute mapping or scoping challenges you had to solve?** Multi-forest scenarios from mergers and acquisitions are the most common driver of advanced synchronization complexity. What decision in your sync configuration do you wish you'd made differently at the start?
-
-#EntraID #CloudSync #EntraConnect #HybridIdentity #DirectorySynchronization #MicrosoftEntra #MultiForest
 <!-- nav -->
 
 ---

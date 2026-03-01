@@ -63,8 +63,6 @@ A CIAM solution needs to handle the full customer identity lifecycle:
 ---
 
 💬 **Has your organization evaluated CIAM requirements for a customer-facing application?** The moment when someone says "can we just put customers in our company's Active Directory?" is the moment CIAM becomes a real conversation. What requirements drove your organization to look at a dedicated CIAM platform?
-
-#EntraID #CIAM #CustomerIdentity #B2C #ExternalIdentities #MicrosoftEntra #ConsumerIdentity
 <!-- nav -->
 
 ---

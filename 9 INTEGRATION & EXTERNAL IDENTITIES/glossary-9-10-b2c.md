@@ -65,8 +65,6 @@ The underlying need remains the same: organizations building consumer-facing app
 ---
 
 💬 **Has your organization used B2C (or Entra External ID) for a customer-facing application?** The decision between building identity in-house and using a managed CIAM service is one every team building consumer applications faces. What was the factor that most influenced the decision to use a managed service?
-
-#EntraID #B2C #CIAM #CustomerIdentity #MicrosoftEntra #ExternalIdentities #AppDevelopment
 <!-- nav -->
 
 ---

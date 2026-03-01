@@ -71,8 +71,6 @@ For organizations early in their authentication journey, "Authenticator with pus
 ---
 
 💬 **How many of your users have the Authenticator app registered and actually use it for sign-in?** And have you enabled number matching and additional context if you're using push notifications? The difference in attack resistance between plain push and number-matched push is significant.
-
-#EntraID #MicrosoftAuthenticator #MFA #CloudSecurity #Passwordless #MicrosoftEntra #IdentityProtection
 <!-- nav -->
 
 ---

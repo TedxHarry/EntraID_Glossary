@@ -77,8 +77,6 @@ The guest lifecycle requires active management:
 ---
 
 💬 **What's your organization's process for managing the lifecycle of guest users in your tenant?** The "guests who stayed long after the project ended" problem is universal. How do you handle the review and cleanup of stale guest access, and what prompted you to formalize the process?
-
-#EntraID #B2BCollaboration #GuestAccess #ExternalIdentity #MicrosoftEntra #IdentityGovernance #Collaboration
 <!-- nav -->
 
 ---

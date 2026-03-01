@@ -51,8 +51,6 @@ The security improvement from LLTs comes from the combination of reduced authent
 ---
 
 💬 **Has your team measured the authentication overhead from frequent token acquisitions in high-volume workloads?** The shift from hourly to daily token acquisition sounds small, but for workloads making thousands of API calls per day, it can be meaningful. What Azure services are your workloads authenticating to most frequently, and are they CAE-capable?
-
-#EntraID #LongLivedTokens #LLTs #CAE #WorkloadIdentity #TokenSecurity #MicrosoftEntra
 <!-- nav -->
 
 ---

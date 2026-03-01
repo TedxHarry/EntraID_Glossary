@@ -80,8 +80,6 @@ The attacker in the opening scenario succeeded because the organization had impl
 ---
 
 💬 **Where is your organization on the Zero Trust maturity journey?** Most organizations have MFA deployed. Fewer have device compliance enforced. Even fewer have risk-based access and JIT privilege. What's the next control you're working to implement, and what's the blocker?
-
-#EntraID #ZeroTrust #ConditionalAccess #MicrosoftEntra #IdentitySecurity #NeverTrustAlwaysVerify #ModernSecurity
 <!-- nav -->
 
 ---

@@ -75,8 +75,6 @@ Disabling the account is faster than revoking tokens for stopping access to CAE-
 ---
 
 💬 **Has your organization's incident response playbook accounted for the access token revocation gap?** The gap between "we revoked the tokens" and "access actually stopped" surprises most teams the first time they encounter it in a real incident. Does your playbook distinguish between CAE-capable and non-CAE-capable services in the revocation workflow?
-
-#EntraID #TokenRevocation #CAE #IncidentResponse #OAuth2 #MicrosoftEntra #IdentitySecurity
 <!-- nav -->
 
 ---

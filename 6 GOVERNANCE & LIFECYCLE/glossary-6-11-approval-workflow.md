@@ -66,8 +66,6 @@ For compliance purposes, an audit trail showing "manager approved on March 15, d
 ---
 
 💬 **Have you had an approval workflow fail operationally - an approver not reachable, a notification going to the wrong place, or a timeout expiring without anyone noticing?** The approval workflow design on paper and the approval workflow in practice often diverge significantly. What did you change to make it more reliable?
-
-#EntraID #ApprovalWorkflow #EntitlementManagement #IdentityGovernance #MicrosoftEntra #AccessManagement #IGA
 <!-- nav -->
 
 ---

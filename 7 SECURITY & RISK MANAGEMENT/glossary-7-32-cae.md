@@ -79,8 +79,6 @@ For high-security scenarios (admin accounts, sensitive data access), strict enfo
 ---
 
 💬 **Before you knew about CAE, did you realize there was a window between an account being disabled and access actually stopping?** The gap between "policy enforced" and "policy actually takes effect on active sessions" is surprising to many administrators. Has knowing about this gap changed how quickly you respond to account compromise incidents?
-
-#EntraID #CAE #ContinuousAccessEvaluation #ConditionalAccess #MicrosoftEntra #ZeroTrust #IdentitySecurity
 <!-- nav -->
 
 ---

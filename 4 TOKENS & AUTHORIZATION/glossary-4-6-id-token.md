@@ -81,8 +81,6 @@ In practice, use a well-maintained OAuth/OIDC library for your platform rather t
 ---
 
 💬 **Have you come across code that confused ID tokens with access tokens?** It's one of the most common OAuth implementation mistakes and usually surfaces as mysterious 401 errors from APIs that worked fine during development. What was the context when you spotted it?
-
-#EntraID #IDToken #OpenIDConnect #OAuth2 #AppDevelopment #MicrosoftEntra #CloudSecurity
 <!-- nav -->
 
 ---

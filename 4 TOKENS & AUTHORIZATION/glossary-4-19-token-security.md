@@ -63,8 +63,6 @@ Depending on the token's permissions and how long it was accessible, a breach no
 ---
 
 💬 **Have you found an access token somewhere it had no business being - a log file, a public repository, a chat message?** It happens more often than organizations realize, and it's usually not malicious, just someone debugging without thinking through where the output lands. What was the cleanup process?
-
-#EntraID #TokenSecurity #OAuth2 #CloudSecurity #AppSecurity #MicrosoftEntra #SecureDevelopment
 <!-- nav -->
 
 ---

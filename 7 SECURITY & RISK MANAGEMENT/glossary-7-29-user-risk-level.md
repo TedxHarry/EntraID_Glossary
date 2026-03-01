@@ -80,8 +80,6 @@ An account at High risk that no one has investigated or remediated stays at High
 ---
 
 💬 **What's your current process for triaging risky users in Identity Protection?** The gap between "we have Identity Protection deployed" and "we have a process for responding to risk events" is significant in many organizations. How often do you review the risky users list, and what's your SLA for investigating High risk accounts?
-
-#EntraID #UserRiskLevel #IDProtection #MicrosoftEntra #IdentitySecurity #RiskManagement #ZeroTrust
 <!-- nav -->
 
 ---

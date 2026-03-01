@@ -75,8 +75,6 @@ This is a real operational issue for teams that regularly rebuild resources (tes
 ---
 
 💬 **What's your team's approach to tracking managed identity Principal IDs and their associated role assignments?** The role assignment audit trail is straightforward in the Azure portal, but at scale, knowing which managed identities have which permissions across which resources requires deliberate tracking. Do you use Terraform state, ARM templates, or another mechanism to maintain that mapping?
-
-#EntraID #ManagedIdentity #PrincipalID #RBAC #WorkloadIdentity #AzureSecurity #MicrosoftEntra
 <!-- nav -->
 
 ---

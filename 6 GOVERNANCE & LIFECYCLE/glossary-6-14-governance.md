@@ -71,8 +71,6 @@ Organizations that implement governance to solve a compliance requirement often 
 ---
 
 💬 **Where would you place your organization on the governance maturity scale?** Most teams know they have a governance gap somewhere: too many permanent admin assignments, groups without owners, app accounts that outlast the Entra ID account. What's the gap you're most aware of?
-
-#EntraID #IdentityGovernance #MicrosoftEntra #AccessManagement #PIM #IGA #ZeroTrust
 <!-- nav -->
 
 ---

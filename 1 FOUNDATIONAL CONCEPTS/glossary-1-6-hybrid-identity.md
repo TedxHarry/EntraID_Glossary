@@ -78,8 +78,6 @@ Understanding hybrid identity isn't advanced material. It's practical reality. ð
 ---
 
 **Where are you in your hybrid journey?** Are you managing a hybrid environment right now, planning a migration toward cloud-only, or starting fresh with cloud-first? What's the hardest part you've run into â€” the technology or convincing stakeholders that it's worth the effort?
-
-#EntraID #HybridIdentity #ActiveDirectory #CloudMigration #IdentityManagement #EntraConnect #Microsoft365
 <!-- nav -->
 
 ---

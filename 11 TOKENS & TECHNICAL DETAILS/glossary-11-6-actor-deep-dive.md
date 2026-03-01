@@ -65,8 +65,6 @@ This is the most common OBO implementation failure: the downstream API permissio
 ---
 
 💬 **Does your organization use On-Behalf-Of flows in any API-to-API call chains, and have you had to trace a request through a multi-tier actor chain in audit logs?** OBO is common in architectures where user context needs to propagate through API tiers, but the consent and permission setup can be tricky. What was the hardest OBO configuration challenge your team worked through?
-
-#EntraID #OnBehalfOf #OBOFlow #OAuth2 #ActorClaim #MicrosoftEntra #AppDevelopment
 <!-- nav -->
 
 ---

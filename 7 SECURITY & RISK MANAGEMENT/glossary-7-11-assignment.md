@@ -86,8 +86,6 @@ Report-Only mode provides the same validation at scale across real sign-ins rath
 ---
 
 💬 **What's the largest exclusion list you've inherited on a Conditional Access policy?** The "we'll clean it up later" exclusion group that never gets reviewed is a common pattern in tenants that have been running CA policies for a few years. How did you approach rationalizing it?
-
-#EntraID #ConditionalAccess #PolicyAssignment #MicrosoftEntra #ZeroTrust #IdentityGovernance #AccessControl
 <!-- nav -->
 
 ---

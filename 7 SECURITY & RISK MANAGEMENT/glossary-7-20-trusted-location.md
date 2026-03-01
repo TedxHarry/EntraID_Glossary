@@ -74,8 +74,6 @@ This is why Trusted Locations work best as one layer in a defense-in-depth archi
 ---
 
 💬 **How many Named Locations do you have defined as trusted in your tenant?** The difference between a clean, intentionally scoped set of trusted locations and an organically grown list of 40 IP ranges nobody can explain is significant. How often do you review and audit your trusted location definitions?
-
-#EntraID #TrustedLocation #ConditionalAccess #NamedLocations #MicrosoftEntra #ZeroTrust #IdentitySecurity
 <!-- nav -->
 
 ---

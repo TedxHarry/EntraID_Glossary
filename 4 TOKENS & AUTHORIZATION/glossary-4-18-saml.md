@@ -73,8 +73,6 @@ For new integrations where you have a choice, OIDC. For existing applications th
 ---
 
 💬 **What's the SAML integration that took you the longest to get working?** Attribute mapping problems and entity ID mismatches are the usual culprits. There's something about debugging a SAML authentication failure from a wall of XML that concentrates the mind. What was the eventual fix?
-
-#EntraID #SAML #Authentication #EnterpriseApps #SSOIntegration #MicrosoftEntra #CloudSecurity
 <!-- nav -->
 
 ---

@@ -78,8 +78,6 @@ Role-assignable groups are deliberately restricted — they can only be managed 
 ---
 
 **Over to you:** Are you using dynamic groups in your environment? If you're still on assigned membership for most things, what's holding you back — licensing, complexity, or just hasn't been prioritized yet? I'd genuinely like to know what the common blockers look like in practice.
-
-#EntraID #IdentityManagement #CloudSecurity #MicrosoftEntra #DynamicGroups #Microsoft365 #ITAdmin
 <!-- nav -->
 
 ---

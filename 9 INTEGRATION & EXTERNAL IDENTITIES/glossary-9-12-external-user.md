@@ -77,8 +77,6 @@ Governance mechanisms that help:
 ---
 
 💬 **What does your external user governance process look like today?** The difference between organizations that have quarterly access reviews for guest accounts and those that haven't reviewed their guest list since it was created is often visible in the size and staleness of their guest user population. What would a clean-up of your current tenant's external users reveal?
-
-#EntraID #ExternalUser #GuestAccess #B2BCollaboration #MicrosoftEntra #IdentityGovernance #AccessReview
 <!-- nav -->
 
 ---

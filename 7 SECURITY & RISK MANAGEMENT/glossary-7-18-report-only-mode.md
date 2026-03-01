@@ -91,8 +91,6 @@ Use both: What If for pre-deployment spot checking, Report-Only for observing re
 ---
 
 💬 **What's the most surprising thing you discovered by running a policy in Report-Only mode before enforcement?** The legacy auth scenarios that appear are often genuinely unexpected. Printers, conference room displays, old integrations, monitoring tools. What did report-only reveal in your environment that would have caused an outage if you'd enforced immediately?
-
-#EntraID #ConditionalAccess #ReportOnlyMode #MicrosoftEntra #PolicyTesting #LegacyAuth #IdentitySecurity
 <!-- nav -->
 
 ---

@@ -89,10 +89,8 @@ False positive rate drops over time as the system builds accurate baselines. New
 ---
 
 💬 **When you first enabled ID Protection, what was the ratio of genuine attacks to false positives in the first month?** The initial calibration period is always noisier than steady state. What detection type generated the most false positives in your environment, and how long did it take to tune down?
-
-#EntraID #IDProtection #IdentityProtection #RiskDetection #MicrosoftEntra #ConditionalAccess #ZeroTrust
 <!-- nav -->
 
 ---
 
-[← Risky User: When the Account Itself Is Flagged, Not Just One Sign-In](glossary-7-3-risky-user.md) | [Home](../README.md) | [Anomaly Detection: How Entra ID Learns What Normal Looks Like →](../7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-5-anomaly-detection.md)
+[← Risky User: When the Account Itself Is Flagged, Not Just One Sign-In](glossary-7-3-risky-user.md) | [Home](../README.md) | [Anomaly Detection: How Entra ID Learns What Normal Looks Like →](glossary-7-5-anomaly-detection.md)

@@ -95,8 +95,6 @@ This is why exclusions need careful design. An exclusion from one policy doesn't
 ---
 
 💬 **What's the trickiest CA policy interaction you've debugged?** The "why is this user being asked for MFA when they shouldn't be" investigation almost always comes down to an unexpected policy match. What was the policy that surprised you?
-
-#EntraID #ConditionalAccess #CAPolicyDesign #MicrosoftEntra #ZeroTrust #IdentitySecurity #AccessControl
 <!-- nav -->
 
 ---

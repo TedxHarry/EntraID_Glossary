@@ -68,8 +68,6 @@ Disabling the device object prevents the device from getting new device-level to
 ---
 
 💬 **Has a lost or stolen device ever exposed a gap in your offboarding or incident response process?** The device object in Entra ID is often the last thing people think to disable, focusing entirely on the user account. What's in your current device incident response checklist?
-
-#EntraID #DeviceIdentity #ZeroTrust #DeviceManagement #MicrosoftEntra #ConditionalAccess #EndpointSecurity
 <!-- nav -->
 
 ---

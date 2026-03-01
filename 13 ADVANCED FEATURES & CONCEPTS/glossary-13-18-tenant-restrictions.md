@@ -68,8 +68,6 @@ The complementary controls for complete data governance: DLP policies in Microso
 ---
 
 💬 **Has your organization implemented Tenant Restrictions to control which Microsoft tenants corporate devices and networks can authenticate to, and what data governance requirement drove the decision?** The personal OneDrive data leakage scenario is the most common driver. Organizations in regulated industries often implement Tenant Restrictions as part of broader DLP programs. What's the biggest gap in your current control set for preventing data movement through Microsoft services?
-
-#EntraID #TenantRestrictions #DataGovernance #DLP #ZeroTrust #MicrosoftEntra #CloudSecurity
 <!-- nav -->
 
 ---

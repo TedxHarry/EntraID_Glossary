@@ -61,8 +61,6 @@ For organizations using the full Entra ID stack, GSA is the layer that closes th
 ---
 
 💬 **Is your organization evaluating or using Global Secure Access or a competing ZTNA solution to replace legacy VPN, and what's driving the timeline?** The VPN replacement conversation is happening in most organizations, pushed by remote work patterns and the inadequacy of network-perimeter security models. What would have to be true about GSA for your organization to commit to it over alternatives?
-
-#EntraID #GlobalSecureAccess #ZTNA #ZeroTrust #PrivateAccess #MicrosoftEntra #NetworkSecurity
 <!-- nav -->
 
 ---
