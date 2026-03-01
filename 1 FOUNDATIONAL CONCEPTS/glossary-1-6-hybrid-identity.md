@@ -69,12 +69,6 @@ If you're studying Entra ID to work in enterprise IT, you will almost certainly 
 
 Understanding hybrid identity isn't advanced material. It's practical reality. 🔄
 
----
-
-🔗 **Related Terms:**
-- Glossary#1.5 - Active Directory (the on-premises side of hybrid identity)
-- Glossary#1.4 - Cloud-Based Identity (the cloud side of the equation)
-- Glossary#8.1 - Directory Synchronization (the technical mechanism behind sync)
 
 ---
 
