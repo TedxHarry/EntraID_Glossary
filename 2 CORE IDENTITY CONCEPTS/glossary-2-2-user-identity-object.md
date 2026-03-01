@@ -79,12 +79,6 @@ The account is the foundation. When access breaks, start here before reaching fo
 
 Four checks. Covers a substantial majority of basic user access problems. 👤
 
----
-
-🔗 **Related Terms:**
-- Glossary#2.1 - Identity (the broader concept the user object is an instance of)
-- Glossary#2.4 - Group (how users are organized for access management at scale)
-- Glossary#6.1 - User Provisioning (how users get created automatically)
 
 ---
 
