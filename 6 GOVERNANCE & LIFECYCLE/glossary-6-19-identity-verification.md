@@ -1,4 +1,5 @@
-# Identity Verification: Confirming the Person Behind the Account
+# Identity Verification
+*Confirming the Person Behind the Account*
 
 **Part of Entra ID Glossary Series: Glossary#6.19 - Identity Verification**
 
@@ -77,4 +78,4 @@ Verification requirements should scale with what the verified identity will acce
 
 ---
 
-[← Source of Authority: Which System Gets to Say Who You Are](glossary-6-18-source-of-authority.md) | [Home](../README.md) | [Emergency Access: The Account You Hope You Never Need →](glossary-6-20-emergency-access.md)
+[← Source of Authority](glossary-6-18-source-of-authority.md) | [Home](../README.md) | [Emergency Access →](glossary-6-20-emergency-access.md)

@@ -1,4 +1,5 @@
-# The ID Token: Proof of Who Signed In (Not a Key to the API)
+# ID Token
+*Proof of Who Signed In (Not a Key to the API)*
 
 **Part of Entra ID Glossary Series: Glossary#4.6 - ID Token**
 
@@ -85,4 +86,4 @@ In practice, use a well-maintained OAuth/OIDC library for your platform rather t
 
 ---
 
-[← Access Tokens: What's Actually Inside That Long String](glossary-4-5-access-token.md) | [Home](../README.md) | [Refresh Tokens: What "Keep Me Signed In" Is Actually Doing →](glossary-4-7-refresh-token.md)
+[← Access Token](glossary-4-5-access-token.md) | [Home](../README.md) | [Refresh Token →](glossary-4-7-refresh-token.md)

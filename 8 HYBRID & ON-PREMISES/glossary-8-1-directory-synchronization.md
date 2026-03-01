@@ -1,4 +1,5 @@
-# Directory Synchronization: Bridging On-Premises Identity with the Cloud
+# Directory Synchronization
+*Bridging On-Premises Identity with the Cloud*
 
 **Part of Entra ID Glossary Series: Glossary#8.1 - Directory Synchronization**
 
@@ -85,4 +86,4 @@ Entra Connect Health (available with Entra ID P2) provides monitoring dashboards
 
 ---
 
-[← CAE: When Access Tokens Get Revoked Mid-Session](../7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-32-cae.md) | [Home](../README.md) | [Entra Connect: The Engine Behind Hybrid Identity →](glossary-8-2-entra-connect.md)
+[← CAE (Continuous Access Evaluation)](../7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-32-cae.md) | [Home](../README.md) | [Entra Connect →](glossary-8-2-entra-connect.md)

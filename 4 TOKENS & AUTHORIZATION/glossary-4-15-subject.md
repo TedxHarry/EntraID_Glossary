@@ -1,4 +1,5 @@
-# Subject: Whose Data Is This, Really?
+# Subject
+*Whose Data Is This, Really?*
 
 **Part of Entra ID Glossary Series: Glossary#4.15 - Subject**
 
@@ -61,4 +62,4 @@ The `sub` claim is still useful. It's the right identifier to use when you speci
 
 ---
 
-[← Actor: The Application in the Token, and Why It Matters](glossary-4-14-actor.md) | [Home](../README.md) | [OAuth 2.0: The Protocol That Solved a Problem We Didn't Realize Was a Problem →](glossary-4-16-oauth2.md)
+[← Actor](glossary-4-14-actor.md) | [Home](../README.md) | [OAuth 2.0 →](glossary-4-16-oauth2.md)

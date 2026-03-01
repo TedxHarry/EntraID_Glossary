@@ -1,4 +1,5 @@
-# Token Endpoint: Where Codes and Credentials Become Tokens
+# Token Endpoint (Deep Dive)
+*Where Codes and Credentials Become Tokens*
 
 **Part of Entra ID Glossary Series: Glossary#11.3 - Token Endpoint (Deep Dive)**
 
@@ -73,4 +74,4 @@ A successful token response is a JSON object with:
 
 ---
 
-[← Authorization Endpoint: What's Actually in That Sign-In URL](glossary-11-2-authorization-endpoint-deep-dive.md) | [Home](../README.md) | [Authorization Server: What Entra ID Is Actually Doing When It Issues a Token →](glossary-11-4-authorization-server-deep-dive.md)
+[← Authorization Endpoint (Deep Dive)](glossary-11-2-authorization-endpoint-deep-dive.md) | [Home](../README.md) | [Authorization Server (Deep Dive) →](glossary-11-4-authorization-server-deep-dive.md)

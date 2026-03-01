@@ -1,4 +1,5 @@
-# Assignment: Who and What Your Conditional Access Policy Actually Covers
+# Assignment
+*Who and What Your Conditional Access Policy Actually Covers*
 
 **Part of Entra ID Glossary Series: Glossary#7.11 - Assignment**
 
@@ -90,4 +91,4 @@ Report-Only mode provides the same validation at scale across real sign-ins rath
 
 ---
 
-[← Zero Trust: The Security Model That Stopped Trusting Your Network](glossary-7-10-zero-trust.md) | [Home](../README.md) | [Condition: The Signals That Make Conditional Access Contextual →](glossary-7-12-condition.md)
+[← Zero Trust](glossary-7-10-zero-trust.md) | [Home](../README.md) | [Condition →](glossary-7-12-condition.md)

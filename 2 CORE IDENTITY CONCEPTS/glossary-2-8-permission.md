@@ -1,4 +1,5 @@
-# API Permissions in Entra ID: Reading What You're Actually Granting
+# Permission
+*Reading What You're Actually Granting*
 
 **Part of Entra ID Glossary Series: Glossary#2.8 - Permission**
 
@@ -73,4 +74,4 @@ Before requesting any permission, ask: does this need to act on behalf of a user
 
 ---
 
-[← Access Control: What It Actually Means When Everything Is Everywhere](glossary-2-7-access-control.md) | [Home](../README.md) | ["Role": One Word, Three Completely Different Things in Entra ID →](glossary-2-9-role-identity-role.md)
+[← Access Control](glossary-2-7-access-control.md) | [Home](../README.md) | [Role (Identity Role) →](glossary-2-9-role-identity-role.md)

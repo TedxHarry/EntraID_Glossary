@@ -1,4 +1,5 @@
-# Authentication: The Question Behind Every Sign-In
+# Authentication
+*The Question Behind Every Sign-In*
 
 **Part of Entra ID Glossary Series: Glossary#3.1 - Authentication**
 
@@ -74,4 +75,4 @@ Strong authentication is the floor. Build everything else on top of it.
 
 ---
 
-[← Admin Roles: The Keys to Your Tenant and Why You Need Far Fewer of Them](../2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-11-admin-role.md) | [Home](../README.md) | [What Actually Happens When You Click "Sign In" →](glossary-3-2-sign-in.md)
+[← Admin Role](../2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-11-admin-role.md) | [Home](../README.md) | [Sign-In →](glossary-3-2-sign-in.md)

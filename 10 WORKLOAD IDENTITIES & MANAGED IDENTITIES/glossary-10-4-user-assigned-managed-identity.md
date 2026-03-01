@@ -1,4 +1,5 @@
-# User-Assigned Managed Identity: One Identity Shared Across Many Resources
+# User-Assigned Managed Identity
+*One Identity Shared Across Many Resources*
 
 **Part of Entra ID Glossary Series: Glossary#10.4 - User-Assigned Managed Identity**
 
@@ -69,4 +70,4 @@ The choice isn't permanent. Starting with system-assigned and migrating to user-
 
 ---
 
-[← System-Assigned Managed Identity: One Resource, One Identity, One Lifecycle](glossary-10-3-system-assigned-managed-identity.md) | [Home](../README.md) | [Workload Federation: Authenticating to Azure Without Storing Azure Credentials →](glossary-10-5-workload-federation.md)
+[← System-Assigned Managed Identity](glossary-10-3-system-assigned-managed-identity.md) | [Home](../README.md) | [Workload Federation →](glossary-10-5-workload-federation.md)

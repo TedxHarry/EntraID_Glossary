@@ -1,4 +1,5 @@
-# Device Enrollment: The Difference Between Knowing a Device Exists and Managing It
+# Device Enrollment
+*The Difference Between Knowing a Device Exists and Managing It*
 
 **Part of Entra ID Glossary Series: Glossary#5.4 - Device Enrollment**
 
@@ -63,4 +64,4 @@ In the incident that opened this article, the fix was implementing App Protectio
 
 ---
 
-[← Device Registration: Three Ways to Join a Device to Entra ID (They're Not the Same)](glossary-5-3-device-registration.md) | [Home](../README.md) | [Intune: What the Device Management Piece of Microsoft's Puzzle Actually Does →](glossary-5-5-intune.md)
+[← Device Registration](glossary-5-3-device-registration.md) | [Home](../README.md) | [Intune →](glossary-5-5-intune.md)

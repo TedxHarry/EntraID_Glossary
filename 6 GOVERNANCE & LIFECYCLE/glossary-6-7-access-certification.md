@@ -1,4 +1,5 @@
-# Access Certification: When "Reviewed" Has to Mean Something to an Auditor
+# Access Certification
+*When "Reviewed" Has to Mean Something to an Auditor*
 
 **Part of Entra ID Glossary Series: Glossary#6.7 - Access Certification**
 
@@ -78,4 +79,4 @@ Entitlement Management access packages (covered in Glossary#6.9) can have access
 
 ---
 
-[← Access Review: The Audit That Finds What Accumulates Over Time](glossary-6-6-access-review.md) | [Home](../README.md) | [Recertification: Access That Was Right Then Might Not Be Right Now →](glossary-6-8-recertification.md)
+[← Access Review](glossary-6-6-access-review.md) | [Home](../README.md) | [Recertification →](glossary-6-8-recertification.md)

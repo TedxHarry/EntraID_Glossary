@@ -1,4 +1,5 @@
-# Service Principal: The Most Misunderstood Object in Entra ID
+# Service Principal
+*The Most Misunderstood Object in Entra ID*
 
 **Part of Entra ID Glossary Series: Glossary#2.3 - Service Principal**
 
@@ -72,4 +73,4 @@ Finding service principals is straightforward: in the Entra admin center, go to 
 
 ---
 
-[← The User Object: What's Actually Inside (And Why It Matters More Than You Think)](glossary-2-2-user-identity-object.md) | [Home](../README.md) | [Groups in Entra ID: The Access Management Tool You Should Be Using More →](glossary-2-4-group.md)
+[← User (Identity Object)](glossary-2-2-user-identity-object.md) | [Home](../README.md) | [Group →](glossary-2-4-group.md)

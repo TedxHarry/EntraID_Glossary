@@ -1,4 +1,5 @@
-# Identity: The Word Everyone Uses and Almost Nobody Defines
+# Identity
+*The Word Everyone Uses and Almost Nobody Defines*
 
 **Part of Entra ID Glossary Series: Glossary#2.1 - Identity**
 
@@ -76,4 +77,4 @@ Get comfortable with identity as a concept — all three types, their distinct s
 
 ---
 
-[← Hybrid Identity: Living in Two Worlds at Once](../1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md) | [Home](../README.md) | [The User Object: What's Actually Inside (And Why It Matters More Than You Think) →](glossary-2-2-user-identity-object.md)
+[← Hybrid Identity](../1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md) | [Home](../README.md) | [User (Identity Object) →](glossary-2-2-user-identity-object.md)

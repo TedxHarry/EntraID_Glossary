@@ -1,4 +1,5 @@
-# Source of Authority: Which System Gets to Say Who You Are
+# Source of Authority
+*Which System Gets to Say Who You Are*
 
 **Part of Entra ID Glossary Series: Glossary#6.18 - Source of Authority**
 
@@ -75,4 +76,4 @@ Making this explicit in your identity governance documentation means provisionin
 
 ---
 
-[← User Attributes: The Properties That Drive Everything Else](glossary-6-17-user-attributes.md) | [Home](../README.md) | [Identity Verification: Confirming the Person Behind the Account →](glossary-6-19-identity-verification.md)
+[← User Attributes](glossary-6-17-user-attributes.md) | [Home](../README.md) | [Identity Verification →](glossary-6-19-identity-verification.md)

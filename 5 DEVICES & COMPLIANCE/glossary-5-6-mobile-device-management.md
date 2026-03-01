@@ -1,4 +1,5 @@
-# Mobile Device Management: The Trade-Off Between Control and Trust
+# Mobile Device Management
+*The Trade-Off Between Control and Trust*
 
 **Part of Entra ID Glossary Series: Glossary#5.6 - Mobile Device Management**
 
@@ -70,4 +71,4 @@ For organizations that want to allow BYOD for low-sensitivity apps but require c
 
 ---
 
-[← Intune: What the Device Management Piece of Microsoft's Puzzle Actually Does](glossary-5-5-intune.md) | [Home](../README.md) | [Endpoint Manager: One Console, All Your Devices →](glossary-5-7-endpoint-manager.md)
+[← Intune](glossary-5-5-intune.md) | [Home](../README.md) | [Endpoint Manager →](glossary-5-7-endpoint-manager.md)

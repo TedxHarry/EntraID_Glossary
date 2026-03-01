@@ -1,4 +1,5 @@
-# Federated Application: When an App Trusts Entra ID to Prove Who You Are
+# Federated Application
+*When an App Trusts Entra ID to Prove Who You Are*
 
 **Part of Entra ID Glossary Series: Glossary#9.3 - Federated Application**
 
@@ -79,4 +80,4 @@ Federation moves authentication to Entra ID. It doesn't eliminate all identity m
 
 ---
 
-[← Cloud Application: SaaS in Your Tenant's Security Perimeter](glossary-9-2-cloud-application.md) | [Home](../README.md) | [Application Proxy: Publishing On-Premises Apps Without VPN →](glossary-9-4-application-proxy.md)
+[← Cloud Application](glossary-9-2-cloud-application.md) | [Home](../README.md) | [Application Proxy →](glossary-9-4-application-proxy.md)

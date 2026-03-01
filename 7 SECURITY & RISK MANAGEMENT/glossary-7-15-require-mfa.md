@@ -1,4 +1,5 @@
-# Require MFA: The Grant Control That Changed Identity Security
+# Require MFA
+*The Grant Control That Changed Identity Security*
 
 **Part of Entra ID Glossary Series: Glossary#7.15 - Require MFA**
 
@@ -85,4 +86,4 @@ Require MFA raises the bar significantly. It doesn't make an account unbreakable
 
 ---
 
-[← Block Access: The Hardest Grant Control to Get Right](glossary-7-14-block-access.md) | [Home](../README.md) | [Require Device Compliance: The Grant Control That Stops Token Theft →](glossary-7-16-require-device-compliance.md)
+[← Block Access](glossary-7-14-block-access.md) | [Home](../README.md) | [Require Device Compliance →](glossary-7-16-require-device-compliance.md)

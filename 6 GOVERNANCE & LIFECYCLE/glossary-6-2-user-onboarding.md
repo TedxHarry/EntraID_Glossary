@@ -1,4 +1,5 @@
-# User Onboarding: The First Day Experience Is an Identity Problem
+# User Onboarding
+*The First Day Experience Is an Identity Problem*
 
 **Part of Entra ID Glossary Series: Glossary#6.2 - User Onboarding**
 
@@ -76,4 +77,4 @@ Manager-driven onboarding reduces IT involvement in access decisions and puts th
 
 ---
 
-[← User Provisioning: Accounts That Create Themselves (When It's Done Right)](glossary-6-1-user-provisioning.md) | [Home](../README.md) | [User Offboarding: The Day Someone Leaves Is the Day Access Has to Stop →](glossary-6-3-user-offboarding.md)
+[← User Provisioning](glossary-6-1-user-provisioning.md) | [Home](../README.md) | [User Offboarding →](glossary-6-3-user-offboarding.md)

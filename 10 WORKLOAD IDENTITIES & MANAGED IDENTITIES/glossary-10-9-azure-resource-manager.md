@@ -1,4 +1,5 @@
-# Azure Resource Manager: The Management Plane Where Managed Identity Permissions Live
+# Azure Resource Manager
+*The Management Plane Where Managed Identity Permissions Live*
 
 **Part of Entra ID Glossary Series: Glossary#10.9 - Azure Resource Manager**
 
@@ -72,4 +73,4 @@ Role assignments in ARM templates look like nested resources or separate resourc
 
 ---
 
-[← Principal ID: The Identifier You Use When Giving a Managed Identity Permission](glossary-10-8-principal-id.md) | [Home](../README.md) | [CAE for Workloads: Real-Time Token Revocation for Non-Human Identities →](glossary-10-10-cae-for-workloads.md)
+[← Principal ID](glossary-10-8-principal-id.md) | [Home](../README.md) | [CAE for Workloads →](glossary-10-10-cae-for-workloads.md)

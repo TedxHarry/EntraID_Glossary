@@ -1,4 +1,5 @@
-# Passwordless Authentication (Advanced): Deployment Reality Beyond the Demo
+# Passwordless Auth (Advanced)
+*Deployment Reality Beyond the Demo*
 
 **Part of Entra ID Glossary Series: Glossary#13.5 - Passwordless Auth (Advanced)**
 
@@ -59,4 +60,4 @@ For these applications, the practical solutions are:
 
 ---
 
-[← Identity Correlations: Matching the Same Person Across Different Systems](glossary-13-4-identity-correlations.md) | [Home](../README.md) | [Real-Time Remediation: Automated Immediate Response to Identity Risks →](glossary-13-6-real-time-remediation.md)
+[← Identity Correlations](glossary-13-4-identity-correlations.md) | [Home](../README.md) | [Real-Time Remediation →](glossary-13-6-real-time-remediation.md)

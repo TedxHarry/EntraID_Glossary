@@ -1,4 +1,5 @@
-# Certification Campaign: Access Review at Scale, on a Schedule
+# Certification Campaign
+*Access Review at Scale, on a Schedule*
 
 **Part of Entra ID Glossary Series: Glossary#6.15 - Certification Campaign**
 
@@ -75,4 +76,4 @@ Quarter-end, fiscal year transitions, and immediately after large organizational
 
 ---
 
-[← Governance: The System That Keeps Access from Running Away from You](glossary-6-14-governance.md) | [Home](../README.md) | [Bulk User Operations: When You Need to Change 500 Accounts at Once →](glossary-6-16-bulk-user-operations.md)
+[← Governance](glossary-6-14-governance.md) | [Home](../README.md) | [Bulk User Operations →](glossary-6-16-bulk-user-operations.md)

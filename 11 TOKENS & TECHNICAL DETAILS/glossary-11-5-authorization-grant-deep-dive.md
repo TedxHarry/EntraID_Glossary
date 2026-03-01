@@ -1,4 +1,5 @@
-# Authorization Grant: Matching the Right OAuth Flow to the Right Scenario
+# Authorization Grant (Deep Dive)
+*Matching the Right OAuth Flow to the Right Scenario*
 
 **Part of Entra ID Glossary Series: Glossary#11.5 - Authorization Grant (Deep Dive)**
 
@@ -57,4 +58,4 @@ The correct answer is client credentials. Service accounts are the wrong solutio
 
 ---
 
-[← Authorization Server: What Entra ID Is Actually Doing When It Issues a Token](glossary-11-4-authorization-server-deep-dive.md) | [Home](../README.md) | [Actor: When an Application Acts as the Middle Layer Between User and API →](glossary-11-6-actor-deep-dive.md)
+[← Authorization Server (Deep Dive)](glossary-11-4-authorization-server-deep-dive.md) | [Home](../README.md) | [Actor (Deep Dive) →](glossary-11-6-actor-deep-dive.md)

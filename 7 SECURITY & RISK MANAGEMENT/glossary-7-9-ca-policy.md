@@ -1,4 +1,5 @@
-# CA Policy: Building the If-Then Logic of Access Control
+# CA Policy
+*Building the If-Then Logic of Access Control*
 
 **Part of Entra ID Glossary Series: Glossary#7.9 - CA Policy**
 
@@ -99,4 +100,4 @@ This is why exclusions need careful design. An exclusion from one policy doesn't
 
 ---
 
-[← Conditional Access: The Policy Engine That Makes "Never Trust, Always Verify" Real](glossary-7-8-conditional-access.md) | [Home](../README.md) | [Zero Trust: The Security Model That Stopped Trusting Your Network →](glossary-7-10-zero-trust.md)
+[← Conditional Access](glossary-7-8-conditional-access.md) | [Home](../README.md) | [Zero Trust →](glossary-7-10-zero-trust.md)

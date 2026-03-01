@@ -1,4 +1,5 @@
-# Custom Role: Administrative Permissions That Fit What Your Team Actually Needs
+# Custom Role
+*Administrative Permissions That Fit What Your Team Actually Needs*
 
 **Part of Entra ID Glossary Series: Glossary#13.12 - Custom Role**
 
@@ -79,4 +80,4 @@ This makes PIM-governed custom roles the right pattern for even helpdesk capabil
 
 ---
 
-[← Sync Agent: The On-Premises Software That Bridges Your Directory to the Cloud](glossary-13-11-sync-agent.md) | [Home](../README.md) | [Administrative Unit: Scoped Administration Without Multiple Tenants →](glossary-13-13-admin-unit.md)
+[← Sync Agent](glossary-13-11-sync-agent.md) | [Home](../README.md) | [Admin Unit →](glossary-13-13-admin-unit.md)

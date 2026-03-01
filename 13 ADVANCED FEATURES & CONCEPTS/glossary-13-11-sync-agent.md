@@ -1,4 +1,5 @@
-# Sync Agent: The On-Premises Software That Bridges Your Directory to the Cloud
+# Sync Agent
+*The On-Premises Software That Bridges Your Directory to the Cloud*
 
 **Part of Entra ID Glossary Series: Glossary#13.11 - Sync Agent**
 
@@ -62,4 +63,4 @@ Keeping agents updated matters: security fixes, bug fixes, and new feature suppo
 
 ---
 
-[← Service Account: The Legacy Pattern That Managed Identity Is Replacing](glossary-13-10-service-account.md) | [Home](../README.md) | [Custom Role: Administrative Permissions That Fit What Your Team Actually Needs →](glossary-13-12-custom-role.md)
+[← Service Account](glossary-13-10-service-account.md) | [Home](../README.md) | [Custom Role →](glossary-13-12-custom-role.md)

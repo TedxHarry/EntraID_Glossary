@@ -1,4 +1,5 @@
-# The Token Endpoint: The Server-Side Half Nobody Talks About
+# Token Endpoint
+*The Server-Side Half Nobody Talks About*
 
 **Part of Entra ID Glossary Series: Glossary#4.3 - Token Endpoint**
 
@@ -94,4 +95,4 @@ The error response from the token endpoint always includes an `error` field and 
 
 ---
 
-[← The Authorization Endpoint: Reading What That Long URL Is Actually Saying](glossary-4-2-authorization-endpoint.md) | [Home](../README.md) | [The Authorization Server: What Entra ID Is Actually Doing Behind the Scenes →](glossary-4-4-authorization-server.md)
+[← Authorization Endpoint](glossary-4-2-authorization-endpoint.md) | [Home](../README.md) | [Authorization Server →](glossary-4-4-authorization-server.md)

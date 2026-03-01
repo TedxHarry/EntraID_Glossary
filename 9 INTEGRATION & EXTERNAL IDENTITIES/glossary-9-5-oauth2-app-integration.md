@@ -1,4 +1,5 @@
-# OAuth 2.0 in App Integration: How Modern Applications Request Access
+# OAuth 2.0 (App Integration Focus)
+*How Modern Applications Request Access*
 
 **Part of Entra ID Glossary Series: Glossary#9.5 - OAuth 2.0 (App Integration Focus)**
 
@@ -70,4 +71,4 @@ Application permissions require admin consent (a tenant admin explicitly grants 
 
 ---
 
-[← Application Proxy: Publishing On-Premises Apps Without VPN](glossary-9-4-application-proxy.md) | [Home](../README.md) | [OIDC in App Integration: Building Modern Authentication the Right Way →](glossary-9-6-oidc-app-integration.md)
+[← Application Proxy](glossary-9-4-application-proxy.md) | [Home](../README.md) | [OIDC (App Integration Focus) →](glossary-9-6-oidc-app-integration.md)

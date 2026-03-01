@@ -1,4 +1,5 @@
-# Threat Intelligence: Why Entra ID Knows an IP Is Bad Before You Do
+# Threat Intelligence
+*Why Entra ID Knows an IP Is Bad Before You Do*
 
 **Part of Entra ID Glossary Series: Glossary#7.7 - Threat Intelligence**
 
@@ -78,4 +79,4 @@ This is why threat intelligence works alongside behavioral analysis and anomaly 
 
 ---
 
-[← Leaked Credentials: When Your Password Shows Up on the Dark Web](glossary-7-6-leaked-credentials.md) | [Home](../README.md) | [Conditional Access: The Policy Engine That Makes "Never Trust, Always Verify" Real →](glossary-7-8-conditional-access.md)
+[← Leaked Credentials](glossary-7-6-leaked-credentials.md) | [Home](../README.md) | [Conditional Access →](glossary-7-8-conditional-access.md)

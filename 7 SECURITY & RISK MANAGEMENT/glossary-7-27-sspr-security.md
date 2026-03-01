@@ -1,4 +1,5 @@
-# SSPR Security: When Self-Service Password Reset Becomes an Attack Vector
+# SSPR (Security Focus)
+*When Self-Service Password Reset Becomes an Attack Vector*
 
 **Part of Entra ID Glossary Series: Glossary#7.27 - SSPR (Security Focus)**
 
@@ -67,4 +68,4 @@ For admin accounts: disable SSPR, require admin-initiated password reset with id
 
 ---
 
-[← Authentication Methods: Choosing the Right Mix for Your Security Posture](glossary-7-26-authentication-methods-security.md) | [Home](../README.md) | [Insider Risk: When the Threat Already Has a Badge →](glossary-7-28-insider-risk.md)
+[← Authentication Methods (Security Focus)](glossary-7-26-authentication-methods-security.md) | [Home](../README.md) | [Insider Risk →](glossary-7-28-insider-risk.md)

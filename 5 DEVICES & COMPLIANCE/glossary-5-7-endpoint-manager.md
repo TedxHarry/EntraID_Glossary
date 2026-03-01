@@ -1,4 +1,5 @@
-# Endpoint Manager: One Console, All Your Devices
+# Endpoint Manager
+*One Console, All Your Devices*
 
 **Part of Entra ID Glossary Series: Glossary#5.7 - Endpoint Manager**
 
@@ -79,4 +80,4 @@ Those three cover the daily operational tasks for most organizations.
 
 ---
 
-[← Mobile Device Management: The Trade-Off Between Control and Trust](glossary-5-6-mobile-device-management.md) | [Home](../README.md) | [Device Trust: Not All Devices Are Equally Trustworthy (And Entra ID Knows It) →](glossary-5-8-device-trust.md)
+[← Mobile Device Management](glossary-5-6-mobile-device-management.md) | [Home](../README.md) | [Device Trust →](glossary-5-8-device-trust.md)

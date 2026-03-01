@@ -1,4 +1,5 @@
-# Approval Workflow: Who Decides, in What Order, and What Happens If They Don't
+# Approval Workflow
+*Who Decides, in What Order, and What Happens If They Don't*
 
 **Part of Entra ID Glossary Series: Glossary#6.11 - Approval Workflow**
 
@@ -70,4 +71,4 @@ For compliance purposes, an audit trail showing "manager approved on March 15, d
 
 ---
 
-[← Access Request: The User's Side of the Access Conversation](glossary-6-10-access-request.md) | [Home](../README.md) | [Auto-Provision: When Access Appears Without Anyone Creating It →](glossary-6-12-auto-provision.md)
+[← Access Request](glossary-6-10-access-request.md) | [Home](../README.md) | [Auto-Provision →](glossary-6-12-auto-provision.md)

@@ -1,4 +1,5 @@
-# What Actually Happens When You Click "Sign In"
+# Sign-In
+*What Actually Happens When You Click "Sign In"*
 
 **Part of Entra ID Glossary Series: Glossary#3.2 - Sign-In**
 
@@ -77,4 +78,4 @@ Two categories you'll see in the logs, and they matter for understanding what yo
 
 ---
 
-[← Authentication: The Question Behind Every Sign-In](glossary-3-1-authentication.md) | [Home](../README.md) | [Authentication Methods: Not All Proof Is Created Equal →](glossary-3-3-authentication-method.md)
+[← Authentication](glossary-3-1-authentication.md) | [Home](../README.md) | [Authentication Method →](glossary-3-3-authentication-method.md)

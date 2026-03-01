@@ -1,4 +1,5 @@
-# Continuous Authorization: Shifting From "You Were Trusted" to "You Are Trusted Right Now"
+# Continuous Authorization (CAE)
+*Shifting From "You Were Trusted" to "You Are Trusted Right Now"*
 
 **Part of Entra ID Glossary Series: Glossary#13.3 - Continuous Authorization (CAE)**
 
@@ -67,4 +68,4 @@ When something does change (account disabled, policy updated, risk elevated), th
 
 ---
 
-[← Cloud-Based Sync (Advanced): Complex Synchronization Scenarios Beyond the Basics](glossary-13-2-cloud-sync-advanced.md) | [Home](../README.md) | [Identity Correlations: Matching the Same Person Across Different Systems →](glossary-13-4-identity-correlations.md)
+[← Cloud-Based Sync (Advanced)](glossary-13-2-cloud-sync-advanced.md) | [Home](../README.md) | [Identity Correlations →](glossary-13-4-identity-correlations.md)

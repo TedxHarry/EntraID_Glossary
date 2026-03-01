@@ -1,4 +1,5 @@
-# Global Secure Access: Microsoft's Zero Trust Network Access Layer
+# Global Secure Access
+*Microsoft's Zero Trust Network Access Layer*
 
 **Part of Entra ID Glossary Series: Glossary#13.9 - Global Secure Access**
 
@@ -65,4 +66,4 @@ For organizations using the full Entra ID stack, GSA is the layer that closes th
 
 ---
 
-[← OID: The Stable GUID That Should Be Your Application's User Key](glossary-13-8-oid.md) | [Home](../README.md) | [Service Account: The Legacy Pattern That Managed Identity Is Replacing →](glossary-13-10-service-account.md)
+[← OID (Object ID)](glossary-13-8-oid.md) | [Home](../README.md) | [Service Account →](glossary-13-10-service-account.md)

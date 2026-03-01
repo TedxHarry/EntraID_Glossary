@@ -1,4 +1,5 @@
-# Block Access: The Hardest Grant Control to Get Right
+# Block Access
+*The Hardest Grant Control to Get Right*
 
 **Part of Entra ID Glossary Series: Glossary#7.14 - Block Access**
 
@@ -80,4 +81,4 @@ Most scenarios are the former. Block access is reserved for scenarios where the 
 
 ---
 
-[← Grant Control: The Access Decision in Conditional Access](glossary-7-13-grant-control.md) | [Home](../README.md) | [Require MFA: The Grant Control That Changed Identity Security →](glossary-7-15-require-mfa.md)
+[← Grant Control](glossary-7-13-grant-control.md) | [Home](../README.md) | [Require MFA →](glossary-7-15-require-mfa.md)

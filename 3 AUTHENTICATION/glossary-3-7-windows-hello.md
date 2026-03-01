@@ -1,4 +1,5 @@
-# Windows Hello for Business: It's Not Just a PIN
+# Windows Hello
+*It's Not Just a PIN*
 
 **Part of Entra ID Glossary Series: Glossary#3.7 - Windows Hello**
 
@@ -77,4 +78,4 @@ The enrollment experience from the user's side: they open a sign-in on their man
 
 ---
 
-[← FIDO2: Why a Small USB Stick Can Eliminate Phishing from Your Attack Surface](glossary-3-6-fido2.md) | [Home](../README.md) | [Microsoft Authenticator: More Than a Code Generator →](glossary-3-8-microsoft-authenticator.md)
+[← FIDO2](glossary-3-6-fido2.md) | [Home](../README.md) | [Microsoft Authenticator →](glossary-3-8-microsoft-authenticator.md)

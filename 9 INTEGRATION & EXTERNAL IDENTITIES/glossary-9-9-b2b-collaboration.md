@@ -1,4 +1,5 @@
-# B2B Collaboration: Giving External Partners Access Without Managing Their Identity
+# B2B Collaboration
+*Giving External Partners Access Without Managing Their Identity*
 
 **Part of Entra ID Glossary Series: Glossary#9.9 - B2B Collaboration**
 
@@ -81,4 +82,4 @@ The guest lifecycle requires active management:
 
 ---
 
-[← SCIM: The Standard That Automates User Provisioning Across Applications](glossary-9-8-scim.md) | [Home](../README.md) | [B2C: Identity Management for Your Customers, Not Your Employees →](glossary-9-10-b2c.md)
+[← SCIM](glossary-9-8-scim.md) | [Home](../README.md) | [B2C →](glossary-9-10-b2c.md)

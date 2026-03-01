@@ -1,4 +1,5 @@
-# Multi-Factor Authentication: Why 99.9% Attack Prevention Still Has an Asterisk
+# Multi-Factor Authentication (MFA)
+*Why 99.9% Attack Prevention Still Has an Asterisk*
 
 **Part of Entra ID Glossary Series: Glossary#3.4 - Multi-Factor Authentication (MFA)**
 
@@ -83,4 +84,4 @@ Administrators without MFA are the highest-value targets for attackers. Get that
 
 ---
 
-[← Authentication Methods: Not All Proof Is Created Equal](glossary-3-3-authentication-method.md) | [Home](../README.md) | [Passwordless Authentication: Fixing the Right Problem →](glossary-3-5-passwordless-authentication.md)
+[← Authentication Method](glossary-3-3-authentication-method.md) | [Home](../README.md) | [Passwordless Authentication →](glossary-3-5-passwordless-authentication.md)

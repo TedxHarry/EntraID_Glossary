@@ -1,4 +1,5 @@
-# The Authorization Server: What Entra ID Is Actually Doing Behind the Scenes
+# Authorization Server
+*What Entra ID Is Actually Doing Behind the Scenes*
 
 **Part of Entra ID Glossary Series: Glossary#4.4 - Authorization Server**
 
@@ -77,4 +78,4 @@ The authorization server is the trust anchor. Everything else is built on top of
 
 ---
 
-[← The Token Endpoint: The Server-Side Half Nobody Talks About](glossary-4-3-token-endpoint.md) | [Home](../README.md) | [Access Tokens: What's Actually Inside That Long String →](glossary-4-5-access-token.md)
+[← Token Endpoint](glossary-4-3-token-endpoint.md) | [Home](../README.md) | [Access Token →](glossary-4-5-access-token.md)

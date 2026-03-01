@@ -1,4 +1,5 @@
-# OAuth 2.0: The Protocol That Solved a Problem We Didn't Realize Was a Problem
+# OAuth 2.0
+*The Protocol That Solved a Problem We Didn't Realize Was a Problem*
 
 **Part of Entra ID Glossary Series: Glossary#4.16 - OAuth 2.0**
 
@@ -72,4 +73,4 @@ Understanding that OAuth 2.0 is specifically about authorization rather than aut
 
 ---
 
-[← Subject: Whose Data Is This, Really?](glossary-4-15-subject.md) | [Home](../README.md) | [OpenID Connect: The Layer OAuth Was Missing →](glossary-4-17-oidc.md)
+[← Subject](glossary-4-15-subject.md) | [Home](../README.md) | [OIDC (OpenID Connect) →](glossary-4-17-oidc.md)

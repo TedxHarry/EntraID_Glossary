@@ -1,4 +1,5 @@
-# Scope: Defining and Validating What Applications Are Allowed to Do With Your API
+# Scope (Deep Dive)
+*Defining and Validating What Applications Are Allowed to Do With Your API*
 
 **Part of Entra ID Glossary Series: Glossary#11.12 - Scope (Deep Dive)**
 
@@ -82,4 +83,4 @@ Incremental consent improves user experience (users consent to manageable, conte
 
 ---
 
-[← Audience: The Token Claim That Prevents One API's Token From Working on Another](glossary-11-11-audience-deep-dive.md) | [Home](../README.md) | [Audit Log: The Record of Every Identity Operation in Your Tenant →](../12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-1-audit-log.md)
+[← Audience (Deep Dive)](glossary-11-11-audience-deep-dive.md) | [Home](../README.md) | [Audit Log →](../12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-1-audit-log.md)

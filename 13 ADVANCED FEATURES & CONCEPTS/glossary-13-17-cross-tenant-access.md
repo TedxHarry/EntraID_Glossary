@@ -1,4 +1,5 @@
-# Cross-Tenant Access: Controlling How Your Tenant Interacts With Other Entra ID Tenants
+# Cross-Tenant Access
+*Controlling How Your Tenant Interacts With Other Entra ID Tenants*
 
 **Part of Entra ID Glossary Series: Glossary#13.17 - Cross-Tenant Access**
 
@@ -59,4 +60,4 @@ Requires explicit cross-tenant access configuration on both sides: both tenants 
 
 ---
 
-[← Enterprise Application (Advanced): Governing the Applications in Your Tenant Beyond Basic Integration](glossary-13-16-enterprise-application-advanced.md) | [Home](../README.md) | [Tenant Restrictions: Controlling Which Microsoft Tenants Your Users Can Access →](glossary-13-18-tenant-restrictions.md)
+[← Enterprise Application (Advanced)](glossary-13-16-enterprise-application-advanced.md) | [Home](../README.md) | [Tenant Restrictions →](glossary-13-18-tenant-restrictions.md)

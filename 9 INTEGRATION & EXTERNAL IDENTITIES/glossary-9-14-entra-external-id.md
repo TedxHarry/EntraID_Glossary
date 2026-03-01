@@ -1,4 +1,5 @@
-# Entra External ID: Microsoft's Unified Platform for Non-Employee Identities
+# Entra External ID
+*Microsoft's Unified Platform for Non-Employee Identities*
 
 **Part of Entra ID Glossary Series: Glossary#9.14 - Entra External ID**
 
@@ -73,4 +74,4 @@ This setting is particularly important for organizations with strong partner rel
 
 ---
 
-[← External Identity: The Broader Category Behind Every Non-Employee](glossary-9-13-external-identity.md) | [Home](../README.md) | [Workforce Tenant: The Corporate Identity Foundation Behind Every Employee Account →](glossary-9-15-workforce-tenant.md)
+[← External Identity](glossary-9-13-external-identity.md) | [Home](../README.md) | [Workforce Tenant →](glossary-9-15-workforce-tenant.md)

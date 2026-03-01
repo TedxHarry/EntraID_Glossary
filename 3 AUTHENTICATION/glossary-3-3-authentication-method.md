@@ -1,4 +1,5 @@
-# Authentication Methods: Not All Proof Is Created Equal
+# Authentication Method
+*Not All Proof Is Created Equal*
 
 **Part of Entra ID Glossary Series: Glossary#3.3 - Authentication Method**
 
@@ -74,4 +75,4 @@ The attacker who called twelve users and got them to approve push notifications 
 
 ---
 
-[← What Actually Happens When You Click "Sign In"](glossary-3-2-sign-in.md) | [Home](../README.md) | [Multi-Factor Authentication: Why 99.9% Attack Prevention Still Has an Asterisk →](glossary-3-4-mfa.md)
+[← Sign-In](glossary-3-2-sign-in.md) | [Home](../README.md) | [Multi-Factor Authentication (MFA) →](glossary-3-4-mfa.md)

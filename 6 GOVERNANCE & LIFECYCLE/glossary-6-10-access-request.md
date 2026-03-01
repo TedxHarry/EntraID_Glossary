@@ -1,4 +1,5 @@
-# Access Request: The User's Side of the Access Conversation
+# Access Request
+*The User's Side of the Access Conversation*
 
 **Part of Entra ID Glossary Series: Glossary#6.10 - Access Request**
 
@@ -70,4 +71,4 @@ The goal isn't to eliminate all IT involvement in access requests. It's to autom
 
 ---
 
-[← Entitlement Management: Self-Service Access Without the Security Compromise](glossary-6-9-entitlement-management.md) | [Home](../README.md) | [Approval Workflow: Who Decides, in What Order, and What Happens If They Don't →](glossary-6-11-approval-workflow.md)
+[← Entitlement Management](glossary-6-9-entitlement-management.md) | [Home](../README.md) | [Approval Workflow →](glossary-6-11-approval-workflow.md)

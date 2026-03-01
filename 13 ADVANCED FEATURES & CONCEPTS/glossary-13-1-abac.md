@@ -1,4 +1,5 @@
-# Attribute-Based Access Control: Access Decisions That Go Beyond Role Membership
+# Attribute-Based Access Control (ABAC)
+*Access Decisions That Go Beyond Role Membership*
 
 **Part of Entra ID Glossary Series: Glossary#13.1 - Attribute-Based Access Control (ABAC)**
 
@@ -62,4 +63,4 @@ If user department attributes in Entra ID aren't kept in sync with the HR system
 
 ---
 
-[← Compliance: How Entra ID Controls Map to the Regulations Your Auditors Ask About](../12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-5-compliance.md) | [Home](../README.md) | [Cloud-Based Sync (Advanced): Complex Synchronization Scenarios Beyond the Basics →](glossary-13-2-cloud-sync-advanced.md)
+[← Compliance](../12%20MONITORING%2C%20AUDIT%20%26%20COMPLIANCE/glossary-12-5-compliance.md) | [Home](../README.md) | [Cloud-Based Sync (Advanced) →](glossary-13-2-cloud-sync-advanced.md)

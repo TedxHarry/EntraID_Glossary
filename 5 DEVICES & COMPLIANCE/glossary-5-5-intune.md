@@ -1,4 +1,5 @@
-# Intune: What the Device Management Piece of Microsoft's Puzzle Actually Does
+# Intune
+*What the Device Management Piece of Microsoft's Puzzle Actually Does*
 
 **Part of Entra ID Glossary Series: Glossary#5.5 - Intune**
 
@@ -63,4 +64,4 @@ The visibility alone is often the most valuable initial outcome. Before Intune, 
 
 ---
 
-[← Device Enrollment: The Difference Between Knowing a Device Exists and Managing It](glossary-5-4-device-enrollment.md) | [Home](../README.md) | [Mobile Device Management: The Trade-Off Between Control and Trust →](glossary-5-6-mobile-device-management.md)
+[← Device Enrollment](glossary-5-4-device-enrollment.md) | [Home](../README.md) | [Mobile Device Management →](glossary-5-6-mobile-device-management.md)

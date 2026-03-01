@@ -1,4 +1,5 @@
-# External Identity: The Broader Category Behind Every Non-Employee
+# External Identity
+*The Broader Category Behind Every Non-Employee*
 
 **Part of Entra ID Glossary Series: Glossary#9.13 - External Identity**
 
@@ -71,4 +72,4 @@ The common failure mode: external identity was set up to enable collaboration an
 
 ---
 
-[← External User: Managing Access for People Who Don't Work for You](glossary-9-12-external-user.md) | [Home](../README.md) | [Entra External ID: Microsoft's Unified Platform for Non-Employee Identities →](glossary-9-14-entra-external-id.md)
+[← External User](glossary-9-12-external-user.md) | [Home](../README.md) | [Entra External ID →](glossary-9-14-entra-external-id.md)

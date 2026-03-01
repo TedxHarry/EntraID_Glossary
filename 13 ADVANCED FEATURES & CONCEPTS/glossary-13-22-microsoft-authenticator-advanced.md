@@ -1,4 +1,5 @@
-# Microsoft Authenticator Advanced: Beyond Basic MFA to Modern Authentication
+# Microsoft Authenticator Advanced
+*Beyond Basic MFA to Modern Authentication*
 
 **Part of Entra ID Glossary Series: Glossary#13.22 - Microsoft Authenticator Advanced**
 
@@ -67,4 +68,4 @@ The Microsoft Managed setting lets Microsoft's defaults evolve as security recom
 
 ---
 
-[← Microsoft Graph API: Programmatic Access to Everything in Your Entra ID Tenant](glossary-13-21-graph-api.md) | [Home](../README.md) | [Microsoft Entra Suite: The Consolidated Identity and Network Access Platform →](glossary-13-23-microsoft-entra-suite.md)
+[← Microsoft Graph API](glossary-13-21-graph-api.md) | [Home](../README.md) | [Microsoft Entra Suite →](glossary-13-23-microsoft-entra-suite.md)

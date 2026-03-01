@@ -1,4 +1,5 @@
-# Sign-In Log: The Authentication Record Your Security Team Needs to Know Cold
+# Sign-In Log
+*The Authentication Record Your Security Team Needs to Know Cold*
 
 **Part of Entra ID Glossary Series: Glossary#12.2 - Sign-In Log**
 
@@ -69,4 +70,4 @@ Sign-in logs in Log Analytics integrate with Microsoft Sentinel for alert rules,
 
 ---
 
-[← Audit Log: The Record of Every Identity Operation in Your Tenant](glossary-12-1-audit-log.md) | [Home](../README.md) | [Activity Report: The Trend View That Audit Logs and Sign-In Logs Don't Give You →](glossary-12-3-activity-report.md)
+[← Audit Log](glossary-12-1-audit-log.md) | [Home](../README.md) | [Activity Report →](glossary-12-3-activity-report.md)

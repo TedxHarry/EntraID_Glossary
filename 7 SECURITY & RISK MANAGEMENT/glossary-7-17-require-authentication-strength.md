@@ -1,4 +1,5 @@
-# Require Authentication Strength: Not All MFA Is Equal
+# Require Authentication Strength
+*Not All MFA Is Equal*
 
 **Part of Entra ID Glossary Series: Glossary#7.17 - Require Authentication Strength**
 
@@ -82,4 +83,4 @@ Deployment sequence matters: register the required methods first, verify coverag
 
 ---
 
-[← Require Device Compliance: The Grant Control That Stops Token Theft](glossary-7-16-require-device-compliance.md) | [Home](../README.md) | [Report-Only Mode: How to Test a Policy Without Breaking Production →](glossary-7-18-report-only-mode.md)
+[← Require Device Compliance](glossary-7-16-require-device-compliance.md) | [Home](../README.md) | [Report-Only Mode →](glossary-7-18-report-only-mode.md)

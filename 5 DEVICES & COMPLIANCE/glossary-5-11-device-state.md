@@ -1,4 +1,5 @@
-# Device State: The Real-Time Health Signal That Drives Access Decisions
+# Device State
+*The Real-Time Health Signal That Drives Access Decisions*
 
 **Part of Entra ID Glossary Series: Glossary#5.11 - Device State**
 
@@ -82,4 +83,4 @@ The sign-in logs are often the fastest path to a diagnosis. They show exactly wh
 
 ---
 
-[← App Protection Policy: Managing the Data, Not the Device](glossary-5-10-app-protection-policy.md) | [Home](../README.md) | [Managed Device: Enrolled Isn't the Same as Secure →](glossary-5-12-managed-device.md)
+[← App Protection Policy](glossary-5-10-app-protection-policy.md) | [Home](../README.md) | [Managed Device →](glossary-5-12-managed-device.md)

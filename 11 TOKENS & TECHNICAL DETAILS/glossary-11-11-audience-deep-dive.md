@@ -1,4 +1,5 @@
-# Audience: The Token Claim That Prevents One API's Token From Working on Another
+# Audience (Deep Dive)
+*The Token Claim That Prevents One API's Token From Working on Another*
 
 **Part of Entra ID Glossary Series: Glossary#11.11 - Audience (Deep Dive)**
 
@@ -71,4 +72,4 @@ The test: acquire a token for a different API and try to use it against your API
 
 ---
 
-[← Token Revocation: Why "Revoke All Tokens" Doesn't Mean Instant Lockout](glossary-11-10-token-revocation-deep-dive.md) | [Home](../README.md) | [Scope: Defining and Validating What Applications Are Allowed to Do With Your API →](glossary-11-12-scope-deep-dive.md)
+[← Token Revocation (Deep Dive)](glossary-11-10-token-revocation-deep-dive.md) | [Home](../README.md) | [Scope (Deep Dive) →](glossary-11-12-scope-deep-dive.md)

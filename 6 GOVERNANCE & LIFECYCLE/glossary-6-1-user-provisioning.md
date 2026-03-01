@@ -1,4 +1,5 @@
-# User Provisioning: Accounts That Create Themselves (When It's Done Right)
+# User Provisioning
+*Accounts That Create Themselves (When It's Done Right)*
 
 **Part of Entra ID Glossary Series: Glossary#6.1 - User Provisioning**
 
@@ -79,4 +80,4 @@ Automated provisioning solves all three.
 
 ---
 
-[← Non-Compliant Device: What Happens When the Device Fails Its Security Check](../5%20DEVICES%20%26%20COMPLIANCE/glossary-5-14-non-compliant-device.md) | [Home](../README.md) | [User Onboarding: The First Day Experience Is an Identity Problem →](glossary-6-2-user-onboarding.md)
+[← Non-Compliant Device](../5%20DEVICES%20%26%20COMPLIANCE/glossary-5-14-non-compliant-device.md) | [Home](../README.md) | [User Onboarding →](glossary-6-2-user-onboarding.md)

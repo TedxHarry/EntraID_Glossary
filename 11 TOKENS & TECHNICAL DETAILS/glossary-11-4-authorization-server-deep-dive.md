@@ -1,4 +1,5 @@
-# Authorization Server: What Entra ID Is Actually Doing When It Issues a Token
+# Authorization Server (Deep Dive)
+*What Entra ID Is Actually Doing When It Issues a Token*
 
 **Part of Entra ID Glossary Series: Glossary#11.4 - Authorization Server (Deep Dive)**
 
@@ -71,4 +72,4 @@ The MSAL libraries and common middleware like `passport-azure-ad` handle multi-t
 
 ---
 
-[← Token Endpoint: Where Codes and Credentials Become Tokens](glossary-11-3-token-endpoint-deep-dive.md) | [Home](../README.md) | [Authorization Grant: Matching the Right OAuth Flow to the Right Scenario →](glossary-11-5-authorization-grant-deep-dive.md)
+[← Token Endpoint (Deep Dive)](glossary-11-3-token-endpoint-deep-dive.md) | [Home](../README.md) | [Authorization Grant (Deep Dive) →](glossary-11-5-authorization-grant-deep-dive.md)

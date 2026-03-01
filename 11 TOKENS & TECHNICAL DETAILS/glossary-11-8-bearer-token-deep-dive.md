@@ -1,4 +1,5 @@
-# Bearer Token: Why "Whoever Has It Can Use It" Is Both the Point and the Risk
+# Bearer Token (Deep Dive)
+*Why "Whoever Has It Can Use It" Is Both the Point and the Risk*
 
 **Part of Entra ID Glossary Series: Glossary#11.8 - Bearer Token (Deep Dive)**
 
@@ -72,4 +73,4 @@ An application that handles bearer tokens correctly:
 
 ---
 
-[← Subject: The User Identifier in Tokens That Isn't What You'd Expect](glossary-11-7-subject-deep-dive.md) | [Home](../README.md) | [Token Lifetime: The Configuration Behind How Long Your Tokens Last →](glossary-11-9-token-lifetime-deep-dive.md)
+[← Subject (Deep Dive)](glossary-11-7-subject-deep-dive.md) | [Home](../README.md) | [Token Lifetime (Deep Dive) →](glossary-11-9-token-lifetime-deep-dive.md)

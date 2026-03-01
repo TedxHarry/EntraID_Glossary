@@ -1,4 +1,5 @@
-# Consent Experience: What Users See When an App Asks for Permission
+# Consent Experience
+*What Users See When an App Asks for Permission*
 
 **Part of Entra ID Glossary Series: Glossary#13.15 - Consent Experience**
 
@@ -73,4 +74,4 @@ Defending against consent phishing: limit user consent to verified publishers, t
 
 ---
 
-[← Consent Framework: How Applications Get Permission to Access Your Data](glossary-13-14-consent-framework.md) | [Home](../README.md) | [Enterprise Application (Advanced): Governing the Applications in Your Tenant Beyond Basic Integration →](glossary-13-16-enterprise-application-advanced.md)
+[← Consent Framework](glossary-13-14-consent-framework.md) | [Home](../README.md) | [Enterprise Application (Advanced) →](glossary-13-16-enterprise-application-advanced.md)

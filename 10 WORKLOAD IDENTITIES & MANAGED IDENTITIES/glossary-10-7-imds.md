@@ -1,4 +1,5 @@
-# Instance Metadata Service: The Local Endpoint That Gives Azure Resources Their Identity
+# Instance Metadata Service (IMDS)
+*The Local Endpoint That Gives Azure Resources Their Identity*
 
 **Part of Entra ID Glossary Series: Glossary#10.7 - Instance Metadata Service (IMDS)**
 
@@ -76,4 +77,4 @@ In Azure Container Apps and AKS, IMDS-based token acquisition works but the acce
 
 ---
 
-[← Federated Identity Credential: The Trust Configuration That Makes Keyless Auth Work](glossary-10-6-federated-identity-credential.md) | [Home](../README.md) | [Principal ID: The Identifier You Use When Giving a Managed Identity Permission →](glossary-10-8-principal-id.md)
+[← Federated Identity Credential](glossary-10-6-federated-identity-credential.md) | [Home](../README.md) | [Principal ID →](glossary-10-8-principal-id.md)

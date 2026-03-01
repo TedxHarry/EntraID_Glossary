@@ -1,4 +1,5 @@
-# Cloud Application: SaaS in Your Tenant's Security Perimeter
+# Cloud Application
+*SaaS in Your Tenant's Security Perimeter*
 
 **Part of Entra ID Glossary Series: Glossary#9.2 - Cloud Application**
 
@@ -71,4 +72,4 @@ The solution isn't blocking all unapproved applications (that creates friction w
 
 ---
 
-[← App Integration: Connecting Applications to Entra ID for Authentication](glossary-9-1-app-integration.md) | [Home](../README.md) | [Federated Application: When an App Trusts Entra ID to Prove Who You Are →](glossary-9-3-federated-application.md)
+[← App Integration](glossary-9-1-app-integration.md) | [Home](../README.md) | [Federated Application →](glossary-9-3-federated-application.md)

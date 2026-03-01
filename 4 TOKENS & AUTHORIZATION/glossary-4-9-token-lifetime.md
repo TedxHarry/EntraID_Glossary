@@ -1,4 +1,5 @@
-# Token Lifetime: The Trade-Off Between Security and Not Annoying Your Users
+# Token Lifetime
+*The Trade-Off Between Security and Not Annoying Your Users*
 
 **Part of Entra ID Glossary Series: Glossary#4.9 - Token Lifetime**
 
@@ -66,4 +67,4 @@ Tokens can extend to 24 hours safely. The main Microsoft 365 services already su
 
 ---
 
-[← Bearer Tokens: The Name That Tells You Everything About the Risk](glossary-4-8-bearer-token.md) | [Home](../README.md) | [Token Revocation: Why "I Disabled Their Account" Isn't Always Enough →](glossary-4-10-token-revocation.md)
+[← Bearer Token](glossary-4-8-bearer-token.md) | [Home](../README.md) | [Token Revocation →](glossary-4-10-token-revocation.md)

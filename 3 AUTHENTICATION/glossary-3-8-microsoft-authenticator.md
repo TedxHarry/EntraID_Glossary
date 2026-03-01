@@ -1,4 +1,5 @@
-# Microsoft Authenticator: More Than a Code Generator
+# Microsoft Authenticator
+*More Than a Code Generator*
 
 **Part of Entra ID Glossary Series: Glossary#3.8 - Microsoft Authenticator**
 
@@ -75,4 +76,4 @@ For organizations early in their authentication journey, "Authenticator with pus
 
 ---
 
-[← Windows Hello for Business: It's Not Just a PIN](glossary-3-7-windows-hello.md) | [Home](../README.md) | [The Authorization Code: Why Sign-In Takes Two Steps Instead of One →](../4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-1-authorization-code.md)
+[← Windows Hello](glossary-3-7-windows-hello.md) | [Home](../README.md) | [Authorization Code →](../4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-1-authorization-code.md)

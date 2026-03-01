@@ -1,4 +1,5 @@
-# UPN: The Sign-In Name That Looks Like an Email But Isn't Always One
+# UPN (User Principal Name)
+*The Sign-In Name That Looks Like an Email But Isn't Always One*
 
 **Part of Entra ID Glossary Series: Glossary#13.7 - UPN (User Principal Name)**
 
@@ -64,4 +65,4 @@ Alternate Login ID has limitations for some on-premises scenarios (Kerberos auth
 
 ---
 
-[← Real-Time Remediation: Automated Immediate Response to Identity Risks](glossary-13-6-real-time-remediation.md) | [Home](../README.md) | [OID: The Stable GUID That Should Be Your Application's User Key →](glossary-13-8-oid.md)
+[← Real-Time Remediation](glossary-13-6-real-time-remediation.md) | [Home](../README.md) | [OID (Object ID) →](glossary-13-8-oid.md)

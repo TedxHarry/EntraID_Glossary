@@ -1,4 +1,5 @@
-# Grant Control: The Access Decision in Conditional Access
+# Grant Control
+*The Access Decision in Conditional Access*
 
 **Part of Entra ID Glossary Series: Glossary#7.13 - Grant Control**
 
@@ -77,4 +78,4 @@ Using grant controls when session controls are the right tool (and vice versa) i
 
 ---
 
-[← Condition: The Signals That Make Conditional Access Contextual](glossary-7-12-condition.md) | [Home](../README.md) | [Block Access: The Hardest Grant Control to Get Right →](glossary-7-14-block-access.md)
+[← Condition](glossary-7-12-condition.md) | [Home](../README.md) | [Block Access →](glossary-7-14-block-access.md)

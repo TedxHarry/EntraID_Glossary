@@ -1,4 +1,5 @@
-# Report-Only Mode: How to Test a Policy Without Breaking Production
+# Report-Only Mode
+*How to Test a Policy Without Breaking Production*
 
 **Part of Entra ID Glossary Series: Glossary#7.18 - Report-Only Mode**
 
@@ -95,4 +96,4 @@ Use both: What If for pre-deployment spot checking, Report-Only for observing re
 
 ---
 
-[← Require Authentication Strength: Not All MFA Is Equal](glossary-7-17-require-authentication-strength.md) | [Home](../README.md) | [Location: Using Where You Sign In to Shape What You Can Access →](glossary-7-19-location.md)
+[← Require Authentication Strength](glossary-7-17-require-authentication-strength.md) | [Home](../README.md) | [Location →](glossary-7-19-location.md)

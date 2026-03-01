@@ -1,4 +1,5 @@
-# OID: The Stable GUID That Should Be Your Application's User Key
+# OID (Object ID)
+*The Stable GUID That Should Be Your Application's User Key*
 
 **Part of Entra ID Glossary Series: Glossary#13.8 - OID (Object ID)**
 
@@ -76,4 +77,4 @@ OIDs are unique within a tenant, not across all of Entra ID. Two different Entra
 
 ---
 
-[← UPN: The Sign-In Name That Looks Like an Email But Isn't Always One](glossary-13-7-upn.md) | [Home](../README.md) | [Global Secure Access: Microsoft's Zero Trust Network Access Layer →](glossary-13-9-global-secure-access.md)
+[← UPN (User Principal Name)](glossary-13-7-upn.md) | [Home](../README.md) | [Global Secure Access →](glossary-13-9-global-secure-access.md)

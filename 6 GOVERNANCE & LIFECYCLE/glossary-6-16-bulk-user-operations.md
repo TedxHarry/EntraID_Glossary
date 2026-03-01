@@ -1,4 +1,5 @@
-# Bulk User Operations: When You Need to Change 500 Accounts at Once
+# Bulk User Operations
+*When You Need to Change 500 Accounts at Once*
 
 **Part of Entra ID Glossary Series: Glossary#6.16 - Bulk User Operations**
 
@@ -84,4 +85,4 @@ Bulk license assignment is appropriate for initial migrations, one-time events, 
 
 ---
 
-[← Certification Campaign: Access Review at Scale, on a Schedule](glossary-6-15-certification-campaign.md) | [Home](../README.md) | [User Attributes: The Properties That Drive Everything Else →](glossary-6-17-user-attributes.md)
+[← Certification Campaign](glossary-6-15-certification-campaign.md) | [Home](../README.md) | [User Attributes →](glossary-6-17-user-attributes.md)

@@ -1,4 +1,5 @@
-# Policy Evaluation: Understanding How Conditional Access Decisions Are Made
+# Policy Evaluation
+*Understanding How Conditional Access Decisions Are Made*
 
 **Part of Entra ID Glossary Series: Glossary#13.20 - Policy Evaluation**
 
@@ -85,4 +86,4 @@ The Conditional Access Insights and Reporting workbook aggregates sign-in log CA
 
 ---
 
-[← CA Optimization Agent: Automated Recommendations for Conditional Access Policy Gaps](glossary-13-19-ca-optimization-agent.md) | [Home](../README.md) | [Microsoft Graph API: Programmatic Access to Everything in Your Entra ID Tenant →](glossary-13-21-graph-api.md)
+[← CA Optimization Agent](glossary-13-19-ca-optimization-agent.md) | [Home](../README.md) | [Microsoft Graph API →](glossary-13-21-graph-api.md)

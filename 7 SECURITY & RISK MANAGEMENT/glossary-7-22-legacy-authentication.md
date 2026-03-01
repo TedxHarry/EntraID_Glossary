@@ -1,4 +1,5 @@
-# Legacy Authentication: The Open Door That MFA Can't Close
+# Legacy Authentication
+*The Open Door That MFA Can't Close*
 
 **Part of Entra ID Glossary Series: Glossary#7.22 - Legacy Authentication**
 
@@ -88,4 +89,4 @@ For cases where the work to migrate can't happen immediately, create a specific 
 
 ---
 
-[← IP Address Range: The Building Block of Location-Based Access Control](glossary-7-21-ip-address-range.md) | [Home](../README.md) | [Session Control: Governing What Happens After Access Is Granted →](glossary-7-23-session-control.md)
+[← IP Address Range](glossary-7-21-ip-address-range.md) | [Home](../README.md) | [Session Control →](glossary-7-23-session-control.md)

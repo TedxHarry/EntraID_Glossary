@@ -1,4 +1,5 @@
-# Hybrid Identity: Living in Two Worlds at Once
+# Hybrid Identity
+*Living in Two Worlds at Once*
 
 **Part of Entra ID Glossary Series: Glossary#1.6 - Hybrid Identity**
 
@@ -82,4 +83,4 @@ Understanding hybrid identity isn't advanced material. It's practical reality. �
 
 ---
 
-[← Active Directory Isn't Dead. Here's Why That Matters.](glossary-1-5-active-directory.md) | [Home](../README.md) | [Identity: The Word Everyone Uses and Almost Nobody Defines →](../2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-1-identity.md)
+[← Active Directory](glossary-1-5-active-directory.md) | [Home](../README.md) | [Identity →](../2%20CORE%20IDENTITY%20CONCEPTS/glossary-2-1-identity.md)

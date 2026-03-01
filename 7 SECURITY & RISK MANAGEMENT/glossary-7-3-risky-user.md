@@ -1,4 +1,5 @@
-# Risky User: When the Account Itself Is Flagged, Not Just One Sign-In
+# Risky User
+*When the Account Itself Is Flagged, Not Just One Sign-In*
 
 **Part of Entra ID Glossary Series: Glossary#7.3 - Risky User**
 
@@ -83,4 +84,4 @@ Some user risk detections are offline: they're generated after analysis that tak
 
 ---
 
-[← Risky Sign-In: When the Authentication Looks Suspicious](glossary-7-2-risky-sign-in.md) | [Home](../README.md) | [ID Protection: Entra ID's Automated Threat Response System →](glossary-7-4-id-protection.md)
+[← Risky Sign-In](glossary-7-2-risky-sign-in.md) | [Home](../README.md) | [ID Protection →](glossary-7-4-id-protection.md)

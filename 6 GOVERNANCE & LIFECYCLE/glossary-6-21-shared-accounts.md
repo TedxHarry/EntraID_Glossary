@@ -1,4 +1,5 @@
-# Shared Accounts: Why "We All Use the Same Login" Is a Security Problem
+# Shared Accounts
+*Why "We All Use the Same Login" Is a Security Problem*
 
 **Part of Entra ID Glossary Series: Glossary#6.21 - Shared Accounts**
 
@@ -62,4 +63,4 @@ The goal isn't perfection overnight. It's moving toward individual accountabilit
 
 ---
 
-[← Emergency Access: The Account You Hope You Never Need](glossary-6-20-emergency-access.md) | [Home](../README.md) | [Account Lockout: How Entra ID Stops Password Guessing Without Locking Out Real Users →](glossary-6-22-account-lockout.md)
+[← Emergency Access](glossary-6-20-emergency-access.md) | [Home](../README.md) | [Account Lockout →](glossary-6-22-account-lockout.md)

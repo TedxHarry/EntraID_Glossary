@@ -1,4 +1,5 @@
-# Risk Detection: How Entra ID Knows Something Looks Wrong
+# Risk Detection
+*How Entra ID Knows Something Looks Wrong*
 
 **Part of Entra ID Glossary Series: Glossary#7.1 - Risk Detection**
 
@@ -76,4 +77,4 @@ For confirmed attacks, remediation actions include: confirm sign-in as compromis
 
 ---
 
-[← Password Reset: Giving Users the Key to Their Own Lock](../6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-23-password-reset.md) | [Home](../README.md) | [Risky Sign-In: When the Authentication Looks Suspicious →](glossary-7-2-risky-sign-in.md)
+[← Password Reset](../6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-23-password-reset.md) | [Home](../README.md) | [Risky Sign-In →](glossary-7-2-risky-sign-in.md)

@@ -1,4 +1,5 @@
-# Subject: The User Identifier in Tokens That Isn't What You'd Expect
+# Subject (Deep Dive)
+*The User Identifier in Tokens That Isn't What You'd Expect*
 
 **Part of Entra ID Glossary Series: Glossary#11.7 - Subject (Deep Dive)**
 
@@ -59,4 +60,4 @@ For multi-tenant applications (where users from any Entra ID tenant can sign in)
 
 ---
 
-[← Actor: When an Application Acts as the Middle Layer Between User and API](glossary-11-6-actor-deep-dive.md) | [Home](../README.md) | [Bearer Token: Why "Whoever Has It Can Use It" Is Both the Point and the Risk →](glossary-11-8-bearer-token-deep-dive.md)
+[← Actor (Deep Dive)](glossary-11-6-actor-deep-dive.md) | [Home](../README.md) | [Bearer Token (Deep Dive) →](glossary-11-8-bearer-token-deep-dive.md)

@@ -1,4 +1,5 @@
-# Audience: The Token Knows Who It Was Meant For
+# Audience
+*The Token Knows Who It Was Meant For*
 
 **Part of Entra ID Glossary Series: Glossary#4.12 - Audience**
 
@@ -72,4 +73,4 @@ That last test is the one most teams skip. Testing the happy path confirms the A
 
 ---
 
-[← Scope: The Permission on the Label vs the Permission You Actually Need](glossary-4-11-scope.md) | [Home](../README.md) | [Authorization Grant: Four Ways to Get a Token (and When to Use Each) →](glossary-4-13-authorization-grant.md)
+[← Scope](glossary-4-11-scope.md) | [Home](../README.md) | [Authorization Grant →](glossary-4-13-authorization-grant.md)

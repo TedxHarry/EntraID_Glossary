@@ -1,4 +1,5 @@
-# Cloud-Based Identity: What It Actually Means When the Servers Aren't Yours
+# Cloud-Based Identity
+*What It Actually Means When the Servers Aren't Yours*
 
 **Part of Entra ID Glossary Series: Glossary#1.4 - Cloud-Based Identity**
 
@@ -77,4 +78,4 @@ Cloud-based identity isn't universally easier. It's a different kind of work, wi
 
 ---
 
-[← What Is a Tenant? (And Why Getting This Wrong Causes Real Problems)](glossary-1-3-tenant.md) | [Home](../README.md) | [Active Directory Isn't Dead. Here's Why That Matters. →](glossary-1-5-active-directory.md)
+[← Tenant](glossary-1-3-tenant.md) | [Home](../README.md) | [Active Directory →](glossary-1-5-active-directory.md)

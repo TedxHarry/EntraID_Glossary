@@ -1,4 +1,5 @@
-# Microsoft Graph API: Programmatic Access to Everything in Your Entra ID Tenant
+# Microsoft Graph API
+*Programmatic Access to Everything in Your Entra ID Tenant*
 
 **Part of Entra ID Glossary Series: Glossary#13.21 - Microsoft Graph API**
 
@@ -59,4 +60,4 @@ The `$batch` endpoint allows sending 20 Graph requests in a single HTTP call, dr
 
 ---
 
-[← Policy Evaluation: Understanding How Conditional Access Decisions Are Made](glossary-13-20-policy-evaluation.md) | [Home](../README.md) | [Microsoft Authenticator Advanced: Beyond Basic MFA to Modern Authentication →](glossary-13-22-microsoft-authenticator-advanced.md)
+[← Policy Evaluation](glossary-13-20-policy-evaluation.md) | [Home](../README.md) | [Microsoft Authenticator Advanced →](glossary-13-22-microsoft-authenticator-advanced.md)

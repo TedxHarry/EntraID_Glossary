@@ -1,4 +1,5 @@
-# Principal ID: The Identifier You Use When Giving a Managed Identity Permission
+# Principal ID
+*The Identifier You Use When Giving a Managed Identity Permission*
 
 **Part of Entra ID Glossary Series: Glossary#10.8 - Principal ID**
 
@@ -79,4 +80,4 @@ This is a real operational issue for teams that regularly rebuild resources (tes
 
 ---
 
-[← Instance Metadata Service: The Local Endpoint That Gives Azure Resources Their Identity](glossary-10-7-imds.md) | [Home](../README.md) | [Azure Resource Manager: The Management Plane Where Managed Identity Permissions Live →](glossary-10-9-azure-resource-manager.md)
+[← Instance Metadata Service (IMDS)](glossary-10-7-imds.md) | [Home](../README.md) | [Azure Resource Manager →](glossary-10-9-azure-resource-manager.md)

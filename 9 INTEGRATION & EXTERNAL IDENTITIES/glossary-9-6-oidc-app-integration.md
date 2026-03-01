@@ -1,4 +1,5 @@
-# OIDC in App Integration: Building Modern Authentication the Right Way
+# OIDC (App Integration Focus)
+*Building Modern Authentication the Right Way*
 
 **Part of Entra ID Glossary Series: Glossary#9.6 - OIDC (App Integration Focus)**
 
@@ -93,4 +94,4 @@ Applications built with MSAL don't implement the protocol directly. They call MS
 
 ---
 
-[← OAuth 2.0 in App Integration: How Modern Applications Request Access](glossary-9-5-oauth2-app-integration.md) | [Home](../README.md) | [SAML in App Integration: The Enterprise Protocol That Refuses to Retire →](glossary-9-7-saml-app-integration.md)
+[← OAuth 2.0 (App Integration Focus)](glossary-9-5-oauth2-app-integration.md) | [Home](../README.md) | [SAML (App Integration Focus) →](glossary-9-7-saml-app-integration.md)

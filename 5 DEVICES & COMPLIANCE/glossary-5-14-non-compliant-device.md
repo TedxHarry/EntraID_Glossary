@@ -1,4 +1,5 @@
-# Non-Compliant Device: What Happens When the Device Fails Its Security Check
+# Non-Compliant Device
+*What Happens When the Device Fails Its Security Check*
 
 **Part of Entra ID Glossary Series: Glossary#5.14 - Non-Compliant Device**
 
@@ -73,4 +74,4 @@ The BitLocker-and-Windows-Update incident from the opening was resolved by tempo
 
 ---
 
-[← Compliant Device: The Security Baseline That Has to Be Earned Continuously](glossary-5-13-compliant-device.md) | [Home](../README.md) | [User Provisioning: Accounts That Create Themselves (When It's Done Right) →](../6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-1-user-provisioning.md)
+[← Compliant Device](glossary-5-13-compliant-device.md) | [Home](../README.md) | [User Provisioning →](../6%20GOVERNANCE%20%26%20LIFECYCLE/glossary-6-1-user-provisioning.md)

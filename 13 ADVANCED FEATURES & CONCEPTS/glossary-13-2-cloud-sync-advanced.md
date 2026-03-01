@@ -1,4 +1,5 @@
-# Cloud-Based Sync (Advanced): Complex Synchronization Scenarios Beyond the Basics
+# Cloud-Based Sync (Advanced)
+*Complex Synchronization Scenarios Beyond the Basics*
 
 **Part of Entra ID Glossary Series: Glossary#13.2 - Cloud-Based Sync (Advanced)**
 
@@ -70,4 +71,4 @@ For new deployments without Exchange hybrid or device hybrid requirements, Cloud
 
 ---
 
-[← Attribute-Based Access Control: Access Decisions That Go Beyond Role Membership](glossary-13-1-abac.md) | [Home](../README.md) | [Continuous Authorization: Shifting From "You Were Trusted" to "You Are Trusted Right Now" →](glossary-13-3-continuous-authorization.md)
+[← Attribute-Based Access Control (ABAC)](glossary-13-1-abac.md) | [Home](../README.md) | [Continuous Authorization (CAE) →](glossary-13-3-continuous-authorization.md)

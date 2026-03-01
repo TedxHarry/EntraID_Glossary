@@ -1,4 +1,5 @@
-# Hybrid Entra Joined: The Device That Lives in Both Worlds
+# Hybrid Device
+*The Device That Lives in Both Worlds*
 
 **Part of Entra ID Glossary Series: Glossary#5.9 - Hybrid Device**
 
@@ -65,4 +66,4 @@ Getting there requires eliminating on-premises dependencies app by app. Once tho
 
 ---
 
-[← Device Trust: Not All Devices Are Equally Trustworthy (And Entra ID Knows It)](glossary-5-8-device-trust.md) | [Home](../README.md) | [App Protection Policy: Managing the Data, Not the Device →](glossary-5-10-app-protection-policy.md)
+[← Device Trust](glossary-5-8-device-trust.md) | [Home](../README.md) | [App Protection Policy →](glossary-5-10-app-protection-policy.md)

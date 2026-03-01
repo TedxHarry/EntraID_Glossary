@@ -1,4 +1,5 @@
-# Risky Sign-In: When the Authentication Looks Suspicious
+# Risky Sign-In
+*When the Authentication Looks Suspicious*
 
 **Part of Entra ID Glossary Series: Glossary#7.2 - Risky Sign-In**
 
@@ -81,4 +82,4 @@ If confirmed as legitimate: dismiss the risk event as safe (teaches the system t
 
 ---
 
-[← Risk Detection: How Entra ID Knows Something Looks Wrong](glossary-7-1-risk-detection.md) | [Home](../README.md) | [Risky User: When the Account Itself Is Flagged, Not Just One Sign-In →](glossary-7-3-risky-user.md)
+[← Risk Detection](glossary-7-1-risk-detection.md) | [Home](../README.md) | [Risky User →](glossary-7-3-risky-user.md)

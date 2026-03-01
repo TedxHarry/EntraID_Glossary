@@ -1,4 +1,5 @@
-# Recertification: Access That Was Right Then Might Not Be Right Now
+# Recertification
+*Access That Was Right Then Might Not Be Right Now*
 
 **Part of Entra ID Glossary Series: Glossary#6.8 - Recertification**
 
@@ -68,4 +69,4 @@ Calibrate frequency to sensitivity and risk. Privileged access: frequent. Genera
 
 ---
 
-[← Access Certification: When "Reviewed" Has to Mean Something to an Auditor](glossary-6-7-access-certification.md) | [Home](../README.md) | [Entitlement Management: Self-Service Access Without the Security Compromise →](glossary-6-9-entitlement-management.md)
+[← Access Certification](glossary-6-7-access-certification.md) | [Home](../README.md) | [Entitlement Management →](glossary-6-9-entitlement-management.md)

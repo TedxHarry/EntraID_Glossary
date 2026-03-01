@@ -1,4 +1,5 @@
-# Consent Framework: How Applications Get Permission to Access Your Data
+# Consent Framework
+*How Applications Get Permission to Access Your Data*
 
 **Part of Entra ID Glossary Series: Glossary#13.14 - Consent Framework**
 
@@ -69,4 +70,4 @@ High-risk grants to look for: application permissions for `Mail.ReadWrite.All`, 
 
 ---
 
-[← Administrative Unit: Scoped Administration Without Multiple Tenants](glossary-13-13-admin-unit.md) | [Home](../README.md) | [Consent Experience: What Users See When an App Asks for Permission →](glossary-13-15-consent-experience.md)
+[← Admin Unit](glossary-13-13-admin-unit.md) | [Home](../README.md) | [Consent Experience →](glossary-13-15-consent-experience.md)

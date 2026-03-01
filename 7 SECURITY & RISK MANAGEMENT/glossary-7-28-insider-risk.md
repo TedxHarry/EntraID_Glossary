@@ -1,4 +1,5 @@
-# Insider Risk: When the Threat Already Has a Badge
+# Insider Risk
+*When the Threat Already Has a Badge*
 
 **Part of Entra ID Glossary Series: Glossary#7.28 - Insider Risk**
 
@@ -84,4 +85,4 @@ Organizations deploying insider risk capabilities need a defined investigation p
 
 ---
 
-[← SSPR Security: When Self-Service Password Reset Becomes an Attack Vector](glossary-7-27-sspr-security.md) | [Home](../README.md) | [User Risk Level: Understanding the Number Behind the Flag →](glossary-7-29-user-risk-level.md)
+[← SSPR (Security Focus)](glossary-7-27-sspr-security.md) | [Home](../README.md) | [User Risk Level →](glossary-7-29-user-risk-level.md)

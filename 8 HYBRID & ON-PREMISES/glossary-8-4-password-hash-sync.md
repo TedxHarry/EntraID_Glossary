@@ -1,4 +1,5 @@
-# Password Hash Sync: How On-Premises Passwords Work in the Cloud
+# Password Hash Sync
+*How On-Premises Passwords Work in the Cloud*
 
 **Part of Entra ID Glossary Series: Glossary#8.4 - Password Hash Sync**
 
@@ -76,4 +77,4 @@ Pass-Through Authentication and Federation are appropriate for specific requirem
 
 ---
 
-[← Cloud Sync: The Lighter Path to Hybrid Identity](glossary-8-3-cloud-sync.md) | [Home](../README.md) | [Pass-Through Authentication: Validating Cloud Sign-Ins Against On-Premises AD →](glossary-8-5-pass-through-auth.md)
+[← Cloud Sync](glossary-8-3-cloud-sync.md) | [Home](../README.md) | [Pass-Through Auth →](glossary-8-5-pass-through-auth.md)

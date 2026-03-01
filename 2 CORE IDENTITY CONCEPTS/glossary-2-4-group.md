@@ -1,4 +1,5 @@
-# Groups in Entra ID: The Access Management Tool You Should Be Using More
+# Group
+*The Access Management Tool You Should Be Using More*
 
 **Part of Entra ID Glossary Series: Glossary#2.4 - Group**
 
@@ -82,4 +83,4 @@ Role-assignable groups are deliberately restricted — they can only be managed 
 
 ---
 
-[← Service Principal: The Most Misunderstood Object in Entra ID](glossary-2-3-service-principal.md) | [Home](../README.md) | [Enterprise Applications: What the Portal Is Actually Showing You →](glossary-2-5-enterprise-application.md)
+[← Service Principal](glossary-2-3-service-principal.md) | [Home](../README.md) | [Enterprise Application →](glossary-2-5-enterprise-application.md)

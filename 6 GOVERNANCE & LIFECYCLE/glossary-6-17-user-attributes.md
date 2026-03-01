@@ -1,4 +1,5 @@
-# User Attributes: The Properties That Drive Everything Else
+# User Attributes
+*The Properties That Drive Everything Else*
 
 **Part of Entra ID Glossary Series: Glossary#6.17 - User Attributes**
 
@@ -93,4 +94,4 @@ Manual attribute maintenance in Entra ID is error-prone at scale. Automating the
 
 ---
 
-[← Bulk User Operations: When You Need to Change 500 Accounts at Once](glossary-6-16-bulk-user-operations.md) | [Home](../README.md) | [Source of Authority: Which System Gets to Say Who You Are →](glossary-6-18-source-of-authority.md)
+[← Bulk User Operations](glossary-6-16-bulk-user-operations.md) | [Home](../README.md) | [Source of Authority →](glossary-6-18-source-of-authority.md)

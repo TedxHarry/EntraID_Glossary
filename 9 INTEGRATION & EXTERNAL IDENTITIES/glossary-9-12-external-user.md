@@ -1,4 +1,5 @@
-# External User: Managing Access for People Who Don't Work for You
+# External User
+*Managing Access for People Who Don't Work for You*
 
 **Part of Entra ID Glossary Series: Glossary#9.12 - External User**
 
@@ -81,4 +82,4 @@ Governance mechanisms that help:
 
 ---
 
-[← CIAM: Identity Management Designed for Customers, Not Employees](glossary-9-11-ciam.md) | [Home](../README.md) | [External Identity: The Broader Category Behind Every Non-Employee →](glossary-9-13-external-identity.md)
+[← CIAM](glossary-9-11-ciam.md) | [Home](../README.md) | [External Identity →](glossary-9-13-external-identity.md)

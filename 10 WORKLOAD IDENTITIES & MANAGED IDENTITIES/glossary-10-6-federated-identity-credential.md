@@ -1,4 +1,5 @@
-# Federated Identity Credential: The Trust Configuration That Makes Keyless Auth Work
+# Federated Identity Credential
+*The Trust Configuration That Makes Keyless Auth Work*
 
 **Part of Entra ID Glossary Series: Glossary#10.6 - Federated Identity Credential**
 
@@ -59,4 +60,4 @@ The choice between app registration and user-assigned managed identity for workl
 
 ---
 
-[← Workload Federation: Authenticating to Azure Without Storing Azure Credentials](glossary-10-5-workload-federation.md) | [Home](../README.md) | [Instance Metadata Service: The Local Endpoint That Gives Azure Resources Their Identity →](glossary-10-7-imds.md)
+[← Workload Federation](glossary-10-5-workload-federation.md) | [Home](../README.md) | [Instance Metadata Service (IMDS) →](glossary-10-7-imds.md)

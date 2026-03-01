@@ -1,4 +1,5 @@
-# Tenant Restrictions: Controlling Which Microsoft Tenants Your Users Can Access
+# Tenant Restrictions
+*Controlling Which Microsoft Tenants Your Users Can Access*
 
 **Part of Entra ID Glossary Series: Glossary#13.18 - Tenant Restrictions**
 
@@ -72,4 +73,4 @@ The complementary controls for complete data governance: DLP policies in Microso
 
 ---
 
-[← Cross-Tenant Access: Controlling How Your Tenant Interacts With Other Entra ID Tenants](glossary-13-17-cross-tenant-access.md) | [Home](../README.md) | [CA Optimization Agent: Automated Recommendations for Conditional Access Policy Gaps →](glossary-13-19-ca-optimization-agent.md)
+[← Cross-Tenant Access](glossary-13-17-cross-tenant-access.md) | [Home](../README.md) | [CA Optimization Agent →](glossary-13-19-ca-optimization-agent.md)

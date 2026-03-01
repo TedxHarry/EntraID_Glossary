@@ -1,4 +1,5 @@
-# Managed Device: Enrolled Isn't the Same as Secure
+# Managed Device
+*Enrolled Isn't the Same as Secure*
 
 **Part of Entra ID Glossary Series: Glossary#5.12 - Managed Device**
 
@@ -86,4 +87,4 @@ Then, as compliance policies are tuned and devices pass reliably, the policy req
 
 ---
 
-[← Device State: The Real-Time Health Signal That Drives Access Decisions](glossary-5-11-device-state.md) | [Home](../README.md) | [Compliant Device: The Security Baseline That Has to Be Earned Continuously →](glossary-5-13-compliant-device.md)
+[← Device State](glossary-5-11-device-state.md) | [Home](../README.md) | [Compliant Device →](glossary-5-13-compliant-device.md)

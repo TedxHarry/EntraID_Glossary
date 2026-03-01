@@ -1,4 +1,5 @@
-# Activity Report: The Trend View That Audit Logs and Sign-In Logs Don't Give You
+# Activity Report
+*The Trend View That Audit Logs and Sign-In Logs Don't Give You*
 
 **Part of Entra ID Glossary Series: Glossary#12.3 - Activity Report**
 
@@ -61,4 +62,4 @@ The Graph Reporting API supports reports like `getAzureADApplicationSignInSummar
 
 ---
 
-[← Sign-In Log: The Authentication Record Your Security Team Needs to Know Cold](glossary-12-2-sign-in-log.md) | [Home](../README.md) | [Security Alert: When Entra ID Tells You Something Is Wrong →](glossary-12-4-security-alert.md)
+[← Sign-In Log](glossary-12-2-sign-in-log.md) | [Home](../README.md) | [Security Alert →](glossary-12-4-security-alert.md)

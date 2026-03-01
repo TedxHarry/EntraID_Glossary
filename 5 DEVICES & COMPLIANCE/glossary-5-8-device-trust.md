@@ -1,4 +1,5 @@
-# Device Trust: Not All Devices Are Equally Trustworthy (And Entra ID Knows It)
+# Device Trust
+*Not All Devices Are Equally Trustworthy (And Entra ID Knows It)*
 
 **Part of Entra ID Glossary Series: Glossary#5.8 - Device Trust**
 
@@ -69,4 +70,4 @@ This creates a gradient of access rather than a binary allow/deny, which is much
 
 ---
 
-[← Endpoint Manager: One Console, All Your Devices](glossary-5-7-endpoint-manager.md) | [Home](../README.md) | [Hybrid Entra Joined: The Device That Lives in Both Worlds →](glossary-5-9-hybrid-device.md)
+[← Endpoint Manager](glossary-5-7-endpoint-manager.md) | [Home](../README.md) | [Hybrid Device →](glossary-5-9-hybrid-device.md)

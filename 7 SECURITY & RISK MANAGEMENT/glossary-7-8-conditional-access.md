@@ -1,4 +1,5 @@
-# Conditional Access: The Policy Engine That Makes "Never Trust, Always Verify" Real
+# Conditional Access
+*The Policy Engine That Makes "Never Trust, Always Verify" Real*
 
 **Part of Entra ID Glossary Series: Glossary#7.8 - Conditional Access**
 
@@ -84,4 +85,4 @@ Skipping report-only mode is how organizations accidentally lock themselves out 
 
 ---
 
-[← Threat Intelligence: Why Entra ID Knows an IP Is Bad Before You Do](glossary-7-7-threat-intelligence.md) | [Home](../README.md) | [CA Policy: Building the If-Then Logic of Access Control →](glossary-7-9-ca-policy.md)
+[← Threat Intelligence](glossary-7-7-threat-intelligence.md) | [Home](../README.md) | [CA Policy →](glossary-7-9-ca-policy.md)

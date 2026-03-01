@@ -1,4 +1,5 @@
-# Leaked Credentials: When Your Password Shows Up on the Dark Web
+# Leaked Credentials
+*When Your Password Shows Up on the Dark Web*
 
 **Part of Entra ID Glossary Series: Glossary#7.6 - Leaked Credentials**
 
@@ -77,4 +78,4 @@ Several controls reduce the impact of leaked credential events:
 
 ---
 
-[← Anomaly Detection: How Entra ID Learns What Normal Looks Like](glossary-7-5-anomaly-detection.md) | [Home](../README.md) | [Threat Intelligence: Why Entra ID Knows an IP Is Bad Before You Do →](glossary-7-7-threat-intelligence.md)
+[← Anomaly Detection](glossary-7-5-anomaly-detection.md) | [Home](../README.md) | [Threat Intelligence →](glossary-7-7-threat-intelligence.md)

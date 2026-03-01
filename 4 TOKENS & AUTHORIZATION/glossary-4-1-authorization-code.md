@@ -1,4 +1,5 @@
-# The Authorization Code: Why Sign-In Takes Two Steps Instead of One
+# Authorization Code
+*Why Sign-In Takes Two Steps Instead of One*
 
 **Part of Entra ID Glossary Series: Glossary#4.1 - Authorization Code**
 
@@ -66,4 +67,4 @@ A few properties worth understanding when debugging or reviewing app implementat
 
 ---
 
-[← Microsoft Authenticator: More Than a Code Generator](../3%20AUTHENTICATION/glossary-3-8-microsoft-authenticator.md) | [Home](../README.md) | [The Authorization Endpoint: Reading What That Long URL Is Actually Saying →](glossary-4-2-authorization-endpoint.md)
+[← Microsoft Authenticator](../3%20AUTHENTICATION/glossary-3-8-microsoft-authenticator.md) | [Home](../README.md) | [Authorization Endpoint →](glossary-4-2-authorization-endpoint.md)

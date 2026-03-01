@@ -1,4 +1,5 @@
-# User Offboarding: The Day Someone Leaves Is the Day Access Has to Stop
+# User Offboarding
+*The Day Someone Leaves Is the Day Access Has to Stop*
 
 **Part of Entra ID Glossary Series: Glossary#6.3 - User Offboarding**
 
@@ -79,4 +80,4 @@ The sign-in logs and audit logs from the week before departure are the right pla
 
 ---
 
-[← User Onboarding: The First Day Experience Is an Identity Problem](glossary-6-2-user-onboarding.md) | [Home](../README.md) | [Deprovisioning: Disabling the Entra ID Account Is Not Enough →](glossary-6-4-deprovisioning.md)
+[← User Onboarding](glossary-6-2-user-onboarding.md) | [Home](../README.md) | [Deprovisioning →](glossary-6-4-deprovisioning.md)

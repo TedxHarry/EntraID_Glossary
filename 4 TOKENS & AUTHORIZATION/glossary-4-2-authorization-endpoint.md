@@ -1,4 +1,5 @@
-# The Authorization Endpoint: Reading What That Long URL Is Actually Saying
+# Authorization Endpoint
+*Reading What That Long URL Is Actually Saying*
 
 **Part of Entra ID Glossary Series: Glossary#4.2 - Authorization Endpoint**
 
@@ -82,4 +83,4 @@ When you see a sign-in failing at this stage, the Entra ID error page usually in
 
 ---
 
-[← The Authorization Code: Why Sign-In Takes Two Steps Instead of One](glossary-4-1-authorization-code.md) | [Home](../README.md) | [The Token Endpoint: The Server-Side Half Nobody Talks About →](glossary-4-3-token-endpoint.md)
+[← Authorization Code](glossary-4-1-authorization-code.md) | [Home](../README.md) | [Token Endpoint →](glossary-4-3-token-endpoint.md)

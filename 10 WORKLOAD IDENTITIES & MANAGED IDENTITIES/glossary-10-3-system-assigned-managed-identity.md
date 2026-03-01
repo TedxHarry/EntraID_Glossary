@@ -1,4 +1,5 @@
-# System-Assigned Managed Identity: One Resource, One Identity, One Lifecycle
+# System-Assigned Managed Identity
+*One Resource, One Identity, One Lifecycle*
 
 **Part of Entra ID Glossary Series: Glossary#10.3 - System-Assigned Managed Identity**
 
@@ -67,4 +68,4 @@ The identity needs to persist across resource replacements. If the same logical 
 
 ---
 
-[← Managed Identity: Credentials That Azure Manages So You Don't Have To](glossary-10-2-managed-identity.md) | [Home](../README.md) | [User-Assigned Managed Identity: One Identity Shared Across Many Resources →](glossary-10-4-user-assigned-managed-identity.md)
+[← Managed Identity](glossary-10-2-managed-identity.md) | [Home](../README.md) | [User-Assigned Managed Identity →](glossary-10-4-user-assigned-managed-identity.md)

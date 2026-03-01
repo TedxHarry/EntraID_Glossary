@@ -1,4 +1,5 @@
-# Password Reset: Giving Users the Key to Their Own Lock
+# Password Reset
+*Giving Users the Key to Their Own Lock*
 
 **Part of Entra ID Glossary Series: Glossary#6.23 - Password Reset**
 
@@ -81,4 +82,4 @@ Forcing a password change on next sign-in ensures the temporary password is imme
 
 ---
 
-[← Account Lockout: How Entra ID Stops Password Guessing Without Locking Out Real Users](glossary-6-22-account-lockout.md) | [Home](../README.md) | [Risk Detection: How Entra ID Knows Something Looks Wrong →](../7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-1-risk-detection.md)
+[← Account Lockout](glossary-6-22-account-lockout.md) | [Home](../README.md) | [Risk Detection →](../7%20SECURITY%20%26%20RISK%20MANAGEMENT/glossary-7-1-risk-detection.md)

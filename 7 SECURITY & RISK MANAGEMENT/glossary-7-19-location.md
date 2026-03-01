@@ -1,4 +1,5 @@
-# Location: Using Where You Sign In to Shape What You Can Access
+# Location
+*Using Where You Sign In to Shape What You Can Access*
 
 **Part of Entra ID Glossary Series: Glossary#7.19 - Location**
 
@@ -73,4 +74,4 @@ This interaction creates a compounding effect: sign-ins from trusted corporate l
 
 ---
 
-[← Report-Only Mode: How to Test a Policy Without Breaking Production](glossary-7-18-report-only-mode.md) | [Home](../README.md) | [Trusted Location: Teaching Conditional Access What "Safe" Looks Like →](glossary-7-20-trusted-location.md)
+[← Report-Only Mode](glossary-7-18-report-only-mode.md) | [Home](../README.md) | [Trusted Location →](glossary-7-20-trusted-location.md)

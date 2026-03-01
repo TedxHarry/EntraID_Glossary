@@ -1,4 +1,5 @@
-# OpenID Connect: The Layer OAuth Was Missing
+# OIDC (OpenID Connect)
+*The Layer OAuth Was Missing*
 
 **Part of Entra ID Glossary Series: Glossary#4.17 - OIDC (OpenID Connect)**
 
@@ -80,4 +81,4 @@ Libraries that support OIDC discovery configure themselves automatically. You pr
 
 ---
 
-[← OAuth 2.0: The Protocol That Solved a Problem We Didn't Realize Was a Problem](glossary-4-16-oauth2.md) | [Home](../README.md) | [SAML: The Protocol That Refuses to Die (and Sometimes Shouldn't) →](glossary-4-18-saml.md)
+[← OAuth 2.0](glossary-4-16-oauth2.md) | [Home](../README.md) | [SAML →](glossary-4-18-saml.md)

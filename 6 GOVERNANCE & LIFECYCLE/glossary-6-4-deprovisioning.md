@@ -1,4 +1,5 @@
-# Deprovisioning: Disabling the Entra ID Account Is Not Enough
+# Deprovisioning
+*Disabling the Entra ID Account Is Not Enough*
 
 **Part of Entra ID Glossary Series: Glossary#6.4 - Deprovisioning**
 
@@ -78,4 +79,4 @@ That inventory is the map for building deprovisioning coverage, app by app.
 
 ---
 
-[← User Offboarding: The Day Someone Leaves Is the Day Access Has to Stop](glossary-6-3-user-offboarding.md) | [Home](../README.md) | [Lifecycle Management: Identity Automation for the Entire Employee Journey →](glossary-6-5-lifecycle-management.md)
+[← User Offboarding](glossary-6-3-user-offboarding.md) | [Home](../README.md) | [Lifecycle Management →](glossary-6-5-lifecycle-management.md)

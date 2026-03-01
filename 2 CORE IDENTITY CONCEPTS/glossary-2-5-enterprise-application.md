@@ -1,4 +1,5 @@
-# Enterprise Applications: What the Portal Is Actually Showing You
+# Enterprise Application
+*What the Portal Is Actually Showing You*
 
 **Part of Entra ID Glossary Series: Glossary#2.5 - Enterprise Application**
 
@@ -75,4 +76,4 @@ That's it. Once working, users click Salesforce in My Apps or their browser book
 
 ---
 
-[← Groups in Entra ID: The Access Management Tool You Should Be Using More](glossary-2-4-group.md) | [Home](../README.md) | [Directory Roles: Why "Just Give Them Global Admin" Is the Worst Habit in Entra ID →](glossary-2-6-directory-role.md)
+[← Group](glossary-2-4-group.md) | [Home](../README.md) | [Directory Role →](glossary-2-6-directory-role.md)

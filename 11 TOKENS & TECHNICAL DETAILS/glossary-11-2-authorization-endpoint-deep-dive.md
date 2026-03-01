@@ -1,4 +1,5 @@
-# Authorization Endpoint: What's Actually in That Sign-In URL
+# Authorization Endpoint (Deep Dive)
+*What's Actually in That Sign-In URL*
 
 **Part of Entra ID Glossary Series: Glossary#11.2 - Authorization Endpoint (Deep Dive)**
 
@@ -73,4 +74,4 @@ These errors come back in the URL, not as HTTP error codes. The application must
 
 ---
 
-[← Authorization Code Flow: The OAuth Dance That Powers Most Modern Web App Sign-Ins](glossary-11-1-authorization-code-flow.md) | [Home](../README.md) | [Token Endpoint: Where Codes and Credentials Become Tokens →](glossary-11-3-token-endpoint-deep-dive.md)
+[← Authorization Code Flow](glossary-11-1-authorization-code-flow.md) | [Home](../README.md) | [Token Endpoint (Deep Dive) →](glossary-11-3-token-endpoint-deep-dive.md)

@@ -1,4 +1,5 @@
-# "Role": One Word, Three Completely Different Things in Entra ID
+# Role (Identity Role)
+*One Word, Three Completely Different Things in Entra ID*
 
 **Part of Entra ID Glossary Series: Glossary#2.9 - Role (Identity Role)**
 
@@ -72,4 +73,4 @@ Different teams tend to own different layers. The identity team manages director
 
 ---
 
-[← API Permissions in Entra ID: Reading What You're Actually Granting](glossary-2-8-permission.md) | [Home](../README.md) | [Delegation: Giving People Just Enough Access — No More →](glossary-2-10-delegation.md)
+[← Permission](glossary-2-8-permission.md) | [Home](../README.md) | [Delegation →](glossary-2-10-delegation.md)

@@ -1,4 +1,5 @@
-# Delegation: Giving People Just Enough Access — No More
+# Delegation
+*Giving People Just Enough Access — No More*
 
 **Part of Entra ID Glossary Series: Glossary#2.10 - Delegation**
 
@@ -64,4 +65,4 @@ Delegation is what reduces those blast radii. It takes organizational work — i
 
 ---
 
-[← "Role": One Word, Three Completely Different Things in Entra ID](glossary-2-9-role-identity-role.md) | [Home](../README.md) | [Admin Roles: The Keys to Your Tenant and Why You Need Far Fewer of Them →](glossary-2-11-admin-role.md)
+[← Role (Identity Role)](glossary-2-9-role-identity-role.md) | [Home](../README.md) | [Admin Role →](glossary-2-11-admin-role.md)

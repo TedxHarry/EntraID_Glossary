@@ -1,4 +1,5 @@
-# Session Control: Governing What Happens After Access Is Granted
+# Session Control
+*Governing What Happens After Access Is Granted*
 
 **Part of Entra ID Glossary Series: Glossary#7.23 - Session Control**
 
@@ -89,4 +90,4 @@ CAE shifts the security model from "tokens expire eventually" to "tokens are rev
 
 ---
 
-[← Legacy Authentication: The Open Door That MFA Can't Close](glossary-7-22-legacy-authentication.md) | [Home](../README.md) | [Terms of Use: Making Consent Part of the Access Flow →](glossary-7-24-terms-of-use.md)
+[← Legacy Authentication](glossary-7-22-legacy-authentication.md) | [Home](../README.md) | [Terms of Use →](glossary-7-24-terms-of-use.md)

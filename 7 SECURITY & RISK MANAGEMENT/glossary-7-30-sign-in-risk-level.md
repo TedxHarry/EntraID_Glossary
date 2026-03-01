@@ -1,4 +1,5 @@
-# Sign-In Risk Level: Reading the Signals in a Single Authentication
+# Sign-In Risk Level
+*Reading the Signals in a Single Authentication*
 
 **Part of Entra ID Glossary Series: Glossary#7.30 - Sign-In Risk Level**
 
@@ -76,4 +77,4 @@ High risk gets blocked rather than stepped up because at High confidence, a step
 
 ---
 
-[← User Risk Level: Understanding the Number Behind the Flag](glossary-7-29-user-risk-level.md) | [Home](../README.md) | [CA Template: Microsoft's Starting Points for Conditional Access →](glossary-7-31-ca-template.md)
+[← User Risk Level](glossary-7-29-user-risk-level.md) | [Home](../README.md) | [CA Template →](glossary-7-31-ca-template.md)

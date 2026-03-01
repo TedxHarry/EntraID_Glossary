@@ -1,4 +1,5 @@
-# Refresh Tokens: What "Keep Me Signed In" Is Actually Doing
+# Refresh Token
+*What "Keep Me Signed In" Is Actually Doing*
 
 **Part of Entra ID Glossary Series: Glossary#4.7 - Refresh Token**
 
@@ -64,4 +65,4 @@ If a user's device becomes non-compliant after sign-in, the next refresh token e
 
 ---
 
-[← The ID Token: Proof of Who Signed In (Not a Key to the API)](glossary-4-6-id-token.md) | [Home](../README.md) | [Bearer Tokens: The Name That Tells You Everything About the Risk →](glossary-4-8-bearer-token.md)
+[← ID Token](glossary-4-6-id-token.md) | [Home](../README.md) | [Bearer Token →](glossary-4-8-bearer-token.md)

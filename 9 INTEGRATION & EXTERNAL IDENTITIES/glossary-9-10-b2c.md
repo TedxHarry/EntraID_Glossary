@@ -1,4 +1,5 @@
-# B2C: Identity Management for Your Customers, Not Your Employees
+# B2C
+*Identity Management for Your Customers, Not Your Employees*
 
 **Part of Entra ID Glossary Series: Glossary#9.10 - B2C**
 
@@ -69,4 +70,4 @@ The underlying need remains the same: organizations building consumer-facing app
 
 ---
 
-[← B2B Collaboration: Giving External Partners Access Without Managing Their Identity](glossary-9-9-b2b-collaboration.md) | [Home](../README.md) | [CIAM: Identity Management Designed for Customers, Not Employees →](glossary-9-11-ciam.md)
+[← B2B Collaboration](glossary-9-9-b2b-collaboration.md) | [Home](../README.md) | [CIAM →](glossary-9-11-ciam.md)

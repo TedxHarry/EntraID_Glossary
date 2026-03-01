@@ -1,4 +1,5 @@
-# Enterprise Application (Advanced): Governing the Applications in Your Tenant Beyond Basic Integration
+# Enterprise Application (Advanced)
+*Governing the Applications in Your Tenant Beyond Basic Integration*
 
 **Part of Entra ID Glossary Series: Glossary#13.16 - Enterprise Application (Advanced)**
 
@@ -59,4 +60,4 @@ The provisioning log (separate from the sign-in log and audit log) records each 
 
 ---
 
-[← Consent Experience: What Users See When an App Asks for Permission](glossary-13-15-consent-experience.md) | [Home](../README.md) | [Cross-Tenant Access: Controlling How Your Tenant Interacts With Other Entra ID Tenants →](glossary-13-17-cross-tenant-access.md)
+[← Consent Experience](glossary-13-15-consent-experience.md) | [Home](../README.md) | [Cross-Tenant Access →](glossary-13-17-cross-tenant-access.md)

@@ -1,4 +1,5 @@
-# Microsoft Entra Suite: The Consolidated Identity and Network Access Platform
+# Microsoft Entra Suite
+*The Consolidated Identity and Network Access Platform*
 
 **Part of Entra ID Glossary Series: Glossary#13.23 - Microsoft Entra Suite**
 
@@ -69,4 +70,4 @@ For organizations planning identity investments, the Entra Suite represents Micr
 
 ---
 
-[← Microsoft Authenticator Advanced: Beyond Basic MFA to Modern Authentication](glossary-13-22-microsoft-authenticator-advanced.md) | [Home](../README.md) | [Advanced Scenarios: Where Entra ID Capabilities Combine to Solve Complex Problems →](glossary-13-24-advanced-scenarios.md)
+[← Microsoft Authenticator Advanced](glossary-13-22-microsoft-authenticator-advanced.md) | [Home](../README.md) | [Advanced Scenarios →](glossary-13-24-advanced-scenarios.md)

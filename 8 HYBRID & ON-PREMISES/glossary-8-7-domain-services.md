@@ -1,4 +1,5 @@
-# Domain Services: Active Directory Without the Domain Controllers
+# Domain Services
+*Active Directory Without the Domain Controllers*
 
 **Part of Entra ID Glossary Series: Glossary#8.7 - Domain Services**
 
@@ -84,4 +85,4 @@ Domain Services is "AD-as-a-service." Microsoft handles the infrastructure. You 
 
 ---
 
-[← Federation: When Entra ID Trusts Another Identity Provider for Authentication](glossary-8-6-federation.md) | [Home](../README.md) | [App Integration: Connecting Applications to Entra ID for Authentication →](../9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-1-app-integration.md)
+[← Federation](glossary-8-6-federation.md) | [Home](../README.md) | [App Integration →](../9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-1-app-integration.md)

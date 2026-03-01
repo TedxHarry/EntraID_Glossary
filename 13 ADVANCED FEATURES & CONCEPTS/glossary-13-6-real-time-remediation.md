@@ -1,4 +1,5 @@
-# Real-Time Remediation: Automated Immediate Response to Identity Risks
+# Real-Time Remediation
+*Automated Immediate Response to Identity Risks*
 
 **Part of Entra ID Glossary Series: Glossary#13.6 - Real-Time Remediation**
 
@@ -65,4 +66,4 @@ The recommended pattern: start with High risk thresholds for blocking, allow sel
 
 ---
 
-[← Passwordless Authentication (Advanced): Deployment Reality Beyond the Demo](glossary-13-5-passwordless-auth-advanced.md) | [Home](../README.md) | [UPN: The Sign-In Name That Looks Like an Email But Isn't Always One →](glossary-13-7-upn.md)
+[← Passwordless Auth (Advanced)](glossary-13-5-passwordless-auth-advanced.md) | [Home](../README.md) | [UPN (User Principal Name) →](glossary-13-7-upn.md)

@@ -1,4 +1,5 @@
-# Trusted Location: Teaching Conditional Access What "Safe" Looks Like
+# Trusted Location
+*Teaching Conditional Access What "Safe" Looks Like*
 
 **Part of Entra ID Glossary Series: Glossary#7.20 - Trusted Location**
 
@@ -78,4 +79,4 @@ This is why Trusted Locations work best as one layer in a defense-in-depth archi
 
 ---
 
-[← Location: Using Where You Sign In to Shape What You Can Access](glossary-7-19-location.md) | [Home](../README.md) | [IP Address Range: The Building Block of Location-Based Access Control →](glossary-7-21-ip-address-range.md)
+[← Location](glossary-7-19-location.md) | [Home](../README.md) | [IP Address Range →](glossary-7-21-ip-address-range.md)

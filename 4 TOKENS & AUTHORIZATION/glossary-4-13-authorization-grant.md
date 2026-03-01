@@ -1,4 +1,5 @@
-# Authorization Grant: Four Ways to Get a Token (and When to Use Each)
+# Authorization Grant
+*Four Ways to Get a Token (and When to Use Each)*
 
 **Part of Entra ID Glossary Series: Glossary#4.13 - Authorization Grant**
 
@@ -65,4 +66,4 @@ The grant type determines what the token represents, who is accountable in audit
 
 ---
 
-[← Audience: The Token Knows Who It Was Meant For](glossary-4-12-audience.md) | [Home](../README.md) | [Actor: The Application in the Token, and Why It Matters →](glossary-4-14-actor.md)
+[← Audience](glossary-4-12-audience.md) | [Home](../README.md) | [Actor →](glossary-4-14-actor.md)

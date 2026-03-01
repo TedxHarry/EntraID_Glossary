@@ -1,4 +1,5 @@
-# FIDO2: Why a Small USB Stick Can Eliminate Phishing from Your Attack Surface
+# FIDO2
+*Why a Small USB Stick Can Eliminate Phishing from Your Attack Surface*
 
 **Part of Entra ID Glossary Series: Glossary#3.6 - FIDO2**
 
@@ -84,4 +85,4 @@ FIDO2 security keys are the right choice for:
 
 ---
 
-[← Passwordless Authentication: Fixing the Right Problem](glossary-3-5-passwordless-authentication.md) | [Home](../README.md) | [Windows Hello for Business: It's Not Just a PIN →](glossary-3-7-windows-hello.md)
+[← Passwordless Authentication](glossary-3-5-passwordless-authentication.md) | [Home](../README.md) | [Windows Hello →](glossary-3-7-windows-hello.md)

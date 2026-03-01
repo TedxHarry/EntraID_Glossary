@@ -1,4 +1,5 @@
-# Token Revocation: Why "I Disabled Their Account" Isn't Always Enough
+# Token Revocation
+*Why "I Disabled Their Account" Isn't Always Enough*
 
 **Part of Entra ID Glossary Series: Glossary#4.10 - Token Revocation**
 
@@ -82,4 +83,4 @@ CAE implementation in custom applications eliminates the window entirely for tho
 
 ---
 
-[← Token Lifetime: The Trade-Off Between Security and Not Annoying Your Users](glossary-4-9-token-lifetime.md) | [Home](../README.md) | [Scope: The Permission on the Label vs the Permission You Actually Need →](glossary-4-11-scope.md)
+[← Token Lifetime](glossary-4-9-token-lifetime.md) | [Home](../README.md) | [Scope →](glossary-4-11-scope.md)

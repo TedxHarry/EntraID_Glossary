@@ -1,4 +1,5 @@
-# What Is Microsoft Entra ID? The Foundation of Modern Identity
+# Microsoft Entra ID
+*The Foundation of Modern Identity*
 
 **Part of Entra ID Glossary Series: Glossary#1.1 - Microsoft Entra ID**
 
@@ -72,4 +73,4 @@ Start here. Get this solid. Everything else builds on it. 🔑
 
 ---
 
-← *(start of series)* | [Home](../README.md) | [The Microsoft Entra Product Family: Why There's More Than Just Entra ID →](glossary-1-2-microsoft-entra-product-family.md)
+← *(start of series)* | [Home](../README.md) | [Microsoft Entra Product Family →](glossary-1-2-microsoft-entra-product-family.md)

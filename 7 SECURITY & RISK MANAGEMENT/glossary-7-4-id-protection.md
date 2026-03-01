@@ -1,4 +1,5 @@
-# ID Protection: Entra ID's Automated Threat Response System
+# ID Protection
+*Entra ID's Automated Threat Response System*
 
 **Part of Entra ID Glossary Series: Glossary#7.4 - ID Protection**
 
@@ -93,4 +94,4 @@ False positive rate drops over time as the system builds accurate baselines. New
 
 ---
 
-[← Risky User: When the Account Itself Is Flagged, Not Just One Sign-In](glossary-7-3-risky-user.md) | [Home](../README.md) | [Anomaly Detection: How Entra ID Learns What Normal Looks Like →](glossary-7-5-anomaly-detection.md)
+[← Risky User](glossary-7-3-risky-user.md) | [Home](../README.md) | [Anomaly Detection →](glossary-7-5-anomaly-detection.md)

@@ -1,4 +1,5 @@
-# IP Address Range: The Building Block of Location-Based Access Control
+# IP Address Range
+*The Building Block of Location-Based Access Control*
 
 **Part of Entra ID Glossary Series: Glossary#7.21 - IP Address Range**
 
@@ -69,4 +70,4 @@ Before marking a Named Location as trusted or building policies around it, verif
 
 ---
 
-[← Trusted Location: Teaching Conditional Access What "Safe" Looks Like](glossary-7-20-trusted-location.md) | [Home](../README.md) | [Legacy Authentication: The Open Door That MFA Can't Close →](glossary-7-22-legacy-authentication.md)
+[← Trusted Location](glossary-7-20-trusted-location.md) | [Home](../README.md) | [Legacy Authentication →](glossary-7-22-legacy-authentication.md)

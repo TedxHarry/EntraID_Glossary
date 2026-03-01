@@ -1,4 +1,5 @@
-# CIAM: Identity Management Designed for Customers, Not Employees
+# CIAM
+*Identity Management Designed for Customers, Not Employees*
 
 **Part of Entra ID Glossary Series: Glossary#9.11 - CIAM**
 
@@ -67,4 +68,4 @@ A CIAM solution needs to handle the full customer identity lifecycle:
 
 ---
 
-[← B2C: Identity Management for Your Customers, Not Your Employees](glossary-9-10-b2c.md) | [Home](../README.md) | [External User: Managing Access for People Who Don't Work for You →](glossary-9-12-external-user.md)
+[← B2C](glossary-9-10-b2c.md) | [Home](../README.md) | [External User →](glossary-9-12-external-user.md)

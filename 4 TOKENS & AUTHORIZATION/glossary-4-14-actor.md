@@ -1,4 +1,5 @@
-# Actor: The Application in the Token, and Why It Matters
+# Actor
+*The Application in the Token, and Why It Matters*
 
 **Part of Entra ID Glossary Series: Glossary#4.14 - Actor**
 
@@ -70,4 +71,4 @@ APIs that accept both delegated and application tokens need to handle this disti
 
 ---
 
-[← Authorization Grant: Four Ways to Get a Token (and When to Use Each)](glossary-4-13-authorization-grant.md) | [Home](../README.md) | [Subject: Whose Data Is This, Really? →](glossary-4-15-subject.md)
+[← Authorization Grant](glossary-4-13-authorization-grant.md) | [Home](../README.md) | [Subject →](glossary-4-15-subject.md)

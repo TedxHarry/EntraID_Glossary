@@ -1,4 +1,5 @@
-# Condition: The Signals That Make Conditional Access Contextual
+# Condition
+*The Signals That Make Conditional Access Contextual*
 
 **Part of Entra ID Glossary Series: Glossary#7.12 - Condition**
 
@@ -73,4 +74,4 @@ Testing condition behavior with the What If tool before enforcement is essential
 
 ---
 
-[← Assignment: Who and What Your Conditional Access Policy Actually Covers](glossary-7-11-assignment.md) | [Home](../README.md) | [Grant Control: The Access Decision in Conditional Access →](glossary-7-13-grant-control.md)
+[← Assignment](glossary-7-11-assignment.md) | [Home](../README.md) | [Grant Control →](glossary-7-13-grant-control.md)

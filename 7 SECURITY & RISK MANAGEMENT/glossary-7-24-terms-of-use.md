@@ -1,4 +1,5 @@
-# Terms of Use: Making Consent Part of the Access Flow
+# Terms of Use
+*Making Consent Part of the Access Flow*
 
 **Part of Entra ID Glossary Series: Glossary#7.24 - Terms of Use**
 
@@ -77,4 +78,4 @@ ToU also doesn't provide a legal guarantee that the acceptance is binding in all
 
 ---
 
-[← Session Control: Governing What Happens After Access Is Granted](glossary-7-23-session-control.md) | [Home](../README.md) | [Authentication Strength: Why Some MFA Is Stronger Than Others →](glossary-7-25-authentication-strength.md)
+[← Session Control](glossary-7-23-session-control.md) | [Home](../README.md) | [Authentication Strength →](glossary-7-25-authentication-strength.md)

@@ -1,4 +1,5 @@
-# The Microsoft Entra Product Family: Why There's More Than Just Entra ID
+# Microsoft Entra Product Family
+*Why There's More Than Just Entra ID*
 
 **Part of Entra ID Glossary Series: Glossary#1.2 - Microsoft Entra Product Family**
 
@@ -72,4 +73,4 @@ When you're starting out, focus on Entra ID first — deeply. Understanding the 
 
 ---
 
-[← What Is Microsoft Entra ID? The Foundation of Modern Identity](glossary-1-1-microsoft-entra-id.md) | [Home](../README.md) | [What Is a Tenant? (And Why Getting This Wrong Causes Real Problems) →](glossary-1-3-tenant.md)
+[← Microsoft Entra ID](glossary-1-1-microsoft-entra-id.md) | [Home](../README.md) | [Tenant →](glossary-1-3-tenant.md)

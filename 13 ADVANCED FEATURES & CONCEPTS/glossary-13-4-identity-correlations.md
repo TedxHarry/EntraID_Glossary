@@ -1,4 +1,5 @@
-# Identity Correlations: Matching the Same Person Across Different Systems
+# Identity Correlations
+*Matching the Same Person Across Different Systems*
 
 **Part of Entra ID Glossary Series: Glossary#13.4 - Identity Correlations**
 
@@ -65,4 +66,4 @@ Correlation at joiner events (when a new account is created, check for existing 
 
 ---
 
-[← Continuous Authorization: Shifting From "You Were Trusted" to "You Are Trusted Right Now"](glossary-13-3-continuous-authorization.md) | [Home](../README.md) | [Passwordless Authentication (Advanced): Deployment Reality Beyond the Demo →](glossary-13-5-passwordless-auth-advanced.md)
+[← Continuous Authorization (CAE)](glossary-13-3-continuous-authorization.md) | [Home](../README.md) | [Passwordless Auth (Advanced) →](glossary-13-5-passwordless-auth-advanced.md)

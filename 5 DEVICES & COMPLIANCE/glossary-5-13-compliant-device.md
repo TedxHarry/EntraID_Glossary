@@ -1,4 +1,5 @@
-# Compliant Device: The Security Baseline That Has to Be Earned Continuously
+# Compliant Device
+*The Security Baseline That Has to Be Earned Continuously*
 
 **Part of Entra ID Glossary Series: Glossary#5.13 - Compliant Device**
 
@@ -85,4 +86,4 @@ Enabling a new compliance requirement for 2,000 devices without testing first, t
 
 ---
 
-[← Managed Device: Enrolled Isn't the Same as Secure](glossary-5-12-managed-device.md) | [Home](../README.md) | [Non-Compliant Device: What Happens When the Device Fails Its Security Check →](glossary-5-14-non-compliant-device.md)
+[← Managed Device](glossary-5-12-managed-device.md) | [Home](../README.md) | [Non-Compliant Device →](glossary-5-14-non-compliant-device.md)

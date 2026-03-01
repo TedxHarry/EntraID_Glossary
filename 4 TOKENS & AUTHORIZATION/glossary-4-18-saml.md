@@ -1,4 +1,5 @@
-# SAML: The Protocol That Refuses to Die (and Sometimes Shouldn't)
+# SAML
+*The Protocol That Refuses to Die (and Sometimes Shouldn't)*
 
 **Part of Entra ID Glossary Series: Glossary#4.18 - SAML**
 
@@ -77,4 +78,4 @@ For new integrations where you have a choice, OIDC. For existing applications th
 
 ---
 
-[← OpenID Connect: The Layer OAuth Was Missing](glossary-4-17-oidc.md) | [Home](../README.md) | [Token Security: Treating Every Token Like the Key It Is →](glossary-4-19-token-security.md)
+[← OIDC (OpenID Connect)](glossary-4-17-oidc.md) | [Home](../README.md) | [Token Security →](glossary-4-19-token-security.md)

@@ -1,4 +1,5 @@
-# Admin Roles: The Keys to Your Tenant and Why You Need Far Fewer of Them
+# Admin Role
+*The Keys to Your Tenant and Why You Need Far Fewer of Them*
 
 **Part of Entra ID Glossary Series: Glossary#2.11 - Admin Role**
 
@@ -74,4 +75,4 @@ The right number of Global Admins for most organizations is two break-glass acco
 
 ---
 
-[← Delegation: Giving People Just Enough Access — No More](glossary-2-10-delegation.md) | [Home](../README.md) | [Authentication: The Question Behind Every Sign-In →](../3%20AUTHENTICATION/glossary-3-1-authentication.md)
+[← Delegation](glossary-2-10-delegation.md) | [Home](../README.md) | [Authentication →](../3%20AUTHENTICATION/glossary-3-1-authentication.md)

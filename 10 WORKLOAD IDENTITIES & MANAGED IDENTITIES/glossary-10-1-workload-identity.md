@@ -1,4 +1,5 @@
-# Workload Identity: When the Thing Connecting to Your Systems Isn't a Person
+# Workload Identity
+*When the Thing Connecting to Your Systems Isn't a Person*
 
 **Part of Entra ID Glossary Series: Glossary#10.1 - Workload Identity**
 
@@ -59,4 +60,4 @@ Microsoft Entra Workload ID (the product layer on top of the base workload ident
 
 ---
 
-[← External Tenant: The Entra ID Tenant Type Built for Your Customers](../9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-16-external-tenant.md) | [Home](../README.md) | [Managed Identity: Credentials That Azure Manages So You Don't Have To →](glossary-10-2-managed-identity.md)
+[← External Tenant](../9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-16-external-tenant.md) | [Home](../README.md) | [Managed Identity →](glossary-10-2-managed-identity.md)

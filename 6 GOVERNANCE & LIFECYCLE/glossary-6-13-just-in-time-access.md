@@ -1,4 +1,5 @@
-# Just-in-Time Access: Admin Privileges Should Be Borrowed, Not Owned
+# Just-in-Time Access
+*Admin Privileges Should Be Borrowed, Not Owned*
 
 **Part of Entra ID Glossary Series: Glossary#6.13 - Just-in-Time Access**
 
@@ -80,4 +81,4 @@ Start with Global Administrator. Convert permanent assignments to eligible. Set 
 
 ---
 
-[← Auto-Provision: When Access Appears Without Anyone Creating It](glossary-6-12-auto-provision.md) | [Home](../README.md) | [Governance: The System That Keeps Access from Running Away from You →](glossary-6-14-governance.md)
+[← Auto-Provision](glossary-6-12-auto-provision.md) | [Home](../README.md) | [Governance →](glossary-6-14-governance.md)

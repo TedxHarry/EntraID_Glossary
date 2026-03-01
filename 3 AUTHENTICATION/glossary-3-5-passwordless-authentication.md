@@ -1,4 +1,5 @@
-# Passwordless Authentication: Fixing the Right Problem
+# Passwordless Authentication
+*Fixing the Right Problem*
 
 **Part of Entra ID Glossary Series: Glossary#3.5 - Passwordless Authentication**
 
@@ -75,4 +76,4 @@ The goal isn't flipping a switch. It's making passwordless the default path of l
 
 ---
 
-[← Multi-Factor Authentication: Why 99.9% Attack Prevention Still Has an Asterisk](glossary-3-4-mfa.md) | [Home](../README.md) | [FIDO2: Why a Small USB Stick Can Eliminate Phishing from Your Attack Surface →](glossary-3-6-fido2.md)
+[← Multi-Factor Authentication (MFA)](glossary-3-4-mfa.md) | [Home](../README.md) | [FIDO2 →](glossary-3-6-fido2.md)

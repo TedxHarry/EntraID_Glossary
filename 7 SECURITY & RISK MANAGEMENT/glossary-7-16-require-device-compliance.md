@@ -1,4 +1,5 @@
-# Require Device Compliance: The Grant Control That Stops Token Theft
+# Require Device Compliance
+*The Grant Control That Stops Token Theft*
 
 **Part of Entra ID Glossary Series: Glossary#7.16 - Require Device Compliance**
 
@@ -90,4 +91,4 @@ This is the recommended configuration for access to sensitive resources: both re
 
 ---
 
-[← Require MFA: The Grant Control That Changed Identity Security](glossary-7-15-require-mfa.md) | [Home](../README.md) | [Require Authentication Strength: Not All MFA Is Equal →](glossary-7-17-require-authentication-strength.md)
+[← Require MFA](glossary-7-15-require-mfa.md) | [Home](../README.md) | [Require Authentication Strength →](glossary-7-17-require-authentication-strength.md)

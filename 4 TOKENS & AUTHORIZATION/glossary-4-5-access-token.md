@@ -1,4 +1,5 @@
-# Access Tokens: What's Actually Inside That Long String
+# Access Token
+*What's Actually Inside That Long String*
 
 **Part of Entra ID Glossary Series: Glossary#4.5 - Access Token**
 
@@ -72,4 +73,4 @@ A resource server that doesn't properly validate access tokens is accepting unsi
 
 ---
 
-[← The Authorization Server: What Entra ID Is Actually Doing Behind the Scenes](glossary-4-4-authorization-server.md) | [Home](../README.md) | [The ID Token: Proof of Who Signed In (Not a Key to the API) →](glossary-4-6-id-token.md)
+[← Authorization Server](glossary-4-4-authorization-server.md) | [Home](../README.md) | [ID Token →](glossary-4-6-id-token.md)

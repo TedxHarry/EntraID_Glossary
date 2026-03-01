@@ -1,4 +1,5 @@
-# Directory Roles: Why "Just Give Them Global Admin" Is the Worst Habit in Entra ID
+# Directory Role
+*Why "Just Give Them Global Admin" Is the Worst Habit in Entra ID*
 
 **Part of Entra ID Glossary Series: Glossary#2.6 - Directory Role**
 
@@ -73,4 +74,4 @@ Global Admin should be a last resort for break-glass scenarios and a small numbe
 
 ---
 
-[← Enterprise Applications: What the Portal Is Actually Showing You](glossary-2-5-enterprise-application.md) | [Home](../README.md) | [Access Control: What It Actually Means When Everything Is Everywhere →](glossary-2-7-access-control.md)
+[← Enterprise Application](glossary-2-5-enterprise-application.md) | [Home](../README.md) | [Access Control →](glossary-2-7-access-control.md)

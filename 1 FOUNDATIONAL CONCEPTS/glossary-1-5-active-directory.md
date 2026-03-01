@@ -1,4 +1,5 @@
-# Active Directory Isn't Dead. Here's Why That Matters.
+# Active Directory
+*Here's Why That Matters.*
 
 **Part of Entra ID Glossary Series: Glossary#1.5 - Active Directory**
 
@@ -76,4 +77,4 @@ In all of these, Entra ID exists alongside AD. They're not competitors in these 
 
 ---
 
-[← Cloud-Based Identity: What It Actually Means When the Servers Aren't Yours](glossary-1-4-cloud-based-identity.md) | [Home](../README.md) | [Hybrid Identity: Living in Two Worlds at Once →](glossary-1-6-hybrid-identity.md)
+[← Cloud-Based Identity](glossary-1-4-cloud-based-identity.md) | [Home](../README.md) | [Hybrid Identity →](glossary-1-6-hybrid-identity.md)

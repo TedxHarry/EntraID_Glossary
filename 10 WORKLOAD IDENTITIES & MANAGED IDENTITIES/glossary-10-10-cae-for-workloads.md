@@ -1,4 +1,5 @@
-# CAE for Workloads: Real-Time Token Revocation for Non-Human Identities
+# CAE for Workloads
+*Real-Time Token Revocation for Non-Human Identities*
 
 **Part of Entra ID Glossary Series: Glossary#10.10 - CAE for Workloads**
 
@@ -61,4 +62,4 @@ Knowing which Azure services support CAE matters when designing incident respons
 
 ---
 
-[← Azure Resource Manager: The Management Plane Where Managed Identity Permissions Live](glossary-10-9-azure-resource-manager.md) | [Home](../README.md) | [Long-Lived Tokens: Why 24-Hour Workload Tokens Are Safer Than You'd Think →](glossary-10-11-llts.md)
+[← Azure Resource Manager](glossary-10-9-azure-resource-manager.md) | [Home](../README.md) | [LLTs (Long Lived Tokens) →](glossary-10-11-llts.md)

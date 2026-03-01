@@ -1,4 +1,5 @@
-# Cloud Sync: The Lighter Path to Hybrid Identity
+# Cloud Sync
+*The Lighter Path to Hybrid Identity*
 
 **Part of Entra ID Glossary Series: Glossary#8.3 - Cloud Sync**
 
@@ -71,4 +72,4 @@ The feature gap between Cloud Sync and Entra Connect has narrowed with each rele
 
 ---
 
-[← Entra Connect: The Engine Behind Hybrid Identity](glossary-8-2-entra-connect.md) | [Home](../README.md) | [Password Hash Sync: How On-Premises Passwords Work in the Cloud →](glossary-8-4-password-hash-sync.md)
+[← Entra Connect](glossary-8-2-entra-connect.md) | [Home](../README.md) | [Password Hash Sync →](glossary-8-4-password-hash-sync.md)

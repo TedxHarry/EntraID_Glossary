@@ -1,4 +1,5 @@
-# Workforce Tenant: The Corporate Identity Foundation Behind Every Employee Account
+# Workforce Tenant
+*The Corporate Identity Foundation Behind Every Employee Account*
 
 **Part of Entra ID Glossary Series: Glossary#9.15 - Workforce Tenant**
 
@@ -71,4 +72,4 @@ A single organization doing both things runs both. The retail bank with 3,000 em
 
 ---
 
-[← Entra External ID: Microsoft's Unified Platform for Non-Employee Identities](glossary-9-14-entra-external-id.md) | [Home](../README.md) | [External Tenant: The Entra ID Tenant Type Built for Your Customers →](glossary-9-16-external-tenant.md)
+[← Entra External ID](glossary-9-14-entra-external-id.md) | [Home](../README.md) | [External Tenant →](glossary-9-16-external-tenant.md)

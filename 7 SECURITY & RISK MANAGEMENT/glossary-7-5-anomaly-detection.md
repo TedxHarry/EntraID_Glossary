@@ -1,4 +1,5 @@
-# Anomaly Detection: How Entra ID Learns What Normal Looks Like
+# Anomaly Detection
+*How Entra ID Learns What Normal Looks Like*
 
 **Part of Entra ID Glossary Series: Glossary#7.5 - Anomaly Detection**
 
@@ -71,4 +72,4 @@ The analyst's 4,200-file download was caught because her baseline was clear and 
 
 ---
 
-[← ID Protection: Entra ID's Automated Threat Response System](glossary-7-4-id-protection.md) | [Home](../README.md) | [Leaked Credentials: When Your Password Shows Up on the Dark Web →](glossary-7-6-leaked-credentials.md)
+[← ID Protection](glossary-7-4-id-protection.md) | [Home](../README.md) | [Leaked Credentials →](glossary-7-6-leaked-credentials.md)

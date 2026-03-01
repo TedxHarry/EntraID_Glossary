@@ -1,4 +1,5 @@
-# CA Optimization Agent: Automated Recommendations for Conditional Access Policy Gaps
+# CA Optimization Agent
+*Automated Recommendations for Conditional Access Policy Gaps*
 
 **Part of Entra ID Glossary Series: Glossary#13.19 - CA Optimization Agent**
 
@@ -69,4 +70,4 @@ These two tools work together. Recommendations tell you what should change. Insi
 
 ---
 
-[← Tenant Restrictions: Controlling Which Microsoft Tenants Your Users Can Access](glossary-13-18-tenant-restrictions.md) | [Home](../README.md) | [Policy Evaluation: Understanding How Conditional Access Decisions Are Made →](glossary-13-20-policy-evaluation.md)
+[← Tenant Restrictions](glossary-13-18-tenant-restrictions.md) | [Home](../README.md) | [Policy Evaluation →](glossary-13-20-policy-evaluation.md)

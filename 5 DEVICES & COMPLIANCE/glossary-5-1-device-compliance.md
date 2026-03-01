@@ -1,4 +1,5 @@
-# Device Compliance: When the Device Has to Earn Its Access
+# Device Compliance
+*When the Device Has to Earn Its Access*
 
 **Part of Entra ID Glossary Series: Glossary#5.1 - Device Compliance**
 
@@ -83,4 +84,4 @@ Conditional Access has separate conditions for "managed device" (Intune-enrolled
 
 ---
 
-[← Token Security: Treating Every Token Like the Key It Is](../4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-19-token-security.md) | [Home](../README.md) | [Device Identity: When the Device Itself Has to Prove Who It Is →](glossary-5-2-device-identity.md)
+[← Token Security](../4%20TOKENS%20%26%20AUTHORIZATION/glossary-4-19-token-security.md) | [Home](../README.md) | [Device Identity →](glossary-5-2-device-identity.md)

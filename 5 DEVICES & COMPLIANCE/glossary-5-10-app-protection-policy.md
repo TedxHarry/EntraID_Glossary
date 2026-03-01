@@ -1,4 +1,5 @@
-# App Protection Policy: Managing the Data, Not the Device
+# App Protection Policy
+*Managing the Data, Not the Device*
 
 **Part of Entra ID Glossary Series: Glossary#5.10 - App Protection Policy**
 
@@ -78,4 +79,4 @@ This creates enforcement at two layers: Conditional Access blocks access from un
 
 ---
 
-[← Hybrid Entra Joined: The Device That Lives in Both Worlds](glossary-5-9-hybrid-device.md) | [Home](../README.md) | [Device State: The Real-Time Health Signal That Drives Access Decisions →](glossary-5-11-device-state.md)
+[← Hybrid Device](glossary-5-9-hybrid-device.md) | [Home](../README.md) | [Device State →](glossary-5-11-device-state.md)

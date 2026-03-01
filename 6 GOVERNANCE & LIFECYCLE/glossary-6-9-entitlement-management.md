@@ -1,4 +1,5 @@
-# Entitlement Management: Self-Service Access Without the Security Compromise
+# Entitlement Management
+*Self-Service Access Without the Security Compromise*
 
 **Part of Entra ID Glossary Series: Glossary#6.9 - Entitlement Management**
 
@@ -78,4 +79,4 @@ Package the common requests. Leave the edge cases as IT tickets for now. The red
 
 ---
 
-[← Recertification: Access That Was Right Then Might Not Be Right Now](glossary-6-8-recertification.md) | [Home](../README.md) | [Access Request: The User's Side of the Access Conversation →](glossary-6-10-access-request.md)
+[← Recertification](glossary-6-8-recertification.md) | [Home](../README.md) | [Access Request →](glossary-6-10-access-request.md)

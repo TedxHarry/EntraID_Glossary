@@ -1,4 +1,5 @@
-# Audit Log: The Record of Every Identity Operation in Your Tenant
+# Audit Log
+*The Record of Every Identity Operation in Your Tenant*
 
 **Part of Entra ID Glossary Series: Glossary#12.1 - Audit Log**
 
@@ -92,4 +93,4 @@ Audit logs cover the identity plane (identity administration operations). They d
 
 ---
 
-[← Scope: Defining and Validating What Applications Are Allowed to Do With Your API](../11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-12-scope-deep-dive.md) | [Home](../README.md) | [Sign-In Log: The Authentication Record Your Security Team Needs to Know Cold →](glossary-12-2-sign-in-log.md)
+[← Scope (Deep Dive)](../11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-12-scope-deep-dive.md) | [Home](../README.md) | [Sign-In Log →](glossary-12-2-sign-in-log.md)

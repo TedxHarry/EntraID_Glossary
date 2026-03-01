@@ -1,4 +1,5 @@
-# Actor: When an Application Acts as the Middle Layer Between User and API
+# Actor (Deep Dive)
+*When an Application Acts as the Middle Layer Between User and API*
 
 **Part of Entra ID Glossary Series: Glossary#11.6 - Actor (Deep Dive)**
 
@@ -69,4 +70,4 @@ This is the most common OBO implementation failure: the downstream API permissio
 
 ---
 
-[← Authorization Grant: Matching the Right OAuth Flow to the Right Scenario](glossary-11-5-authorization-grant-deep-dive.md) | [Home](../README.md) | [Subject: The User Identifier in Tokens That Isn't What You'd Expect →](glossary-11-7-subject-deep-dive.md)
+[← Authorization Grant (Deep Dive)](glossary-11-5-authorization-grant-deep-dive.md) | [Home](../README.md) | [Subject (Deep Dive) →](glossary-11-7-subject-deep-dive.md)

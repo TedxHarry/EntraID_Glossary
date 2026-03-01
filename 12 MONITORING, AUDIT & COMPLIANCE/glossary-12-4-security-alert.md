@@ -1,4 +1,5 @@
-# Security Alert: When Entra ID Tells You Something Is Wrong
+# Security Alert
+*When Entra ID Tells You Something Is Wrong*
 
 **Part of Entra ID Glossary Series: Glossary#12.4 - Security Alert**
 
@@ -75,4 +76,4 @@ These policies block or remediate risk detections in real time without analyst i
 
 ---
 
-[← Activity Report: The Trend View That Audit Logs and Sign-In Logs Don't Give You](glossary-12-3-activity-report.md) | [Home](../README.md) | [Compliance: How Entra ID Controls Map to the Regulations Your Auditors Ask About →](glossary-12-5-compliance.md)
+[← Activity Report](glossary-12-3-activity-report.md) | [Home](../README.md) | [Compliance →](glossary-12-5-compliance.md)

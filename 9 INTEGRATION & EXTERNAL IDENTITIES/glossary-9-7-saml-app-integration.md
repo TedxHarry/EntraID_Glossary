@@ -1,4 +1,5 @@
-# SAML in App Integration: The Enterprise Protocol That Refuses to Retire
+# SAML (App Integration Focus)
+*The Enterprise Protocol That Refuses to Retire*
 
 **Part of Entra ID Glossary Series: Glossary#9.7 - SAML (App Integration Focus)**
 
@@ -83,4 +84,4 @@ Some applications support automatic metadata refresh (they fetch Entra ID's meta
 
 ---
 
-[← OIDC in App Integration: Building Modern Authentication the Right Way](glossary-9-6-oidc-app-integration.md) | [Home](../README.md) | [SCIM: The Standard That Automates User Provisioning Across Applications →](glossary-9-8-scim.md)
+[← OIDC (App Integration Focus)](glossary-9-6-oidc-app-integration.md) | [Home](../README.md) | [SCIM →](glossary-9-8-scim.md)

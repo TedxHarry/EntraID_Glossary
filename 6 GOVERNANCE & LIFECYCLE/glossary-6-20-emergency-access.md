@@ -1,4 +1,5 @@
-# Emergency Access: The Account You Hope You Never Need
+# Emergency Access
+*The Account You Hope You Never Need*
 
 **Part of Entra ID Glossary Series: Glossary#6.20 - Emergency Access**
 
@@ -82,4 +83,4 @@ Test emergency access accounts quarterly: sign in with each account, verify the 
 
 ---
 
-[← Identity Verification: Confirming the Person Behind the Account](glossary-6-19-identity-verification.md) | [Home](../README.md) | [Shared Accounts: Why "We All Use the Same Login" Is a Security Problem →](glossary-6-21-shared-accounts.md)
+[← Identity Verification](glossary-6-19-identity-verification.md) | [Home](../README.md) | [Shared Accounts →](glossary-6-21-shared-accounts.md)

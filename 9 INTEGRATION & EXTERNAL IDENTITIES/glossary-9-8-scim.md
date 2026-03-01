@@ -1,4 +1,5 @@
-# SCIM: The Standard That Automates User Provisioning Across Applications
+# SCIM
+*The Standard That Automates User Provisioning Across Applications*
 
 **Part of Entra ID Glossary Series: Glossary#9.8 - SCIM**
 
@@ -75,4 +76,4 @@ For Entra ID to provision to an application via SCIM, the application must imple
 
 ---
 
-[← SAML in App Integration: The Enterprise Protocol That Refuses to Retire](glossary-9-7-saml-app-integration.md) | [Home](../README.md) | [B2B Collaboration: Giving External Partners Access Without Managing Their Identity →](glossary-9-9-b2b-collaboration.md)
+[← SAML (App Integration Focus)](glossary-9-7-saml-app-integration.md) | [Home](../README.md) | [B2B Collaboration →](glossary-9-9-b2b-collaboration.md)

@@ -1,4 +1,5 @@
-# Entra Connect: The Engine Behind Hybrid Identity
+# Entra Connect
+*The Engine Behind Hybrid Identity*
 
 **Part of Entra ID Glossary Series: Glossary#8.2 - Entra Connect**
 
@@ -81,4 +82,4 @@ Both tools synchronize the same objects and support PHS. The choice depends on e
 
 ---
 
-[← Directory Synchronization: Bridging On-Premises Identity with the Cloud](glossary-8-1-directory-synchronization.md) | [Home](../README.md) | [Cloud Sync: The Lighter Path to Hybrid Identity →](glossary-8-3-cloud-sync.md)
+[← Directory Synchronization](glossary-8-1-directory-synchronization.md) | [Home](../README.md) | [Cloud Sync →](glossary-8-3-cloud-sync.md)

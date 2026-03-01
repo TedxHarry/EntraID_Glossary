@@ -1,4 +1,5 @@
-# Scope: The Permission on the Label vs the Permission You Actually Need
+# Scope
+*The Permission on the Label vs the Permission You Actually Need*
 
 **Part of Entra ID Glossary Series: Glossary#4.11 - Scope**
 
@@ -71,4 +72,4 @@ For your own APIs, define scopes narrowly from the start. A scope of `orders.rea
 
 ---
 
-[← Token Revocation: Why "I Disabled Their Account" Isn't Always Enough](glossary-4-10-token-revocation.md) | [Home](../README.md) | [Audience: The Token Knows Who It Was Meant For →](glossary-4-12-audience.md)
+[← Token Revocation](glossary-4-10-token-revocation.md) | [Home](../README.md) | [Audience →](glossary-4-12-audience.md)

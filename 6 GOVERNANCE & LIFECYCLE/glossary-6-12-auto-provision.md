@@ -1,4 +1,5 @@
-# Auto-Provision: When Access Appears Without Anyone Creating It
+# Auto-Provision
+*When Access Appears Without Anyone Creating It*
 
 **Part of Entra ID Glossary Series: Glossary#6.12 - Auto-Provision**
 
@@ -89,4 +90,4 @@ Testing one user before enabling broad provisioning catches attribute mapping er
 
 ---
 
-[← Approval Workflow: Who Decides, in What Order, and What Happens If They Don't](glossary-6-11-approval-workflow.md) | [Home](../README.md) | [Just-in-Time Access: Admin Privileges Should Be Borrowed, Not Owned →](glossary-6-13-just-in-time-access.md)
+[← Approval Workflow](glossary-6-11-approval-workflow.md) | [Home](../README.md) | [Just-in-Time Access →](glossary-6-13-just-in-time-access.md)

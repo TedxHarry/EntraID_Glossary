@@ -1,4 +1,5 @@
-# Authentication Strength: Why Some MFA Is Stronger Than Others
+# Authentication Strength
+*Why Some MFA Is Stronger Than Others*
 
 **Part of Entra ID Glossary Series: Glossary#7.25 - Authentication Strength**
 
@@ -69,4 +70,4 @@ For a Global Administrator, the worst case is complete tenant compromise. Phishi
 
 ---
 
-[← Terms of Use: Making Consent Part of the Access Flow](glossary-7-24-terms-of-use.md) | [Home](../README.md) | [Authentication Methods: Choosing the Right Mix for Your Security Posture →](glossary-7-26-authentication-methods-security.md)
+[← Terms of Use](glossary-7-24-terms-of-use.md) | [Home](../README.md) | [Authentication Methods (Security Focus) →](glossary-7-26-authentication-methods-security.md)

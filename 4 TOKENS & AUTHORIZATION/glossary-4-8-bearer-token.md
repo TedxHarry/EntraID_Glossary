@@ -1,4 +1,5 @@
-# Bearer Tokens: The Name That Tells You Everything About the Risk
+# Bearer Token
+*The Name That Tells You Everything About the Risk*
 
 **Part of Entra ID Glossary Series: Glossary#4.8 - Bearer Token**
 
@@ -64,4 +65,4 @@ For most Entra ID scenarios today, bearer tokens are what you'll work with. Hand
 
 ---
 
-[← Refresh Tokens: What "Keep Me Signed In" Is Actually Doing](glossary-4-7-refresh-token.md) | [Home](../README.md) | [Token Lifetime: The Trade-Off Between Security and Not Annoying Your Users →](glossary-4-9-token-lifetime.md)
+[← Refresh Token](glossary-4-7-refresh-token.md) | [Home](../README.md) | [Token Lifetime →](glossary-4-9-token-lifetime.md)

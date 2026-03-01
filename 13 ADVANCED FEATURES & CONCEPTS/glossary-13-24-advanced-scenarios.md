@@ -1,4 +1,5 @@
-# Advanced Scenarios: Where Entra ID Capabilities Combine to Solve Complex Problems
+# Advanced Scenarios
+*Where Entra ID Capabilities Combine to Solve Complex Problems*
 
 **Part of Entra ID Glossary Series: Glossary#13.24 - Advanced Scenarios**
 
@@ -71,4 +72,4 @@ The 189 terms in this glossary series are the vocabulary. Advanced scenarios are
 
 ---
 
-[← Microsoft Entra Suite: The Consolidated Identity and Network Access Platform](glossary-13-23-microsoft-entra-suite.md) | [Home](../README.md) | *(end of series)* →
+[← Microsoft Entra Suite](glossary-13-23-microsoft-entra-suite.md) | [Home](../README.md) | *(end of series)* →

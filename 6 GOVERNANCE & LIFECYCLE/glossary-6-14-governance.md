@@ -1,4 +1,5 @@
-# Governance: The System That Keeps Access from Running Away from You
+# Governance
+*The System That Keeps Access from Running Away from You*
 
 **Part of Entra ID Glossary Series: Glossary#6.14 - Governance**
 
@@ -75,4 +76,4 @@ Organizations that implement governance to solve a compliance requirement often 
 
 ---
 
-[← Just-in-Time Access: Admin Privileges Should Be Borrowed, Not Owned](glossary-6-13-just-in-time-access.md) | [Home](../README.md) | [Certification Campaign: Access Review at Scale, on a Schedule →](glossary-6-15-certification-campaign.md)
+[← Just-in-Time Access](glossary-6-13-just-in-time-access.md) | [Home](../README.md) | [Certification Campaign →](glossary-6-15-certification-campaign.md)

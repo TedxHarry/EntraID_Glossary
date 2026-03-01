@@ -1,4 +1,5 @@
-# The User Object: What's Actually Inside (And Why It Matters More Than You Think)
+# User (Identity Object)
+*What's Actually Inside (And Why It Matters More Than You Think)*
 
 **Part of Entra ID Glossary Series: Glossary#2.2 - User (Identity Object)**
 
@@ -92,4 +93,4 @@ Four checks. Covers a substantial majority of basic user access problems. 👤
 
 ---
 
-[← Identity: The Word Everyone Uses and Almost Nobody Defines](glossary-2-1-identity.md) | [Home](../README.md) | [Service Principal: The Most Misunderstood Object in Entra ID →](glossary-2-3-service-principal.md)
+[← Identity](glossary-2-1-identity.md) | [Home](../README.md) | [Service Principal →](glossary-2-3-service-principal.md)

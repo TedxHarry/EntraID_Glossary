@@ -1,4 +1,5 @@
-# Application Proxy: Publishing On-Premises Apps Without VPN
+# Application Proxy
+*Publishing On-Premises Apps Without VPN*
 
 **Part of Entra ID Glossary Series: Glossary#9.4 - Application Proxy**
 
@@ -74,4 +75,4 @@ Application Proxy supports multiple SSO mechanisms to provide seamless sign-in t
 
 ---
 
-[← Federated Application: When an App Trusts Entra ID to Prove Who You Are](glossary-9-3-federated-application.md) | [Home](../README.md) | [OAuth 2.0 in App Integration: How Modern Applications Request Access →](glossary-9-5-oauth2-app-integration.md)
+[← Federated Application](glossary-9-3-federated-application.md) | [Home](../README.md) | [OAuth 2.0 (App Integration Focus) →](glossary-9-5-oauth2-app-integration.md)

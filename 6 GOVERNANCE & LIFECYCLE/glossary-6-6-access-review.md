@@ -1,4 +1,5 @@
-# Access Review: The Audit That Finds What Accumulates Over Time
+# Access Review
+*The Audit That Finds What Accumulates Over Time*
 
 **Part of Entra ID Glossary Series: Glossary#6.6 - Access Review**
 
@@ -80,4 +81,4 @@ Entra ID access reviews can be configured to automatically apply review results:
 
 ---
 
-[← Lifecycle Management: Identity Automation for the Entire Employee Journey](glossary-6-5-lifecycle-management.md) | [Home](../README.md) | [Access Certification: When "Reviewed" Has to Mean Something to an Auditor →](glossary-6-7-access-certification.md)
+[← Lifecycle Management](glossary-6-5-lifecycle-management.md) | [Home](../README.md) | [Access Certification →](glossary-6-7-access-certification.md)

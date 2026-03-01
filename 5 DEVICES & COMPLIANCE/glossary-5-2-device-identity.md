@@ -1,4 +1,5 @@
-# Device Identity: When the Device Itself Has to Prove Who It Is
+# Device Identity
+*When the Device Itself Has to Prove Who It Is*
 
 **Part of Entra ID Glossary Series: Glossary#5.2 - Device Identity**
 
@@ -72,4 +73,4 @@ Disabling the device object prevents the device from getting new device-level to
 
 ---
 
-[← Device Compliance: When the Device Has to Earn Its Access](glossary-5-1-device-compliance.md) | [Home](../README.md) | [Device Registration: Three Ways to Join a Device to Entra ID (They're Not the Same) →](glossary-5-3-device-registration.md)
+[← Device Compliance](glossary-5-1-device-compliance.md) | [Home](../README.md) | [Device Registration →](glossary-5-3-device-registration.md)

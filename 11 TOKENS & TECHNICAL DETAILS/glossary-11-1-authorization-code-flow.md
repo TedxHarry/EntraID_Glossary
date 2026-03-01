@@ -1,4 +1,5 @@
-# Authorization Code Flow: The OAuth Dance That Powers Most Modern Web App Sign-Ins
+# Authorization Code Flow
+*The OAuth Dance That Powers Most Modern Web App Sign-Ins*
 
 **Part of Entra ID Glossary Series: Glossary#11.1 - Authorization Code Flow**
 
@@ -55,4 +56,4 @@ Most developers implementing "Sign in with Microsoft" write a few lines of MSAL 
 
 ---
 
-[← Conditional Access for Workloads: Security Policies That Apply to Applications, Not Just People](../10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-12-ca-for-workloads.md) | [Home](../README.md) | [Authorization Endpoint: What's Actually in That Sign-In URL →](glossary-11-2-authorization-endpoint-deep-dive.md)
+[← Conditional Access for Workloads](../10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-12-ca-for-workloads.md) | [Home](../README.md) | [Authorization Endpoint (Deep Dive) →](glossary-11-2-authorization-endpoint-deep-dive.md)

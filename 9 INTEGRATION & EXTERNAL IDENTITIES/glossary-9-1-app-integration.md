@@ -1,4 +1,5 @@
-# App Integration: Connecting Applications to Entra ID for Authentication
+# App Integration
+*Connecting Applications to Entra ID for Authentication*
 
 **Part of Entra ID Glossary Series: Glossary#9.1 - App Integration**
 
@@ -69,4 +70,4 @@ The relationship: App Registration defines what the app is. Enterprise Applicati
 
 ---
 
-[← Domain Services: Active Directory Without the Domain Controllers](../8%20HYBRID%20%26%20ON-PREMISES/glossary-8-7-domain-services.md) | [Home](../README.md) | [Cloud Application: SaaS in Your Tenant's Security Perimeter →](glossary-9-2-cloud-application.md)
+[← Domain Services](../8%20HYBRID%20%26%20ON-PREMISES/glossary-8-7-domain-services.md) | [Home](../README.md) | [Cloud Application →](glossary-9-2-cloud-application.md)

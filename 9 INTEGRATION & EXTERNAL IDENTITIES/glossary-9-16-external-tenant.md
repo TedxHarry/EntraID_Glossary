@@ -1,4 +1,5 @@
-# External Tenant: The Entra ID Tenant Type Built for Your Customers
+# External Tenant
+*The Entra ID Tenant Type Built for Your Customers*
 
 **Part of Entra ID Glossary Series: Glossary#9.16 - External Tenant**
 
@@ -69,4 +70,4 @@ Applications can be multi-tenant and registered in either tenant depending on th
 
 ---
 
-[← Workforce Tenant: The Corporate Identity Foundation Behind Every Employee Account](glossary-9-15-workforce-tenant.md) | [Home](../README.md) | [Workload Identity: When the Thing Connecting to Your Systems Isn't a Person →](../10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-1-workload-identity.md)
+[← Workforce Tenant](glossary-9-15-workforce-tenant.md) | [Home](../README.md) | [Workload Identity →](../10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-1-workload-identity.md)

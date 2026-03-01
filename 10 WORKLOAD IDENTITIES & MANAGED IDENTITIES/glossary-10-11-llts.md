@@ -1,4 +1,5 @@
-# Long-Lived Tokens: Why 24-Hour Workload Tokens Are Safer Than You'd Think
+# LLTs (Long Lived Tokens)
+*Why 24-Hour Workload Tokens Are Safer Than You'd Think*
 
 **Part of Entra ID Glossary Series: Glossary#10.11 - LLTs (Long Lived Tokens)**
 
@@ -55,4 +56,4 @@ The security improvement from LLTs comes from the combination of reduced authent
 
 ---
 
-[← CAE for Workloads: Real-Time Token Revocation for Non-Human Identities](glossary-10-10-cae-for-workloads.md) | [Home](../README.md) | [Conditional Access for Workloads: Security Policies That Apply to Applications, Not Just People →](glossary-10-12-ca-for-workloads.md)
+[← CAE for Workloads](glossary-10-10-cae-for-workloads.md) | [Home](../README.md) | [Conditional Access for Workloads →](glossary-10-12-ca-for-workloads.md)

@@ -1,4 +1,5 @@
-# Conditional Access for Workloads: Security Policies That Apply to Applications, Not Just People
+# Conditional Access for Workloads
+*Security Policies That Apply to Applications, Not Just People*
 
 **Part of Entra ID Glossary Series: Glossary#10.12 - Conditional Access for Workloads**
 
@@ -63,4 +64,4 @@ Workload CA conditions for managed identities are an evolving area. The practica
 
 ---
 
-[← Long-Lived Tokens: Why 24-Hour Workload Tokens Are Safer Than You'd Think](glossary-10-11-llts.md) | [Home](../README.md) | [Authorization Code Flow: The OAuth Dance That Powers Most Modern Web App Sign-Ins →](../11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-1-authorization-code-flow.md)
+[← LLTs (Long Lived Tokens)](glossary-10-11-llts.md) | [Home](../README.md) | [Authorization Code Flow →](../11%20TOKENS%20%26%20TECHNICAL%20DETAILS/glossary-11-1-authorization-code-flow.md)

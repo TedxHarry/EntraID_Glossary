@@ -1,4 +1,5 @@
-# What Is a Tenant? (And Why Getting This Wrong Causes Real Problems)
+# Tenant
+*(And Why Getting This Wrong Causes Real Problems)*
 
 **Part of Entra ID Glossary Series: Glossary#1.3 - Tenant**
 
@@ -68,4 +69,4 @@ The tenant is the foundation. Everything else sits on top of it. 🏢
 
 ---
 
-[← The Microsoft Entra Product Family: Why There's More Than Just Entra ID](glossary-1-2-microsoft-entra-product-family.md) | [Home](../README.md) | [Cloud-Based Identity: What It Actually Means When the Servers Aren't Yours →](glossary-1-4-cloud-based-identity.md)
+[← Microsoft Entra Product Family](glossary-1-2-microsoft-entra-product-family.md) | [Home](../README.md) | [Cloud-Based Identity →](glossary-1-4-cloud-based-identity.md)

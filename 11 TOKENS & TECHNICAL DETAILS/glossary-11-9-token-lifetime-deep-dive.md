@@ -1,4 +1,5 @@
-# Token Lifetime: The Configuration Behind How Long Your Tokens Last
+# Token Lifetime (Deep Dive)
+*The Configuration Behind How Long Your Tokens Last*
 
 **Part of Entra ID Glossary Series: Glossary#11.9 - Token Lifetime (Deep Dive)**
 
@@ -67,4 +68,4 @@ If an application needs longer than one-hour sessions, the correct implementatio
 
 ---
 
-[← Bearer Token: Why "Whoever Has It Can Use It" Is Both the Point and the Risk](glossary-11-8-bearer-token-deep-dive.md) | [Home](../README.md) | [Token Revocation: Why "Revoke All Tokens" Doesn't Mean Instant Lockout →](glossary-11-10-token-revocation-deep-dive.md)
+[← Bearer Token (Deep Dive)](glossary-11-8-bearer-token-deep-dive.md) | [Home](../README.md) | [Token Revocation (Deep Dive) →](glossary-11-10-token-revocation-deep-dive.md)

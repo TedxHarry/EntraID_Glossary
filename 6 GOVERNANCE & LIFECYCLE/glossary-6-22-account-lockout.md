@@ -1,4 +1,5 @@
-# Account Lockout: How Entra ID Stops Password Guessing Without Locking Out Real Users
+# Account Lockout
+*How Entra ID Stops Password Guessing Without Locking Out Real Users*
 
 **Part of Entra ID Glossary Series: Glossary#6.22 - Account Lockout**
 
@@ -74,4 +75,4 @@ Resetting the password is the fastest resolution for a user who needs immediate 
 
 ---
 
-[← Shared Accounts: Why "We All Use the Same Login" Is a Security Problem](glossary-6-21-shared-accounts.md) | [Home](../README.md) | [Password Reset: Giving Users the Key to Their Own Lock →](glossary-6-23-password-reset.md)
+[← Shared Accounts](glossary-6-21-shared-accounts.md) | [Home](../README.md) | [Password Reset →](glossary-6-23-password-reset.md)

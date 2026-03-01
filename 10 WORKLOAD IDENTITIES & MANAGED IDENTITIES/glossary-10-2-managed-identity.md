@@ -1,4 +1,5 @@
-# Managed Identity: Credentials That Azure Manages So You Don't Have To
+# Managed Identity
+*Credentials That Azure Manages So You Don't Have To*
 
 **Part of Entra ID Glossary Series: Glossary#10.2 - Managed Identity**
 
@@ -63,4 +64,4 @@ The choice between them comes down to whether the identity needs to be shared ac
 
 ---
 
-[← Workload Identity: When the Thing Connecting to Your Systems Isn't a Person](glossary-10-1-workload-identity.md) | [Home](../README.md) | [System-Assigned Managed Identity: One Resource, One Identity, One Lifecycle →](glossary-10-3-system-assigned-managed-identity.md)
+[← Workload Identity](glossary-10-1-workload-identity.md) | [Home](../README.md) | [System-Assigned Managed Identity →](glossary-10-3-system-assigned-managed-identity.md)

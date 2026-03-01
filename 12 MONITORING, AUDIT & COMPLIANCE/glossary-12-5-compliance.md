@@ -1,4 +1,5 @@
-# Compliance: How Entra ID Controls Map to the Regulations Your Auditors Ask About
+# Compliance
+*How Entra ID Controls Map to the Regulations Your Auditors Ask About*
 
 **Part of Entra ID Glossary Series: Glossary#12.5 - Compliance**
 
@@ -57,4 +58,4 @@ The Compliance Manager score isn't a guarantee of compliance; it's a tool for id
 
 ---
 
-[← Security Alert: When Entra ID Tells You Something Is Wrong](glossary-12-4-security-alert.md) | [Home](../README.md) | [Attribute-Based Access Control: Access Decisions That Go Beyond Role Membership →](../13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-1-abac.md)
+[← Security Alert](glossary-12-4-security-alert.md) | [Home](../README.md) | [Attribute-Based Access Control (ABAC) →](../13%20ADVANCED%20FEATURES%20%26%20CONCEPTS/glossary-13-1-abac.md)

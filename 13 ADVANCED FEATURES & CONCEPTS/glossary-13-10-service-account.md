@@ -1,4 +1,5 @@
-# Service Account: The Legacy Pattern That Managed Identity Is Replacing
+# Service Account
+*The Legacy Pattern That Managed Identity Is Replacing*
 
 **Part of Entra ID Glossary Series: Glossary#13.10 - Service Account**
 
@@ -61,4 +62,4 @@ For service accounts that must exist, the governance requirements:
 
 ---
 
-[← Global Secure Access: Microsoft's Zero Trust Network Access Layer](glossary-13-9-global-secure-access.md) | [Home](../README.md) | [Sync Agent: The On-Premises Software That Bridges Your Directory to the Cloud →](glossary-13-11-sync-agent.md)
+[← Global Secure Access](glossary-13-9-global-secure-access.md) | [Home](../README.md) | [Sync Agent →](glossary-13-11-sync-agent.md)

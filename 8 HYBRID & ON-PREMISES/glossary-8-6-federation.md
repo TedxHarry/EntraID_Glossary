@@ -1,4 +1,5 @@
-# Federation: When Entra ID Trusts Another Identity Provider for Authentication
+# Federation
+*When Entra ID Trusts Another Identity Provider for Authentication*
 
 **Part of Entra ID Glossary Series: Glossary#8.6 - Federation**
 
@@ -77,4 +78,4 @@ The migration from ADFS to managed authentication is a defined process (staged r
 
 ---
 
-[← Pass-Through Authentication: Validating Cloud Sign-Ins Against On-Premises AD](glossary-8-5-pass-through-auth.md) | [Home](../README.md) | [Domain Services: Active Directory Without the Domain Controllers →](glossary-8-7-domain-services.md)
+[← Pass-Through Auth](glossary-8-5-pass-through-auth.md) | [Home](../README.md) | [Domain Services →](glossary-8-7-domain-services.md)

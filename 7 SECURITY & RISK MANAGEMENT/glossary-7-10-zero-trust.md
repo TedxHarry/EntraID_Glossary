@@ -1,4 +1,5 @@
-# Zero Trust: The Security Model That Stopped Trusting Your Network
+# Zero Trust
+*The Security Model That Stopped Trusting Your Network*
 
 **Part of Entra ID Glossary Series: Glossary#7.10 - Zero Trust**
 
@@ -84,4 +85,4 @@ The attacker in the opening scenario succeeded because the organization had impl
 
 ---
 
-[← CA Policy: Building the If-Then Logic of Access Control](glossary-7-9-ca-policy.md) | [Home](../README.md) | [Assignment: Who and What Your Conditional Access Policy Actually Covers →](glossary-7-11-assignment.md)
+[← CA Policy](glossary-7-9-ca-policy.md) | [Home](../README.md) | [Assignment →](glossary-7-11-assignment.md)

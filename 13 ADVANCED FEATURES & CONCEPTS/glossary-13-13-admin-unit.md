@@ -1,4 +1,5 @@
-# Administrative Unit: Scoped Administration Without Multiple Tenants
+# Admin Unit
+*Scoped Administration Without Multiple Tenants*
 
 **Part of Entra ID Glossary Series: Glossary#13.13 - Admin Unit**
 
@@ -74,4 +75,4 @@ Administrative Units scope role assignments but don't create full isolation. Obj
 
 ---
 
-[← Custom Role: Administrative Permissions That Fit What Your Team Actually Needs](glossary-13-12-custom-role.md) | [Home](../README.md) | [Consent Framework: How Applications Get Permission to Access Your Data →](glossary-13-14-consent-framework.md)
+[← Custom Role](glossary-13-12-custom-role.md) | [Home](../README.md) | [Consent Framework →](glossary-13-14-consent-framework.md)

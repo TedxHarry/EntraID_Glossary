@@ -1,4 +1,5 @@
-# Token Security: Treating Every Token Like the Key It Is
+# Token Security
+*Treating Every Token Like the Key It Is*
 
 **Part of Entra ID Glossary Series: Glossary#4.19 - Token Security**
 
@@ -67,4 +68,4 @@ Depending on the token's permissions and how long it was accessible, a breach no
 
 ---
 
-[← SAML: The Protocol That Refuses to Die (and Sometimes Shouldn't)](glossary-4-18-saml.md) | [Home](../README.md) | [Device Compliance: When the Device Has to Earn Its Access →](../5%20DEVICES%20%26%20COMPLIANCE/glossary-5-1-device-compliance.md)
+[← SAML](glossary-4-18-saml.md) | [Home](../README.md) | [Device Compliance →](../5%20DEVICES%20%26%20COMPLIANCE/glossary-5-1-device-compliance.md)

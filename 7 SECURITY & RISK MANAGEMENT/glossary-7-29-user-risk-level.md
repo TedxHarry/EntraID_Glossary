@@ -1,4 +1,5 @@
-# User Risk Level: Understanding the Number Behind the Flag
+# User Risk Level
+*Understanding the Number Behind the Flag*
 
 **Part of Entra ID Glossary Series: Glossary#7.29 - User Risk Level**
 
@@ -84,4 +85,4 @@ An account at High risk that no one has investigated or remediated stays at High
 
 ---
 
-[← Insider Risk: When the Threat Already Has a Badge](glossary-7-28-insider-risk.md) | [Home](../README.md) | [Sign-In Risk Level: Reading the Signals in a Single Authentication →](glossary-7-30-sign-in-risk-level.md)
+[← Insider Risk](glossary-7-28-insider-risk.md) | [Home](../README.md) | [Sign-In Risk Level →](glossary-7-30-sign-in-risk-level.md)

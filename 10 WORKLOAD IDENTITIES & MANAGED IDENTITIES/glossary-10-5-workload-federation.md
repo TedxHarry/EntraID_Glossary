@@ -1,4 +1,5 @@
-# Workload Federation: Authenticating to Azure Without Storing Azure Credentials
+# Workload Federation
+*Authenticating to Azure Without Storing Azure Credentials*
 
 **Part of Entra ID Glossary Series: Glossary#10.5 - Workload Federation**
 
@@ -63,4 +64,4 @@ The security properties of workload federation are meaningfully better than stor
 
 ---
 
-[← User-Assigned Managed Identity: One Identity Shared Across Many Resources](glossary-10-4-user-assigned-managed-identity.md) | [Home](../README.md) | [Federated Identity Credential: The Trust Configuration That Makes Keyless Auth Work →](glossary-10-6-federated-identity-credential.md)
+[← User-Assigned Managed Identity](glossary-10-4-user-assigned-managed-identity.md) | [Home](../README.md) | [Federated Identity Credential →](glossary-10-6-federated-identity-credential.md)

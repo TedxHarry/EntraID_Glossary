@@ -1,4 +1,5 @@
-# Token Revocation: Why "Revoke All Tokens" Doesn't Mean Instant Lockout
+# Token Revocation (Deep Dive)
+*Why "Revoke All Tokens" Doesn't Mean Instant Lockout*
 
 **Part of Entra ID Glossary Series: Glossary#11.10 - Token Revocation (Deep Dive)**
 
@@ -79,4 +80,4 @@ Disabling the account is faster than revoking tokens for stopping access to CAE-
 
 ---
 
-[← Token Lifetime: The Configuration Behind How Long Your Tokens Last](glossary-11-9-token-lifetime-deep-dive.md) | [Home](../README.md) | [Audience: The Token Claim That Prevents One API's Token From Working on Another →](glossary-11-11-audience-deep-dive.md)
+[← Token Lifetime (Deep Dive)](glossary-11-9-token-lifetime-deep-dive.md) | [Home](../README.md) | [Audience (Deep Dive) →](glossary-11-11-audience-deep-dive.md)

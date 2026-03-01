@@ -1,4 +1,5 @@
-# CAE: When Access Tokens Get Revoked Mid-Session
+# CAE (Continuous Access Evaluation)
+*When Access Tokens Get Revoked Mid-Session*
 
 **Part of Entra ID Glossary Series: Glossary#7.32 - CAE (Continuous Access Evaluation)**
 
@@ -83,4 +84,4 @@ For high-security scenarios (admin accounts, sensitive data access), strict enfo
 
 ---
 
-[← CA Template: Microsoft's Starting Points for Conditional Access](glossary-7-31-ca-template.md) | [Home](../README.md) | [Directory Synchronization: Bridging On-Premises Identity with the Cloud →](../8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md)
+[← CA Template](glossary-7-31-ca-template.md) | [Home](../README.md) | [Directory Synchronization →](../8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md)

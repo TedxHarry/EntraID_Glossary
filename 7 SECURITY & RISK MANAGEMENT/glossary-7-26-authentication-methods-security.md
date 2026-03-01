@@ -1,4 +1,5 @@
-# Authentication Methods: Choosing the Right Mix for Your Security Posture
+# Authentication Methods (Security Focus)
+*Choosing the Right Mix for Your Security Posture*
 
 **Part of Entra ID Glossary Series: Glossary#7.26 - Authentication Methods (Security Focus)**
 
@@ -72,4 +73,4 @@ Each phase improves the security posture. Not every organization needs to reach 
 
 ---
 
-[← Authentication Strength: Why Some MFA Is Stronger Than Others](glossary-7-25-authentication-strength.md) | [Home](../README.md) | [SSPR Security: When Self-Service Password Reset Becomes an Attack Vector →](glossary-7-27-sspr-security.md)
+[← Authentication Strength](glossary-7-25-authentication-strength.md) | [Home](../README.md) | [SSPR (Security Focus) →](glossary-7-27-sspr-security.md)

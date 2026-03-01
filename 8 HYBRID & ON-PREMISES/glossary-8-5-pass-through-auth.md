@@ -1,4 +1,5 @@
-# Pass-Through Authentication: Validating Cloud Sign-Ins Against On-Premises AD
+# Pass-Through Auth
+*Validating Cloud Sign-Ins Against On-Premises AD*
 
 **Part of Entra ID Glossary Series: Glossary#8.5 - Pass-Through Auth**
 
@@ -89,4 +90,4 @@ The combination means both on-premises AD policy and Entra ID policy apply to ev
 
 ---
 
-[← Password Hash Sync: How On-Premises Passwords Work in the Cloud](glossary-8-4-password-hash-sync.md) | [Home](../README.md) | [Federation: When Entra ID Trusts Another Identity Provider for Authentication →](glossary-8-6-federation.md)
+[← Password Hash Sync](glossary-8-4-password-hash-sync.md) | [Home](../README.md) | [Federation →](glossary-8-6-federation.md)

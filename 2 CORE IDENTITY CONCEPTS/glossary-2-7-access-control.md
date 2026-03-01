@@ -1,4 +1,5 @@
-# Access Control: What It Actually Means When Everything Is Everywhere
+# Access Control
+*What It Actually Means When Everything Is Everywhere*
 
 **Part of Entra ID Glossary Series: Glossary#2.7 - Access Control**
 
@@ -70,4 +71,4 @@ Start with groups. Define what each group grants before you create it. Assign pe
 
 ---
 
-[← Directory Roles: Why "Just Give Them Global Admin" Is the Worst Habit in Entra ID](glossary-2-6-directory-role.md) | [Home](../README.md) | [API Permissions in Entra ID: Reading What You're Actually Granting →](glossary-2-8-permission.md)
+[← Directory Role](glossary-2-6-directory-role.md) | [Home](../README.md) | [Permission →](glossary-2-8-permission.md)
