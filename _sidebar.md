@@ -1,6 +1,15 @@
 - [🏠 Home](/)
-- [📚 Table of Contents](/README)
+- [📚 Glossary Contents](/README)
 
+---
+
+- **🎓 ENTRA ID — ZERO TO ADMIN**
+- **🟢 Unit 1: Getting Started**
+  - [1.1 — What Is Entra ID?](/LEARNING%20PATH/UNIT%201%20-%20GETTING%20STARTED/1-1-what-is-entra-id.md)
+
+---
+
+- **📖 GLOSSARY**
 - **🏗️ 1. FOUNDATIONAL CONCEPTS**
   - [Microsoft Entra ID](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-1-microsoft-entra-id.md)
   - [Microsoft Entra Product Family](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-2-microsoft-entra-product-family.md)
