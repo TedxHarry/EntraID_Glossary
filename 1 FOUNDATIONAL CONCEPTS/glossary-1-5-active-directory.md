@@ -74,11 +74,6 @@ In all of these, Entra ID exists alongside AD. They're not competitors in these 
 
 ---
 
-🔗 **Related Terms:**
-- [Glossary#1.6 - Hybrid Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md) (when AD and Entra ID work together)
-- [Glossary#1.4 - Cloud-Based Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-4-cloud-based-identity.md) (what Entra ID is, by contrast)
-- [Glossary#8.1 - Directory Synchronization](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md) (how AD and Entra ID stay in sync)
----
 
 **I'm curious:** Are you still managing on-premises Active Directory, or has your organization gone cloud-only? If you're hybrid, what's making the full migration difficult? The technical barriers are usually more interesting than people expect.
 > ✍️ *Written by **TedxHarry***

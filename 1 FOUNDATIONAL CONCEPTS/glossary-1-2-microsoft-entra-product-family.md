@@ -70,11 +70,6 @@ When you're starting out, focus on Entra ID first, deeply. Understanding the fou
 
 ---
 
-🔗 **Related Terms:**
-- [Glossary#1.1 - Microsoft Entra ID](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-1-microsoft-entra-id.md) (the foundation product)
-- [Glossary#9.14 - Entra External ID](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-14-entra-external-id.md) (external user management)
-- [Glossary#10.1 - Workload Identity](/10%20WORKLOAD%20IDENTITIES%20%26%20MANAGED%20IDENTITIES/glossary-10-1-workload-identity.md) (non-human identities)
----
 
 **Your turn:** Which Entra products are you working with right now? Are you purely on Entra ID, or has your organization started using other products in the family? Curious what problems drove those decisions.
 > ✍️ *Written by **TedxHarry***

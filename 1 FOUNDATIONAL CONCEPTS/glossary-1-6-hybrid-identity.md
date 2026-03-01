@@ -78,12 +78,7 @@ If you're studying Entra ID to work in enterprise IT, you will almost certainly 
 
 Understanding hybrid identity isn't advanced material. It's practical reality. 🔄
 
----
 
-🔗 **Related Terms:**
-- [Glossary#1.5 - Active Directory](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-5-active-directory.md) (the on-premises side of hybrid identity)
-- [Glossary#1.4 - Cloud-Based Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-4-cloud-based-identity.md) (the cloud side of the equation)
-- [Glossary#8.1 - Directory Synchronization](/8%20HYBRID%20%26%20ON-PREMISES/glossary-8-1-directory-synchronization.md) (the technical mechanism behind sync)
 ---
 
 💬 **Where are you in your hybrid journey?** Are you managing a hybrid environment right now, planning a migration toward cloud-only, or starting fresh with cloud-first? What's the hardest part you've run into, the technology or convincing stakeholders that it's worth the effort?

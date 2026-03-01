@@ -88,8 +88,6 @@ The account is the foundation. When access breaks, start here before reaching fo
 
 Four checks. Covers a substantial majority of basic user access problems. 👤
 
----
-
 
 ### 🔧 Quick Reference: PowerShell
 

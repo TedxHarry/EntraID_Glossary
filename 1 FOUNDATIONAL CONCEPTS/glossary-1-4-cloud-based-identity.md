@@ -75,11 +75,6 @@ Cloud-based identity isn't universally easier. It's a different kind of work, wi
 
 ---
 
-🔗 **Related Terms:**
-- [Glossary#1.5 - Active Directory](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-5-active-directory.md) (the on-premises predecessor, still relevant in hybrid setups)
-- [Glossary#1.6 - Hybrid Identity](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-6-hybrid-identity.md) (when on-premises and cloud coexist)
-- [Glossary#1.3 - Tenant](/1%20FOUNDATIONAL%20CONCEPTS/glossary-1-3-tenant.md) (your organization's dedicated space in Entra ID's cloud infrastructure)
----
 
 **Tell me about your journey:** Is your organization cloud-only with Entra ID, still on-premises with AD, or somewhere in between? What's been the biggest adjustment in moving identity to the cloud, technical or cultural?
 > ✍️ *Written by **TedxHarry***
