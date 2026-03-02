@@ -5,7 +5,7 @@
 
 📚 Part of Entra ID Glossary Series #1.5 - Active Directory
 
-![Cover image](./images/glossary-1-5-active-directory-cover.png)
+![Cover image](./images/glossary-1-5-active-directory.png)
 
 
 ---

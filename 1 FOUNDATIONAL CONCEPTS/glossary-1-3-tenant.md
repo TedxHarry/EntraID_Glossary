@@ -5,7 +5,7 @@
 
 📚 Part of Entra ID Glossary Series #1.3 - Tenant
 
-![Cover image](./images/glossary-1-3-tenant-cover.png)
+![Cover image](./images/glossary-1-3-tenant.png)
 
 
 ---

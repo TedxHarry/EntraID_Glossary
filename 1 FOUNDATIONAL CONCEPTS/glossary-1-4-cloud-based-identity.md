@@ -5,7 +5,7 @@
 
 📚 Part of Entra ID Glossary Series #1.4 - Cloud-Based Identity
 
-![Cover image](./images/glossary-1-4-cloud-based-identity-cover.png)
+![Cover image](./images/glossary-1-4-cloud-based-identity.png)
 
 
 ---
