@@ -5,6 +5,9 @@
 
 📚 Part of Entra ID Glossary Series #1.1 - Microsoft Entra ID
 
+![Cover image](./images/glossary-1-1-microsoft-entra-id-cover.png)
+
+
 ---
 
 ## 🎯 TL;DR

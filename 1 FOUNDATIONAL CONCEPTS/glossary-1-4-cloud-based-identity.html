@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud-Based Identity Cover</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+            min-height: 100vh;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" width="1200" height="675">
+        <!-- Gradient definitions -->
+        <defs>
+            <!-- ROSE/CORAL/PINK GRADIENT BACKGROUND (Premium, warm, unique) -->
+            <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#3f1a3a;stop-opacity:1" />
+                <stop offset="25%" style="stop-color:#5a2646;stop-opacity:1" />
+                <stop offset="60%" style="stop-color:#6b3350;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#3d1f35;stop-opacity:1" />
+            </linearGradient>
+            
+            <!-- Rose/coral glow -->
+            <radialGradient id="roseGlow" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" style="stop-color:#f472b6;stop-opacity:0.5" />
+                <stop offset="100%" style="stop-color:#db2777;stop-opacity:0.05" />
+            </radialGradient>
+            
+            <!-- Gold/amber accent glow -->
+            <radialGradient id="goldGlow" cx="50%" cy="50%" r="55%">
+                <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:0.38" />
+                <stop offset="100%" style="stop-color:#d97706;stop-opacity:0.05" />
+            </radialGradient>
+            
+            <!-- Light pink accent glow -->
+            <radialGradient id="lightPinkGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" style="stop-color:#fbcfe8;stop-opacity:0.25" />
+                <stop offset="100%" style="stop-color:#f43f5e;stop-opacity:0.05" />
+            </radialGradient>
+            
+            <!-- Text glow filter -->
+            <filter id="textGlow">
+                <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+            
+            <!-- Node glow filter -->
+            <filter id="nodeGlow">
+                <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+
+        <!-- Rose/coral gradient background -->
+        <rect width="1200" height="675" fill="url(#bgGradient)"/>
+        
+        <!-- Premium glow layers with rose, gold, and light pink -->
+        <circle cx="120" cy="100" r="360" fill="url(#roseGlow)" opacity="0.52"/>
+        <circle cx="1080" cy="600" r="400" fill="url(#goldGlow)" opacity="0.45"/>
+        <circle cx="600" cy="338" r="340" fill="url(#lightPinkGlow)" opacity="0.18"/>
+
+        <!-- LEFT SIDE: Cloud computing concept with floating elements -->
+        <g opacity="0.8">
+            <!-- Floating cloud shapes -->
+            <path d="M 40 180 Q 60 160 90 165 Q 110 140 140 155 Q 130 185 100 190 Q 70 195 40 180" fill="none" stroke="#f472b6" stroke-width="2.5" opacity="0.7"/>
+            <path d="M 50 380 Q 75 355 110 365 Q 135 340 160 360 Q 145 395 110 400 Q 75 405 50 380" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="0.7"/>
+            
+            <!-- Floating data nodes -->
+            <circle cx="70" cy="200" r="6" fill="#f472b6" filter="url(#nodeGlow)"/>
+            <circle cx="120" cy="420" r="5" fill="#fbbf24" filter="url(#nodeGlow)"/>
+            
+            <!-- Connecting lines to center -->
+            <line x1="140" y1="200" x2="400" y2="300" stroke="#f472b6" stroke-width="2" opacity="0.3" stroke-dasharray="5,3"/>
+            <line x1="160" y1="400" x2="400" y2="370" stroke="#fbbf24" stroke-width="2" opacity="0.3" stroke-dasharray="5,3"/>
+        </g>
+
+        <!-- RIGHT SIDE: Cloud computing concept with floating elements -->
+        <g opacity="0.8">
+            <!-- Floating cloud shapes -->
+            <path d="M 1160 180 Q 1140 160 1110 165 Q 1090 140 1060 155 Q 1070 185 1100 190 Q 1130 195 1160 180" fill="none" stroke="#f472b6" stroke-width="2.5" opacity="0.7"/>
+            <path d="M 1150 380 Q 1125 355 1090 365 Q 1065 340 1040 360 Q 1055 395 1090 400 Q 1125 405 1150 380" fill="none" stroke="#fbbf24" stroke-width="2.5" opacity="0.7"/>
+            
+            <!-- Floating data nodes -->
+            <circle cx="1130" cy="200" r="6" fill="#fbcfe8" filter="url(#nodeGlow)"/>
+            <circle cx="1080" cy="420" r="5" fill="#f472b6" filter="url(#nodeGlow)"/>
+            
+            <!-- Connecting lines to center -->
+            <line x1="1060" y1="200" x2="800" y2="300" stroke="#fbcfe8" stroke-width="2" opacity="0.3" stroke-dasharray="5,3"/>
+            <line x1="1040" y1="400" x2="800" y2="370" stroke="#f472b6" stroke-width="2" opacity="0.3" stroke-dasharray="5,3"/>
+        </g>
+
+        <!-- CENTER: Cloud/Network Hub -->
+        <g>
+            <!-- Central cloud representation -->
+            <path d="M 420 300 Q 450 270 490 275 Q 520 250 560 270 Q 580 240 610 265 Q 640 250 670 280 Q 700 270 720 310 Q 700 350 670 360 Q 640 375 600 370 Q 560 380 520 370 Q 480 378 450 360 Q 420 350 420 300" fill="#f472b6" opacity="0.4" filter="url(#nodeGlow)"/>
+            <path d="M 420 300 Q 450 270 490 275 Q 520 250 560 270 Q 580 240 610 265 Q 640 250 670 280 Q 700 270 720 310 Q 700 350 670 360 Q 640 375 600 370 Q 560 380 520 370 Q 480 378 450 360 Q 420 350 420 300" fill="none" stroke="#fbbf24" stroke-width="3" opacity="0.8"/>
+            
+            <!-- Interior nodes in cloud -->
+            <circle cx="480" cy="310" r="5" fill="#fbcfe8" filter="url(#nodeGlow)"/>
+            <circle cx="560" cy="285" r="5" fill="#fbbf24" filter="url(#nodeGlow)"/>
+            <circle cx="640" cy="315" r="5" fill="#f472b6" filter="url(#nodeGlow)"/>
+        </g>
+
+        <!-- Decorative accent elements -->
+        <g opacity="0.65">
+            <line x1="150" y1="50" x2="1050" y2="50" stroke="#f472b6" stroke-width="3.5"/>
+            <line x1="180" y1="65" x2="1020" y2="65" stroke="#fbbf24" stroke-width="1.5"/>
+            
+            <line x1="150" y1="625" x2="1050" y2="625" stroke="#fbcfe8" stroke-width="3.5"/>
+            <line x1="180" y1="640" x2="1020" y2="640" stroke="#f472b6" stroke-width="1.5"/>
+        </g>
+
+        <!-- Geometric decorative shapes -->
+        <g opacity="0.55">
+            <circle cx="220" cy="600" r="32" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+            <rect x="1020" y="90" width="50" height="50" fill="none" stroke="#f472b6" stroke-width="2.5" opacity="0.7"/>
+        </g>
+
+        <!-- ==================== TEXT CONTENT WITH EXCELLENT CONTRAST ==================== -->
+        
+        <!-- TOP SECTION -->
+        <g>
+            <!-- Decorative line above -->
+            <line x1="200" y1="55" x2="1000" y2="55" stroke="#f472b6" stroke-width="3.5" opacity="0.9"/>
+            
+            <!-- Main title: "Entra ID - Foundational Concepts" (56px) -->
+            <text x="600" y="88" font-family="'Segoe UI', -apple-system, sans-serif" font-size="56" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">Entra ID <tspan fill="#fbbf24" font-weight="700">-</tspan> Foundational Concepts</text>
+            
+            <!-- Series number: "Glossary #1.4" (32px - increased) -->
+            <text x="600" y="130" font-family="'Segoe UI', -apple-system, sans-serif" font-size="32" font-weight="600" fill="#f472b6" text-anchor="middle" letter-spacing="1.5">Glossary #1.4</text>
+            
+            <!-- Decorative line below -->
+            <line x1="250" y1="150" x2="950" y2="150" stroke="#fbbf24" stroke-width="2.5" opacity="0.8"/>
+        </g>
+
+        <!-- MIDDLE SECTION - MAIN CONTENT WITH PROPER SPACING -->
+        <g>
+            <!-- Premium separator above -->
+            <line x1="300" y1="270" x2="900" y2="270" stroke="#fbcfe8" stroke-width="4" opacity="0.85"/>
+            <circle cx="600" cy="270" r="7" fill="#fbbf24" opacity="0.9"/>
+            
+            <!-- "CLOUD-BASED IDENTITY" (110px) - ADJUSTED TO FIT -->
+            <text x="600" y="415" font-family="'Segoe UI', -apple-system, sans-serif" font-size="110" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-2.5" filter="url(#textGlow)">Cloud-Based Identity</text>
+            
+            <!-- Subtitle: appropriate caption (38px) -->
+            <text x="600" y="485" font-family="'Segoe UI', -apple-system, sans-serif" font-size="38" font-weight="300" fill="#fbbf24" text-anchor="middle" letter-spacing="1.5">Where your organization lives and breathes</text>
+        </g>
+
+        <!-- BOTTOM RIGHT SIGNATURE - Moved up to avoid edge -->
+        <g>
+            <circle cx="1065" cy="618" r="5.5" fill="#f472b6" opacity="0.95"/>
+            <text x="1120" y="633" font-family="'Segoe UI', -apple-system, sans-serif" font-size="28" font-weight="700" fill="#fbcfe8" text-anchor="end" letter-spacing="0.5">TedxHarry</text>
+        </g>
+
+        <!-- DIFFICULTY BADGE -->
+        <g opacity="0.9">
+            <rect x="50" y="618" width="160" height="42" rx="21" fill="none" stroke="#f472b6" stroke-width="2.5"/>
+            <text x="130" y="648" font-family="'Segoe UI', -apple-system, sans-serif" font-size="20" font-weight="600" fill="#f472b6" text-anchor="middle">🟢 Beginner</text>
+        </g>
+
+    </svg>
+</body>
+</html>

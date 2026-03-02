@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entra ID Cover Image - Redesigned</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+            min-height: 100vh;
+        }
+        svg {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" width="1200" height="675">
+        <!-- Gradient definitions -->
+        <defs>
+            <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#0a1628;stop-opacity:1" />
+                <stop offset="50%" style="stop-color:#001f3f;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#003d7a;stop-opacity:1" />
+            </linearGradient>
+            
+            <radialGradient id="blueGlow" cx="50%" cy="50%" r="60%">
+                <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0.3" />
+                <stop offset="100%" style="stop-color:#0078d4;stop-opacity:0.05" />
+            </radialGradient>
+            
+            <filter id="textGlow">
+                <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+            
+            <filter id="nodeGlow">
+                <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                <feMerge>
+                    <feMergeNode in="coloredBlur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+            </filter>
+        </defs>
+
+        <!-- Dark Blue Gradient Background -->
+        <rect width="1200" height="675" fill="url(#bgGradient)"/>
+        
+        <!-- Radial glow overlays -->
+        <circle cx="150" cy="150" r="250" fill="url(#blueGlow)"/>
+        <circle cx="1050" cy="550" r="300" fill="url(#blueGlow)"/>
+        <circle cx="600" cy="338" r="200" fill="url(#blueGlow)"/>
+
+        <!-- LEFT SIDE ACCENT LINES AND NODES -->
+        <g opacity="0.5">
+            <!-- Flowing lines from left -->
+            <path d="M 20 200 Q 150 250 280 300" stroke="#00d4ff" stroke-width="2" fill="none" stroke-dasharray="8,4"/>
+            <path d="M 50 450 Q 180 400 320 350" stroke="#00d4ff" stroke-width="2" fill="none" stroke-dasharray="8,4"/>
+            
+            <!-- Accent nodes -->
+            <circle cx="100" cy="220" r="5" fill="#00d4ff" filter="url(#nodeGlow)"/>
+            <circle cx="120" cy="480" r="4" fill="#00ffff" opacity="0.8"/>
+        </g>
+
+        <!-- RIGHT SIDE ACCENT LINES AND NODES -->
+        <g opacity="0.5">
+            <!-- Flowing lines from right -->
+            <path d="M 1180 200 Q 1050 250 920 300" stroke="#00ffff" stroke-width="2" fill="none" stroke-dasharray="8,4"/>
+            <path d="M 1150 450 Q 1020 400 880 350" stroke="#00ffff" stroke-width="2" fill="none" stroke-dasharray="8,4"/>
+            
+            <!-- Accent nodes -->
+            <circle cx="1100" cy="220" r="5" fill="#00ffff" filter="url(#nodeGlow)"/>
+            <circle cx="1080" cy="480" r="4" fill="#00d4ff" opacity="0.8"/>
+        </g>
+
+        <!-- CENTER VERTICAL ACCENT LINE -->
+        <line x1="600" y1="0" x2="600" y2="675" stroke="#0078d4" stroke-width="1" opacity="0.3"/>
+
+        <!-- APPROVAL CHECKMARKS AND ICONS (distributed around) -->
+        <g opacity="0.7">
+            <!-- Top left checkmark -->
+            <circle cx="180" cy="120" r="20" fill="#0078d4" filter="url(#nodeGlow)"/>
+            <text x="180" y="135" font-size="24" fill="#00ff88" text-anchor="middle" font-weight="bold">✓</text>
+            
+            <!-- Top right checkmark -->
+            <circle cx="1020" cy="120" r="20" fill="#0078d4" filter="url(#nodeGlow)"/>
+            <text x="1020" y="135" font-size="24" fill="#00ff88" text-anchor="middle" font-weight="bold">✓</text>
+            
+            <!-- Bottom left approval -->
+            <circle cx="150" cy="600" r="18" fill="#0078d4" filter="url(#nodeGlow)"/>
+            <text x="150" y="613" font-size="22" fill="#00ff88" text-anchor="middle" font-weight="bold">✓</text>
+            
+            <!-- Bottom right approval -->
+            <circle cx="1050" cy="600" r="18" fill="#0078d4" filter="url(#nodeGlow)"/>
+            <text x="1050" y="613" font-size="22" fill="#00ff88" text-anchor="middle" font-weight="bold">✓</text>
+        </g>
+
+        <!-- LOCK ICONS -->
+        <g opacity="0.6" stroke="#00d4ff" stroke-width="1.5" fill="none">
+            <!-- Top lock -->
+            <rect x="830" y="110" width="24" height="20" rx="2"/>
+            <path d="M 836 110 V 100 Q 836 94 842 94 Q 848 94 848 100 V 110"/>
+            <circle cx="842" cy="122" r="2" fill="#00d4ff"/>
+            
+            <!-- Left lock -->
+            <rect x="40" y="350" width="24" height="20" rx="2"/>
+            <path d="M 46 350 V 340 Q 46 334 52 334 Q 58 334 58 340 V 350"/>
+            <circle cx="52" cy="362" r="2" fill="#00d4ff"/>
+        </g>
+
+        <!-- CREDENTIAL/TOKEN SYMBOLS -->
+        <g opacity="0.5">
+            <rect x="290" y="520" width="40" height="26" rx="3" fill="none" stroke="#00ffff" stroke-width="2"/>
+            <circle cx="305" cy="533" r="3" fill="#00ffff"/>
+            
+            <rect x="870" y="150" width="40" height="26" rx="3" fill="none" stroke="#00ffff" stroke-width="2"/>
+            <circle cx="885" cy="163" r="3" fill="#00ffff"/>
+        </g>
+
+        <!-- NETWORK NODES -->
+        <g fill="#00d4ff" opacity="0.7">
+            <circle cx="380" cy="180" r="7" filter="url(#nodeGlow)"/>
+            <circle cx="820" cy="520" r="7" filter="url(#nodeGlow)"/>
+            <circle cx="330" cy="450" r="5" opacity="0.5"/>
+            <circle cx="870" cy="280" r="5" opacity="0.5"/>
+            <circle cx="480" cy="580" r="5" opacity="0.5"/>
+            <circle cx="720" cy="140" r="5" opacity="0.5"/>
+        </g>
+
+        <!-- CONNECTION LINES BETWEEN NODES (subtle) -->
+        <g stroke="#00d4ff" stroke-width="1.2" opacity="0.25" fill="none">
+            <line x1="380" y1="180" x2="600" y2="338"/>
+            <line x1="820" y1="520" x2="600" y2="338"/>
+            <line x1="330" y1="450" x2="600" y2="338"/>
+            <line x1="870" y1="280" x2="600" y2="338"/>
+        </g>
+
+        <!-- DECORATIVE HORIZONTAL BARS -->
+        <g opacity="0.2">
+            <rect x="0" y="155" width="1200" height="2" fill="#00d4ff"/>
+            <rect x="0" y="520" width="1200" height="2" fill="#00ffff"/>
+        </g>
+
+        <!-- ==================== TEXT CONTENT ==================== -->
+        
+        <!-- TOP SECTION -->
+        <g>
+            <!-- Decorative line above title -->
+            <line x1="200" y1="45" x2="1000" y2="45" stroke="#00d4ff" stroke-width="2" opacity="0.5"/>
+            
+            <!-- Main title: "Entra ID - Foundational Concepts" -->
+            <text x="600" y="72" font-family="'Segoe UI', -apple-system, sans-serif" font-size="56" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="-0.5">Entra ID <tspan fill="#00ffff" font-weight="600">-</tspan> Foundational Concepts</text>
+            
+            <!-- Series number: "Glossary #1.1" -->
+            <text x="600" y="115" font-family="'Segoe UI', -apple-system, sans-serif" font-size="28" font-weight="600" fill="#00d4ff" text-anchor="middle" letter-spacing="1">Glossary #1.1</text>
+            
+            <!-- Decorative line below title -->
+            <line x1="250" y1="130" x2="950" y2="130" stroke="#00ffff" stroke-width="2" opacity="0.4"/>
+        </g>
+
+        <!-- MIDDLE SECTION - MAIN CONTENT -->
+        <g>
+            <!-- "Microsoft" -->
+            <text x="600" y="265" font-family="'Segoe UI', -apple-system, sans-serif" font-size="68" font-weight="700" fill="#00d4ff" text-anchor="middle" letter-spacing="4" filter="url(#textGlow)">Microsoft</text>
+            
+            <!-- Spacer line -->
+            <line x1="350" y1="295" x2="850" y2="295" stroke="#00ffff" stroke-width="3" opacity="0.7"/>
+            
+            <!-- "ENTRA ID" - HUGE TEXT -->
+            <text x="600" y="430" font-family="'Segoe UI', -apple-system, sans-serif" font-size="180" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="-5" filter="url(#textGlow)">ENTRA ID</text>
+            
+            <!-- Subtitle: "Who Are You? What Can You Do?" -->
+            <text x="600" y="495" font-family="'Segoe UI', -apple-system, sans-serif" font-size="38" font-weight="300" fill="#00ffff" text-anchor="middle" letter-spacing="2">Who Are You? What Can You Do?</text>
+        </g>
+
+        <!-- BOTTOM RIGHT SIGNATURE -->
+        <g>
+            <!-- Accent dot before signature -->
+            <circle cx="1090" cy="650" r="3" fill="#00ffff"/>
+            <text x="1130" y="665" font-family="'Segoe UI', -apple-system, sans-serif" font-size="28" font-weight="700" fill="#00d4ff" text-anchor="end" letter-spacing="0.5">TedxHarry</text>
+        </g>
+
+    </svg>
+</body>
+</html>

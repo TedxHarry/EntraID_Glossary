@@ -5,6 +5,9 @@
 
 📚 Part of Entra ID Glossary Series #1.6 - Hybrid Identity
 
+![Cover image](./images/glossary-1-6-hybrid-identity-cover.png)
+
+
 ---
 
 ## 🎯 TL;DR

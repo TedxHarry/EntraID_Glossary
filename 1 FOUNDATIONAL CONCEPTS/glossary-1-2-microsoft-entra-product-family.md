@@ -5,6 +5,9 @@
 
 📚 Part of Entra ID Glossary Series #1.2 - Microsoft Entra Product Family
 
+![Cover image](./images/glossary-1-2-microsoft-entra-product-family-cover.png)
+
+
 ---
 
 ## 🎯 TL;DR
