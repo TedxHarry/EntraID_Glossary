@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.7 - Threat Intelligence**
+📚 Part of Entra ID Glossary Series #7.7 - Threat Intelligence
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Microsoft Threat Intelligence feeds real-time signals into Identity Protection: known malicious IPs, TOR nodes, botnets
 - These signals generate risk detections even before any action is taken in your tenant
-- Threat intelligence is one of the strongest sources of risk signal — block access from known-bad IPs via CA
+- Threat intelligence is one of the strongest sources of risk signal : block access from known-bad IPs via CA
 
 
 An IP address showed up in a sign-in log. The security team had never seen it before. There was no obvious reason to flag it. It was registered to a hosting provider in Germany. The sign-in had used correct credentials. MFA was satisfied.
@@ -20,7 +20,7 @@ But Entra ID had blocked the sign-in as high risk. The reason: the IP address ha
 
 Their sign-in logs would have shown a successful authentication. Microsoft's logs showed an IP with a confirmed attack history trying it again.
 
-## 🌐 What Threat Intelligence Is in Entra ID
+## 🌐 What threat intelligence is in Entra ID
 
 Threat intelligence in Entra ID ID Protection is the feed of external indicators that inform risk assessments. It's the data about known malicious infrastructure, attack campaigns, and compromised credential sets that Microsoft aggregates across its global footprint.
 
@@ -33,7 +33,7 @@ When Entra ID evaluates a sign-in, it doesn't only look at your organization's d
 
 This external intelligence is what makes risk detection useful. Any single organization sees a tiny slice of the attack traffic targeting Microsoft's identity platform. Microsoft sees all of it.
 
-## 📊 The Scale Advantage
+## 📊 The scale advantage
 
 Entra ID processes billions of authentications per day across millions of organizations worldwide. This scale creates an intelligence feedback loop that no individual organization can replicate:
 
@@ -41,7 +41,7 @@ When an IP address is used in an attack against one organization and the attack 
 
 This is the material security advantage of a cloud-based identity platform over on-premises alternatives. An on-premises Active Directory deployment has visibility into what happens against your domain. It has no visibility into attacks against anyone else's infrastructure.
 
-## 🔍 How Threat Intelligence Feeds into Risk Detection
+## 🔍 How threat intelligence feeds into risk detection
 
 The threat intelligence layer contributes to several specific risk detections:
 
@@ -53,7 +53,7 @@ The threat intelligence layer contributes to several specific risk detections:
 
 **Leaked credentials** 🔴: The breach database monitoring described in the previous article. This is threat intelligence applied to credential data rather than network infrastructure.
 
-## 🔒 Named Locations vs Threat Intelligence
+## 🔒 Named locations vs threat intelligence
 
 Organizations can configure Named Locations in Conditional Access: IP ranges and countries that are explicitly trusted or explicitly blocked. Named Locations are organization-defined policy decisions.
 
@@ -61,7 +61,7 @@ Threat intelligence is different. It's Microsoft's continuously updated assessme
 
 The combination is intentional: Named Locations handle what your organization knows about your own network topology. Threat intelligence handles what Microsoft knows about the broader attack ecosystem that your organization can't see.
 
-## ⚠️ What Threat Intelligence Doesn't Tell You
+## ⚠️ What threat intelligence doesn't tell you
 
 Threat intelligence signals are probabilistic, not deterministic. A malicious IP flag means "this IP has been associated with attack activity." It doesn't mean "the user signing in from this IP is an attacker."
 
@@ -75,7 +75,7 @@ Legitimate scenarios can generate IP reputation hits:
 
 The response to threat intelligence signals should be calibrated investigation, not automatic assumption of compromise. The risk level indicates confidence, not certainty.
 
-## 💡 The Intelligence Gap for Novel Attacks
+## 💡 The intelligence gap for novel attacks
 
 Threat intelligence is reactive by nature. It's built from observed attack behavior. New infrastructure, new techniques, and new attack campaigns that haven't been seen yet won't appear in threat intelligence feeds until they're detected.
 
@@ -84,7 +84,7 @@ This is why threat intelligence works alongside behavioral analysis and anomaly 
 ---
 
 💬 **Have you ever investigated a sign-in that was flagged for malicious IP and traced the IP back to infrastructure you recognized as legitimate, like a shared VPN exit node or a cloud provider range?** The false positive scenarios from IP reputation are specific and predictable once you've seen them. What was your approach to resolving it without weakening the detection for genuine threats?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Threat intelligence-based risk detections are surfaced via Identity Protection, which requires **Entra ID P2**.

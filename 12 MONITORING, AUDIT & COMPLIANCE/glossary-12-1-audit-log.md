@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#12.1 - Audit Log**
+📚 Part of Entra ID Glossary Series #12.1 - Audit Log
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Audit logs record all administrative changes in Entra ID: user creation, role assignment, policy change
 - Retained for 7 days (free), 30 days (P1), or longer with Log Analytics/Sentinel integration
-- Every compliance investigation starts with the audit log — who made what change, when, from where
+- Every compliance investigation starts with the audit log : who made what change, when, from where
 
 
 A Security Operations team got a ticket: a user's account had been granted Global Administrator two weeks ago, and nobody could explain who authorized it. The change had been made. The role was assigned. But there was no change management ticket, no approval record, no memory of the decision.
@@ -20,7 +20,7 @@ The audit log had the answer. Who made the change. When. From which IP address. 
 
 The problem wasn't finding the information. The problem was that nobody had looked at it until two weeks after the fact. The audit log had the answer the whole time.
 
-## 📋 What Entra ID Audit Logs Capture
+## 📋 What entra ID audit logs capture
 
 The Entra ID audit log is a record of administrative and management operations in the tenant. Every time something in the identity plane changes, an audit event is written.
 
@@ -40,7 +40,7 @@ Operations captured include:
 
 Each audit event includes: the date and time, the actor (who or what performed the operation), the target (which object was modified), the operation name, and the result (success or failure).
 
-## 📌 ⏰ Retention and Export
+## 📌 ⏰ retention and export
 
 Audit log retention in Entra ID depends on the license tier:
 
@@ -59,7 +59,7 @@ The solution is exporting to a durable store via Diagnostic Settings:
 
 Export to Log Analytics is the most operationally useful for teams that want to query, alert on, and correlate audit events with other security data.
 
-## 🔍 Useful Audit Queries
+## 🔍 Useful audit queries
 
 In Log Analytics (with the Entra ID audit logs exported), KQL enables powerful queries:
 
@@ -85,7 +85,7 @@ AuditLogs
 | project TimeGenerated, InitiatedBy, TargetResources
 ```
 
-## ⚠️ What Audit Logs Don't Capture
+## ⚠️ What audit logs don't capture
 
 Audit logs cover the identity plane (identity administration operations). They don't cover:
 
@@ -98,10 +98,10 @@ Audit logs cover the identity plane (identity administration operations). They d
 ---
 
 💬 **How far back can your organization query Entra ID audit logs today, and is that sufficient for your compliance requirements?** The gap between "we have 30 days of built-in audit logs" and "our compliance requirement is 12 months" is common and fixable with diagnostic settings export. Has your organization set up long-term audit log retention, and what drove the decision to do it (or not)?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-### 🔧 Quick Reference: Graph API — Audit Logs
+### 🔧 Quick reference: graph API : audit logs
 
 ```powershell
 # Get recent audit log entries (last 24 hours)

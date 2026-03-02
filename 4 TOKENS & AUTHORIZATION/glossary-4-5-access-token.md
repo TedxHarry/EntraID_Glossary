@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.5 - Access Token**
+📚 Part of Entra ID Glossary Series #4.5 - Access Token
 
 ---
 
@@ -11,14 +11,14 @@
 
 - Access tokens are short-lived JWTs (typically 60–75 min) that prove an app is authorized to call an API
 - They contain claims: who the user is (`sub`), what app made the request (`appid`), and what's allowed (`scp`)
-- Access tokens are opaque to apps that receive them — the API validates them, the app just presents them
+- Access tokens are opaque to apps that receive them : the API validates them, the app just presents them
 
 
 An access token looks like a random string of characters about 1,500 characters long. Developers copy-paste them into Postman headers, IT pros see them flash past in Fiddler traces, and most people treat them as opaque blobs that either work or don't.
 
 They're not opaque. They're JWTs (JSON Web Tokens), and they're fully readable. Paste one into jwt.ms (Microsoft's own token decoder) and you'll see exactly what Entra ID packed into it. What you find is worth understanding, because the claims inside the token drive authorization decisions across every API that accepts it.
 
-## 🔍 Anatomy of an Entra ID Access Token
+## 🔍 Anatomy of an entra ID access token
 
 A JWT has three parts separated by dots: header, payload, and signature. The header and payload are Base64-encoded JSON, not encrypted. Anyone with the token can read the first two parts. Only the signature requires Entra ID's private key to create, and any resource server can verify it using Entra ID's public keys.
 
@@ -54,7 +54,7 @@ Display name of the user. For showing "Welcome, Alex" in your app UI.
 **ver** 📋
 Token version: `"1.0"` or `"2.0"`. v2 tokens have some structural differences and are the recommended endpoint for new applications.
 
-## ⚠️ What Access Tokens Are Not For
+## ⚠️ What access tokens are not for
 
 Access tokens are not ID tokens. This distinction matters and gets confused regularly.
 
@@ -64,7 +64,7 @@ If your application needs to know who signed in, use the ID token. That's what i
 
 If your API needs to know who is calling it, validate the access token and read its claims in the API layer. The downstream API is the intended audience, not the calling client application.
 
-## 🔒 Access Token Security
+## 🔒 Access token security
 
 Access tokens are bearer tokens (covered in Glossary#4.8). Whoever holds a valid token can use it. This makes protection in transit and at rest important:
 
@@ -78,10 +78,10 @@ A resource server that doesn't properly validate access tokens is accepting unsi
 ---
 
 💬 **Have you ever decoded an access token to debug a permissions issue?** The moment when you paste a token into jwt.ms and see a `scp` claim that doesn't include what you expected is one of those instant "ah, that's why" moments. What did decoding a token reveal for you?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-### 🔧 Quick Reference: Get a Token
+### 🔧 Quick reference: get a token
 
 ```powershell
 # Get an access token using MSAL (PowerShell module)

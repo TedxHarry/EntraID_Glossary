@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.25 - Authentication Strength**
+📚 Part of Entra ID Glossary Series #7.25 - Authentication Strength
 
 ---
 
 ## 🎯 TL;DR
 
 - Authentication strength is a CA feature to require specific authentication methods, not just 'any MFA'
-- Phishing-resistant strength requires FIDO2 or WHfB — SMS and push notifications don't qualify
+- Phishing-resistant strength requires FIDO2 or WHfB : SMS and push notifications don't qualify
 - Assign phishing-resistant strength to admin roles and high-value application access policies
 
 
@@ -22,13 +22,13 @@ User B used a FIDO2 security key. An attacker tried the same AiTM approach. The 
 
 Both users had MFA. Only one of them had MFA that resisted the attack.
 
-## 📊 Authentication Strength as a Classification
+## 📊 Authentication strength as a classification
 
 Authentication Strength is the framework for classifying how resistant different authentication methods are to specific attack types. It's not a single feature; it's a way of thinking about the security properties of authentication methods and the Conditional Access mechanism that lets you require specific properties.
 
 The classification exists because "MFA enabled" is a category, not a specification. SMS OTP, TOTP codes, push notifications, FIDO2 keys, and Windows Hello are all MFA. They have dramatically different security properties. Authentication Strength makes those differences actionable in policy.
 
-## 🔐 What Makes One Method Stronger Than Another
+## 🔐 What makes one method stronger than another
 
 Authentication methods have different properties along several dimensions:
 
@@ -40,7 +40,7 @@ Authentication methods have different properties along several dimensions:
 
 **Second factor requirement** 👤: Does the method require two factors? A FIDO2 key that doesn't require a PIN is still one factor (possession). Windows Hello requiring biometric plus device possession is two factors from a single interaction.
 
-## 🎚️ The Strength Spectrum
+## 🎚️ The strength spectrum
 
 At the lower end: SMS OTP. One-time code sent via text message. Better than password alone. Defeatable by SIM swapping and, to a lesser extent, by social engineering the user into revealing the code.
 
@@ -50,7 +50,7 @@ Push notifications with number matching are meaningfully stronger than basic pus
 
 At the higher end: FIDO2 security keys, Windows Hello for Business, certificate-based authentication. These use public key cryptography with origin binding. The authentication is cryptographically tied to the specific website or application. An AiTM proxy attack fails because the credential is bound to the legitimate domain and the proxy is serving a different domain.
 
-## 📋 The Built-In Strength Classifications
+## 📋 The built-in strength classifications
 
 Entra ID codifies the spectrum into three built-in Authentication Strength definitions for use in Conditional Access:
 
@@ -60,7 +60,7 @@ Entra ID codifies the spectrum into three built-in Authentication Strength defin
 
 **Phishing-resistant MFA** 🔴: Methods where the credential is cryptographically bound to the specific origin. FIDO2 keys, Windows Hello for Business, certificate-based authentication. AiTM attacks fail because the credential is origin-bound.
 
-## 🎯 Applying Strength to Policy Decisions
+## 🎯 Applying strength to policy decisions
 
 The purpose of the classification is to match authentication strength requirements to the sensitivity of what's being protected:
 
@@ -75,7 +75,7 @@ For a Global Administrator, the worst case is complete tenant compromise. Phishi
 ---
 
 💬 **Has your organization differentiated authentication strength requirements between regular users and privileged accounts?** The conversation about "we have MFA" vs "we have phishing-resistant MFA for our admins" reflects a real security gap. What was the event or recommendation that drove the decision to require stronger methods for specific roles?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Authentication Strengths configuration requires **Entra ID P1**.

@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.2 - Cloud Application**
+📚 Part of Entra ID Glossary Series #9.2 - Cloud Application
 
 ---
 
 ## 🎯 TL;DR
 
-- Cloud applications authenticate via Entra ID using OIDC/OAuth or SAML — no on-prem infrastructure needed
+- Cloud applications authenticate via Entra ID using OIDC/OAuth or SAML : no on-prem infrastructure needed
 - The Entra ID app gallery has thousands of pre-integrated cloud apps with one-click SSO configuration
-- Cloud app SSO eliminates per-app passwords — users sign in once and access all integrated apps
+- Cloud app SSO eliminates per-app passwords : users sign in once and access all integrated apps
 
 
 A security audit found that employees were using 340 cloud applications. The IT team was aware of 23 of them. The other 317 were shadow IT: applications people had signed up for individually, using their work email, with no IT visibility or governance.
@@ -20,7 +20,7 @@ Of the 23 known applications, 18 were integrated with Entra ID. Of the 317 unkno
 
 The distinction between a cloud application that's integrated with Entra ID and one that isn't is the difference between a resource in your security perimeter and a blind spot.
 
-## ☁️ What a Cloud Application Is in Entra ID
+## ☁️ What a cloud application is in Entra ID
 
 In the Entra ID context, a cloud application is a Software-as-a-Service (SaaS) application or web application that has been integrated with Entra ID for authentication and access management. It appears in the tenant as an Enterprise Application and is subject to the identity governance and security controls available through Entra ID.
 
@@ -28,7 +28,7 @@ This is distinct from any cloud application an employee signs up for on their ow
 
 The integration is what brings a cloud application under the tenant's security umbrella.
 
-## 📋 Categories of Cloud Applications in Entra ID
+## 📋 Categories of cloud applications in Entra ID
 
 **Microsoft first-party applications** 🔵: Microsoft 365 services (Exchange Online, SharePoint, Teams, OneDrive), Azure services, and other Microsoft products are pre-integrated. They appear in every tenant's enterprise applications list automatically.
 
@@ -38,7 +38,7 @@ The integration is what brings a cloud application under the tenant's security u
 
 **Microsoft Defender for Cloud Apps discovered applications** 🔍: MDCA can discover and analyze the cloud applications being used in your environment, including shadow IT, even before those applications are formally integrated with Entra ID.
 
-## 🔒 What Integration Gives You
+## 🔒 What integration gives you
 
 When a cloud application is integrated with Entra ID, you gain:
 
@@ -52,7 +52,7 @@ When a cloud application is integrated with Entra ID, you gain:
 
 **SSO** 🔐: Users access integrated applications through the My Apps portal or directly, using their Entra ID credentials, without separate application-specific passwords.
 
-## 🎯 Assignment and Access Control
+## 🎯 Assignment and access control
 
 For many cloud applications, you can configure whether all users in the tenant can access it or only assigned users:
 
@@ -62,7 +62,7 @@ For many cloud applications, you can configure whether all users in the tenant c
 
 Assignment control combined with Conditional Access gives you layered application access governance: who is allowed to access the application (assignment) and under what conditions they can access it (Conditional Access).
 
-## ⚠️ The Shadow IT Problem
+## ⚠️ The shadow IT problem
 
 The 317 unmanaged applications from the opening scenario represent a real and common challenge. Employees use cloud services to get work done. If the approved application catalog doesn't meet their needs, they find alternatives.
 
@@ -77,7 +77,7 @@ The solution isn't blocking all unapproved applications (that creates friction w
 ---
 
 💬 **How many cloud applications are formally integrated with Entra ID in your tenant?** The gap between the number IT knows about and the number actually in use is almost always larger than expected. Has your organization done a shadow IT discovery exercise, and what did the results look like?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

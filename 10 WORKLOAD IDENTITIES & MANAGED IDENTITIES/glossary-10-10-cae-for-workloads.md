@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#10.10 - CAE for Workloads**
+📚 Part of Entra ID Glossary Series #10.10 - CAE for Workloads
 
 ---
 
@@ -11,7 +11,7 @@
 
 - CAE for workloads allows resource servers to revoke workload tokens mid-lifetime when conditions change
 - Without CAE, a workload token is valid until expiry even after the managed identity is disabled
-- CAE for workloads is newer than user CAE — check service support before relying on it
+- CAE for workloads is newer than user CAE : check service support before relying on it
 
 
 A service principal had its permissions revoked at 9:47 AM. The security team revoked them because the associated application had a critical vulnerability disclosed that morning.
@@ -20,7 +20,7 @@ At 10:43 AM, the service principal was still calling the Azure Storage API succe
 
 For workloads running continuously and holding access tokens, the gap between "permission revoked" and "access actually stops" can be significant. Continuous Access Evaluation for workloads is the mechanism that closes that gap.
 
-## ⚡ What CAE for Workloads Is
+## ⚡ What CAE for workloads is
 
 Continuous Access Evaluation for workloads applies the same near-real-time enforcement model to workload identities (service principals, managed identities) that CAE applies to user sign-ins.
 
@@ -28,7 +28,7 @@ CAE works by establishing a protocol between the authorization server (Entra ID)
 
 The workload's existing access token gets rejected in near-real-time by the resource. The workload tries to get a new token. If the policy change was a revocation, the new token request fails. Access stops.
 
-## 🔄 The Difference from User CAE
+## 🔄 The difference from user CAE
 
 CAE for user identities responds to events like: user account disabled, password changed, user risk elevated, session policy updated. When these events occur during a user session, the resource provider rejects the token and forces re-authentication.
 
@@ -36,7 +36,7 @@ CAE for workloads responds to events specific to workload identity states: servi
 
 The revocation scenarios are different because the triggering events are different. A user might be blocked because they were terminated. A workload might be blocked because the application it belongs to was compromised, its secret was leaked, or a policy change restricts the IP ranges it can authenticate from.
 
-## 🔑 The Long-Lived Token Connection
+## 🔑 The long-lived token connection
 
 CAE for workloads is what makes long-lived tokens (LLTs) viable. Without CAE, workload tokens are kept short-lived (one hour) because there's no reliable way to revoke them before expiry. A shorter lifetime limits the window of risk if a token is compromised or permissions need to be revoked.
 
@@ -44,7 +44,7 @@ With CAE, workload tokens can be issued with longer lifetimes (up to 24 hours) b
 
 This is the tradeoff: longer token lifetimes are safer when coupled with CAE than shorter lifetimes without it, because CAE provides a reliable enforcement mechanism that doesn't depend on token expiry.
 
-## ⚙️ How Resource Providers Enforce It
+## ⚙️ How resource providers enforce it
 
 CAE-capable resource providers validate tokens differently from standard token validation. In addition to standard signature verification, expiry check, and audience validation, they also check the current state of the service principal against Entra ID's signals.
 
@@ -52,13 +52,13 @@ When a workload presents a token, the resource provider can verify that no revoc
 
 The Azure SDKs handle this transparently. When a resource returns a CAE rejection response, `DefaultAzureCredential` and other Azure SDK credential implementations automatically trigger a new token acquisition attempt.
 
-## 📊 Which Services Support It
+## 📊 Which services support it
 
 CAE for workloads is supported by CAE-capable resource providers including Microsoft Graph, Azure Resource Manager, and key Azure data plane services. The specific set of supporting services continues to expand.
 
 Workload access to services that don't support CAE falls back to standard token lifetime enforcement. For those services, shorter token lifetimes remain the primary revocation mechanism.
 
-## ⚠️ Operational Implication
+## ⚠️ Operational implication
 
 The practical implication for security teams: for services that support CAE, revoking a workload identity's access in Entra ID takes effect faster than the token's remaining lifetime. For services without CAE support, the token remains valid until it expires.
 
@@ -67,7 +67,7 @@ Knowing which Azure services support CAE matters when designing incident respons
 ---
 
 💬 **Has your team ever had to respond to a compromised service principal, and how long did it take before the service principal's access actually stopped?** The gap between "we revoked the permissions" and "access actually stopped" is a real operational problem in incident response. CAE for workloads is meant to close that gap. Has it changed how your team thinks about workload identity incident response timelines?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** CAE for workload identities requires **Entra ID Workload Identity Premium**.

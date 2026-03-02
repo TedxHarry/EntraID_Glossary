@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#2.8 - Permission**
+📚 Part of Entra ID Glossary Series #2.8 - Permission
 
 ---
 
@@ -22,9 +22,9 @@ Two things were wrong. First, they'd requested write access they didn't need. Se
 
 Understanding how permissions work prevents both mistakes.
 
-## 📌 What a Permission Is
+## 📌 What a permission is
 
-In Entra ID, a permission is an explicit right to take a specific action on a specific type of resource. Permissions are defined by APIs, Microsoft Graph defines hundreds of them, and custom APIs can define their own.
+in Entra ID, a permission is an explicit right to take a specific action on a specific type of resource. Permissions are defined by APIs, Microsoft Graph defines hundreds of them, and custom APIs can define their own.
 
 Permission names follow a pattern: `Resource.Action` or `Resource.Action.Scope`.
 
@@ -37,7 +37,7 @@ Permission names follow a pattern: `Resource.Action` or `Resource.Action.Scope`.
 
 The `.All` suffix is significant. It means the permission applies tenant-wide, not just to the signed-in user's own data. `.All` permissions almost always require admin consent because no individual user can grant another app access to the entire tenant's data on their own.
 
-## 📌 Delegated vs. Application: The Core Distinction
+## 📌 Delegated vs. application: the core distinction
 
 Every permission in Entra ID falls into one of two categories. This distinction matters more than any other aspect of permissions.
 
@@ -49,7 +49,7 @@ This is important: delegated permissions are bounded by the user's own access. T
 
 Application permissions are inherently higher privilege and always require admin consent. They shouldn't be used when a delegated permission will do the job, because delegated permissions carry a natural safety constraint the application permission doesn't have.
 
-## 📌 Consent: Who Has to Approve What
+## 📌 Consent: who has to approve what
 
 Not all permissions need the same level of approval to use.
 
@@ -61,7 +61,7 @@ All application permissions require admin consent because they're tenant-wide by
 
 When admin consent is granted for an app, it's recorded on the service principal in your tenant and users won't be prompted individually. When it's not granted, users either get prompted (if the permission allows user consent) or the app fails with a consent required error.
 
-## 📌 The Least Privilege Rule for Permissions
+## 📌 The least privilege rule for permissions
 
 Request only what the app genuinely needs to function. This sounds obvious, but it's routinely violated, often because requesting broader permissions is easier than figuring out the precise minimum.
 
@@ -72,7 +72,7 @@ Before requesting any permission, ask: does this need to act on behalf of a user
 ---
 
 
-### 🔧 Quick Reference: PowerShell
+### 🔧 Quick reference: PowerShell
 
 ```powershell
 # List OAuth2 permission grants (delegated permissions consented by users)
@@ -89,7 +89,7 @@ Get-MgServicePrincipalAppRoleAssignment -ServicePrincipalId "<sp-object-id>"
 ---
 
 **Developer question:** What's the most over-privileged permission you've seen granted to an application, either something you inherited or something you caught before it went to production? The `Directory.ReadWrite.All` in a basic sign-in app is a classic.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

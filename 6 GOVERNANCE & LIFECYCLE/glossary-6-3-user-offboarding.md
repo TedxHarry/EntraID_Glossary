@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.3 - User Offboarding**
+📚 Part of Entra ID Glossary Series #6.3 - User Offboarding
 
 ---
 
@@ -20,7 +20,7 @@ One of those accounts had been used to log in to the company's SharePoint six we
 
 Offboarding is where identity programs fail most visibly and most consequentially.
 
-## ⚡ The First 15 Minutes
+## ⚡ The first 15 minutes
 
 When an employee leaves under any circumstances, access revocation should begin immediately. The sequence matters:
 
@@ -32,7 +32,7 @@ When an employee leaves under any circumstances, access revocation should begin 
 
 **Trigger device wipe** 📱: If the user had corporate-owned devices enrolled in Intune, trigger a selective wipe (for personal devices with corporate data) or full wipe (for corporate-owned devices) via Intune.
 
-## 📋 The Full Offboarding Checklist
+## 📋 The full offboarding checklist
 
 Beyond the immediate actions, thorough offboarding covers:
 
@@ -59,7 +59,7 @@ Beyond the immediate actions, thorough offboarding covers:
 - ✅ Email forwarding configured if needed for business continuity
 - ✅ Microsoft 365 group ownerships transferred
 
-## 🔄 Automated vs Manual Offboarding
+## 🔄 Automated vs manual offboarding
 
 The 47 abandoned accounts in the audit were the result of manual offboarding: IT received a ticket when someone left, manually disabled the account, and manually removed some access. The manual steps that weren't completed left the gaps.
 
@@ -71,7 +71,7 @@ Automated offboarding changes the model:
 
 With automation, offboarding is complete and consistent regardless of whether IT received a timely ticket. The HR action is the trigger, not a human remembering to create a ticket.
 
-## ⚠️ The Non-Obvious Access Points
+## ⚠️ The non-obvious access points
 
 The obvious access points get covered. It's the non-obvious ones that linger:
 
@@ -85,10 +85,10 @@ The sign-in logs and audit logs from the week before departure are the right pla
 ---
 
 💬 **Has your organization discovered active accounts belonging to departed employees during a security review?** It's one of the most common audit findings in identity programs, and the gap is almost always a manual offboarding process with no enforcement. What triggered your organization to address it?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-### 🔧 Quick Reference: PowerShell — Offboarding Checklist
+### 🔧 Quick reference: PowerShell : offboarding checklist
 
 ```powershell
 # 1. Disable the user account

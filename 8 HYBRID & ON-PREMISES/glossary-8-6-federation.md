@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#8.6 - Federation**
+📚 Part of Entra ID Glossary Series #8.6 - Federation
 
 ---
 
@@ -20,7 +20,7 @@ When they moved to Microsoft 365, their IT leadership's first instinct was: "Can
 
 The answer was yes. Entra ID federation lets organizations keep their existing identity provider handling the actual authentication while Entra ID trusts the results. The Microsoft 365 move happened without touching the authentication infrastructure they'd spent a decade configuring.
 
-## 🤝 What Federation Is
+## 🤝 What federation is
 
 Federation is a trust relationship between Entra ID and an external identity provider (IdP) where Entra ID delegates authentication to the external IdP rather than validating credentials itself.
 
@@ -47,7 +47,7 @@ Active Directory Federation Services (ADFS) is Microsoft's on-premises identity 
 
 **Integration with on-premises certificate infrastructure** 📜: Smart card authentication and certificate-based authentication are native capabilities.
 
-## 🌐 Federation with Non-Microsoft Identity Providers
+## 🌐 Federation with non-microsoft identity providers
 
 Entra ID can federate with any SAML 2.0 or WS-Federation compliant identity provider, not just ADFS. Common scenarios:
 
@@ -57,7 +57,7 @@ Entra ID can federate with any SAML 2.0 or WS-Federation compliant identity prov
 
 **Domain-specific federation**: Different domains within the same Entra ID tenant can be federated to different identity providers. contoso.com might use ADFS while subsidiary.contoso.com might be cloud-managed.
 
-## ⚠️ The Operational Cost of Federation
+## ⚠️ The operational cost of federation
 
 Federation is powerful but operationally expensive:
 
@@ -69,7 +69,7 @@ Federation is powerful but operationally expensive:
 
 **Complexity without corresponding benefit for most organizations**: The controls that made ADFS essential ten years ago (advanced MFA, granular authentication policies) are now available natively in Entra ID Conditional Access. Many organizations that maintain ADFS do so for historical reasons rather than because they need capabilities that Entra ID lacks.
 
-## 📉 The Migration Away from Federation
+## 📉 The migration away from federation
 
 Microsoft's recommended direction for most organizations is to move away from federation to managed authentication (PHS or PTA). The reasons:
 
@@ -83,7 +83,7 @@ The migration from ADFS to managed authentication is a defined process (staged r
 ---
 
 💬 **Is your organization still running ADFS for Microsoft 365 authentication, or have you migrated to managed authentication?** The organizations that migrated often cite certificate rotation anxiety as the thing they're most glad to have eliminated. What's keeping ADFS in place for organizations that haven't made the move?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

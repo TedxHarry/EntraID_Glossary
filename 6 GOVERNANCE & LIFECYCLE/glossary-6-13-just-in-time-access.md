@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.13 - Just-in-Time Access**
+📚 Part of Entra ID Glossary Series #6.13 - Just-in-Time Access
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Just-in-Time (JIT) access grants elevated permissions only when needed and removes them automatically when done
 - PIM implements JIT for privileged roles: request, approve, activate for limited time, auto-expire
-- JIT eliminates standing access — a critical Zero Trust principle to reduce blast radius of compromised accounts
+- JIT eliminates standing access : a critical Zero Trust principle to reduce blast radius of compromised accounts
 
 
 I asked an IT team to show me their Global Administrators. The list had 11 names.
@@ -24,7 +24,7 @@ That reasoning makes intuitive sense and is exactly backwards from a security pe
 
 Just-in-time access is the architecture that removes that invitation.
 
-## 📌 ⏱️ What Just-in-Time Access Is
+## 📌 ⏱️ what just-in-time access is
 
 Just-in-time (JIT) access means privileged access is granted for a limited time, for a specific purpose, and only when it's actually needed. Between tasks that require admin privileges, the access doesn't exist. There's nothing to compromise.
 
@@ -38,7 +38,7 @@ Microsoft Entra Privileged Identity Management (PIM) is the implementation of JI
 
 Between activations, the admin account has no elevated privileges. A compromised account has no admin access until it completes an activation, which requires additional authentication and creates an audit log entry.
 
-## 🔄 Eligible vs Active Assignment
+## 🔄 Eligible vs active assignment
 
 PIM introduces two assignment types for privileged roles:
 
@@ -48,7 +48,7 @@ PIM introduces two assignment types for privileged roles:
 
 The goal is to convert as many Active assignments to Eligible assignments as possible. Start with the highest privilege roles: Global Administrator, Privileged Role Administrator, Security Administrator.
 
-## 📋 The Activation Experience
+## 📋 The activation experience
 
 When an admin needs elevated access, they go to the PIM portal (`myaccess.microsoft.com` or the Entra admin center):
 
@@ -61,7 +61,7 @@ When an admin needs elevated access, they go to the PIM portal (`myaccess.micros
 
 During activation, every action the admin takes is attributable to this specific activation event in the audit logs. The justification links the privilege use to a business reason. The time limit ensures the privilege is automatically removed.
 
-## 🔒 PIM for Azure Resources
+## 🔒 PIM for Azure resources
 
 PIM isn't only for Entra ID directory roles. It also covers Azure RBAC roles: Owner, Contributor, User Access Administrator, and custom roles on Azure subscriptions and resource groups.
 
@@ -69,7 +69,7 @@ An engineer who needs to deploy to a production Azure subscription gets Owner ac
 
 The same JIT model applies: eligible assignment, time-bound activation, justification required, audit trail created.
 
-## ⚠️ What JIT Doesn't Solve
+## ⚠️ What JIT doesn't solve
 
 JIT access reduces the attack surface of admin accounts significantly. It doesn't eliminate risk entirely.
 
@@ -86,13 +86,13 @@ Start with Global Administrator. Convert permanent assignments to eligible. Set 
 ---
 
 💬 **What's the ratio of permanently-active admin roles to eligible PIM assignments in your organization?** The first time an organization audits this, the permanent assignment count is almost always higher than expected. What drove the move to JIT access, and what was the most common admin objection?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** PIM (Just-in-Time access for Entra ID roles) requires **Entra ID P2**. Azure resource role PIM is included in Entra ID P2 as well.
 
 
-### 🔧 Quick Reference: PIM PowerShell
+### 🔧 Quick reference: PIM PowerShell
 
 ```powershell
 # List all eligible role assignments (PIM)

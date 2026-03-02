@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.18 - SAML**
+📚 Part of Entra ID Glossary Series #4.18 - SAML
 
 ---
 
@@ -11,7 +11,7 @@
 
 - SAML 2.0 is an XML-based federation protocol used for enterprise SSO, especially with older apps
 - It uses signed XML assertions instead of JWTs, and flows through the browser via POST bindings
-- SAML is not going away — thousands of enterprise apps use it; Entra ID supports it alongside OIDC/OAuth
+- SAML is not going away : thousands of enterprise apps use it; Entra ID supports it alongside OIDC/OAuth
 
 
 I was brought in to help a company migrate their enterprise applications to Entra ID. Most of the modern SaaS apps integrated within a day or two using OIDC. Then we got to a 15-year-old on-premises HR system, still in active daily use by 400 employees. The vendor maintained it. SAML only. No OIDC support, no modern auth, no roadmap to add either.
@@ -20,7 +20,7 @@ We integrated it via SAML. It worked. It's still working.
 
 SAML isn't the future, but declaring it dead would be premature.
 
-## 📜 What SAML Is
+## 📜 What SAML is
 
 Security Assertion Markup Language (SAML) is an XML-based protocol for exchanging authentication and authorization data between an identity provider and a service provider. SAML 2.0, published in 2005, is the version you'll encounter in enterprise environments today.
 
@@ -28,7 +28,7 @@ Where OIDC uses JSON web tokens and REST APIs, SAML uses XML assertions and brow
 
 In the Entra ID context: Entra ID is the **Identity Provider (IdP)** and the application is the **Service Provider (SP)**.
 
-## 🔄 How SAML Works
+## 🔄 How SAML works
 
 **SP-initiated flow** (the most common pattern):
 
@@ -45,7 +45,7 @@ In the Entra ID context: Entra ID is the **Identity Provider (IdP)** and the app
 2. Entra ID issues a SAML assertion without a specific SP authentication request
 3. Application receives and validates the assertion
 
-## 📋 Inside a SAML Assertion
+## 📋 Inside a SAML assertion
 
 The assertion is an XML document signed by Entra ID. It contains:
 
@@ -57,9 +57,9 @@ The assertion is an XML document signed by Entra ID. It contains:
 
 Applications validate the signature using Entra ID's signing certificate, which is downloaded during initial SAML setup in the Entra admin portal.
 
-## ⚠️ Where SAML Integration Goes Wrong
+## ⚠️ Where SAML integration goes wrong
 
-**Entity ID mismatches**: Both the IdP and SP have entity IDs (essentially string identifiers). These must match exactly what's configured on both sides. A mismatch results in immediate rejection. Case sensitivity has caused multi-hour debugging sessions for teams who didn't realize `https://example.com/saml` and `https://EXAMPLE.COM/SAML` are different values.
+**Entity ID mismatches**: Both the IdP and SP have entity IDs (essentially string identifiers). These must match exactly what's configured on both sides. A mismatch results in immediate rejection. Case sensitivity has caused multi-hour debugging sessions for teams who didn't realize `https://example.com/SAML` and `https://EXAMPLE.COM/SAML` are different values.
 
 **Attribute mapping**: Applications expect specific attributes in the assertion (email, display name, group memberships, employee ID). If the attribute names or formats don't match what the app expects, features break silently. You need to know exactly what the vendor's application expects before configuring the claims.
 
@@ -67,7 +67,7 @@ Applications validate the signature using Entra ID's signing certificate, which 
 
 **Clock skew**: SAML assertions have validity windows. If the SP's clock differs significantly from the IdP's clock, assertions may arrive looking expired or not-yet-valid. A 5-minute window is standard, but this can still cause issues.
 
-## 💡 SAML vs OIDC: When to Use Which
+## 💡 SAML vs OIDC: when to use which
 
 | Scenario | Choose |
 |----------|--------|
@@ -83,7 +83,7 @@ For new integrations where you have a choice, OIDC. For existing applications th
 ---
 
 💬 **What's the SAML integration that took you the longest to get working?** Attribute mapping problems and entity ID mismatches are the usual culprits. There's something about debugging a SAML authentication failure from a wall of XML that concentrates the mind. What was the eventual fix?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

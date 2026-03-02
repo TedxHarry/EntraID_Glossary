@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.3 - Continuous Authorization (CAE)**
+📚 Part of Entra ID Glossary Series #13.3 - Continuous Authorization (CAE)
 
 ---
 
 ## 🎯 TL;DR
 
 - Continuous Authorization evaluates access decisions continuously throughout a session, not just at sign-in
-- CAE is the Microsoft implementation — resource servers receive real-time revocation events from Entra ID
+- CAE is the Microsoft implementation : resource servers receive real-time revocation events from Entra ID
 - Without continuous authorization, a signed-in session persists even after account disable or policy change
 
 
@@ -20,7 +20,7 @@ The user's account might have been disabled. Their role might have changed. A ri
 
 Continuous authorization is the shift from the photograph model to a live video model. Authorization isn't just evaluated at sign-in; it's evaluated continuously for the duration of the session.
 
-## 🔄 The Protocol Behind Continuous Authorization
+## 🔄 The protocol behind continuous authorization
 
 Continuous Access Evaluation is the implementation of continuous authorization in the Microsoft identity platform. The protocol involves three parties: Entra ID (the authorization server), the CAE-capable resource provider (Microsoft Graph, Exchange, SharePoint, Teams, Azure ARM), and the CAE-capable client application.
 
@@ -32,7 +32,7 @@ The protocol establishes two mechanisms:
 
 This is fundamentally different from just letting tokens expire. The resource provider is an active participant in authorization enforcement, not just a passive token validator.
 
-## 📊 What Changes in the Authorization Model
+## 📊 What changes in the authorization model
 
 In the static token model, authorization state is captured at token issuance and valid for the token's lifetime. The resource provider trusts the token completely until it expires.
 
@@ -44,7 +44,7 @@ In the continuous authorization model, authorization has two components:
 
 The second component is what "continuous" means. It's not re-authentication at every request (that would be unusable). It's near-real-time enforcement of policy changes and revocation events, checked against a cache of events the resource provider maintains.
 
-## 🔐 Policy Changes and Continuous Authorization
+## 🔐 Policy changes and continuous authorization
 
 One underappreciated aspect of CAE is that it enforces not just revocation but policy changes.
 
@@ -54,7 +54,7 @@ The client receives the challenge, re-authenticates to satisfy the new policy re
 
 This is what "continuous" means in practice: the authorization decision tracks the current state of the world, not just the state at sign-in.
 
-## ⚙️ Client and Resource Requirements
+## ⚙️ Client and resource requirements
 
 Continuous authorization requires both ends to support the protocol:
 
@@ -64,7 +64,7 @@ Continuous authorization requires both ends to support the protocol:
 
 Older client applications or applications using non-MSAL token handling may not process CAE challenges correctly. These applications fall back to the pre-CAE behavior: token valid until expiry regardless of revocation events.
 
-## ⚠️ Continuous Authorization Is Not Continuous Authentication
+## ⚠️ Continuous authorization is not continuous authentication
 
 The distinction matters for user experience. Continuous authorization doesn't mean users are prompted to authenticate repeatedly. It means the authorization state is continuously evaluated. Most of the time, nothing changes and the user experiences no interruption.
 
@@ -73,7 +73,7 @@ When something does change (account disabled, policy updated, risk elevated), th
 ---
 
 💬 **Has your organization configured Conditional Access with the expectation that policy changes would take effect immediately for active sessions, and have you verified that CAE is actually enforcing this for the services you care about?** The gap between "we updated the policy" and "active sessions are now subject to it" varies significantly based on which services are involved and whether clients are CAE-capable. What's your process for validating policy change enforcement timing?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

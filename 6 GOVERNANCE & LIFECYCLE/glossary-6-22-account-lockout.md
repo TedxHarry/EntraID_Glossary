@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.22 - Account Lockout**
+📚 Part of Entra ID Glossary Series #6.22 - Account Lockout
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Account lockout triggers after too many failed sign-in attempts to prevent brute force attacks
 - Smart Lockout in Entra ID distinguishes legitimate retry failures from attack patterns
-- Lockout thresholds and duration are configurable — balance security vs. legitimate user impact
+- Lockout thresholds and duration are configurable : balance security vs. legitimate user impact
 
 
 An attacker ran a credential stuffing attack against an organization's sign-in endpoint: 50,000 username/password combinations, all purchased from a previous breach. The attack ran for 6 hours.
@@ -22,7 +22,7 @@ The defender I was working with asked how that was possible. On-premises Active 
 
 The mechanism is different from on-premises, and understanding it matters for anyone troubleshooting sign-in failures or designing authentication policies.
 
-## 🔒 How Entra ID Smart Lockout Works
+## 🔒 How entra ID smart lockout works
 
 Smart Lockout is Entra ID's protection against brute force and credential stuffing attacks. Unlike traditional lockout (lock the account after N failed attempts), Smart Lockout uses a more sophisticated approach:
 
@@ -34,7 +34,7 @@ Smart Lockout is Entra ID's protection against brute force and credential stuffi
 
 The result: an attacker trying 50,000 passwords against an account hits lockout on the attacker's side without the legitimate user being blocked.
 
-## 🔧 Configurable Lockout Settings
+## 🔧 Configurable lockout settings
 
 Entra ID Smart Lockout has two configurable values (available to organizations with Entra ID P1 or P2):
 
@@ -44,7 +44,7 @@ Entra ID Smart Lockout has two configurable values (available to organizations w
 
 These are configured in the Entra admin center under Security > Authentication Methods > Password Protection.
 
-## 🔑 Smart Lockout vs On-Premises Lockout
+## 🔑 Smart lockout vs on-premises lockout
 
 For organizations with hybrid environments (Entra Connect synchronizing on-premises AD to Entra ID), the lockout behavior is separate for each system:
 
@@ -55,7 +55,7 @@ Pass-through authentication (PTA) and federation scenarios add complexity: authe
 
 For Password Hash Sync (PHS), authentication happens against Entra ID for cloud resources. Smart Lockout applies. On-premises AD lockout policies apply separately to on-premises resources.
 
-## 🔍 Investigating Lockout Events
+## 🔍 Investigating lockout events
 
 When a user reports they're locked out, the Sign-in Logs in Entra ID are the starting point. Filter by the user's UPN and look for failed sign-in events with error code **50053** (account locked) or **50055** (password expired).
 
@@ -67,7 +67,7 @@ The distinction matters for the response:
 
 - **User error pattern**: Reset the password, walk the user through successful sign-in, check if MFA method issues are contributing.
 
-## ⚠️ What Admins Cannot Do
+## ⚠️ What admins cannot do
 
 Entra ID does not provide an admin tool to manually unlock a locked account in the same way on-premises AD does (the "Unlock Account" checkbox). Smart Lockout durations expire automatically.
 
@@ -80,7 +80,7 @@ Resetting the password is the fastest resolution for a user who needs immediate 
 ---
 
 💬 **Have you investigated a Smart Lockout event and found it was an actual attack rather than a user error?** The sign-in logs tell the story clearly when you know what to look for. What was the attack pattern, and what did your response look like?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.12 - External User**
+📚 Part of Entra ID Glossary Series #9.12 - External User
 
 ---
 
@@ -22,9 +22,9 @@ The compliance team's reaction: "You have almost as many external users with acc
 
 External users are not just a technical configuration. They're an identity governance challenge.
 
-## 👤 What an External User Is
+## 👤 What an external user is
 
-In Entra ID, an external user is any identity that originates outside your organization that has been granted access to your tenant's resources. External users appear in your directory as guest user objects, marked with a user type of "Guest" rather than "Member."
+in Entra ID, an external user is any identity that originates outside your organization that has been granted access to your tenant's resources. External users appear in your directory as guest user objects, marked with a user type of "Guest" rather than "Member."
 
 External users include:
 
@@ -38,7 +38,7 @@ External users include:
 
 **Former employees accessing transition resources** 🔄: Briefly, immediately after departure, while handover documentation is completed.
 
-## 🔑 How External Users Authenticate
+## 🔑 How external users authenticate
 
 External users in Entra ID authenticate against their home identity, not against your tenant:
 
@@ -52,7 +52,7 @@ External users in Entra ID authenticate against their home identity, not against
 
 **Federated IdP** 🏢: If the guest's organization uses a different identity provider (Okta, Ping, ADFS), and cross-tenant federation is configured, guests can authenticate via their home IdP.
 
-## 🔒 What External Users Can Access
+## 🔒 What external users can access
 
 External user access is controlled at multiple levels:
 
@@ -64,7 +64,7 @@ External user access is controlled at multiple levels:
 
 **Default external collaboration settings** 🌐: Controls whether guests can invite other guests, what parts of the directory they can see, and what actions they can perform within the tenant.
 
-## ⚠️ The External User Governance Gap
+## ⚠️ The external user governance gap
 
 External users are the most common identity governance failure point. The lifecycle problem:
 
@@ -87,7 +87,7 @@ Governance mechanisms that help:
 ---
 
 💬 **What does your external user governance process look like today?** The difference between organizations that have quarterly access reviews for guest accounts and those that haven't reviewed their guest list since it was created is often visible in the size and staleness of their guest user population. What would a clean-up of your current tenant's external users reveal?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

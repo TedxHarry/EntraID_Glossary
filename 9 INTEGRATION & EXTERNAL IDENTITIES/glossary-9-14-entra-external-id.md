@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.14 - Entra External ID**
+📚 Part of Entra ID Glossary Series #9.14 - Entra External ID
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Entra External ID is Microsoft's unified external identity platform for both B2B and B2C scenarios
 - External tenants (for customers) vs. workforce tenants (for partners) are the two deployment models
-- Replacing standalone Azure AD B2C — new customer identity projects should use Entra External ID
+- Replacing standalone Azure AD B2C : new customer identity projects should use Entra External ID
 
 
 Microsoft's external identity landscape used to have multiple separate products: Azure AD B2C for customers, Azure AD B2B for business partners, and a growing number of overlapping features between them. Organizations building both customer-facing applications and partner collaboration tools had to learn two different systems with two different architectures.
@@ -20,7 +20,7 @@ Microsoft Entra External ID is the consolidation of these scenarios under a sing
 
 Understanding what changed and what stayed the same is important for anyone working in this space.
 
-## 🌐 What Entra External ID Is
+## 🌐 What entra external ID is
 
 Microsoft Entra External ID is the product family that covers identity management for people who aren't employees of your organization. It encompasses:
 
@@ -28,7 +28,7 @@ Microsoft Entra External ID is the product family that covers identity managemen
 
 **External tenants** for customer-facing applications: A new tenant type specifically designed for CIAM scenarios, replacing Azure AD B2C for new implementations. A separate Entra ID tenant configured for managing customer or consumer identities, with self-registration, social logins, and consumer-grade authentication experiences.
 
-## 🏗️ The Two Deployment Models
+## 🏗️ The two deployment models
 
 **Within a workforce tenant** (B2B collaboration):
 
@@ -42,7 +42,7 @@ A separate Entra ID tenant created specifically for customer identity. Not the c
 
 This is the model for: retail customer accounts, banking app users, insurance policy holder portals, consumer SaaS product authentication.
 
-## 🔄 Entra External ID vs Azure AD B2C
+## 🔄 Entra external ID vs Azure AD B2C
 
 For organizations evaluating or migrating CIAM solutions:
 
@@ -52,7 +52,7 @@ For organizations evaluating or migrating CIAM solutions:
 
 For new CIAM implementations, Microsoft recommends evaluating external tenants as the forward-looking architecture. For existing B2C deployments, migration is not yet required; B2C remains supported.
 
-## ⚙️ Key Features of External Tenants
+## ⚙️ Key features of external tenants
 
 **Self-service sign-up** 📝: Users can register themselves using email/password or linked social accounts. Verification and approval flows are configurable.
 
@@ -66,7 +66,7 @@ For new CIAM implementations, Microsoft recommends evaluating external tenants a
 
 **MFA options** 📱: Email OTP, SMS, and authenticator apps available for consumer MFA requirements.
 
-## 🔒 Cross-Tenant Access Settings
+## 🔒 Cross-Tenant access settings
 
 For workforce tenants with B2B collaboration, cross-tenant access settings control the trust relationship between your tenant and specific partner tenants:
 
@@ -79,7 +79,7 @@ This setting is particularly important for organizations with strong partner rel
 ---
 
 💬 **Is your organization evaluating the transition from Azure AD B2C to Entra External ID external tenants, or is B2C meeting your needs well enough that migration isn't a priority?** The consolidation of Microsoft's external identity products is still in progress. What feature gap would have to close before you'd consider migrating an existing B2C deployment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#11.4 - Authorization Server (Deep Dive)**
+📚 Part of Entra ID Glossary Series #11.4 - Authorization Server (Deep Dive)
 
 ---
 
@@ -18,7 +18,7 @@ From the developer's perspective, Entra ID is a black box. You send a request wi
 
 Entra ID as an authorization server isn't magic. It's a well-specified OAuth 2.0 and OIDC authorization server with a discoverable configuration, a well-understood processing pipeline, and a specific set of responsibilities in the protocol.
 
-## 🏗️ What an Authorization Server Does
+## 🏗️ What an authorization server does
 
 An OAuth 2.0 authorization server has three core responsibilities:
 
@@ -28,7 +28,7 @@ An OAuth 2.0 authorization server has three core responsibilities:
 
 **Issue tokens** 🎫: After authentication and authorization pass, construct and sign tokens that downstream services can validate and trust. Choose the right claims, apply the right expiry, sign with the appropriate key.
 
-## 🔍 The Discovery Document
+## 🔍 The discovery document
 
 Every Entra ID tenant exposes an OIDC discovery document (also called the well-known configuration) at:
 
@@ -42,7 +42,7 @@ Applications and resource servers use this document for auto-configuration. Inst
 
 The JWKS URI in the discovery document points to the JSON Web Key Set, which contains the public keys used to verify token signatures.
 
-## 🔑 Token Signing and Key Rotation
+## 🔑 Token signing and key rotation
 
 Entra ID signs tokens using RS256 (RSA Signature with SHA-256) by default, and also supports ES256 (ECDSA). The private signing keys are managed by Microsoft and rotated periodically.
 
@@ -52,7 +52,7 @@ Key rotation is automatic and transparent to properly implemented applications. 
 
 This is a common implementation mistake: an application or library caches the signing keys and then fails to validate tokens after a key rotation because the cached keys are stale. The fix is always to refresh the JWKS when signature validation fails before returning an error.
 
-## 🧩 How Claims Are Assembled
+## 🧩 How claims are assembled
 
 When Entra ID builds a token, it pulls claims from multiple sources:
 
@@ -66,7 +66,7 @@ When Entra ID builds a token, it pulls claims from multiple sources:
 
 **Conditional Access and session** 📊: CA satisfaction claims, CAE capability indicators, session ID for sign-out coordination.
 
-## 🌐 Multi-Tenant Authorization Server Behavior
+## 🌐 Multi-Tenant authorization server behavior
 
 When an authorization server handles multi-tenant authentication (using the `common` or `organizations` endpoint), the token issuer claim (`iss`) changes. Instead of `https://login.microsoftonline.com/{your-tenant-id}/v2.0`, the issuer reflects the tenant that actually authenticated the user.
 
@@ -77,7 +77,7 @@ The MSAL libraries and common middleware like `passport-azure-ad` handle multi-t
 ---
 
 💬 **Has your team ever had to debug a token signature validation failure after a key rotation?** The JWKS caching problem shows up in non-standard token validation implementations, custom middleware, and some older libraries that don't handle key rotation correctly. What was the most unexpected thing you found when you looked at the raw token structure or the discovery document for the first time?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

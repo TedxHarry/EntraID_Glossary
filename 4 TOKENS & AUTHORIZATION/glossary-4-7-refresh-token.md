@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.7 - Refresh Token**
+📚 Part of Entra ID Glossary Series #4.7 - Refresh Token
 
 ---
 
 ## 🎯 TL;DR
 
 - Refresh tokens are long-lived (90-day rolling window) credentials used to get new access tokens silently
-- They're stored securely by the app or auth library — never in a browser's session storage or cookies
+- They're stored securely by the app or auth library : never in a browser's session storage or cookies
 - Revocation happens via token revocation API, password change, sign-out, or Conditional Access policy change
 
 
@@ -18,7 +18,7 @@ A user complained to me that she kept getting signed out of Microsoft 365 while 
 
 The answer wasn't a bug. It was token lifetime policies and Conditional Access sign-in frequency settings combining in a way that made remote access behave differently from on-premises. Understanding how refresh tokens work was the key to diagnosing it and explaining to her what was happening.
 
-## 🔄 What a Refresh Token Is
+## 🔄 What a refresh token is
 
 When a user signs in and the `offline_access` scope is included in the request, Entra ID issues a refresh token alongside the access token. The refresh token is a long-lived, opaque credential (not a JWT, not readable by anyone) stored by the application.
 
@@ -26,7 +26,7 @@ Its job is simple: when the access token expires, the application presents the r
 
 This is the mechanism behind "keep me signed in." It's not that the access token stays valid forever. It's that the application keeps quietly trading in the refresh token for new access tokens as each one expires.
 
-## 🔧 ⏱️ How Long Refresh Tokens Last
+## 🔧 ⏱️ how long refresh tokens last
 
 Refresh token lifetime in Entra ID isn't a single fixed value. It's a sliding window with a maximum:
 
@@ -38,7 +38,7 @@ The practical effect: a user who signs in Monday and uses their laptop daily wil
 
 Conditional Access sign-in frequency settings can also override the refresh token behavior, requiring users to re-authenticate after a set interval regardless of refresh token status. This is what was causing the remote user's experience: a Conditional Access policy required re-authentication every 8 hours for sign-ins from outside the office network.
 
-## ♻️ Refresh Token Rotation
+## ♻️ Refresh token rotation
 
 Some Entra ID flows and configurations use rolling refresh tokens. Each time the application uses a refresh token to get a new access token, Entra ID:
 
@@ -49,7 +49,7 @@ This means if a refresh token is stolen and used by an attacker, when the legiti
 
 The SPAs and mobile apps using the authorization code flow with PKCE get refresh token rotation automatically. This is a meaningful improvement in security posture for long-lived sessions.
 
-## 🚫 When Refresh Tokens Get Invalidated
+## 🚫 When refresh tokens get invalidated
 
 Refresh tokens don't just expire from age. Several events immediately invalidate them:
 
@@ -61,7 +61,7 @@ Refresh tokens don't just expire from age. Several events immediately invalidate
 
 When a refresh token is invalidated, the application's next silent token request fails with `invalid_grant`. If the app is well-written, it handles this gracefully by redirecting the user to sign in interactively. If it's not well-written, the user sees a confusing error.
 
-## 💡 Refresh Tokens and Conditional Access
+## 💡 Refresh tokens and conditional access
 
 Here's something that catches people out: Conditional Access policies are re-evaluated when a refresh token is used. It's not enough that the policies were satisfied at initial sign-in.
 
@@ -70,7 +70,7 @@ If a user's device becomes non-compliant after sign-in, the next refresh token e
 ---
 
 💬 **Have you had to troubleshoot a "keeps signing me out" complaint?** Nine times out of ten it traces back to either a sign-in frequency Conditional Access policy or a refresh token being invalidated by a policy change, password reset, or admin action. What was the root cause in your experience?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

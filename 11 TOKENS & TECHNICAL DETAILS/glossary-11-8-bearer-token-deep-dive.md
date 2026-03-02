@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#11.8 - Bearer Token (Deep Dive)**
+📚 Part of Entra ID Glossary Series #11.8 - Bearer Token (Deep Dive)
 
 ---
 
 ## 🎯 TL;DR
 
-- Bearer tokens carry all authorization in the token itself — no additional proof of possession needed by default
+- Bearer tokens carry all authorization in the token itself : no additional proof of possession needed by default
 - The 'bearer' in Authorization header: `Authorization: Bearer eyJ...`
 - mTLS-bound tokens (sender-constrained) require the client cert that matches a thumbprint claim in the token
 
@@ -22,7 +22,7 @@ The answer depended on what it was: a bearer token, and when it was issued. If t
 
 That's what "bearer" means. Whoever holds it, uses it. The token is the credential.
 
-## 🎫 What Bearer Means
+## 🎫 What bearer means
 
 A bearer token is a security token where possession is sufficient for use. There's no binding between the token and the identity of the party presenting it. No client certificate check. No proof of possession required. You hold the token, you present it, you get access.
 
@@ -30,7 +30,7 @@ This is the `Authorization: Bearer <token>` header that appears in virtually eve
 
 The "bearer" designation contrasts with bound tokens or proof-of-possession tokens, where the server validates that the party presenting the token can prove they possess the corresponding private key. Bearer tokens make no such check. Simpler to implement, simpler to use, simpler to steal.
 
-## 🔐 The HTTP Implementation
+## 🔐 The HTTP implementation
 
 Every authenticated API call to an Entra ID-protected resource uses the bearer token in the Authorization header:
 
@@ -46,7 +46,7 @@ The token itself is a JWT: three base64-encoded sections separated by dots. Head
 
 This means anyone who intercepts a bearer token can read its claims. The token isn't encrypted by default. It's signed. Signing provides integrity (proves the token was issued by Entra ID and hasn't been modified). It doesn't provide confidentiality (anyone can read the claims).
 
-## ⚠️ The Security Implications
+## ⚠️ The security implications
 
 **Never log tokens** 📋: The debug log scenario from the opening is the most common bearer token exposure in practice. Frameworks, ORMs, HTTP clients, and custom logging code all have opportunities to capture tokens. Logging middleware that captures the Authorization header logs the token. Application code that logs full request/response pairs logs the token. Audit this carefully.
 
@@ -56,7 +56,7 @@ This means anyone who intercepts a bearer token can read its claims. The token i
 
 **Secure in-memory handling** 💻: MSAL caches tokens in memory and handles their storage. Applications that persist tokens to disk, include them in application state that gets serialized, or pass them through systems that log payloads need to treat those tokens with the same care as passwords.
 
-## 🔗 Sender-Constrained Tokens: The Alternative
+## 🔗 Sender-Constrained tokens: the alternative
 
 The OAuth working group has developed mechanisms to bind tokens to the client presenting them, making stolen tokens unusable by other parties.
 
@@ -66,7 +66,7 @@ The OAuth working group has developed mechanisms to bind tokens to the client pr
 
 Neither mechanism is universally supported across Azure services today. Bearer tokens remain the standard. The mitigations (short lifetime, HTTPS, no logging, secure caching) are the practical security layer.
 
-## 📊 What Proper Bearer Token Handling Looks Like
+## 📊 What proper bearer token handling looks like
 
 An application that handles bearer tokens correctly:
 - Acquires tokens via MSAL and never stores them outside MSAL's cache
@@ -78,7 +78,7 @@ An application that handles bearer tokens correctly:
 ---
 
 💬 **Has your team ever found an access token in a log file, a Slack message, a git commit, or any other unintended location?** The bearer token exposure in development tooling is more common than most teams track formally. What controls does your organization have for preventing token capture in logs and debugging output?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

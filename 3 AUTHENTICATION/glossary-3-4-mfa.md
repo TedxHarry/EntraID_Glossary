@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#3.4 - Multi-Factor Authentication (MFA)**
+📚 Part of Entra ID Glossary Series #3.4 - Multi-Factor Authentication (MFA)
 
 ---
 
@@ -11,7 +11,7 @@
 
 - MFA requires two or more verification factors: something you know, have, or are
 - Entra ID MFA is configured per-user, via Conditional Access, or via Security Defaults
-- Conditional Access MFA is the recommended approach — it applies contextually rather than always
+- Conditional Access MFA is the recommended approach : it applies contextually rather than always
 
 
 Microsoft published a statistic that gets quoted constantly in security circles: enabling MFA blocks 99.9% of automated account compromise attacks. That number is real and remarkable.
@@ -20,7 +20,7 @@ What the headline doesn't say is that "MFA" covers a spectrum from "significantl
 
 This article covers what MFA actually is, how it works in Entra ID, and what distinguishes the kinds that hold up under pressure from the kinds that don't.
 
-## 🔑 The Three Factors
+## 🔑 The three factors
 
 Authentication factors fall into three categories:
 
@@ -34,7 +34,7 @@ The security gain comes from the combination. Stealing someone's password doesn'
 
 💡 Note: using a password plus a security question is not MFA. Two things from the same category ("something you know") don't count as two factors.
 
-## ⚡ How MFA Works in Entra ID
+## ⚡ How MFA works in Entra ID
 
 When a Conditional Access policy requires MFA for a sign-in, here's what happens:
 
@@ -47,7 +47,7 @@ When a Conditional Access policy requires MFA for a sign-in, here's what happens
 
 The claim that MFA was satisfied gets recorded in the sign-in token. Conditional Access policies and individual applications can check that claim to verify MFA happened, and using which method.
 
-## 🧱 MFA Fatigue: When Volume Becomes the Attack
+## 🧱 MFA fatigue: when volume becomes the attack
 
 MFA fatigue (also called push bombing) is an attack technique that became significantly more common in 2022-2023. The attack is straightforward:
 
@@ -63,7 +63,7 @@ The attacker has the user's password (from a breach, phishing, or guessing). The
 
 **Sign-in frequency limits** can force re-authentication after a set period, and Conditional Access can block sign-ins from impossible-travel locations before they ever reach MFA.
 
-## 🎯 MFA Registration: The First Battle
+## 🎯 MFA registration: the first battle
 
 MFA only works for users who have registered their authentication methods. In environments where registration isn't enforced, some percentage of users are signing in with password only, whether the policy intends it or not.
 
@@ -75,7 +75,7 @@ Two approaches to handle this:
 
 Track registration coverage in Entra ID under Protection > Authentication Methods > User registration details. Until the number is at or very near 100%, you have users without MFA protection regardless of what your Conditional Access policies say.
 
-## 📈 Which Accounts Should Require MFA First
+## 📈 Which accounts should require MFA first
 
 If you're rolling out MFA to a tenant that doesn't have it yet, prioritize:
 
@@ -89,13 +89,13 @@ Administrators without MFA are the highest-value targets for attackers. Get that
 ---
 
 💬 **Where is your organization on MFA coverage?** Are you at 100% for all users, or are there holdouts? What's been the biggest obstacle to full deployment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** MFA via Security Defaults is free. MFA via Conditional Access requires **Entra ID P1**. Per-user MFA requires no additional license but is deprecated.
 
 
-### 🔧 Quick Reference: PowerShell
+### 🔧 Quick reference: PowerShell
 
 ```powershell
 # Check MFA registration status per user

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.8 - Conditional Access**
+📚 Part of Entra ID Glossary Series #7.8 - Conditional Access
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Conditional Access evaluates every sign-in against IF-THEN policies: IF conditions match, THEN enforce controls
 - Policies have three parts: Assignments (who/what), Conditions (signals), and Grant/Session Controls (outcome)
-- Deploy new policies in Report-Only mode first — going straight to enforcement risks locking people out
+- Deploy new policies in Report-Only mode first : going straight to enforcement risks locking people out
 
 
 A company had MFA deployed. They thought they were protected.
@@ -22,7 +22,7 @@ Conditional Access with a device compliance requirement would have blocked it. W
 
 MFA alone wasn't enough. Conditional Access is what made the difference.
 
-## 🚦 What Conditional Access Is
+## 🚦 What conditional access is
 
 Conditional Access is Entra ID's policy engine. It evaluates every access request against a set of conditions and decides whether to grant access, grant access with additional requirements, or block access entirely.
 
@@ -32,7 +32,7 @@ Before Conditional Access, access decisions were binary: authenticated or not. I
 
 It's the technical implementation of Zero Trust: don't assume that an authenticated user in the right network location has the right to access everything. Evaluate each request against the conditions of that specific request.
 
-## 🏗️ The Structure of Conditional Access
+## 🏗️ The structure of conditional access
 
 Every Conditional Access policy has the same structure:
 
@@ -46,7 +46,7 @@ Every Conditional Access policy has the same structure:
 
 A policy fires when the assignments match (this user, this app) and the conditions are evaluated. The grant control determines the outcome.
 
-## 📋 Why Conditions Matter
+## 📋 Why conditions matter
 
 The power of Conditional Access comes from conditions. They let policies respond to the context of a request, not just the identity.
 
@@ -54,7 +54,7 @@ A user signing in from a corporate-managed device at the office gets one policy 
 
 This is what distinguishes modern identity-based access control from network perimeter security. The perimeter model assumed that anything inside the network was safe. Conditional Access assumes nothing and evaluates every request on its own merits.
 
-## 🔒 What Conditional Access Protects Against
+## 🔒 What conditional access protects against
 
 The AiTM scenario from the opening is illustrative. Conditional Access with device compliance breaks the attack because it evaluates something the attacker can't easily fake: whether the device making the request is managed, enrolled, and compliant with organizational policy.
 
@@ -68,7 +68,7 @@ Other scenarios where Conditional Access provides protection that MFA alone does
 
 **Geographic access**: Named Locations with country blocking prevents access from jurisdictions where your organization has no presence, reducing the attack surface for credential stuffing.
 
-## ⚙️ What Conditional Access Requires to Work
+## ⚙️ What conditional access requires to work
 
 Conditional Access is not a standalone feature. It evaluates signals that other components generate:
 
@@ -79,7 +79,7 @@ Conditional Access is not a standalone feature. It evaluates signals that other 
 
 A Conditional Access policy that requires compliant device on a tenant where no devices are enrolled in Intune will block everyone. The access control is only as good as the signals feeding into it.
 
-## ⚠️ The "Report-Only" Mode
+## ⚠️ The "report-only" mode
 
 New Conditional Access policies should be deployed in report-only mode before enforcement. In report-only mode, the policy evaluates every matching sign-in and logs what it would have done, without actually blocking or requiring anything.
 
@@ -90,13 +90,13 @@ Skipping report-only mode is how organizations accidentally lock themselves out 
 ---
 
 💬 **What's the most impactful Conditional Access policy your organization has implemented?** Requiring compliant devices is often the one that generates the most initial resistance and the most security value. What was the conversation like when you pushed the policy from report-only to enforcement?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Conditional Access (beyond Security Defaults) requires **Entra ID P1** at minimum. Risk-based CA policies (using sign-in/user risk) require **Entra ID P2**.
 
 
-### 🔧 Quick Reference: Graph API — CA Policies
+### 🔧 Quick reference: graph API : CA policies
 
 ```powershell
 # List all Conditional Access policies

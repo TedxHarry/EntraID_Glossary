@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.17 - User Attributes**
+📚 Part of Entra ID Glossary Series #6.17 - User Attributes
 
 ---
 
@@ -20,7 +20,7 @@ The dynamic membership rule was correct: `(user.department -eq "Engineering")`. 
 
 User attributes are the properties stored on the user object. They look like background data. But they drive group memberships, Conditional Access decisions, provisioning scope filters, access review routing, and lifecycle workflow triggers. When attributes are wrong or missing, everything built on top of them behaves unexpectedly.
 
-## 📋 The Core User Attributes
+## 📋 The core user attributes
 
 Every Entra ID user object has a standard set of attributes defined by the Microsoft Graph user schema:
 
@@ -50,7 +50,7 @@ Every Entra ID user object has a standard set of attributes defined by the Micro
 - `createdDateTime`: When the account was created.
 - `lastSignInDateTime`: When the user last signed in (read-only, system-populated).
 
-## 🔄 How Attributes Drive Dynamic Groups
+## 🔄 How attributes drive dynamic groups
 
 Dynamic Entra ID groups use attributes as membership criteria. Instead of manually adding users, the group membership rule evaluates every user's attributes and includes those that match.
 
@@ -72,7 +72,7 @@ Common dynamic group rules:
 
 When an attribute changes on a user (promoted from Engineer to Engineering Manager, transferred from Engineering to Product), the dynamic group memberships update automatically. The right access follows the person without manual group management.
 
-## ⚙️ Custom Security Attributes and Extension Attributes
+## ⚙️ Custom security attributes and extension attributes
 
 Beyond the standard schema, Entra ID supports:
 
@@ -80,7 +80,7 @@ Beyond the standard schema, Entra ID supports:
 
 **Custom security attributes**: The modern alternative. Admins define custom attribute sets with specific value types and allowed values. These can be used in access controls, dynamic group rules, and attribute-based access control (ABAC) scenarios.
 
-## ⚠️ Attribute Quality as a Governance Foundation
+## ⚠️ Attribute quality as a governance foundation
 
 Every governance control that uses attributes to route decisions depends on those attributes being accurate. The engineering dynamic group failure in the opening story is a mild version. Worse cases:
 
@@ -90,7 +90,7 @@ Every governance control that uses attributes to route decisions depends on thos
 
 Attribute quality is an infrastructure concern, not a cosmetic one. Regular audits of key attributes (department, manager, employeeType, usageLocation) against the authoritative HR system prevent these failures.
 
-## 💡 HR as the Attribute Authority
+## 💡 HR as the attribute authority
 
 For organizations with HR integration, the HR system should be the source of truth for organizational attributes. Inbound provisioning from Workday or SuccessFactors keeps department, manager, jobTitle, and employeeType synchronized automatically. When these change in HR, Entra ID attributes update within the provisioning cycle.
 
@@ -99,7 +99,7 @@ Manual attribute maintenance in Entra ID is error-prone at scale. Automating the
 ---
 
 💬 **Have you traced a governance or provisioning failure back to a missing or inaccurate user attribute?** The "dynamic group didn't include the right people" failure mode almost always comes down to attribute data quality. What was the attribute, and what was the impact of the mismatch?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

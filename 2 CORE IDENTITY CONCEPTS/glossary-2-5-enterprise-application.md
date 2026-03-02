@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#2.5 - Enterprise Application**
+📚 Part of Entra ID Glossary Series #2.5 - Enterprise Application
 
 ---
 
 ## 🎯 TL;DR
 
-- Enterprise Applications is the portal view of a service principal — where you configure SSO, user assignments, and provisioning
+- Enterprise Applications is the portal view of a service principal : where you configure SSO, user assignments, and provisioning
 - When you add a gallery app, Entra ID creates an enterprise application (service principal) in your tenant
 - This is where you grant admin consent and manage which users/groups can access the app
 
@@ -20,7 +20,7 @@ Here's a conversation I've had more times than I can count:
 
 Yes and no. And understanding why is one of the more useful clarity moments in learning Entra ID.
 
-## 📌 Enterprise Applications: The Tenant's View of an App
+## 📌 Enterprise applications: the tenant's view of an app
 
 In the last article (Glossary#2.3), we covered service principals, the local instance of an application in your tenant. Enterprise Applications is simply the portal's name for the same thing, presented through a different lens.
 
@@ -32,7 +32,7 @@ Same underlying app. Two different views, each surfacing different properties fo
 
 The reason both exist in the portal: App Registrations is for developers configuring *what the app is*. Enterprise Applications is for admins configuring *how the app behaves in their tenant*.
 
-## 📌 Three Ways an App Ends Up in Enterprise Applications
+## 📌 Three ways an app ends up in enterprise applications
 
 Not every app in your Enterprise Applications list was registered by your team.
 
@@ -44,7 +44,7 @@ Not every app in your Enterprise Applications list was registered by your team.
 
 The third category surprises a lot of beginners. If you go to Enterprise Applications and filter for "All Applications," you'll see service principals for dozens of Microsoft services you probably didn't explicitly add. They were created automatically when you enabled various Microsoft 365 services.
 
-## ⚙️ What You Actually Configure in Enterprise Applications
+## ⚙️ What you actually configure in enterprise applications
 
 Four main areas drive most of the admin work here:
 
@@ -56,7 +56,7 @@ Four main areas drive most of the admin work here:
 
 **Provisioning**, if the app supports SCIM provisioning, you configure it here. This is where you connect Entra ID to an app's user management API so that when you create a user in Entra ID (or add them to a group), an account is automatically created in the app. And when they leave, the account is disabled automatically. This is the real-time version of not having to manually create 2,000 Salesforce accounts.
 
-## 📖 A Real Example: Setting Up SSO for a Gallery App
+## 📖 A real example: setting up SSO for a gallery app
 
 Let me walk through what this looks like in practice for a typical gallery app integration.
 
@@ -80,7 +80,7 @@ That's it. Once working, users click Salesforce in My Apps or their browser book
 ---
 
 **What apps are you integrating?** Whether it's a standard gallery app or a custom internal tool, the first SSO integration is always memorable. What was yours, and did it go smoothly or were there some surprises along the way?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

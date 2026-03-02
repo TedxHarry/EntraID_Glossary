@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.16 - External Tenant**
+📚 Part of Entra ID Glossary Series #9.16 - External Tenant
 
 ---
 
@@ -11,7 +11,7 @@
 
 - An external tenant is a dedicated Entra ID tenant configured for customer-facing applications (B2C/CIAM scenarios)
 - External tenants have consumer-friendly configuration: simpler registration, social IdPs, branded UI
-- Use external tenants for apps used by customers, not employees — keep workforce and customer identity separate
+- Use external tenants for apps used by customers, not employees : keep workforce and customer identity separate
 
 
 A retail company has 5,000 employees and 3 million loyalty program members. Both populations need digital accounts. Both need to sign in to applications. Both need identity management.
@@ -22,7 +22,7 @@ Employees belong in the workforce tenant: corporate Entra ID, Conditional Access
 
 The external tenant is what Microsoft built for the customer side of that equation.
 
-## 🏗️ What an External Tenant Is
+## 🏗️ What an external tenant is
 
 An external tenant is a specific Entra ID tenant type created for managing non-employee identities in consumer-facing applications. It's a purpose-built identity environment for customers, not a modified version of the workforce tenant.
 
@@ -30,7 +30,7 @@ When you create a tenant through the Entra admin center and select the external 
 
 It's not the same as a workforce tenant with guest users. Guests in a workforce tenant are business partners who collaborate with your employees. Accounts in an external tenant are customers who use your product.
 
-## 🔄 External Tenant vs Workforce Tenant
+## 🔄 External tenant vs workforce tenant
 
 The two tenant types sit side by side in the Entra External ID architecture, but they're built for completely different jobs:
 
@@ -40,7 +40,7 @@ The two tenant types sit side by side in the Entra External ID architecture, but
 
 You don't configure a workforce tenant to become an external tenant. They're different tenant types selected at creation. An organization with both a customer-facing application and an internal employee base runs both types, managed from separate admin portals.
 
-## ⚙️ What External Tenants Provide
+## ⚙️ What external tenants provide
 
 **Self-service registration** 📝: Customers create their own accounts through configurable sign-up flows. Email verification, attribute collection, social account linking. No admin action required for account creation.
 
@@ -54,7 +54,7 @@ You don't configure a workforce tenant to become an external tenant. They're dif
 
 **MFA for consumers** 📱: Email OTP and SMS as consumer-accessible MFA options, in addition to authenticator apps for customers who use them.
 
-## 🔮 External Tenant and Azure AD B2C
+## 🔮 External tenant and Azure AD B2C
 
 For anyone coming from Azure AD B2C: the external tenant is the architectural successor. Not a direct replacement that requires immediate migration, but the forward-looking platform that Microsoft is building CIAM features into going forward.
 
@@ -62,7 +62,7 @@ B2C uses the Identity Experience Framework for its custom policy engine, which a
 
 The external tenant is where Microsoft's CIAM investment is going. Over time, the feature gap with B2C will close.
 
-## 🔐 Keeping the Populations Separate
+## 🔐 Keeping the populations separate
 
 The architecture question that comes up in practice: can the workforce tenant and external tenant share anything?
 
@@ -75,7 +75,7 @@ Applications can be multi-tenant and registered in either tenant depending on th
 ---
 
 💬 **Is your organization running both a workforce tenant and an external tenant today, or is customer identity still handled separately from your Entra ID environment?** The decision to adopt external tenants versus continuing with B2C or a third-party CIAM platform comes up differently for every organization. What would have to be true about external tenants for you to migrate an existing B2C deployment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

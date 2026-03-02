@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.30 - Sign-In Risk Level**
+📚 Part of Entra ID Glossary Series #7.30 - Sign-In Risk Level
 
 ---
 
@@ -22,7 +22,7 @@ Monday afternoon, 3:12pm. IP address in a country the user has never authenticat
 
 The second sign-in was a credential stuffing attack. The attacker had the password. Sign-in risk assessment stopped them.
 
-## 📊 What Sign-In Risk Level Is
+## 📊 What sign-in risk level is
 
 Sign-in risk level is the classification assigned by Entra ID ID Protection to a specific authentication event, representing the system's real-time confidence that this particular sign-in is not coming from the legitimate account owner.
 
@@ -30,7 +30,7 @@ It's evaluated per sign-in, not per account. Each authentication attempt gets it
 
 The evaluation happens during the authentication process, before the token is issued. Conditional Access can act on the result in the same sign-in flow: step up to MFA, block access, or allow through depending on the level and the policy.
 
-## 🔢 The Three Levels
+## 🔢 The three levels
 
 **Low** 🟡: Something looks slightly unusual but there's low confidence it represents a threat. Examples: the user is signing in from a device type they don't typically use, but from a familiar location. Or the IP has weak threat signals. Policies typically prompt for MFA to confirm identity.
 
@@ -40,7 +40,7 @@ The evaluation happens during the authentication process, before the token is is
 
 **None**: Normal sign-in, no unusual signals detected. Standard access policies apply.
 
-## 🔍 What Signals Drive Sign-In Risk
+## 🔍 What signals drive sign-in risk
 
 Sign-in risk is assembled from multiple detection types evaluated simultaneously:
 
@@ -56,7 +56,7 @@ Sign-in risk is assembled from multiple detection types evaluated simultaneously
 
 **Password spray** 💧: Sign-in pattern consistent with a password spray attack: many failed attempts across multiple accounts from the same IP, then a successful attempt.
 
-## 🔀 ⏱️ Real-Time vs Offline
+## 🔀 ⏱️ real-time vs offline
 
 Not all sign-in risk detections happen instantly:
 
@@ -66,7 +66,7 @@ Not all sign-in risk detections happen instantly:
 
 Offline detections don't block the specific sign-in (it's already done). They update the user's risk score, which affects future sign-ins and may trigger alerts.
 
-## 🔒 Using Sign-In Risk in Conditional Access
+## 🔒 Using sign-in risk in conditional access
 
 The standard configuration:
 
@@ -82,7 +82,7 @@ High risk gets blocked rather than stepped up because at High confidence, a step
 ---
 
 💬 **What's the most interesting high-risk sign-in you've investigated?** The impossible travel detections are often the clearest: the timeline makes it obvious an account is being used from two places simultaneously. But some of the malicious IP detections tell a more complex story about the infrastructure attackers are using. What did the investigation reveal?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

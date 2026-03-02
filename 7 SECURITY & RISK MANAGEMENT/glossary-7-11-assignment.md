@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.11 - Assignment**
+📚 Part of Entra ID Glossary Series #7.11 - Assignment
 
 ---
 
 ## 🎯 TL;DR
 
 - Assignments define the scope of a Conditional Access policy: which users, groups, roles, and apps it applies to
-- Excluding emergency access accounts from ALL policies is critical — never lock out break-glass accounts
-- Use groups for assignments rather than listing individual users — easier to manage and audit
+- Excluding emergency access accounts from ALL policies is critical : never lock out break-glass accounts
+- Use groups for assignments rather than listing individual users : easier to manage and audit
 
 
 A team deployed a Conditional Access policy requiring MFA. They targeted "All users." They tested it, confirmed MFA was required, and marked the task complete.
@@ -22,7 +22,7 @@ The policy said "All users." The assignment effectively meant "all users except 
 
 Assignments are the most important part of a Conditional Access policy. Get them wrong and nothing else matters.
 
-## 👥 What Assignments Define
+## 👥 What assignments define
 
 The assignment section of a Conditional Access policy defines two things:
 
@@ -32,7 +32,7 @@ The assignment section of a Conditional Access policy defines two things:
 
 A policy only fires when both sides of the assignment match. A user in scope trying to access an app in scope: the policy evaluates. A user in scope trying to access an app not in scope: the policy doesn't fire.
 
-## 👤 User and Group Assignments
+## 👤 User and group assignments
 
 The user assignment includes and excludes users from policy scope:
 
@@ -49,7 +49,7 @@ The user assignment includes and excludes users from policy scope:
 
 The include/exclude interaction determines the effective scope. Include "All users," exclude a specific group, and the policy covers all users who aren't in that group.
 
-### The Exclusion List Problem
+### The Exclusion list problem
 
 Exclusions feel like a solution. They're actually a risk accumulation mechanism.
 
@@ -59,7 +59,7 @@ Good practice: maintain exclusions in a dedicated Entra ID group with a document
 
 Emergency access accounts (break-glass) are the legitimate standing exclusion. Everything else should have an expiry or regular review.
 
-## 📱 Cloud Apps and Actions
+## 📱 Cloud apps and actions
 
 The app assignment defines what resources the policy covers:
 
@@ -71,7 +71,7 @@ The app assignment defines what resources the policy covers:
 
 **User actions** ⚙️: Some policies target actions rather than apps. Registering security information. Registering devices. These are configuration actions, not application access, and need separate policy coverage.
 
-## 🏗️ Assignment Design Patterns
+## 🏗️ Assignment design patterns
 
 **Risk-based coverage by sensitivity** 🔴: Apply stricter controls to high-value resources. Microsoft 365 with MFA and compliant device. Internal low-risk apps with MFA only. Public-facing read-only resources with no additional requirements beyond authentication.
 
@@ -81,7 +81,7 @@ The app assignment defines what resources the policy covers:
 
 **Workload identity separation** 🤖: Service principals can't satisfy user MFA. Policies targeting workload identities use different grant controls: IP-based restrictions, named location requirements, or managed identity verification. Don't include service principals in user MFA policies and then add them as exclusions. Design separate policies for them.
 
-## ⚠️ Assignment Testing Before Enforcement
+## ⚠️ Assignment testing before enforcement
 
 The "What If" tool in the Conditional Access portal lets you test policy evaluation for a specific user, app, and condition combination. It shows which policies would fire, which would be skipped, and what the outcome would be.
 
@@ -96,7 +96,7 @@ Report-Only mode provides the same validation at scale across real sign-ins rath
 ---
 
 💬 **What's the largest exclusion list you've inherited on a Conditional Access policy?** The "we'll clean it up later" exclusion group that never gets reviewed is a common pattern in tenants that have been running CA policies for a few years. How did you approach rationalizing it?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

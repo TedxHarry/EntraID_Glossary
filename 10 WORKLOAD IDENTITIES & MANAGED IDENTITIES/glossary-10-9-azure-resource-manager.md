@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#10.9 - Azure Resource Manager**
+📚 Part of Entra ID Glossary Series #10.9 - Azure Resource Manager
 
 ---
 
 ## 🎯 TL;DR
 
-- Azure Resource Manager (ARM) is the management layer for all Azure resources — it authenticates every API call
+- Azure Resource Manager (ARM) is the management layer for all Azure resources : it authenticates every API call
 - Managed identities get tokens scoped to ARM (`https://management.azure.com`) to manage Azure resources
 - ARM RBAC controls what the managed identity can do: Contributor, Reader, custom roles
 
@@ -20,7 +20,7 @@ The problem: they assigned an Entra ID directory role, not an Azure RBAC role. T
 
 The role assignment that gives a managed identity access to a Storage account doesn't happen in Entra ID. It happens in Azure Resource Manager.
 
-## 🏗️ What Azure Resource Manager Is
+## 🏗️ What Azure resource manager is
 
 Azure Resource Manager (ARM) is the management plane for all Azure resources. Every resource you create in Azure, every configuration change, every role assignment for Azure services, every ARM template deployment: all of it goes through ARM.
 
@@ -28,7 +28,7 @@ When you use the Azure portal to create a storage account, you're calling the AR
 
 ARM is the consistent API layer that sits between every Azure management tool (portal, CLI, PowerShell, Terraform, Bicep, REST) and every Azure service. It handles authentication, authorization, throttling, and routing to the underlying service-specific resource providers.
 
-## 🔐 ARM RBAC vs Entra ID Roles
+## 🔐 ARM RBAC vs entra ID roles
 
 The two RBAC systems in the Microsoft ecosystem serve different scopes:
 
@@ -38,7 +38,7 @@ The two RBAC systems in the Microsoft ecosystem serve different scopes:
 
 A managed identity needs Azure RBAC roles, assigned through ARM, to access Azure services. It doesn't need Entra ID directory roles unless it's performing identity administration operations (which is rare and usually inadvisable).
 
-## 📊 The ARM Hierarchy
+## 📊 The ARM hierarchy
 
 ARM organizes Azure resources in a hierarchy, and RBAC assignments can be made at any level:
 
@@ -52,7 +52,7 @@ ARM organizes Azure resources in a hierarchy, and RBAC assignments can be made a
 
 For managed identity permissions, the principle of least privilege means assigning the role at the narrowest scope possible. A managed identity that only reads from one specific Key Vault should have Key Vault Secrets User assigned on that vault, not on the resource group or subscription.
 
-## ⚙️ ARM in the Managed Identity Flow
+## ⚙️ ARM in the managed identity flow
 
 When a managed identity requests a token from IMDS, it specifies the resource URI for the Azure service it wants to access (for example, `https://vault.azure.net` for Key Vault). Entra ID issues a token for that resource. When the managed identity uses that token to call Key Vault, Key Vault validates the token and checks the ARM role assignments to determine whether this identity has the right permissions.
 
@@ -67,7 +67,7 @@ The complete chain:
 
 Steps 1 and 2 are configuration. Steps 3-6 are runtime.
 
-## 📋 ARM Templates and Managed Identity
+## 📋 ARM templates and managed identity
 
 Infrastructure-as-code through ARM templates (or Bicep, which compiles to ARM) can define managed identities and their role assignments as part of the same deployment that creates the compute resource and the target service.
 
@@ -78,7 +78,7 @@ Role assignments in ARM templates look like nested resources or separate resourc
 ---
 
 💬 **Does your team manage ARM role assignments for managed identities through infrastructure-as-code, or are they still applied manually through the portal?** The gap between "we use Terraform for everything" and "role assignments are done manually and undocumented" is common, especially for managed identity permissions that were configured during initial setup and never formalized. What would it take to get role assignments for workload identities into your IaC pipeline?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

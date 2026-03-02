@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.14 - Consent Framework**
+📚 Part of Entra ID Glossary Series #13.14 - Consent Framework
 
 ---
 
@@ -11,7 +11,7 @@
 
 - The Consent Framework is how users and admins authorize applications to access resources on their behalf
 - User consent = individual grants permission for their own data; Admin consent = tenant-wide grant for all users
-- Configure consent settings to require admin approval — prevents users from granting excessive permissions to unknown apps
+- Configure consent settings to require admin approval : prevents users from granting excessive permissions to unknown apps
 
 
 A developer registered an application that requested `Mail.ReadWrite.All` at the application level. Application-level permissions don't require a user to consent; they require an administrator to consent on behalf of the entire organization.
@@ -22,7 +22,7 @@ The developer's intent was to read and write mail for a service account only. Th
 
 The consent framework is what stood between "application requests permission" and "application actually has permission." The problem was that the framework's consent step was performed without understanding what the permission actually granted.
 
-## 🔑 What the Consent Framework Is
+## 🔑 What the consent framework is
 
 The consent framework is the mechanism in Entra ID that governs how applications gain permission to access organizational data and user data through the Microsoft identity platform.
 
@@ -30,7 +30,7 @@ When an application requests access to Entra ID-protected resources, it must obt
 
 Technically, consent results in an OAuth 2.0 permission grant stored in Entra ID: the service principal for the application gains a delegated permission grant (representing a user's consent) or an application permission grant (representing admin consent).
 
-## 📊 User Consent vs Admin Consent
+## 📊 User consent vs admin consent
 
 The consent framework distinguishes between two consent paths based on the sensitivity of the permissions requested:
 
@@ -40,7 +40,7 @@ The consent framework distinguishes between two consent paths based on the sensi
 
 The distinction between what requires admin consent vs user consent is configured in the Entra ID admin consent settings: which permissions are classified as requiring admin approval, and which users (if any) can consent on their own.
 
-## ⚙️ Admin Consent Policies
+## ⚙️ Admin consent policies
 
 Entra ID's user consent settings control the consent experience across the tenant:
 
@@ -54,7 +54,7 @@ Entra ID's user consent settings control the consent experience across the tenan
 
 Most enterprise organizations use either "verified publishers only" or a custom policy defining which permissions users can consent to.
 
-## 🔒 Admin Consent Workflow
+## 🔒 Admin consent workflow
 
 When a user tries to sign in to an application that requests permissions requiring admin consent, and admin consent hasn't been granted yet, they can't proceed. They see a message indicating that admin approval is required.
 
@@ -62,7 +62,7 @@ Entra ID supports an admin consent workflow: users can submit a request explaini
 
 Without the admin consent workflow, users are simply blocked and must contact IT manually.
 
-## 🔍 Reviewing Granted Consents
+## 🔍 Reviewing granted consents
 
 Consents accumulate over time. A periodic audit of what permissions have been granted to which applications is essential:
 
@@ -75,7 +75,7 @@ High-risk grants to look for: application permissions for `Mail.ReadWrite.All`, 
 ---
 
 💬 **Does your organization have a formal process for reviewing admin consent requests and auditing existing application permission grants?** Consent sprawl is a real governance problem in mature Entra ID tenants: applications accumulate over-permissioned consents that nobody reviews. What's the most surprising over-privileged application consent your team has found during an audit?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** The Consent Framework itself is free. Admin consent workflow (require admin approval for user consent) requires **Entra ID P1**.

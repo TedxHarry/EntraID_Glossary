@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#2.9 - Role (Identity Role)**
+📚 Part of Entra ID Glossary Series #2.9 - Role (Identity Role)
 
 ---
 
@@ -22,7 +22,7 @@ That meeting is a good reason to read this article.
 
 "Role" in Microsoft identity is a heavily overloaded term. Three distinct systems use it to mean three different things. They look similar on the surface, they all describe *what something is allowed to do*. But they operate in different planes, apply to different resources, and break in different ways when misconfigured.
 
-## 📌 Type 1: Directory Roles (Entra ID Administrative Roles)
+## 📌 Type 1: directory roles (entra ID administrative roles)
 
 Directory roles control who can *administer Entra ID itself*. These are the roles you assign to give someone admin capabilities in the tenant, the ability to create users, manage groups, reset passwords, configure Conditional Access, read security alerts.
 
@@ -32,7 +32,7 @@ These are tenant-scoped by default. Assign someone the User Administrator direct
 
 Directory roles live in the identity plane. They control who manages identities and policies, not who accesses Azure resources or what an application can do inside a business application.
 
-## 📌 Type 2: Azure RBAC Roles
+## 📌 Type 2: Azure RBAC roles
 
 Azure RBAC roles control who can do what with Azure resources, virtual machines, storage accounts, key vaults, databases, App Services. The built-in roles are Owner, Contributor, and Reader at the broadest level, plus hundreds of specialized roles like Key Vault Secrets User, Storage Blob Data Reader, and Virtual Machine Contributor.
 
@@ -42,7 +42,7 @@ Someone can be a Global Administrator in Entra ID and have no access to any Azur
 
 The practical confusion: teams sometimes try to fix an Azure access problem by adding directory roles (or vice versa). They're in the wrong plane entirely.
 
-## 🔓 Type 3: App Roles (Application-Level Authorization)
+## 🔓 Type 3: app roles (application-level authorization)
 
 App roles are the most different of the three, and the one developers encounter most directly.
 
@@ -54,7 +54,7 @@ Here's the flow: the developer defines app roles in the app registration. Admins
 
 The practical power: app roles let you manage application-level authorization entirely inside Entra ID, without the application needing to maintain its own user permission database. Users are in Entra ID. Role assignments are in Entra ID. Access reviews can run against them. The source of truth is centralized.
 
-## ⚙️ How to Know Which One You're Talking About
+## ⚙️ How to know which one you're talking about
 
 A quick reference:
 
@@ -77,7 +77,7 @@ Different teams tend to own different layers. The identity team manages director
 ---
 
 💬 **Which "role" causes the most confusion in your team?** My experience is that app roles are the least understood, developers implement them but the IT admin team doesn't always know they exist. Is that true where you work?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

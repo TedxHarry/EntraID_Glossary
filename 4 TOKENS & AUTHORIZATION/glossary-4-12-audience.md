@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.12 - Audience**
+📚 Part of Entra ID Glossary Series #4.12 - Audience
 
 ---
 
@@ -20,7 +20,7 @@ The investigation started with one question: were these APIs validating the audi
 
 They weren't. Tokens issued for one service were being accepted by another. The boundary that audience validation creates simply didn't exist.
 
-## 🎯 What the Audience Claim Is
+## 🎯 What the audience claim is
 
 Every access token contains an `aud` (audience) claim. Its value identifies who the token was issued for: specifically, which resource server is meant to consume it.
 
@@ -28,7 +28,7 @@ A token issued for Microsoft Graph has `aud: https://graph.microsoft.com`. A tok
 
 The resource server consuming the token must validate that the `aud` claim matches its own identifier. If it doesn't match, the token must be rejected. Not logged and allowed through. Rejected.
 
-## 🔒 Why Audience Validation Matters
+## 🔒 Why audience validation matters
 
 Access tokens are bearer tokens. Whoever holds one can present it. If APIs don't validate audience, a token issued for one service can be used against any other service that accepts tokens from the same issuer.
 
@@ -38,7 +38,7 @@ In the scenario from the security review: API B was less sensitive than API A. T
 
 Entra ID does its part correctly. It issues tokens with specific, appropriate audience values and signs them. The validation responsibility then falls entirely on the API consuming the token.
 
-## 📋 What Correct Audience Validation Looks Like
+## 📋 What correct audience validation looks like
 
 For a custom API built on ASP.NET Core using `Microsoft.Identity.Web`:
 
@@ -51,7 +51,7 @@ With the right configuration (audience set to your API's application ID URI in a
 
 For APIs in other languages and frameworks, MSAL and standard OpenID Connect libraries handle this as part of token validation. The key is ensuring the expected audience value is explicitly configured, not left as a wildcard or empty.
 
-## ⚠️ The Dangerous Pattern to Avoid
+## ⚠️ The dangerous pattern to avoid
 
 The dangerous configuration is: "accept any valid token from this issuer."
 
@@ -59,13 +59,13 @@ That's signature validation, not audience validation. Signature validation confi
 
 An API that validates signatures but not audience is like a nightclub that checks whether an ID is genuine but doesn't check whether the person is old enough. The check exists. It just doesn't check the right thing.
 
-## 🔍 Multi-Audience Scenarios
+## 🔍 Multi-Audience scenarios
 
 Some APIs legitimately need to accept tokens with different audience values, for example during a migration where an API has a new application ID but must still accept tokens issued for the old one, or when the same API serves multiple environments.
 
 In these cases, the validation should check against an explicit allowlist of expected audience values. Not skip validation. Not accept any audience. An explicit list of the values that are legitimately valid for this specific API.
 
-## 💡 Testing Your Audience Validation
+## 💡 Testing your audience validation
 
 If you're reviewing an existing API, three checks matter:
 
@@ -78,7 +78,7 @@ That last test is the one most teams skip. Testing the happy path confirms the A
 ---
 
 💬 **Have you built or reviewed an API and found the audience validation was missing or misconfigured?** It's a subtle check that's easy to skip when you're focused on getting the happy path working. What does your team's API security review checklist cover?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

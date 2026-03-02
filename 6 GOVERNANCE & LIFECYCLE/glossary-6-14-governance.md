@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.14 - Governance**
+📚 Part of Entra ID Glossary Series #6.14 - Governance
 
 ---
 
@@ -20,7 +20,7 @@ One group called "Project Alpha Temp Access" had 67 members. Project Alpha had e
 
 This is what happens without governance: access accumulates, becomes unclear, and persists long past its useful life. Governance is the set of controls that prevents this.
 
-## 📋 What Identity Governance Is
+## 📋 What identity governance is
 
 Identity governance is the discipline of ensuring that the right people have the right access to the right resources, for the right reasons, for the right amount of time. It's not a product. It's an outcome, supported by tools, processes, and policies working together.
 
@@ -34,7 +34,7 @@ Microsoft Entra ID Governance is the product family that provides the tooling fo
 
 Each piece addresses a different dimension of the governance challenge. Used together, they create a lifecycle for access: structured acquisition, active maintenance, periodic review, and systematic removal.
 
-## 🔒 The Four Governance Questions
+## 🔒 The four governance questions
 
 Good identity governance enables organizations to answer four questions at any point in time:
 
@@ -50,7 +50,7 @@ Access that was right 12 months ago may not be right now. Governance includes th
 **How do we remove it?** 🗑️
 When access is no longer appropriate, there should be a clear, automated, auditable way to remove it. Not "someone sends an email and hopes."
 
-## 🏗️ Governance as a Maturity Journey
+## 🏗️ Governance as a maturity journey
 
 Most organizations don't implement full governance overnight. It's a maturity journey with distinct stages:
 
@@ -66,13 +66,13 @@ Most organizations don't implement full governance overnight. It's a maturity jo
 
 Most organizations I've worked with are somewhere between Stage 1 and Stage 3. Moving from manual processes to structured governance takes 12 to 18 months for a mid-sized organization.
 
-## ⚠️ Governance Without Enforcement
+## ⚠️ Governance without enforcement
 
 Governance tools without enforcement are reporting tools. An access review that surfaces inappropriate access but doesn't remove it when denied has no security value. Entitlement management that allows users to request access through the official channel but also lets managers add them to groups directly creates a governance bypass.
 
 The enforcement piece matters as much as the tool. Conditional Access policies that require access package membership for sensitive apps close the bypass path. Removing self-service group join capabilities for sensitive groups ensures requests flow through the approval process.
 
-## 💡 The Compliance Dividend
+## 💡 The compliance dividend
 
 Governance investment pays a compliance dividend. SOX requires access reviews for financial systems. ISO 27001 requires access control management. SOC 2 requires access provisioning and deprovisioning evidence. The same tools that improve operational security also produce the audit evidence that external auditors need.
 
@@ -81,7 +81,7 @@ Organizations that implement governance to solve a compliance requirement often 
 ---
 
 💬 **Where would you place your organization on the governance maturity scale?** Most teams know they have a governance gap somewhere: too many permanent admin assignments, groups without owners, app accounts that outlast the Entra ID account. What's the gap you're most aware of?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Identity Governance features (Access Reviews, Entitlement Management, Lifecycle Workflows, PIM) all require **Entra ID P2** or the **Entra ID Governance** add-on.

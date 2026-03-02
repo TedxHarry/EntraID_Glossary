@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.15 - Require MFA**
+📚 Part of Entra ID Glossary Series #7.15 - Require MFA
 
 ---
 
 ## 🎯 TL;DR
 
-- Require MFA is the most common CA grant control — forces step-up authentication for matching sign-ins
+- Require MFA is the most common CA grant control : forces step-up authentication for matching sign-ins
 - MFA can be satisfied by any registered method: Authenticator push, TOTP, FIDO2, SMS (weakest)
-- Per-user MFA is deprecated in favor of CA-based MFA — Conditional Access provides contextual targeting
+- Per-user MFA is deprecated in favor of CA-based MFA : Conditional Access provides contextual targeting
 
 
 A company ran a phishing simulation. They sent a convincing fake email to 400 employees. 67 clicked the link. 23 entered their username and password on the fake login page.
@@ -22,7 +22,7 @@ With MFA required by Conditional Access, none of them were. The attacker had use
 
 That's what "Require MFA" as a Conditional Access grant control actually does in production.
 
-## 🔐 What "Require MFA" Means in Conditional Access
+## 🔐 What "require mfa" means in conditional access
 
 Require MFA is a grant control in a Conditional Access policy. When it fires, the user must successfully complete an MFA challenge in addition to their primary authentication before access is granted.
 
@@ -34,7 +34,7 @@ The difference matters:
 
 **Conditional Access Require MFA**: MFA is required when specific conditions are met. The same user on a compliant device from the office might not be required. The same user on an unmanaged device from a hotel definitely is. The policy is contextual.
 
-## 📱 What Satisfies the MFA Requirement
+## 📱 What satisfies the MFA requirement
 
 When a Conditional Access policy requires MFA, the user must complete an additional verification factor. The accepted methods depend on what's configured in the tenant's authentication methods:
 
@@ -50,7 +50,7 @@ When a Conditional Access policy requires MFA, the user must complete an additio
 
 **Windows Hello for Business** 🪟: Biometric or PIN-based authentication on Windows devices. Phishing-resistant because the credential never leaves the device.
 
-## 🎯 When to Apply Require MFA
+## 🎯 When to apply require MFA
 
 Require MFA shouldn't be a blanket policy applied to everything without thought. The right pattern is matching the MFA requirement to the risk level of the access:
 
@@ -62,7 +62,7 @@ Require MFA shouldn't be a blanket policy applied to everything without thought.
 
 **Risk-responsive MFA** 🔴: Require MFA when sign-in risk is Medium. Block when it's High. This lets legitimate users who trigger false positives (unusual travel, unfamiliar device) confirm their identity and proceed.
 
-## ⚙️ MFA Registration: The Prerequisite
+## ⚙️ MFA registration: the prerequisite
 
 Require MFA only works if users have MFA methods registered. A policy that requires MFA for a user with no registered methods generates an error: the user is blocked because they can't complete MFA and they can't skip it.
 
@@ -76,7 +76,7 @@ The correct sequence:
 5. Review who would be affected
 6. Switch to enforcement when coverage is sufficient
 
-## ⚠️ The Gaps Require MFA Doesn't Close
+## ⚠️ The gaps require MFA doesn't close
 
 Require MFA is powerful but not complete protection:
 
@@ -91,7 +91,7 @@ Require MFA raises the bar significantly. It doesn't make an account unbreakable
 ---
 
 💬 **When you enabled MFA as a Conditional Access requirement, what was the biggest challenge during rollout?** The MFA registration coverage gap is the most common blocker. Did you encounter users who genuinely couldn't register because of device or connectivity constraints, and how did you handle the exceptions?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

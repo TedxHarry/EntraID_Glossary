@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.2 - Device Identity**
+📚 Part of Entra ID Glossary Series #5.2 - Device Identity
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Device identity is a device object registered in Entra ID, allowing it to be managed and trusted by policies
 - Devices can be Entra-registered (personal), Entra-joined (cloud-only corporate), or hybrid-joined (both)
-- Device identity enables device-based Conditional Access — stronger than user identity alone
+- Device identity enables device-based Conditional Access : stronger than user identity alone
 
 
 A user's laptop was stolen from a coffee shop. IT disabled the user's Entra ID account within the hour. What they didn't do was disable the device itself.
@@ -20,7 +20,7 @@ The laptop had a local Windows account. The attacker used cached credentials. Co
 
 That conversation is why device identity matters as something separate from user identity, and why Entra ID maintains an identity object for each device, not just each person.
 
-## 🖥️ What a Device Identity Is
+## 🖥️ What a device identity is
 
 When a device is registered or joined to Entra ID, a device object is created in the directory. This object represents the device as a security principal, just as a user object represents a person.
 
@@ -36,7 +36,7 @@ The device object stores:
 
 That enabled state is critical. Just as you can disable a user account, you can disable a device object. When a device is disabled, it can no longer obtain device-level authentication tokens. The laptop in the theft scenario should have had its device object disabled immediately.
 
-## 🔑 How Device Identity Enables Policies
+## 🔑 How device identity enables policies
 
 Device identity transforms devices from anonymous network endpoints into known, authenticated principals. Once a device has an identity in Entra ID, the platform can make access decisions based on that identity.
 
@@ -48,7 +48,7 @@ Conditional Access policies can require:
 
 Without device identity, Conditional Access can only see user attributes, sign-in risk, and location. With device identity, it sees the full security posture of the hardware making the request.
 
-## 🔐 How Devices Authenticate
+## 🔐 How devices authenticate
 
 A device with an Entra ID identity authenticates using a device certificate issued during the join process. On Windows, this certificate is stored in the device's Trusted Platform Module (TPM), making it hardware-bound.
 
@@ -56,7 +56,7 @@ When a user signs in on an Entra Joined Windows device, the device presents its 
 
 This device certificate is what makes Hybrid Entra Join and device compliance enforcement possible. The device has a cryptographic identity that it proves at authentication time, not just a registration record in a database.
 
-## ⚠️ Device Identity vs Device Management
+## ⚠️ Device identity vs device management
 
 Having a device identity in Entra ID doesn't mean the device is managed. Registration creates an identity. Enrollment in Intune (or another MDM) adds management capability.
 
@@ -64,7 +64,7 @@ An Entra Registered personal device has an identity Entra ID recognizes. But if 
 
 Requiring device compliance in Conditional Access is stronger than requiring device identity alone, because compliance verification requires active management reporting.
 
-## 💡 What to Do When a Device Is Lost or Stolen
+## 💡 What to do when a device is lost or stolen
 
 The immediate steps for a lost or compromised device:
 
@@ -78,10 +78,10 @@ Disabling the device object prevents the device from getting new device-level to
 ---
 
 💬 **Has a lost or stolen device ever exposed a gap in your offboarding or incident response process?** The device object in Entra ID is often the last thing people think to disable, focusing entirely on the user account. What's in your current device incident response checklist?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-### 🔧 Quick Reference: PowerShell
+### 🔧 Quick reference: PowerShell
 
 ```powershell
 # List all registered devices

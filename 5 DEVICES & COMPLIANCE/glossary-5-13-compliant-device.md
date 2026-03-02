@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.13 - Compliant Device**
+📚 Part of Entra ID Glossary Series #5.13 - Compliant Device
 
 ---
 
@@ -11,7 +11,7 @@
 
 - A compliant device satisfies all requirements defined in Intune's compliance policies
 - Compliance status is checked by Conditional Access when the 'Require compliant device' grant control is set
-- Compliance can be lost (patch deadline missed, encryption disabled) — CA will block non-compliant access
+- Compliance can be lost (patch deadline missed, encryption disabled) : CA will block non-compliant access
 
 
 A manager escalated a help desk ticket to me personally. One of her team members had been locked out of the company's finance application for two days. The user's account was active. MFA was working. The Conditional Access policy was correct.
@@ -20,7 +20,7 @@ The problem was device compliance. The user's laptop had BitLocker suspended aft
 
 That's the thing about compliant device status: it's not a setting you enable once. It's a state the device either achieves or fails to achieve, continuously, based on its current security posture.
 
-## ✅ What Compliant Actually Requires
+## ✅ What compliant actually requires
 
 A compliant device is one that has passed every check defined in its assigned Intune compliance policy. Not most checks. All of them. A single failing requirement marks the device non-compliant regardless of how many others pass.
 
@@ -49,7 +49,7 @@ Typical compliance requirements for a Windows corporate device:
 - Secure Boot enabled
 - Code integrity enabled (ensures only trusted software runs at boot)
 
-## 🔄 The Compliance Evaluation Cycle
+## 🔄 The compliance evaluation cycle
 
 Intune evaluates device compliance on a schedule. For Windows, the default check-in is every 8 hours. For mobile devices, it varies by platform and enrollment type.
 
@@ -61,7 +61,7 @@ During each evaluation, Intune:
 
 That result is what Conditional Access reads. If the last check-in was 4 hours ago and the device was compliant then, Conditional Access still sees it as compliant, even if something changed in the past 4 hours. The state is only as current as the last check-in.
 
-## 📌 ⏱️ The Grace Period
+## 📌 ⏱️ the grace period
 
 Most compliance policies include a grace period: a window between when non-compliance is detected and when Conditional Access starts blocking access. The default is typically 0 or 1 day, but organizations often set 3 to 7 days for Windows.
 
@@ -69,7 +69,7 @@ The grace period serves a practical purpose. Without it, a device that misses a 
 
 During the grace period, the device shows as "In Grace Period" in Intune. Conditional Access treats it as compliant. At grace period expiry, it becomes non-compliant and Conditional Access starts blocking.
 
-## 🔧 How Users Remediate Compliance
+## 🔧 How users remediate compliance
 
 When a device falls out of compliance, users typically need to:
 
@@ -82,7 +82,7 @@ The Intune Company Portal app shows users exactly which compliance checks are fa
 
 After fixing the issue, the user can trigger a manual sync in Company Portal to force Intune to re-evaluate immediately, rather than waiting for the next scheduled check-in.
 
-## 💡 Testing Compliance Policies Before Enforcement
+## 💡 Testing compliance policies before enforcement
 
 New compliance policies should run in "report-only" mode first. Intune shows which devices would fail the new requirements without actually marking them non-compliant. This surfaces the scale of impact before enforcement begins.
 
@@ -91,7 +91,7 @@ Enabling a new compliance requirement for 2,000 devices without testing first, t
 ---
 
 💬 **Has your organization had an unexpected mass compliance failure when a new policy was rolled out?** Discovering that a policy you assumed was reasonable would block hundreds of users tends to drive more careful impact analysis on the next rollout. What was the trigger?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

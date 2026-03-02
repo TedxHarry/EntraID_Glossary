@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#10.5 - Workload Federation**
+📚 Part of Entra ID Glossary Series #10.5 - Workload Federation
 
 ---
 
@@ -20,7 +20,7 @@ The secret was valid for two years. It was rotated once, manually, when someone 
 
 Workload federation is the architecture that eliminates this problem. The GitHub Actions workflow doesn't need an Azure credential stored in GitHub at all.
 
-## 🔗 What Workload Federation Is
+## 🔗 What workload federation is
 
 Workload federation is an authentication pattern where an external system's existing identity token is exchanged for an Entra ID token, without requiring that external system to store any Azure credentials.
 
@@ -30,7 +30,7 @@ Workload federation lets you tell Entra ID: "Trust tokens from this external ide
 
 The result: the GitHub Actions workflow presents its GitHub-issued token, Entra ID validates it against your federation configuration, and issues an Azure token. No Azure credential was ever stored in GitHub. There's nothing to leak, nothing to rotate, nothing to accidentally log.
 
-## ⚙️ How It Works
+## ⚙️ How it works
 
 The flow has four steps:
 
@@ -42,7 +42,7 @@ The flow has four steps:
 
 **Step 4: Azure token issued** ✅: Entra ID issues an access token for the Azure resources the identity has been granted access to. The workflow uses this token for Azure CLI, Azure SDK, or ARM API calls. The GitHub token is discarded; the Azure token is ephemeral and scoped to the workflow run.
 
-## 🌐 What Systems Support It
+## 🌐 What systems support it
 
 Workload federation works with any external system that can issue OIDC tokens with consistent, verifiable claims. The most common implementations:
 
@@ -54,7 +54,7 @@ Workload federation works with any external system that can issue OIDC tokens wi
 
 **Terraform Cloud and other CI/CD platforms** 🏗️: Any platform that supports OIDC token generation for its workloads can be configured as a trusted issuer.
 
-## 🔐 The Security Improvement
+## 🔐 The security improvement
 
 The security properties of workload federation are meaningfully better than stored credentials:
 
@@ -69,10 +69,10 @@ The security properties of workload federation are meaningfully better than stor
 ---
 
 💬 **Has your team migrated GitHub Actions or CI/CD pipelines from stored service principal secrets to workload federation?** The migration is usually straightforward and the security improvement is significant. What held your team back from making the switch, or what finally prompted you to do it?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-### 🔧 Quick Reference: Workload Federation Setup
+### 🔧 Quick reference: workload federation setup
 
 ```powershell
 # Add a federated identity credential to an app registration

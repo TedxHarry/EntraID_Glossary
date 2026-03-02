@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#8.1 - Directory Synchronization**
+📚 Part of Entra ID Glossary Series #8.1 - Directory Synchronization
 
 ---
 
 ## 🎯 TL;DR
 
 - Directory synchronization replicates identity objects from on-premises AD to Entra ID
-- Sync creates cloud representations of AD users, groups, and contacts — keeping both directories in sync
+- Sync creates cloud representations of AD users, groups, and contacts : keeping both directories in sync
 - Entra Connect Sync (legacy) or Entra Cloud Sync (modern) are the two sync engines available
 
 
@@ -20,7 +20,7 @@ They chose synchronization. Over a weekend, Entra Connect ran its initial sync. 
 
 Directory synchronization is the bridge that makes hybrid identity work for organizations that can't or won't leave Active Directory behind.
 
-## 🔄 What Directory Synchronization Is
+## 🔄 What directory synchronization is
 
 Directory synchronization is the process of copying identity objects (users, groups, contacts) and their attributes from on-premises Active Directory to Entra ID, and keeping them in sync as changes occur.
 
@@ -28,7 +28,7 @@ It's not a one-time migration. Sync is ongoing. When a new user is created in AD
 
 The source of truth is on-premises AD. Entra ID is the cloud representation. Synchronized objects in Entra ID are marked as synced, which means most attributes can only be modified from the on-premises source. The cloud representation reflects the on-premises object.
 
-## 🏗️ What Gets Synchronized
+## 🏗️ What gets synchronized
 
 **Users** 👤: The primary sync object. User attributes, including displayName, userPrincipalName, mail, department, manager, and hundreds of other attributes. The UPN is critical: it determines the cloud sign-in identifier.
 
@@ -40,7 +40,7 @@ The source of truth is on-premises AD. Entra ID is the cloud representation. Syn
 
 **What doesn't sync by default**: Passwords (handled separately by Password Hash Sync), certain privileged attributes, objects in specific OUs if filtered out.
 
-## 🎯 Sync Rules and Attribute Filtering
+## 🎯 Sync rules and attribute filtering
 
 Directory synchronization is configurable. Organizations can control:
 
@@ -52,7 +52,7 @@ Directory synchronization is configurable. Organizations can control:
 
 **Sync rules engine** ⚙️: Entra Connect has a rules engine that allows custom transformation of attribute values during sync. A user's AD attribute can be mapped to a different Entra ID attribute, or computed from a combination of AD values.
 
-## ⚠️ The Source of Truth Problem
+## ⚠️ The source of truth problem
 
 Synchronized objects can't be fully managed from Entra ID. When an attribute is managed on-premises and synced to the cloud, changes made directly in Entra ID are overwritten on the next sync cycle.
 
@@ -64,7 +64,7 @@ This creates operational confusion:
 
 Understanding which attributes are "in-scope" for sync (managed on-premises, displayed in cloud) versus "out-of-scope" (can be modified in cloud) is important for administrators working in hybrid environments.
 
-## 🔗 The Authentication Question
+## 🔗 The authentication question
 
 Directory sync copies identity objects. It doesn't automatically solve authentication. Users whose accounts are synced to Entra ID still need a way to authenticate against the cloud. The authentication method depends on the sync configuration:
 
@@ -76,7 +76,7 @@ Directory sync copies identity objects. It doesn't automatically solve authentic
 
 Directory sync without a configured authentication method leaves synced users without a working cloud sign-in.
 
-## 💡 Sync Health and Monitoring
+## 💡 Sync health and monitoring
 
 Directory sync is infrastructure that needs monitoring. Common failure scenarios:
 
@@ -91,10 +91,10 @@ Entra Connect Health (available with Entra ID P2) provides monitoring dashboards
 ---
 
 💬 **What was the first directory sync issue that caused a visible incident in your organization?** The sync failure that delays a new hire's access on their first day, or the attribute conflict that causes a user's email address to be wrong in the GAL, are the ones that get noticed quickly. What was your earliest sync incident and what did it change about how you monitor sync health?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-### 🔧 Quick Reference: PowerShell — Check Sync Status
+### 🔧 Quick reference: PowerShell : check sync status
 
 ```powershell
 # Check last sync time for your tenant

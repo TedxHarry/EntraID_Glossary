@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#11.5 - Authorization Grant (Deep Dive)**
+📚 Part of Entra ID Glossary Series #11.5 - Authorization Grant (Deep Dive)
 
 ---
 
@@ -11,14 +11,14 @@
 
 - Authorization grants are the credentials that prove consent was given: auth code, refresh token, client credentials
 - Each grant type is designed for a specific client type and security profile
-- Never mix grant types — use auth code + PKCE for interactive flows, client credentials for app-only
+- Never mix grant types : use auth code + PKCE for interactive flows, client credentials for app-only
 
 
 A developer was asked to call the Microsoft Graph API from a background job. They found an example using the authorization code flow, built it, and hit a problem: the authorization code flow requires a user to authenticate interactively in a browser. A background job has no browser and no user.
 
 Wrong grant type for the scenario. Every OAuth grant type exists for a specific context. Using the wrong one either doesn't work or creates security problems. The grant type is the first decision in any OAuth implementation.
 
-## 🗂️ The Active Grant Types
+## 🗂️ The active grant types
 
 **Authorization Code** 🔐: For applications where a user signs in interactively. A web application, a single-page application, a mobile app. The user's browser visits the authorization endpoint, the user authenticates, an authorization code is returned, and the application exchanges the code for tokens server-side (or via PKCE for public clients). The user's identity is in the token. All user-delegated scenarios use this flow.
 
@@ -30,13 +30,13 @@ Wrong grant type for the scenario. Every OAuth grant type exists for a specific 
 
 **On-Behalf-Of (OBO)** 🔗: For middle-tier APIs that receive a user's token and need to call downstream APIs as that user. The middle-tier service presents the incoming user token as an assertion and receives a new token for the downstream API, preserving the original user's identity and permissions. Used when an API calls another API and the downstream API needs to know who the original user was.
 
-## ❌ The Deprecated Grant Types
+## ❌ The deprecated grant types
 
 **Implicit Grant** 🚫: Tokens were returned directly in the URL fragment from the authorization endpoint. No code exchange step. Tokens appeared in browser history, server logs, and referrer headers. Deprecated and disabled by default for new app registrations. If you see `response_type=token` or `response_type=id_token` in an authorization request, it's implicit flow, and it shouldn't be in new implementations.
 
 **Resource Owner Password Credentials (ROPC)** 🚫: The application collects the user's username and password directly and posts them to the token endpoint. The user's credentials pass through the application rather than Entra ID handling them. No MFA support, no Conditional Access, breaks any identity federation. Still technically available for legacy migration scenarios but strongly discouraged. If Conditional Access requires MFA, ROPC fails.
 
-## 🎯 Choosing the Right Grant Type
+## 🎯 Choosing the right grant type
 
 The decision tree is straightforward:
 
@@ -54,7 +54,7 @@ Does the application have a token and need a new one silently? Refresh token gra
 
 The grant type determines the entire implementation path. Getting it right at the start avoids rework later.
 
-## ⚠️ The Common Mismatch
+## ⚠️ The common mismatch
 
 The most frequent grant type mismatch in practice: using authorization code flow for service-to-service calls by embedding a service account's credentials and having that service account go through interactive sign-in on a schedule. This breaks when MFA is required for the service account, when the password changes, when Conditional Access updates, or when the service account's session expires in a way the automation doesn't handle.
 
@@ -63,7 +63,7 @@ The correct answer is client credentials. Service accounts are the wrong solutio
 ---
 
 💬 **Which grant type do you see misused most often in your organization?** The service account doing interactive sign-in to simulate client credentials is common. So is ROPC for legacy migration that never got migrated. What grant type pattern in your environment would you most want to replace with something more appropriate?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

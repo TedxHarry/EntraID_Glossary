@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.3 - Risky User**
+📚 Part of Entra ID Glossary Series #7.3 - Risky User
 
 ---
 
 ## 🎯 TL;DR
 
 - A risky user is an account Identity Protection has flagged as potentially compromised
-- User risk persists across sessions until remediated — unlike sign-in risk which is per sign-in
+- User risk persists across sessions until remediated : unlike sign-in risk which is per sign-in
 - Remediation: force password reset (risk dismissed), admin investigation and confirmation/dismissal
 
 
@@ -20,7 +20,7 @@ The user hadn't done anything wrong. They'd reused a password from a personal ac
 
 The user risk flag caught it before anyone tried to use those credentials. The Conditional Access policy for high user risk blocked sign-in and required a password reset. The password was changed before any attacker had a chance to try it.
 
-## 👤 User Risk vs Sign-In Risk
+## 👤 User risk vs sign-in risk
 
 Understanding risky user requires understanding what makes it different from risky sign-in:
 
@@ -30,7 +30,7 @@ Understanding risky user requires understanding what makes it different from ris
 
 The distinction matters because some compromises don't show up in sign-in signals at all. Credentials found in a breach database are a perfect example: the attacker isn't trying to sign in yet. The account is already at risk. Sign-in risk won't catch it until an attack is actually attempted.
 
-## 🔴 What Drives User Risk
+## 🔴 What drives user risk
 
 Entra ID ID Protection generates user risk from several detection types:
 
@@ -44,7 +44,7 @@ Entra ID ID Protection generates user risk from several detection types:
 
 User risk is cumulative. Multiple medium-severity signals on the same account can push the aggregate user risk to high, even if no single signal would qualify on its own.
 
-## 📊 User Risk Levels
+## 📊 User risk levels
 
 Like sign-in risk, user risk is assessed as Low, Medium, or High. Unlike sign-in risk (which can drop to None after a session ends), user risk persists until it's explicitly cleared.
 
@@ -56,7 +56,7 @@ Like sign-in risk, user risk is assessed as Low, Medium, or High. Unlike sign-in
 
 High user risk doesn't automatically resolve. An account flagged at high risk stays high risk until the risk is remediated and either the admin dismisses it or the policy-required remediation (password reset) has occurred.
 
-## 🔒 User Risk in Conditional Access
+## 🔒 User risk in conditional access
 
 The standard Conditional Access configuration for user risk mirrors the sign-in risk approach but responds to the account-level risk:
 
@@ -67,7 +67,7 @@ The critical design point for high user risk: requiring only MFA isn't enough. I
 
 When a user resets their password through SSPR in response to a user risk policy, the risk state is automatically cleared (or reduced, depending on configuration). The reset confirms the legitimate user was present and changes the compromised credential.
 
-## 💡 Investigating and Remediating Risky Users
+## 💡 Investigating and remediating risky users
 
 The Identity Protection portal lists all users currently flagged with risk, their risk level, and the detection types driving the risk. For each risky user, the investigation should determine whether the risk is genuine or a false positive.
 
@@ -82,20 +82,20 @@ The Identity Protection portal lists all users currently flagged with risk, thei
 - Investigate why the detection fired: was it a legitimate bulk download for a project, travel that looked anomalous, credentials shared with a personal account that appeared in breach data?
 - If confirmed legitimate: dismiss the risk event as "safe" (this teaches the system what normal looks like for this user)
 
-## ⚠️ The Delay Problem
+## ⚠️ The delay problem
 
 Some user risk detections are offline: they're generated after analysis that takes hours to complete. An account can have been at risk for hours before the risk level appears in the portal. When risk is confirmed, reviewing the full window of access since the detection period began (not just since the alert appeared) is important.
 
 ---
 
 💬 **Have you had an account flagged for leaked credentials that were actually from an external breach, not your environment?** The credential reuse scenario is one of the most common user risk detections. How did you handle the conversation with the user about why their work account was at risk because of a gaming site they'd forgotten about?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Risky user detection and remediation policies require **Entra ID P2**.
 
 
-### 🔧 Quick Reference: PowerShell — Investigate Risky Users
+### 🔧 Quick reference: PowerShell : investigate risky users
 
 ```powershell
 # List all risky users

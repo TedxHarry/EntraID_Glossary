@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.7 - SAML (App Integration Focus)**
+📚 Part of Entra ID Glossary Series #9.7 - SAML (App Integration Focus)
 
 ---
 
@@ -11,7 +11,7 @@
 
 - SAML app integration configures Entra ID as IdP with SAML assertions for legacy enterprise SSO
 - Required configuration: Entity ID, ACS URL, signing certificate, and attribute mappings (claims)
-- SAML certificate expiry is a common outage cause — monitor expiry and rotate before it expires
+- SAML certificate expiry is a common outage cause : monitor expiry and rotate before it expires
 
 
 The Salesforce integration request came in. Standard enterprise SaaS. The IT team knew it would be SAML before they opened the documentation. It's always SAML with Salesforce.
@@ -22,13 +22,13 @@ Twenty minutes to configure. Another ten to test. SSO working.
 
 Understanding SAML well enough to debug it when it breaks is what separates administrators who can do enterprise app integrations from those who need to escalate every time.
 
-## 🏗️ SAML 2.0 in the Application Integration Context
+## 🏗️ SAML 2.0 in the application integration context
 
 SAML 2.0 (Security Assertion Markup Language) is the dominant federation protocol for enterprise SaaS applications. While OIDC has become the preferred protocol for new application development, the majority of enterprise SaaS applications in production today use SAML for SSO integration. It's not going away.
 
 From an app integration perspective, SAML works through an exchange of XML documents signed with certificates. Entra ID (the Identity Provider, IdP) produces a SAML assertion vouching for the user's identity. The application (the Service Provider, SP) validates that assertion and grants access.
 
-## 📋 The Four Configuration Elements
+## 📋 The four configuration elements
 
 Every SAML integration requires configuring four things correctly. Get all four right and it works. Miss any one of them and it fails.
 
@@ -40,7 +40,7 @@ Every SAML integration requires configuring four things correctly. Get all four 
 
 **Signing certificate** 📜: Entra ID signs assertions with its token signing certificate. The application validates the signature using the public key from Entra ID's metadata. When Entra ID rotates its certificate, the application's stored certificate must be updated. Certificate mismatch after rotation causes authentication failures.
 
-## 🔧 The Attribute Claim Mapping
+## 🔧 The attribute claim mapping
 
 Beyond the basic four, the application may require specific attributes in the assertion:
 
@@ -57,7 +57,7 @@ The most common integration failure after getting the four main elements right: 
 
 Read the application's SAML requirements documentation carefully before configuring. Every application has specific expectations about attribute names and formats.
 
-## 🔍 Debugging SAML: The Browser-Based Trace
+## 🔍 Debugging SAML: the browser-based trace
 
 SAML is XML exchanged through the user's browser. This means it's visible and debuggable using browser developer tools without any server-side access:
 
@@ -72,7 +72,7 @@ SAML is XML exchanged through the user's browser. This means it's visible and de
 - ACS URL doesn't match what's configured in Entra ID
 - Certificate mismatch (assertion signed with old certificate)
 
-## ⚙️ IdP-Initiated vs SP-Initiated
+## ⚙️ IdP-Initiated vs sp-initiated
 
 **SP-initiated** (most common) 🔄: User goes to the application first. Application detects no session, redirects to Entra ID with a SAML AuthnRequest. Entra ID authenticates, posts assertion to ACS URL.
 
@@ -80,7 +80,7 @@ SAML is XML exchanged through the user's browser. This means it's visible and de
 
 For most enterprise applications, SP-initiated is the standard flow and what should be tested first.
 
-## ⚠️ Certificate Rotation
+## ⚠️ Certificate rotation
 
 Entra ID periodically rotates its token signing certificate. When rotation happens, the application must be updated with the new certificate. If the application has the old certificate stored and Entra ID is now signing with the new one, assertion validation fails.
 
@@ -89,10 +89,10 @@ Some applications support automatic metadata refresh (they fetch Entra ID's meta
 ---
 
 💬 **What's the SAML configuration mistake you've made the most times?** The ACS URL with an HTTP vs HTTPS mismatch, the NameID format that works in the test tenant but not production, or the attribute claim that the application insists is required but isn't documented anywhere. What's the error you can diagnose fastest because you've seen it before?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 
 ---
 
-[← OIDC (App Integration Focus)](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-6-oidc-app-integration.md) | [🏠 Contents](/README) | [SCIM →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-8-scim.md)
+[← OIDC (App Integration Focus)](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-6-OIDC-app-integration.md) | [🏠 Contents](/README) | [SCIM →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-8-scim.md)

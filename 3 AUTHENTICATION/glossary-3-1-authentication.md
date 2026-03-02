@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#3.1 - Authentication**
+📚 Part of Entra ID Glossary Series #3.1 - Authentication
 
 ---
 
 ## 🎯 TL;DR
 
-- Authentication is the process of proving your identity — verifying that you are who you claim to be
+- Authentication is the process of proving your identity : verifying that you are who you claim to be
 - Entra ID supports password, MFA, passwordless, certificate-based, and federated authentication methods
 - Authentication produces a token; authorization decides what that token allows you to access
 
@@ -20,13 +20,13 @@ That's authentication. One party claims an identity. Another party challenges th
 
 Everything Entra ID does during a sign-in is a digital version of that same exchange.
 
-## 🔍 What Authentication Actually Is
+## 🔍 What authentication actually is
 
 Authentication is the act of verifying that someone (or something) is who they claim to be. The word comes from the Greek *authentikos*, meaning genuine or authoritative. In the identity world, it answers one specific question: **Is this really you?**
 
 It doesn't answer "what are you allowed to do?" That's authorization, and it comes after. Authentication is purely about proving identity. Get that order wrong in your mental model and troubleshooting identity problems becomes much harder.
 
-In Entra ID, authentication happens every time a user, an application, or a device tries to access a protected resource. The process:
+in Entra ID, authentication happens every time a user, an application, or a device tries to access a protected resource. The process:
 
 1. The identity presents a claim ("I am alex@contoso.com")
 2. Entra ID issues a challenge ("Prove it")
@@ -34,9 +34,9 @@ In Entra ID, authentication happens every time a user, an application, or a devi
 4. Entra ID validates those credentials against what it knows
 5. If valid, Entra ID issues a token. If not, access is denied.
 
-## 🔐 Credentials Are the Proof
+## 🔐 Credentials are the proof
 
-A credential is anything used to prove an identity claim. In the physical world, it's an ID card or a passport. In Entra ID, credentials take several forms:
+A credential is anything used to prove an identity claim. In the physical world, it's an ID card or a passport. in Entra ID, credentials take several forms:
 
 - **Something you know:** a password or PIN
 - **Something you have:** a phone app, a hardware security key, a smart card
@@ -46,7 +46,7 @@ Each category has different security characteristics. "Something you know" can b
 
 Multi-factor authentication (covered in Glossary#3.4) requires proof from at least two of these categories. But authentication itself is about any valid credential check, single-factor or multi-factor.
 
-## ⚠️ Authentication Is Not the Same as Authorization
+## ⚠️ Authentication is not the same as authorization
 
 This is the distinction that trips up beginners most often and causes real troubleshooting confusion.
 
@@ -59,7 +59,7 @@ I once spent 20 minutes with a user on a call insisting their "login wasn't work
 
 Always check the sign-in logs. They'll tell you exactly which step failed and why.
 
-## 🔄 Modern vs Legacy Authentication
+## 🔄 Modern vs legacy authentication
 
 Entra ID supports two generations of authentication protocols and they behave very differently.
 
@@ -69,7 +69,7 @@ Entra ID supports two generations of authentication protocols and they behave ve
 
 💡 This is why blocking legacy authentication is one of the first Conditional Access policies recommended for most organizations. If your users aren't actively using email clients that rely on basic auth, block it. The risk of leaving it open is not worth the convenience.
 
-## 🧩 Why Getting Authentication Right Is Foundational
+## 🧩 Why getting authentication right is foundational
 
 Every security control in Entra ID assumes authentication is working correctly. Conditional Access policies evaluate the authenticated identity. Identity Protection monitors sign-in behavior for that identity. Audit logs record which identity performed which action.
 
@@ -80,7 +80,7 @@ Strong authentication is the floor. Build everything else on top of it.
 ---
 
 💬 **What authentication challenges are you dealing with right now?** Legacy protocols you're trying to block? Phishing-resistant methods you're rolling out? Users resisting MFA? Drop your current situation in the comments.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

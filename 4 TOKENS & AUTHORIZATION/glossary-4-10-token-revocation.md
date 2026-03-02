@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.10 - Token Revocation**
+📚 Part of Entra ID Glossary Series #4.10 - Token Revocation
 
 ---
 
 ## 🎯 TL;DR
 
-- Token revocation invalidates tokens before they expire — triggered by password change, sign-out, or admin action
-- Access tokens can't be individually revoked in real-time without CAE — they're valid until expiry
+- Token revocation invalidates tokens before they expire : triggered by password change, sign-out, or admin action
+- Access tokens can't be individually revoked in real-time without CAE : they're valid until expiry
 - Refresh token revocation is immediate; combined with short access token lifetimes, this limits exposure
 
 
@@ -26,7 +26,7 @@ There was a pause where I had to explain something that feels wrong on first hea
 
 That conversation is why understanding token revocation properly matters.
 
-## 🔑 The Two Things You Can Revoke
+## 🔑 The two things you can revoke
 
 **Refresh tokens** can be revoked immediately and completely. When you revoke sign-in sessions, you're invalidating all refresh tokens for that user. The result: the user cannot get new access tokens silently. At the next refresh attempt, the request fails with `invalid_grant`. If the app handles this correctly, it redirects to a sign-in page. The user can't sign in because the account is disabled.
 
@@ -34,7 +34,7 @@ That conversation is why understanding token revocation properly matters.
 
 The gap between "revoke sessions" and "all access gone" is the access token lifetime: up to 60 minutes by default.
 
-## 🚀 How to Revoke Sessions
+## 🚀 How to revoke sessions
 
 Two ways to immediately revoke all refresh tokens for a user:
 
@@ -53,7 +53,7 @@ Do this in addition to disabling the account. Disabling alone prevents new authe
 
 For high-risk terminations, also reset the password as a belt-and-suspenders measure, in case the user has stored their credentials somewhere that could be used before the disable takes effect globally.
 
-## ⚡ CAE: Near-Real-Time Access Token Revocation
+## ⚡ CAE: near-real-time access token revocation
 
 Continuous Access Evaluation closes the access token gap for supported services.
 
@@ -63,7 +63,7 @@ Those services respond by rejecting existing access tokens for that user immedia
 
 The key qualifier: **CAE-capable services only.** Third-party applications, older Microsoft services, and custom applications that haven't implemented CAE support don't receive these push notifications. For those, the 60-minute window remains.
 
-## 🏃 The Urgent Offboarding Checklist
+## 🏃 The urgent offboarding checklist
 
 For a high-priority account termination where immediate access removal matters:
 
@@ -77,7 +77,7 @@ For a high-priority account termination where immediate access removal matters:
 
 For CAE-capable services, access stops in seconds after steps 1 and 2. For non-CAE applications, the exposure window is the remaining access token lifetime, reduced by removing group memberships and app role assignments which limits what the token can do even if it's technically still valid.
 
-## 💡 Reducing the Window Before It Matters
+## 💡 Reducing the window before it matters
 
 The best time to think about revocation is before an incident, not during one.
 
@@ -88,7 +88,7 @@ CAE implementation in custom applications eliminates the window entirely for tho
 ---
 
 💬 **Have you had a situation where you needed to cut off access immediately and discovered the 60-minute gap?** It's the kind of thing that's easy to overlook until urgency makes it very real. How did your organization handle it, and did it change how you configured token lifetimes or Conditional Access afterward?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

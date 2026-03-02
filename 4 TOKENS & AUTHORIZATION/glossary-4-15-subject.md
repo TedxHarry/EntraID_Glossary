@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.15 - Subject**
+📚 Part of Entra ID Glossary Series #4.15 - Subject
 
 ---
 
 ## 🎯 TL;DR
 
-- The subject (`sub` claim) identifies the user the token was issued for — unique per user per app
+- The subject (`sub` claim) identifies the user the token was issued for : unique per user per app
 - Unlike the Object ID (`oid`), the `sub` is app-specific (pairwise) to prevent cross-app user tracking
 - For user identity across apps, use `oid` + `tid`; for single-app identification, `sub` is appropriate
 
@@ -18,7 +18,7 @@ A developer came to me with a collision problem. Their multi-tenant application 
 
 They weren't wrong to use `sub` for user identification in principle. But they were wrong about what `sub` actually means. The subject claim has a property that catches people out when they haven't read the specification carefully: it's not globally unique.
 
-## 🆔 What Subject Means in OAuth Tokens
+## 🆔 What subject means in OAuth tokens
 
 The `sub` (subject) claim identifies the principal that is the subject of the JWT. In user-context tokens, that's the user whose resources are being accessed. In application-context tokens (client credentials flow), that's the application itself.
 
@@ -28,7 +28,7 @@ Entra ID generates the `sub` claim as a pairwise pseudonymous identifier. The sa
 
 That's exactly what was breaking the multi-tenant app. The `sub` uniqueness guarantee is per-user-per-application, not globally unique.
 
-## 🔄 Subject vs Object ID: The Right Identifier
+## 🔄 Subject vs object id: the right identifier
 
 Entra ID provides a second identifier that doesn't have this limitation: `oid` (Object ID).
 
@@ -42,7 +42,7 @@ The `oid` claim is the user's Object ID in their home Entra ID tenant. It's a GU
 
 **Use `oid` as your database key for users.** It's stable, consistent, and won't cause collisions across your platform. For multi-tenant applications, the fully unique identifier is `oid` combined with `tid` (tenant ID). The same GUID appearing from two different tenants represents two different people.
 
-## 🔒 Why Pairwise Subject Was Designed This Way
+## 🔒 Why pairwise subject was designed this way
 
 The pairwise `sub` design is an intentional privacy feature. Users should be able to use different applications without those applications being able to silently track them across services by comparing identifier values.
 
@@ -50,13 +50,13 @@ If `sub` were a single globally consistent value, any two applications sharing d
 
 This matters particularly in B2C and consumer-facing scenarios where users interact with many third-party applications. The spec requires this behavior, and Entra ID implements it correctly.
 
-## 📋 Subject in Application Tokens
+## 📋 Subject in application tokens
 
 When an application uses client credentials (acting as itself, no user), the `sub` in the resulting token refers to the service principal, not a human user. The subject of the token is the application.
 
 APIs that accept both user-context and application-context tokens need to handle this difference. For user tokens, `sub` and `oid` refer to a human. For application tokens, they refer to a service principal. The presence of a `scp` claim reliably indicates a user is in context; its absence (with a `roles` claim instead) indicates application-only context.
 
-## 💡 Fixing the Multi-Tenant Collision Problem
+## 💡 Fixing the multi-tenant collision problem
 
 The fix for the database collision issue was a migration: change the primary key from `sub` to `oid` + `tid` (stored as a composite key or a concatenated string). All existing user records needed their identifiers recalculated using the correct claims.
 
@@ -67,7 +67,7 @@ The `sub` claim is still useful. It's the right identifier to use when you speci
 ---
 
 💬 **Have you run into identifier issues where users were being confused or collisions were occurring in your application database?** The sub vs oid confusion is one of the more common mistakes in OAuth application development. What was the symptom that made you realize something was wrong?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

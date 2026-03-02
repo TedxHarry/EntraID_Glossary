@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#11.3 - Token Endpoint (Deep Dive)**
+📚 Part of Entra ID Glossary Series #11.3 - Token Endpoint (Deep Dive)
 
 ---
 
@@ -18,7 +18,7 @@ The authorization endpoint is where users interact. The token endpoint is where 
 
 Most developers working with MSAL never call the token endpoint directly. The SDK handles it. But when token acquisition fails and the error is coming from the token endpoint, knowing exactly what that endpoint expects and what it returns is what turns a 20-minute debug session into a 2-minute one.
 
-## 🌐 The Endpoint
+## 🌐 The endpoint
 
 ```
 https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
@@ -26,7 +26,7 @@ https://login.microsoftonline.com/{tenant}/oauth2/v2.0/token
 
 Same tenant variants as the authorization endpoint: specific tenant ID, `common`, `organizations`, or `consumers`. The token endpoint is always a POST. Parameters go in the request body as `application/x-www-form-urlencoded`, not JSON, not query string.
 
-## 📋 The Grant Types
+## 📋 The grant types
 
 The `grant_type` parameter tells the token endpoint what kind of token request this is. Different grant types mean different required parameters.
 
@@ -36,11 +36,11 @@ The `grant_type` parameter tells the token endpoint what kind of token request t
 
 **`refresh_token`** 🔁: Silently acquiring a new access token using an existing refresh token. Required: `refresh_token`, `client_id`, client authentication (for confidential clients), `scope`. Returns: new access token, new ID token if `openid` in scope, and potentially a new refresh token (sliding window).
 
-**`urn:ietf:params:oauth:grant-type:device_code`** 📱: Exchanging a device code for tokens after user completes authentication on another device. Used for devices without browsers.
+**`urn:ietf:params:OAuth:grant-type:device_code`** 📱: Exchanging a device code for tokens after user completes authentication on another device. Used for devices without browsers.
 
-**`urn:ietf:params:oauth:grant-type:jwt-bearer`** 🔗: The On-Behalf-Of flow. A middle-tier service presents a user's access token and requests a new token for a downstream API on behalf of that user. Requires `assertion` (the incoming token) and `requested_token_use=on_behalf_of`.
+**`urn:ietf:params:OAuth:grant-type:jwt-bearer`** 🔗: The On-Behalf-Of flow. A middle-tier service presents a user's access token and requests a new token for a downstream API on behalf of that user. Requires `assertion` (the incoming token) and `requested_token_use=on_behalf_of`.
 
-## 🔑 Client Authentication
+## 🔑 Client authentication
 
 For confidential clients (web applications and APIs that can keep a secret), the token endpoint requires the application to prove it's the legitimate app, not just anyone who knows the client ID. Two methods:
 
@@ -52,7 +52,7 @@ For confidential clients (web applications and APIs that can keep a secret), the
 
 For public clients (SPAs, mobile apps, desktop apps), client authentication isn't required or expected at the token endpoint. PKCE serves as the binding mechanism instead.
 
-## 📦 What the Token Response Contains
+## 📦 What the token response contains
 
 A successful token response is a JSON object with:
 
@@ -66,7 +66,7 @@ A successful token response is a JSON object with:
 
 **`token_type`**: Always `Bearer` for Entra ID tokens.
 
-## ⚠️ Common Token Endpoint Errors
+## ⚠️ Common token endpoint errors
 
 `invalid_grant`: The authorization code is invalid, expired, or already used. Or the refresh token has been revoked. This is the error you get when re-using a code or when a user's session has been invalidated.
 
@@ -79,7 +79,7 @@ A successful token response is a JSON object with:
 ---
 
 💬 **What's the most useful thing you've found by decoding an access token from the token endpoint during a debugging session?** JWT decoders like jwt.ms make it easy to see the actual claims Entra ID is issuing. Have you ever found a missing claim, wrong audience, or unexpected permission scope that explained a permission failure?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

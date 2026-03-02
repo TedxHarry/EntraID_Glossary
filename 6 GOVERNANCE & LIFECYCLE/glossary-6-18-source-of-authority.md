@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.18 - Source of Authority**
+📚 Part of Entra ID Glossary Series #6.18 - Source of Authority
 
 ---
 
 ## 🎯 TL;DR
 
 - Source of Authority (SOA) is the authoritative system that 'owns' a user's identity data
-- For synced users, the SOA is on-premises AD — changes must be made in AD, not in Entra ID
+- For synced users, the SOA is on-premises AD : changes must be made in AD, not in Entra ID
 - Cloud-only users have Entra ID as SOA; HR-provisioned users have the HR system as SOA
 
 
@@ -20,7 +20,7 @@ When I investigated, I found that Entra ID had inbound provisioning configured f
 
 Two systems both claimed to be the authority on her name. Neither was winning cleanly.
 
-## 🏛️ What Source of Authority Means
+## 🏛️ What source of authority means
 
 The source of authority (also called source of record or authoritative source) is the designated system whose data is trusted as definitive for a specific attribute or identity. When multiple systems store the same data, the source of authority determines which system's value wins in case of conflict.
 
@@ -32,7 +32,7 @@ For identity data:
 
 - **Active Directory (on-premises)**: In hybrid environments, may be the source of authority for certain attributes that flow from on-premises to Entra ID via Entra Connect.
 
-## 🔄 Why It Matters in Provisioning
+## 🔄 Why it matters in provisioning
 
 When inbound provisioning is configured from HR to Entra ID, the expectation is clear: Workday is the source of authority for employment data. Changes in Workday flow to Entra ID. Entra ID does not push those attributes back to Workday.
 
@@ -44,7 +44,7 @@ This breaks down when:
 
 **Multiple HR systems**: After mergers or in organizations with separate HR systems per region, no single HR system covers all employees. Each system is authoritative for its population. The provisioning logic must route correctly based on which HR system the user belongs to.
 
-## 📋 Defining Authority by Attribute
+## 📋 Defining authority by attribute
 
 A mature identity architecture defines source of authority at the attribute level, not just the identity level:
 
@@ -62,7 +62,7 @@ A mature identity architecture defines source of authority at the attribute leve
 
 Documenting this table and configuring provisioning to enforce it prevents the conflict that created the name-change problem above.
 
-## ⚠️ When Source of Authority Is Unclear
+## ⚠️ When source of authority is unclear
 
 The absence of a documented source of authority creates predictable problems:
 
@@ -72,7 +72,7 @@ The absence of a documented source of authority creates predictable problems:
 
 - An employee's name change sits in HR for two weeks because the provisioning sync is confused about which system owns the value.
 
-## 💡 The Governance Implication
+## 💡 The governance implication
 
 Source of authority is a governance question as much as a technical one. The technical configuration follows the governance decision: which team owns this attribute, from which system, and what happens if there's a conflict?
 
@@ -81,7 +81,7 @@ Making this explicit in your identity governance documentation means provisionin
 ---
 
 💬 **Has your organization had a conflict between what the HR system says and what Entra ID shows for a user's attributes?** The name-change scenario is one of the most visible, but department, manager, and title conflicts cause quieter but equally real problems. How did you resolve the authority question?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

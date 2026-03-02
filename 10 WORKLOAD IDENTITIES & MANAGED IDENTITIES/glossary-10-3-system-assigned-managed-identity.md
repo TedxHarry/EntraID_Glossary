@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#10.3 - System-Assigned Managed Identity**
+📚 Part of Entra ID Glossary Series #10.3 - System-Assigned Managed Identity
 
 ---
 
 ## 🎯 TL;DR
 
 - System-assigned managed identity is created with and deleted with the Azure resource it's attached to
-- One system-assigned identity per resource — can't be shared or reused across resources
+- One system-assigned identity per resource : can't be shared or reused across resources
 - Best for: VMs, App Services, Functions that need their own distinct identity
 
 
@@ -20,7 +20,7 @@ When the VM is deleted, the identity is deleted.
 
 That's the whole model of system-assigned managed identity. The resource owns the identity. The identity lives and dies with the resource. One-to-one, no shared references, no orphaned identities in Entra ID after the resource is gone.
 
-## 🔗 What System-Assigned Means
+## 🔗 What system-assigned means
 
 A system-assigned managed identity is created by Azure when you enable managed identity on a specific Azure resource, and it's tied exclusively to that resource's lifecycle. One identity per resource, inseparable from that resource.
 
@@ -28,7 +28,7 @@ The identity appears in Entra ID as an enterprise application (service principal
 
 This contrasts with user-assigned managed identities, which are standalone Azure resources you create separately and then attach to one or more compute resources.
 
-## ⚙️ How It Works in Practice
+## ⚙️ How it works in practice
 
 An Azure Function App needs to read blobs from an Azure Storage account. The steps:
 
@@ -40,7 +40,7 @@ When the Function App is deleted months later, Azure automatically removes the s
 
 No identity cleanup task. No Entra ID service principal persisting after the resource is gone. The lifecycle management happens automatically.
 
-## ✅ When System-Assigned Is the Right Choice
+## ✅ When system-assigned is the right choice
 
 System-assigned managed identity fits well when:
 
@@ -50,7 +50,7 @@ System-assigned managed identity fits well when:
 
 **Simple scenarios** 📋: When the resource has straightforward, non-shared access needs and the one-to-one relationship between resource and identity is a feature rather than a limitation.
 
-## ⚠️ The Limitations
+## ⚠️ The limitations
 
 System-assigned managed identity has real constraints that matter at scale:
 
@@ -60,7 +60,7 @@ System-assigned managed identity has real constraints that matter at scale:
 
 **Not shareable with external systems** 🔗: System-assigned managed identities can't be used with workload federation configurations the way user-assigned managed identities can. Federated identity credentials for GitHub Actions or Kubernetes, for example, work with user-assigned managed identities or app registrations.
 
-## 📊 At What Point to Switch to User-Assigned
+## 📊 At what point to switch to user-assigned
 
 The inflection point is usually one of these:
 
@@ -73,7 +73,7 @@ The identity needs to persist across resource replacements. If the same logical 
 ---
 
 💬 **When did you first switch from system-assigned to user-assigned managed identity for a workload, and what drove the decision?** The transition usually happens when the one-to-one model creates operational friction, either through role assignment duplication or through losing assignments when resources are replaced. What scenario made user-assigned the better fit?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

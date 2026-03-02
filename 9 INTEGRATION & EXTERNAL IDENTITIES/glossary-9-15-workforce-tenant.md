@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.15 - Workforce Tenant**
+📚 Part of Entra ID Glossary Series #9.15 - Workforce Tenant
 
 ---
 
@@ -11,7 +11,7 @@
 
 - A workforce tenant is your organization's standard Entra ID tenant with employee identities and enterprise policies
 - Workforce tenants support B2B guest access for partners and contractors
-- This is the 'default' tenant type — what most organizations manage day-to-day
+- This is the 'default' tenant type : what most organizations manage day-to-day
 
 
 When Microsoft introduced external tenants as part of Entra External ID, they needed a term for the thing that already existed: the standard Entra ID tenant that every organization uses to manage its employees.
@@ -22,7 +22,7 @@ It's not a new product. It's not a new configuration option. It's the name Micro
 
 Understanding what makes a workforce tenant distinct matters now because there are two kinds of Entra ID tenants, and the differences between them are architectural.
 
-## 🏢 What a Workforce Tenant Is
+## 🏢 What a workforce tenant is
 
 A workforce tenant is a standard Microsoft Entra ID tenant configured for managing organizational identities. It's the corporate directory. The thing your IT department provisions employee accounts into. The system your Conditional Access policies run against. The directory that connects to your on-premises Active Directory through Entra Connect or Cloud Sync.
 
@@ -36,7 +36,7 @@ The workforce tenant serves two identity populations:
 
 This is the tenant where your employees live. The external tenant (the other Entra ID tenant type) is where customers live.
 
-## 🔄 Workforce Tenant vs External Tenant
+## 🔄 Workforce tenant vs external tenant
 
 The distinction that made "workforce tenant" necessary as a term is the introduction of external tenants for customer identity.
 
@@ -50,7 +50,7 @@ The configuration profiles are different:
 
 You can't turn a workforce tenant into an external tenant by changing configuration. They're different tenant types created at provisioning time for different purposes.
 
-## ⚙️ What's Built Into a Workforce Tenant
+## ⚙️ What's built into a workforce tenant
 
 The features that define workforce tenant operation:
 
@@ -64,7 +64,7 @@ The features that define workforce tenant operation:
 
 **Audit and monitoring** 👁️: Sign-in logs, audit logs, risky user reports, risky sign-in detection. The workforce tenant's identity security monitoring feeds into Entra ID Protection and Microsoft Sentinel for SOC operations.
 
-## 🏗️ Workforce Tenants in the External ID Architecture
+## 🏗️ Workforce tenants in the external ID architecture
 
 When Entra External ID describes its deployment models, the workforce tenant is one of the two options:
 
@@ -77,7 +77,7 @@ A single organization doing both things runs both. The retail bank with 3,000 em
 ---
 
 💬 **How many distinct Entra ID tenant types does your organization operate today?** Many organizations started with a single workforce tenant and have added external tenants, sandbox tenants, or B2C tenants as their identity needs expanded. What drove the first time your organization had to manage more than one Entra ID tenant?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

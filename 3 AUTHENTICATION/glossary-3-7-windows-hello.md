@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#3.7 - Windows Hello**
+📚 Part of Entra ID Glossary Series #3.7 - Windows Hello
 
 ---
 
@@ -18,7 +18,7 @@
 
 I hear this every time I introduce Windows Hello for Business to someone. The mental model is: shorter PIN, weaker security. It makes intuitive sense. It's also completely wrong, and explaining *why* it's wrong is one of the most useful conversations I have with IT teams starting their passwordless journey.
 
-## 🧩 The Fundamental Difference: Where the Credential Lives
+## 🧩 The fundamental difference: where the credential lives
 
 A password is a secret shared between you and every server you authenticate to. You create `P@ssw0rd123!`, and that secret (in hashed form) gets stored on the Entra ID server. When you log in, your password travels across the network, gets compared to the stored hash, and authentication proceeds.
 
@@ -32,7 +32,7 @@ The PIN doesn't authenticate to anything. It unlocks the private key inside the 
 
 Entra ID verifies the signature using the registered public key. No password was transmitted. No shared secret exists. The server doesn't have your PIN. The credential can't be phished because there's nothing to steal remotely.
 
-## 🔑 PIN vs Password: The Security Properties
+## 🔑 PIN vs password: the security properties
 
 | | Password | Windows Hello PIN |
 |---|---|---|
@@ -47,7 +47,7 @@ The PIN being short doesn't weaken it because it's never compared against a remo
 
 A 6-digit PIN protecting a hardware-bound key is meaningfully more secure than a 20-character password protecting a remotely stored hash.
 
-## 🏢 Windows Hello vs Windows Hello for Business
+## 🏢 Windows hello vs windows hello for business
 
 This distinction matters and gets confused frequently.
 
@@ -59,7 +59,7 @@ From a user experience perspective they look identical. From a security architec
 
 If your organization is relying on users' personal Windows Hello setup for phishing-resistant authentication, you may not actually have phishing-resistant authentication.
 
-## ⚙️ What Deployment Looks Like
+## ⚙️ What deployment looks like
 
 Windows Hello for Business can be deployed in two trust models:
 
@@ -71,7 +71,7 @@ For cloud-only tenants, deployment is simpler: configure via Intune, users enrol
 
 The enrollment experience from the user's side: they open a sign-in on their managed device, get prompted to set up Windows Hello for Business, go through biometric or PIN setup, and from that point use their face/fingerprint/PIN to sign in. Takes about two minutes.
 
-## ✅ When Windows Hello for Business Is the Right Choice
+## ✅ When windows hello for business is the right choice
 
 - 💻 For any managed Windows device fleet where phishing-resistant MFA is a goal
 - 👑 For administrator accounts with sensitive access (combined with PIM)
@@ -83,7 +83,7 @@ The enrollment experience from the user's side: they open a sign-in on their man
 ---
 
 💬 **Has your team made the case for Windows Hello for Business yet?** The "it's just a PIN" objection is the most common pushback I encounter. How do you explain the TPM and key-binding concept to non-technical stakeholders?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

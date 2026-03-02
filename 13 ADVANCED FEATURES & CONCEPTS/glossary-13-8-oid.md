@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.8 - OID (Object ID)**
+📚 Part of Entra ID Glossary Series #13.8 - OID (Object ID)
 
 ---
 
 ## 🎯 TL;DR
 
 - OID (Object ID) is the immutable GUID assigned to every directory object: user, group, app, service principal
-- OID persists even when UPN, display name, or other attributes change — it's the true unique identifier
+- OID persists even when UPN, display name, or other attributes change : it's the true unique identifier
 - Use OID (not UPN or email) as the stable identifier in your application's database for user records
 
 
@@ -22,7 +22,7 @@ The fix was a database migration: update every user record's key from the old UP
 
 If the application had used the Object ID instead, none of this would have happened. The Object ID didn't change. It never does.
 
-## 🔷 What the Object ID Is
+## 🔷 What the object ID is
 
 The Object ID (OID) is the globally unique identifier assigned to every object in Entra ID at the time of creation. It's a GUID: 32 hexadecimal characters in the format `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`.
 
@@ -30,7 +30,7 @@ Every type of directory object has one: users, groups, applications, service pri
 
 The OID appears in Entra ID tokens as the `oid` claim. It's what Entra ID uses internally to reference objects. It's what Graph API calls reference when you do `GET /users/{oid}`. It's what PIM uses for role assignment targeting. It's the foundation identifier in the Entra ID data model.
 
-## 🔑 OID vs Other User Identifiers
+## 🔑 OID vs other user identifiers
 
 Several identifiers are associated with a user object, each with different characteristics:
 
@@ -48,7 +48,7 @@ Several identifiers are associated with a user object, each with different chara
 
 For application development, the guidance is consistent: use `oid` + `tid` (tenant ID) as the composite key for user records in multi-tenant applications, or `oid` alone for single-tenant applications. This survives UPN changes, email changes, display name changes, and any other mutable attribute updates.
 
-## 📋 OID in Tokens and API Responses
+## 📋 OID in tokens and API responses
 
 In access tokens and ID tokens from the v2.0 endpoint, the Object ID appears as the `oid` claim. It's present in tokens issued for both user sign-ins and client credentials flows (where it identifies the service principal):
 
@@ -65,7 +65,7 @@ The `oid` is the same across all applications the user signs into within the sam
 
 In Microsoft Graph API responses, the `id` field of a user object is the OID. `GET /users/me` returns the current user's object where `"id"` is the OID.
 
-## 🔍 Finding an Object's OID
+## 🔍 Finding an object's OID
 
 **In the Entra ID portal** 📱: Navigate to any user, group, application, or service principal. The Overview page shows the Object ID prominently.
 
@@ -75,14 +75,14 @@ In Microsoft Graph API responses, the `id` field of a user object is the OID. `G
 
 **In application logs** 📋: The `oid` claim in the JWT access token. Decode the token (base64, middle section) to see it directly.
 
-## ⚠️ Cross-Tenant OID Uniqueness
+## ⚠️ Cross-Tenant OID uniqueness
 
 OIDs are unique within a tenant, not across all of Entra ID. Two different Entra ID tenants could theoretically have objects with the same OID (extremely unlikely given GUID generation, but architecturally possible). For multi-tenant applications that accept users from any tenant, the stable user key is the combination of `oid` and `tid`, not `oid` alone.
 
 ---
 
 💬 **Does your organization's internal application development standard specify which user identifier to use for persistent user records?** The UPN-as-key antipattern causes real migration pain when it eventually breaks. Do your application teams default to OID, or does the choice get made ad hoc per project?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#10.11 - LLTs (Long Lived Tokens)**
+📚 Part of Entra ID Glossary Series #10.11 - LLTs (Long Lived Tokens)
 
 ---
 
 ## 🎯 TL;DR
 
-- Long-Lived Token Secrets (LLTS) are client secrets with extended lifetimes — a security risk
+- Long-Lived Token Secrets (LLTS) are client secrets with extended lifetimes : a security risk
 - Default secret lifetime is 2 years; reduce to 6-12 months max, or use certificates instead
 - Entra ID Workload Identity Premium provides real-time risk detection for workload credential compromise
 
@@ -20,7 +20,7 @@ That instinct is correct in isolation. But it misses something: every token acqu
 
 Long-lived tokens flip the tradeoff: extend the valid window, reduce the authentication surface, and rely on Continuous Access Evaluation to revoke the token in near-real-time when something goes wrong.
 
-## 🔑 What Long-Lived Tokens Are
+## 🔑 What long-lived tokens are
 
 Long-Lived Tokens (LLTs) are access tokens issued with extended validity periods, up to 24 hours, specifically for workload identities when CAE is supported by both the client and the resource provider.
 
@@ -28,7 +28,7 @@ Standard access tokens for workloads typically expire in one hour. LLTs extend t
 
 LLTs aren't a separate token type in the technical sense. They're standard JWT access tokens with a later expiry time (`exp` claim). What makes them "long-lived" is the combination of the extended lifetime and the CAE-based revocation mechanism that enforces policies despite the longer window.
 
-## ⚙️ The Tradeoff Explained
+## ⚙️ The tradeoff explained
 
 Standard token lifecycle without CAE:
 
@@ -42,7 +42,7 @@ The exposure window after revocation isn't 24 hours; it's the CAE notification l
 
 This is why LLTs, counterintuitively, can offer better security posture than short-lived tokens in a CAE-capable environment: the revocation is near-real-time regardless of the token's remaining lifetime, and the reduced authentication frequency shrinks the attack surface at the authentication layer.
 
-## 📊 Authentication Overhead Reduction
+## 📊 Authentication overhead reduction
 
 For workloads making frequent calls to Microsoft Graph, Azure Storage, or other CAE-capable services, reducing authentication frequency from once per hour to once per day has measurable operational benefits.
 
@@ -50,7 +50,7 @@ Every token acquisition request is an outbound call to Entra ID's token endpoint
 
 LLTs are also meaningful for workloads that have cold-start scenarios: applications that spin up quickly, make a burst of API calls, then idle. With one-hour tokens, a workload that runs for 20 minutes, idles for 50, then runs again needs to re-authenticate. With a 24-hour LLT, the same token serves across multiple execution windows throughout the day.
 
-## 🔒 What LLTs Don't Change
+## 🔒 What llts don't change
 
 LLTs don't change the fundamental security model for scenarios where CAE isn't supported. If the resource a workload calls doesn't support CAE, tokens for that resource remain at standard lifetimes. The extended lifetime only applies where the CAE enforcement mechanism exists to back it up.
 
@@ -61,7 +61,7 @@ The security improvement from LLTs comes from the combination of reduced authent
 ---
 
 💬 **Has your team measured the authentication overhead from frequent token acquisitions in high-volume workloads?** The shift from hourly to daily token acquisition sounds small, but for workloads making thousands of API calls per day, it can be meaningful. What Azure services are your workloads authenticating to most frequently, and are they CAE-capable?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

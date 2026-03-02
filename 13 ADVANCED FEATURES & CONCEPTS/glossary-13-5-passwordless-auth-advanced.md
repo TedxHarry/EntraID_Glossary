@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.5 - Passwordless Auth (Advanced)**
+📚 Part of Entra ID Glossary Series #13.5 - Passwordless Auth (Advanced)
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Passwordless authentication (advanced) requires planning: which users, which methods, phased rollout
 - Combine: WHfB for corporate devices, FIDO2 keys for shared/privileged workstations, Authenticator for mobile
-- Verify SSPR is configured with strong methods before deploying passwordless — users need a recovery path
+- Verify SSPR is configured with strong methods before deploying passwordless : users need a recovery path
 
 
 The demo always looks smooth. Admin enables passwordless in the policy. User opens the Authenticator app. Taps the number match. Signs in. No password. Applause.
@@ -20,7 +20,7 @@ Then the deployment starts. Shared workstations where Windows Hello enrollment d
 
 Passwordless deployment at scale is a program, not a feature toggle.
 
-## 🔑 The Passwordless Methods in Entra ID
+## 🔑 The passwordless methods in Entra ID
 
 There are three primary passwordless authentication methods with meaningfully different deployment profiles:
 
@@ -32,7 +32,7 @@ There are three primary passwordless authentication methods with meaningfully di
 
 **Passkeys** 🔑: The evolving standard that brings FIDO2 to consumer contexts. Passkeys can be device-bound (like FIDO2 keys) or synced across devices via platform keychain (iCloud Keychain, Google Password Manager). Microsoft Authenticator now supports passkeys, enabling phishing-resistant authentication from mobile without a separate hardware key.
 
-## 🚀 Temporary Access Pass: The Enrollment Bootstrap
+## 🚀 Temporary access pass: the enrollment bootstrap
 
 The most overlooked piece of passwordless deployment is the bootstrap problem. How does a user enroll in Windows Hello or register a FIDO2 key when they're new and have no authentication method yet?
 
@@ -42,7 +42,7 @@ TAP makes passwordless registration possible without the chicken-and-egg problem
 
 TAP is also the recovery mechanism when a user loses their phone or their FIDO2 key. Without TAP, the recovery path is a temporary password reset (which re-establishes a password credential). With TAP, the recovery is passwordless all the way.
 
-## 📊 Authentication Strength Enforcement
+## 📊 Authentication strength enforcement
 
 Deploying passwordless methods is half the work. The other half is ensuring users actually use them.
 
@@ -50,7 +50,7 @@ Authentication strength policies in Conditional Access define which authenticati
 
 This is the enforcement mechanism for passwordless adoption. Policies can target specific high-risk applications with a phishing-resistant authentication strength requirement, driving adoption of FIDO2 or Windows Hello for those applications while allowing phone sign-in for lower-risk applications during the transition period.
 
-## ⚠️ The Last-Mile Problem
+## ⚠️ The last-mile problem
 
 Not every application that users access supports modern authentication. Legacy applications that accept only form-based username/password, applications that use NTLM or Kerberos for on-premises access, and some thick-client applications built before modern auth was standard all create exceptions to the passwordless story.
 
@@ -65,7 +65,7 @@ For these applications, the practical solutions are:
 ---
 
 💬 **What is the biggest obstacle your organization faces in achieving broad passwordless authentication coverage?** The shared workstation problem, the legacy application last mile, and the FIDO2 key management overhead are the most commonly cited barriers. What percentage of your user population is currently using a passwordless primary method, and what's blocking the rest?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

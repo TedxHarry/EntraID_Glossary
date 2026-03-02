@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.17 - Require Authentication Strength**
+📚 Part of Entra ID Glossary Series #7.17 - Require Authentication Strength
 
 ---
 
@@ -20,7 +20,7 @@ The organization had MFA. They did not have the right MFA. SMS is an MFA method.
 
 This is the problem Require Authentication Strength is designed to solve.
 
-## 🔐 What Authentication Strength Is
+## 🔐 What authentication strength is
 
 Authentication Strength is a Conditional Access grant control that lets you specify not just that MFA is required, but which specific MFA methods are acceptable for a given resource or scenario.
 
@@ -30,7 +30,7 @@ Instead of "require any MFA," you can require "MFA from this approved set of met
 
 **Phishing-resistant methods** 🛡️: FIDO2 security keys, Windows Hello for Business, certificate-based authentication. These use cryptographic binding between the credential and the specific website. A phishing proxy can't replay the credential because the credential is only valid for the exact domain it was issued for.
 
-## 📋 The Built-In Strength Levels
+## 📋 The built-in strength levels
 
 Entra ID provides three built-in authentication strength definitions:
 
@@ -40,7 +40,7 @@ Entra ID provides three built-in authentication strength definitions:
 
 **Phishing-resistant MFA** 🔴: The strongest built-in strength. Requires FIDO2 security keys, Windows Hello for Business, or certificate-based authentication. These methods are cryptographically bound to the specific relying party. An AiTM proxy attack cannot succeed because the credential is tied to the legitimate domain's origin.
 
-## 🎯 When to Use Each Strength
+## 🎯 When to use each strength
 
 The right strength depends on what's being protected:
 
@@ -50,7 +50,7 @@ The right strength depends on what's being protected:
 
 **Privileged access and administrative roles** 🔴: Phishing-resistant MFA strength. Global Administrators, Privileged Role Administrators, Exchange Administrators, and similar high-value roles should only authenticate with methods that cannot be phished. A compromised Global Admin account is catastrophic. The authentication method for these accounts should reflect that.
 
-## 🛠️ Custom Authentication Strengths
+## 🛠️ Custom authentication strengths
 
 Beyond the three built-in strengths, organizations can define custom authentication strength policies. A custom strength specifies an exact list of allowed authentication method combinations.
 
@@ -64,7 +64,7 @@ Use cases for custom strengths:
 
 Custom strengths are configured in Entra admin center under Security > Authentication Methods > Authentication Strengths.
 
-## 🔗 Authentication Strength vs Require MFA
+## 🔗 Authentication strength vs require MFA
 
 These two grant controls are related but distinct:
 
@@ -79,7 +79,7 @@ For most organizations, the progression is:
 2. Move privileged accounts to Require Authentication Strength: Phishing-resistant
 3. Consider higher strengths for sensitive applications as passwordless rollout matures
 
-## ⚠️ The Registration Dependency
+## ⚠️ The registration dependency
 
 Authentication strength policies only work if users have the required methods registered. Requiring phishing-resistant MFA for all administrators before any administrators have FIDO2 keys or Windows Hello configured will lock out all administrators.
 
@@ -88,7 +88,7 @@ Deployment sequence matters: register the required methods first, verify coverag
 ---
 
 💬 **Have you differentiated authentication strength requirements between regular users and privileged accounts?** The realization that "MFA enabled" isn't good enough for admin accounts, because SMS OTP is technically MFA, is often the catalyst for deploying FIDO2 keys or enforcing Windows Hello. What drove your organization to require stronger methods for privileged access?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Authentication strength as a CA grant control requires **Entra ID P1**. Phishing-resistant strength enforcement is included in P1.

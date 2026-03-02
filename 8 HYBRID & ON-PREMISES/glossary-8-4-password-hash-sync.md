@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#8.4 - Password Hash Sync**
+📚 Part of Entra ID Glossary Series #8.4 - Password Hash Sync
 
 ---
 
 ## 🎯 TL;DR
 
 - Password Hash Sync (PHS) syncs a hash of password hashes from AD to Entra ID
-- It's the most resilient hybrid auth option — authentication happens in the cloud even if on-prem is down
-- PHS also enables leaked credential detection — Microsoft can compare hashed passwords against breach databases
+- It's the most resilient hybrid auth option : authentication happens in the cloud even if on-prem is down
+- PHS also enables leaked credential detection : Microsoft can compare hashed passwords against breach databases
 
 
 An administrator asked a question that I hear often: "If we sync our passwords to the cloud, doesn't that mean Microsoft has our passwords?"
@@ -20,7 +20,7 @@ It's a reasonable concern. The answer is no, and understanding why requires unde
 
 That distinction matters for security architecture decisions in hybrid environments.
 
-## 🔑 What Password Hash Sync Does
+## 🔑 What password hash sync does
 
 Password Hash Sync (PHS) is a feature of Entra Connect (and Cloud Sync) that enables hybrid users to authenticate against Entra ID using the same password they use on-premises, without requiring on-premises infrastructure to be available for every authentication.
 
@@ -28,7 +28,7 @@ Without PHS, a hybrid user's authentication against cloud services would need to
 
 With PHS, Entra ID holds enough information to validate the user's password directly. Cloud authentication becomes independent of on-premises infrastructure availability.
 
-## 🔐 What Actually Gets Synchronized
+## 🔐 What actually gets synchronized
 
 The process is specific and security-conscious:
 
@@ -36,7 +36,7 @@ The process is specific and security-conscious:
 2. Entra Connect reads the NT hash from AD (requires Domain Controller access with appropriate permissions)
 3. The NT hash is processed through a salted SHA256 HMAC algorithm
 4. The result is synchronized to Entra ID over an encrypted TLS connection
-5. In Entra ID, the value is stored as part of the user's authentication data
+5. in Entra ID, the value is stored as part of the user's authentication data
 
 Microsoft never receives the original password. The NT hash from AD is not transmitted. What's stored in Entra ID is a derived value that:
 - Cannot be reversed to recover the original password
@@ -45,7 +45,7 @@ Microsoft never receives the original password. The NT hash from AD is not trans
 
 When a user signs in to a cloud service, Entra ID applies the same hash process to the submitted password and compares it to the stored value.
 
-## 🔄 Sync Frequency and Propagation
+## 🔄 Sync frequency and propagation
 
 PHS doesn't run on the same schedule as directory object sync. Password changes propagate more aggressively:
 
@@ -55,7 +55,7 @@ PHS doesn't run on the same schedule as directory object sync. Password changes 
 
 **Ongoing delta**: Subsequent syncs capture only changed passwords, making the ongoing sync efficient.
 
-## 🛡️ Security Implications and Benefits
+## 🛡️ Security implications and benefits
 
 **Leaked credentials detection** 🔍: Because PHS stores a representation of the password in Entra ID, ID Protection can compare that representation against breach databases. When credentials matching an Entra ID account appear in breach data, the system can generate a leaked credentials detection. This specific benefit is not available with Pass-Through Authentication or Federation, because the password representation doesn't exist in Entra ID.
 
@@ -65,7 +65,7 @@ PHS doesn't run on the same schedule as directory object sync. Password changes 
 
 **Smart Lockout coordination** 🛡️: With PHS, Entra ID's Smart Lockout applies to cloud authentication. Attack patterns on cloud sign-ins are blocked without necessarily locking out the on-premises account.
 
-## ⚠️ Considerations and Trade-offs
+## ⚠️ Considerations and trade-offs
 
 **On-premises AD as the source of truth**: With PHS, compromising on-premises AD potentially affects cloud identities. A domain admin who knows the hash extraction process could theoretically stage a pass-the-hash-style attack. This is a real concern for organizations with sophisticated threat models.
 
@@ -73,7 +73,7 @@ PHS doesn't run on the same schedule as directory object sync. Password changes 
 
 **Account disable propagation**: When an on-premises account is disabled, that state syncs to Entra ID through directory sync (not PHS). The disable propagation follows the normal sync schedule (up to 30 minutes). For security incidents requiring immediate account disable, admins should also disable the account directly in Entra ID to ensure immediate cloud effect.
 
-## 💡 PHS as the Recommended Starting Point
+## 💡 PHS as the recommended starting point
 
 Microsoft recommends Password Hash Sync as the default authentication method for most hybrid organizations. It provides the best balance of simplicity, resilience, and security features (leaked credentials detection, Smart Lockout, Password Protection).
 
@@ -82,7 +82,7 @@ Pass-Through Authentication and Federation are appropriate for specific requirem
 ---
 
 💬 **When you evaluated authentication methods for your hybrid environment, what drove your decision between PHS, PTA, and Federation?** The "passwords in the cloud" concern often comes up during PHS evaluations. How did you address that concern, and did the leaked credentials detection capability factor into your decision?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

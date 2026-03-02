@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#8.2 - Entra Connect**
+📚 Part of Entra ID Glossary Series #8.2 - Entra Connect
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Entra Connect Sync is the traditional server-based sync engine installed on-premises to sync AD to Entra ID
 - It supports complex scenarios: multiple forests, custom attribute mappings, device writeback
-- Microsoft is pushing toward Entra Cloud Sync for new deployments — Connect Sync will eventually be retired
+- Microsoft is pushing toward Entra Cloud Sync for new deployments : Connect Sync will eventually be retired
 
 
 A migration project I worked on had a deceptively simple requirement: synchronize 8,000 users from on-premises Active Directory to Entra ID, preserving all existing Microsoft 365 licenses, mailbox configurations, and group memberships.
@@ -20,7 +20,7 @@ The challenge was that 400 of those users had been manually created in Entra ID 
 
 Entra Connect handled most of it. The UPN matching, the soft matching of on-premises accounts to existing cloud accounts, the attribute transformation rules. What should have been a weeks-long manual migration was completed in a week including testing. Understanding how Entra Connect works made the difference between guessing and knowing which configuration decisions to make.
 
-## 🔧 What Entra Connect Is
+## 🔧 What entra connect is
 
 Microsoft Entra Connect (formerly Azure AD Connect) is the on-premises software component that implements directory synchronization between on-premises Active Directory and Entra ID. It runs as a Windows service on a server in your on-premises environment.
 
@@ -35,7 +35,7 @@ Entra Connect is the primary synchronization tool for the majority of hybrid org
 
 It's a substantial piece of software with a significant configuration surface. The Express Settings path for a single-forest environment makes initial setup straightforward. Complex environments with multiple forests, non-standard UPN configurations, or custom attribute requirements need the Custom installation path.
 
-## 🏗️ The Sync Architecture
+## 🏗️ The sync architecture
 
 Entra Connect operates through three components:
 
@@ -47,7 +47,7 @@ Entra Connect operates through three components:
 
 The sync cycle runs every 30 minutes by default. A full sync (re-reads everything) and a delta sync (reads only changes since last sync) alternate. Delta syncs are faster; full syncs ensure nothing is missed.
 
-## 🔑 Password Hash Sync
+## 🔑 Password hash sync
 
 Password Hash Sync (PHS) is Entra Connect's mechanism for enabling cloud authentication with on-premises passwords:
 
@@ -60,7 +60,7 @@ The original password never leaves on-premises. Microsoft never sees the passwor
 
 PHS also enables the leaked credentials detection in ID Protection. Microsoft can compare the hashes in Entra ID against hashes found in breach databases. This comparison is done securely and the results inform user risk without exposing the actual credentials.
 
-## 🔄 Entra Connect vs Cloud Sync
+## 🔄 Entra connect vs cloud sync
 
 Entra Connect is the established, feature-complete synchronization tool. Microsoft has introduced a newer option:
 
@@ -72,7 +72,7 @@ Entra Connect is the established, feature-complete synchronization tool. Microso
 
 Both tools synchronize the same objects and support PHS. The choice depends on environment complexity and operational preference.
 
-## ⚠️ Entra Connect Operational Considerations
+## ⚠️ Entra connect operational considerations
 
 **Single active server**: Entra Connect should run on a single active sync server. Running multiple servers in active mode causes conflicts. A staging mode server (passive) is supported for high availability: the staging server runs sync but doesn't export to Entra ID, ready to be activated if the primary fails.
 
@@ -87,7 +87,7 @@ Both tools synchronize the same objects and support PHS. The choice depends on e
 ---
 
 💬 **What was the most challenging Entra Connect configuration decision you've made in a complex hybrid environment?** The multi-forest scenarios, the UPN mismatches between AD and existing cloud accounts, or the custom attribute mapping requirements are where Connect's complexity becomes visible. What required the most troubleshooting to get right?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

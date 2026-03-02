@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.2 - Risky Sign-In**
+📚 Part of Entra ID Glossary Series #7.2 - Risky Sign-In
 
 ---
 
 ## 🎯 TL;DR
 
 - A risky sign-in is one flagged by Identity Protection as potentially not from the legitimate user
-- Sign-in risk levels: none, low, medium, high — each can trigger different CA policy responses
+- Sign-in risk levels: none, low, medium, high : each can trigger different CA policy responses
 - Remediating risky sign-ins: require MFA (self-remediation), or admin investigation + session revocation
 
 
@@ -20,7 +20,7 @@ When they finally used the credentials, they signed in from a residential IP add
 
 Entra ID flagged it as a high-risk sign-in before the attacker finished loading their inbox. The Conditional Access policy required a password reset from a trusted device. The attacker had the old password. They couldn't satisfy the challenge. They were blocked.
 
-## 🔴 What Makes a Sign-In "Risky"
+## 🔴 What makes a sign-in "risky"
 
 A risky sign-in is an authentication event that Entra ID ID Protection has flagged as potentially not coming from the legitimate account holder. The risk assessment happens in real time, during the authentication, before the access decision is made.
 
@@ -35,7 +35,7 @@ Risk assessment evaluates signals from the specific sign-in event:
 
 No single signal triggers a risk flag in isolation. The combination and confidence level of signals determines the risk level.
 
-## 📊 The Three Risk Levels
+## 📊 The three risk levels
 
 Entra ID assigns one of three risk levels to a risky sign-in:
 
@@ -47,7 +47,7 @@ Entra ID assigns one of three risk levels to a risky sign-in:
 
 The level is Entra ID's confidence assessment. High doesn't mean certain compromise. Low doesn't mean safe. It's a risk signal, not a verdict.
 
-## 🔒 Using Sign-In Risk in Conditional Access
+## 🔒 Using sign-in risk in conditional access
 
 Sign-in risk becomes useful when Conditional Access policies are built around it:
 
@@ -60,7 +60,7 @@ This creates a graduated response: suspicious but not high-confidence events get
 
 The MFA response for medium/low risk is the design: it lets legitimate users who happen to sign in from an unusual location (traveling, new device) confirm their identity and proceed, while blocking automated attacks that can't satisfy MFA.
 
-## ⚠️ Real-Time vs Offline Detections
+## ⚠️ Real-Time vs offline detections
 
 Not all risk detections happen at sign-in time. Entra ID has two types:
 
@@ -70,7 +70,7 @@ Not all risk detections happen at sign-in time. Entra ID has two types:
 
 Offline detections don't block the specific sign-in that triggered them (it's already done), but they update the user's risk level, which affects future access decisions.
 
-## 💡 Investigating Risky Sign-Ins
+## 💡 Investigating risky sign-ins
 
 When a sign-in is flagged as risky, the Identity Protection portal shows the details: the detection type, the risk level, the IP address, the device information, and the location. The sign-in logs provide the full authentication context.
 
@@ -87,7 +87,7 @@ If confirmed as legitimate: dismiss the risk event as safe (teaches the system t
 ---
 
 💬 **Have you investigated a risky sign-in event and found it was a genuine attack rather than a false positive?** The investigation workflow differs significantly depending on the answer. What signals in the sign-in details made the call clear?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Risky sign-in policies and Identity Protection reports require **Entra ID P2**.

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.5 - OAuth 2.0 (App Integration Focus)**
+📚 Part of Entra ID Glossary Series #9.5 - OAuth 2.0 (App Integration Focus)
 
 ---
 
@@ -11,7 +11,7 @@
 
 - OAuth2 app integration uses OAuth 2.0 and optionally OIDC for modern apps that need API access
 - Register the app, configure API permissions, implement the appropriate flow (auth code, client credentials)
-- Use MSAL (Microsoft Authentication Library) for OAuth2 integration — it handles token lifecycle automatically
+- Use MSAL (Microsoft Authentication Library) for OAuth2 integration : it handles token lifecycle automatically
 
 
 A developer on my team built an internal tool that needed to read from SharePoint. His first attempt was straightforward: store a service account's username and password in the application's configuration file, use them to authenticate against SharePoint.
@@ -20,13 +20,13 @@ That approach worked. It also meant hardcoded credentials in a config file, cred
 
 The OAuth 2.0 approach replaced all of that: register the application in Entra ID, grant it specific Microsoft Graph permissions (Files.Read.All scoped to the specific SharePoint sites), use a certificate instead of a password for the application to authenticate, and let Entra ID issue access tokens that SharePoint validates. No credentials in config files. Automatic token refresh. Precise audit trail in the sign-in logs.
 
-## 🔌 OAuth 2.0 in the Application Context
+## 🔌 OAuth 2.0 in the application context
 
 At the protocol level (covered in Phase 4), OAuth 2.0 defines how authorization happens. In the application integration context, it's the practical mechanism through which applications registered in Entra ID authenticate themselves and request access to protected resources.
 
 Every integrated application that makes API calls or accesses Microsoft resources uses OAuth 2.0 to get access tokens. The specific OAuth 2.0 flow it uses depends on what kind of application it is and whether a user is involved.
 
-## 🔐 The Two Application Identity Models
+## 🔐 The two application identity models
 
 **Delegated access (on behalf of a user)** 👤: The application acts on behalf of a signed-in user. The access token represents the user's identity and permissions. The application can only do what the user themselves is allowed to do. Used by applications where a human is present and interacting: web apps, mobile apps, desktop apps.
 
@@ -36,7 +36,7 @@ Example: A project management web app that reads the signed-in user's SharePoint
 
 Example: A nightly reporting job that reads from SharePoint to generate reports. No user is signed in. The application authenticates directly with Entra ID using a certificate or client secret, receives an app-only token, and accesses the data it's been granted permission to access.
 
-## 📋 Application Registration: The OAuth 2.0 Starting Point
+## 📋 Application registration: the OAuth 2.0 starting point
 
 Before any OAuth 2.0 flow can happen, the application must be registered in Entra ID. The App Registration creates:
 
@@ -50,7 +50,7 @@ Before any OAuth 2.0 flow can happen, the application must be registered in Entr
 
 **API permissions** 📋: The specific permissions the application needs. Requesting Mail.Read and Files.Read.All requests those specific scopes. Users or admins consent to grant those permissions.
 
-## 🎯 The Client Credentials Flow (App-Only)
+## 🎯 The client credentials flow (app-only)
 
 The OAuth 2.0 flow for application access without a user:
 
@@ -63,7 +63,7 @@ The OAuth 2.0 flow for application access without a user:
 
 This flow has no user interaction, no redirect, no consent prompt. It's a direct machine-to-machine authentication. The token represents the application, not a user.
 
-## ⚠️ Application Permissions vs Delegated Permissions
+## ⚠️ Application permissions vs delegated permissions
 
 The distinction matters significantly for security:
 
@@ -76,10 +76,10 @@ Application permissions require admin consent (a tenant admin explicitly grants 
 ---
 
 💬 **What's the most over-permissioned application registration you've found in your tenant?** Application permissions that were granted broadly during development and never scoped down are common. Mail.ReadAll granted when only one mailbox needed to be read. Directory.ReadWrite.All when only a few attributes needed updating. What was the permission scope that prompted a least-privilege review?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 
 ---
 
-[← Application Proxy](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-4-application-proxy.md) | [🏠 Contents](/README) | [OIDC (App Integration Focus) →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-6-oidc-app-integration.md)
+[← Application Proxy](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-4-application-proxy.md) | [🏠 Contents](/README) | [OIDC (App Integration Focus) →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-6-OIDC-app-integration.md)

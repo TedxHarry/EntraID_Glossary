@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#10.12 - Conditional Access for Workloads**
+📚 Part of Entra ID Glossary Series #10.12 - Conditional Access for Workloads
 
 ---
 
@@ -22,7 +22,7 @@ The CI/CD pipeline authenticating with a service principal and calling Microsoft
 
 Conditional Access for workloads is the answer.
 
-## 🔐 What Conditional Access for Workloads Is
+## 🔐 What conditional access for workloads is
 
 Conditional Access for workloads is a set of Conditional Access policy capabilities targeting workload identities: service principals and managed identities. It applies the same policy enforcement model to non-human identities that user-targeted Conditional Access applies to human identities.
 
@@ -30,7 +30,7 @@ Like user Conditional Access, workload CA policies follow the assignment/conditi
 
 The key difference from user CA is what conditions are meaningful for workloads. Location (IP address range) is the primary condition for workload CA, because unlike users, workloads don't change locations, don't use devices in the traditional sense, and don't complete MFA challenges. The conditions available for workloads reflect this reality.
 
-## 📍 Location as the Primary Condition
+## 📍 Location as the primary condition
 
 For user CA, location is one of several conditions: sign-in risk, user risk, device compliance, and authentication strength are all available. For workload CA, location is the primary enforceable condition because it's what makes sense for code.
 
@@ -40,7 +40,7 @@ A managed identity for a VM in a specific Azure region should authenticate from 
 
 This is the core security value: workload identities have predictable authentication patterns. Service principals don't roam like users do. A service principal authenticating from an unexpected location is a meaningful anomaly. Workload CA makes that anomaly enforceable.
 
-## ⚙️ Policy Configuration
+## ⚙️ Policy configuration
 
 Workload CA policies are configured in the Conditional Access admin interface under the service principal assignment option. You can target:
 
@@ -52,7 +52,7 @@ The condition is an IP-based named location. Define the expected IP ranges for y
 
 The control for workload CA is typically block access when conditions aren't met, since workloads can't complete interactive controls like MFA.
 
-## 📊 Where Workload CA Adds Value
+## 📊 Where workload CA adds value
 
 **High-privilege service principals** 🔑: Service principals with Microsoft Graph application permissions to read mail, access Teams data, or manage users are high-value targets. A workload CA policy that restricts their authentication to specific IP ranges limits the blast radius if credentials are compromised.
 
@@ -60,7 +60,7 @@ The control for workload CA is typically block access when conditions aren't met
 
 **Third-party vendor integrations** 🏢: Service principals granted by external vendors should authenticate from those vendors' known IP ranges. A policy that blocks authentication from anywhere else limits what a vendor can do if their own systems are compromised.
 
-## ⚠️ The Managed Identity Consideration
+## ⚠️ The managed identity consideration
 
 Managed identities present a nuance: they authenticate via IMDS from within Azure resources, and the source IP for IMDS-based token requests is internal to Azure's network. For managed identities, IP-based workload CA may not be practical because the authentication source IPs are Azure-internal rather than public.
 
@@ -69,7 +69,7 @@ Workload CA conditions for managed identities are an evolving area. The practica
 ---
 
 💬 **Does your organization have Conditional Access policies targeting service principals, or is your CA policy coverage limited to user identities?** The gap between user CA coverage and workload CA coverage is significant in most enterprise tenants. What would be the first service principal in your environment you'd want to put a location-based restriction on?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Conditional Access for workload identities (service principals) requires **Entra ID Workload Identity Premium**.

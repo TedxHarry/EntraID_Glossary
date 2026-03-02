@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#3.2 - Sign-In**
+📚 Part of Entra ID Glossary Series #3.2 - Sign-In
 
 ---
 
@@ -20,7 +20,7 @@ Those three seconds contain a remarkable amount of work.
 
 Understanding what Entra ID actually does during a sign-in changes how you troubleshoot, how you design policies, and how you explain problems to users when something goes wrong. So let's slow it down.
 
-## 🔄 The Sign-In Flow, Step by Step
+## 🔄 The sign-in flow, step by step
 
 **Step 1: Discovery**
 You enter your email address on the sign-in page. Entra ID takes the domain part (everything after the @) and determines where to send you for authentication. For a managed domain (password hashes in Entra ID), you stay on the Microsoft sign-in page. For a federated domain (on-premises AD FS or a third-party identity provider), you get redirected to that system.
@@ -55,7 +55,7 @@ The application receives the token, validates it (checking that it was issued by
 
 Total elapsed time for all six steps: typically under two seconds.
 
-## 📋 Sign-In Logs: Your Best Troubleshooting Tool
+## 📋 Sign-In logs: your best troubleshooting tool
 
 Every sign-in generates a log entry in Entra ID. Every single one. Successful or failed, interactive or non-interactive, human or application. These logs are your first stop for any authentication problem.
 
@@ -72,7 +72,7 @@ I've resolved authentication issues in minutes that other teams spent hours on, 
 
 Go to the Entra admin center, find Identity > Monitoring > Sign-in logs. Filter by the user's UPN and the approximate time of the issue. Read what it says. Most of the answer is right there.
 
-## 🚪 Interactive vs Non-Interactive Sign-Ins
+## 🚪 Interactive vs non-interactive sign-ins
 
 Two categories you'll see in the logs, and they matter for understanding what you're looking at.
 
@@ -83,7 +83,7 @@ Two categories you'll see in the logs, and they matter for understanding what yo
 ---
 
 💬 **Have you ever solved a sign-in issue by reading the logs directly?** What did they reveal that wasn't obvious from the user's description? Sign-in logs have a way of telling a very different story than "it just doesn't work."
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#2.6 - Directory Role**
+📚 Part of Entra ID Glossary Series #2.6 - Directory Role
 
 ---
 
@@ -22,7 +22,7 @@ Nobody knew it had gotten this bad. Nobody had looked.
 
 That audit is what taught me to actually understand directory roles, not just what they are, but why the difference between them matters enormously for security.
 
-## 📌 What a Directory Role Is
+## 📌 What a directory role is
 
 A directory role in Entra ID is a collection of permissions that grants administrative capabilities over the Entra ID tenant and related Microsoft services. Assign a directory role to someone, and they can perform specific administrative actions, create users, reset passwords, manage Conditional Access policies, assign licenses, read security alerts, whatever the specific role allows.
 
@@ -30,7 +30,7 @@ Entra ID has over 100 built-in directory roles. Each one is scoped to a particul
 
 These are distinct jobs. They map to distinct roles because not everyone who needs to do one of them should be able to do all of them.
 
-## 📌 Directory Roles Are Not Azure RBAC Roles
+## 📌 Directory roles are not Azure RBAC roles
 
 This distinction trips up a lot of beginners, so let's settle it.
 
@@ -40,7 +40,7 @@ This distinction trips up a lot of beginners, so let's settle it.
 
 A user can be a Global Administrator in Entra ID with zero access to any Azure subscription. A user can be Owner of an Azure subscription with no directory role at all. The two systems are separate. Confusing them leads to over-permissioning people in one plane thinking it'll fix a problem in the other.
 
-## 📌 Scope: Tenant-Wide vs. Administrative Units
+## 📌 Scope: tenant-wide vs. administrative units
 
 By default, directory role assignments are tenant-wide. A User Administrator can manage *all* users in the organization. For a 50-person company, that's fine. For a 50,000-person global enterprise with regional IT teams, it's a problem, you don't want the IT helpdesk in Germany resetting passwords for executives in Tokyo.
 
@@ -50,7 +50,7 @@ The EMEA helpdesk gets the Helpdesk Administrator role scoped to the EMEA Admini
 
 This is how you give regional teams the access they need without turning them all into tenant-wide administrators.
 
-## 📋 The Three Roles You'll See Misused Most
+## 📋 The three roles you'll see misused most
 
 **Global Administrator**, full control over everything. The most dangerous role in the tenant. Microsoft recommends fewer than 5 Global Admins. In practice I see 20, 30, sometimes more. Every extra Global Admin is a potential breach vector with unlimited blast radius.
 
@@ -58,7 +58,7 @@ This is how you give regional teams the access they need without turning them al
 
 **Application Administrator**, can create and manage app registrations and enterprise applications, including granting admin consent to API permissions. Often assigned when someone just needs to "manage apps," without realizing it includes granting permissions that could expose tenant data.
 
-## 📌 The Right Approach
+## 📌 The right approach
 
 Before assigning any directory role, two questions:
 
@@ -72,7 +72,7 @@ Global Admin should be a last resort for break-glass scenarios and a small numbe
 ---
 
 
-### 🔧 Quick Reference: PowerShell
+### 🔧 Quick reference: PowerShell
 
 ```powershell
 # List all directory role assignments
@@ -95,7 +95,7 @@ Get-MgUserMemberOf -UserId "user@contoso.com" | Where-Object { $_.AdditionalProp
 ---
 
 💬 **Question for you:** When you inherited or audited an Entra ID tenant, what did the role assignments look like? Were there surprises? I've yet to run an audit where everything was clean on the first pass.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

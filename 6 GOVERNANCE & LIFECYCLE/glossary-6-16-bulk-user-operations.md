@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.16 - Bulk User Operations**
+📚 Part of Entra ID Glossary Series #6.16 - Bulk User Operations
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Bulk operations create, update, or delete multiple users at once via CSV upload or PowerShell/Graph API
 - CSV bulk upload supports up to 40,000 users; PowerShell/Graph supports larger batches
-- Always test bulk operations on a small group first — mistakes affect many users simultaneously
+- Always test bulk operations on a small group first : mistakes affect many users simultaneously
 
 
 A company acquired a smaller firm. 340 new employees needed Entra ID accounts, licenses, and initial group memberships created before the integration date. Doing this one at a time through the Entra admin portal would have taken two days of solid clicking.
@@ -20,7 +20,7 @@ The IT team exported the HR data as a CSV, transformed it into the required form
 
 Bulk user operations exist because identity administration at scale requires handling multiple objects simultaneously, not one at a time.
 
-## 📋 What Bulk Operations Cover
+## 📋 What bulk operations cover
 
 Entra ID supports bulk operations across the main administrative tasks:
 
@@ -34,7 +34,7 @@ Entra ID supports bulk operations across the main administrative tasks:
 
 **Bulk license assignment** 📄: Assign or remove licenses for multiple users simultaneously. This is often done through group-based licensing rather than individual bulk operations, but direct bulk assignment is available.
 
-## 🔧 The CSV Format
+## 🔧 The CSV format
 
 Bulk create via CSV requires specific column headers and formatting. The required fields:
 
@@ -49,7 +49,7 @@ Optional fields include department, job title, usage location, manager, phone nu
 
 The most common bulk create failure: invalid characters in the UPN, missing required fields, or usage location codes that don't match Entra ID's accepted values.
 
-## ⚡ PowerShell and Graph API for Scale
+## ⚡ PowerShell and graph API for scale
 
 The portal CSV approach works for hundreds of accounts. For thousands of accounts, or for operations that need to run regularly (weekly new hire batches from HR), PowerShell or the Microsoft Graph API is more appropriate.
 
@@ -68,7 +68,7 @@ $users | ForEach-Object {
 
 **Graph API batch requests**: The Graph API supports batch requests that combine up to 20 individual operations into a single HTTP call. For large-scale user creation, batching reduces the API call overhead significantly.
 
-## ⚠️ What to Verify Before and After
+## ⚠️ What to verify before and after
 
 Before running a bulk operation, especially bulk delete or bulk attribute update:
 
@@ -81,7 +81,7 @@ After running:
 - ✅ Spot-check a sample of the affected accounts
 - ✅ Confirm downstream effects (provisioning, group membership, license assignment) if the operation triggers them
 
-## 💡 Group-Based Licensing vs Bulk License Assignment
+## 💡 Group-Based licensing vs bulk license assignment
 
 For ongoing license management, group-based licensing is more maintainable than bulk operations. Users added to a licensed group automatically receive the assigned licenses. Users removed from the group lose them.
 
@@ -90,7 +90,7 @@ Bulk license assignment is appropriate for initial migrations, one-time events, 
 ---
 
 💬 **What's the largest bulk user operation you've run, and what validation process did you use before executing it?** The combination of "this affects hundreds of accounts" and "if I get the CSV wrong" creates a specific kind of pre-execution anxiety. What's your checklist?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

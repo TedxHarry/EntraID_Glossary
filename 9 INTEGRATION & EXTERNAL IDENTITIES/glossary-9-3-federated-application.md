@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.3 - Federated Application**
+📚 Part of Entra ID Glossary Series #9.3 - Federated Application
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Federated applications use SAML or WS-Federation and redirect authentication to Entra ID as the IdP
 - Entra ID is the Identity Provider (IdP); the application is the Service Provider (SP)
-- Federated SSO passes a signed SAML assertion to the app — no password exchange between user and app
+- Federated SSO passes a signed SAML assertion to the app : no password exchange between user and app
 
 
 An organization integrated their CRM system with Entra ID using SAML federation. The CRM had been running for eight years with its own internal user database: 6,000 user accounts, each with their own CRM-specific password that users had to manage separately.
@@ -22,7 +22,7 @@ The IT team deleted 6,000 CRM password records. 6,000 accounts that couldn't be 
 
 That's what a federated application actually means for operations.
 
-## 🤝 What a Federated Application Is
+## 🤝 What a federated application is
 
 A federated application is an application configured to delegate user authentication to an external identity provider, in this case Entra ID, using a federation protocol (SAML 2.0 or OpenID Connect). Instead of maintaining its own authentication system, the application trusts Entra ID to verify user identity and passes responsibility for the sign-in flow to Entra ID.
 
@@ -30,7 +30,7 @@ The application accepts a security token from Entra ID as proof of authenticatio
 
 "Federated" specifically means the application and Entra ID have established a trust relationship. The application trusts Entra ID's assertions. Entra ID knows what claims to issue for this application.
 
-## 🔑 SAML 2.0 Federation
+## 🔑 SAML 2.0 federation
 
 SAML (Security Assertion Markup Language) 2.0 is the predominant federation protocol for enterprise SaaS applications. The integration flow:
 
@@ -49,7 +49,7 @@ SAML (Security Assertion Markup Language) 2.0 is the predominant federation prot
 
 SAML configuration requires exchanging metadata between Entra ID and the application: Entra ID's signing certificate (so the application can validate assertions) and the application's ACS URL (where Entra ID sends assertions).
 
-## 🔐 OIDC/OAuth 2.0 Federation
+## 🔐 OIDC/OAuth 2.0 federation
 
 Modern applications more commonly use OpenID Connect (OIDC) for federation, which is built on OAuth 2.0. The flow is token-based rather than XML-assertion-based:
 
@@ -62,7 +62,7 @@ Modern applications more commonly use OpenID Connect (OIDC) for federation, whic
 
 OIDC is generally simpler to implement for new applications and is the recommended path for custom application development.
 
-## 📋 Attribute Claims and Claim Mapping
+## 📋 Attribute claims and claim mapping
 
 A federated application receives claims about the user from Entra ID. Claims are the information in the token: the user's name, email address, object ID, group memberships, roles, and any custom attributes the application needs.
 
@@ -72,7 +72,7 @@ A federated application receives claims about the user from Entra ID. Claims are
 
 **Custom attribute mapping** 🔧: Extension attributes, custom directory attributes, or transformed values can be included in claims. If the application needs a value that doesn't exist as a standard Entra ID attribute, extension attributes can hold it.
 
-## ⚠️ What Federation Doesn't Eliminate
+## ⚠️ What federation doesn't eliminate
 
 Federation moves authentication to Entra ID. It doesn't eliminate all identity management in the application:
 
@@ -85,7 +85,7 @@ Federation moves authentication to Entra ID. It doesn't eliminate all identity m
 ---
 
 💬 **What SAML attribute mapping issue took the longest to debug in your environment?** The claim type mismatch where the application expects `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress` but Entra ID is sending `email` is a classic one. What was the configuration issue that required reading the SAML trace to find?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

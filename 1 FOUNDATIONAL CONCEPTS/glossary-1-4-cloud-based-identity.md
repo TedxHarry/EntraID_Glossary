@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#1.4 - Cloud-Based Identity**
+📚 Part of Entra ID Glossary Series #1.4 - Cloud-Based Identity
 
 ---
 
@@ -18,7 +18,7 @@ I remember the exact moment "cloud-based" stopped being a buzzword for me and be
 
 Six months later, that same company started moving to Entra ID. The first time I had to troubleshoot an identity issue from home, on my laptop, at 2 PM on a Tuesday, without a VPN, I finally understood what "cloud-based" meant in practice: *that server room moment is no longer my problem.*
 
-## 📌 What "Cloud-Based" Actually Means
+## 📌 What "cloud-based" actually means
 
 When we say Entra ID is cloud-based, we mean Microsoft runs the infrastructure. The servers, the databases, the replication between data centers, the hardware failures, the patching, the backups, the disaster recovery, Microsoft handles all of it.
 
@@ -28,7 +28,7 @@ Think of the difference between owning a car and using a taxi service. With a ca
 
 On-premises Active Directory is the car. Entra ID is the taxi. You're still in charge of *where you're going*, your users, your policies, your security decisions. But you're not maintaining the engine.
 
-## 🏗️ The Infrastructure Shift, Practically Speaking
+## 🏗️ The infrastructure shift, practically speaking
 
 With on-premises AD, your identity infrastructure lived on domain controllers in your offices or data centers. Those servers needed to be:
 
@@ -43,7 +43,7 @@ When an office loses internet, the local domain controller still handles authent
 
 With Entra ID, Microsoft maintains 99.99% uptime SLA across geographically distributed data centers. Your users authenticate against Microsoft's infrastructure, not your own. If your internet connection goes down, yes, that's a problem. But you're not racing to restore a domain controller at midnight.
 
-## 🛡️ What Changes in the Security Model
+## 🛡️ What changes in the security model
 
 This is where beginners sometimes make assumptions that get them in trouble.
 
@@ -53,7 +53,7 @@ Cloud-based identity assumes the opposite. Entra ID doesn't know or care whether
 
 This shift, from "trust the network" to "verify every request", is the foundation of Zero Trust. Cloud-based identity doesn't just *support* Zero Trust, it more or less *requires* thinking this way.
 
-## 📌 Scalability and What That Means for You
+## 📌 Scalability and what that means for you
 
 On-premises identity scales with hardware. Need to support more users? Buy more servers, scale your domain controllers, plan capacity. That takes months.
 
@@ -61,7 +61,7 @@ Entra ID scales automatically. When a company I worked with was acquired and nee
 
 The cost model shifts too. You're not buying hardware. You're paying for licenses, per user, per month. Costs become predictable. Unused capacity isn't sitting in a rack consuming electricity.
 
-## 📖 The Real Migration Challenges
+## 📖 The real migration challenges
 
 I'll be honest here because the "cloud is easy" narrative glosses over real friction.
 
@@ -77,7 +77,7 @@ Cloud-based identity isn't universally easier. It's a different kind of work, wi
 
 
 **Tell me about your journey:** Is your organization cloud-only with Entra ID, still on-premises with AD, or somewhere in between? What's been the biggest adjustment in moving identity to the cloud, technical or cultural?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

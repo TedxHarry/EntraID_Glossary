@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.19 - Identity Verification**
+📚 Part of Entra ID Glossary Series #6.19 - Identity Verification
 
 ---
 
@@ -22,7 +22,7 @@ Later, a review found that the same employee ID had been used in a phishing atte
 
 That's the gap identity verification tries to close: the difference between checking that someone knows the right answers and confirming they are actually who they claim to be.
 
-## 🪪 What Identity Verification Means
+## 🪪 What identity verification means
 
 Identity verification is the process of confirming that a digital identity corresponds to a real, specific person in the way claimed. Authentication verifies credentials. Identity verification goes further: it validates that the person presenting those credentials is actually the person the account represents.
 
@@ -36,7 +36,7 @@ This distinction matters most at specific high-stakes moments:
 
 **Guest invitation**: Before granting a partner or vendor access to organizational resources, verify their identity matches their claimed affiliation.
 
-## 🔐 Microsoft Entra Verified ID
+## 🔐 Microsoft entra verified ID
 
 Microsoft Entra Verified ID is a decentralized identity solution that enables organizations to issue and verify cryptographically signed digital credentials.
 
@@ -50,7 +50,7 @@ A university credential proves the holder has a degree from that institution. An
 
 The credential stays with the person. It's not stored centrally by the verifier. The privacy model is person-held: the individual controls when and to whom they present their credentials.
 
-## 📋 Identity Verification Use Cases in Entra ID
+## 📋 Identity verification use cases in Entra ID
 
 **High-assurance access provisioning** 🔒: Before an employee is granted access to systems handling financial data, sensitive IP, or regulated information, require them to complete an identity verification step confirming they are who the HR record says they are.
 
@@ -60,7 +60,7 @@ The credential stays with the person. It's not stored centrally by the verifier.
 
 **Helpdesk verification** 📞: When a user calls for support requiring sensitive account changes, the helpdesk can request a verified credential presentation via Authenticator before proceeding, rather than relying on knowledge-based verification.
 
-## ⚠️ The Weak Verification Problem
+## ⚠️ The weak verification problem
 
 Most organizations use weak identity verification by default because it's convenient:
 
@@ -70,7 +70,7 @@ Most organizations use weak identity verification by default because it's conven
 
 The risk tolerance for weak verification depends on what's being verified. For a general password reset, knowledge-based verification may be acceptable. For granting permanent Global Administrator access, it should not be.
 
-## 💡 Matching Verification Strength to Access Sensitivity
+## 💡 Matching verification strength to access sensitivity
 
 Verification requirements should scale with what the verified identity will access:
 
@@ -83,7 +83,7 @@ Verification requirements should scale with what the verified identity will acce
 ---
 
 💬 **What does your organization use to verify someone's identity before granting access or recovering an account?** The gap between "we ask them their employee ID" and "we require cryptographic proof of identity" is wide, and most organizations are closer to the former. What's the highest-assurance verification step you currently use?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

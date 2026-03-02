@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.7 - Endpoint Manager**
+📚 Part of Entra ID Glossary Series #5.7 - Endpoint Manager
 
 ---
 
@@ -20,7 +20,7 @@ Systems Center Configuration Manager. SCCM. MEM. MECM. Microsoft Endpoint Manage
 
 Understanding what Endpoint Manager actually is, and how it relates to Intune and Configuration Manager, clears up most of the confusion.
 
-## 🗂️ What Microsoft Endpoint Manager Was
+## 🗂️ What microsoft endpoint manager was
 
 Microsoft Endpoint Manager (MEM) was the brand name Microsoft used from 2019 to 2023 to describe a unified management experience combining:
 
@@ -32,7 +32,7 @@ The MEM brand presented these as a single platform accessible through a unified 
 
 In 2023, Microsoft simplified the naming. The brand became **Microsoft Intune** again, and the admin center became the **Microsoft Intune admin center**. Configuration Manager (MECM) remains a separate product under the Microsoft Intune family of products but keeps its own identity.
 
-## ⚙️ What the Admin Center Manages
+## ⚙️ What the admin center manages
 
 The Intune admin center is the management console for:
 
@@ -46,7 +46,7 @@ The Intune admin center is the management console for:
 
 **Tenant administration**: Connector setup for Apple DEP/ABM, Google Enterprise enrollment, on-premises exchange connectors, and Configuration Manager co-management configuration.
 
-## 🔗 Co-management: When You Need Both
+## 🔗 Co-management: when you need both
 
 Many large enterprises can't switch overnight from Configuration Manager to cloud-only Intune management. They have years of investment in Configuration Manager policies, software deployments, and workflows.
 
@@ -61,7 +61,7 @@ Each workload is a slider: Configuration Manager or Intune. You can move workloa
 
 The compliance workload is almost always the first to move to Intune, because Conditional Access device compliance requires Intune. You can't have Conditional Access enforce device compliance if Configuration Manager is reporting compliance instead of Intune.
 
-## 📊 Endpoint Manager and Entra ID Together
+## 📊 Endpoint manager and entra ID together
 
 The combination of Intune (endpoint management) and Entra ID (identity management) is the foundation of Microsoft's Zero Trust device approach:
 
@@ -72,7 +72,7 @@ The combination of Intune (endpoint management) and Entra ID (identity managemen
 
 Each piece is meaningful alone. Together, they form a continuous loop: device authenticates, compliance is checked, access is granted or blocked, threats are detected, device risk is updated, access is re-evaluated.
 
-## 💡 Finding Your Way Around
+## 💡 Finding your way around
 
 If you're new to Intune admin center, the navigation can feel overwhelming. Start with three sections:
 
@@ -85,7 +85,7 @@ Those three cover the daily operational tasks for most organizations.
 ---
 
 💬 **Is your organization using Intune alone, Configuration Manager with co-management, or still fully on-premises management?** The migration from on-premises SCCM to cloud Intune management has been a multi-year journey for most large enterprises. What has been the biggest obstacle in your environment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#10.1 - Workload Identity**
+📚 Part of Entra ID Glossary Series #10.1 - Workload Identity
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Workload identities are non-human identities for apps, services, scripts, and automated processes
 - They authenticate using client secrets, certificates, or federated credentials (no MFA by default)
-- Workload identities are a top attack target — rotate credentials regularly and prefer managed identities
+- Workload identities are a top attack target : rotate credentials regularly and prefer managed identities
 
 
 A security engineer ran an audit of the Entra ID tenant and found 847 service principals. She knew about maybe 200 of them. The rest had been created over years by developers, DevOps pipelines, vendors, and automated processes. Some had owner accounts that no longer existed. Some had secrets that were years past their stated rotation policy. Several had permissions scoped to entire subscriptions.
@@ -20,11 +20,11 @@ Not one of them was a person.
 
 This is the workload identity problem. The non-human identities in your environment often outnumber the human ones. They're harder to govern. They have no natural lifecycle tied to an employment status. They don't have a manager to review their access. And when a secret leaks, it doesn't trigger the same response that a compromised user account would.
 
-## 🤖 What Workload Identity Is
+## 🤖 What workload identity is
 
 Workload identity is the category of identity used by software: applications, services, scripts, containers, pipelines, and automated processes. These identities exist so that code can authenticate to other systems, just as users authenticate to applications.
 
-In Entra ID, workload identities include:
+in Entra ID, workload identities include:
 
 **Applications and service principals** 🔷: When you register an application in Entra ID, it gets an app registration (the application object) and, in each tenant where it's used, a service principal (the local representation of that app). The service principal is what actually authenticates. Applications authenticate with client secrets (passwords) or certificates.
 
@@ -32,7 +32,7 @@ In Entra ID, workload identities include:
 
 **Workload federation identities** 🔗: Non-Azure workloads (GitHub Actions, GitLab, Kubernetes service accounts) that are granted access to Entra ID-protected resources through OIDC token exchange, without storing Azure credentials in those external systems.
 
-## 🔐 Why Workload Identity Is Hard to Govern
+## 🔐 Why workload identity is hard to govern
 
 Human identities have natural governance anchors. A new employee triggers provisioning. A departing employee triggers deprovisioning. A manager can certify their reports' access in an access review. Conditional Access can require MFA, a compliant device, a known location.
 
@@ -46,13 +46,13 @@ Workload identities have none of that.
 
 **Orphaned identities** 👻: Service principals whose owning applications no longer exist. App registrations whose original developers have left the organization. Managed identities for deleted resources. These identities persist because nothing and no one is responsible for cleaning them up.
 
-## 📊 The Scale Problem
+## 📊 The scale problem
 
 Enterprise environments accumulate workload identities faster than user identities. Every SaaS application granted API access creates a service principal. Every Azure DevOps pipeline creates an identity. Every ARM template deployment may create managed identities. Every vendor integration adds an app registration.
 
 The 847 service principals in the opening scenario isn't unusual for an enterprise that's been in Azure for five or more years. Organizations that have counted carefully often find more non-human identities than human ones.
 
-## 🔧 Governing Workload Identities
+## 🔧 Governing workload identities
 
 Microsoft Entra Workload ID (the product layer on top of the base workload identity capabilities) adds governance features:
 
@@ -65,7 +65,7 @@ Microsoft Entra Workload ID (the product layer on top of the base workload ident
 ---
 
 💬 **How many workload identities does your organization have in Entra ID, and how many of them are actively owned and governed?** The gap between "service principals that exist" and "service principals that someone is responsible for" is one of the hardest problems in enterprise identity security. What's your approach to workload identity governance?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

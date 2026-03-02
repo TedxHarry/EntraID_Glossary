@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.4 - Application Proxy**
+📚 Part of Entra ID Glossary Series #9.4 - Application Proxy
 
 ---
 
 ## 🎯 TL;DR
 
 - Application Proxy publishes on-premises web apps to the internet without opening firewall ports
-- Outbound-only connector agents in the DMZ handle traffic — no inbound firewall rules needed
+- Outbound-only connector agents in the DMZ handle traffic : no inbound firewall rules needed
 - Users authenticate via Entra ID first; only authenticated sessions reach the internal application
 
 
@@ -22,7 +22,7 @@ VPN created its own problems: performance, licensing costs, the help desk burden
 
 Application Proxy published all 12 applications externally with Entra ID authentication, no VPN required. Each application got its own external URL. Users signed in with corporate credentials. Access was scoped to the specific application, not the network. The VPN was still there for users who needed broader network access, but most employees never needed it for application access anymore.
 
-## 🌐 What Application Proxy Is
+## 🌐 What application proxy is
 
 Microsoft Entra Application Proxy is a feature that securely publishes on-premises web applications to external users without requiring those users to connect to the corporate VPN or have direct network access to the on-premises environment.
 
@@ -30,7 +30,7 @@ It works through outbound connections from on-premises Application Proxy connect
 
 The on-premises application doesn't need any firewall changes. No inbound ports need to be opened. The application doesn't know it's being accessed externally; from its perspective, requests come from the connector on the internal network.
 
-## 🏗️ The Architecture
+## 🏗️ The architecture
 
 **External URL** 🌐: Each application gets an external URL in the format `appname.msappproxy.net` or a custom domain. This is the URL users navigate to from outside the network.
 
@@ -47,7 +47,7 @@ The on-premises application doesn't need any firewall changes. No inbound ports 
 
 Authentication happens at Entra ID before the user reaches the application. Conditional Access policies apply. Only authenticated, policy-compliant users reach the on-premises application.
 
-## 🔐 SSO Options for Published Applications
+## 🔐 SSO options for published applications
 
 Application Proxy supports multiple SSO mechanisms to provide seamless sign-in to applications that expect credentials:
 
@@ -59,7 +59,7 @@ Application Proxy supports multiple SSO mechanisms to provide seamless sign-in t
 
 **Password vaulting** 🔑: For applications with username/password fields that don't support modern auth. Entra ID stores and auto-fills credentials.
 
-## 🛡️ Security Benefits vs VPN
+## 🛡️ Security benefits vs VPN
 
 **Least privilege access** 🎯: VPN gives network access. Application Proxy gives application access. Users who need the expense system get access to the expense system URL, not the corporate network.
 
@@ -69,7 +69,7 @@ Application Proxy supports multiple SSO mechanisms to provide seamless sign-in t
 
 **Sign-in visibility** 👀: All access attempts appear in Entra ID sign-in logs. Who accessed the application, from where, at what time, with what policy result.
 
-## ⚠️ Limitations and Considerations
+## ⚠️ Limitations and considerations
 
 **Web applications only** 🌐: Application Proxy publishes HTTP/HTTPS web applications. It doesn't support non-web protocols (RDP, SSH, thick client applications that aren't web-based).
 
@@ -80,7 +80,7 @@ Application Proxy supports multiple SSO mechanisms to provide seamless sign-in t
 ---
 
 💬 **Have you used Application Proxy to eliminate VPN requirements for specific applications?** The "we replaced VPN for most users with Application Proxy" outcome is compelling, but the application compatibility testing is where the work is. What was the application that required the most troubleshooting to publish correctly?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

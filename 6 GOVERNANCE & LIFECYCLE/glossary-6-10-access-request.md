@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.10 - Access Request**
+📚 Part of Entra ID Glossary Series #6.10 - Access Request
 
 ---
 
@@ -22,7 +22,7 @@ The bottleneck wasn't the approval. It was the request: not knowing where to go,
 
 Access request is the process users follow to formally request access to resources they don't currently have. Getting this right is as much about user experience as it is about governance.
 
-## 📬 What an Access Request Is
+## 📬 What an access request is
 
 An access request is a formal expression of need: "I need access to this resource, for this reason, for this long." It initiates an approval and provisioning workflow and creates an auditable record of why access was granted.
 
@@ -30,7 +30,7 @@ Access requests exist because not all access should be available to everyone aut
 
 Without a formal request process, access is granted informally: "Can you just add me to the group?" "Can you ask the SharePoint admin to give me access?" These ad-hoc requests bypass the approval record and make audit evidence impossible to produce.
 
-## 🖥️ The My Access Portal
+## 🖥️ The my access portal
 
 In Microsoft Entra ID Governance, users submit access requests through the My Access portal at `myaccess.microsoft.com`. This portal shows:
 
@@ -40,7 +40,7 @@ In Microsoft Entra ID Governance, users submit access requests through the My Ac
 
 The user browses available packages, selects what they need, writes a business justification, and submits. They receive a confirmation. Approvers receive notifications. Status updates arrive by email as the request moves through the workflow.
 
-## 📋 What Makes a Good Access Request Process
+## 📋 What makes a good access request process
 
 **Discoverability** 🔍: Users can only request access they know exists. Access packages need descriptive names and descriptions that match how users think about their work, not how IT thinks about the resources. "Finance Team SharePoint and Distribution List" is more discoverable than "FIN-SP-DIST-ACCESS-GRP."
 
@@ -50,7 +50,7 @@ The user browses available packages, selects what they need, writes a business j
 
 **Clear expiration** ⏱️: Requests for time-limited access (a project, a contract engagement, a temporary coverage role) should specify an end date. This prevents indefinite access accumulation and removes the need for a later review to clean up.
 
-## 🔄 What Happens After the Request
+## 🔄 What happens after the request
 
 After submission:
 
@@ -63,7 +63,7 @@ After submission:
 
 If an approver doesn't respond within the configured window, the policy's timeout behavior applies: the request can be automatically approved, automatically denied, or escalated to an alternate approver.
 
-## ⚠️ Requests That Fall Outside Packages
+## ⚠️ Requests that fall outside packages
 
 Not every access need fits into a pre-configured package. When a user needs something not available through My Access, they still need a path to request it. The options:
 
@@ -76,7 +76,7 @@ The goal isn't to eliminate all IT involvement in access requests. It's to autom
 ---
 
 💬 **How do users in your organization currently request access to resources they don't have?** The mix of "send IT a ticket," "ask your manager to add you to the group," and "message the resource owner on Teams" is the standard starting point for most organizations. What's been the biggest driver toward a more structured request process?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

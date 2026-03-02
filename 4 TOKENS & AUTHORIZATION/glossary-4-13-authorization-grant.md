@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.13 - Authorization Grant**
+📚 Part of Entra ID Glossary Series #4.13 - Authorization Grant
 
 ---
 
@@ -18,13 +18,13 @@ A developer asked me which OAuth flow they should use for their new application.
 
 The answers determine the grant type. The grant type determines the security properties. Picking the wrong one isn't just a technical mistake; it has security consequences that persist as long as the application runs.
 
-## 🗺️ What an Authorization Grant Is
+## 🗺️ What an authorization grant is
 
 An authorization grant is a credential representing the resource owner's permission for an application to access protected resources. Practically speaking, it's the mechanism the application uses to prove to Entra ID that it's entitled to receive tokens.
 
 OAuth 2.0 defines multiple grant types, each designed for a different application scenario. Entra ID supports the current recommended ones and retains limited support for deprecated ones for backward compatibility.
 
-## 🔑 The Four Grant Types
+## 🔑 The four grant types
 
 **Authorization Code Grant** is the one you reach for first when a user is involved. The user authenticates at the authorization endpoint, the app receives a short-lived, single-use code, and exchanges that code server-side for tokens. PKCE (Proof Key for Code Exchange) extends this flow to work securely for public clients like mobile apps and single-page applications where client secrets can't be kept confidential. Microsoft recommends Authorization Code with PKCE for all user-facing applications today.
 
@@ -40,7 +40,7 @@ The security problem: the application sees the user's password in plaintext. MFA
 
 **Implicit Grant** was designed for browser-based apps before PKCE existed, returning tokens directly in the URL fragment. Entra ID still supports it for backward compatibility but it's deprecated. The replacement is Authorization Code with PKCE, which achieves the same goal with substantially better security.
 
-## 🏗️ How to Choose
+## 🏗️ How to choose
 
 A practical decision tree:
 
@@ -52,7 +52,7 @@ A practical decision tree:
 **Is there legacy code using ROPC or Implicit?**
 - Plan a migration to Authorization Code with PKCE
 
-## 🔍 What the Token Represents
+## 🔍 What the token represents
 
 The client credentials vs authorization code distinction matters most when thinking about what the access token represents and who appears in audit logs.
 
@@ -62,7 +62,7 @@ Authorization code tokens represent the user (with the application acting on the
 
 I've reviewed applications using client credentials when they should have been using authorization code. The result: audit logs showed application identity where user identity was needed. Compliance reviewers couldn't determine which humans had performed which actions. The fix required rearchitecting the authentication model.
 
-## ⚡ Why This Matters for Background Processing
+## ⚡ Why this matters for background processing
 
 The reverse also happens: applications using delegated (user) credentials for background jobs, which breaks when no user is signed in or when the token expires mid-job and no one is available to re-authenticate interactively. Background services that process data must use client credentials so they can authenticate independently.
 
@@ -71,7 +71,7 @@ The grant type determines what the token represents, who is accountable in audit
 ---
 
 💬 **Have you inherited an application using the wrong OAuth grant type and had to migrate it?** ROPC to Authorization Code is particularly painful in older enterprise apps. What drove the decision to migrate and how did you handle the transition?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

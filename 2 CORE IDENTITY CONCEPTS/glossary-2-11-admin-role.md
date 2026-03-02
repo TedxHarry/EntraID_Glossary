@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#2.11 - Admin Role**
+📚 Part of Entra ID Glossary Series #2.11 - Admin Role
 
 ---
 
 ## 🎯 TL;DR
 
-- Admin roles define what administrators can manage in Entra ID — from Global Admin (everything) to Helpdesk (limited)
+- Admin roles define what administrators can manage in Entra ID : from Global Admin (everything) to Helpdesk (limited)
 - Always use the least-privileged role for each task; Global Administrator should be used sparingly
 - Privileged Identity Management (PIM) provides just-in-time, time-bound, and approval-based admin role access
 
@@ -22,7 +22,7 @@ That shared mailbox had the keys to the entire tenant. Anyone who'd ever worked 
 
 Nobody had intended this. It had just accumulated over years, one assignment at a time.
 
-## 📌 What Admin Roles Are
+## 📌 What admin roles are
 
 Admin roles in Entra ID are directory roles that grant administrative capabilities over the tenant, the ability to manage identities, policies, applications, and security settings. Every organization has at least a few people who need some form of admin access. The question isn't whether admin roles exist, it's how carefully they're assigned and protected.
 
@@ -30,7 +30,7 @@ At the top sits **Global Administrator**, unrestricted access to everything in t
 
 That guidance exists for a reason. The eleven-admin tenant I described is unfortunately not unusual.
 
-## 📌 The Specialized Roles That Should Replace Global Admin for Most Tasks
+## 📌 The specialized roles that should replace global admin for most tasks
 
 Before handing anyone Global Administrator, run through this list. There's almost always a specific role that covers exactly what they need.
 
@@ -50,7 +50,7 @@ Before handing anyone Global Administrator, run through this list. There's almos
 
 Matching the role to the actual job is the work. It takes more thought than "just give them Global Admin," but it produces a tenant you can actually audit and defend.
 
-## 📌 Permanent vs. Eligible: PIM Changes Everything
+## 📌 Permanent vs. eligible: PIM changes everything
 
 Permanent role assignment means the role is active 24 hours a day, 7 days a week. The person has admin powers all the time, whether they need them or not. Most admin accounts have permanent assignments by default.
 
@@ -60,7 +60,7 @@ The practical benefit: an admin's account isn't permanently holding Global Admin
 
 PIM requires Entra ID P2 licensing, but for any organization that takes privileged access seriously, it's the standard.
 
-## 📌 Break-Glass Accounts: The Exception That Proves the Rule
+## 📌 Break-Glass accounts: the exception that proves the rule
 
 After you've reduced Global Admins, scoped roles appropriately, and implemented PIM, you need exactly two accounts that are permanently Global Admin and excluded from all Conditional Access policies: break-glass accounts.
 
@@ -79,7 +79,7 @@ The right number of Global Admins for most organizations is two break-glass acco
 ---
 
 **Check this now:** How many Global Administrators does your tenant have? Go to Entra admin center > Roles > Global Administrator > Assignments. If the number is higher than 5, you have work to do. What did you find?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

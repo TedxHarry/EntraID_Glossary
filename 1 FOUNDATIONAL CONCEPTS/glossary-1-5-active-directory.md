@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#1.5 - Active Directory**
+📚 Part of Entra ID Glossary Series #1.5 - Active Directory
 
 ---
 
 ## 🎯 TL;DR
 
 - Active Directory (AD DS) is Microsoft's on-premises identity system using Kerberos and LDAP for Windows networks
-- It uses domains, forests, and domain controllers — concepts that don't map directly to Entra ID
+- It uses domains, forests, and domain controllers : concepts that don't map directly to Entra ID
 - Entra ID is not AD in the cloud; it's a fundamentally different system with a different protocol stack
 
 
@@ -20,7 +20,7 @@ I get where the sentiment comes from. Entra ID is modern, cloud-native, built fo
 
 But here's what those "just migrate" takes miss: most large organizations are running Active Directory right now, today, in 2026, and they're going to be running it for years. Understanding what it is and how it relates to Entra ID isn't optional knowledge for an Entra ID specialist. It's foundational.
 
-## 📌 What Active Directory Actually Is
+## 📌 What active directory actually is
 
 Active Directory (AD) is Microsoft's on-premises directory service. It's been around since Windows 2000 and it runs on servers inside your organization's network, physical servers, virtual machines, or both.
 
@@ -28,7 +28,7 @@ Its core job is the same as Entra ID's: managing identities and controlling acce
 
 For about 20 years, AD was the identity backbone of almost every enterprise with more than a handful of employees. It's not going anywhere quickly.
 
-## 💡 Why AD Hasn't Gone Away
+## 💡 Why AD hasn't gone away
 
 Several reasons, and they're all practical:
 
@@ -40,7 +40,7 @@ Several reasons, and they're all practical:
 
 **It actually works.** AD is mature, stable, and well understood. The failure modes are known. The troubleshooting tools are familiar. For many organizations, it's working exactly as expected, and "working as expected" isn't a strong argument for a major migration.
 
-## 📌 The Old vs. New Comparison
+## 📌 The old vs. new comparison
 
 | | Active Directory | Microsoft Entra ID |
 |---|---|---|
@@ -53,7 +53,7 @@ Several reasons, and they're all practical:
 
 Neither column is universally better. The right answer for any organization depends on what they're running and where they're going.
 
-## 📌 AD's Role Is Changing, Not Ending
+## 📌 AD's role is changing, not ending
 
 The honest picture: AD's role in most organizations is shifting from primary to supporting actor.
 
@@ -63,7 +63,7 @@ Entra Connect (or Cloud Sync) synchronizes users from AD to Entra ID, so an acco
 
 I still work with Active Directory weekly. I troubleshoot replication, clean up stale computer objects, investigate failed Kerberos authentications. It's not glamorous, but it matters. The organizations running hybrid environments, which is most of them, need people who understand both sides.
 
-## 📖 Real Scenarios Where AD Still Does the Work
+## 📖 Real scenarios where AD still does the work
 
 - A manufacturing plant where machines authenticate to a local domain controller, even when internet is down
 - A law firm where file server access is controlled by AD security groups
@@ -76,7 +76,7 @@ In all of these, Entra ID exists alongside AD. They're not competitors in these 
 
 
 **I'm curious:** Are you still managing on-premises Active Directory, or has your organization gone cloud-only? If you're hybrid, what's making the full migration difficult? The technical barriers are usually more interesting than people expect.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

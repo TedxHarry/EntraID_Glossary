@@ -3,22 +3,22 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#1.1 - Microsoft Entra ID**
+📚 Part of Entra ID Glossary Series #1.1 - Microsoft Entra ID
 
 ---
 
 ## 🎯 TL;DR
 
-- Microsoft Entra ID is Microsoft's cloud identity platform — it answers **who you are** and **what you can access**
+- Microsoft Entra ID is Microsoft's cloud identity platform : it answers **who you are** and **what you can access**
 - Every sign-in triggers authentication (verify identity) then authorization (issue token granting access)
-- It replaced Azure Active Directory in 2023 — same product, new name
+- It replaced Azure Active Directory in 2023 : same product, new name
 
 
 Three years ago, a colleague called me in a mild panic. She'd just started a new IT role and her manager told her to "get up to speed on Azure AD before Monday." By Friday afternoon she'd read six different Microsoft docs, watched four YouTube videos, and was somehow *more* confused than when she started. "What does it actually *do*?" she asked. "Like, in real life?"
 
 That question is where I want to start with you.
 
-## 📌 So What Is It, Actually?
+## 📌 So what is it, actually?
 
 Microsoft Entra ID is a cloud-based identity and access management service. Break that sentence down and you get everything you need to know.
 
@@ -28,7 +28,7 @@ Microsoft Entra ID is a cloud-based identity and access management service. Brea
 
 The two questions it answers, every single time something tries to connect to anything: *Who are you?* and *What are you allowed to do?*
 
-## 💡 Why This Matters to You as a Beginner
+## 💡 Why this matters to you as a beginner
 
 When I started working with Entra ID, back when it was still called Azure Active Directory, I made the mistake of thinking it was basically just a user list. A fancier Excel sheet of names and passwords. I was wrong in a way that caused me real problems.
 
@@ -36,7 +36,7 @@ Entra ID isn't a list. It's a decision engine. Every time someone signs in, it c
 
 If a user can't access an app, the answer isn't always "reset their password." It might be a Conditional Access policy blocking them, a missing group membership, a license not assigned, or a device that's not compliant. Entra ID touches all of those.
 
-## 📅 What It Handles Day-to-Day
+## 📅 What it handles day-to-day
 
 Here's what Entra ID actually does in a real organization:
 
@@ -48,13 +48,13 @@ Here's what Entra ID actually does in a real organization:
 
 **Conditional Access** is the security logic layer. It evaluates context, where is the user signing in from? What device? What's the risk level of this sign-in?, and decides whether to allow access, block it, or step up to MFA. This is where real security happens.
 
-## 💭 The Name Change Confusion (Let's Clear This Up)
+## 💭 The name change confusion (let's clear this up)
 
 Quick note before we go further: Entra ID and Azure Active Directory are the same thing. Microsoft rebranded Azure AD to Microsoft Entra ID in 2023. If you see "Azure AD" in older documentation, tutorials, or job postings, that's this service. The features, the underlying technology, the tenant you already have, all the same. Just a new name.
 
 I still sometimes call it Azure AD by accident when I'm talking fast. You'll meet plenty of experienced admins who do the same.
 
-## 📖 A Real Implementation Story
+## 📖 A real implementation story
 
 Early in my career, I worked with a 400-person company moving from a legacy VPN setup to Entra ID-based access. The old system: users had one password for the VPN, a different one for email, and a third for the HR system. Password reset tickets were the IT team's second biggest time sink after printer problems.
 
@@ -62,7 +62,7 @@ After setting up Entra ID with Single Sign-On, users had one identity. One sign-
 
 That's Entra ID working as designed.
 
-## 💡 Why This Is Your Starting Point
+## 💡 Why this is your starting point
 
 Every other concept in identity and access management, Conditional Access, device compliance, roles and permissions, MFA, hybrid identity, connects back to Entra ID as the foundation. You can't understand why Conditional Access policies work the way they do without understanding what Entra ID is doing underneath. You can't troubleshoot access problems without knowing what decisions Entra ID is making.
 
@@ -70,8 +70,8 @@ Start here. Get this solid. Everything else builds on it. 🔑
 
 ---
 
-💬 **Over to you:** When did you first encounter Entra ID (or Azure AD)? Were you thrown in the deep end like my colleague, or did you have time to learn it properly? Drop your story in the comments, I read every one.
-> ✍️ *Written by **TedxHarry***
+💬 **Over to you:** When did you first encounter Entra ID (or Azure AD)? Were you thrown in the deep end like my colleague, or did you have time to learn it properly?
+✍️ TedxHarry
 
 <!-- nav -->
 

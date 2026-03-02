@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.3 - Token Endpoint**
+📚 Part of Entra ID Glossary Series #4.3 - Token Endpoint
 
 ---
 
 ## 🎯 TL;DR
 
 - The token endpoint (`/token`) is where apps exchange codes for actual access/ID/refresh tokens
-- This is a server-to-server POST call — never done from a browser, keeping tokens out of logs
+- This is a server-to-server POST call : never done from a browser, keeping tokens out of logs
 - Different grant types use the same endpoint: authorization_code, client_credentials, refresh_token, etc.
 
 
@@ -18,7 +18,7 @@ When I'm teaching OAuth to people who are new to it, I split the whiteboard in h
 
 Most explanations of OAuth spend most of their time on the left side. The right side is where the actual security happens, and it's worth understanding properly.
 
-## 🔒 What the Token Endpoint Is
+## 🔒 What the token endpoint is
 
 The token endpoint is the URL where an application sends a POST request to exchange credentials, codes, or tokens for access tokens. For Entra ID:
 
@@ -30,7 +30,7 @@ Unlike the authorization endpoint, nothing navigates a browser to this URL. No u
 
 This server-to-server channel is why tokens can be safely delivered here in a way they couldn't be at the authorization endpoint. The response body of an HTTPS POST doesn't appear in browser history, proxy logs, or Referer headers.
 
-## 📤 What Gets Sent to the Token Endpoint
+## 📤 What gets sent to the token endpoint
 
 The token endpoint accepts several different grant types, each with its own required parameters:
 
@@ -56,7 +56,7 @@ Used by apps with no signed-in user (daemons, background services):
 
 Each grant type is suited to a different scenario. Authorization code exchange is for user-signed-in apps. Refresh token is for maintaining sessions. Client credentials is for machine-to-machine scenarios where no user is involved.
 
-## 📥 What Comes Back
+## 📥 What comes back
 
 A successful token response is a JSON object containing:
 
@@ -77,7 +77,7 @@ A successful token response is a JSON object containing:
 - `id_token` is present only when `openid` scope was requested
 - `refresh_token` is present only when `offline_access` scope was requested
 
-## ⚠️ Common Token Endpoint Errors
+## ⚠️ Common token endpoint errors
 
 Understanding error responses from the token endpoint saves a lot of debugging time:
 
@@ -89,7 +89,7 @@ Understanding error responses from the token endpoint saves a lot of debugging t
 
 - 🔴 `AADSTS70011`: The scope requested is invalid. A permission that isn't configured on the app registration or hasn't received admin consent.
 
-## 🔧 A Practical Debugging Tip
+## 🔧 A practical debugging tip
 
 When a token exchange is failing, the most useful tool is capturing the raw HTTP request and response. Tools like Fiddler, the browser's network tab (for SPA flows), or Microsoft's sign-in logs all give you visibility into what was sent and what Entra ID returned.
 
@@ -100,7 +100,7 @@ The error response from the token endpoint always includes an `error` field and 
 ---
 
 💬 **What's the most cryptic token endpoint error you've had to debug?** The `invalid_grant` on a refresh token that worked fine yesterday is a classic that sends people down long rabbit holes before they find the revocation event in the logs.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

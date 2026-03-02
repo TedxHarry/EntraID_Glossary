@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.18 - Tenant Restrictions**
+📚 Part of Entra ID Glossary Series #13.18 - Tenant Restrictions
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Tenant Restrictions v2 uses Global Secure Access to prevent users from signing into non-approved external tenants
 - Block employees from using personal Microsoft accounts or competitor tenants on corporate devices
-- Tenant Restrictions work at the network/proxy level — requires traffic inspection or GSA client
+- Tenant Restrictions work at the network/proxy level : requires traffic inspection or GSA client
 
 
 A data governance team discovered that several employees had been uploading files to their personal OneDrive accounts from work devices. The files included customer data that should never leave corporate systems.
@@ -22,7 +22,7 @@ The security team's question: how do you prevent users from authenticating to pe
 
 Tenant Restrictions is the answer.
 
-## 🔒 What Tenant Restrictions Are
+## 🔒 What tenant restrictions are
 
 Tenant Restrictions is a feature that restricts which Entra ID tenants users can authenticate to from your network or managed devices. You define a list of allowed tenants. Authentication attempts to tenants not on that list are blocked.
 
@@ -30,7 +30,7 @@ A user on the corporate network can authenticate to `contoso.com` (corporate Ent
 
 This prevents the most common data exfiltration scenario using Microsoft's own services: logging into a personal OneDrive, personal Teams, or any other Microsoft 365 application using personal or unauthorized corporate accounts.
 
-## 🔧 Tenant Restrictions v1: Proxy-Based Enforcement
+## 🔧 Tenant restrictions v1: proxy-based enforcement
 
 The original Tenant Restrictions implementation (v1) works by injecting HTTP headers into traffic to Microsoft's authentication endpoints. Organizations route Microsoft authentication traffic through a corporate proxy that adds a header specifying allowed tenants:
 
@@ -43,7 +43,7 @@ Microsoft's login endpoint reads these headers and rejects authentication attemp
 
 This approach requires routing authentication traffic through a controlled proxy. It works for corporate networks and managed devices configured to use the proxy. It doesn't work for unmanaged devices or networks not routing through the proxy.
 
-## 🌐 Tenant Restrictions v2: Identity-Based Enforcement
+## 🌐 Tenant restrictions v2: identity-based enforcement
 
 Tenant Restrictions v2 shifts enforcement from the network layer to the identity layer, using the Global Secure Access client or specific token claims. This approach:
 
@@ -53,7 +53,7 @@ Tenant Restrictions v2 shifts enforcement from the network layer to the identity
 
 **Integrates with Conditional Access** 🔐: The Compliant Network condition in Conditional Access can require that Microsoft 365 access flows through the Global Secure Access client, which enforces Tenant Restrictions policies even for remote users not on the corporate network.
 
-## 📊 What Tenant Restrictions Controls
+## 📊 What tenant restrictions controls
 
 Tenant Restrictions applies to authentication at Microsoft's identity endpoints. It controls:
 
@@ -63,7 +63,7 @@ Tenant Restrictions applies to authentication at Microsoft's identity endpoints.
 
 **External organizational tenants** 🔒: By specifying only corporate tenants in the allow list, authentication to competitor tenants, unknown external tenants, or shadow IT tenants from other organizations is blocked.
 
-## ⚠️ What Tenant Restrictions Doesn't Control
+## ⚠️ What tenant restrictions doesn't control
 
 Tenant Restrictions stops authentication to blocked tenants. It doesn't:
 
@@ -78,7 +78,7 @@ The complementary controls for complete data governance: DLP policies in Microso
 ---
 
 💬 **Has your organization implemented Tenant Restrictions to control which Microsoft tenants corporate devices and networks can authenticate to, and what data governance requirement drove the decision?** The personal OneDrive data leakage scenario is the most common driver. Organizations in regulated industries often implement Tenant Restrictions as part of broader DLP programs. What's the biggest gap in your current control set for preventing data movement through Microsoft services?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

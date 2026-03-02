@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.12 - Auto-Provision**
+📚 Part of Entra ID Glossary Series #6.12 - Auto-Provision
 
 ---
 
 ## 🎯 TL;DR
 
 - Automated provisioning creates, updates, and removes user accounts in downstream apps using SCIM or custom connectors
-- Once configured, it runs continuously — new users in Entra ID are automatically provisioned to connected apps
+- Once configured, it runs continuously : new users in Entra ID are automatically provisioned to connected apps
 - Requires Entra ID P1 for app provisioning; P2 for HR-driven provisioning workflows
 
 
@@ -20,7 +20,7 @@ The answer: their Workday account was provisioned automatically when their Entra
 
 That's auto-provision working as it should: access that exists when you need it, without anyone having to do anything to create it.
 
-## ⚙️ What Auto-Provisioning Is
+## ⚙️ What auto-provisioning is
 
 Auto-provisioning (automatic provisioning) is the process where user accounts in connected applications are created, updated, or disabled automatically in response to changes in Entra ID, without manual intervention from IT or application administrators.
 
@@ -32,7 +32,7 @@ When auto-provisioning is configured between Entra ID and an application:
 
 The provisioning runs on a schedule (every 40 minutes by default) and on-demand when triggered manually. It doesn't wait for a ticket. It doesn't depend on anyone remembering.
 
-## 🔄 The Trigger-Action Model
+## 🔄 The trigger-action model
 
 Auto-provisioning is fundamentally trigger-action: a change happens in Entra ID, and that change triggers a provisioning action in the target application.
 
@@ -51,7 +51,7 @@ Auto-provisioning is fundamentally trigger-action: a change happens in Entra ID,
 
 Which action occurs depends on what changed in Entra ID and how the provisioning is configured.
 
-## 📋 Attribute Mapping
+## 📋 Attribute mapping
 
 Auto-provisioning moves more than just the user's existence to the target application. Attribute mapping configuration defines which Entra ID attribute values map to which fields in the target application.
 
@@ -70,7 +70,7 @@ Attributes can be mapped directly, transformed (convert to uppercase, extract a 
 
 Getting attribute mapping right is the primary configuration work in setting up auto-provisioning. The defaults usually cover the basics, but custom attributes, format differences, and app-specific required fields need manual mapping attention.
 
-## 🔧 Provisioning Scope
+## 🔧 Provisioning scope
 
 Not every user necessarily gets provisioned to every application. Provisioning scope defines which users are included:
 
@@ -80,13 +80,13 @@ Not every user necessarily gets provisioned to every application. Provisioning s
 
 **Scoping filters**: Rules based on attribute values. Example: only provision users whose department is "Engineering" or whose jobTitle contains "Developer." Useful when group membership isn't the right signal but an attribute is.
 
-## ⚠️ What Breaks When Provisioning Is Misconfigured
+## ⚠️ What breaks when provisioning is misconfigured
 
 The most common auto-provisioning issue: an attribute that's required by the target application isn't populated in Entra ID for all users. Provisioning fails for those users, silently or with an error in the provisioning logs that nobody checks.
 
 The provisioning logs in the Entra admin center show every provisioning operation: what was attempted, what was sent, what the application returned. For troubleshooting provisioning failures, the logs are the starting point. A user whose app account wasn't created will have a corresponding failure entry in the logs with the specific error.
 
-## 💡 Testing Before Enabling
+## 💡 Testing before enabling
 
 Entra ID provisioning has an "on-demand provisioning" feature: you can select a specific user and trigger provisioning for them alone, seeing exactly what would be sent and what the application would return. This allows testing the configuration against a real account before enabling provisioning for the entire scope.
 
@@ -95,7 +95,7 @@ Testing one user before enabling broad provisioning catches attribute mapping er
 ---
 
 💬 **Which application in your environment generates the most manual provisioning work today that could be automated?** The combination of "frequently onboards new users" and "has a SCIM endpoint or gallery connector available" is the sweet spot for first automation projects. What's stopping the first connection from being made?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Automated app provisioning to gallery apps requires **Entra ID P1**. HR-driven inbound provisioning (from Workday/SAP) requires **Entra ID P2**.

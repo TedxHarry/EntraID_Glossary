@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.6 - Real-Time Remediation**
+📚 Part of Entra ID Glossary Series #13.6 - Real-Time Remediation
 
 ---
 
@@ -20,11 +20,11 @@ The user whose leaked credentials triggered the alert had continued to sign in s
 
 Real-time remediation is the architecture where the response happens in seconds, not hours. The analyst's queue still exists for investigation, but the immediate protective action is automated.
 
-## ⚡ What Real-Time Remediation Is
+## ⚡ What real-time remediation is
 
 Real-time remediation is the pattern of automating immediate protective actions in response to detected identity risks, without waiting for human review. The detection triggers the action. No queue, no triage delay, no six-hour response gap.
 
-In Entra ID, real-time remediation is implemented through several interconnected mechanisms:
+in Entra ID, real-time remediation is implemented through several interconnected mechanisms:
 
 **Risk-based Conditional Access** 🔐: The primary real-time remediation mechanism. CA policies that trigger when sign-in risk or user risk is elevated, enforcing additional controls at the moment of authentication. If sign-in risk is High, block the sign-in or require MFA immediately. If user risk is High, require a password reset before the user can proceed. These controls fire in real time during the authentication attempt.
 
@@ -32,7 +32,7 @@ In Entra ID, real-time remediation is implemented through several interconnected
 
 **Lifecycle Workflow automation** 🔄: Automated workflows triggered by identity events. When a user's account is flagged as compromised, a workflow can automatically disable the account, revoke sessions, generate a TAP for recovery, and notify the user and their manager, all without manual steps.
 
-## 🔧 Risk-Based CA as the Core Mechanism
+## 🔧 Risk-Based CA as the core mechanism
 
 Risk-based Conditional Access policies are the most impactful real-time remediation control:
 
@@ -42,7 +42,7 @@ Risk-based Conditional Access policies are the most impactful real-time remediat
 
 The power of this model: the remediation is built into the authentication flow. There's no delay between detection and protective action.
 
-## 🤖 Automated Response Playbooks
+## 🤖 Automated response playbooks
 
 For scenarios beyond what CA policies can handle inline, Microsoft Sentinel and Logic Apps enable automated playbooks:
 
@@ -50,7 +50,7 @@ For scenarios beyond what CA policies can handle inline, Microsoft Sentinel and 
 
 **ID Protection remediation automation** 🔄: ID Protection can be configured to automatically remediate risks below a threshold (self-remediation for medium risk events where MFA completion resolves the risk) while flagging high-risk events for analyst review.
 
-## 📊 Detective vs Preventive vs Responsive Controls
+## 📊 Detective vs preventive vs responsive controls
 
 Real-time remediation changes where in the control chain the response happens:
 
@@ -62,7 +62,7 @@ Real-time remediation changes where in the control chain the response happens:
 
 The most mature identity security programs use all three layers. Real-time remediation handles the immediate threat. Preventive controls reduce the attack surface. Detective controls enable investigation and continuous improvement.
 
-## ⚠️ False Positive Management
+## ⚠️ False positive management
 
 Automated real-time remediation requires careful threshold calibration. A user risk policy that blocks all Medium-risk users will disrupt legitimate users whose travel patterns or new devices are triggering Medium-risk detections.
 
@@ -71,7 +71,7 @@ The recommended pattern: start with High risk thresholds for blocking, allow sel
 ---
 
 💬 **Has your organization implemented risk-based Conditional Access policies for real-time remediation, and what threshold calibration did you find works for your user population?** The tension between aggressive blocking (fewer compromised accounts, more false positive disruption) and permissive thresholds (fewer false positives, longer window for attacker access) is the core tuning challenge. Where did you land?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

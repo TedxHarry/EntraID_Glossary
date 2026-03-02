@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#2.2 - User (Identity Object)**
+📚 Part of Entra ID Glossary Series #2.2 - User (Identity Object)
 
 ---
 
@@ -22,7 +22,7 @@ None of these are exotic failure modes. They're what happens when you treat user
 
 So let's open the hood.
 
-## 📌 A User Is a Directory Object with Over 100 Attributes
+## 📌 A user is a directory object with over 100 attributes
 
 When you create a user in Entra ID, you're creating a directory object, a structured record with dozens of properties. Most of them you'll never touch. But the ones you do touch matter.
 
@@ -52,7 +52,7 @@ What Microsoft 365 and other Microsoft subscriptions the user has. Licenses unlo
 
 ---
 
-## 📌 Member Users vs. Guest Users
+## 📌 Member users vs. guest users
 
 All user objects in Entra ID have a `userType` property. Two values matter:
 
@@ -62,7 +62,7 @@ All user objects in Entra ID have a `userType` property. Two values matter:
 
 This distinction matters for Conditional Access. You can write policies that apply to members only, guests only, or both. You can require guests to always use MFA while giving members more flexibility based on device trust. Knowing which `userType` you're targeting is a basic requirement for policy authoring.
 
-## 📝 The UPN vs. Email Confusion
+## 📝 The UPN vs. email confusion
 
 Let me save you the hour I lost on this during my second month working with hybrid identity.
 
@@ -77,7 +77,7 @@ If the AD UPN is `jsmith@contoso.local` (an internal domain, not internet-routab
 
 This is one of the most common hybrid identity headaches, and it's entirely preventable if you check UPN domains before you start syncing.
 
-## ⏰ When a User Can't Sign In: Your First Four Checks
+## ⏰ When a user can't sign in: your first four checks
 
 The account is the foundation. When access breaks, start here before reaching for more complex explanations:
 
@@ -89,7 +89,7 @@ The account is the foundation. When access breaks, start here before reaching fo
 Four checks. Covers a substantial majority of basic user access problems. 👤
 
 
-### 🔧 Quick Reference: PowerShell
+### 🔧 Quick reference: PowerShell
 
 ```powershell
 # Get a user by UPN
@@ -106,7 +106,7 @@ Get-MgUser -Filter "department eq 'Engineering'" -All | Select-Object DisplayNam
 ---
 
 **Tell me:** What's the most unexpected user attribute issue you've had to troubleshoot? The UPN domain mismatch? A missing usage location blocking licenses? Or something stranger? I've seen some creative ones over the years.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

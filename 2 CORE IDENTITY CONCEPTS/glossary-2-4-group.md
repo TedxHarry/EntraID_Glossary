@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#2.4 - Group**
+📚 Part of Entra ID Glossary Series #2.4 - Group
 
 ---
 
@@ -24,7 +24,7 @@ Groups exist to prevent exactly this kind of pain. If every contractor had been 
 
 If you're assigning permissions directly to users in Entra ID, stop. This article is for you.
 
-## 🔬 What a Group Is, Technically
+## 🔬 What a group is, technically
 
 A group in Entra ID is a directory object that holds references to other objects, users, devices, service principals, even other groups. When you assign a permission, a license, or an app role to a group, every member of that group gets that permission, license, or app role automatically.
 
@@ -32,7 +32,7 @@ Add someone to the group: they get access. Remove them: it's gone. The resources
 
 Groups are the fundamental unit of access management at scale.
 
-## 🛡️ Security Groups vs. Microsoft 365 Groups, Pick the Right One
+## 🛡️ Security groups vs. microsoft 365 groups, pick the right one
 
 Entra ID has two main group types and they're used for fundamentally different purposes.
 
@@ -42,7 +42,7 @@ Entra ID has two main group types and they're used for fundamentally different p
 
 The mistake I see most: trying to use Microsoft 365 Groups as security groups for Azure RBAC or Conditional Access, and then hitting limitations or unexpected behavior. If your use case is "grant these people access to this resource," use a Security Group.
 
-## 📌 Assigned vs. Dynamic Membership: This Changes Everything
+## 📌 Assigned vs. dynamic membership: this changes everything
 
 Here's the decision that determines whether group management scales or becomes a maintenance burden.
 
@@ -62,7 +62,7 @@ This is the right model for most large organizations. Dynamic groups turn access
 
 One important caveat: dynamic groups require Entra ID P1 licensing. And membership updates aren't instant, there's typically a delay of minutes to tens of minutes as Entra ID processes attribute changes and recalculates memberships.
 
-## ⚠️ Nested Groups and the Gotcha
+## ⚠️ Nested groups and the gotcha
 
 You can add groups as members of other groups. This is useful for building hierarchical access structures, a parent group that represents "All Sales" with child groups for "Sales EMEA," "Sales Americas," and "Sales APAC."
 
@@ -72,7 +72,7 @@ Azure RBAC does honor nesting, if you're in a nested group, you get the role. Mi
 
 Check the specific feature's documentation before relying on nesting. It works in some places and silently doesn't in others, and "silently doesn't" is the worst kind of failure.
 
-## 🛡️ Role-Assignable Groups: A Critical Security Feature
+## 🛡️ Role-Assignable groups: a critical security feature
 
 One more thing worth knowing: if you need to assign an Entra ID directory role to a group (so all group members get that role), the group must be created as a **role-assignable group**. This is a specific property set at creation time that can't be changed later.
 
@@ -81,7 +81,7 @@ Role-assignable groups are deliberately restricted, they can only be managed by 
 ---
 
 
-### 🔧 Quick Reference: PowerShell
+### 🔧 Quick reference: PowerShell
 
 ```powershell
 # Get all dynamic groups
@@ -98,7 +98,7 @@ Get-MgGroupMember -GroupId "<group-object-id>" | Select-Object Id
 ---
 
 💬 **Over to you:** Are you using dynamic groups in your environment? If you're still on assigned membership for most things, what's holding you back, licensing, complexity, or just hasn't been prioritized yet? I'd genuinely like to know what the common blockers look like in practice.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

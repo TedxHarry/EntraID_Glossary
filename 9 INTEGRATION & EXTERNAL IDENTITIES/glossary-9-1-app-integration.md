@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.1 - App Integration**
+📚 Part of Entra ID Glossary Series #9.1 - App Integration
 
 ---
 
@@ -11,7 +11,7 @@
 
 - App integration means registering an application in Entra ID to use it as the identity provider for authentication
 - Gallery apps have pre-configured SSO templates; non-gallery apps require manual SAML or OIDC config
-- Integration also includes provisioning setup — who gets accounts in the app and how attributes map
+- Integration also includes provisioning setup : who gets accounts in the app and how attributes map
 
 
 A company had 47 different applications across their environment. Each one had its own username and password. Users managed 47 separate sets of credentials. The helpdesk managed 47 separate password reset processes. Offboarding a departing employee required manually deprovisioning from 47 systems.
@@ -20,7 +20,7 @@ Over six months, they integrated 40 of those applications with Entra ID. Now use
 
 The other 7 that couldn't be integrated are the ones that still generate most of the helpdesk tickets.
 
-## 🔗 What App Integration Means
+## 🔗 What app integration means
 
 App integration is the process of connecting an application to Entra ID for authentication and, optionally, authorization and user provisioning. Instead of the application managing its own user database and authentication logic, it delegates identity to Entra ID.
 
@@ -34,13 +34,13 @@ A successfully integrated application:
 
 From the user's perspective: one sign-in experience, one set of credentials, one MFA registration. From IT's perspective: one identity platform to manage, one offboarding process, one policy engine for access control.
 
-## 🏗️ The Two Integration Models
+## 🏗️ The two integration models
 
 **Gallery applications** 📚: Microsoft maintains an application gallery with pre-configured integration templates for thousands of popular SaaS applications (Salesforce, ServiceNow, GitHub, Slack, DocuSign, and thousands more). Gallery apps have pre-built SAML or OIDC configurations, attribute mappings, and often provisioning connectors. Integration setup is mostly configuration of provided templates rather than building from scratch.
 
 **Custom applications** 🔧: Applications built in-house or by vendors without gallery templates. Custom integration using the Microsoft Identity Platform. The application is registered in Entra ID (creating an App Registration), and the application code uses Microsoft Authentication Library (MSAL) or OpenID Connect/OAuth 2.0 directly.
 
-## 📋 The Integration Protocols
+## 📋 The integration protocols
 
 How an application integrates with Entra ID depends on the protocol it supports:
 
@@ -52,7 +52,7 @@ How an application integrates with Entra ID depends on the protocol it supports:
 
 **Password-based SSO** 🔑: Applications that have a username/password field but no SAML or OIDC support. Entra ID stores the credentials and auto-fills them when the user accesses the application. Not true federation, but provides SSO from the user's perspective.
 
-## ⚙️ App Registration vs Enterprise Application
+## ⚙️ App registration vs enterprise application
 
 When integrating an application, Entra ID creates two related objects:
 
@@ -62,7 +62,7 @@ When integrating an application, Entra ID creates two related objects:
 
 The relationship: App Registration defines what the app is. Enterprise Application defines how it behaves in your specific tenant.
 
-## 🎯 What Integration Enables
+## 🎯 What integration enables
 
 **Single Sign-On** 🔐: Users sign in once to Entra ID and access all integrated applications without re-entering credentials.
 
@@ -75,7 +75,7 @@ The relationship: App Registration defines what the app is. Enterprise Applicati
 ---
 
 💬 **What's the application in your environment that most needs Entra ID integration but hasn't been integrated yet?** The "we'll integrate it eventually" list exists in almost every organization. What's keeping the highest-value holdout from being connected, and what would it take to get there?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

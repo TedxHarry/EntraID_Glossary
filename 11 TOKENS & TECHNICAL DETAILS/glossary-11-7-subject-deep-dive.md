@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#11.7 - Subject (Deep Dive)**
+📚 Part of Entra ID Glossary Series #11.7 - Subject (Deep Dive)
 
 ---
 
 ## 🎯 TL;DR
 
-- The subject (`sub`) claim is a pairwise identifier — unique per user per application, not globally unique
+- The subject (`sub`) claim is a pairwise identifier : unique per user per application, not globally unique
 - The `oid` (Object ID) claim IS globally unique across all apps in the tenant
 - For cross-app tracking, always use `oid + tid` not `sub`
 
@@ -20,15 +20,15 @@ The developer had used the wrong identifier. The `sub` claim in Entra ID tokens 
 
 Understanding what `sub` is, what it isn't, and which identifier to use for what purpose is one of the more subtle aspects of working with Entra ID tokens.
 
-## 🔑 What the Subject Claim Is
+## 🔑 What the subject claim is
 
 In OAuth and OIDC, the subject (`sub`) claim identifies the resource owner: the user whose data is being accessed or whose identity is being asserted. It's the user as seen from the perspective of the authorization server.
 
-In Entra ID, the `sub` claim is a pairwise pseudonymous identifier. It's derived from the combination of the user's identity and the application's identity. The same user authenticating to two different applications gets two different `sub` values. This is an intentional privacy design: different applications can't correlate a user's activity across applications using the `sub` claim alone.
+in Entra ID, the `sub` claim is a pairwise pseudonymous identifier. It's derived from the combination of the user's identity and the application's identity. The same user authenticating to two different applications gets two different `sub` values. This is an intentional privacy design: different applications can't correlate a user's activity across applications using the `sub` claim alone.
 
 For Microsoft's v2.0 token endpoint (which all modern Entra ID integrations use), the `sub` value is consistent for the same user and the same application over time. It's stable within the application context. It changes if the application registration changes.
 
-## 🆔 Sub vs OID: The Right Identifier for Each Use Case
+## 🆔 Sub vs oid: the right identifier for each use case
 
 Entra ID tokens contain two user identifiers that serve different purposes:
 
@@ -40,7 +40,7 @@ The `oid` is the cross-application stable identifier. The `sub` is the applicati
 
 For the database key scenario in the opening example: the correct identifier to use as a persistent user key that survives application changes is `oid`, not `sub`. The `oid` is stable across application reregistrations because it's a property of the user in the directory, not a derived value that includes the application identity.
 
-## 📋 Subject in ID Tokens vs Access Tokens
+## 📋 Subject in ID tokens vs access tokens
 
 Both ID tokens and access tokens contain a `sub` claim, but their semantics are slightly different:
 
@@ -50,7 +50,7 @@ Both ID tokens and access tokens contain a `sub` claim, but their semantics are 
 
 When building resource APIs that validate access tokens, the `sub` claim identifies whose authorization the token represents. For client credentials tokens, the `sub` and `oid` both refer to the service principal's object ID, not any user.
 
-## 🔒 Pairwise Identifiers and Privacy
+## 🔒 Pairwise identifiers and privacy
 
 The pairwise design of `sub` reflects OIDC's privacy model. If two relying parties share the same `sub` values for their users, those parties can cross-correlate user activity: they know that "user A on application 1" is the same as "user A on application 2." Pairwise subjects prevent this by giving each application a different identifier for the same user.
 
@@ -58,14 +58,14 @@ In enterprise Entra ID contexts, cross-application correlation is often explicit
 
 For Entra ID workforce tenants, always use `oid` for persistent user identification in application data stores. Use `sub` only for session-level user identification within a single application session, where the session doesn't need to survive application reregistration.
 
-## ⚠️ Multi-Tenant Application Subject Values
+## ⚠️ Multi-Tenant application subject values
 
 For multi-tenant applications (where users from any Entra ID tenant can sign in), the same user will have the same `oid` and the same `sub` regardless of which of their organization's tenants they're in. But users from different tenants can share the same `sub` value (an unlikely collision in practice, but possible in theory). For multi-tenant apps, the stable cross-tenant user key is the combination of `oid` and `tid` (tenant ID), not `sub` or `oid` alone.
 
 ---
 
 💬 **Has your application ever stored `sub` as a user identifier and then had to migrate to `oid` after a reregistration or multi-tenant expansion?** This data migration is painful. The right architecture decision is to use `oid` + `tid` from the start for persistent user keys in application databases. What identifier does your application currently use for user records?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

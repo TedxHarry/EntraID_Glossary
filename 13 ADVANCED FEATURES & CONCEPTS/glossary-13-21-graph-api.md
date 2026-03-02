@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.21 - Microsoft Graph API**
+📚 Part of Entra ID Glossary Series #13.21 - Microsoft Graph API
 
 ---
 
@@ -20,13 +20,13 @@ A developer spent two days writing a script using Microsoft Graph API. The scrip
 
 Microsoft Graph API is what makes Entra ID programmable.
 
-## 🔗 What Microsoft Graph API Is
+## 🔗 What microsoft graph API is
 
 Microsoft Graph is a single REST API endpoint (`https://graph.microsoft.com`) that provides access to data and functionality across Microsoft 365 services, including the entire Entra ID directory. Users, groups, applications, service principals, devices, sign-in logs, audit logs, Conditional Access policies, directory roles, and more are all accessible through Graph endpoints.
 
 The same data you see in the Entra admin center is available through Graph. The admin center itself is built on Graph. Every object you create, update, or delete through the admin UI is creating, updating, or deleting through the same API your scripts and applications use.
 
-## 📋 Key Identity Endpoints for Entra ID Operations
+## 📋 Key identity endpoints for entra ID operations
 
 **Users** 👤: `GET /users` retrieves all users. `GET /users/{id}` retrieves a specific user by object ID or UPN. `POST /users` creates a new user. `PATCH /users/{id}` updates attributes. `DELETE /users/{id}` deletes the user. The full user object includes every attribute available in Entra ID: displayName, userPrincipalName, jobTitle, department, accountEnabled, and all extension attributes.
 
@@ -38,7 +38,7 @@ The same data you see in the Entra admin center is available through Graph. The 
 
 **Directory roles and assignments** 🎯: `GET /directoryRoles` lists active roles. `GET /roleManagement/directory/roleAssignments` lists all role assignments. Managing PIM-based role assignments uses `roleManagement/directory/roleEligibilityScheduleRequests`.
 
-## 🔑 Authentication for Graph API Calls
+## 🔑 Authentication for graph API calls
 
 Microsoft Graph API requires a valid OAuth 2.0 token. Two permission models:
 
@@ -48,7 +48,7 @@ Microsoft Graph API requires a valid OAuth 2.0 token. Two permission models:
 
 The distinction matters for governance: application permissions with high-privilege Graph scopes (especially `Directory.ReadWrite.All`, `RoleManagement.ReadWrite.Directory`, or `Mail.ReadWrite.All`) are significant attack surface if the service principal is compromised.
 
-## 🔧 Graph Explorer and the SDK
+## 🔧 Graph explorer and the SDK
 
 **Graph Explorer** (developer.microsoft.com/graph/graph-explorer) is a browser-based tool for exploring Graph endpoints interactively. Sign in with your Entra ID account, select sample queries, modify them, and run them against your tenant. It shows the request URL, the required permissions, and the full JSON response. The right tool for learning Graph before writing code.
 
@@ -56,7 +56,7 @@ The distinction matters for governance: application permissions with high-privil
 
 **Microsoft Graph PowerShell** 💻: The `Microsoft.Graph` PowerShell module provides cmdlets wrapping Graph endpoints. `Get-MgUser`, `New-MgUser`, `Update-MgUser` for user management; `Get-MgGroup` for groups; `Get-MgIdentityConditionalAccessPolicy` for CA policies. The module replaced the older AzureAD and MSOnline modules, both of which are deprecated.
 
-## ⚠️ Throttling and Bulk Operations
+## ⚠️ Throttling and bulk operations
 
 Graph API has throttling limits. High-volume operations (creating 5,000 users, bulk group membership updates) hit throttle limits and receive `429 Too Many Requests` responses. The correct approach: implement exponential backoff on 429 responses, use batch requests (up to 20 requests in a single batch call), and use delta queries for incremental sync rather than full retrieval on each run.
 
@@ -65,10 +65,10 @@ The `$batch` endpoint allows sending 20 Graph requests in a single HTTP call, dr
 ---
 
 💬 **What Graph API operations does your team rely on for Entra ID automation, and have you migrated from the deprecated AzureAD and MSOnline PowerShell modules to the Microsoft Graph PowerShell module?** The migration from legacy modules to Graph PowerShell is one of those projects that's easy to defer until it becomes urgent. What was the most valuable automation your team built on Graph, and what would break if you lost API access to Entra ID?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-### 🔧 Quick Reference: Microsoft Graph
+### 🔧 Quick reference: microsoft graph
 
 ```powershell
 # Install and connect to Graph

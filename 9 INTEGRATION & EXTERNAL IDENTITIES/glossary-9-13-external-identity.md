@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.13 - External Identity**
+📚 Part of Entra ID Glossary Series #9.13 - External Identity
 
 ---
 
@@ -11,7 +11,7 @@
 
 - External Identity refers to identities managed outside your Entra ID tenant: B2B guests, B2C customers, or federated IdP users
 - Microsoft's External ID product consolidates B2B and B2C scenarios under one platform
-- Design external identity with lifecycle in mind — external accounts should expire, not persist indefinitely
+- Design external identity with lifecycle in mind : external accounts should expire, not persist indefinitely
 
 
 A company's Entra ID tenant had four types of people accessing it:
@@ -23,13 +23,13 @@ A company's Entra ID tenant had four types of people accessing it:
 
 All four categories involve people who don't work for the company. Each category has a different identity model, different authentication experience, and different governance requirements. The umbrella term for all of them is external identities.
 
-## 🌐 What External Identity Means
+## 🌐 What external identity means
 
 External identity is the broad category encompassing any identity scenario where people outside your organization access your resources or use your applications. Microsoft's products for this category are grouped under the "Microsoft Entra External ID" umbrella, which includes both B2B collaboration (business partner access) and CIAM (customer-facing applications).
 
 Understanding external identity means understanding the distinct scenarios within it and which tools apply to each.
 
-## 🗂️ The External Identity Scenarios
+## 🗂️ The external identity scenarios
 
 **B2B Collaboration** 🤝: Business partners, vendors, auditors, and contractors who access your corporate resources. They sign in with their own organizational or consumer identity. Your tenant grants them access to specific resources. The focus is collaboration between organizations, not customer relationships.
 
@@ -39,7 +39,7 @@ Understanding external identity means understanding the distinct scenarios withi
 
 **External service account access** 🤖: Non-human external identities. Managed identities from partner Azure subscriptions, federated credentials from external CI/CD systems (GitHub Actions, etc.). These are workload identity scenarios for external systems, not human identities.
 
-## 🔧 Microsoft's External Identity Product Architecture
+## 🔧 Microsoft's external identity product architecture
 
 Microsoft has been consolidating external identity capabilities under a unified architecture:
 
@@ -51,7 +51,7 @@ Microsoft has been consolidating external identity capabilities under a unified 
 
 The external tenant concept is the architecture that replaced Azure AD B2C for new CIAM implementations. An external tenant is an Entra ID tenant configured specifically for managing non-employee identities for a consumer-facing application.
 
-## 🔒 Governance Differences Between External Identity Types
+## 🔒 Governance differences between external identity types
 
 Each external identity type has different governance requirements:
 
@@ -61,7 +61,7 @@ Each external identity type has different governance requirements:
 
 **B2B Direct Connect** 🔗: Governed through cross-tenant access settings between specific tenant pairs. More wholesale (applies to all users from the partner tenant) than individual guest management.
 
-## ⚠️ The Identity Sprawl Risk
+## ⚠️ The identity sprawl risk
 
 External identity is where identity sprawl is hardest to control:
 
@@ -77,7 +77,7 @@ The common failure mode: external identity was set up to enable collaboration an
 ---
 
 💬 **Which type of external identity is most problematic to govern in your organization?** The B2B guest lifecycle is the most common pain point in corporate tenants. But organizations with CIAM deployments often find customer account management at scale to be the harder problem. Which external identity scenario generates the most operational challenges for your team?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

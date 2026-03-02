@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.10 - App Protection Policy**
+📚 Part of Entra ID Glossary Series #5.10 - App Protection Policy
 
 ---
 
@@ -20,7 +20,7 @@ It was a fair position. He'd heard stories (some accurate, some exaggerated) abo
 
 The answer wasn't to give him an exception. It was App Protection Policies. The organization could protect corporate data in Outlook, Teams, and OneDrive without ever touching his phone. He controls his device. The organization controls the work data within work apps.
 
-## 🛡️ What App Protection Policy Does
+## 🛡️ What app protection policy does
 
 An App Protection Policy (APP) is an Intune policy that applies to specific managed applications, not to the device itself. It defines rules for how organizational data can be used within those apps:
 
@@ -32,7 +32,7 @@ An App Protection Policy (APP) is an Intune policy that applies to specific mana
 
 **Selective wipe capability** 🗑️: When an employee leaves, IT can trigger a selective wipe that removes corporate data from managed apps only. The user's personal photos, personal email, and all personal apps remain completely untouched.
 
-## 🔄 MAM Without MDM
+## 🔄 MAM without MDM
 
 The traditional MDM model (enroll the device, manage everything) is right for corporate-owned devices. But for personal devices, App Protection Policies enable a different model: MAM without MDM enrollment.
 
@@ -45,7 +45,7 @@ In this model:
 
 The user's personal apps, personal files, and personal accounts are completely outside Intune's reach. The management boundary is the app, not the device.
 
-## 📋 What Policies Actually Configure
+## 📋 What policies actually configure
 
 For iOS and Android, App Protection Policies configure:
 
@@ -67,7 +67,7 @@ For iOS and Android, App Protection Policies configure:
 - Minimum OS version
 - Maximum device threat level (integrates with Defender for Endpoint)
 
-## ⚠️ What App Protection Policy Doesn't Cover
+## ⚠️ What app protection policy doesn't cover
 
 App Protection Policies only work with apps that have the Intune SDK integrated or that are wrapped using the Intune App Wrapping Tool. Microsoft's own apps (Outlook, Teams, OneDrive, Edge) have the SDK built in.
 
@@ -75,7 +75,7 @@ Third-party apps vary. Salesforce mobile, ServiceNow, SAP Fiori: support varies 
 
 For apps that don't support the Intune SDK, the fallback is typically requiring MDM enrollment to access those apps, or blocking mobile access and requiring desktop.
 
-## 💡 Combining APP with Conditional Access
+## 💡 Combining APP with conditional access
 
 App Protection Policies work alongside Conditional Access, not instead of it. A Conditional Access policy can require an approved client app (one of Microsoft's managed apps) as a condition for accessing Exchange Online or SharePoint.
 
@@ -84,7 +84,7 @@ This creates enforcement at two layers: Conditional Access blocks access from un
 ---
 
 💬 **Have you had the "I won't enroll my personal device" conversation and used App Protection Policies as the solution?** It's often the path that satisfies both security requirements and employee privacy concerns. What was the reaction when you explained the MAM-without-MDM model?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.12 - Condition**
+📚 Part of Entra ID Glossary Series #7.12 - Condition
 
 ---
 
 ## 🎯 TL;DR
 
 - Conditions are additional signals evaluated beyond authentication: sign-in risk, device platform, location, client app
-- Conditions narrow when a policy fires — without conditions, the policy applies to all matching assignments
+- Conditions narrow when a policy fires : without conditions, the policy applies to all matching assignments
 - Layer conditions to create precise policies: e.g., only trigger for unmanaged devices from outside trusted IPs
 
 
@@ -22,7 +22,7 @@ Second sign-in: 11pm, unrecognized location, personal Android phone, no device m
 
 The difference wasn't the identity. It was the conditions. Conditions are what make Conditional Access context-aware rather than just authentication-aware.
 
-## 📊 What Conditions Are
+## 📊 What conditions are
 
 Conditions are additional signals evaluated by a Conditional Access policy after the assignment scope matches. They narrow or broaden when a policy fires and what it responds to.
 
@@ -30,7 +30,7 @@ Without conditions, a policy fires for every matching user and app, every time. 
 
 Conditions are the mechanism that lets Conditional Access policies respond to the "circumstances of this access request" rather than just "is this the right user?"
 
-## 🔍 The Condition Types
+## 🔍 The condition types
 
 **Sign-in risk** 🔴: The risk level assigned by Entra ID ID Protection to the specific sign-in event. High, medium, low, or no risk. Requires Entra ID P2 licensing.
 
@@ -50,7 +50,7 @@ The client apps condition is critical for legacy authentication blocking. Legacy
 
 **Filter for devices** 🖥️: Device-attribute-based filtering beyond just platform type. Target policies at specific device extension attributes, device trust types (Entra Registered, Entra Joined, Hybrid Entra Joined, Entra Compliant), or other device properties.
 
-## ⚙️ How Conditions Combine
+## ⚙️ How conditions combine
 
 Conditions within a single policy use AND logic. A policy with both a location condition and a device platform condition only fires when the sign-in matches both: the specified location AND the specified platform.
 
@@ -58,7 +58,7 @@ This lets you build precise policies. "Require MFA when signing in from outside 
 
 For OR logic across conditions, you need separate policies. "Apply this control when sign-in risk is high OR when user risk is high" requires two policies: one with a sign-in risk condition, one with a user risk condition, both with the same grant control.
 
-## 🎯 Common Condition Patterns
+## 🎯 Common condition patterns
 
 **Legacy auth block** 🚫: Client apps condition targeting "Other clients" + Grant: Block access. No additional conditions needed. Block all legacy authentication unconditionally.
 
@@ -70,7 +70,7 @@ For OR logic across conditions, you need separate policies. "Apply this control 
 
 **Device-specific controls** 📱: Device platform condition for iOS and Android + Grant: Require approved app. Ensures mobile access to corporate data happens through managed apps with app protection policies, not through any browser.
 
-## ⚠️ The Unintended Interaction
+## ⚠️ The unintended interaction
 
 Conditions interact with assignments in non-obvious ways. A condition that fires for one group of users may not fire for another, even within the same policy scope.
 
@@ -79,7 +79,7 @@ Testing condition behavior with the What If tool before enforcement is essential
 ---
 
 💬 **Which condition type has generated the most unexpected behavior in your environment?** The client apps condition and legacy auth blocking tends to surface applications that teams didn't know were using basic auth. What was the legacy auth offender that surprised your team when you started blocking it?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

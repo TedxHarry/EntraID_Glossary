@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.9 - CA Policy**
+📚 Part of Entra ID Glossary Series #7.9 - CA Policy
 
 ---
 
 ## 🎯 TL;DR
 
 - A CA policy is a specific IF-THEN rule: IF user is in Group A accessing App B from risky location, THEN require MFA
-- Multiple policies can apply to one sign-in — all applicable policies are evaluated and the strictest controls apply
-- Policies in Report-Only don't enforce — use this to test impact before enabling enforcement
+- Multiple policies can apply to one sign-in : all applicable policies are evaluated and the strictest controls apply
+- Policies in Report-Only don't enforce : use this to test impact before enabling enforcement
 
 
 An organization had Conditional Access deployed. Their policy was: require MFA for all users, all apps.
@@ -22,7 +22,7 @@ The policy required MFA for service accounts that authenticate machine-to-machin
 
 Good CA policy design isn't about having one policy that covers everything. It's about having a set of policies that cover everything correctly, with the right controls for the right scenarios.
 
-## 📋 What a CA Policy Is
+## 📋 What a CA policy is
 
 A Conditional Access policy is a discrete rule that evaluates specific access requests and enforces specific controls when those requests match. A tenant can have many CA policies. Each one is evaluated independently. A sign-in is evaluated against every active policy. The most restrictive matching policy wins.
 
@@ -40,7 +40,7 @@ Every policy has the same components:
 
 **Session controls** 🔒: Additional constraints on granted sessions.
 
-## 👥 Assignments: Defining Scope
+## 👥 Assignments: defining scope
 
 Assignments define who the policy applies to and what it applies to. A policy with misconfigured assignments either covers too much or too little.
 
@@ -52,7 +52,7 @@ Assignments define who the policy applies to and what it applies to. A policy wi
 
 The combination of user assignment and app assignment defines the exact scenarios this policy evaluates. A policy targeting "all users" and "Microsoft 365" only fires when a user in scope tries to access Microsoft 365. Sign-ins to other apps are evaluated against other policies.
 
-## 📊 Conditions: Refining When the Policy Fires
+## 📊 Conditions: refining when the policy fires
 
 Conditions narrow or broaden when a policy applies within its assignment scope:
 
@@ -70,7 +70,7 @@ Conditions narrow or broaden when a policy applies within its assignment scope:
 
 Conditions are AND logic by default within a policy. A policy with both a location condition and a platform condition only fires when both conditions are met simultaneously.
 
-## 🔑 Grant Controls: The Access Decision
+## 🔑 Grant controls: the access decision
 
 When a policy fires (assignments match, conditions evaluate), the grant control determines the outcome:
 
@@ -82,7 +82,7 @@ When multiple requirements are specified: "Require all selected controls" means 
 
 The order of specificity matters for user experience. Requiring MFA alone is less disruptive than requiring MFA plus a compliant device. Set controls that match the sensitivity of the resource.
 
-## 🔒 Session Controls: Constraints After Access
+## 🔒 Session controls: constraints after access
 
 Session controls apply after access is granted:
 
@@ -96,7 +96,7 @@ Session controls apply after access is granted:
 
 **MCAS (Microsoft Defender for Cloud Apps) session policies**: Route the session through MCAS for monitoring or control.
 
-## ⚙️ Policy Evaluation Order
+## ⚙️ Policy evaluation order
 
 All enabled policies are evaluated for every sign-in. If two policies both match a sign-in, both are applied. If one requires MFA and another requires a compliant device, the user must satisfy both. There's no priority order between policies; the union of all matching policies applies.
 
@@ -105,7 +105,7 @@ This is why exclusions need careful design. An exclusion from one policy doesn't
 ---
 
 💬 **What's the trickiest CA policy interaction you've debugged?** The "why is this user being asked for MFA when they shouldn't be" investigation almost always comes down to an unexpected policy match. What was the policy that surprised you?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** CA policies require **Entra ID P1**. Risk-based conditions in CA policies (sign-in risk, user risk) require **Entra ID P2**.

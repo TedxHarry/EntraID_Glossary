@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.21 - IP Address Range**
+📚 Part of Entra ID Glossary Series #7.21 - IP Address Range
 
 ---
 
@@ -11,7 +11,7 @@
 
 - IP address ranges in Named Locations use CIDR notation (e.g., 192.168.1.0/24) to define network ranges
 - Single IPs are /32; IPv6 ranges are also supported
-- Keep Named Locations updated — stale IP ranges can create security gaps or block legitimate users
+- Keep Named Locations updated : stale IP ranges can create security gaps or block legitimate users
 
 
 An organization asked me to help them understand why some users were still being prompted for MFA despite a policy that should have excluded their office. We opened the Named Location definition and found it: the IP range was entered as `10.0.0.0/8`. The office used `192.168.1.0/24`. The admin who set it up had used a private address range from memory instead of checking what the actual office IP was.
@@ -20,7 +20,7 @@ The policy was correctly designed. The IP range was wrong. Users at the office a
 
 IP Address Range is the foundational data that location-based Conditional Access is built on. Getting it wrong silently breaks location policies in ways that are hard to diagnose.
 
-## 📡 What IP Address Range Is in Entra ID
+## 📡 What IP address range is in Entra ID
 
 An IP Address Range is a CIDR-notated set of IP addresses defined in a Named Location in Entra ID. Conditional Access policies use Named Locations as conditions, and Named Locations are built from IP address ranges.
 
@@ -32,7 +32,7 @@ CIDR notation (Classless Inter-Domain Routing) expresses a range of IP addresses
 
 Entra ID supports both IPv4 and IPv6 CIDR ranges in Named Location definitions.
 
-## 🏗️ How IP Ranges Are Used in Practice
+## 🏗️ How IP ranges are used in practice
 
 **Corporate office definition** 🏢: Your ISP assigns a fixed IP or range to your office. That range goes into a Named Location. Conditional Access policies use that Named Location to identify office traffic.
 
@@ -44,7 +44,7 @@ Finding your office's external IP: the external (public) IP address that your of
 
 **Cloud infrastructure** ☁️: Azure services have published IP range documents that list the IP addresses for each service and region. If your organization's Azure workloads make authentication requests, those IPs may need to be in a Named Location depending on how service authentication is configured.
 
-## ⚙️ Technical Considerations
+## ⚙️ Technical considerations
 
 **CIDR accuracy** 🎯: An IP range that's too broad includes IPs that don't belong to you. An IP range that's too narrow misses some of your traffic. The right range is exactly what your ISP has allocated to your organization. Check with your network team or ISP if you're unsure.
 
@@ -54,7 +54,7 @@ Finding your office's external IP: the external (public) IP address that your of
 
 **Maximum ranges per Named Location** 📋: Entra ID supports up to 2,000 IP ranges per Named Location. Organizations with large distributed networks may need multiple Named Locations.
 
-## 🔍 Verifying Your IP Range Definitions
+## 🔍 Verifying your IP range definitions
 
 Before marking a Named Location as trusted or building policies around it, verify that the IP ranges actually match your traffic:
 
@@ -64,7 +64,7 @@ Before marking a Named Location as trusted or building policies around it, verif
 
 **Network team input** 🤝: For large organizations, the network team maintains authoritative records of external IP allocations. Confirm ranges with them rather than guessing.
 
-## ⚠️ Common IP Range Mistakes
+## ⚠️ Common IP range mistakes
 
 **Private vs public IP confusion** 🔀: Private IP ranges (10.x.x.x, 172.16-31.x.x, 192.168.x.x) are internal addresses. They never appear as the source IP for traffic that reaches Microsoft's servers. Only public (external) IPs belong in Named Locations.
 
@@ -75,7 +75,7 @@ Before marking a Named Location as trusted or building policies around it, verif
 ---
 
 💬 **Have you ever discovered that a Named Location's IP range was misconfigured and causing policies to behave unexpectedly?** The private IP vs public IP confusion is by far the most common mistake. What was the sign-in log investigation that revealed the mismatch in your environment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

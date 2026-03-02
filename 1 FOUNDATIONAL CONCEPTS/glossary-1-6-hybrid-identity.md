@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#1.6 - Hybrid Identity**
+📚 Part of Entra ID Glossary Series #1.6 - Hybrid Identity
 
 ---
 
@@ -18,7 +18,7 @@ If I had to pick one concept that trips up aspiring Entra ID specialists more th
 
 Let me give you the real picture.
 
-## 🔄 What Hybrid Identity Is
+## 🔄 What hybrid identity is
 
 Most large organizations don't get to choose between Active Directory and Entra ID. They've had AD for 10, 15, 20 years. Their file servers, their legacy apps, their computer management, all built around it. And now they need Entra ID for Microsoft 365, for cloud apps, for modern authentication.
 
@@ -28,7 +28,7 @@ When done right, the user doesn't notice. They log in at their desk the same way
 
 When it breaks, they call the help desk.
 
-## 💡 Why Organizations End Up Here
+## 💡 Why organizations end up here
 
 Nobody architects hybrid identity because it's their dream state. They end up here because:
 
@@ -40,7 +40,7 @@ Nobody architects hybrid identity because it's their dream state. They end up he
 
 **The business keeps running.** You can't take everyone offline for an identity migration. Change happens while the organization operates, which means both systems run simultaneously for years.
 
-## 🔄 How Synchronization Works
+## 🔄 How synchronization works
 
 The primary tool is Microsoft Entra Connect (previously called Azure AD Connect). You install it on a server in your on-premises environment, connect it to your AD and your Entra ID tenant, and it handles synchronization.
 
@@ -50,7 +50,7 @@ The flow is one-directional for most attributes: AD is the source of truth, Entr
 
 Entra Cloud Sync is the newer, lighter-weight alternative. It doesn't require a dedicated server, agents are installed on domain controllers, and it handles some scenarios Entra Connect doesn't, like multi-forest environments. Many organizations are migrating from Connect to Cloud Sync now.
 
-## 🔄 What Syncs and What Doesn't
+## 🔄 What syncs and what doesn't
 
 This is where people get caught out. Not everything in AD syncs to Entra ID.
 
@@ -60,7 +60,7 @@ This is where people get caught out. Not everything in AD syncs to Entra ID.
 
 Entra ID isn't a cloud copy of Active Directory. It's a synchronized subset of the identities, focused on the attributes needed for cloud access management.
 
-## ⚠️ The Failure Points I've Actually Seen
+## ⚠️ The failure points i've actually seen
 
 Three failure scenarios come up over and over in hybrid environments:
 
@@ -72,7 +72,7 @@ Three failure scenarios come up over and over in hybrid environments:
 
 Monitor your sync health. Set up alerts. Check the synchronization status regularly, it's in the Entra admin center under Identity > Hybrid Management. Don't let it run unmonitored for months and find out about a problem through a user complaint.
 
-## 📍 This Is Where Most Organizations Actually Are
+## 📍 This is where most organizations actually are
 
 If you're studying Entra ID to work in enterprise IT, you will almost certainly be working in a hybrid environment. Pure cloud-only tenants exist, mostly startups and newer organizations, but the majority of enterprises are hybrid, and that's unlikely to change completely within the next few years.
 
@@ -82,7 +82,7 @@ Understanding hybrid identity isn't advanced material. It's practical reality. �
 ---
 
 💬 **Where are you in your hybrid journey?** Are you managing a hybrid environment right now, planning a migration toward cloud-only, or starting fresh with cloud-first? What's the hardest part you've run into, the technology or convincing stakeholders that it's worth the effort?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

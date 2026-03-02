@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#11.1 - Authorization Code Flow**
+📚 Part of Entra ID Glossary Series #11.1 - Authorization Code Flow
 
 ---
 
@@ -20,7 +20,7 @@ Tokens in URL fragments get logged by servers, stored in browser history, and ca
 
 Understanding why the authorization code flow is structured the way it is makes the security model clear.
 
-## 🔄 The Flow Step by Step
+## 🔄 The flow step by step
 
 **Step 1: Authorization request** 🔗: The application redirects the user's browser to Entra ID's authorization endpoint. The request includes the application's client ID, the requested scopes, a redirect URI (where Entra ID should send the user after authentication), a randomly generated state value, and for PKCE, a code challenge.
 
@@ -32,7 +32,7 @@ Understanding why the authorization code flow is structured the way it is makes 
 
 **Step 5: Tokens returned** ✅: Entra ID validates the code and client authentication, then returns an access token, an ID token, and optionally a refresh token. These tokens are returned in the HTTP response body to the server, not in any URL.
 
-## 🔒 Why the Code Exists
+## 🔒 Why the code exists
 
 The core insight of the authorization code flow is the two-phase design. Phase one happens in the browser: authentication and consent. Phase two happens server-side: token acquisition. The browser never sees a token.
 
@@ -40,7 +40,7 @@ The authorization code that moves through the browser has no value on its own. I
 
 This is the fundamental security improvement over implicit flow, where the browser received tokens directly.
 
-## 🛡️ PKCE: The Public Client Extension
+## 🛡️ PKCE: the public client extension
 
 For applications that can't keep a client secret (single-page applications, mobile apps, desktop apps), PKCE (Proof Key for Code Exchange) provides equivalent protection without a shared secret.
 
@@ -50,7 +50,7 @@ An attacker who intercepts the authorization code can't exchange it because they
 
 PKCE is now recommended for all clients, including confidential web applications. It provides defense in depth alongside the client secret.
 
-## ⚙️ What MSAL Does With This
+## ⚙️ What MSAL does with this
 
 `msal-browser` (for SPAs), `msal-node` (for Node servers), and MSAL equivalents in other languages implement the authorization code flow so developers don't have to build it manually. The library handles:
 
@@ -61,7 +61,7 @@ Most developers implementing "Sign in with Microsoft" write a few lines of MSAL 
 ---
 
 💬 **Has your team ever debugged an authorization code flow failure in production, and what was the root cause?** The most common failures are redirect URI mismatches, state parameter validation errors, and PKCE verifier mismatches. Which part of the flow has caused the most debugging time for your team?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

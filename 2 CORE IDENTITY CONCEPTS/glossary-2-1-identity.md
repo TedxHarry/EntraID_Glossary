@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#2.1 - Identity**
+📚 Part of Entra ID Glossary Series #2.1 - Identity
 
 ---
 
 ## 🎯 TL;DR
 
-- An identity is any object that can be authenticated — user, service principal, managed identity, or device
+- An identity is any object that can be authenticated : user, service principal, managed identity, or device
 - Every identity gets a unique Object ID (OID) that persists even if the UPN or display name changes
 - Entra ID evaluates policies against identities, not just usernames, which enables fine-grained access control
 
@@ -22,7 +22,7 @@ That meeting produced a design document with a serious flaw in it that took thre
 
 So before we go any further in this series, let's define it properly.
 
-## 📌 What Identity Means in Entra ID
+## 📌 What identity means in Entra ID
 
 In Microsoft Entra ID, an identity is a directory object that can be authenticated and authorized to access resources.
 
@@ -36,7 +36,7 @@ Break that down word by word:
 
 If something in Entra ID meets all three of those criteria, it's an identity. If it can't be authenticated, it's just data.
 
-## 📋 The Three Kinds of Identity You'll Manage
+## 📋 The three kinds of identity you'll manage
 
 This is where the definition gets practical, because not all identities are people.
 
@@ -46,7 +46,7 @@ This is where the definition gets practical, because not all identities are peop
 
 **Device identities** are for physical and virtual machines. When a laptop registers with Entra ID, it gets a device identity, a directory object that represents that specific machine. Entra ID can then make access decisions based on the device: is it compliant with security policies? Is it managed? Is it Entra-joined? The device's identity influences whether the human using it gets access.
 
-## 💡 Why the Distinction Actually Matters
+## 💡 Why the distinction actually matters
 
 A common mistake I see: treating all identities the same way from a governance and security perspective.
 
@@ -58,7 +58,7 @@ Device identities tie into Conditional Access: your policies can require that a 
 
 Mixing up which type of identity you're dealing with leads to applying the wrong security model. And applying the wrong security model means either gaps or friction, or both.
 
-## 📌 The Object ID: The Thing That Never Changes
+## 📌 The object id: the thing that never changes
 
 Every identity in Entra ID, user, service principal, managed identity, device, gets a globally unique Object ID (OID) assigned at creation. This is a GUID, something like `a1b2c3d4-e5f6-7890-abcd-ef1234567890`.
 
@@ -66,7 +66,7 @@ The Object ID never changes, even if everything else does. A user can change the
 
 I once spent two hours troubleshooting why an app kept losing its permissions. Turned out the app was looking up the admin group by display name. Someone had renamed the group. Object ID lookup would've been stable. Lesson learned.
 
-## 🚀 Identity Is the Starting Point for Everything
+## 🚀 Identity is the starting point for everything
 
 Every access decision in Entra ID starts with identity. Before Conditional Access can evaluate whether to allow or block access, it needs to know *who* is asking. Before permissions can be checked, the identity making the request has to be established. Before MFA can be required, there has to be an authenticated identity to require it *of*.
 
@@ -76,7 +76,7 @@ Get comfortable with identity as a concept, all three types, their distinct secu
 
 
 **Think about your own environment:** How many different types of identities are you managing right now? Most people underestimate the workload identity count, the apps and services quietly authenticating in the background. Do you know how many service principals are active in your tenant?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

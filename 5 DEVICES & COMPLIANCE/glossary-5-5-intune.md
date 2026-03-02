@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.5 - Intune**
+📚 Part of Entra ID Glossary Series #5.5 - Intune
 
 ---
 
@@ -11,14 +11,14 @@
 
 - Intune is Microsoft's cloud-based MDM and MAM service for managing devices and apps
 - It sets compliance policies (which Conditional Access checks) and configuration profiles (settings pushed to devices)
-- Intune integrates with Entra ID — device compliance status flows from Intune into CA policy evaluation
+- Intune integrates with Entra ID : device compliance status flows from Intune into CA policy evaluation
 
 
 An IT manager asked me if Intune was "basically just a thing you need to make Conditional Access device compliance work."
 
 That's not wrong as a starting point, but it undersells what Intune does by about 80%. The compliance reporting piece is the part that makes Entra ID and Intune visible to each other, but the management work Intune does on devices every day is what keeps that compliance state meaningful.
 
-## 📦 What Intune Actually Is
+## 📦 What intune actually is
 
 Microsoft Intune is a cloud-based endpoint management service. It's the platform that lets organizations manage devices (Windows, macOS, iOS, Android) and applications at scale, without requiring on-premises infrastructure like Configuration Manager's management point servers.
 
@@ -32,7 +32,7 @@ Everything Intune does falls into four categories:
 
 **Device lifecycle** 🔄: Enroll new devices, retire devices when no longer needed, wipe lost or stolen devices remotely, and reassign devices to new users. Autopilot integration means new Windows devices can set themselves up.
 
-## 🔗 How Intune Connects to Entra ID
+## 🔗 How intune connects to entra ID
 
 Intune and Entra ID are deeply integrated. Intune uses Entra ID for:
 
@@ -45,7 +45,7 @@ The compliance state is the critical handshake. Entra ID doesn't evaluate device
 
 If Intune hasn't checked in recently, the device's compliance state in Entra ID may be stale. This is why forcing a device sync before enforcing a new compliance requirement matters.
 
-## 🏢 Intune vs Configuration Manager
+## 🏢 Intune vs configuration manager
 
 Microsoft has two device management tools: Intune (cloud) and Configuration Manager / MECM (on-premises). Many large enterprises run both.
 
@@ -55,7 +55,7 @@ Microsoft has two device management tools: Intune (cloud) and Configuration Mana
 
 **Co-management** (running both simultaneously) is common during transition. Specific workloads are moved from Configuration Manager to Intune incrementally: compliance policies first, then configuration policies, then app deployment. Organizations gradually shift control to the cloud without a cutover event.
 
-## 💡 What Changes When You Enable Intune
+## 💡 What changes when you enable intune
 
 The practical impact when an organization turns on Intune enrollment with compliance policies:
 
@@ -69,7 +69,7 @@ The visibility alone is often the most valuable initial outcome. Before Intune, 
 ---
 
 💬 **What was the first Intune compliance or configuration policy your organization enabled, and what did it reveal about the current state of your device fleet?** The first compliance policy rollout often surfaces surprises about device health that nobody knew were there. What did you find?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Microsoft Intune is licensed separately (Intune Plan 1 or as part of Microsoft 365 E3/E5). Intune is NOT included in Entra ID P1/P2 alone.

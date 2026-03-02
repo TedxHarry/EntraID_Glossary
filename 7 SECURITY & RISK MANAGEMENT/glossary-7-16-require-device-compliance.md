@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.16 - Require Device Compliance**
+📚 Part of Entra ID Glossary Series #7.16 - Require Device Compliance
 
 ---
 
 ## 🎯 TL;DR
 
-- Require compliant device forces Intune compliance check before granting access — device must pass all compliance policies
-- This blocks AiTM token theft attacks — attackers can't satisfy compliance from their unmanaged device
-- Requires all targeted users to have enrolled, managed, compliant devices — or they'll be blocked
+- Require compliant device forces Intune compliance check before granting access : device must pass all compliance policies
+- This blocks AiTM token theft attacks : attackers can't satisfy compliance from their unmanaged device
+- Requires all targeted users to have enrolled, managed, compliant devices : or they'll be blocked
 
 
 The attacker had everything. Username. Password. They'd even intercepted the MFA session token through an AiTM proxy attack. The user had signed in, clicked approve on the MFA prompt, and never knew anything was wrong.
@@ -20,7 +20,7 @@ The attacker used the stolen session token to try accessing Microsoft 365 from t
 
 MFA was bypassed. The device compliance check wasn't. That's why these are different controls.
 
-## 💻 What Require Device Compliance Does
+## 💻 What require device compliance does
 
 Require Device Compliance is a grant control in a Conditional Access policy. When it fires, the device making the access request must:
 
@@ -32,7 +32,7 @@ If any of those conditions aren't met, access is denied. No bypass. No step-up o
 
 This is fundamentally different from MFA. MFA verifies the user's identity. Device compliance verifies the device's health and management status. An attacker who steals a valid MFA token still can't access resources from their unmanaged device.
 
-## 🛡️ Why Device Compliance Matters for Modern Attacks
+## 🛡️ Why device compliance matters for modern attacks
 
 The AiTM attack scenario is common and well-understood by attackers. Tools to execute it are available as phishing kits on criminal forums. The attack flow:
 
@@ -47,7 +47,7 @@ Every step except the last one involves the legitimate user. MFA is satisfied le
 
 Device compliance breaks this attack class specifically because it evaluates the device making the current request, not the device that completed authentication.
 
-## ⚙️ What Compliance Means
+## ⚙️ What compliance means
 
 Compliance is assessed by Intune compliance policies. Organizations define what "compliant" means:
 
@@ -63,7 +63,7 @@ Each platform's compliance policy is configured separately in Intune. A device m
 
 Compliance status is checked on a schedule. The check-in interval (typically every 8 hours for Windows) means compliance is refreshed regularly, not just at enrollment. A device that was compliant yesterday but hasn't updated Windows can become non-compliant today.
 
-## 🔧 Implementation Dependencies
+## 🔧 Implementation dependencies
 
 Require Device Compliance as a Conditional Access grant control only works if Intune is deployed. This is the most common blocker for organizations that want this control:
 
@@ -73,7 +73,7 @@ Require Device Compliance as a Conditional Access grant control only works if In
 
 A device with no compliance data is treated as non-compliant. This creates an enrollment catch-22: a new device that isn't enrolled can't become enrolled if it can't access the resources needed to complete enrollment. Always exclude the Microsoft Intune and MDM enrollment endpoints from device compliance requirements.
 
-## 🔗 Require Compliance vs Require Hybrid Join
+## 🔗 Require compliance vs require hybrid join
 
 Both are device-based grant controls. They're not the same:
 
@@ -83,7 +83,7 @@ Both are device-based grant controls. They're not the same:
 
 Require Compliant Device is the stronger control. A hybrid joined device that hasn't been patched in six months is joined but not necessarily compliant. Require Compliant Device would block it. Require Hybrid Join wouldn't.
 
-## 💡 AND Combinations for Defense in Depth
+## 💡 AND combinations for defense in depth
 
 Require MFA AND Require Compliant Device is the combination that closes the most attack vectors:
 
@@ -96,7 +96,7 @@ This is the recommended configuration for access to sensitive resources: both re
 ---
 
 💬 **When you enforced Require Device Compliance, what was the first non-compliant device category that surprised you?** Often it's a device that's been in the environment for years and hasn't been updated because "it just works." What was the compliance failure that surfaced devices you didn't know were out of date?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

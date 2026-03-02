@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.21 - Shared Accounts**
+📚 Part of Entra ID Glossary Series #6.21 - Shared Accounts
 
 ---
 
@@ -20,7 +20,7 @@ The audit log showed `scada_admin` made the change. That narrowed it to 14 peopl
 
 The investigation took three weeks to resolve through indirect evidence. It would have taken 15 minutes with individual accounts.
 
-## ⚠️ What's Wrong with Shared Accounts
+## ⚠️ What's wrong with shared accounts
 
 Shared accounts are accounts where the same credentials are used by multiple different people. One username. One password. Multiple users.
 
@@ -36,7 +36,7 @@ The problems are structural, not just policy violations:
 
 **Conditional Access can't protect it properly** 🚫: Policies based on user attributes, device compliance, or risk level can't apply meaningfully when the same account is used from 14 different devices and locations.
 
-## 🔄 Why People Think They Need Shared Accounts
+## 🔄 Why people think they need shared accounts
 
 The reasons organizations create shared accounts are usually legitimate operational needs that have better solutions:
 
@@ -48,13 +48,13 @@ The reasons organizations create shared accounts are usually legitimate operatio
 
 **"We share an account for the vendor portal"** → This is the hardest case. Vendor portals with no individual account capability are common. The best options: push the vendor to support individual accounts, use a privileged access management tool to control who checks out the credential and when, or accept the audit limitation while documenting the business constraint.
 
-## 🔧 The Service Account Alternative
+## 🔧 The service account alternative
 
 When an application needs to authenticate to another system without a user being present, that's a workload identity scenario, not a shared human account scenario.
 
 Service accounts (individual accounts created for a specific application or process) or managed identities (Azure-managed credentials with no password to steal) are the right model. They have individual identity in audit logs, can be given the minimum permissions they need, and can be revoked without affecting other users.
 
-## 💡 Migrating Away from Shared Accounts
+## 💡 Migrating away from shared accounts
 
 For existing shared accounts that can't be immediately eliminated:
 
@@ -68,7 +68,7 @@ The goal isn't perfection overnight. It's moving toward individual accountabilit
 ---
 
 💬 **Does your organization still have shared accounts in use anywhere?** The vendor portal shared login is almost universal. The critical infrastructure shared admin account is more concerning. What's your approach to managing the ones that can't be eliminated immediately?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

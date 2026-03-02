@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#12.2 - Sign-In Log**
+📚 Part of Entra ID Glossary Series #12.2 - Sign-In Log
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Sign-in logs record every authentication event: interactive user, non-interactive, service principal, and managed identity
 - Each entry shows: user, app, result, CA policies evaluated, MFA method used, risk level, device
-- Sign-in logs are your first stop for troubleshooting access failures — search by user, app, or error code
+- Sign-in logs are your first stop for troubleshooting access failures : search by user, app, or error code
 
 
 A SOC analyst got an alert: possible account compromise for a senior finance executive. The analyst opened the Entra ID sign-in logs for that account.
@@ -20,7 +20,7 @@ In the last 24 hours: 47 successful sign-ins. 23 from Seattle, WA. 24 from Kuala
 
 That's not a sign-in pattern. That's an account being used by two different people in different hemispheres simultaneously. The executive's credentials had been compromised. The sign-in log made this visible in about 90 seconds.
 
-## 🔐 What Sign-In Logs Capture
+## 🔐 What sign-in logs capture
 
 Every authentication event in Entra ID generates a sign-in log entry. The sign-in log is the authentication record: who signed in, when, from where, using what, to access what, and whether it succeeded.
 
@@ -42,7 +42,7 @@ Fields available in each sign-in event:
 
 **Result** ✅: Success or failure. For failures: the error code and description. Interrupted (required MFA that wasn't completed) vs blocked (Conditional Access blocked the sign-in).
 
-## 📊 Three Types of Sign-In Logs
+## 📊 Three types of sign-in logs
 
 Entra ID separates sign-in activity into three log streams:
 
@@ -54,7 +54,7 @@ Entra ID separates sign-in activity into three log streams:
 
 Separating these three streams prevents the non-interactive refresh token events from burying the interactive sign-ins that are most relevant for security investigations.
 
-## 🔍 What Security Teams Look For
+## 🔍 What security teams look for
 
 **Impossible travel** ✈️: Sign-ins from locations geographically impossible to reach in the elapsed time. Entra ID ID Protection detects this automatically, but direct log review confirms it.
 
@@ -66,7 +66,7 @@ Separating these three streams prevents the non-interactive refresh token events
 
 **Unusual application access** 🔑: A user suddenly accessing applications they've never accessed before, especially administrative interfaces or sensitive data stores.
 
-## 📌 ⏰ Retention and Export
+## 📌 ⏰ retention and export
 
 Same retention as audit logs: 7 days for free tier, 30 days for P1/P2. Export to Log Analytics, Storage, or Event Hub via Diagnostic Settings. The same retention gap applies: compliance requirements often exceed 30 days.
 
@@ -75,10 +75,10 @@ Sign-in logs in Log Analytics integrate with Microsoft Sentinel for alert rules,
 ---
 
 💬 **How quickly can your SOC team access and query Entra ID sign-in logs during an active incident, and is the 30-day retention window sufficient?** Sign-in log investigation is often the first step in an identity incident response. The difference between logs in a Log Analytics workspace (queryable in seconds) versus portal-only (limited filter options, slower) can make a real difference in response time. What's your team's current sign-in log access setup?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-### 🔧 Quick Reference: PowerShell — Sign-in Logs
+### 🔧 Quick reference: PowerShell : sign-in logs
 
 ```powershell
 # Get failed sign-ins for a specific user

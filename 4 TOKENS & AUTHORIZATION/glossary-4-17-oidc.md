@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.17 - OIDC (OpenID Connect)**
+📚 Part of Entra ID Glossary Series #4.17 - OIDC (OpenID Connect)
 
 ---
 
@@ -11,7 +11,7 @@
 
 - OpenID Connect (OIDC) is the identity layer built on top of OAuth 2.0 that adds user authentication
 - It introduces the ID token (JWT with user identity claims) alongside the access token
-- When you 'Sign in with Microsoft', you're using OIDC — OAuth alone can't tell you who the user is
+- When you 'Sign in with Microsoft', you're using OIDC : OAuth alone can't tell you who the user is
 
 
 I was explaining OAuth 2.0 to a developer and they stopped me halfway through.
@@ -22,7 +22,7 @@ That's exactly the right question. And the answer is OpenID Connect.
 
 OAuth 2.0 handles authorization cleanly but was never designed to tell an application who signed in. OpenID Connect is the protocol layer built on top of OAuth 2.0 that answers that specific question.
 
-## 🔍 What OpenID Connect Adds
+## 🔍 What openid connect adds
 
 OpenID Connect (OIDC) is an identity layer on top of OAuth 2.0. It adds three things:
 
@@ -34,7 +34,7 @@ OpenID Connect (OIDC) is an identity layer on top of OAuth 2.0. It adds three th
 
 These three additions transform OAuth's authorization-focused flow into a complete authentication and authorization system. You get both in a single protocol round-trip.
 
-## 📋 The Standard Scopes
+## 📋 The standard scopes
 
 OIDC defines standard scope values that correspond to standard categories of identity information:
 
@@ -46,7 +46,7 @@ OIDC defines standard scope values that correspond to standard categories of ide
 
 When you build an Entra ID application and request `openid profile email`, you're using OIDC. The resulting ID token contains name and email claims alongside the core identity claims. The access token is still issued separately for calling APIs.
 
-## 🔄 OIDC and OAuth Together in Practice
+## 🔄 OIDC and OAuth together in practice
 
 For most applications using Entra ID, you're using both simultaneously without consciously separating them. A single authorization request might look like:
 
@@ -59,7 +59,7 @@ scope=openid profile email Mail.Read
 
 You get an ID token (tells your app who signed in) and an access token (lets your app call Graph). Both from a single authentication flow. Both from the same authorization code exchange at the token endpoint.
 
-## 🏢 OIDC vs SAML: The Modern Default
+## 🏢 OIDC vs SAML: the modern default
 
 When integrating an application with Entra ID, you choose a protocol: OIDC or SAML. For new applications, OIDC is the right choice in almost every scenario:
 
@@ -71,7 +71,7 @@ When integrating an application with Entra ID, you choose a protocol: OIDC or SA
 
 SAML retains its place for legacy applications that don't support OIDC. If you're connecting a 15-year-old enterprise system where the vendor offers only SAML and has no plans to add OIDC, you use SAML. But when you have a choice, OIDC.
 
-## 💡 The Discovery Document
+## 💡 The discovery document
 
 One of OIDC's practical contributions is the discovery document. Every OIDC provider publishes a well-known configuration endpoint:
 
@@ -86,7 +86,7 @@ Libraries that support OIDC discovery configure themselves automatically. You pr
 ---
 
 💬 **When you first understood that OAuth 2.0 and OpenID Connect were different things built on top of each other, did it change how you thought about the authentication flows you'd already built?** The distinction is fundamental but easy to miss when the library handles both transparently. What triggered the "oh, these are separate" moment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

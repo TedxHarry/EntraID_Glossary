@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.10 - Service Account**
+📚 Part of Entra ID Glossary Series #13.10 - Service Account
 
 ---
 
 ## 🎯 TL;DR
 
 - Service accounts are non-human accounts used by applications and services to run processes and call APIs
-- In Entra ID, use managed identities or service principals instead of user accounts for service accounts
+- in Entra ID, use managed identities or service principals instead of user accounts for service accounts
 - If legacy service accounts must exist: use long random passwords, never interactive login, audit regularly
 
 
@@ -20,7 +20,7 @@ The security team checked the account. It was an Entra ID account used by a repo
 
 `svc_reporting` is a service account. The pattern is common, the security posture is poor, and for applications running in Azure, there's almost always a better answer.
 
-## 🤖 What Service Accounts Are
+## 🤖 What service accounts are
 
 In the context of Entra ID, service accounts are user accounts created for applications and automated processes rather than human users. They're the legacy pattern for giving non-human workloads an identity to authenticate with.
 
@@ -36,7 +36,7 @@ This pattern migrated into cloud environments where it doesn't fit as well. Entr
 
 **No lifecycle tied to purpose** 🗑️: Service accounts created for a project that ended remain active because nobody knows it's safe to disable them. The account accumulates in the directory indefinitely.
 
-## ✅ The Modern Alternative
+## ✅ The modern alternative
 
 For applications running in Azure, managed identity is the right answer. No credentials, automatic rotation by Azure, no secrets to manage, no rotation schedule to forget. If the application can run in Azure, it should use a managed identity.
 
@@ -44,7 +44,7 @@ For applications running outside Azure that need to call Azure services, a servi
 
 Service principals exist specifically for non-human authentication. They're separate from user accounts, have no mailbox, can't be targeted by user-focused Conditional Access policies in the same way, and their credential types (certificates, client secrets, federated credentials) are appropriate for machine authentication.
 
-## 🔧 When Service Accounts Are Unavoidable
+## 🔧 When service accounts are unavoidable
 
 Not every scenario can immediately move to managed identities or service principals. Some cases where service accounts persist:
 
@@ -52,7 +52,7 @@ Not every scenario can immediately move to managed identities or service princip
 
 **On-premises workloads calling cloud services** 🏢: Processes running on-premises that need to call Entra ID-protected APIs. Managed identity requires Azure compute. A service principal with certificate auth is the right answer, but if certificate management isn't implemented, a service account may exist.
 
-## 📋 Governing Existing Service Accounts
+## 📋 Governing existing service accounts
 
 For service accounts that must exist, the governance requirements:
 
@@ -67,7 +67,7 @@ For service accounts that must exist, the governance requirements:
 ---
 
 💬 **How many service accounts (user accounts used by applications) does your organization still have in Entra ID, and what's the plan for transitioning them to service principals or managed identities?** The count of legacy service accounts in an enterprise Entra ID tenant is often surprising. What's the biggest obstacle to converting your highest-risk service accounts to modern workload identity patterns?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

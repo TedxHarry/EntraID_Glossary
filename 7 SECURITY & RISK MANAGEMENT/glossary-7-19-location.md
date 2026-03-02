@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.19 - Location**
+📚 Part of Entra ID Glossary Series #7.19 - Location
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Named Locations define trusted IP ranges or countries in Conditional Access for location-based policies
 - Use to exclude the office network from MFA requirements, or block access from high-risk countries
-- Named locations don't replace device compliance — sophisticated attackers can route through trusted IPs
+- Named locations don't replace device compliance : sophisticated attackers can route through trusted IPs
 
 
 A company's security team noticed an unusual pattern in their sign-in logs. Authentication attempts from IP addresses in countries where they had no employees, no offices, no partners, no operations. Hundreds of attempts per day. Most failing on password. A few succeeding.
@@ -20,7 +20,7 @@ The ones that succeeded were using credentials from a breach of a consumer site.
 
 The fix was a Location condition in Conditional Access: block sign-ins from countries the organization had no presence in. Implementation took 15 minutes. The attack surface dropped by 60% overnight.
 
-## 📍 What Location Is in Conditional Access
+## 📍 What location is in conditional access
 
 Location is a condition in Conditional Access policies that evaluates where the sign-in is coming from. It's based on the IP address of the authentication request, mapped to one of two signals:
 
@@ -30,7 +30,7 @@ Location is a condition in Conditional Access policies that evaluates where the 
 
 Location conditions can be used to include or exclude sign-ins from specific Named Locations or countries. This lets you build policies that respond differently to sign-ins from trusted vs untrusted locations.
 
-## 🗂️ Named Locations: The Building Blocks
+## 🗂️ Named locations: the building blocks
 
 Named Locations are the pre-defined location objects that Conditional Access policies reference. They're created in Entra admin center under Security > Conditional Access > Named Locations.
 
@@ -40,7 +40,7 @@ Two types:
 
 **Countries Named Location** 🌍: A list of countries. Used for geographic blocking or geographic allowlisting. "All countries except [list]" or "[list of countries] only" are both common patterns.
 
-## 🎯 Common Location-Based Policy Patterns
+## 🎯 Common location-based policy patterns
 
 **Country blocking** 🚫: A policy targeting all users and all apps, with a location condition for countries where the organization has no presence, and a grant control of Block access. Reduces attack surface from automated credential stuffing attacks that use infrastructure in specific geographic regions.
 
@@ -54,7 +54,7 @@ This pattern reduces MFA friction for office-based workers while maintaining MFA
 
 **Hybrid work: require MFA outside the office** 🏠: Location condition excluding "Corporate Office" Named Location + Require MFA grant. Clean experience at the office, stepped up for home/remote.
 
-## ⚠️ Location Signal Limitations
+## ⚠️ Location signal limitations
 
 Location in Conditional Access is based on IP addresses. IP addresses are not perfect location signals:
 
@@ -70,7 +70,7 @@ Location in Conditional Access is based on IP addresses. IP addresses are not pe
 
 These limitations mean location conditions should be considered a risk signal and access simplification tool, not a precise security boundary. Don't use location alone as the sole defense for sensitive resources.
 
-## 💡 Location and Risk Signals Interact
+## 💡 Location and risk signals interact
 
 Entra ID ID Protection considers sign-in location when evaluating risk. Sign-ins from unfamiliar locations contribute to sign-in risk scores. A Named Location that's marked as trusted carries lower inherent risk.
 
@@ -79,7 +79,7 @@ This interaction creates a compounding effect: sign-ins from trusted corporate l
 ---
 
 💬 **Have you implemented country-based location blocking in Conditional Access?** The before and after comparison in sign-in logs is often striking: hundreds of failed authentication attempts from blocked countries that simply stop appearing after the policy goes live. What countries were generating the most attack traffic before you blocked them?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

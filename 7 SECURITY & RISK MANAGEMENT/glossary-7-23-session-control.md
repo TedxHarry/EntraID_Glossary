@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.23 - Session Control**
+📚 Part of Entra ID Glossary Series #7.23 - Session Control
 
 ---
 
@@ -20,7 +20,7 @@ They couldn't block personal devices: the legitimate use case was real. They cou
 
 Session controls gave them a middle path. Personal devices got access to the records application, but the session was constrained: no download, no print, read-only. The nurse could view what they needed. The records couldn't leave the controlled environment.
 
-## 🔒 What Session Controls Are
+## 🔒 What session controls are
 
 Session controls are Conditional Access settings that apply constraints to a session after access has been granted. Where grant controls determine whether access is allowed and under what initial requirements, session controls govern what happens within the granted session.
 
@@ -28,7 +28,7 @@ The distinction matters: a user can satisfy all grant requirements (MFA, complia
 
 They answer the question: "We've decided to allow this user in. What limits should apply to what they can do?"
 
-## 📌 ⏱️ Sign-In Frequency
+## 📌 ⏱️ sign-in frequency
 
 Sign-in frequency controls how long a user's session remains valid before they're required to re-authenticate.
 
@@ -42,7 +42,7 @@ Sign-in frequency overrides this default for specific scenarios:
 
 **Persistent browser sessions** 🖥️: Session controls can also configure whether users see the "Stay signed in?" prompt and whether that option actually creates a long-lived session. For sensitive environments, disable persistent sessions on browser clients.
 
-## 🔏 App-Enforced Restrictions
+## 🔏 App-Enforced restrictions
 
 For applications that support it, session controls can instruct the application to apply restrictions based on the device state. Microsoft 365 applications including Exchange Online, SharePoint Online, and Teams support app-enforced restrictions.
 
@@ -56,7 +56,7 @@ The configuration passes device compliance and management information to the app
 
 This lets organizations support BYOD access to Microsoft 365 without giving unmanaged devices the same access level as managed ones. The user gets in, but what they can do is proportionate to the device's management state.
 
-## 🛡️ Microsoft Defender for Cloud Apps Session Policies
+## 🛡️ Microsoft defender for cloud apps session policies
 
 For organizations with Microsoft Defender for Cloud Apps (MDCA), session controls can route the session through MDCA's cloud app security proxy. This enables real-time session monitoring and control:
 
@@ -68,7 +68,7 @@ For organizations with Microsoft Defender for Cloud Apps (MDCA), session control
 
 MDCA session proxy is a more sophisticated and expensive approach than app-enforced restrictions, but it works for third-party SaaS applications that don't natively support Conditional Access session controls.
 
-## 📋 Continuous Access Evaluation as a Session Control
+## 📋 Continuous access evaluation as a session control
 
 Continuous Access Evaluation (CAE) is a session control that enables near-real-time revocation of access during an active session when critical events occur.
 
@@ -82,7 +82,7 @@ With CAE, participating applications can receive revocation signals from Entra I
 
 CAE shifts the security model from "tokens expire eventually" to "tokens are revoked when conditions change." For high-value resources, this is significant.
 
-## 🎯 Matching Session Controls to Scenarios
+## 🎯 Matching session controls to scenarios
 
 **Personal device access to M365** 📱: App-enforced restrictions. Allow viewing, disable download and print. User can work, data can't leave the managed environment.
 
@@ -95,7 +95,7 @@ CAE shifts the security model from "tokens expire eventually" to "tokens are rev
 ---
 
 💬 **Have you used app-enforced restrictions or sign-in frequency controls to enable a use case that would otherwise have been "block it"?** The BYOD scenario where personal devices get read-only access is the classic example. What was the access scenario that session controls made possible without compromising data security?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

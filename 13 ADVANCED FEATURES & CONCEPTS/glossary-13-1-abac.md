@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.1 - Attribute-Based Access Control (ABAC)**
+📚 Part of Entra ID Glossary Series #13.1 - Attribute-Based Access Control (ABAC)
 
 ---
 
@@ -11,7 +11,7 @@
 
 - ABAC (Attribute-Based Access Control) grants access based on attributes of the user, resource, and environment
 - Azure ABAC uses condition expressions on role assignments: e.g., only access blobs with tag `Project=Alpha`
-- More granular than RBAC — reduces the number of role assignments needed for fine-grained control
+- More granular than RBAC : reduces the number of role assignments needed for fine-grained control
 
 
 A financial services company had a data governance problem. Analysts in the Research department needed access to financial models. But not all financial models: only the ones tagged as belonging to their division, and only when those models were classified as internal or lower. Confidential-rated documents required a separate approval.
@@ -22,7 +22,7 @@ ABAC solved it with one role and conditions: "Storage Blob Data Reader for blobs
 
 One role. Dynamic access based on attributes. No role proliferation.
 
-## 🏗️ What ABAC Is
+## 🏗️ What ABAC is
 
 Attribute-Based Access Control is an authorization model where access decisions are made based on attributes: characteristics of the user, the resource being accessed, and the environment or context of the request. Rather than asking "does this user have the right role?", ABAC asks "do this user's attributes, this resource's attributes, and this context satisfy the access policy?"
 
@@ -31,7 +31,7 @@ ABAC says: "Members of the Finance Analyst role can read blobs in this storage a
 
 The same role covers many users, but what each user can access is filtered by their individual attributes and the attributes of the specific resources they're requesting.
 
-## ⚙️ ABAC in Azure and Entra ID
+## ⚙️ ABAC in Azure and entra ID
 
 Microsoft has introduced ABAC capabilities in two areas:
 
@@ -43,7 +43,7 @@ Example condition: grant read access only to blobs where the tag `Project` equal
 
 Custom security attributes allow organizations to extend Entra ID's user object with identity attributes that drive attribute-based access decisions in connected applications or in Azure RBAC conditions.
 
-## 📊 When ABAC Beats RBAC
+## 📊 When ABAC beats RBAC
 
 The practical trigger for ABAC is role proliferation: when managing access requires creating an unsustainable number of roles to handle attribute-based distinctions.
 
@@ -53,13 +53,13 @@ The practical trigger for ABAC is role proliferation: when managing access requi
 
 **Dynamic team membership** 👥: Project-based access where users should be able to access resources tagged with their current project assignments. As project assignments change (via HR system updates to user attributes), access adjusts without manual role reassignment.
 
-## 🔧 Attribute Sets for Custom Security Attributes
+## 🔧 Attribute sets for custom security attributes
 
 Custom security attributes in Entra ID are organized into attribute sets, which are logical groupings of related attributes. An organization might have an attribute set called `SecurityClearance` with attributes like `Level`, `ExpiryDate`, and `GrantingAuthority`.
 
 Attribute sets have their own permission model. Not every Entra ID administrator can read or write custom security attributes: reading requires the Attribute Assignment Reader role, writing requires the Attribute Assignment Administrator role. This separation ensures sensitive attributes (clearance levels, access authorizations) aren't visible to general user administrators.
 
-## ⚠️ The Operational Reality
+## ⚠️ The operational reality
 
 ABAC requires more planning than RBAC because the conditions and attributes must be consistently maintained. An attribute-based condition is only as reliable as the attribute values it depends on.
 
@@ -68,7 +68,7 @@ If user department attributes in Entra ID aren't kept in sync with the HR system
 ---
 
 💬 **Has your organization hit the point where RBAC role proliferation is a management problem, and have you evaluated ABAC conditions as a solution?** The tipping point is usually when managing access requires creating more roles than teams can reasonably administer. What data segmentation or classification requirement is driving the most role proliferation in your environment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Azure ABAC (attribute conditions on role assignments) is included with Azure RBAC at no extra cost. Entra ID ABAC features may require P2.

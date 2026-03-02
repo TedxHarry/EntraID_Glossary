@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.31 - CA Template**
+📚 Part of Entra ID Glossary Series #7.31 - CA Template
 
 ---
 
@@ -11,7 +11,7 @@
 
 - CA templates are pre-built, Microsoft-recommended CA policy configurations for common security scenarios
 - Examples: Require MFA for admins, Require phishing-resistant MFA for Azure management, Block legacy auth
-- Templates are a starting point — review and customize to match your organization's specific requirements
+- Templates are a starting point : review and customize to match your organization's specific requirements
 
 
 An organization wanted to implement Conditional Access but didn't know where to start. Their tenant was empty of policies. Every time they sat down to design policies, the conversation turned into a two-hour debate about scope, exclusions, and whether to require compliant device for the warehouse team.
@@ -20,7 +20,7 @@ They discovered CA Templates: pre-built policy configurations covering the most 
 
 The debate didn't disappear. But the starting point was no longer a blank screen.
 
-## 📋 What CA Templates Are
+## 📋 What CA templates are
 
 Conditional Access Templates are pre-built policy configurations provided by Microsoft in the Entra admin center. They're not deployed automatically. They're a library of recommended configurations for common security scenarios that you can review, modify, and deploy.
 
@@ -28,7 +28,7 @@ Templates are found in the Entra admin center under Security > Conditional Acces
 
 Each template represents a specific security scenario: blocking legacy authentication, requiring MFA for administrators, requiring compliant devices for specific resource types. They're based on Microsoft's security recommendations and the patterns observed across the Microsoft 365 customer base.
 
-## 🏗️ The Template Categories
+## 🏗️ The template categories
 
 **Securing administrator accounts** 👑:
 
@@ -55,7 +55,7 @@ Each template represents a specific security scenario: blocking legacy authentic
 - Block access from specific countries.
 - Require terms of use acceptance.
 
-## 🔧 How to Use Templates Effectively
+## 🔧 How to use templates effectively
 
 Templates are starting points, not finished configurations. The right workflow:
 
@@ -69,7 +69,7 @@ Templates are starting points, not finished configurations. The right workflow:
 
 **Step 5: Enforce** ✅: Switch to enforcement when the report-only results are understood and exclusions are configured.
 
-## ⚠️ Template Limitations
+## ⚠️ Template limitations
 
 Templates are generic. Your environment is specific. Common gaps:
 
@@ -86,7 +86,7 @@ Templates reduce the activation energy for getting started. They don't replace u
 ---
 
 💬 **Did your organization use CA Templates as a starting point for your Conditional Access deployment, or did you build from scratch?** The template approach accelerates getting to a functional baseline, but the organizations that built from scratch often have cleaner, more intentional policy sets. What approach did you take and what would you do differently?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.11 - Approval Workflow**
+📚 Part of Entra ID Glossary Series #6.11 - Approval Workflow
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Approval workflows route access requests through one or more approvers before granting access
 - Approvers can be: specific users, group members, resource owners, or managers
-- Time-limited approvals automatically expire access — reducing long-lived standing access
+- Time-limited approvals automatically expire access : reducing long-lived standing access
 
 
 A sensitive access package had a two-stage approval: manager first, then the data owner. A manager approved in 2 hours. The data owner never responded. After 14 days, the request timed out and the user was denied access.
@@ -22,7 +22,7 @@ The approval workflow had worked exactly as configured. The problem was a broken
 
 Approval workflows are both the logic of the access decision and the operational experience of the people making that decision.
 
-## 🔗 What an Approval Workflow Is
+## 🔗 What an approval workflow is
 
 An approval workflow is the sequence of approvals required before an access request is fulfilled. It defines:
 
@@ -33,7 +33,7 @@ An approval workflow is the sequence of approvals required before an access requ
 
 In Microsoft Entra ID Governance access packages, approval workflows are configured as part of the access package policy. A request for that access package follows the defined workflow before access is granted.
 
-## 📋 Approval Stage Options
+## 📋 Approval stage options
 
 **Single approver stage** 🔵: One person approves. Simple, fast, appropriate for lower-risk access.
 
@@ -45,7 +45,7 @@ In Microsoft Entra ID Governance access packages, approval workflows are configu
 
 **Self-approval with justification**: For lower-risk access, the policy can require a business justification without a human approver. The user provides the justification and access is granted automatically. Useful for resources that are broadly available but where an audit trail of stated justification is required.
 
-## 📌 ⏱️ Timeout and Escalation
+## 📌 ⏱️ timeout and escalation
 
 Every approval stage has a configured response window. If the approver doesn't respond within that window, one of three things happens depending on the policy:
 
@@ -55,7 +55,7 @@ Every approval stage has a configured response window. If the approver doesn't r
 
 The 14-day default timeout is often too long for time-sensitive requests. Organizations with operational access needs configure shorter windows (3-5 days) with escalation to ensure decisions happen on a business-relevant timeline.
 
-## 🔧 Configuring Approvers Well
+## 🔧 Configuring approvers well
 
 Common approval configuration mistakes:
 
@@ -67,7 +67,7 @@ Common approval configuration mistakes:
 
 **Manager as approver when manager isn't meaningful** ⚠️: For external guest users or contractors, the "manager" attribute may not be populated or may not point to someone with relevant knowledge of the resource. Named approvers are better for guest access than dynamic manager routing.
 
-## 💡 The Audit Value of Approval Workflows
+## 💡 The audit value of approval workflows
 
 Beyond the operational function, approval workflows create a documented record: who approved this access, when, with what justification. This is the evidence that access decisions were made deliberately, by appropriate people, with documented reasoning.
 
@@ -76,7 +76,7 @@ For compliance purposes, an audit trail showing "manager approved on March 15, d
 ---
 
 💬 **Have you had an approval workflow fail operationally - an approver not reachable, a notification going to the wrong place, or a timeout expiring without anyone noticing?** The approval workflow design on paper and the approval workflow in practice often diverge significantly. What did you change to make it more reliable?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.4 - Device Enrollment**
+📚 Part of Entra ID Glossary Series #5.4 - Device Enrollment
 
 ---
 
@@ -18,7 +18,7 @@ After a security incident where a former employee's personal phone still had cor
 
 The answer involved understanding two things that people often blur together: registration (Entra ID knows the device exists) and enrollment (the organization can actually manage and control the device). They're sequential steps, not synonyms. And in that incident, the device was registered but not enrolled, which meant IT had no way to remotely remove corporate data when the employee left.
 
-## 📲 What Enrollment Actually Means
+## 📲 What enrollment actually means
 
 Device enrollment is the process of bringing a device under management control, typically through Microsoft Intune. When a device is enrolled:
 
@@ -30,7 +30,7 @@ Device enrollment is the process of bringing a device under management control, 
 
 Without enrollment, a device has an identity in Entra ID but the organization has no visibility into its security posture and no ability to act on it.
 
-## 🔧 How Enrollment Happens
+## 🔧 How enrollment happens
 
 Different enrollment paths exist for different device types and ownership models:
 
@@ -42,7 +42,7 @@ Different enrollment paths exist for different device types and ownership models
 
 **Apple Device Enrollment Program (DEP) and Android Enterprise** handle enrollment for corporate-owned mobile devices, typically pre-configured before distribution so devices arrive already enrolled.
 
-## 📋 MDM vs MAM: Two Enrollment Philosophies
+## 📋 MDM vs mam: two enrollment philosophies
 
 Full MDM enrollment gives the organization control over the entire device. IT can see device inventory, push any configuration, wipe the device, and enforce compliance. For corporate-owned devices, this is the right model.
 
@@ -54,7 +54,7 @@ This is why the two options exist:
 - 🏢 Corporate device: Full MDM enrollment
 - 📱 Personal device: MAM without MDM enrollment (or require corporate-owned device for access)
 
-## ⚠️ What Enrollment Doesn't Cover
+## ⚠️ What enrollment doesn't cover
 
 Enrollment gives the organization management capability. It doesn't guarantee compliance. A device can be enrolled but still fail compliance checks if the user has disabled a required security setting.
 
@@ -62,14 +62,14 @@ Enrollment also doesn't give IT access to personal content. On a personally-enro
 
 That distinction matters when explaining enrollment to employees who are concerned about privacy. "We manage the work apps, not your device" is often the framing that makes enrollment acceptable for personal devices.
 
-## 💡 Fixing the Offboarding Gap
+## 💡 Fixing the offboarding gap
 
 In the incident that opened this article, the fix was implementing App Protection Policy on mobile devices (for employees who refused full MDM enrollment) and requiring Intune enrollment with a device enrollment block that prevented corporate app access on unenrolled devices. Offboarding automation was also updated to trigger selective wipes via Intune's API on departure day.
 
 ---
 
 💬 **Has your organization struggled with the BYOD enrollment conversation? Getting employees to enroll personal devices in any form of management is a genuine challenge.** What framing or policy change made the difference in getting adoption?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

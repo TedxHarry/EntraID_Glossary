@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.12 - Custom Role**
+📚 Part of Entra ID Glossary Series #13.12 - Custom Role
 
 ---
 
 ## 🎯 TL;DR
 
-- Custom roles allow creating Entra ID admin roles with exactly the permissions needed — no more, no less
-- Custom roles reduce blast radius compared to built-in roles — an admin can only do what the custom role allows
+- Custom roles allow creating Entra ID admin roles with exactly the permissions needed : no more, no less
+- Custom roles reduce blast radius compared to built-in roles : an admin can only do what the custom role allows
 - Custom role creation requires Entra ID P1; management through PIM requires P2
 
 
@@ -22,7 +22,7 @@ Neither built-in role was the right fit. The team needed exactly: reset password
 
 That's what custom roles are for.
 
-## 🔧 What Custom Roles Are
+## 🔧 What custom roles are
 
 Custom roles in Entra ID are administrator-defined role definitions that specify exactly which permissions the role includes, assembled from Entra ID's permission catalog. Unlike built-in roles (which Microsoft defines and can't be modified), custom roles are created and managed by the organization.
 
@@ -30,7 +30,7 @@ A custom role is a named collection of permissions. You give it a display name, 
 
 Custom roles require Entra ID P1 or P2 licensing.
 
-## 📋 The Permission Catalog
+## 📋 The permission catalog
 
 Entra ID exposes a large permission catalog for custom roles, covering operations across:
 
@@ -48,7 +48,7 @@ Entra ID exposes a large permission catalog for custom roles, covering operation
 
 The granularity is meaningful. "Update users" is not a single permission; there are separate permissions for updating basic properties vs updating sensitive properties vs updating credentials. This granularity is what makes least-privilege custom roles achievable.
 
-## 🎯 Common Custom Role Scenarios
+## 🎯 Common custom role scenarios
 
 **Helpdesk password reset** 🔑: Permissions to read user properties and reset passwords for non-admin users. No user creation, no deletion, no group management. Scoped to non-admin users using assignable scope or admin unit scoping.
 
@@ -60,7 +60,7 @@ The granularity is meaningful. "Update users" is not a single permission; there 
 
 **Named location manager** 📍: Permission to create and manage named locations for Conditional Access. For network teams who need to maintain trusted IP ranges without access to modify Conditional Access policies themselves.
 
-## 🔒 Scoping Custom Roles
+## 🔒 Scoping custom roles
 
 Custom roles can be scoped at different levels:
 
@@ -72,7 +72,7 @@ Custom roles can be scoped at different levels:
 
 Scoped custom roles are the combination that achieves genuine least privilege: the right permissions AND the right scope, not permissions for everything.
 
-## ⚙️ Custom Roles in PIM
+## ⚙️ Custom roles in PIM
 
 Custom roles integrate with Privileged Identity Management just like built-in roles. Instead of permanent assignment, custom roles can be:
 
@@ -85,7 +85,7 @@ This makes PIM-governed custom roles the right pattern for even helpdesk capabil
 ---
 
 💬 **Does your organization use custom Entra ID roles to implement least-privilege administrative access, or are built-in roles covering most scenarios?** The gap between "we use Helpdesk Administrator because it's close enough" and "we have a custom role that includes exactly the permissions our helpdesk needs" matters for security posture. What's the administrative permission gap that most warrants a custom role in your environment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Creating custom Entra ID roles requires **Entra ID P1**. Managing custom roles with PIM (JIT activation) requires **Entra ID P2**.

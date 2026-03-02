@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.27 - SSPR (Security Focus)**
+📚 Part of Entra ID Glossary Series #7.27 - SSPR (Security Focus)
 
 ---
 
@@ -11,7 +11,7 @@
 
 - SSPR security requires users to register verification methods before they can self-reset
 - Strong SSPR methods: Authenticator app TOTP, email OTP. Weaker: SMS, security questions
-- Combine SSPR with SSPR writeback for hybrid environments — otherwise on-prem password stays unchanged
+- Combine SSPR with SSPR writeback for hybrid environments : otherwise on-prem password stays unchanged
 
 
 An attacker had a target's email address and some publicly available personal information. They went to the organization's SSPR portal. The SSPR was configured to require security questions as the verification method. The questions: mother's maiden name, first pet, elementary school.
@@ -22,7 +22,7 @@ The attacker reset the password. They were in.
 
 The organization had deployed SSPR to reduce help desk burden. They hadn't thought about the security implications of the authentication methods they chose for the SSPR flow. Self-service password reset is only as secure as the methods used to verify identity during the reset.
 
-## 🔐 SSPR as an Authentication Security Surface
+## 🔐 SSPR as an authentication security surface
 
 Self-Service Password Reset (SSPR) is a user-facing authentication flow that allows users to reset their own passwords by verifying their identity through pre-registered methods. The security analysis of SSPR is distinct from the operational benefits discussed in the governance context.
 
@@ -30,7 +30,7 @@ SSPR creates a path to account access that bypasses the normal authentication fl
 
 The security questions from the opening scenario illustrate the core problem: SSPR is only as strong as its verification methods. If the verification methods are weak, SSPR becomes a privileged attack surface.
 
-## 🚨 SSPR Attack Vectors
+## 🚨 SSPR attack vectors
 
 **Knowledge-based answer guessing** 🔍: Security questions are the weakest SSPR verification method. Answers are often predictable (pet names, schools, maiden names) and findable through social media, public records, or social engineering. An attacker who knows the target's email address can attempt SSPR with guessed answers.
 
@@ -42,7 +42,7 @@ The security questions from the opening scenario illustrate the core problem: SS
 
 **SSPR portal enumeration** 🔎: SSPR portals can leak whether an account exists by showing different error messages for known vs unknown usernames. This helps attackers build target lists.
 
-## 🔒 Securing the SSPR Flow
+## 🔒 Securing the SSPR flow
 
 **Method selection** 📱: Microsoft Authenticator push notification and FIDO2 keys are the strongest SSPR verification methods. Require them as primary methods for any account with elevated access. SMS should be a backup method only, not the primary. Security questions should be disabled.
 
@@ -54,7 +54,7 @@ The security questions from the opening scenario illustrate the core problem: SS
 
 **Registration protection** 🛡️: Require strong authentication (MFA) before users can register or change SSPR authentication methods. If an attacker briefly accesses an account, they shouldn't be able to register their own contact methods without completing MFA first. This is configured in Security Info registration Conditional Access policies.
 
-## ⚙️ Security Info Registration Policies
+## ⚙️ Security info registration policies
 
 A critical but often missed SSPR security control: protect the registration of authentication methods themselves.
 
@@ -64,7 +64,7 @@ Without this policy: an attacker who gets access to an account (even temporarily
 
 With this policy: changing authentication method registration requires completing the current MFA setup first. If the attacker doesn't have the MFA, they can't change the registered methods.
 
-## 💡 The Privileged Account Carve-Out
+## 💡 The privileged account carve-out
 
 The zero-trust principle for privileged accounts: no self-service recovery. Any path that allows a privileged account to be recovered without admin verification is an attack surface that doesn't need to exist.
 
@@ -73,7 +73,7 @@ For admin accounts: disable SSPR, require admin-initiated password reset with id
 ---
 
 💬 **Have you ever audited the SSPR verification methods that your users have registered and found methods that shouldn't be there?** The security questions that were set up during initial deployment and never changed, or the personal email address that's been the alternate recovery contact for five years, are common findings. What was the SSPR security gap that prompted a policy change?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

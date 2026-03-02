@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#3.8 - Microsoft Authenticator**
+📚 Part of Entra ID Glossary Series #3.8 - Microsoft Authenticator
 
 ---
 
@@ -20,7 +20,7 @@ Fair enough. That's how most people use it. But the Microsoft Authenticator app 
 
 The six-digit codes are maybe 30% of what this app can do.
 
-## 📱 The Three Authentication Modes
+## 📱 The three authentication modes
 
 **Mode 1: TOTP codes (Time-Based One-Time Passwords)**
 The classic mode. The app generates a 6-digit code that rotates every 30 seconds based on a shared secret and the current time. The user types the code during sign-in. This works offline, requires no network connection on the phone, and is compatible with almost every MFA-capable service, not just Microsoft.
@@ -41,7 +41,7 @@ The user registers their phone for passwordless sign-in. During authentication, 
 
 This mode satisfies MFA requirements automatically because it combines something you have (the registered phone) with something you know or are (the biometric or PIN used to unlock the phone and approve the notification).
 
-## ⚙️ Registration and Setup
+## ⚙️ Registration and setup
 
 Users register the Authenticator app through the Security Info page at `mysignins.microsoft.com`. The process:
 
@@ -54,7 +54,7 @@ Registration takes under two minutes. The tricky part isn't the technology, it's
 
 💡 Enable the **MFA registration campaign** in Entra ID (under Protection > Authentication Methods > Registration campaign). It nudges users who haven't registered through a gentle prompt during sign-in, allowing a configurable number of skips before making it mandatory. This removes the "we told them to do it but many didn't" problem.
 
-## 🛡️ Number Matching: Why It Matters
+## 🛡️ Number matching: why it matters
 
 Before number matching became default, push notification MFA had a real Achilles heel. An attacker with stolen credentials could spam approval requests to a user's phone at 2 AM, and enough users would tap approve just to stop the notifications. This wasn't theoretical: the Uber breach in 2022 succeeded in part through this exact technique.
 
@@ -62,7 +62,7 @@ Microsoft made number matching mandatory for Authenticator push notifications st
 
 The practical effect: MFA fatigue attacks against Authenticator push notifications became dramatically less effective overnight. The attacker can still spam notifications. The user can still receive them. But approving one requires actively typing a number that only appears on a screen the user is currently looking at during a legitimate sign-in.
 
-## 🔄 Authenticator vs FIDO2 vs Windows Hello
+## 🔄 Authenticator vs FIDO2 vs windows hello
 
 These three aren't competitors. They occupy different parts of the authentication landscape.
 
@@ -81,7 +81,7 @@ For organizations early in their authentication journey, "Authenticator with pus
 ---
 
 💬 **How many of your users have the Authenticator app registered and actually use it for sign-in?** And have you enabled number matching and additional context if you're using push notifications? The difference in attack resistance between plain push and number-matched push is significant.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

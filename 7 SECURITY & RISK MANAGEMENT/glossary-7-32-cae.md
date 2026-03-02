@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.32 - CAE (Continuous Access Evaluation)**
+📚 Part of Entra ID Glossary Series #7.32 - CAE (Continuous Access Evaluation)
 
 ---
 
@@ -22,7 +22,7 @@ With CAE: Outlook received a revocation signal from Entra ID within seconds of t
 
 That gap between "account disabled" and "access actually stops" is what CAE is designed to close.
 
-## ⚡ What CAE Is
+## ⚡ What CAE is
 
 Continuous Access Evaluation is a protocol that enables near-real-time enforcement of access policy changes during active sessions. It shifts the security model from "tokens expire eventually" to "tokens are revoked when conditions change."
 
@@ -36,7 +36,7 @@ With CAE, participating applications maintain a persistent connection with Entra
 
 The result: access policy changes propagate to active sessions within seconds rather than waiting for token expiry.
 
-## 🔔 Events That Trigger CAE Revocation
+## 🔔 Events that trigger CAE revocation
 
 CAE responds to critical changes that should immediately affect ongoing sessions:
 
@@ -52,7 +52,7 @@ CAE responds to critical changes that should immediately affect ongoing sessions
 
 **Conditional Access policy change** 📋: When a CA policy change would now deny access to a session that was previously granted, CAE enforces the new policy. If a device becomes non-compliant during an active session, the session can be revoked.
 
-## 🔗 How CAE Works Technically
+## 🔗 How CAE works technically
 
 CAE is an extension to the OAuth 2.0 token flow supported by both Entra ID and participating applications:
 
@@ -62,7 +62,7 @@ CAE is an extension to the OAuth 2.0 token flow supported by both Entra ID and p
 
 **Client-side evaluation**: CAE-enabled clients can also evaluate certain conditions locally. A Windows client that detects it has become disconnected from the managed network can enforce conditional access decisions without waiting for a server-side signal.
 
-## 📱 Which Applications Support CAE
+## 📱 Which applications support CAE
 
 CAE requires support from both Entra ID (as the authorization server) and the client application. Microsoft applications support CAE natively:
 
@@ -76,7 +76,7 @@ Third-party applications can implement CAE support using the Microsoft Identity 
 
 For applications that don't support CAE, the traditional token lifetime model still applies. Shorter token lifetimes (sign-in frequency session control in Conditional Access) can reduce the window for non-CAE applications.
 
-## ⚙️ CAE as a Session Control
+## ⚙️ CAE as a session control
 
 In Conditional Access, CAE is configured as a session control. You can configure:
 
@@ -89,7 +89,7 @@ For high-security scenarios (admin accounts, sensitive data access), strict enfo
 ---
 
 💬 **Before you knew about CAE, did you realize there was a window between an account being disabled and access actually stopping?** The gap between "policy enforced" and "policy actually takes effect on active sessions" is surprising to many administrators. Has knowing about this gap changed how quickly you respond to account compromise incidents?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** CAE is available in **Entra ID P1 and P2**. The CAE session control in Conditional Access policies requires at least P1.

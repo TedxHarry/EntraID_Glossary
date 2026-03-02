@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.11 - CIAM**
+📚 Part of Entra ID Glossary Series #9.11 - CIAM
 
 ---
 
@@ -22,13 +22,13 @@ The answer is a long list of mismatches. AD doesn't support self-registration. A
 
 Every item on that list is a reason CIAM exists as a distinct category.
 
-## 🎯 What CIAM Is
+## 🎯 What CIAM is
 
 Customer Identity and Access Management (CIAM) is a specialized category of identity management designed for the specific requirements of consumer-facing applications. It handles the identities of an organization's customers or end users: the people who use your products and services, not the people who work for you.
 
 CIAM addresses fundamentally different requirements than workforce identity (managing employees) or B2B identity (managing business partners). The differences aren't minor configuration choices. They're architectural requirements that shape every aspect of how the system works.
 
-## 📊 The CIAM Design Requirements
+## 📊 The CIAM design requirements
 
 **Scale** 📈: Workforce identity handles thousands to hundreds of thousands of accounts. Consumer applications can have millions or tens of millions of customers. Spotify has 600 million users. A regional bank might have two million online banking customers. CIAM platforms are built and priced for this scale. Enterprise IAM platforms are not.
 
@@ -42,7 +42,7 @@ CIAM addresses fundamentally different requirements than workforce identity (man
 
 **Flexible MFA** 📱: Consumer MFA must be accessible to people who aren't security professionals. SMS is common in CIAM despite its weaknesses because it works for consumers who don't have an authenticator app. The security model for customers is different from the security model for administrators.
 
-## 🔒 CIAM in the Microsoft Ecosystem
+## 🔒 CIAM in the Microsoft ecosystem
 
 Microsoft offers two CIAM-oriented products:
 
@@ -52,7 +52,7 @@ Microsoft offers two CIAM-oriented products:
 
 Both address the core CIAM requirements. The choice for new implementations is between them. B2C for organizations with existing B2C expertise and deployed applications. External ID for greenfield implementations that want the newer architecture.
 
-## 🏗️ What CIAM Needs to Provide
+## 🏗️ What CIAM needs to provide
 
 A CIAM solution needs to handle the full customer identity lifecycle:
 
@@ -73,7 +73,7 @@ A CIAM solution needs to handle the full customer identity lifecycle:
 ---
 
 💬 **Has your organization evaluated CIAM requirements for a customer-facing application?** The moment when someone says "can we just put customers in our company's Active Directory?" is the moment CIAM becomes a real conversation. What requirements drove your organization to look at a dedicated CIAM platform?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

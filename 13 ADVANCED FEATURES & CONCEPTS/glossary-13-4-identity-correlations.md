@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.4 - Identity Correlations**
+📚 Part of Entra ID Glossary Series #13.4 - Identity Correlations
 
 ---
 
 ## 🎯 TL;DR
 
-- Identity Correlations link identities across systems — connecting an AD user, their Entra ID object, and their ServiceNow account
+- Identity Correlations link identities across systems : connecting an AD user, their Entra ID object, and their ServiceNow account
 - Used in IGA (Identity Governance and Administration) to build a unified identity record across all systems
 - Correlations enable joiner/mover/leaver automation across the full application portfolio
 
@@ -20,7 +20,7 @@ When the acquisition team began merging directories, they found 12 duplicate ide
 
 Identity correlation is the practice of recognizing that two digital identities represent the same real person or entity, and managing that relationship deliberately.
 
-## 🔗 What Identity Correlation Means
+## 🔗 What identity correlation means
 
 Identity correlation is the process of linking, matching, or resolving identity records across different systems or directories. The goal is to answer: "Is this identity in System A the same entity as that identity in System B?"
 
@@ -34,7 +34,7 @@ In the context of Entra ID, correlation problems appear in several forms:
 
 **Application account correlation** 📋: A user in Entra ID needs to be matched to their account in connected applications (Salesforce, ServiceNow, GitHub) for provisioning and deprovisioning to work correctly.
 
-## 🔑 The Source Anchor and ImmutableId
+## 🔑 The source anchor and immutableid
 
 The primary correlation mechanism in hybrid identity synchronization is the source anchor: an immutable, unique attribute from the source directory that persists as the correlation key in Entra ID.
 
@@ -44,7 +44,7 @@ When synchronization runs for the first time and an on-premises user doesn't mat
 
 Getting this matching right is critical before the first synchronization run. Organizations that let synchronization run before thinking about correlation often end up with duplicate accounts that are difficult to clean up without user disruption.
 
-## 📊 EmployeeId as the HR Correlation Anchor
+## 📊 EmployeeId as the HR correlation anchor
 
 For Lifecycle Workflows and HR-driven provisioning, the correlation attribute between the HR system and Entra ID is typically `employeeId`. The HR system knows who this person is (they have an employee ID from day one of employment). The IT system needs to create a directory account for them. The connection between those two records is the `employeeId`.
 
@@ -52,7 +52,7 @@ In practice, the HR system triggers the provisioning: "New employee, ID 84721, s
 
 The `employeeId` attribute is the correlation anchor that makes automated joiner-mover-leaver processes reliable. Without it, provisioning systems resort to name matching (fragile) or email matching (also fragile for movers and name changes).
 
-## 🔄 Handling Duplicate Identities
+## 🔄 Handling duplicate identities
 
 When the same person has two identity records that should be one, the options are:
 
@@ -62,7 +62,7 @@ When the same person has two identity records that should be one, the options ar
 
 **Manage separately**: For true separation of duties cases (the contractor who genuinely needs separate identities in different contexts), maintaining two accounts is the right answer. Document it explicitly as intentional.
 
-## ⚠️ The Governance Gap
+## ⚠️ The governance gap
 
 The most common identity correlation failure: nobody tracked that a contractor account exists when a permanent employee account is created for the same person. Contractors become full employees. The contractor account isn't disabled. Six months later, a governance audit finds the person has two active accounts with different permissions.
 
@@ -71,7 +71,7 @@ Correlation at joiner events (when a new account is created, check for existing 
 ---
 
 💬 **Does your organization have a process for detecting and resolving duplicate identities when a person's employment status changes (contractor to employee, acquisition, etc.)?** The identity duplication problem is common in environments with both contractor and employee populations, or after acquisitions. What's the most complex identity correlation scenario your team has had to resolve?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

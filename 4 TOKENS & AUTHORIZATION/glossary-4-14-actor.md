@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.14 - Actor**
+📚 Part of Entra ID Glossary Series #4.14 - Actor
 
 ---
 
@@ -20,20 +20,20 @@ When I looked at the token details in the audit logs for those email sends, the 
 
 The actor claim in the token identified the responsible party immediately. Without it, the investigation would have taken much longer.
 
-## 🎭 What "Actor" Means in OAuth
+## 🎭 What "actor" means in OAuth
 
 In OAuth 2.0, the actor is the application making the request. When a user authenticates and an application gets a delegated token, there are two parties encoded in that token:
 
 - The **subject** (`sub`/`oid`): the user whose resources are being accessed
 - The **actor**: the application doing the accessing
 
-In Entra ID access tokens, these actor-related claims appear on every delegated token:
+in Entra ID access tokens, these actor-related claims appear on every delegated token:
 
 **`appid`** (v1.0 tokens) / **`azp`** (v2.0 tokens): The client ID of the application that requested the token. This is the actor. This is which application is making the API calls.
 
 **`appidacr`** / **`azpacr`**: How the application authenticated. `0` means public client, no secret. `1` means client secret. `2` means certificate. Higher values indicate stronger application authentication. A `0` here means anyone who can run the app code can request tokens with it.
 
-## 🔍 Why Audit Logs Use Actor
+## 🔍 Why audit logs use actor
 
 When a user's calendar is read, files downloaded, or email sent, the audit log entry includes two identities: the subject (whose resource was affected) and the actor (which application made the call).
 
@@ -43,7 +43,7 @@ In the email investigation: audit logs showed the user as subject and the third-
 
 For security investigations, the actor claim is often the first thing to check when something looks wrong. Users can be compromised, but they can also be falsely accused of actions taken by an application they long since forgot they authorized.
 
-## 🔗 Actor in the On-Behalf-Of Flow
+## 🔗 Actor in the on-behalf-of flow
 
 The On-Behalf-Of (OBO) flow adds explicit actor semantics. In OBO:
 
@@ -54,7 +54,7 @@ The On-Behalf-Of (OBO) flow adds explicit actor semantics. In OBO:
 
 This creates an auditable chain. API B can verify not just that the user has permission, but that the intermediate service (the actor) was legitimately authorized to participate in the request. Each hop in a service-to-service call chain can be traced.
 
-## 📋 Reading Actor Information in Practice
+## 📋 Reading actor information in practice
 
 For anyone reviewing tokens or audit logs, the actor information is in these places:
 
@@ -67,7 +67,7 @@ For anyone reviewing tokens or audit logs, the actor information is in these pla
 
 When investigating unexpected access, the first check is always: what was the actor? Which application made this call? Was that application authorized to do so? Did the user actually consent to that permission?
 
-## ⚠️ Application-Only Tokens
+## ⚠️ Application-Only tokens
 
 For daemon applications using client credentials (no user), there is no separate subject and actor. The application is both. The `oid` in the token belongs to the service principal. The actor and the subject are the same entity.
 
@@ -76,7 +76,7 @@ APIs that accept both delegated and application tokens need to handle this disti
 ---
 
 💬 **Have you investigated suspicious activity and found it was an authorized application doing something the user had forgotten they'd consented to?** It's one of the more common sources of unexpected access events. How does your organization track which apps users have granted permission to?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

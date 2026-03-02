@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.9 - Hybrid Device**
+📚 Part of Entra ID Glossary Series #5.9 - Hybrid Device
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Hybrid Entra-joined devices are domain-joined to on-premises AD AND registered in Entra ID
 - They appear in both on-prem AD (computer objects) and Entra ID (device objects)
-- Required for Conditional Access 'Require domain-joined device' — the on-prem and cloud worlds must sync
+- Required for Conditional Access 'Require domain-joined device' : the on-prem and cloud worlds must sync
 
 
 An organization with 8,000 Windows desktops asked me how long their cloud migration would take. They wanted all devices eventually cloud-managed, no on-premises dependencies. I told them the device migration alone would be 18 to 24 months, minimum.
@@ -20,7 +20,7 @@ The reason wasn't technical complexity in the join process itself. It was the on
 
 That's what Hybrid Entra Joined devices are for: organizations that need both.
 
-## 🔗 What Hybrid Entra Joined Means
+## 🔗 What hybrid entra joined means
 
 A Hybrid Entra Joined device is registered with two identity systems simultaneously:
 
@@ -29,7 +29,7 @@ A Hybrid Entra Joined device is registered with two identity systems simultaneou
 
 The device has an identity in both directories. On-premises domain controller sees it as a member computer. Entra ID sees it as a joined device. Users on that device get SSO to both on-premises and cloud resources.
 
-## ⚙️ How Hybrid Join Is Set Up
+## ⚙️ How hybrid join is set up
 
 Hybrid join requires Entra Connect (or Cloud Sync in newer configurations) to synchronize device objects from on-premises AD to Entra ID.
 
@@ -44,7 +44,7 @@ When this works, `dsregcmd /status` on the device shows both `DomainJoined: YES`
 
 When it doesn't work (and hybrid join has more failure modes than Entra Join), `dsregcmd /status` is the first diagnostic tool. The error codes it returns point to whether the failure is in the registration process, the Entra Connect sync, or the token issuance.
 
-## 🔐 The Primary Refresh Token
+## 🔐 The primary refresh token
 
 The PRT is the mechanism that makes SSO work on Hybrid Entra Joined (and Entra Joined) Windows devices. It's a special long-lived token issued to the device that represents both the device's identity and the signed-in user's identity.
 
@@ -52,7 +52,7 @@ When a user opens a browser or an app that uses modern authentication, the devic
 
 If the PRT is missing or expired, users get prompted to sign in to apps that should be SSO-seamless. The most common cause: the automatic registration process failed and the device never got a PRT in the first place.
 
-## ⚠️ Common Hybrid Join Problems
+## ⚠️ Common hybrid join problems
 
 **Inconsistent registration state**: Some devices in a batch are hybrid joined, others aren't, even with identical configuration. Usually caused by the automatic registration process failing silently on some machines. The fix: check scheduled task status (`Task Scheduler > Microsoft > Windows > Workplace Join`).
 
@@ -62,7 +62,7 @@ If the PRT is missing or expired, users get prompted to sign in to apps that sho
 
 **Firewall blocking registration endpoints**: The registration process calls Entra ID endpoints. Proxy configurations or firewall rules blocking `login.microsoftonline.com` or `device.login.microsoftonline.com` silently break the registration.
 
-## 💡 Hybrid Join as a Transitional State
+## 💡 Hybrid join as a transitional state
 
 Most modern guidance treats Hybrid Entra Joined as a transitional state rather than a long-term target. The end goal for most organizations is Entra Joined: cloud-only management, no on-premises domain dependency.
 
@@ -71,7 +71,7 @@ Getting there requires eliminating on-premises dependencies app by app. Once tho
 ---
 
 💬 **Is your organization running hybrid joined devices as a permanent state or as a transitional step toward cloud-only?** The on-premises dependencies that force hybrid join are often the same ones driving the broader cloud migration timeline. Which legacy apps or services have been the hardest to move away from?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

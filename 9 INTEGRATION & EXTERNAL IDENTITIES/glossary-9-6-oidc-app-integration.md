@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.6 - OIDC (App Integration Focus)**
+📚 Part of Entra ID Glossary Series #9.6 - OIDC (App Integration Focus)
 
 ---
 
@@ -11,7 +11,7 @@
 
 - OIDC app integration is the modern SSO approach for web and mobile apps using ID tokens + user info endpoint
 - Entra ID supports OIDC discovery (`/.well-known/openid-configuration`) for automatic configuration
-- Most new SSO integrations should use OIDC rather than SAML — it's simpler and has better library support
+- Most new SSO integrations should use OIDC rather than SAML : it's simpler and has better library support
 
 
 A development team was building a new internal web application. Their first instinct was to add a login form: username, password, store it in their database. They'd done it before.
@@ -22,7 +22,7 @@ Three hours later, the application used OIDC to authenticate against Entra ID. U
 
 The login form they almost built would have added three months of development time for a system they would have had to maintain forever.
 
-## 🔌 OIDC as the Modern Integration Protocol
+## 🔌 OIDC as the modern integration protocol
 
 OpenID Connect (OIDC) is the recommended protocol for integrating modern applications with Entra ID. It extends OAuth 2.0 by adding a standardized identity layer: not just "grant this app access to this resource" but "tell this app who just signed in and verify their identity."
 
@@ -30,7 +30,7 @@ From an application integration perspective, OIDC is the answer to: "How does my
 
 The previous glossary entry on OAuth 2.0 covered the authorization framework. OIDC sits on top of that framework and adds authentication: specifically, the ID token, which is a signed assertion from Entra ID containing the user's verified identity claims.
 
-## 🏗️ What the OIDC Integration Looks Like
+## 🏗️ What the OIDC integration looks like
 
 When a user signs in to an OIDC-integrated application:
 
@@ -46,7 +46,7 @@ When a user signs in to an OIDC-integrated application:
 
 6. **Session created** 🔐: The application extracts the user's identity claims from the validated ID token and creates a session.
 
-## 🎫 The ID Token as Identity Proof
+## 🎫 The ID token as identity proof
 
 The ID token is the OIDC-specific element that distinguishes it from bare OAuth 2.0. It's a JSON Web Token (JWT) containing:
 
@@ -71,7 +71,7 @@ The ID token is the OIDC-specific element that distinguishes it from bare OAuth 
 
 The application should use `oid` as the persistent unique identifier for the user, not `email` or `name`. Email addresses change. Names change. The Object ID never changes for the lifetime of the account.
 
-## 🔧 App Registration Configuration
+## 🔧 App registration configuration
 
 For OIDC integration, the App Registration in Entra ID needs:
 
@@ -83,7 +83,7 @@ For OIDC integration, the App Registration in Entra ID needs:
 
 **Token configuration** 🎫: Optional claims to include in the ID token or access token. Configure group claims, custom attributes, or additional standard claims your application needs.
 
-## ⚙️ MSAL: Not Building OAuth/OIDC From Scratch
+## ⚙️ MSAL: not building OAuth/OIDC from scratch
 
 Microsoft Authentication Library (MSAL) handles the OIDC/OAuth 2.0 implementation details for common platforms (.NET, JavaScript, Python, Java, Go, etc.). It manages:
 
@@ -99,10 +99,10 @@ Applications built with MSAL don't implement the protocol directly. They call MS
 ---
 
 💬 **Has your team integrated a custom application with Entra ID using OIDC?** The moment when the redirect-based sign-in flow clicks for a developer who's never seen it before is recognizable. What was the hardest part of the integration to get right: the redirect URIs, the token validation, or the group/role claims configuration?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 
 ---
 
-[← OAuth 2.0 (App Integration Focus)](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-5-oauth2-app-integration.md) | [🏠 Contents](/README) | [SAML (App Integration Focus) →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-7-saml-app-integration.md)
+[← OAuth 2.0 (App Integration Focus)](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-5-oauth2-app-integration.md) | [🏠 Contents](/README) | [SAML (App Integration Focus) →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-7-SAML-app-integration.md)

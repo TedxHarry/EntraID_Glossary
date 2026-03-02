@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.7 - UPN (User Principal Name)**
+📚 Part of Entra ID Glossary Series #13.7 - UPN (User Principal Name)
 
 ---
 
@@ -11,7 +11,7 @@
 
 - UPN (User Principal Name) is the user's sign-in name: user@domain.com format
 - UPN must match a verified domain in the tenant (or use the .onmicrosoft.com default)
-- UPN ≠ email — they can differ; in hybrid environments, ensure UPN is synced from AD correctly
+- UPN ≠ email : they can differ; in hybrid environments, ensure UPN is synced from AD correctly
 
 
 A user tried to sign in to Microsoft 365 with their company email address. It failed. They tried with their old username format. Also failed. IT took 20 minutes to figure out what was happening.
@@ -22,18 +22,18 @@ To sign in to Microsoft 365, you use the UPN. Not the email address. Not the dis
 
 For most users in well-maintained environments, the UPN and the primary email address are the same. When they're not, it causes confusion that IT spends real time resolving.
 
-## 📋 What a UPN Is
+## 📋 What a UPN is
 
 The User Principal Name is the primary sign-in identifier for a user in Entra ID. It follows the format `localpart@domain`, resembling an email address but serving a different function.
 
-In Entra ID, the UPN serves as:
+in Entra ID, the UPN serves as:
 - The identifier users type when signing in to Microsoft 365, Azure, and Entra ID-integrated applications
 - The unique identifier for the user within the tenant (though `objectId` is more stable for programmatic use)
 - The synchronization target for on-premises AD users brought into Entra ID
 
 The UPN must use a domain that's verified in the Entra ID tenant. You can't have a UPN suffix that uses a domain your organization doesn't own and has registered in Entra ID.
 
-## 🔗 On-Premises UPN vs Cloud UPN
+## 🔗 On-Premises UPN vs cloud UPN
 
 In hybrid environments, the on-premises AD UPN synchronizes to Entra ID. This is straightforward when the on-premises UPN suffix is a public, routable domain that's verified in Entra ID.
 
@@ -43,7 +43,7 @@ The solution: configure an alternate UPN suffix in on-premises AD (adding `conto
 
 The alternative: use Alternate Login ID. Configure Entra Connect to synchronize the user's email address as the UPN in Entra ID, even though the on-premises UPN uses the non-routable suffix. Users sign in with their email address. The UPN in Entra ID matches the email. The on-premises AD UPN remains unchanged. This avoids mass UPN changes but adds configuration complexity.
 
-## ⚙️ UPN Changes and Their Impact
+## ⚙️ UPN changes and their impact
 
 Changing a user's UPN sounds like an administrative task. It creates downstream problems that take time to discover.
 
@@ -59,7 +59,7 @@ Changing a user's UPN sounds like an administrative task. It creates downstream 
 
 The practical guidance: UPN changes should be rare, planned, communicated, and tested in a non-production environment for impact on key applications before rolling out broadly.
 
-## 🔑 The Alternate Login ID Option
+## 🔑 The alternate login ID option
 
 For organizations where the UPN and email address diverge significantly (different prefix formats, non-routable suffix migration, or merged organization scenarios), the Alternate Login ID feature allows users to sign in with their email address even when the UPN is different.
 
@@ -70,7 +70,7 @@ Alternate Login ID has limitations for some on-premises scenarios (Kerberos auth
 ---
 
 💬 **Has your organization had to tackle a non-routable UPN suffix migration or a UPN/email alignment project, and what was the most disruptive part of the change?** The `.local` domain UPN migration is one of the most commonly underestimated hybrid identity remediation projects. What's the approach you took to minimize disruption to users and dependent applications?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

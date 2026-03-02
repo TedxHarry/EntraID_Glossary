@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.3 - Device Registration**
+📚 Part of Entra ID Glossary Series #5.3 - Device Registration
 
 ---
 
@@ -11,14 +11,14 @@
 
 - Device registration creates a device object in Entra ID and establishes a trust relationship
 - It generates a device certificate stored on the device that proves 'this is the registered device'
-- Registration is required before enrollment — you can't manage an unregistered device
+- Registration is required before enrollment : you can't manage an unregistered device
 
 
 An admin asked me why a Conditional Access policy was blocking a user's device. The policy required "Hybrid Entra Joined" devices, and the device showed "Entra Registered" in the portal. The admin thought registered and joined were the same thing with different labels.
 
 They're not. They represent different relationships between the device and Entra ID, with different security properties, different use cases, and different levels of corporate control.
 
-## 🗺️ The Three Registration Types
+## 🗺️ The three registration types
 
 **Entra Registered** (formerly Azure AD Registered) is the lightest touch. The device is personal: the employee's own phone or laptop, or a shared device. The user registers their own account on the device to get access to work resources. The organization doesn't own or fully manage the device.
 
@@ -38,7 +38,7 @@ What this gives you: Access to both on-premises resources (via Kerberos from dom
 
 What this doesn't give you: Simplicity. Hybrid join requires Entra Connect synchronization, careful configuration, and troubleshooting skills for when the sync breaks or devices get into an inconsistent state.
 
-## 🔄 Which to Use
+## 🔄 Which to use
 
 | Scenario | Right Choice |
 |----------|-------------|
@@ -48,7 +48,7 @@ What this doesn't give you: Simplicity. Hybrid join requires Entra Connect synch
 | Organization migrating gradually from on-premises | Hybrid Entra Joined during transition, Entra Joined as target |
 | Organization fully cloud, no on-premises AD | Entra Joined |
 
-## 🔐 Registration vs Enrollment
+## 🔐 Registration vs enrollment
 
 Registration (any of the three types above) creates a device identity in Entra ID. It does not automatically enroll the device in Intune for full management.
 
@@ -56,7 +56,7 @@ Enrollment in Intune is a separate step that enables compliance policy evaluatio
 
 For corporate devices, both registration/join AND Intune enrollment are typically required. For personal devices using the Entra Registered model, Intune enrollment is optional and often replaced by app protection policies that manage the application rather than the device.
 
-## ⚠️ The Hybrid Join Troubleshooting Reality
+## ⚠️ The hybrid join troubleshooting reality
 
 Hybrid join is the most powerful option and the most complex to maintain. The `dsregcmd /status` command on a Windows device shows its current registration state and is the first diagnostic step when something looks wrong:
 
@@ -70,7 +70,7 @@ Both YES means hybrid joined. If AzureAdJoined is NO but DomainJoined is YES, th
 ---
 
 💬 **Has your organization gone through a device registration migration, moving from Hybrid Entra Joined toward Entra Joined as you reduced on-premises dependencies?** The transition involves more than just joining devices differently. What were the on-premises dependencies that took the longest to resolve?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.9 - Global Secure Access**
+📚 Part of Entra ID Glossary Series #13.9 - Global Secure Access
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Global Secure Access (GSA) is Microsoft's SSE (Security Service Edge) platform for identity-aware network access
 - It includes Entra Internet Access (SWG for internet traffic) and Entra Private Access (ZTNA for on-prem apps)
-- GSA moves network security from perimeter-based to identity-centric — traffic flows through the GSA service
+- GSA moves network security from perimeter-based to identity-centric : traffic flows through the GSA service
 
 
 A company had 4,000 remote employees. They connected to internal applications through a VPN. The VPN terminated at a central hub, routed all traffic through the corporate network, and provided access to everything on the internal network once connected.
@@ -22,7 +22,7 @@ The identity problem: VPN authentication was separate from Entra ID. Users authe
 
 Global Secure Access is Microsoft's answer to both problems.
 
-## 🌐 What Global Secure Access Is
+## 🌐 What global secure access is
 
 Microsoft Entra Global Secure Access is Microsoft's Security Service Edge (SSE) solution, providing network-level access control integrated with Entra ID identity. It's the convergence of network security and identity security into a unified policy model.
 
@@ -32,7 +32,7 @@ Global Secure Access has two components with distinct purposes:
 
 **Microsoft Entra Private Access** 🔒: A Zero Trust Network Access (ZTNA) solution replacing traditional VPN for access to private applications. Instead of granting network-level access to everything on the corporate network, Private Access grants application-level access to specific applications, with each access decision evaluated by Conditional Access.
 
-## 🔑 Private Access: ZTNA vs VPN
+## 🔑 Private access: ZTNA vs VPN
 
 The fundamental difference between ZTNA and traditional VPN is the scope of access granted:
 
@@ -42,7 +42,7 @@ The fundamental difference between ZTNA and traditional VPN is the scope of acce
 
 For a compromised device scenario: with VPN, the compromised device has network access. With Private Access, the compromised device fails the device compliance check in the per-application Conditional Access policy and is denied access to each application individually.
 
-## 🏗️ The Global Secure Access Client
+## 🏗️ The global secure access client
 
 The Global Secure Access client is a lightweight agent installed on Windows, macOS, iOS, and Android devices. It routes the appropriate traffic to Microsoft's network:
 
@@ -52,7 +52,7 @@ For Internet Access: internet-bound traffic is routed through Microsoft's SWG fo
 
 The client is registered with Entra ID, making it possible for the Conditional Access engine to know which traffic is coming through the GSA client. This enables "compliant network" as a Conditional Access condition: traffic coming through an authenticated, managed GSA client is from a known, controlled access path.
 
-## 🔐 Compliant Network Conditional Access
+## 🔐 Compliant network conditional access
 
 One of the most significant integrations between Global Secure Access and Entra ID Conditional Access is the "compliant network" location condition.
 
@@ -62,7 +62,7 @@ The compliant network condition uses the GSA client as a trust signal: the user 
 
 Microsoft 365 services can require the compliant network condition, meaning that direct-to-internet traffic to Microsoft 365 that doesn't go through GSA is blocked. All Microsoft 365 access flows through GSA, giving the organization visibility and control over all Microsoft 365 traffic regardless of location.
 
-## 📊 Where This Fits the Entra ID Picture
+## 📊 Where this fits the entra ID picture
 
 Global Secure Access extends Entra ID's identity-driven access control from application authentication into network access. The same Conditional Access policies, the same device compliance signals, the same risk-based controls that govern application sign-ins now also govern network-level access to private applications and internet traffic.
 
@@ -71,7 +71,7 @@ For organizations using the full Entra ID stack, GSA is the layer that closes th
 ---
 
 💬 **Is your organization evaluating or using Global Secure Access or a competing ZTNA solution to replace legacy VPN, and what's driving the timeline?** The VPN replacement conversation is happening in most organizations, pushed by remote work patterns and the inadequacy of network-perimeter security models. What would have to be true about GSA for your organization to commit to it over alternatives?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

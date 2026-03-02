@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.12 - Managed Device**
+📚 Part of Entra ID Glossary Series #5.12 - Managed Device
 
 ---
 
@@ -11,7 +11,7 @@
 
 - A managed device is enrolled in Intune and receives policies, apps, and compliance checks from the organization
 - Management enables remote wipe, configuration enforcement, and detailed inventory
-- Not all managed devices are compliant — a device can be enrolled but fail compliance requirements
+- Not all managed devices are compliant : a device can be enrolled but fail compliance requirements
 
 
 A security audit came back with a finding: 23% of corporate devices accessing sensitive applications were "unmanaged." The IT team pushed back. "All our corporate devices are enrolled in Intune. How can they be unmanaged?"
@@ -20,7 +20,7 @@ The auditor pulled up the Conditional Access logs and pointed to devices with a 
 
 The IT team had been thinking about managed devices in terms of their corporate Windows fleet. They hadn't accounted for the mobile surface.
 
-## 📋 What "Managed" Actually Means
+## 📋 What "managed" actually means
 
 A managed device is one that is enrolled in a mobile device management solution (typically Intune) and actively receiving policies from it. The organization has a management relationship with the device through which it can:
 
@@ -29,14 +29,14 @@ A managed device is one that is enrolled in a mobile device management solution 
 - Deploy or remove applications
 - Trigger remote wipe if needed
 
-In Entra ID's Conditional Access context, "managed device" refers specifically to devices that are either:
+in Entra ID's Conditional Access context, "managed device" refers specifically to devices that are either:
 
 - **Intune-enrolled**: Enrolled in Intune MDM with an active management relationship
 - **Hybrid Entra Joined**: Joined to both on-premises Active Directory and Entra ID, with Group Policy providing management from the on-premises side
 
 An Entra Registered personal device is not managed in this sense, even though Entra ID knows it exists.
 
-## 🔒 Managed vs Compliant: The Critical Distinction
+## 🔒 Managed vs compliant: the critical distinction
 
 Managed means the device is under management. Compliant means the device passes its compliance policy checks. These are related but not identical states.
 
@@ -54,7 +54,7 @@ Conditional Access has separate grant controls for each:
 
 For sensitive resources, requiring compliant is almost always the right choice. Requiring only "managed" means a device with disabled Defender gets through as long as it's enrolled.
 
-## 🔧 How Devices Become Managed
+## 🔧 How devices become managed
 
 For corporate Windows devices, management typically happens through:
 
@@ -72,7 +72,7 @@ For mobile devices:
 
 **Company Portal**: User-initiated enrollment for personal devices accepting MDM management.
 
-## ⚠️ The Managed Device Assumption Gap
+## ⚠️ The managed device assumption gap
 
 The most common misconception: "our devices are managed" meaning "our Windows fleet is enrolled." What this misses:
 
@@ -83,7 +83,7 @@ The most common misconception: "our devices are managed" meaning "our Windows fl
 
 Conditional Access gives you visibility into what's actually hitting your resources. The sign-in logs show device management state for every authentication. Running a report on devices accessing your most sensitive applications often reveals a managed device rate lower than the IT team expects.
 
-## 💡 Require Managed as a Minimum Bar
+## 💡 Require managed as a minimum bar
 
 For organizations that can't yet enforce full compliance on all devices, requiring "managed device" as a minimum for medium-sensitivity resources is a reasonable interim step. It closes the personal device gap while compliance policy rollout is underway.
 
@@ -92,7 +92,7 @@ Then, as compliance policies are tuned and devices pass reliably, the policy req
 ---
 
 💬 **When your organization ran its first Conditional Access report on device management state, what percentage of accesses were coming from unmanaged devices?** The gap between "we think our devices are managed" and "here's what's actually hitting our apps" is often surprising. What did the data show?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

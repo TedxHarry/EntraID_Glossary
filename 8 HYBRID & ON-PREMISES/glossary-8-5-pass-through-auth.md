@@ -3,22 +3,22 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#8.5 - Pass-Through Auth**
+📚 Part of Entra ID Glossary Series #8.5 - Pass-Through Auth
 
 ---
 
 ## 🎯 TL;DR
 
 - Pass-Through Authentication (PTA) authenticates users against on-premises AD in real time via a lightweight agent
-- Password never leaves the perimeter — Entra ID validates the credential with on-prem AD for each sign-in
-- Downside: if on-prem connectivity fails, cloud sign-in fails — less resilient than Password Hash Sync
+- Password never leaves the perimeter : Entra ID validates the credential with on-prem AD for each sign-in
+- Downside: if on-prem connectivity fails, cloud sign-in fails : less resilient than Password Hash Sync
 
 
 A financial services firm had a regulatory requirement: user passwords must not be stored outside their on-premises infrastructure. Even in hashed form. Even transformed. No representation of a credential could exist in the cloud.
 
 Password Hash Sync was off the table. Federation (ADFS) was expensive to maintain and they wanted to simplify. Pass-Through Authentication gave them a middle path: users sign in to Microsoft 365 with their on-premises credentials, Entra ID validates the sign-in against on-premises AD in real time, and no password representation ever leaves their infrastructure.
 
-## 🔄 What Pass-Through Authentication Is
+## 🔄 What pass-through authentication is
 
 Pass-Through Authentication (PTA) is an Entra ID authentication method for hybrid users where password validation is delegated to on-premises Active Directory via agents running in the on-premises environment, rather than validated against Entra ID directly.
 
@@ -34,7 +34,7 @@ The flow when a user signs in:
 
 The password is submitted to Entra ID but is immediately encrypted and forwarded. Entra ID itself never validates the password against a stored hash. The actual validation happens in the customer's on-premises environment.
 
-## 🏗️ The PTA Agent Infrastructure
+## 🏗️ The PTA agent infrastructure
 
 PTA requires at least one agent running on-premises. Microsoft recommends multiple agents for resilience:
 
@@ -46,7 +46,7 @@ PTA requires at least one agent running on-premises. Microsoft recommends multip
 
 **Agent updates**: PTA agents update automatically. Manual intervention isn't typically required for version maintenance.
 
-## ⚖️ PTA vs Password Hash Sync: The Trade-offs
+## ⚖️ PTA vs password hash sync: the trade-offs
 
 **Security posture** 🔐:
 - PTA: No password representation in the cloud. Satisfies strict data sovereignty requirements. On-premises AD is the definitive authority for every sign-in.
@@ -64,7 +64,7 @@ PTA requires at least one agent running on-premises. Microsoft recommends multip
 - PTA: Requires maintaining PTA agent infrastructure. Agent servers need monitoring.
 - PHS: No additional agent infrastructure beyond Entra Connect/Cloud Sync.
 
-## ⚠️ The Resilience Problem
+## ⚠️ The resilience problem
 
 The most significant operational consideration with PTA is the dependency on on-premises infrastructure for every cloud authentication.
 
@@ -75,7 +75,7 @@ Organizations with PTA deployed should:
 - Have PTA agents on servers that can still reach domain controllers during most failure scenarios
 - Consider Password Hash Sync as a fallback authentication method (PTA and PHS can be configured together; if PTA validation fails for infrastructure reasons, PHS can serve as backup)
 
-## 🔒 What PTA Validates
+## 🔒 What PTA validates
 
 PTA validates the password and some account state attributes:
 
@@ -95,7 +95,7 @@ The combination means both on-premises AD policy and Entra ID policy apply to ev
 ---
 
 💬 **What drove your organization's decision to use Pass-Through Authentication instead of Password Hash Sync?** The regulatory requirement around passwords not leaving on-premises is the most common answer. But the resilience trade-off is often discovered later during an on-premises incident. How did you architect for that resilience?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

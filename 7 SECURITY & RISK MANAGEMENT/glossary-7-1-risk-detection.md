@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.1 - Risk Detection**
+📚 Part of Entra ID Glossary Series #7.1 - Risk Detection
 
 ---
 
@@ -20,13 +20,13 @@ Entra ID ID Protection flagged this automatically: impossible travel. Risk detec
 
 The user in Chicago never lost access. The sign-in from Singapore was blocked. The investigation confirmed it was a credential stuffing attempt using credentials from a previous data breach. The whole sequence, from detection to block, took seconds.
 
-## 🔍 What Risk Detection Is
+## 🔍 What risk detection is
 
 Risk detection is the automated process by which Microsoft Entra ID Protection identifies sign-in events and user accounts that show indicators of compromise or suspicious behavior. It's not rule-based in the traditional sense. It combines machine learning, Microsoft's global threat intelligence, and behavioral analysis to identify anomalies.
 
 When Entra ID detects a risk, it creates a risk event that is attached to either the specific sign-in (sign-in risk) or the user account (user risk). These events become inputs to Conditional Access policies and to the Identity Protection dashboard for investigation.
 
-## 📋 The Detection Categories
+## 📋 The detection categories
 
 **Sign-in risk detections** apply to a specific authentication event:
 
@@ -50,7 +50,7 @@ When Entra ID detects a risk, it creates a risk event that is attached to either
 
 🟡 **Suspicious browser**: Sign-in from a browser that appears to be automated or that exhibits characteristics of an attack tool.
 
-## 🌐 The Intelligence Behind It
+## 🌐 The intelligence behind it
 
 Risk detection quality comes from the scale of Microsoft's visibility. Entra ID processes billions of authentications daily across millions of organizations worldwide. Patterns that are invisible at an individual organization's scale are clear at this scale.
 
@@ -58,7 +58,7 @@ When an IP address is used in an attack against one organization, that signal be
 
 Individual organizations couldn't build this. The shared intelligence model is a material security advantage of a cloud-based identity platform.
 
-## 🔒 Risk Detections and Conditional Access
+## 🔒 Risk detections and conditional access
 
 Risk detections are only valuable if they trigger something. The integration with Conditional Access is what gives them teeth:
 
@@ -68,7 +68,7 @@ Risk detections are only valuable if they trigger something. The integration wit
 
 These policies mean detected risks are handled automatically, in real time, without requiring a security analyst to review and respond to each event manually. The high-risk sign-in from Singapore is blocked in milliseconds, not after a 2-hour alert triage cycle.
 
-## 💡 Investigation Workflow
+## 💡 Investigation workflow
 
 When a risk detection occurs, the Identity Protection dashboard provides investigation tools:
 
@@ -82,10 +82,10 @@ For confirmed attacks, remediation actions include: confirm sign-in as compromis
 ---
 
 💬 **Has Entra ID ID Protection detected a genuine attack on an account in your organization?** The impossible travel detection is often the first one that makes people realize the scale of credential attacks happening in the background. What was the first risk detection that caught something real?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-> 🔑 **Licensing:** Risk detections in the portal require **Entra ID P2**. Basic risk reporting is available in P2 only — P1 has no access to Identity Protection risk data.
+> 🔑 **Licensing:** Risk detections in the portal require **Entra ID P2**. Basic risk reporting is available in P2 only : P1 has no access to Identity Protection risk data.
 
 <!-- nav -->
 

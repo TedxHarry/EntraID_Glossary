@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.1 - Authorization Code**
+📚 Part of Entra ID Glossary Series #4.1 - Authorization Code
 
 ---
 
@@ -18,7 +18,7 @@ A developer I mentored once asked me a genuinely good question: "Why does the OA
 
 It's the kind of question that sounds naive until you think about it for thirty seconds and realize it's actually exactly the right thing to ask. The answer explains something fundamental about how secure token delivery works.
 
-## 🔄 What the Authorization Code Is
+## 🔄 What the authorization code is
 
 The authorization code is a short-lived, single-use string that Entra ID sends back to an application after a user successfully authenticates. It's not the token. It's a temporary receipt that proves authentication happened, and it can be exchanged for the actual tokens once the application proves its own identity.
 
@@ -32,7 +32,7 @@ The flow looks like this:
 
 The code is what makes step 4 possible without skipping step 3's security check.
 
-## 🤔 So Why Not Skip Straight to the Token?
+## 🤔 So why not skip straight to the token?
 
 The reason comes down to where sensitive data should and shouldn't travel.
 
@@ -44,13 +44,13 @@ The authorization code in the URL is safe to be seen by logs because it's useles
 
 The actual tokens travel in the body of the token endpoint response, a direct server-to-server connection over HTTPS. They never touch a browser URL. That's the security guarantee the code exchange step provides.
 
-## 🔑 The Client Secret: Proving the App's Identity
+## 🔑 The client secret: proving the app's identity
 
 When the app presents the authorization code to the token endpoint, it also presents its client secret (or a client certificate, which is better). This proves that the entity making the exchange request is actually the registered application, not someone who intercepted the code from a log file.
 
 The combination of "valid code" plus "valid client credentials" is what Entra ID requires before issuing tokens. Either alone is insufficient.
 
-## 📱 What About Public Clients? PKCE to the Rescue
+## 📱 What about public clients? PKCE to the rescue
 
 This model works cleanly for web applications running on servers that can securely store a client secret. It gets complicated for mobile apps and single-page applications (SPAs), which run on devices or browsers where storing a secret is impossible. Any secret embedded in a mobile app can be extracted by inspecting the app package.
 
@@ -60,7 +60,7 @@ The attacker who intercepts the authorization code still can't use it, because t
 
 Microsoft recommends PKCE for all authorization code flows now, including confidential clients that have a client secret. Belt and suspenders.
 
-## ⚠️ Authorization Code Security Rules
+## ⚠️ Authorization code security rules
 
 A few properties worth understanding when debugging or reviewing app implementations:
 
@@ -72,7 +72,7 @@ A few properties worth understanding when debugging or reviewing app implementat
 ---
 
 💬 **Have you ever had to debug an authorization code flow?** The "invalid_grant" error from a code that expired or was already used is a rite of passage for anyone integrating OAuth applications with Entra ID. What was the culprit in your case?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

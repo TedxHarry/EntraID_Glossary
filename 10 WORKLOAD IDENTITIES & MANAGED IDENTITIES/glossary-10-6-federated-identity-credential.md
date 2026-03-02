@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#10.6 - Federated Identity Credential**
+📚 Part of Entra ID Glossary Series #10.6 - Federated Identity Credential
 
 ---
 
@@ -11,7 +11,7 @@
 
 - A Federated Identity Credential configures the trusted relationship on a user-assigned managed identity or app registration
 - Specifies: which issuer to trust, which subject claims to allow, what audience is expected
-- One application can have multiple federated credentials — for different environments (prod vs staging)
+- One application can have multiple federated credentials : for different environments (prod vs staging)
 
 
 A developer configured workload federation for their GitHub Actions workflow. They set up the app registration, assigned the right Azure roles, ran the workflow, and got an authentication error.
@@ -24,7 +24,7 @@ They added a second Federated Identity Credential for the pull request environme
 
 This is what a Federated Identity Credential actually is: a specific, precise trust configuration. Not "trust GitHub Actions." Trust this issuer, this subject, this audience. The precision is the security model.
 
-## 🔧 What a Federated Identity Credential Is
+## 🔧 What a federated identity credential is
 
 A Federated Identity Credential (FIC) is a configuration object on an Entra ID app registration or user-assigned managed identity that defines a trust relationship with a specific external identity. It tells Entra ID exactly which external tokens to accept and exchange for Entra ID tokens.
 
@@ -32,7 +32,7 @@ FICs live on the app registration or managed identity, not on the external syste
 
 You can configure multiple Federated Identity Credentials on a single app registration or managed identity. Each one defines a different trust relationship.
 
-## 📋 The Three Core Fields
+## 📋 The three core fields
 
 Every Federated Identity Credential is defined by three values:
 
@@ -44,7 +44,7 @@ Every Federated Identity Credential is defined by three values:
 
 All three fields must match the claims in the presented external token. If any field doesn't match, Entra ID rejects the token.
 
-## 🏗️ Where FICs Are Configured
+## 🏗️ Where fics are configured
 
 **On app registrations** 📱: In the Azure portal, navigate to the app registration, then Certificates & secrets, then Federated credentials. From here you can add a new federated credential. Microsoft provides templates for common scenarios: GitHub Actions, Kubernetes, and other common OIDC providers. You can also add custom configurations for providers not in the template list.
 
@@ -52,7 +52,7 @@ All three fields must match the claims in the presented external token. If any f
 
 The choice between app registration and user-assigned managed identity for workload federation is mostly operational. App registrations are in Entra ID. Managed identities are Azure resources. Teams already managing infrastructure as code with ARM/Bicep/Terraform often prefer managed identities because the FIC configuration can be part of the same IaC definition as the rest of the Azure resources.
 
-## ⚠️ Common Configuration Mistakes
+## ⚠️ Common configuration mistakes
 
 **Subject too broad** 🔓: Configuring `repo:myorg/*` or similar wildcard subjects if the external provider supports them. The subject should be as specific as possible. A wildcard subject that matches any repository in the organization means any repository could authenticate as this identity.
 
@@ -65,7 +65,7 @@ The choice between app registration and user-assigned managed identity for workl
 ---
 
 💬 **What was the first Federated Identity Credential configuration that worked correctly in your environment, and what took the most troubleshooting to get right?** The subject claim field trips up most people the first time. Did you hit the branch vs environment subject mismatch, or a different configuration issue?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

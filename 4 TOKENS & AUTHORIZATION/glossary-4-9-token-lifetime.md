@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.9 - Token Lifetime**
+📚 Part of Entra ID Glossary Series #4.9 - Token Lifetime
 
 ---
 
@@ -20,7 +20,7 @@ The developers on the same project had a different view. Their app made API call
 
 Both teams were right. Token lifetime is a genuine trade-off, not a setting you just make as small as possible. Understanding the defaults, the levers, and the modern approach (CAE) helps you find a configuration that works for both security and users.
 
-## 🎫 ⏱️ The Default Token Lifetimes
+## 🎫 ⏱️ the default token lifetimes
 
 Entra ID ships with these defaults:
 
@@ -32,7 +32,7 @@ Entra ID ships with these defaults:
 
 **Session tokens (browser cookies):** The persistent session cookie that keeps users signed in across browser sessions defaults to 90 days when "Keep me signed in" is selected, less if the user doesn't select it or if Conditional Access sign-in frequency is configured.
 
-## 🔧 Configurable Token Lifetime Policies
+## 🔧 Configurable token lifetime policies
 
 Before Conditional Access got sign-in frequency controls, there was a Token Lifetime Policy: a configurable object you could assign to service principals to override default lifetimes per application.
 
@@ -44,7 +44,7 @@ Today, Microsoft recommends against using Token Lifetime Policies for access and
 
 Token Lifetime Policies still work for refresh tokens and session tokens for specific scenarios, but the Conditional Access approach is more flexible and consistent.
 
-## ⚡ CAE: The Modern Solution to the Lifetime Trade-Off
+## ⚡ CAE: the modern solution to the lifetime trade-off
 
 Continuous Access Evaluation (CAE) changes the economics of token lifetime in a meaningful way.
 
@@ -56,7 +56,7 @@ Because CAE provides real-time enforcement, Entra ID can safely issue longer-liv
 
 The practical result: users get longer sessions with fewer interruptions. Security teams get near-real-time enforcement of policy changes. The 15-minute vs 60-minute debate becomes less relevant when the token can be revoked in seconds if circumstances change.
 
-## 💡 What to Configure in Practice
+## 💡 What to configure in practice
 
 **For most standard applications:**
 Leave access token lifetime at the default 60 minutes. Use Conditional Access sign-in frequency to set how often interactive re-authentication is required (daily for lower-risk apps, every 8 hours for higher-risk ones).
@@ -72,7 +72,7 @@ Tokens can extend to 24 hours safely. The main Microsoft 365 services already su
 ---
 
 💬 **Has token lifetime configuration caused friction in your environment?** Users complaining about sign-out frequency, developers complaining about token refresh load, or security teams pushing for shorter lifetimes than is practical? What compromise did you land on?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

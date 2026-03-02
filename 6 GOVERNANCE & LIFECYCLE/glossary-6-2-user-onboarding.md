@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.2 - User Onboarding**
+📚 Part of Entra ID Glossary Series #6.2 - User Onboarding
 
 ---
 
@@ -22,7 +22,7 @@ Then I asked how many of them had a documented, automated onboarding process. Ab
 
 User onboarding is fundamentally an identity problem. Getting someone's access right from day one requires getting their identity right first.
 
-## 🧩 What Onboarding Actually Involves
+## 🧩 What onboarding actually involves
 
 Onboarding isn't a single action. It's a sequence of identity and access operations that have to happen in the right order:
 
@@ -38,7 +38,7 @@ Onboarding isn't a single action. It's a sequence of identity and access operati
 
 **6. Device setup** 💻: The device the user works from needs to be enrolled in Intune (or already be enrolled via Autopilot), join Entra ID, and pass compliance checks before device-based Conditional Access policies allow access.
 
-## 🔄 The Automation Gap
+## 🔄 The automation gap
 
 The difference between a smooth first day and a frustrating one is how many of these steps happen automatically versus requiring human action.
 
@@ -57,7 +57,7 @@ The difference between a smooth first day and a frustrating one is how many of t
 - The user arrives to find their laptop isn't ready
 - They try to register MFA but their phone number wasn't entered during account creation
 
-## ♻️ ⏰ Lifecycle Workflows: Automating the Sequence
+## ♻️ ⏰ lifecycle workflows: automating the sequence
 
 Microsoft Entra Lifecycle Workflows allow organizations to define automated task sequences triggered by identity events. For onboarding, a "Joiner" workflow can:
 
@@ -69,7 +69,7 @@ Microsoft Entra Lifecycle Workflows allow organizations to define automated task
 
 The workflow runs at a defined time before the hire date (often 2 or 3 days prior) so that by the user's actual start date, most access is already in place.
 
-## 💡 The Manager's Role
+## 💡 The manager's role
 
 One of the most reliable inputs for onboarding automation is the manager attribute on the user object. If the new hire's manager is set correctly, workflows can:
 
@@ -82,7 +82,7 @@ Manager-driven onboarding reduces IT involvement in access decisions and puts th
 ---
 
 💬 **What's the single biggest friction point in your organization's current onboarding process?** The gap between "user created in Entra ID" and "user can do their job" is where most first-day frustration lives. Whether it's MFA registration, device provisioning, or app access, the bottleneck is usually the same for months until someone fixes it.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

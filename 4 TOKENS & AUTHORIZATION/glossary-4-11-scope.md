@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.11 - Scope**
+📚 Part of Entra ID Glossary Series #4.11 - Scope
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Scopes define what permissions an access token grants: `User.Read`, `Mail.Send`, `Group.ReadWrite.All`
 - Delegated scopes require a signed-in user; `.default` requests all consented permissions
-- Apps should request minimum scopes needed — scope minimization is a security best practice
+- Apps should request minimum scopes needed : scope minimization is a security best practice
 
 
 A developer asked me to approve an API permission request for their new HR integration. The app needed to read employee display names to populate a dropdown in a dashboard. They'd requested `User.ReadWrite.All`.
@@ -22,7 +22,7 @@ They didn't need write access to anything. They didn't need to read 99% of what 
 
 Scope is where least privilege either gets implemented or gets ignored.
 
-## 🔍 What Scope Actually Is
+## 🔍 What scope actually is
 
 A scope is a string that represents a specific permission. When an application requests access to Microsoft Graph or any other API, it declares which scopes it needs. Entra ID validates the request, the user or admin consents to those specific scopes, and the resulting access token contains only what was granted.
 
@@ -30,7 +30,7 @@ The token's `scp` claim (for delegated permissions) lists every consented scope.
 
 Scopes are defined by the resource being accessed. Microsoft Graph has hundreds of them. Your own custom APIs define their own. An application can only request scopes that the target resource has declared.
 
-## 📋 How Graph Scopes Are Structured
+## 📋 How graph scopes are structured
 
 Microsoft Graph scopes follow a naming pattern that tells you exactly what they cover:
 
@@ -45,7 +45,7 @@ Microsoft Graph scopes follow a naming pattern that tells you exactly what they 
 
 The `.All` suffix is a significant jump. It means the permission applies to all objects in the tenant, not just the current user's own data. An app requesting `Mail.Read.All` can read every mailbox, not just the signed-in user's. That's the difference between a personal key and a master key.
 
-## 🔑 Delegated vs Application Scope
+## 🔑 Delegated vs application scope
 
 Scopes work differently depending on the permission type:
 
@@ -53,7 +53,7 @@ Scopes work differently depending on the permission type:
 
 **Application scopes** (`roles` claim): The application acts as itself, no user in context. If granted `Mail.Read.All` as an application permission, the app can read every mailbox because there's no user's access limiting it. Admin consent is always required for application permissions. This is why they get more scrutiny during security reviews: there's no natural ceiling.
 
-## ⚠️ The Scope Creep Problem
+## ⚠️ The scope creep problem
 
 Every scope you request that you don't actually need is attack surface. If your application is compromised, the attacker inherits every permission the app had. An app with `Directory.ReadWrite.All` that gets compromised gives the attacker keys to your entire user directory.
 
@@ -61,7 +61,7 @@ I've audited enterprise applications that accumulated scopes over years of devel
 
 The cleanup took three months of careful testing to confirm what was actually in use. The risk had been sitting there the entire time.
 
-## 💡 The Right Approach to Scope Selection
+## 💡 The right approach to scope selection
 
 Before requesting any scope, answer these questions:
 
@@ -77,7 +77,7 @@ For your own APIs, define scopes narrowly from the start. A scope of `orders.rea
 ---
 
 💬 **Have you audited the scopes your applications are using and found permissions that shouldn't be there?** Scope creep is one of the most common findings in identity security reviews: easy to accumulate over time, uncomfortable to clean up. What drove you to look, and what did you find?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

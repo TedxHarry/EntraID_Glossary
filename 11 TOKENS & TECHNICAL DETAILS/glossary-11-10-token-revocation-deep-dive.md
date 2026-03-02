@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#11.10 - Token Revocation (Deep Dive)**
+📚 Part of Entra ID Glossary Series #11.10 - Token Revocation (Deep Dive)
 
 ---
 
 ## 🎯 TL;DR
 
 - Token revocation cascades: revoke refresh token → all future access tokens from that refresh token are blocked
-- Access token revocation without CAE only works at expiry — there's no in-flight recall
+- Access token revocation without CAE only works at expiry : there's no in-flight recall
 - Revocation events: password change, disable account, admin revoke (`revokeSignInSessions`), CA policy change
 
 
@@ -22,7 +22,7 @@ The access token hadn't expired yet. Revoking refresh tokens in Entra ID prevent
 
 Understanding the difference between refresh token revocation and access token revocation, and how CAE changes this picture, is essential for incident response.
 
-## 🔄 Two Different Revocation Problems
+## 🔄 Two different revocation problems
 
 Access tokens and refresh tokens have fundamentally different revocation architectures, and the reason is in their design.
 
@@ -32,7 +32,7 @@ Access tokens and refresh tokens have fundamentally different revocation archite
 
 This is the fundamental tension in JWT-based access token design: stateless tokens are efficient and scalable, but they can't be revoked before they expire without some additional mechanism.
 
-## 📌 ⏰ The Standard Revocation Gap
+## 📌 ⏰ the standard revocation gap
 
 Without CAE, the revocation gap for access tokens is the remaining token lifetime. If an attacker has an access token that expires at 3:00 PM and you revoke the user's refresh tokens at 2:15 PM, the attacker retains access until 3:00 PM. That's up to one hour.
 
@@ -40,7 +40,7 @@ This is a known, documented characteristic of OAuth 2.0 bearer tokens, not a bug
 
 For most security scenarios, a maximum one-hour gap is acceptable. For high-security scenarios where faster revocation matters, CAE changes the picture.
 
-## ⚡ CAE and Near-Real-Time Revocation
+## ⚡ CAE and near-real-time revocation
 
 With CAE, the gap between refresh token revocation and effective access loss is measured in seconds to minutes, not hours. When Entra ID revokes a user's refresh tokens (or disables their account, or elevates their risk), it signals to CAE-capable resource providers (Microsoft Graph, SharePoint, Exchange, Teams, Azure ARM) that this user's tokens should be rejected.
 
@@ -50,7 +50,7 @@ For organizations using Microsoft 365 and Azure services (all CAE-capable), "rev
 
 Non-CAE-capable services still experience the full token lifetime gap.
 
-## 🔑 What "Revoke All Tokens" Actually Does
+## 🔑 What "revoke all tokens" actually does
 
 When an administrator clicks "Revoke all refresh tokens" or "Revoke sessions" in the Entra ID portal (or calls `revokeSignInSessions` via Graph API), Entra ID:
 
@@ -61,7 +61,7 @@ When an administrator clicks "Revoke all refresh tokens" or "Revoke sessions" in
 
 The access tokens already issued remain technically valid until their `exp` claim, but CAE-capable services reject them in near-real-time.
 
-## 📋 Sign-Out Flows
+## 📋 Sign-Out flows
 
 Sign-out is a different but related problem. When a user signs out of an application, the application clears its local token cache. But the refresh token may still be valid in Entra ID's view, and other applications that share the user's session may still have valid tokens.
 
@@ -71,7 +71,7 @@ Sign-out is a different but related problem. When a user signs out of an applica
 
 For organizations with multiple integrated applications, implementing proper back-channel logout ensures sign-out from one application propagates to others.
 
-## ⚠️ Incident Response Implications
+## ⚠️ Incident response implications
 
 For a compromised account incident:
 
@@ -85,7 +85,7 @@ Disabling the account is faster than revoking tokens for stopping access to CAE-
 ---
 
 💬 **Has your organization's incident response playbook accounted for the access token revocation gap?** The gap between "we revoked the tokens" and "access actually stopped" surprises most teams the first time they encounter it in a real incident. Does your playbook distinguish between CAE-capable and non-CAE-capable services in the revocation workflow?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

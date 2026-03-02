@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.6 - Mobile Device Management**
+📚 Part of Entra ID Glossary Series #5.6 - Mobile Device Management
 
 ---
 
@@ -20,7 +20,7 @@ The organization has two options: require MDM enrollment (full management, they 
 
 Understanding MDM properly is how you make that decision well.
 
-## 📱 What MDM Is
+## 📱 What MDM is
 
 Mobile Device Management is the practice of centrally managing mobile devices: enforcing security policies, controlling configuration, deploying apps, and maintaining the ability to remotely wipe or lock devices.
 
@@ -34,7 +34,7 @@ MDM works through a management profile (on iOS/macOS) or an enrollment agent (on
 
 In the Microsoft ecosystem, Intune is the MDM server. Devices enroll in Intune. Intune pushes policies. Intune reports compliance to Entra ID.
 
-## 🔄 MDM vs MAM: The Crucial Distinction
+## 🔄 MDM vs mam: the crucial distinction
 
 MDM manages the entire device. MAM (Mobile Application Management) manages specific applications.
 
@@ -42,7 +42,7 @@ MDM manages the entire device. MAM (Mobile Application Management) manages speci
 
 **MAM without MDM** (often called "MAM-WE" - Mobile Application Management Without Enrollment) targets specific apps. The organization manages Outlook, Teams, and OneDrive. Everything else on the phone is untouched. The user's personal photos, banking apps, and personal email are completely outside Intune's reach. If the user leaves, a selective wipe removes corporate data from managed apps only.
 
-## ⚖️ The BYOD Trade-Off in Practice
+## ⚖️ The BYOD trade-off in practice
 
 I've had this conversation dozens of times with employees who are asked to enroll their personal iPhone:
 
@@ -56,7 +56,7 @@ For most organizations, MAM-WE is the right model for personal devices. It prote
 
 For corporate-owned devices, full MDM enrollment is the right model. The organization owns the device and needs full control of its security posture.
 
-## 📋 What MDM Cannot Do
+## 📋 What MDM cannot do
 
 Even with full MDM enrollment, there are limits:
 
@@ -67,7 +67,7 @@ Even with full MDM enrollment, there are limits:
 
 These limits are built into the MDM protocol by Apple, Google, and Microsoft specifically to maintain trust with users.
 
-## 💡 Conditional Access and MDM
+## 💡 Conditional access and MDM
 
 Conditional Access can require that devices be "managed" as a condition for accessing sensitive resources. A managed device is one that is either Intune-enrolled or Hybrid Entra Joined (domain joined and registered with Entra ID).
 
@@ -76,7 +76,7 @@ For organizations that want to allow BYOD for low-sensitivity apps but require c
 ---
 
 💬 **How has your organization handled the BYOD vs MDM conversation with employees?** The personal device enrollment policy is one of the most contentious in enterprise mobile management. What was the tipping point that determined your approach?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.11 - Device State**
+📚 Part of Entra ID Glossary Series #5.11 - Device State
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Device state signals (compliant, managed, registered) are evaluated by Conditional Access in real time
 - A device that fails a compliance check shows as non-compliant in Intune, which CA reads immediately
-- Device state is more reliable than IP-based location for access decisions — harder to spoof
+- Device state is more reliable than IP-based location for access decisions : harder to spoof
 
 
 A user called saying she could access Teams without any issues but was getting blocked from SharePoint. Same device. Same location. Same time.
@@ -20,7 +20,7 @@ The answer was in the Conditional Access policies: Teams had a policy requiring 
 
 Two apps, two policies, two different access outcomes, all because her device's compliance state had changed without her knowing.
 
-## 📊 What Device State Is
+## 📊 What device state is
 
 Device state is the combination of signals Entra ID has about a device at any given moment. It's not a single value but a collection of properties that Conditional Access evaluates together:
 
@@ -34,7 +34,7 @@ Device state is the combination of signals Entra ID has about a device at any gi
 
 **Last activity** 📅: When the device last authenticated or checked in. Stale devices haven't been seen recently.
 
-## 🔄 How State Changes Over Time
+## 🔄 How state changes over time
 
 Device state isn't static. It changes constantly based on what happens to the device and to the policies evaluating it.
 
@@ -53,7 +53,7 @@ Device state isn't static. It changes constantly based on what happens to the de
 - An admin explicitly disables the device object (lost/stolen device response)
 - An admin enables a previously disabled device object
 
-## 🔒 Conditional Access Reads Device State
+## 🔒 Conditional access reads device state
 
 Conditional Access policies evaluate device state at every authentication attempt, not just at initial sign-in. This is the key property that makes device state meaningful as a security signal.
 
@@ -65,7 +65,7 @@ When the user in the opening example tried to access SharePoint, Conditional Acc
 
 The compliance check used the most recent state Intune had reported. If Intune had checked in 6 hours ago and found the device compliant, that would still be the state Conditional Access saw. If Intune had checked in 2 hours ago and found the Windows update failed, that failure state was what Conditional Access saw.
 
-## 📌 ⏱️ State Evaluation Timing Matters
+## 📌 ⏱️ state evaluation timing matters
 
 The 8-hour default Intune check-in interval means there's always a lag between a device changing state and Conditional Access acting on that change. A device that becomes non-compliant at 9am might not be blocked until Intune's next check-in at 5pm, depending on when the last check-in occurred.
 
@@ -73,7 +73,7 @@ For critical compliance changes, admins can force a sync from the Intune admin c
 
 CAE (Continuous Access Evaluation) improves this for supported services: when a device is disabled or a policy change is pushed, CAE-capable services like Exchange Online and SharePoint receive real-time notifications and can immediately re-evaluate access without waiting for token expiry.
 
-## 💡 Troubleshooting Device State Issues
+## 💡 Troubleshooting device state issues
 
 When a user is blocked and device state is suspected:
 
@@ -88,7 +88,7 @@ The sign-in logs are often the fastest path to a diagnosis. They show exactly wh
 ---
 
 💬 **Have you troubleshot a "one app works, another doesn't" situation and traced it back to different Conditional Access policies with different device state requirements?** It's a common support scenario that's easy to misdiagnose without looking at both the policy configuration and the actual device state at the time of the blocked sign-in. What's your go-to diagnostic approach?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

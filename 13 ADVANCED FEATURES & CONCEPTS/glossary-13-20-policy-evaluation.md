@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.20 - Policy Evaluation**
+📚 Part of Entra ID Glossary Series #13.20 - Policy Evaluation
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Policy Evaluation is the engine that determines which CA policies apply to a given sign-in and what they do
 - All matching policies are evaluated; the strictest set of grant controls wins
-- Policy evaluation happens in milliseconds at sign-in — it doesn't add significant latency
+- Policy evaluation happens in milliseconds at sign-in : it doesn't add significant latency
 
 
 A user called the helpdesk because they couldn't access Salesforce from their laptop. They could access everything else. The helpdesk agent couldn't reproduce the issue from their own workstation. An administrator spent 40 minutes reviewing the 37 active Conditional Access policies trying to figure out which one was blocking access and why.
@@ -20,7 +20,7 @@ The answer was in the sign-in log the whole time, in the Conditional Access tab 
 
 CA policy evaluation tools exist precisely to answer questions like this without guessing.
 
-## 🔍 How Conditional Access Evaluation Works
+## 🔍 How conditional access evaluation works
 
 When a user attempts to authenticate and access a resource, the Conditional Access evaluation engine checks every active policy in the tenant to determine which ones apply to this specific sign-in. Policies are evaluated simultaneously, not sequentially. All applicable policies must be satisfied for access to be granted.
 
@@ -34,7 +34,7 @@ The evaluation engine applies this logic:
 
 **Conflict resolution** ⚠️: When multiple applicable policies have conflicting controls, the most restrictive result wins. If one policy grants access with MFA and another policy blocks access, block takes precedence. Among grant controls, all required controls must be satisfied.
 
-## 🔧 The What If Tool
+## 🔧 The what if tool
 
 The What If tool is a policy simulation capability in the Conditional Access blade that lets administrators answer: "If this user tried to sign in to this application from this location on this device, which policies would apply and what would happen?"
 
@@ -56,7 +56,7 @@ You specify:
 
 The What If result shows every policy evaluated, whether each policy matched (and why or why not), and the combined outcome. It answers definitively which policies would block access, which would grant with controls, and which wouldn't apply.
 
-## 📊 Report-Only Mode
+## 📊 Report-Only mode
 
 Report-only mode lets you deploy a CA policy in a non-enforcing state. The policy is evaluated for every sign-in in scope, but it doesn't block or grant based on its controls. Instead, the evaluation result (would have blocked, would have required MFA, would have required compliant device) is logged to the sign-in log.
 
@@ -66,7 +66,7 @@ A policy in report-only mode for a week accumulates real data: how many sign-ins
 
 Report-only mode is especially valuable for new policies targeting large user populations, policies with device compliance conditions (where device enrollment rates may be lower than expected), and risk-based policies where you want to observe what would trigger before you commit to enforcement behavior.
 
-## 📋 Sign-In Log CA Details
+## 📋 Sign-In log CA details
 
 Every sign-in event in the Entra ID sign-in log includes a Conditional Access tab showing the evaluation results for that specific sign-in. For each policy evaluated:
 
@@ -78,7 +78,7 @@ Every sign-in event in the Entra ID sign-in log includes a Conditional Access ta
 
 This is the diagnostic tool for real-world CA issues. When a user calls saying they can't access something, find their sign-in event, open the CA tab, and you'll see exactly which policy blocked them and which specific control they didn't satisfy. The troubleshooting time drops from 40 minutes of policy review to a 2-minute log investigation.
 
-## 🏗️ CA Insights and Reporting
+## 🏗️ CA insights and reporting
 
 The Conditional Access Insights and Reporting workbook aggregates sign-in log CA data across all users and shows it at the policy level:
 
@@ -91,7 +91,7 @@ The Conditional Access Insights and Reporting workbook aggregates sign-in log CA
 ---
 
 💬 **When you troubleshoot a CA-related access issue, do you go to the sign-in log CA tab first, or do you still find yourself manually reviewing individual policies?** The sign-in log CA details exist specifically to eliminate policy review as the diagnostic approach, but awareness of the tool is uneven across teams. What's the most complex CA evaluation scenario your team has had to untangle?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.19 - Token Security**
+📚 Part of Entra ID Glossary Series #4.19 - Token Security
 
 ---
 
@@ -20,7 +20,7 @@ Those tokens were valid for another 47 minutes. I told them to revoke the user s
 
 The answer is that "private" doesn't mean "secure." Log files, screenshots, chat messages, bug reports, shared documents: tokens end up in all of these. A token in a Teams chat is a credential in a Teams chat. It's valid until it expires, regardless of where it's sitting.
 
-## 🔑 The Fundamental Principle
+## 🔑 The fundamental principle
 
 An access token is a credential. Treat it exactly like you'd treat a password, with one important difference: a password requires the attacker to know your username and figure out where to authenticate. A bearer token can be used by anyone who has it, to any endpoint it's valid for, without knowing anything else about the user.
 
@@ -32,7 +32,7 @@ An access token is a credential. Treat it exactly like you'd treat a password, w
 
 These aren't guidelines for mature security programs. They're the minimum baseline.
 
-## 🔐 Transport: HTTPS Without Exception
+## 🔐 Transport: HTTPS without exception
 
 Bearer tokens must travel over HTTPS. This is not negotiable.
 
@@ -44,7 +44,7 @@ Modern browsers and frameworks enforce HTTPS in most contexts, but API clients, 
 - ✅ Your application rejects HTTP or upgrades it to HTTPS
 - ✅ Infrastructure components (reverse proxies, load balancers) don't accept both HTTP and HTTPS for the same endpoint
 
-## 💾 Storage: Where Tokens Live Matters Significantly
+## 💾 Storage: where tokens live matters significantly
 
 How tokens are stored between uses determines the attack surface at rest:
 
@@ -58,13 +58,13 @@ How tokens are stored between uses determines the attack surface at rest:
 
 🔴 **Log files**: Never log token values. Log files are shared with support teams, aggregated in SIEM systems, sent to vendors, and retained for years. An access token that appears in a log file at 2pm is a live credential sitting in a log file at 2pm.
 
-## 📌 ⏱️ Expiry: A Safety Net, Not a Strategy
+## 📌 ⏱️ expiry: a safety net, not a strategy
 
 Short token lifetimes limit damage. A token stolen with 3 minutes remaining is useful for 3 minutes. A token stolen at issuance is useful for up to 60 minutes. This is why access tokens have short lifetimes by default, and why CAE-capable services can safely extend them to 24 hours while retaining real-time revocation capability.
 
 But don't treat expiry as your primary security control. A well-stored, well-transmitted token expiring in 60 minutes is far safer than a poorly stored token with a 10-minute lifetime. The goal is to avoid losing tokens in the first place.
 
-## 💡 If You Find a Token That Shouldn't Be There
+## 💡 If you find a token that shouldn't be there
 
 Revoke first, investigate second. If you find a live access token somewhere it has no business being, the immediate action is revoking the user's sessions via the Entra admin center or `Revoke-MgUserSignInSession` in PowerShell. Then investigate how it got there and close the path that allowed it.
 
@@ -73,7 +73,7 @@ Depending on the token's permissions and how long it was accessible, a breach no
 ---
 
 💬 **Have you found an access token somewhere it had no business being - a log file, a public repository, a chat message?** It happens more often than organizations realize, and it's usually not malicious, just someone debugging without thinking through where the output lands. What was the cleanup process?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

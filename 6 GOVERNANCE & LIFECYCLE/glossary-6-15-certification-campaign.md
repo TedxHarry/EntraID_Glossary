@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.15 - Certification Campaign**
+📚 Part of Entra ID Glossary Series #6.15 - Certification Campaign
 
 ---
 
@@ -11,7 +11,7 @@
 
 - A certification campaign is a time-bounded initiative to review and certify access across many users or resources
 - Campaigns are created by admins and assigned to reviewers with a deadline
-- Results are auditable — who reviewed, what decision was made, when — for compliance reporting
+- Results are auditable : who reviewed, what decision was made, when : for compliance reporting
 
 
 A compliance team needed to certify that all 1,800 users with access to the company's financial applications had appropriate business justification for that access. Quarterly. Starting this quarter.
@@ -22,7 +22,7 @@ They ran it as a certification campaign in Entra ID Governance. The campaign sta
 
 The campaign that would have taken weeks of manual work took 2 hours to configure and ran itself.
 
-## 🏁 What a Certification Campaign Is
+## 🏁 What a certification campaign is
 
 A certification campaign is a time-bounded, organized effort to review and certify access for a defined scope of users, applications, or resources. The word "campaign" carries its meaning precisely: a coordinated effort, with a defined start and end, clear objectives, and a structured process for achieving them.
 
@@ -34,7 +34,7 @@ In Microsoft Entra ID Governance, a campaign is an instance of an access review 
 - **Automated outcomes**: What happens to access when decisions are made or when reviewers don't respond
 - **Audit evidence**: A complete record of every decision, by whom, when, with what justification
 
-## 📋 Campaign Types
+## 📋 Campaign types
 
 **Entitlement campaign** 🔵: Certifying access granted through Entitlement Management access packages. The campaign asks holders: do you still need this access? Or asks managers: does your team member still need this?
 
@@ -46,7 +46,7 @@ In Microsoft Entra ID Governance, a campaign is an instance of an access review 
 
 **Guest access campaign** 🔵: Certifying external user access. Guest accounts accumulate over time as vendors and contractors are invited and their engagements end without formal offboarding. Guest campaigns typically find the highest percentage of stale access.
 
-## ⚙️ Configuring a Campaign
+## ⚙️ Configuring a campaign
 
 A campaign in Entra ID Governance is a configured access review with specific settings:
 
@@ -62,7 +62,7 @@ A campaign in Entra ID Governance is a configured access review with specific se
 
 **Auto-apply**: Whether approved/denied decisions are automatically applied when the campaign closes, or held for manual review before applying.
 
-## 📊 Reading Campaign Results
+## 📊 Reading campaign results
 
 At close, a campaign produces a results report: how many access decisions were made, how many approved, how many denied, how many had no response (and what happened). This report is the compliance evidence: it shows that a structured review occurred, who reviewed, and what was decided.
 
@@ -72,7 +72,7 @@ For audit purposes, the report answers:
 - Who certified each access assignment?
 - What was the outcome for inappropriate access?
 
-## 💡 Campaign Timing Matters
+## 💡 Campaign timing matters
 
 Running a certification campaign in the third week of December (when half the organization is on leave) produces poor response rates and meaningless results. Running it immediately after a major product launch produces the same. Campaign timing should account for organizational rhythms.
 
@@ -81,7 +81,7 @@ Quarter-end, fiscal year transitions, and immediately after large organizational
 ---
 
 💬 **Has your organization run an access certification campaign and found the response rate from reviewers lower than expected?** The gap between sending campaign notifications and receiving meaningful decisions is where most campaigns struggle. What changes improved engagement with your reviewers?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

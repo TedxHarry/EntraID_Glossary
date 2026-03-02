@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.6 - ID Token**
+📚 Part of Entra ID Glossary Series #4.6 - ID Token
 
 ---
 
 ## 🎯 TL;DR
 
 - ID tokens are JWTs issued alongside access tokens that carry the authenticated user's identity claims
-- They're for the client app's consumption — never sent to APIs (use access tokens for that)
+- They're for the client app's consumption : never sent to APIs (use access tokens for that)
 - Key claims: `oid` (object ID), `upn`, `name`, `email`, `tid` (tenant ID), `nonce`
 
 
@@ -18,13 +18,13 @@ I reviewed a developer's application code once and noticed they were calling Mic
 
 The token was wrong. Not invalid, wrong. An ID token is for your application to know who signed in. It's not a credential you present to an API. Those are two different jobs, handled by two different tokens.
 
-## 🪪 What the ID Token Is
+## 🪪 What the ID token is
 
 The ID token is a JWT issued by Entra ID specifically to tell your application who just authenticated. It's defined by the OpenID Connect protocol (the authentication layer built on top of OAuth 2.0), and it answers one question: who is this user?
 
 Your application receives an ID token after a successful sign-in when the `openid` scope was included in the request. Your application reads it. That's the end of the ID token's journey. It doesn't leave your application to be presented to anyone else.
 
-## 📋 What's Inside an ID Token
+## 📋 What's inside an ID token
 
 ID tokens carry identity claims about the authenticated user:
 
@@ -55,7 +55,7 @@ Display name. Good for "Hello, Alex" in your UI.
 **preferred_username** 📝
 The user's UPN or email used for sign-in. Can change if the user's UPN changes, so not suitable as a database key.
 
-## 🔄 ID Token vs Access Token: The Essential Distinction
+## 🔄 ID token vs access token: the essential distinction
 
 This comparison clears up most of the confusion:
 
@@ -74,7 +74,7 @@ The access token is the credential your application presents to APIs. It's issue
 
 Sending an ID token to an API is like showing a venue your concert ticket stub after the show to get backstage. The stub proves you attended; it doesn't grant further access. The backstage pass (access token) does that job.
 
-## 🔒 Validating ID Tokens Properly
+## 🔒 Validating ID tokens properly
 
 Your application must validate the ID token before trusting its contents:
 
@@ -91,7 +91,7 @@ In practice, use a well-maintained OAuth/OIDC library for your platform rather t
 ---
 
 💬 **Have you come across code that confused ID tokens with access tokens?** It's one of the most common OAuth implementation mistakes and usually surfaces as mysterious 401 errors from APIs that worked fine during development. What was the context when you spotted it?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

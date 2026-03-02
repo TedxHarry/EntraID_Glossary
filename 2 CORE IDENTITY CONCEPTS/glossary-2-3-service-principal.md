@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#2.3 - Service Principal**
+📚 Part of Entra ID Glossary Series #2.3 - Service Principal
 
 ---
 
 ## 🎯 TL;DR
 
 - An App Registration is the global app definition; a Service Principal is the local instance in your tenant
-- Managed identities also create service principals — it's how Azure resources get Entra ID identities
+- Managed identities also create service principals : it's how Azure resources get Entra ID identities
 - Admin consent, user assignments, and Conditional Access targeting all happen on the service principal, not the registration
 
 
@@ -18,7 +18,7 @@ Of all the concepts I explain to people learning Entra ID, service principals ge
 
 Let me start in the right place.
 
-## ❓ The Question That Always Comes First
+## ❓ The question that always comes first
 
 "I registered an app in Entra ID. Now I see it in App Registrations. But I also see something in Enterprise Applications with the same name. What's the difference? Did I create two things?"
 
@@ -26,7 +26,7 @@ Yes. You created two things. Deliberately. And they serve different purposes.
 
 Here's the mental model that makes this make sense.
 
-## 💭 Think About a Franchise
+## 💭 Think about a franchise
 
 McDonald's has one master recipe for a Big Mac. One formula, documented centrally, owned by corporate headquarters. But there are 40,000 McDonald's locations around the world, and each one makes that Big Mac. The recipe is the same everywhere, but the restaurant is local, operating in a specific city, with its own staff, its own cash register, its own local health inspection records.
 
@@ -36,7 +36,7 @@ A **Service Principal** is the local restaurant. When your app is used in a tena
 
 One App Registration. Potentially many service principals, one per tenant the app appears in.
 
-## 📋 The Three Types of Service Principals
+## 📋 The three types of service principals
 
 Not all service principals come from app registrations you created. Entra ID creates them in three scenarios:
 
@@ -46,7 +46,7 @@ Not all service principals come from app registrations you created. Entra ID cre
 
 **Type 3: Legacy service principals.** Some older Microsoft services and third-party apps created service principal-like objects that don't have a corresponding app registration in the traditional sense. You'll encounter these when auditing older tenants. Don't worry about these too much as a beginner, just know they exist.
 
-## 📌 What a Service Principal Actually Controls
+## 📌 What a service principal actually controls
 
 In your tenant, the service principal for an application is where the real governance happens. Several things live on the service principal rather than the app registration:
 
@@ -58,7 +58,7 @@ In your tenant, the service principal for an application is where the real gover
 
 **Conditional Access targeting.** When you write a Conditional Access policy that targets a specific application, you're targeting the service principal in your tenant.
 
-## 💡 Why This Matters in Real Troubleshooting
+## 💡 Why this matters in real troubleshooting
 
 The app registration / service principal split causes confusion when things go wrong. Here's a scenario I've seen several times:
 
@@ -71,7 +71,7 @@ Finding service principals is straightforward: in the Entra admin center, go to 
 ---
 
 
-### 🔧 Quick Reference: PowerShell
+### 🔧 Quick reference: PowerShell
 
 ```powershell
 # Find all service principals
@@ -88,7 +88,7 @@ Get-MgServicePrincipal -Filter "displayName eq 'My App Name'"
 ---
 
 💬 **Your experience:** Has the app registration vs. service principal distinction tripped you up before? The "I configured permissions but the app still doesn't work" problem is one of the most common Entra ID support scenarios. Drop your troubleshooting story below.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

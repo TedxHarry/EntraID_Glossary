@@ -3,22 +3,22 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.16 - OAuth 2.0**
+📚 Part of Entra ID Glossary Series #4.16 - OAuth 2.0
 
 ---
 
 ## 🎯 TL;DR
 
-- OAuth 2.0 is an authorization framework — it grants apps access to resources, but does NOT authenticate users
+- OAuth 2.0 is an authorization framework : it grants apps access to resources, but does NOT authenticate users
 - It defines four roles: Resource Owner, Client, Authorization Server (Entra ID), and Resource Server (the API)
-- Read OAuth 2.0 first before diving into Authorization Code, Scopes, or OIDC — it's the foundation
+- Read OAuth 2.0 first before diving into Authorization Code, Scopes, or OIDC : it's the foundation
 
 
 Before OAuth existed, if you wanted a third-party app to access your photos to print them, the only way to give it access was to hand over your email and password. The app could read your photos. It could also delete them, read your email, change your password, and do anything else your account allowed. You couldn't give it narrow access. It was everything or nothing.
 
 That's the problem OAuth 2.0 solved. Not authentication. Authorization. The ability to say "this application can do this specific thing with my data" without ever handing over your credentials.
 
-## 📜 What OAuth 2.0 Actually Is
+## 📜 What OAuth 2.0 actually is
 
 OAuth 2.0 is an authorization framework, not an authentication protocol. This distinction matters more than it sounds, and it trips people up regularly.
 
@@ -32,7 +32,7 @@ The framework defines:
 
 What it deliberately does not define: what the user's identity is. That's OpenID Connect's job, the protocol that sits on top of OAuth 2.0. The distinction matters because combining the two is how modern sign-in actually works.
 
-## 🏗️ The Four Roles
+## 🏗️ The four roles
 
 OAuth 2.0 defines four roles that map directly to Entra ID concepts:
 
@@ -44,7 +44,7 @@ OAuth 2.0 defines four roles that map directly to Entra ID concepts:
 
 **Resource Server**: The API holding the data. Microsoft Graph, your own APIs, or any other service the application is trying to access. Resource servers validate the access tokens presented to them.
 
-## 🔄 What Actually Happens
+## 🔄 What actually happens
 
 When your application integrates with Entra ID using OAuth 2.0, the sequence looks like this:
 
@@ -57,7 +57,7 @@ When your application integrates with Entra ID using OAuth 2.0, the sequence loo
 
 Step 4 is where the client secret or PKCE code verifier is used to prove the request came from the legitimate application. This is what keeps tokens out of browser history and prevents interception attacks.
 
-## 💡 Why "2.0" - What Changed
+## 💡 Why "2.0" - what changed
 
 OAuth 1.0 existed before OAuth 2.0. It required complex cryptographic signatures on every API request, which was secure but extremely difficult to implement correctly. Library support was inconsistent. Bugs were common.
 
@@ -65,7 +65,7 @@ OAuth 2.0 simplified the protocol significantly by relying on HTTPS for transpor
 
 Most OAuth implementations you'll encounter today are OAuth 2.0. OAuth 1.0 still exists in some very old APIs but is effectively obsolete for new development.
 
-## ⚠️ Common Misconceptions
+## ⚠️ Common misconceptions
 
 OAuth 2.0 is not:
 - ❌ An authentication protocol (it doesn't tell you who the user is)
@@ -78,7 +78,7 @@ Understanding that OAuth 2.0 is specifically about authorization rather than aut
 ---
 
 💬 **When did it click for you that OAuth was about authorization, not authentication?** It's one of those distinctions that seems obvious once you understand it but creates real confusion before that. What's the clearest way you've found to explain it to someone new to identity concepts?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

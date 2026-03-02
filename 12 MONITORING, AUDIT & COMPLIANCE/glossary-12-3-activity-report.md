@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#12.3 - Activity Report**
+📚 Part of Entra ID Glossary Series #12.3 - Activity Report
 
 ---
 
@@ -20,7 +20,7 @@ The sign-in log had 40,000 events over the past 30 days. You could filter by app
 
 Activity reports are the aggregate and trend view. Not individual events, but patterns across events. The answer to "what's happening across our tenant" rather than "what happened in this specific event."
 
-## 📊 What Activity Reports Provide
+## 📊 What activity reports provide
 
 Entra ID activity reports are summaries and aggregations built on top of the underlying sign-in and audit log data. They present trend data, usage statistics, and status summaries that aren't practical to derive manually from raw logs.
 
@@ -36,7 +36,7 @@ Key report categories:
 
 **Access review activity** 📋: Results of completed access reviews. How many decisions were made, by whom, with what outcome. Which reviewers are completing their reviews promptly versus which are overdue. A management-level view of governance program health.
 
-## 🎯 Reports vs Raw Logs: When to Use Each
+## 🎯 Reports vs raw logs: when to use each
 
 **Use raw sign-in logs when** 🔍: Investigating a specific user's behavior. Confirming whether a specific authentication event occurred. Troubleshooting a Conditional Access policy for a specific user. Looking at a specific time window with a specific filter.
 
@@ -44,7 +44,7 @@ Key report categories:
 
 The reports exist because the questions they answer are different from the questions raw logs answer, and deriving trend data from raw logs at scale is impractical without significant query engineering.
 
-## 📋 The Authentication Methods Report in Practice
+## 📋 The authentication methods report in practice
 
 The authentication methods usage report is particularly actionable. It shows:
 
@@ -58,7 +58,7 @@ For an organization with 5,000 users, knowing that 3,200 are MFA-capable, 800 ha
 
 These numbers from the report turn "we should improve authentication security" into "here are the specific gaps and the size of each."
 
-## ⚙️ Accessing Activity Reports
+## ⚙️ Accessing activity reports
 
 Activity reports are accessible in the Entra ID admin center under Identity > Monitoring & health > Usage & insights. Some reports are also available via the Microsoft Graph Reporting API, which enables pulling report data into custom dashboards, Power BI, or automated reporting pipelines.
 
@@ -67,7 +67,7 @@ The Graph Reporting API supports reports like `getAzureADApplicationSignInSummar
 ---
 
 💬 **Which Entra ID activity report has been most useful for demonstrating security posture progress to leadership in your organization?** The authentication methods usage report is frequently cited for security initiatives. The application usage report is valuable for IT optimization. Which report gave you a number that changed how your organization thought about identity security?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

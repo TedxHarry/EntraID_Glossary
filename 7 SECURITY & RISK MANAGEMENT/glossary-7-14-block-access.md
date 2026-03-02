@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.14 - Block Access**
+📚 Part of Entra ID Glossary Series #7.14 - Block Access
 
 ---
 
 ## 🎯 TL;DR
 
-- Block access is the most restrictive CA grant control — completely prevents access matching the policy scope
+- Block access is the most restrictive CA grant control : completely prevents access matching the policy scope
 - Use for: blocking legacy authentication, blocking access from specific countries, blocking risky users
-- Always exclude emergency access accounts from block policies — test in Report-Only before enabling
+- Always exclude emergency access accounts from block policies : test in Report-Only before enabling
 
 
 An administrator wanted to stop sign-ins from countries where their organization had no business presence. Reasonable policy. They created a Conditional Access policy targeting All users, All cloud apps, with a location condition for the countries they wanted to block, and a grant control of Block access.
@@ -22,7 +22,7 @@ Fifteen minutes later, the helpdesk had 23 tickets. Remote employees who were tr
 
 The policy was right in principle. The scope was wrong. Block access is the most powerful grant control. It's also the one that does the most damage when misconfigured.
 
-## 🚫 What Block Access Does
+## 🚫 What block access does
 
 Block access is a Conditional Access grant control that denies the access request entirely. No bypass. No step-up option. No way through for the user to present additional verification.
 
@@ -34,7 +34,7 @@ When a policy with block access fires:
 
 This is intentional. Block access is designed for scenarios where there's no legitimate reason to allow access under these conditions, regardless of what the user can present. It's not "step up to MFA." It's "you may not proceed."
 
-## 🎯 When Block Access Is the Right Control
+## 🎯 When block access is the right control
 
 Block access is appropriate when the conditions it fires on represent scenarios where no legitimate user should ever be accessing this resource:
 
@@ -48,7 +48,7 @@ Block access is appropriate when the conditions it fires on represent scenarios 
 
 **Guest access to specific resources** 🚫: If external users should never access certain applications regardless of how they're invited, block access for guest identities to those specific apps.
 
-## ⚠️ When Block Access Goes Wrong
+## ⚠️ When block access goes wrong
 
 Block access errors share a pattern: they fire on conditions that include legitimate users who have no way to resolve the block themselves.
 
@@ -60,7 +60,7 @@ Block access errors share a pattern: they fire on conditions that include legiti
 
 **The forgotten service account**: A block policy for legacy auth that catches a service account authenticating via basic auth. The service account breaks silently and nobody notices for three days until the process that depends on it fails visibly.
 
-## 🔧 Block Access Policy Design
+## 🔧 Block access policy design
 
 The discipline required for block access policies is more rigorous than for step-up policies. Because the impact of a misconfigured block is immediate and the user has no self-service resolution path:
 
@@ -74,7 +74,7 @@ The discipline required for block access policies is more rigorous than for step
 
 **Pair with an unblock process** 🔑: What's the process when a legitimate user is blocked? Who do they contact? What information do they need to provide? How quickly can the block be resolved? Block access without an unblock process creates support escalations that surface at the worst possible times.
 
-## 💡 Block vs Require MFA: The Decision
+## 💡 Block vs require mfa: the decision
 
 The choice between block and require MFA is about whether any legitimate user should be able to access this resource under these conditions:
 
@@ -86,7 +86,7 @@ Most scenarios are the former. Block access is reserved for scenarios where the 
 ---
 
 💬 **Have you deployed a block access policy that caused an unexpected outage?** The legacy auth block catching a service account or the location block catching a traveling executive are both classic block-access war stories. What was the post-mortem lesson?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

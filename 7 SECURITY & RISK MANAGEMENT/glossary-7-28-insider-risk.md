@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.28 - Insider Risk**
+📚 Part of Entra ID Glossary Series #7.28 - Insider Risk
 
 ---
 
@@ -22,7 +22,7 @@ The investigation that followed took months and cost more in legal fees than the
 
 Insider risk is the security problem that technical access controls alone can't solve.
 
-## 👤 What Insider Risk Is
+## 👤 What insider risk is
 
 Insider risk refers to security threats that originate from within the organization: current employees, contractors, partners, or former employees whose access hasn't been fully revoked. Unlike external attacks that require credential theft or network intrusion, insider risk scenarios involve actors who already have legitimate access.
 
@@ -34,7 +34,7 @@ The challenge is that insider risk behaviors often look identical to legitimate 
 
 Traditional security controls are designed to detect unauthorized access. Insider risk involves authorized access being used in unauthorized ways.
 
-## 🔍 Types of Insider Risk
+## 🔍 Types of insider risk
 
 **Malicious insiders** 🔴: Employees who intentionally misuse their access for personal gain, retaliation, or to benefit a competitor. Data exfiltration before resignation is the most common pattern. Financial fraud, IP theft, and sabotage are others.
 
@@ -42,7 +42,7 @@ Traditional security controls are designed to detect unauthorized access. Inside
 
 **Compromised insiders** 🟠: Employees whose credentials or devices have been compromised by external actors. The threat technically originates externally but manifests with insider-level access. This is the intersection of external threat and insider risk.
 
-## 🔒 Microsoft Purview Insider Risk Management
+## 🔒 Microsoft purview insider risk management
 
 Microsoft Purview Insider Risk Management is the dedicated product for detecting and investigating insider risk scenarios. It integrates with Entra ID and Microsoft 365 to analyze behavioral signals across the environment.
 
@@ -56,7 +56,7 @@ The system works by building behavioral profiles and detecting anomalies:
 
 **Communication signals** 💬: Language patterns in email and Teams messages that indicate disgruntlement, job searching, or discussion of sensitive topics with external parties. (This signal requires careful consideration of privacy and legal requirements in each jurisdiction.)
 
-## 🔗 Insider Risk and Conditional Access
+## 🔗 Insider risk and conditional access
 
 Insider risk signals can feed into Conditional Access policies through Microsoft's integration between Purview and Entra ID. When a user's insider risk score crosses a threshold, Conditional Access can respond:
 
@@ -68,7 +68,7 @@ Insider risk signals can feed into Conditional Access policies through Microsoft
 
 **Account suspension**: In extreme cases, disable the account pending investigation. This is a significant action requiring human review and confirmation.
 
-## ⚠️ The Privacy and Legal Complexity
+## ⚠️ The privacy and legal complexity
 
 Insider risk monitoring raises legitimate privacy and legal concerns that external threat monitoring doesn't. Monitoring employee communications and file access at this level may be:
 
@@ -79,7 +79,7 @@ Insider risk monitoring raises legitimate privacy and legal concerns that extern
 
 Before deploying insider risk monitoring, involve legal counsel, HR, and employee representatives where required. The technical capability exists. Whether and how to deploy it is a legal and organizational decision.
 
-## 💡 The Human Process Requirement
+## 💡 The human process requirement
 
 Technology alone doesn't resolve insider risk cases. A high insider risk score is a flag for human investigation, not an automated verdict.
 
@@ -90,7 +90,7 @@ Organizations deploying insider risk capabilities need a defined investigation p
 ---
 
 💬 **Has your organization implemented any form of insider risk monitoring?** The conversation about deploying it is often more complex than the technical setup because of privacy, legal, and cultural considerations. What was the hardest part of getting agreement to monitor insider risk signals?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Adaptive Protection (Insider Risk + CA integration) requires **Microsoft Purview Insider Risk Management** + **Entra ID P2**.

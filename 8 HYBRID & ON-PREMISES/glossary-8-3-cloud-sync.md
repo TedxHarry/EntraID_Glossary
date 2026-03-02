@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#8.3 - Cloud Sync**
+📚 Part of Entra ID Glossary Series #8.3 - Cloud Sync
 
 ---
 
 ## 🎯 TL;DR
 
-- Entra Cloud Sync is the lightweight agent-based sync engine — no dedicated sync server required
+- Entra Cloud Sync is the lightweight agent-based sync engine : no dedicated sync server required
 - It's installed as a small agent on AD domain controllers or member servers
 - Cloud Sync supports multi-forest and is the recommended approach for new hybrid deployments
 
@@ -20,7 +20,7 @@ When they evaluated Cloud Sync for a new subsidiary that was joining the Microso
 
 The dedicated sync server wasn't needed. The maintenance overhead wasn't there.
 
-## ☁️ What Cloud Sync Is
+## ☁️ What cloud sync is
 
 Microsoft Entra Cloud Sync is a synchronization service that connects on-premises Active Directory to Entra ID, with the synchronization logic running in the Microsoft cloud rather than entirely on an on-premises server.
 
@@ -34,7 +34,7 @@ The agent's job is to:
 
 The sync engine, configuration UI, and rules processing all live in Entra ID. The on-premises footprint is minimal.
 
-## ⚖️ Cloud Sync vs Entra Connect: The Comparison
+## ⚖️ Cloud sync vs entra connect: the comparison
 
 Both tools synchronize the same core objects (users, groups, contacts) and both support Password Hash Sync. The differences matter for choosing which to use:
 
@@ -48,7 +48,7 @@ Both tools synchronize the same core objects (users, groups, contacts) and both 
 
 **Attribute customization** 🔧: Entra Connect's sync rules engine allows deep customization of attribute flows and transformations. Cloud Sync's attribute mapping is simpler and doesn't support all the same transformation scenarios.
 
-## 📋 When to Choose Cloud Sync
+## 📋 When to choose cloud sync
 
 **New deployments with straightforward requirements**: If you're setting up hybrid sync for the first time and you don't need the advanced features unique to Entra Connect, Cloud Sync is the recommended path.
 
@@ -58,13 +58,13 @@ Both tools synchronize the same core objects (users, groups, contacts) and both 
 
 **Existing Entra Connect environments**: Microsoft supports running both Cloud Sync and Entra Connect in the same tenant for different OUs or domains. Organizations can use Cloud Sync for new entities while keeping Entra Connect running for existing synchronized OUs.
 
-## ⚙️ The Agent Architecture
+## ⚙️ The agent architecture
 
 Cloud Sync agents are lightweight Windows services. Multiple agents can be deployed for the same AD domain to provide redundancy. The agents communicate outbound to Entra ID over HTTPS on port 443. No inbound firewall rules are required, and no open ports need to be exposed to the internet.
 
 Agent configuration and sync rules are managed entirely in the Entra admin center. The agent downloads its configuration from the cloud, reads AD changes, and sends them to the cloud. Updates to the agent are pushed automatically when Microsoft releases new versions.
 
-## ⚠️ What Cloud Sync Doesn't Do Yet
+## ⚠️ What cloud sync doesn't do yet
 
 The feature gap between Cloud Sync and Entra Connect has narrowed with each release. Check current documentation for the current state. Common limitations at time of writing:
 
@@ -77,7 +77,7 @@ The feature gap between Cloud Sync and Entra Connect has narrowed with each rele
 ---
 
 💬 **Have you migrated from Entra Connect to Cloud Sync, or deployed Cloud Sync for a new environment?** The operational overhead reduction is the most commonly cited benefit: no more scheduled maintenance windows for Connect upgrades, no more capacity planning for the sync server. What was the driver for your Cloud Sync adoption?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

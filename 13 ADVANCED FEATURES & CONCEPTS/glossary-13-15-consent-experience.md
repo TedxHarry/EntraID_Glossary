@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.15 - Consent Experience**
+📚 Part of Entra ID Glossary Series #13.15 - Consent Experience
 
 ---
 
 ## 🎯 TL;DR
 
 - The Consent Experience is the UI dialog that appears when a user or admin grants permissions to an app
-- It shows: app name, publisher, requested permissions — users should review carefully before consenting
-- Phishing apps often request excessive permissions — train users to be suspicious of unexpected consent prompts
+- It shows: app name, publisher, requested permissions : users should review carefully before consenting
+- Phishing apps often request excessive permissions : train users to be suspicious of unexpected consent prompts
 
 
 A user got a consent prompt for an application they'd never seen before. It was requesting permissions to read their email, read their contacts, and read files shared with them. The application was called "QuickProductivityHelper." The publisher was listed as "Unverified."
@@ -20,7 +20,7 @@ The user clicked Accept because they thought someone from IT had sent them the l
 
 The consent experience is the moment between "an application wants access to your data" and "the application has access to your data." That moment is a security control. Whether users make informed decisions at that moment determines whether it works as intended.
 
-## 🖥️ What Users See in the Consent Prompt
+## 🖥️ What users see in the consent prompt
 
 The Entra ID consent dialog presents specific information about the application requesting permissions:
 
@@ -32,7 +32,7 @@ The Entra ID consent dialog presents specific information about the application 
 
 **Who the consent applies to** 👤: For user consent, a note that this grants access to the user's data only. For admin consent on behalf of the organization, a clear statement that the permission is being granted for all users in the organization.
 
-## 🔒 The Security Signal in the Experience
+## 🔒 The security signal in the experience
 
 The consent prompt is designed to contain risk signals that help users and administrators make informed decisions:
 
@@ -44,7 +44,7 @@ The consent prompt is designed to contain risk signals that help users and admin
 
 **Consent scope** 🏢: Admin consent prompts explicitly state that the consent applies to all users in the organization, which is a meaningful signal that the decision affects more than just the user making it.
 
-## 🔑 Admin Consent Experience
+## 🔑 Admin consent experience
 
 When an administrator grants consent on behalf of the organization (through the Enterprise Applications admin consent workflow or directly), the consent experience is different from user consent:
 
@@ -56,7 +56,7 @@ When an administrator grants consent on behalf of the organization (through the 
 
 The admin consent experience is designed for a more informed audience than the user consent experience, with more technical detail and explicit acknowledgment requirements.
 
-## 📊 Improving the Consent Experience for Your Users
+## 📊 Improving the consent experience for your users
 
 Organizations control several aspects of the consent experience for applications they build:
 
@@ -70,7 +70,7 @@ Organizations control several aspects of the consent experience for applications
 
 **Incremental consent** 📋: Requesting permissions only when the corresponding feature is used (rather than all at sign-up) means users see smaller, more contextual consent prompts with clear reasons for each permission.
 
-## ⚠️ Consent Phishing
+## ⚠️ Consent phishing
 
 Illicit consent grant attacks (also called consent phishing) are a significant threat vector. An attacker creates a malicious application, registers it in any Entra ID tenant, and sends targeted users a link to consent to it. If the user consents, the attacker has an OAuth token for the user's data that persists even after a password change.
 
@@ -79,7 +79,7 @@ Defending against consent phishing: limit user consent to verified publishers, t
 ---
 
 💬 **Does your organization train users to evaluate consent prompts before accepting, and have you had any consent phishing incidents?** The consent phishing attack is underappreciated relative to credential phishing because it bypasses MFA. A consented OAuth token works regardless of the user's MFA registration. What's your organization's approach to consent phishing defense?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

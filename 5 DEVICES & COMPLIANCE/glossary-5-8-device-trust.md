@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.8 - Device Trust**
+📚 Part of Entra ID Glossary Series #5.8 - Device Trust
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Device trust is the level of confidence Entra ID places in a device based on how it was joined and managed
 - Highest trust: Entra-joined + Intune-managed + compliant. Lowest: unregistered personal device
-- Conditional Access evaluates device trust to make access decisions — not all trust levels grant the same access
+- Conditional Access evaluates device trust to make access decisions : not all trust levels grant the same access
 
 
 A consultant connected to a client's SharePoint from her personal laptop using her guest account. Same Conditional Access policy applied. Same user risk level. Completely different access experience from a corporate employee on a managed device.
@@ -20,7 +20,7 @@ The employee got through without additional prompts. The consultant hit an MFA r
 
 That's device trust working exactly as designed: the organization makes different decisions based on the confidence level it has in the device making the request.
 
-## 🏗️ The Device Trust Hierarchy
+## 🏗️ The device trust hierarchy
 
 Entra ID recognizes different levels of device trust based on how the device registered and what management state it's in. From lowest to highest trust:
 
@@ -39,7 +39,7 @@ A corporate device joined to both on-premises Active Directory and Entra ID. The
 **Compliant device** ✅
 Any of the joined types above, plus passing all active Intune compliance policy checks. This is the highest trust state a device can achieve. Compliant implies managed and meeting security requirements.
 
-## 🔒 How Conditional Access Uses Device Trust
+## 🔒 How conditional access uses device trust
 
 Conditional Access grant controls map directly to trust levels:
 
@@ -54,7 +54,7 @@ Organizations typically use different policies for different resource sensitivit
 🟡 **Medium sensitivity** (HR systems, finance apps): Require registered or managed device
 🔴 **High sensitivity** (admin tools, payroll, strategic data): Require compliant managed device
 
-## ⚠️ The Trust Gap: Registration vs Compliance
+## ⚠️ The trust gap: registration vs compliance
 
 The most common device trust misconfiguration I've seen: organizations set Conditional Access to require "Entra Joined" devices, thinking this means secure corporate devices. But an Entra Joined device with Defender disabled, BitLocker off, and a 6-month-old OS still satisfies the "joined" requirement.
 
@@ -62,7 +62,7 @@ The most common device trust misconfiguration I've seen: organizations set Condi
 
 For sensitive resources, require compliant, not just joined. The compliance requirement is what gives the trust level its actual security meaning.
 
-## 💡 Session Controls and Device Trust
+## 💡 Session controls and device trust
 
 Even after granting access, Conditional Access session controls let organizations adjust what the user can do based on device trust:
 
@@ -75,7 +75,7 @@ This creates a gradient of access rather than a binary allow/deny, which is much
 ---
 
 💬 **Has your organization built a tiered access model based on device trust levels?** The move from binary "allowed or blocked" to a tiered model based on device state is one of the most meaningful Zero Trust improvements you can make. What did your trust tiers end up looking like?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

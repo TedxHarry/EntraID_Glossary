@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.6 - Leaked Credentials**
+📚 Part of Entra ID Glossary Series #7.6 - Leaked Credentials
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Leaked credentials are username/password pairs from data breaches that Microsoft monitors across the dark web
 - When a match is found for a tenant user, Identity Protection creates a high user risk event immediately
-- Response: force password reset immediately — the credential is compromised regardless of how the breach happened
+- Response: force password reset immediately : the credential is compromised regardless of how the breach happened
 
 
 The breach happened at an online retailer. 42 million username/password combinations were exposed. The retailer wasn't a Microsoft customer. They had nothing to do with Entra ID.
@@ -22,7 +22,7 @@ Microsoft's threat intelligence found the breach database within 48 hours of it 
 
 No corporate accounts were compromised. The credential stuffing attack that the threat actor planned for the following week found locked doors at every account they tried.
 
-## 🔑 What Leaked Credentials Means
+## 🔑 What leaked credentials means
 
 Leaked credentials is a specific risk detection type in Entra ID ID Protection. It triggers when Microsoft's threat intelligence finds a username/password combination that matches an Entra ID account in external breach data.
 
@@ -30,7 +30,7 @@ The detection has nothing to do with a breach of Microsoft's systems or your org
 
 The trigger is finding the specific password hash or plaintext credential that matches what's currently in use for an Entra ID account. Not just the username. The actual credential pair that would work against your tenant.
 
-## 🌐 How Microsoft Finds Leaked Credentials
+## 🌐 How microsoft finds leaked credentials
 
 Microsoft operates a large-scale threat intelligence operation that continuously monitors sources where stolen credentials appear:
 
@@ -44,7 +44,7 @@ Microsoft operates a large-scale threat intelligence operation that continuously
 
 The matching process compares the harvested credentials against Entra ID account credentials. When a match is confirmed, the detection fires.
 
-## 📊 What Happens When Detection Fires
+## 📊 What happens when detection fires
 
 A leaked credentials detection generates a **High** user risk event on the affected account. The detection type in the Identity Protection portal shows as "Leaked credentials."
 
@@ -56,7 +56,7 @@ The response depends on your Conditional Access policies:
 
 The second scenario is why the policy matters more than the detection.
 
-## ⚠️ The Credential Reuse Problem
+## ⚠️ The credential reuse problem
 
 Leaked credentials detections are almost always a credential reuse problem. The user signed up for a third-party service using their work email address and the same password they use for work. The third-party service got breached. Now the work account is at risk.
 
@@ -68,7 +68,7 @@ This is structurally unavoidable without organization-wide controls:
 
 The realistic response is assuming credential reuse happens and building detection and response around it. The leaked credentials detection plus a mandatory password reset policy handles the scenario even when it occurs.
 
-## 🔧 Reducing Exposure
+## 🔧 Reducing exposure
 
 Several controls reduce the impact of leaked credential events:
 
@@ -83,7 +83,7 @@ Several controls reduce the impact of leaked credential events:
 ---
 
 💬 **Have you had a leaked credentials detection fire in your tenant where the source was a completely unrelated third-party breach?** The credential reuse chain from a retail or gaming site to a corporate account is surprisingly common. How did you handle communicating it to the affected users without them feeling blamed for something that wasn't entirely their fault?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

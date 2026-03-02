@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#11.6 - Actor (Deep Dive)**
+📚 Part of Entra ID Glossary Series #11.6 - Actor (Deep Dive)
 
 ---
 
@@ -20,7 +20,7 @@ Calendar access that should have been user-specific was running under the servic
 
 The On-Behalf-Of flow and the actor claim exist to solve exactly this scenario.
 
-## 🎭 What Actor Means in OAuth
+## 🎭 What actor means in OAuth
 
 In OAuth and token terminology, the actor is the application or service making requests. The subject is the user whose resources are being accessed.
 
@@ -30,7 +30,7 @@ In a three-party flow (user authenticates to a frontend, frontend calls a middle
 
 The `act` claim in a token captures this actor chain. When the middle-tier service uses the On-Behalf-Of flow to get a token for the downstream API, the resulting token carries both the user's identity (subject) and the middle-tier service's identity (actor). The downstream API can see not just who the user is, but which service is acting on their behalf.
 
-## 🔄 The On-Behalf-Of Flow in Detail
+## 🔄 The on-behalf-of flow in detail
 
 The OBO flow is how actor chains are established in practice.
 
@@ -38,13 +38,13 @@ The OBO flow is how actor chains are established in practice.
 
 **Step 2**: The frontend calls the middle-tier API, passing the token in the Authorization header.
 
-**Step 3**: The middle-tier API needs to call Microsoft Graph or another downstream API as the user, not as itself. It presents the incoming user token to Entra ID's token endpoint as an assertion, using the `urn:ietf:params:oauth:grant-type:jwt-bearer` grant type with `requested_token_use=on_behalf_of`.
+**Step 3**: The middle-tier API needs to call Microsoft Graph or another downstream API as the user, not as itself. It presents the incoming user token to Entra ID's token endpoint as an assertion, using the `urn:ietf:params:OAuth:grant-type:jwt-bearer` grant type with `requested_token_use=on_behalf_of`.
 
 **Step 4**: Entra ID validates the incoming token, validates the middle-tier's client credentials, and issues a new access token for the downstream API. This new token has the original user as the subject. The `act` claim carries the middle-tier service's identity.
 
 **Step 5**: The middle-tier calls the downstream API with the new token. The downstream API sees the original user as the subject and enforces user-level permissions.
 
-## 🔑 Why Actor Matters for Audit and Authorization
+## 🔑 Why actor matters for audit and authorization
 
 The actor claim enables two important capabilities:
 
@@ -54,7 +54,7 @@ The actor claim enables two important capabilities:
 
 For compliance scenarios where knowing the full request chain matters (financial services audit trails, healthcare data access logs, regulated data processing records), actor claims provide the traceability that direct service identity doesn't.
 
-## ⚙️ Token Claims in Practice
+## ⚙️ Token claims in practice
 
 A token issued via OBO might contain:
 
@@ -66,7 +66,7 @@ A token issued via OBO might contain:
 
 The downstream API sees all of these and can enforce policy based on the full context.
 
-## ⚠️ The Consent Requirement
+## ⚠️ The consent requirement
 
 OBO flows require that both the original scope (the token presented to start OBO) and the downstream scope (the token requested for the downstream API) have been consented. If the user consented to the frontend's permissions but not to the downstream permissions the middle-tier needs, OBO fails with a consent error.
 
@@ -75,7 +75,7 @@ This is the most common OBO implementation failure: the downstream API permissio
 ---
 
 💬 **Does your organization use On-Behalf-Of flows in any API-to-API call chains, and have you had to trace a request through a multi-tier actor chain in audit logs?** OBO is common in architectures where user context needs to propagate through API tiers, but the consent and permission setup can be tricky. What was the hardest OBO configuration challenge your team worked through?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#12.5 - Compliance**
+📚 Part of Entra ID Glossary Series #12.5 - Compliance
 
 ---
 
@@ -20,13 +20,13 @@ The auditor's response: "This is the most organized identity evidence package we
 
 Not because the controls were complex. Because the team knew which Entra ID feature corresponded to which control requirement and could produce the evidence efficiently. That mapping is what compliance in the context of Entra ID means in practice.
 
-## 🏛️ What Compliance Means Here
+## 🏛️ What compliance means here
 
 Compliance in the Entra ID context is about demonstrating that your organization's identity controls meet the requirements of applicable regulatory frameworks and security standards. The regulations differ: GDPR (privacy), HIPAA (healthcare data), SOX (financial reporting), PCI DSS (payment card), ISO 27001 (information security management), SOC 2 (service organization controls). But the underlying Entra ID controls that satisfy them overlap significantly.
 
 Entra ID isn't a compliance product by itself. It's an identity platform with controls that can be configured, documented, and evidenced to satisfy control requirements across multiple frameworks.
 
-## 📋 Core Control Areas and Their Entra ID Evidence
+## 📋 Core control areas and their entra ID evidence
 
 **Access control and least privilege** 🔑: Who has access to what, and is it the minimum necessary? Entra ID evidence: role assignments (PIM-managed, time-limited for privileged roles), access packages with defined policies and expiry, Conditional Access policies enforcing device and authentication requirements. Auditor artifact: current role assignment export, PIM activation log, access package catalog.
 
@@ -40,7 +40,7 @@ Entra ID isn't a compliance product by itself. It's an identity platform with co
 
 **Account provisioning and deprovisioning** 🔄: Are user accounts promptly created when employees join and disabled when they leave? Entra ID evidence: Lifecycle Workflows configuration showing automated disable on termination date from HR system, audit log entries confirming accounts were disabled on the expected dates. Auditor artifact: lifecycle workflow configuration, termination event audit log sample.
 
-## 🔒 GDPR-Specific Controls
+## 🔒 GDPR-Specific controls
 
 GDPR adds privacy-specific requirements beyond general access control:
 
@@ -52,7 +52,7 @@ GDPR adds privacy-specific requirements beyond general access control:
 
 **Data residency** 🌐: Where is identity data stored? Microsoft publishes data residency documentation per service and geography. Organizations with EU data residency requirements configure Entra ID to provision in EU regions.
 
-## 📊 Microsoft Compliance Manager
+## 📊 Microsoft compliance manager
 
 Microsoft Purview Compliance Manager provides a structured mapping between Microsoft cloud controls (including Entra ID) and compliance framework requirements. It shows which Entra ID features address which control requirements in frameworks like NIST 800-53, ISO 27001, SOC 2, and others.
 
@@ -63,7 +63,7 @@ The Compliance Manager score isn't a guarantee of compliance; it's a tool for id
 ---
 
 💬 **Which regulatory framework puts the most compliance pressure on your Entra ID configuration, and which control area requires the most ongoing effort to evidence?** Access reviews are the most commonly cited ongoing compliance effort. But organizations in regulated industries often find data residency and audit log retention more challenging. What's the compliance requirement that most drives your identity security investment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

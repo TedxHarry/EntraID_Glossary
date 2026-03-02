@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.19 - CA Optimization Agent**
+📚 Part of Entra ID Glossary Series #13.19 - CA Optimization Agent
 
 ---
 
 ## 🎯 TL;DR
 
 - CA Optimization Agent analyzes your CA policies and recommends improvements: gaps, overlaps, redundancies
-- Available in the Entra portal — run it to find policies that could be simplified or consolidated
-- Don't apply all recommendations blindly — validate each change in Report-Only mode first
+- Available in the Entra portal : run it to find policies that could be simplified or consolidated
+- Don't apply all recommendations blindly : validate each change in Report-Only mode first
 
 
 A security team finished an 18-month project to deploy Conditional Access across the organization. Forty-three policies. Multiple rounds of testing in report-only mode. They felt good about where they'd landed.
@@ -20,7 +20,7 @@ Then an Entra ID recommendation appeared: 847 users in the tenant had no Conditi
 
 The CA Optimization Agent found a gap the team didn't know existed.
 
-## 🔍 What the CA Optimization Agent Is
+## 🔍 What the CA optimization agent is
 
 The CA Optimization Agent is part of the Entra Recommendations engine, which continuously analyzes your tenant configuration and surfaces actionable findings to improve your security posture. The CA-specific recommendations focus on Conditional Access coverage gaps and configuration improvements.
 
@@ -28,7 +28,7 @@ Unlike a general security score that gives you a number, Entra Recommendations g
 
 You'll find it in the Entra admin center under **Identity > Overview > Recommendations**, or directly within the Conditional Access blade under **Insights and Reporting**.
 
-## 📋 Categories of CA Optimization Recommendations
+## 📋 Categories of CA optimization recommendations
 
 **MFA coverage gaps** 🔐: Users who have no CA policy applying to them that requires MFA. The recommendation surfaces the specific count of affected users and breaks down why they're uncovered. Common root causes are dynamic group membership exclusions, service accounts in scope of user-facing policies, or new users provisioned after groups were last reviewed.
 
@@ -40,7 +40,7 @@ You'll find it in the Entra admin center under **Identity > Overview > Recommend
 
 **Session control gaps** 📱: Recommendations for applications handling sensitive data where session controls (app-enforced restrictions, sign-in frequency limits) would reduce exposure from persistent sessions on unmanaged devices.
 
-## ⚙️ How Recommendations Surface and Update
+## ⚙️ How recommendations surface and update
 
 The Entra Recommendations engine runs continuously in the background, re-evaluating tenant state against the recommendation criteria. Recommendations appear when the finding criteria are met and disappear when the issue is resolved or marked as dismissed.
 
@@ -54,7 +54,7 @@ Each recommendation includes:
 
 **Status tracking** 📈: Recommendations have status states: Active (unresolved), Completed (resolved), Dismissed (acknowledged but intentionally not resolved), Postponed (deferred with a future review date).
 
-## 🎯 Using Recommendations Effectively
+## 🎯 Using recommendations effectively
 
 The CA Optimization Agent surfaces findings but doesn't automatically remediate them. The remediation workflow requires administrative review and explicit action.
 
@@ -66,7 +66,7 @@ The CA Optimization Agent surfaces findings but doesn't automatically remediate 
 
 **Periodic review cadence** 📅: Recommendations change as your tenant changes. New user populations, new application deployments, and policy modifications can open new gaps or resolve existing findings. A monthly review of the Recommendations blade keeps the CA posture current rather than letting gaps accumulate unnoticed.
 
-## 🔗 Relationship to CA Insights and Reporting
+## 🔗 Relationship to CA insights and reporting
 
 The CA Optimization Agent surfaces gaps before they become incidents. The CA Insights and Reporting workbook (in the Conditional Access blade) shows what's actually happening: how many sign-ins each policy matched, how many were granted or blocked, and which users are being affected by which policies.
 
@@ -75,7 +75,7 @@ These two tools work together. Recommendations tell you what should change. Insi
 ---
 
 💬 **Have you had a CA Optimization recommendation surface a gap that your team hadn't noticed, and how did you verify whether the finding was a genuine risk or an expected configuration?** The most common pattern is MFA coverage gaps appearing after user provisioning changes add users to groups that weren't in the original CA policy scope. What's been your most unexpected CA recommendation finding?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

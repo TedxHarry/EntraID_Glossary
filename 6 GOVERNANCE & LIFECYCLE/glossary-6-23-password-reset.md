@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.23 - Password Reset**
+📚 Part of Entra ID Glossary Series #6.23 - Password Reset
 
 ---
 
@@ -20,7 +20,7 @@ At 600 resets per month, that was 80 hours of help desk time. Monthly. On passwo
 
 She enabled Self-Service Password Reset. One month later, 71% of resets were user-initiated, handle time dropped from 8 minutes to 0 for those cases, and the help desk recovered 56 hours per month for work that required actual judgment.
 
-## 🔄 What SSPR Is
+## 🔄 What SSPR is
 
 Self-Service Password Reset (SSPR) allows users to reset their own passwords or unlock their own accounts without contacting IT. When a user is locked out or forgets their password, they navigate to the SSPR page (`aka.ms/sspr`), verify their identity using pre-registered authentication methods, and set a new password.
 
@@ -32,7 +32,7 @@ SSPR in Entra ID supports:
 
 **Password change** 🔄: For signed-in users who want to change their known password to a new one. Requires the current password.
 
-## 🔐 SSPR Authentication Methods
+## 🔐 SSPR authentication methods
 
 To use SSPR, users must pre-register authentication methods that can verify their identity without the password. Entra ID supports:
 
@@ -47,7 +47,7 @@ Organizations configure which methods are allowed and how many a user must compl
 
 The most reliable combination: Microsoft Authenticator (primary) plus a backup phone number. Users who lose access to their phone need at least two methods registered so they're not completely locked out.
 
-## ⚙️ SSPR Registration
+## ⚙️ SSPR registration
 
 SSPR only works if users have pre-registered their authentication methods. The common failure mode: users need SSPR when they're locked out, but they never registered methods because they've never been locked out before.
 
@@ -55,7 +55,7 @@ SSPR only works if users have pre-registered their authentication methods. The c
 
 **Combined registration** (the current default): Users register for both MFA and SSPR simultaneously in the same workflow. Registering the Authenticator app for MFA automatically satisfies SSPR registration for that method. One registration, both purposes.
 
-## 🏢 SSPR in Hybrid Environments
+## 🏢 SSPR in hybrid environments
 
 For organizations with on-premises Active Directory synchronized to Entra ID, SSPR has an extra consideration: the password needs to change in both places.
 
@@ -63,7 +63,7 @@ For organizations with on-premises Active Directory synchronized to Entra ID, SS
 
 Password writeback requires Entra Connect (or Cloud Sync) with the writeback feature enabled and the right permissions configured in on-premises AD. Without writeback, Entra ID SSPR only resets the cloud password. On-premises authentication continues to use the old password.
 
-## ⚠️ What SSPR Doesn't Handle
+## ⚠️ What SSPR doesn't handle
 
 SSPR allows users to reset their own passwords. It doesn't handle:
 
@@ -73,7 +73,7 @@ SSPR allows users to reset their own passwords. It doesn't handle:
 
 For privileged accounts, admin-initiated password resets with identity verification (not SSPR) should be the policy.
 
-## 💡 The Admin Override Path
+## 💡 The admin override path
 
 When SSPR isn't available (no registered methods, admin account), administrators can reset user passwords from the Entra admin center or via PowerShell:
 
@@ -87,7 +87,7 @@ Forcing a password change on next sign-in ensures the temporary password is imme
 ---
 
 💬 **What percentage of your organization's help desk tickets are password resets?** The answer before SSPR is almost always higher than expected. After SSPR adoption, the residual cases are almost always users who never registered. What drove your organization to invest in SSPR adoption?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

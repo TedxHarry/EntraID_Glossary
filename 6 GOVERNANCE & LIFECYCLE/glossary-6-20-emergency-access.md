@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.20 - Emergency Access**
+📚 Part of Entra ID Glossary Series #6.20 - Emergency Access
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Emergency access accounts ('break glass') provide backup admin access when normal sign-in is impossible
 - They should be: cloud-only, permanent Global Admins, excluded from all CA policies, with MFA hardware FIDO2 key
-- Store credentials in a secure physical vault — these accounts should almost never be used
+- Store credentials in a secure physical vault : these accounts should almost never be used
 
 
 An organization's Global Administrator was traveling when a Conditional Access policy change locked out all admin accounts. The policy required compliant devices. The admin was working from a hotel laptop. Non-compliant. Blocked.
@@ -22,7 +22,7 @@ They called Microsoft support. The resolution took 6 hours.
 
 A properly configured emergency access account would have resolved this in minutes.
 
-## 🔑 What Emergency Access Accounts Are
+## 🔑 What emergency access accounts are
 
 Emergency access accounts (also called break-glass accounts) are highly privileged Entra ID accounts designed to be used only when normal administrative access is unavailable. They exist specifically to recover from scenarios where all regular admin accounts are locked out.
 
@@ -36,7 +36,7 @@ Common scenarios that make emergency access necessary:
 
 Emergency access accounts are the last resort that prevents the organization from being completely locked out of its own tenant.
 
-## 🔒 How to Configure Emergency Access Accounts
+## 🔒 How to configure emergency access accounts
 
 Microsoft's recommended configuration:
 
@@ -54,7 +54,7 @@ Microsoft's recommended configuration:
 
 **Strong, randomly generated passwords**: Stored in secure physical locations (a sealed envelope in a safe, a physical vault), not in a password manager that an admin might be locked out of.
 
-## 📊 Monitoring and Alerting
+## 📊 Monitoring and alerting
 
 Emergency access accounts should never be used in normal operations. Any sign-in event from these accounts should trigger an immediate high-priority alert to the security team.
 
@@ -68,7 +68,7 @@ SigninLogs
 
 An alert on any successful or failed sign-in to these accounts: successful means someone is using it (investigate why), failed means someone is attempting to use it (investigate who).
 
-## ⚠️ The Access Review for Emergency Accounts
+## ⚠️ The access review for emergency accounts
 
 Emergency access accounts are typically excluded from Conditional Access, not subject to MFA challenges, and have permanent Global Admin. This makes them the most sensitive accounts in the tenant.
 
@@ -79,7 +79,7 @@ Quarterly access reviews for these accounts should verify:
 - No sign-in activity has occurred since last review
 - The password is still secured in the physical location
 
-## 💡 Test Them Before You Need Them
+## 💡 Test them before you need them
 
 Many organizations set up emergency access accounts and never test them. When a real emergency occurs, they discover the password is wrong, the FIDO2 key is missing, or the account was accidentally included in a Conditional Access policy after all.
 
@@ -88,7 +88,7 @@ Test emergency access accounts quarterly: sign in with each account, verify the 
 ---
 
 💬 **Does your organization have tested, documented emergency access accounts?** The organizations that don't find out the hard way, usually at the worst possible time. What was the scenario that convinced your organization to take break-glass accounts seriously?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

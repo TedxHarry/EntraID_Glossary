@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#10.2 - Managed Identity**
+📚 Part of Entra ID Glossary Series #10.2 - Managed Identity
 
 ---
 
 ## 🎯 TL;DR
 
-- Managed identities are Azure-managed credentials for Azure resources — no secrets to store or rotate
+- Managed identities are Azure-managed credentials for Azure resources : no secrets to store or rotate
 - System-assigned: tied to one resource's lifecycle. User-assigned: shared across multiple resources
-- Use managed identities for any Azure service that needs to call other Azure APIs — it's the secure default
+- Use managed identities for any Azure service that needs to call other Azure APIs : it's the secure default
 
 
 The connection string in the app config file had the Key Vault secret embedded in plain text. Not encrypted. Not in a secrets manager. Just sitting there, checked into the repository, visible to anyone with read access to the codebase.
@@ -20,7 +20,7 @@ The developer who put it there wasn't careless. They were solving a real problem
 
 This is the credential bootstrapping problem. You need credentials to get credentials. Managed identity is how Azure breaks that loop.
 
-## 🔑 What Managed Identity Is
+## 🔑 What managed identity is
 
 A managed identity is an identity in Entra ID that Azure creates and manages for an Azure resource. Instead of a developer creating credentials and storing them somewhere, Azure creates a service principal in Entra ID, handles the underlying credential entirely, and makes a token available to code running on that resource through a local endpoint.
 
@@ -28,7 +28,7 @@ The application code doesn't handle a secret or certificate. It calls a local Az
 
 The application developer's job becomes: enable managed identity on the resource, grant the managed identity the RBAC permissions it needs, and write the code to request a token from the local endpoint. No credential to store. No rotation schedule to maintain. No secret to leak.
 
-## ⚙️ How Managed Identity Works
+## ⚙️ How managed identity works
 
 The mechanism is the Instance Metadata Service (IMDS), an Azure endpoint at `169.254.169.254` that's only reachable from within Azure resources. It's not accessible from the internet or from on-premises networks. Only code running on the Azure resource itself can reach it.
 
@@ -36,7 +36,7 @@ When code requests a token, it calls the IMDS endpoint specifying which resource
 
 The SDKs handle this transparently. `DefaultAzureCredential` in the Azure SDK for Python, .NET, Java, and JavaScript will automatically attempt managed identity token acquisition when running in an Azure environment. The developer doesn't call IMDS directly; the SDK does.
 
-## 🔐 What Managed Identity Can Authenticate To
+## 🔐 What managed identity can authenticate to
 
 Managed identity works with any Azure service that supports Entra ID authentication and RBAC:
 
@@ -50,7 +50,7 @@ Managed identity works with any Azure service that supports Entra ID authenticat
 
 **Any Azure service supporting Entra auth** ✅: The pattern applies broadly across Azure services. If the service supports Entra ID authentication, a managed identity can authenticate to it.
 
-## ⚠️ What Managed Identity Doesn't Solve
+## ⚠️ What managed identity doesn't solve
 
 Managed identity is powerful within Azure but has scope limitations:
 
@@ -60,7 +60,7 @@ Managed identity is powerful within Azure but has scope limitations:
 
 **Service-to-service without Azure hosting** 🔄: If a service running outside Azure needs to call an Azure service, managed identity isn't an option. Workload federation or service principal with certificate authentication is the appropriate pattern.
 
-## 🏗️ System-Assigned vs User-Assigned
+## 🏗️ System-Assigned vs user-assigned
 
 Managed identities come in two variants with different lifecycle characteristics. System-assigned identities are tied to a single resource and deleted when that resource is deleted. User-assigned identities are standalone resources that can be assigned to multiple Azure resources and persist independently.
 
@@ -69,10 +69,10 @@ The choice between them comes down to whether the identity needs to be shared ac
 ---
 
 💬 **Has your team moved from service principal secrets to managed identity for Azure workloads, or are connection strings and secrets still the primary authentication pattern?** The transition is usually incremental: one application at a time, starting with the highest-risk stored credentials. What was the first managed identity migration that made the pattern click for your team?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-### 🔧 Quick Reference: Managed Identity Token
+### 🔧 Quick reference: managed identity token
 
 ```bash
 # Get a token from IMDS (run inside an Azure VM or App Service)

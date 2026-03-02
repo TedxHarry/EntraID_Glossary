@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.22 - Legacy Authentication**
+📚 Part of Entra ID Glossary Series #7.22 - Legacy Authentication
 
 ---
 
@@ -20,7 +20,7 @@ A penetration tester's report was a surprise. One finding read: "Successfully au
 
 The organization had MFA. Their email server still accepted IMAP connections. IMAP is a legacy protocol. It doesn't support MFA. The attacker bypassed six months of MFA deployment in two minutes by connecting to a protocol that predates MFA by three decades.
 
-## 🔌 What Legacy Authentication Is
+## 🔌 What legacy authentication is
 
 Legacy authentication refers to authentication protocols that don't support modern authentication mechanisms like MFA or OAuth 2.0. These protocols were designed in an era when username and password was the only authentication model. They authenticate by transmitting credentials directly, with no mechanism to challenge for a second factor.
 
@@ -40,7 +40,7 @@ The main legacy protocols in Microsoft 365 environments:
 
 **MAPI over HTTP (older versions)** 🖥️: Used by older Outlook clients.
 
-## 🚨 Why Legacy Auth Is a Security Problem
+## 🚨 Why legacy auth is a security problem
 
 The problem is simple: these protocols only accept a username and password. There's no mechanism to prompt for a second factor. When an attacker has a valid username and password, legacy auth protocols give them access regardless of MFA policies.
 
@@ -53,7 +53,7 @@ This makes legacy authentication the primary attack vector for credential stuffi
 
 Microsoft's telemetry consistently shows that over 90% of password spray attacks use legacy authentication protocols. This isn't because attackers prefer legacy protocols for aesthetic reasons. It's because legacy protocols work even when MFA is deployed.
 
-## 🔒 Blocking Legacy Authentication with Conditional Access
+## 🔒 Blocking legacy authentication with conditional access
 
 The fix is a Conditional Access policy that blocks legacy authentication protocols:
 
@@ -65,7 +65,7 @@ The fix is a Conditional Access policy that blocks legacy authentication protoco
 
 This policy blocks any sign-in attempt that uses a legacy auth protocol. The sign-in fails at the authentication level. The attacker's credential stuffing tool gets a block response instead of a successful authentication.
 
-## ⚙️ What Breaks When You Block Legacy Auth
+## ⚙️ What breaks when you block legacy auth
 
 This is the hard part. Legacy authentication is used by legitimate things too:
 
@@ -79,7 +79,7 @@ This is the hard part. Legacy authentication is used by legitimate things too:
 
 The Report-Only mode workflow is essential before blocking legacy auth. Two to four weeks in report-only reveals exactly what would break.
 
-## 🔧 Handling Legitimate Legacy Auth Usage
+## 🔧 Handling legitimate legacy auth usage
 
 For legitimate services that genuinely need legacy auth:
 
@@ -94,10 +94,10 @@ For cases where the work to migrate can't happen immediately, create a specific 
 ---
 
 💬 **What was the legacy auth offender that surprised you most when you started blocking it?** The printer scenario is almost universal. But the business-critical ERP system that nobody knew was using IMAP to send monthly reports is the one that causes the most painful conversation. What did your legacy auth block surface in your environment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
-### 🔧 Quick Reference: Block Legacy Auth
+### 🔧 Quick reference: block legacy auth
 
 ```powershell
 # Create a CA policy to block legacy authentication

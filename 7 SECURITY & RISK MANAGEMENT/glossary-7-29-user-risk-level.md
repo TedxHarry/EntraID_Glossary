@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.29 - User Risk Level**
+📚 Part of Entra ID Glossary Series #7.29 - User Risk Level
 
 ---
 
@@ -20,7 +20,7 @@ The answer wasn't "all the High ones." Two of the High risk users were on a pene
 
 User Risk Level is an input to decision-making, not the decision itself. Understanding what drives each level and what it means changes how you respond.
 
-## 📊 What User Risk Level Is
+## 📊 What user risk level is
 
 User Risk Level is a classification assigned by Entra ID ID Protection to a user account, representing the system's confidence that the account itself is compromised. It's separate from sign-in risk, which evaluates individual authentication events.
 
@@ -34,7 +34,7 @@ The three levels:
 
 **High** 🔴: Strong indicators of account compromise. High confidence. Examples: credentials found in a confirmed breach database matching current account credentials, anomalous user activity indicating data exfiltration, token issuer anomalies suggesting active attack.
 
-## 🔢 How the Level Is Calculated
+## 🔢 How the level is calculated
 
 User Risk Level is not a single score that crosses thresholds. It's the system's aggregate confidence assessment based on:
 
@@ -48,7 +48,7 @@ User Risk Level is not a single score that crosses thresholds. It's the system's
 
 Entra ID doesn't publish the exact scoring formula. The level reflects the system's assessment, not a precise calculation that can be independently verified.
 
-## 🔒 Risk Level in Conditional Access
+## 🔒 Risk level in conditional access
 
 User Risk Level feeds directly into Conditional Access conditions:
 
@@ -60,7 +60,7 @@ User Risk Level feeds directly into Conditional Access conditions:
 
 The Conditional Access response should be calibrated to the level. Requiring password reset for Low risk creates excessive friction for a large number of false positives. Requiring only MFA for High risk (when credentials are confirmed leaked) is insufficient because the attacker may have MFA access through SIM swapping or phishing.
 
-## 🔍 Investigating Risk Levels
+## 🔍 Investigating risk levels
 
 The risk level tells you there's a signal. Investigation tells you whether it's real.
 
@@ -77,7 +77,7 @@ For each risky user, the Identity Protection portal shows:
 
 **For false positives**: Dismiss the risk event as "safe." This teaches the system this pattern is normal for this user and reduces future false positives for similar behavior.
 
-## ⚠️ Risk Level Persistence
+## ⚠️ Risk level persistence
 
 Unlike sign-in risk (which resets after a session), user risk persists until:
 
@@ -90,7 +90,7 @@ An account at High risk that no one has investigated or remediated stays at High
 ---
 
 💬 **What's your current process for triaging risky users in Identity Protection?** The gap between "we have Identity Protection deployed" and "we have a process for responding to risk events" is significant in many organizations. How often do you review the risky users list, and what's your SLA for investigating High risk accounts?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

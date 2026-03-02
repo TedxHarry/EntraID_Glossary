@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#5.14 - Non-Compliant Device**
+📚 Part of Entra ID Glossary Series #5.14 - Non-Compliant Device
 
 ---
 
@@ -20,7 +20,7 @@ The weekend's automatic Windows Update had triggered a reboot that suspended Bit
 
 Non-compliant device incidents are some of the most time-sensitive support situations in Entra ID environments, because they affect users immediately, often en masse, and the fix usually requires both IT action and user action.
 
-## ❌ What Non-Compliant Means
+## ❌ What non-compliant means
 
 A non-compliant device is one that has failed at least one check in its assigned Intune compliance policy. The check-in happened, Intune evaluated the device, something didn't pass, and the device is marked non-compliant.
 
@@ -34,7 +34,7 @@ Non-compliant devices in a Conditional Access environment face consequences depe
 
 **No consequence**: If Conditional Access doesn't include a compliant device requirement for that specific app, non-compliance has no access impact. The user continues normally. This is a monitoring state only.
 
-## 🔄 The Non-Compliant State Lifecycle
+## 🔄 The non-compliant state lifecycle
 
 Non-compliance follows a predictable path once detected:
 
@@ -50,7 +50,7 @@ Non-compliance follows a predictable path once detected:
 
 **Access restored**: Conditional Access reads the new compliant state. Access is granted again at the next authentication attempt.
 
-## 🔧 Common Non-Compliance Causes
+## 🔧 Common non-compliance causes
 
 The reasons devices fall out of compliance follow patterns:
 
@@ -64,7 +64,7 @@ The reasons devices fall out of compliance follow patterns:
 
 🔴 **PIN/password removed**: A user removes their device PIN for convenience. The device fails the password requirement.
 
-## 💡 Reducing Help Desk Impact
+## 💡 Reducing help desk impact
 
 Three things that reduce the support burden from non-compliance incidents:
 
@@ -79,7 +79,7 @@ The BitLocker-and-Windows-Update incident from the opening was resolved by tempo
 ---
 
 💬 **Has your organization had a mass compliance incident where a routine update or change caused widespread access blocks?** The scenario where something routine breaks compliance at scale is a good forcing function for reviewing grace period settings and remediation guidance. How did your team respond?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

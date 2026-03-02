@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#1.3 - Tenant**
+📚 Part of Entra ID Glossary Series #1.3 - Tenant
 
 ---
 
@@ -11,7 +11,7 @@
 
 - A tenant is your organization's dedicated, isolated instance of Entra ID with its own users, apps, and policies
 - Tenants are identified by a unique domain (contoso.onmicrosoft.com) and a GUID (Tenant ID)
-- Everything in Entra ID — users, groups, apps, policies — lives inside a tenant
+- Everything in Entra ID : users, groups, apps, policies : lives inside a tenant
 
 
 The first time I had to explain tenants to a room full of IT pros, I used the wrong analogy. I said a tenant was "like a database." The blank stares told me I'd made a mistake. Then someone at the back said, "Is it like a virtual machine?" Closer, but no.
@@ -22,7 +22,7 @@ Microsoft owns the building (the cloud infrastructure). Your organization rents 
 
 Crucially, you can't see into the other floors. A tenant in Entra ID is logically isolated from every other tenant in the world. Your users, your apps, your policies, none of it is visible or accessible to anyone outside your tenant unless you explicitly allow it.
 
-## 🎯 What Lives Inside Your Tenant
+## 🎯 What lives inside your tenant
 
 When you sign up for Microsoft 365 or Azure, Microsoft creates a tenant for you automatically. From that moment, it's your organization's dedicated space in Entra ID, and here's what it holds:
 
@@ -38,7 +38,7 @@ When you sign up for Microsoft 365 or Azure, Microsoft creates a tenant for you 
 
 All of this is scoped to your tenant and only your tenant.
 
-## 💡 Why Boundaries Matter
+## 💡 Why boundaries matter
 
 The isolation isn't just convenient, it's the security model.
 
@@ -46,7 +46,7 @@ I once worked with an organization that had accidentally created two tenants. On
 
 Tenant boundaries mean that an admin in one tenant can't affect another tenant's users or policies. A Conditional Access policy you write applies to your tenant and only your tenant. A guest user from another organization brings their identity from their tenant, they authenticate there, and your tenant trusts the result.
 
-## 📌 One Tenant or Multiple?
+## 📌 One tenant or multiple?
 
 Most organizations start with one tenant and stay there. It's simpler to manage, and Entra ID has features like Administrative Units to create management boundaries within a single tenant without splitting into multiple.
 
@@ -58,7 +58,7 @@ But sometimes multiple tenants make sense:
 
 Multiple tenants add complexity. Cross-tenant access settings, B2B collaboration, separate licensing costs. I've seen organizations create extra tenants for what felt like good reasons at the time and then spend years wishing they hadn't. Think carefully before you split.
 
-## 📌 The Beginner Misconception I See Most
+## 📌 The beginner misconception i see most
 
 New practitioners often confuse a tenant with a subscription or a specific Microsoft product. "We're on Microsoft 365, so is our tenant just for Microsoft 365?" No. Your Entra ID tenant is the identity backbone for everything, Microsoft 365, Azure, Intune, third-party SaaS apps, custom-built applications. All of them authenticate through the same tenant.
 
@@ -67,7 +67,7 @@ The tenant is the foundation. Everything else sits on top of it. 🏢
 ---
 
 💬 **Question for you:** Does your organization run one tenant or multiple? And if you're running multiple, was that a deliberate architectural decision, or something that evolved over time without a plan? I've seen both and the stories are always interesting.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

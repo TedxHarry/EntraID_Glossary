@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.9 - B2B Collaboration**
+📚 Part of Entra ID Glossary Series #9.9 - B2B Collaboration
 
 ---
 
 ## 🎯 TL;DR
 
 - B2B Collaboration lets you invite guest users from other organizations to access your tenant's resources
-- Guest accounts use the invited user's home organization credentials — you don't manage their passwords
+- Guest accounts use the invited user's home organization credentials : you don't manage their passwords
 - Control guest access with Entra ID B2B settings, Cross-Tenant Access policies, and Conditional Access
 
 
@@ -20,7 +20,7 @@ The old approach: create internal accounts for each external person who needed a
 
 B2B Collaboration changed the model. External collaborators sign in with their own organization's identity. The consulting firm grants access to specific resources. When the project ends, access is revoked. The external collaborators never needed a separate account in the firm's tenant.
 
-## 🤝 What B2B Collaboration Is
+## 🤝 What B2B collaboration is
 
 Microsoft Entra B2B (Business-to-Business) Collaboration allows organizations to grant external users access to their resources by inviting them as guests, where those guests sign in using their own existing identity from their home organization or consumer identity.
 
@@ -28,7 +28,7 @@ The key distinction: the external user doesn't get a new account in your tenant.
 
 This is fundamentally different from creating internal accounts for external people. With B2B, identity remains where it belongs (with the user's home organization), while access to specific resources is governed by the hosting organization.
 
-## 👤 Guest User Objects in Entra ID
+## 👤 Guest user objects in Entra ID
 
 When an external user is invited via B2B, a guest user object is created in the hosting organization's Entra ID directory. This guest object:
 
@@ -39,7 +39,7 @@ When an external user is invited via B2B, a guest user object is created in the 
 
 The guest object is the anchor that allows the hosting organization to assign permissions, group memberships, and access packages to the external user. It's a reference to an external identity, not a full identity record.
 
-## 🔐 How Guest Authentication Works
+## 🔐 How guest authentication works
 
 When a guest user signs in to access a resource in the hosting tenant:
 
@@ -52,7 +52,7 @@ When a guest user signs in to access a resource in the hosting tenant:
 
 If the external user doesn't have an organizational Microsoft account, they can authenticate with a Microsoft consumer account (Outlook.com), a Google account, or a one-time passcode sent to their email.
 
-## 🔒 Access Control for Guest Users
+## 🔒 Access control for guest users
 
 Guest users in Entra ID have reduced default permissions compared to member users. By default, guests:
 
@@ -67,7 +67,7 @@ Access to specific resources is granted explicitly: SharePoint site member, Team
 
 **Cross-tenant access settings** ⚙️: Configurable settings control what level of trust to place in the guest's home MFA. If the guest's home organization uses compliant managed devices and Entra ID, you can trust their MFA completion. If their home setup is unknown, requiring additional MFA for your resources is appropriate.
 
-## 📧 Invitation and Redemption
+## 📧 Invitation and redemption
 
 **Sending invitations** ✉️: Admins or (if allowed) users can send B2B invitations to external email addresses. The invitation email contains a redemption link.
 
@@ -75,7 +75,7 @@ Access to specific resources is granted explicitly: SharePoint site member, Team
 
 **Direct federation** 🤝: For partner organizations with their own Entra ID tenants, cross-tenant access settings can be configured to allow more seamless collaboration: the guest authenticates against their home Entra ID without a redemption email flow.
 
-## ⚠️ Guest Access Governance
+## ⚠️ Guest access governance
 
 The guest lifecycle requires active management:
 
@@ -87,7 +87,7 @@ The guest lifecycle requires active management:
 ---
 
 💬 **What's your organization's process for managing the lifecycle of guest users in your tenant?** The "guests who stayed long after the project ended" problem is universal. How do you handle the review and cleanup of stale guest access, and what prompted you to formalize the process?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

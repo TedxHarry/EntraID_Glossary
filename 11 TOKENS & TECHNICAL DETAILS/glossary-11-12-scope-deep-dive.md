@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#11.12 - Scope (Deep Dive)**
+📚 Part of Entra ID Glossary Series #11.12 - Scope (Deep Dive)
 
 ---
 
@@ -20,13 +20,13 @@ They couldn't. One scope for everything meant no granularity. Every application 
 
 Scope design is an architectural decision. Getting it right at the start avoids expensive retrofits.
 
-## 📋 What Scopes Are in Entra ID
+## 📋 What scopes are in Entra ID
 
 Scopes are named permission strings defined in an API's app registration. They represent specific capabilities the API exposes that client applications can request and users or admins can consent to.
 
 When a client application requests a scope (like `api://my-api/data.read`), Entra ID asks the user to consent to that specific permission being granted to that application. If consent is granted, the resulting access token contains the `scp` claim listing the consented scopes. The API checks this claim to determine what the caller is allowed to do.
 
-## 🔧 Defining Scopes in the App Registration
+## 🔧 Defining scopes in the app registration
 
 Scopes for a custom API are defined in the app registration under "Expose an API." Each scope has:
 
@@ -40,7 +40,7 @@ Scopes for a custom API are defined in the app registration under "Expose an API
 
 **Who can consent** 🔑: Admins only, or admins and users. Scopes with access to sensitive data should be admin-only. Scopes for basic user data can be user-consentable.
 
-## 📊 Delegated vs Application Permissions
+## 📊 Delegated vs application permissions
 
 There are two permission types for API access, and they appear differently in tokens:
 
@@ -50,7 +50,7 @@ There are two permission types for API access, and they appear differently in to
 
 An API that needs to support both human users and automated services needs both permission types defined.
 
-## 🔑 Validating Scopes in the API
+## 🔑 Validating scopes in the API
 
 Defining scopes is half the work. The API must actually validate them:
 
@@ -69,7 +69,7 @@ if (!User.IsInRole("Data.Read.All"))
 
 An API that validates the audience and signature but doesn't check scopes or roles accepts any token issued for it, regardless of which permissions were consented. The token validation proves the caller authenticated; the scope validation proves the caller has the specific permission needed for this operation.
 
-## 🌐 The `.default` Scope
+## 🌐 The `.default` scope
 
 When clients request the `.default` scope (e.g., `api://my-api/.default` or `https://graph.microsoft.com/.default`), Entra ID issues a token with all permissions that have been consented for the application for that API.
 
@@ -77,7 +77,7 @@ For client credentials flows, `.default` is required. The client credentials gra
 
 For authorization code flows, requesting `.default` is convenient (gets all consented permissions at once) but less precise than requesting only the specific scopes needed for the current operation. Requesting minimal scopes is better practice for user consent transparency.
 
-## ⚙️ Incremental Consent
+## ⚙️ Incremental consent
 
 OAuth 2.0 with Entra ID supports incremental consent: requesting only the scopes needed for the current operation, and requesting additional scopes later when those capabilities are needed.
 
@@ -88,7 +88,7 @@ Incremental consent improves user experience (users consent to manageable, conte
 ---
 
 💬 **How granular is the scope design in your organization's internal APIs?** The gap between "one scope to rule them all" and "precise, minimal scopes for each operation" varies widely across teams. What drove the scope design decisions in the APIs your team owns, and what would you design differently now?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

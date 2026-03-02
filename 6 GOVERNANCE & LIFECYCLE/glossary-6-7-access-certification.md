@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.7 - Access Certification**
+📚 Part of Entra ID Glossary Series #6.7 - Access Certification
 
 ---
 
 ## 🎯 TL;DR
 
 - Access certification is the formal process of having stakeholders confirm that user access is still needed
-- Failed certifications trigger automatic removal — 'recertify or lose access'
+- Failed certifications trigger automatic removal : 'recertify or lose access'
 - Required for compliance frameworks (SOX, ISO 27001) that mandate periodic access reviews
 
 
@@ -20,7 +20,7 @@ There was silence.
 
 The evidence existed, but not in a form the auditor could evaluate. Access certification is what changes that: a formal process with documented evidence that specific people certified specific access decisions at a specific time.
 
-## 📋 What Makes Certification Different from Review
+## 📋 What makes certification different from review
 
 Access review and access certification are closely related and often used interchangeably. The distinction is primarily about formality and evidence:
 
@@ -30,7 +30,7 @@ Access review and access certification are closely related and often used interc
 
 In Microsoft Entra ID Governance, access reviews produce both: they change permissions (the operational outcome) and they create an audit trail (the compliance evidence).
 
-## 🔒 Who Certifies What
+## 🔒 Who certifies what
 
 Access certification campaigns define the certifier based on the type of access being certified:
 
@@ -42,7 +42,7 @@ Access certification campaigns define the certifier based on the type of access 
 
 **User self-certification** ✋: For some access types, users certify that they still need and use the access they have. Less rigorous, but useful for less sensitive resources where scale makes manager certification impractical.
 
-## 📊 The Evidence Access Certification Produces
+## 📊 The evidence access certification produces
 
 A completed access certification in Entra ID creates an auditable record containing:
 
@@ -56,7 +56,7 @@ A completed access certification in Entra ID creates an auditable record contain
 
 This record can be exported, stored for compliance retention periods, and provided to auditors as evidence of the certification activity. It answers the questions the auditor in the opening story was asking.
 
-## 🔄 Certification Frequency by Access Type
+## 🔄 Certification frequency by access type
 
 Different access types warrant different certification frequencies:
 
@@ -71,20 +71,20 @@ Different access types warrant different certification frequencies:
 
 Higher privilege, higher frequency. The rationale: more sensitive access has a higher cost if it's inappropriately held, so it warrants more frequent verification.
 
-## ⚠️ The Documentation Gap
+## ⚠️ The documentation gap
 
 Many organizations conduct access reviews but don't retain the certification evidence in a way that satisfies auditors. Reviewing access in a spreadsheet and deleting the spreadsheet afterward means the review happened but cannot be proven.
 
 Entra ID access reviews automatically retain the certification history in the portal and via the Microsoft Graph API. Audit logs capture each certification decision. This is the structured evidence trail that satisfies SOX, ISO 27001, SOC 2, and similar frameworks' evidence requirements.
 
-## 💡 Linking Certification to Access Packages
+## 💡 Linking certification to access packages
 
 Entitlement Management access packages (covered in Glossary#6.9) can have access reviews configured as part of the package policy. Anyone who has been granted access via the package is automatically included in the periodic certification campaign. This connects the request-and-approve workflow to the ongoing certification lifecycle, creating a complete access governance loop.
 
 ---
 
 💬 **Has your organization had an audit finding related to access certification evidence?** The gap between "we reviewed access" and "we can prove we reviewed access in the way the auditor requires" is where many compliance programs fail. What triggered the change in how your organization handles certification documentation?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

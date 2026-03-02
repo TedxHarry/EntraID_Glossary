@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.13 - Grant Control**
+📚 Part of Entra ID Glossary Series #7.13 - Grant Control
 
 ---
 
@@ -11,14 +11,14 @@
 
 - Grant controls are the actions enforced when a CA policy matches: Block, Require MFA, Require compliant device
 - Multiple grant controls can combine with AND (all required) or OR (any one sufficient)
-- Require compliant device is stronger than Require MFA — it's harder for attackers to satisfy
+- Require compliant device is stronger than Require MFA : it's harder for attackers to satisfy
 
 
 A security architect described their Conditional Access design philosophy in one sentence: "The assignment tells us who. The condition tells us when. The grant control tells us what we're going to do about it."
 
 That's the right mental model. You can have the most sophisticated assignment targeting and the most nuanced condition logic in your tenant, and none of it matters if the grant control is misconfigured. The grant control is the actual access decision. Everything else is setup.
 
-## 🔑 What Grant Controls Do
+## 🔑 What grant controls do
 
 When a Conditional Access policy fires (assignment matches, conditions evaluate), the grant control determines one of two outcomes:
 
@@ -28,7 +28,7 @@ When a Conditional Access policy fires (assignment matches, conditions evaluate)
 
 If the grant is conditional, the user is presented with a requirement. Satisfy it and access is granted. Fail to satisfy it and access is denied.
 
-## 🛡️ The Grant Access Requirements
+## 🛡️ The grant access requirements
 
 When granting access with requirements, these are the options Entra ID supports:
 
@@ -48,7 +48,7 @@ When granting access with requirements, these are the options Entra ID supports:
 
 **Require compliant network** 🌐: Access must come through a network that's been verified as compliant (using Global Secure Access network verification). A newer control for organizations using Microsoft's Security Service Edge.
 
-## 🔗 Combining Requirements
+## 🔗 Combining requirements
 
 When multiple requirements are specified, the combination mode determines the logic:
 
@@ -58,7 +58,7 @@ When multiple requirements are specified, the combination mode determines the lo
 
 The AND vs OR choice significantly affects user experience and security. AND is more secure and more disruptive. OR provides a step-up path.
 
-## 🎯 Matching Grant Controls to Scenarios
+## 🎯 Matching grant controls to scenarios
 
 **High-sensitivity resources** 🔴: Require MFA + Require compliant device (AND). Both requirements must be met. Forces both identity verification and device health validation.
 
@@ -72,7 +72,7 @@ The AND vs OR choice significantly affects user experience and security. AND is 
 
 **Unknown/unmanaged devices** 🚫: Device filter for non-compliant + Block access (for sensitive apps). Or apply session controls (read-only, no downloads) for lower-sensitivity apps.
 
-## ⚠️ The Grant vs Session Control Distinction
+## ⚠️ The grant vs session control distinction
 
 Grant controls determine whether access is granted. Session controls apply after access is granted to constrain what happens within the session.
 
@@ -83,7 +83,7 @@ Using grant controls when session controls are the right tool (and vice versa) i
 ---
 
 💬 **What combination of grant controls do you use for your most sensitive resources?** The "require MFA AND require compliant device" combination is a significant maturity step. Organizations that have it in place for admin portals and high-value data often note that the device compliance requirement was harder to implement than the MFA requirement. What was your experience?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

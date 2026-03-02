@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.9 - Entitlement Management**
+📚 Part of Entra ID Glossary Series #6.9 - Entitlement Management
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Entitlement Management bundles resources into Access Packages with policies for who can request and for how long
 - Access packages support multi-stage approval, automatic expiry, and access reviews on a schedule
-- Requires Entra ID P2 — designed to replace manual IT-driven access request processes
+- Requires Entra ID P2 : designed to replace manual IT-driven access request processes
 
 
 A project manager needed access to three things for a new initiative: a SharePoint site, a Teams channel, and a Jira project. She opened three separate tickets. IT processed them over three separate days. She could start the project on day four.
@@ -20,7 +20,7 @@ The project should have started on day one. The bottleneck wasn't a security dec
 
 Entitlement Management is Microsoft Entra ID Governance's answer to this problem: users request the access they need, appropriate approvers decide, and IT processes nothing until it requires IT judgment.
 
-## 📦 What Entitlement Management Is
+## 📦 What entitlement management is
 
 Entitlement Management is a self-service access request and lifecycle system. It allows organizations to:
 
@@ -37,7 +37,7 @@ The core objects are the **catalog** and the **access package**:
 
 **Access package** 📋: A bundle of resources from a catalog, combined with a policy defining who can request it, who approves, and how long it lasts.
 
-## 🔄 The Request Flow
+## 🔄 The request flow
 
 A user who needs access navigates to `myaccess.microsoft.com`. They see access packages available to them based on their user attributes (department, job title, employment type). They select the package they need, provide a business justification, and submit the request.
 
@@ -45,7 +45,7 @@ The request triggers an approval workflow. The approver (manager, resource owner
 
 If approved, access is granted automatically. All the group memberships and app role assignments in the package are added to the user's account. If the package has an expiration policy (access granted for 90 days, for example), Entra ID automatically removes the access at expiration and notifies the user.
 
-## 📋 Access Package Policies
+## 📋 Access package policies
 
 What makes access packages powerful is the policy configuration. A single access package can have multiple policies targeting different populations:
 
@@ -63,7 +63,7 @@ What makes access packages powerful is the policy configuration. A single access
 
 Same resources, different rules for different requestors. IT defines the policies once. The system enforces them consistently.
 
-## ⚡ What Changes for IT
+## ⚡ What changes for IT
 
 The shift in workload is significant. Before Entitlement Management, every access request routes through IT as the processor: create the ticket, add the group memberships, close the ticket. IT is a mandatory step in every access decision, even ones that have nothing to do with IT judgment.
 
@@ -71,7 +71,7 @@ With Entitlement Management, IT defines the packages and policies. Then IT gets 
 
 IT becomes an access governance team rather than an access processing queue.
 
-## 💡 Starting with Entitlement Management
+## 💡 Starting with entitlement management
 
 The most practical starting point is identifying three or four common access request scenarios that generate high ticket volume and package them:
 
@@ -84,7 +84,7 @@ Package the common requests. Leave the edge cases as IT tickets for now. The red
 ---
 
 💬 **What's the most common access request your IT team processes manually that could be packaged into an entitlement management access package?** The first package you create doesn't have to be complex. Even packaging one common three-group request eliminates a significant volume of tickets over a year. What would yours be?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Entitlement Management requires **Entra ID P2** or **Entra ID Governance**. Access packages, approval workflows, and auto-expiry are all P2 features.

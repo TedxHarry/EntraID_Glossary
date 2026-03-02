@@ -3,22 +3,22 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.8 - SCIM**
+📚 Part of Entra ID Glossary Series #9.8 - SCIM
 
 ---
 
 ## 🎯 TL;DR
 
-- SCIM is the standard protocol for automated user provisioning to SaaS apps — create, update, deactivate accounts
+- SCIM is the standard protocol for automated user provisioning to SaaS apps : create, update, deactivate accounts
 - Entra ID supports SCIM 2.0 for both inbound (HR to Entra) and outbound (Entra to app) provisioning
-- SCIM eliminates manual account creation in every app — a new hire is provisioned automatically everywhere
+- SCIM eliminates manual account creation in every app : a new hire is provisioned automatically everywhere
 
 
 An HR manager described their offboarding process. When an employee left, IT received an email. IT would then manually disable accounts in Active Directory, Salesforce, ServiceNow, GitHub, Jira, Confluence, Slack, and seven other applications. Each application had a different admin interface. Each one took 3-5 minutes. The whole process took 45 minutes per offboarding.
 
 With SCIM provisioning connected between Entra ID and each of those applications, offboarding an employee took under 2 minutes. Disable the account in Entra ID. SCIM propagated the disable to every SCIM-compatible application automatically. The 45-minute manual process became 90 seconds.
 
-## 🔄 What SCIM Is
+## 🔄 What SCIM is
 
 SCIM (System for Cross-Domain Identity Management) is an open standard API protocol that defines how identity systems communicate user and group data between each other. It provides a standardized way for an identity provider like Entra ID to automatically create, update, disable, and delete user accounts in connected applications.
 
@@ -26,7 +26,7 @@ Without SCIM, provisioning is manual: an admin creates the user in each applicat
 
 With SCIM, Entra ID is the provisioning orchestrator. When a user account is created, updated, or disabled in Entra ID, SCIM automatically propagates those changes to every application that has a SCIM connection configured.
 
-## 🏗️ How SCIM Works
+## 🏗️ How SCIM works
 
 SCIM defines a REST API with standardized endpoints. Entra ID (the SCIM client) sends HTTP requests to the application's SCIM API (the SCIM server):
 
@@ -38,7 +38,7 @@ SCIM defines a REST API with standardized endpoints. Entra ID (the SCIM client) 
 
 **Sync cycles** ⏱️: Entra ID periodically runs provisioning cycles, sending changes since the last sync to the application. The initial sync creates all in-scope users. Delta syncs apply incremental changes.
 
-## 📋 Attribute Mapping
+## 📋 Attribute mapping
 
 SCIM defines a standard schema for user attributes (userName, name, emails, phoneNumbers, etc.), but each application may use different attribute names or need different values.
 
@@ -52,7 +52,7 @@ Some attributes require transformation: combining first and last name into a dis
 
 The default attribute mappings for gallery applications are pre-configured as a starting point. Most integrations require review and adjustment to match the application's actual requirements.
 
-## 🔍 Scoping: Who Gets Provisioned
+## 🔍 Scoping: who gets provisioned
 
 Not every user in Entra ID should be provisioned to every application. Scoping filters define who is in scope:
 
@@ -62,13 +62,13 @@ Not every user in Entra ID should be provisioned to every application. Scoping f
 
 **All users** 🌐: Provision everyone in the tenant to the application. Appropriate for organization-wide tools but creates large initial syncs for big tenants.
 
-## ⚙️ The Provisioning Modes
+## ⚙️ The provisioning modes
 
 **Automatic provisioning** 🤖: Entra ID manages the full provisioning lifecycle. Create on assignment, update on attribute change, disable on removal from scope. This is the target state.
 
 **Manual provisioning**: Admin creates accounts manually. No SCIM connection. Each application is managed independently. This is what SCIM replaces.
 
-## ⚠️ What SCIM Requires from the Application
+## ⚠️ What SCIM requires from the application
 
 For Entra ID to provision to an application via SCIM, the application must implement a SCIM 2.0-compliant API. Not all applications do this:
 
@@ -81,10 +81,10 @@ For Entra ID to provision to an application via SCIM, the application must imple
 ---
 
 💬 **What's the application in your environment where SCIM provisioning would save the most manual work if you had it?** The application that's still on the manual offboarding checklist because it doesn't support SCIM is almost universal. What's keeping your highest-pain application from being automated?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 
 ---
 
-[← SAML (App Integration Focus)](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-7-saml-app-integration.md) | [🏠 Contents](/README) | [B2B Collaboration →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-9-b2b-collaboration.md)
+[← SAML (App Integration Focus)](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-7-SAML-app-integration.md) | [🏠 Contents](/README) | [B2B Collaboration →](/9%20INTEGRATION%20%26%20EXTERNAL%20IDENTITIES/glossary-9-9-b2b-collaboration.md)

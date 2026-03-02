@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.2 - Authorization Endpoint**
+📚 Part of Entra ID Glossary Series #4.2 - Authorization Endpoint
 
 ---
 
@@ -18,7 +18,7 @@ The first time I looked at a raw OAuth authorization request URL, it was in a br
 
 It was one of those moments where something clicked. Every parameter was deliberate. Each one was telling Entra ID something specific about the request. Once you know how to read these URLs, you can diagnose sign-in problems from the first HTTP request.
 
-## 🌐 What the Authorization Endpoint Is
+## 🌐 What the authorization endpoint is
 
 The authorization endpoint is the URL where the OAuth sign-in flow begins. For Entra ID, it looks like this:
 
@@ -30,7 +30,7 @@ The `{tenant-id}` can be the tenant's GUID, the primary domain name, or the word
 
 This is the browser-facing endpoint. The user's browser navigates here, the user authenticates, and Entra ID sends the result back to the application via a redirect. No tokens come back from this endpoint directly, only the authorization code (or, in some flows, an error).
 
-## 📋 Breaking Down the Request Parameters
+## 📋 Breaking down the request parameters
 
 When an app initiates a sign-in, it constructs a URL with query parameters and sends the browser there. Here's what each parameter does:
 
@@ -61,7 +61,7 @@ Controls the user experience. `none` means Entra ID should not show any UI at al
 **login_hint** 👤
 Pre-fills the username field on the sign-in page. Useful when the app already knows who's signing in (from a previous session, for example). Saves the user one step.
 
-## 🔍 A Real Example
+## 🔍 A real example
 
 Here's what a minimal authorization request URL looks like broken apart:
 
@@ -78,7 +78,7 @@ https://login.microsoftonline.com/contoso.com/oauth2/v2.0/authorize
 
 When you see a sign-in failing at this stage, the Entra ID error page usually includes an error code and description. The most common causes: a `redirect_uri` mismatch (the URI in the request doesn't match what's registered), an invalid `client_id`, or a scope that hasn't been added to the app's permissions.
 
-## ⚠️ Common Mistakes at the Authorization Endpoint
+## ⚠️ Common mistakes at the authorization endpoint
 
 - 🚫 Using a redirect URI in the request that isn't registered on the app (returns AADSTS50011)
 - 📝 Requesting scopes the app hasn't been granted (user gets an unexpected consent prompt or error)
@@ -88,7 +88,7 @@ When you see a sign-in failing at this stage, the Entra ID error page usually in
 ---
 
 💬 **Have you ever read the raw authorize request URL during a debugging session?** Once you know what each parameter means, a broken sign-in URL tells you almost everything you need to know about where the problem is. What's the most useful thing you've learned from reading OAuth request parameters directly?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

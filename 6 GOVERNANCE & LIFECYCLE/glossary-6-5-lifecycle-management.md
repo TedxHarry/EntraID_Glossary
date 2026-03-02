@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.5 - Lifecycle Management**
+📚 Part of Entra ID Glossary Series #6.5 - Lifecycle Management
 
 ---
 
@@ -20,7 +20,7 @@ She also told me they'd had two security incidents in the past 18 months where a
 
 The problem wasn't people failing to do their jobs. It was asking people to execute a complex multi-step process consistently, under time pressure, for hundreds of events per year. Lifecycle management is what happens when you replace that dependency with automation.
 
-## 🔄 The Joiner-Mover-Leaver Model
+## 🔄 The joiner-mover-leaver model
 
 Identity lifecycle management organizes the events an employee goes through into three categories:
 
@@ -32,7 +32,7 @@ Identity lifecycle management organizes the events an employee goes through into
 
 The Mover event is the one organizations most often handle inconsistently. Joiners get attention because the new hire experience is visible. Leavers get attention because security incidents happen when they're missed. Movers accumulate access over time (getting new access for each new role without removing old access) and become over-privileged over years.
 
-## ⚙️ Microsoft Entra Lifecycle Workflows
+## ⚙️ Microsoft entra lifecycle workflows
 
 Entra ID's Lifecycle Workflows feature lets organizations define automated task sequences that trigger on identity events. These are pre-built automatable steps, configured in the Entra admin center, that run against user accounts meeting defined criteria.
 
@@ -55,7 +55,7 @@ Entra ID's Lifecycle Workflows feature lets organizations define automated task 
 
 A Joiner workflow might run 2 days before hire date, generate a Temporary Access Pass, email it to the new hire with setup instructions, add them to department groups, and notify their manager. All automated, triggered by the hire date attribute on the user object.
 
-## 🔗 HR System Integration
+## 🔗 HR system integration
 
 The most mature lifecycle management implementations start with the HR system as the source of truth.
 
@@ -66,7 +66,7 @@ The most mature lifecycle management implementations start with the HR system as
 
 When HR drives Entra ID, and Entra ID drives app provisioning, the entire Joiner-Mover-Leaver cycle becomes HR-triggered. IT doesn't need to receive a ticket, create an account, or remember to run an offboarding checklist. The HR event is the trigger for everything downstream.
 
-## ⚠️ What Still Needs Human Judgment
+## ⚠️ What still needs human judgment
 
 Automation handles the routine lifecycle events well. It doesn't replace judgment for:
 
@@ -80,7 +80,7 @@ The goal isn't to remove humans from access decisions. It's to remove humans fro
 ---
 
 💬 **Has your organization automated any part of the Joiner-Mover-Leaver cycle, and what was the first process you tackled?** The decision about where to start often comes down to where the most pain is: missed offboardings that create security risk, or slow onboarding that creates first-day frustration. Which drove your first automation investment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Lifecycle Workflows require **Entra ID Governance** or **Entra ID P2**. Basic lifecycle (create/disable users) is available in Entra ID Free.

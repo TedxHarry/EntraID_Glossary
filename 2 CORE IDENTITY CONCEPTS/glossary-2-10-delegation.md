@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#2.10 - Delegation**
+📚 Part of Entra ID Glossary Series #2.10 - Delegation
 
 ---
 
 ## 🎯 TL;DR
 
-- Delegation lets one identity act on behalf of another — like an app calling Microsoft Graph as the signed-in user
+- Delegation lets one identity act on behalf of another : like an app calling Microsoft Graph as the signed-in user
 - Delegated permissions require a signed-in user; application permissions let apps act without user context
 - The `on_behalf_of` flow enables service-to-service calls that preserve the original user's identity
 
@@ -20,7 +20,7 @@ Except User Administrator isn't just password resets. It's also the ability to c
 
 Delegation is the answer to that problem. Give people exactly what they need, scoped to exactly where they need it, with nothing extra.
 
-## 📌 Two Meanings You'll Encounter
+## 📌 Two meanings you'll encounter
 
 Delegation shows up in Entra ID in two distinct contexts. Once you understand both, you'll hear the word differently depending on who's using it.
 
@@ -30,7 +30,7 @@ Delegation shows up in Entra ID in two distinct contexts. Once you understand bo
 
 Both are forms of delegation. Both answer the same underlying question: how do you give an actor (a person or an app) the minimum access needed for a specific purpose?
 
-## 📖 Administrative Delegation in Practice
+## 📖 Administrative delegation in practice
 
 The tool that makes admin delegation work properly is **Administrative Units (AUs)** combined with scoped role assignments.
 
@@ -42,7 +42,7 @@ The old "User Administrator for everyone" situation dropped to a scoped role wit
 
 You can also delegate specific tasks without using AUs, through built-in roles designed for narrower purposes. The **Authentication Administrator** can reset authentication methods for non-privileged users. The **License Administrator** can manage license assignments. The **Groups Administrator** manages groups without touching users or policies. Matching the right built-in role to the actual task is the first step, the AU scope is the second.
 
-## 📌 Permission Delegation (The OAuth2 Kind)
+## 📌 Permission delegation (the OAuth 2.0 kind)
 
 When an application signs a user in and then calls an API on their behalf, that's permission delegation.
 
@@ -52,7 +52,7 @@ When the app calls Microsoft Graph with that token, Graph sees it's a delegated 
 
 This is different from application permissions, where the app acts as itself with no user context. Delegated = acts as the user, within the user's limits. Application = acts independently, usually with tenant-wide scope.
 
-## 💡 Why "Just Give Them More" Always Costs You Later
+## 💡 Why "just give them more" always costs you later
 
 The reason delegation matters is the same reason least privilege matters: excess permissions don't sit harmlessly. They're risk waiting to be realized.
 
@@ -69,7 +69,7 @@ Delegation is what reduces those blast radii. It takes organizational work, iden
 ---
 
 **Real question:** Does your helpdesk team have more directory role permissions than they actually use? If you're not sure, that's worth checking. Run a role assignment report for User Administrator and see who's in it, the answer might surprise you.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.4 - ID Protection**
+📚 Part of Entra ID Glossary Series #7.4 - ID Protection
 
 ---
 
 ## 🎯 TL;DR
 
 - Identity Protection is the Entra ID P2 feature that generates risk detections and risk scores
-- It requires P2 licensing — risk policies are powerful but P2 is needed for the full feature set
+- It requires P2 licensing : risk policies are powerful but P2 is needed for the full feature set
 - Risk-based CA policies should require password change for high user risk, MFA for medium sign-in risk
 
 
@@ -20,7 +20,7 @@ Two weeks later, ID Protection had automatically blocked 47 high-risk sign-in at
 
 He hadn't reviewed a single event in real time. The automated response handled everything. When he came in each morning, the dashboard showed him what had happened and what remained for investigation. The signal-to-noise ratio was manageable because the automated policies had already acted on the clear-cut cases.
 
-## 🛡️ What ID Protection Is
+## 🛡️ What ID protection is
 
 Microsoft Entra ID Protection is the risk detection and response engine built into Entra ID. It's not a separate product you install. It's a capability that activates when you have the right licensing (Entra ID P2 required for the full feature set; P1 has limited access).
 
@@ -34,7 +34,7 @@ ID Protection does three things:
 
 The combination is what makes it operationally viable. Detection alone produces a log that requires staff to act on. Detection plus automated response means the clear-cut cases are handled immediately while investigation resources focus on the ambiguous ones.
 
-## 🔍 The Detection Engine
+## 🔍 The detection engine
 
 ID Protection generates two types of risk events:
 
@@ -46,7 +46,7 @@ Both types carry a confidence level (Low, Medium, High) based on the strength of
 
 Real-time detections can block a specific sign-in. Offline detections (analyzed after the fact, requiring more processing time) update the risk level retroactively and affect future access decisions.
 
-## 📊 The Investigation Dashboard
+## 📊 The investigation dashboard
 
 The Identity Protection portal in the Entra admin center provides three key views:
 
@@ -58,7 +58,7 @@ The Identity Protection portal in the Entra admin center provides three key view
 
 For each event, the dashboard provides investigation data and remediation options: confirm as compromised (adds weight to future risk signals), dismiss as safe (teaches the system this pattern is normal), or reset the user's password.
 
-## 🔒 Connecting ID Protection to Conditional Access
+## 🔒 Connecting ID protection to conditional access
 
 ID Protection generates the risk signals. Conditional Access is what acts on them. The connection is through risk-based Conditional Access policies:
 
@@ -74,7 +74,7 @@ The recommended baseline configuration:
 
 This creates a fully automated response loop. Detection fires, Conditional Access responds, the user either satisfies the challenge or is blocked. No analyst needs to be in the loop for the high-confidence cases.
 
-## ⚙️ Licensing and Capabilities
+## ⚙️ Licensing and capabilities
 
 The full ID Protection feature set requires Entra ID P2 licensing. Key P2-only capabilities:
 
@@ -88,7 +88,7 @@ Entra ID P1 provides some sign-in risk signals and sign-in logs but lacks the fu
 
 Without any Entra ID P2, organizations are effectively flying blind on identity risk. They have sign-in logs but no automated risk scoring or response capability.
 
-## 💡 False Positive Management
+## 💡 False positive management
 
 Not every risk detection is genuine compromise. Legitimate users trigger false positives regularly: international travel flagged as impossible travel, VPN use flagged as anonymous IP, bulk project work flagged as anomalous activity.
 
@@ -99,7 +99,7 @@ False positive rate drops over time as the system builds accurate baselines. New
 ---
 
 💬 **When you first enabled ID Protection, what was the ratio of genuine attacks to false positives in the first month?** The initial calibration period is always noisier than steady state. What detection type generated the most false positives in your environment, and how long did it take to tune down?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Entra ID Protection is a **P2-only** feature. Without P2, you cannot see risk detections, risky users, or configure risk-based Conditional Access policies.

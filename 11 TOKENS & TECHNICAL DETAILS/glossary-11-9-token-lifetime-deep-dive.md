@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#11.9 - Token Lifetime (Deep Dive)**
+📚 Part of Entra ID Glossary Series #11.9 - Token Lifetime (Deep Dive)
 
 ---
 
@@ -20,7 +20,7 @@ Except the app wasn't requesting a new token silently. It was redirecting the us
 
 The fix was in the application code, not the token lifetime configuration. But the investigation revealed how little the team understood about the default token lifetimes, which lifetimes were configurable, and which weren't.
 
-## 🎫 ⏰ Default Token Lifetimes
+## 🎫 ⏰ default token lifetimes
 
 Entra ID issues three types of tokens with distinct default lifetimes:
 
@@ -32,7 +32,7 @@ Entra ID issues three types of tokens with distinct default lifetimes:
 
 **Refresh tokens for FOCI apps** 🔵: Family of Client IDs applications (Microsoft's own apps like Teams, Outlook, Office) share refresh tokens. These have different lifetime characteristics and can provide SSO across the Microsoft app family.
 
-## 🔧 Token Lifetime Policy
+## 🔧 Token lifetime policy
 
 While access token lifetime is now locked, other token lifetimes are configurable through Token Lifetime Policy objects. These are Entra ID objects that can be applied to:
 
@@ -44,7 +44,7 @@ A Token Lifetime Policy object defines configurable parameters including the ref
 
 These policies are managed via the Microsoft Graph API or PowerShell. There's no portal UI for token lifetime policies as of now.
 
-## 🔄 The Lifetime UX Tradeoff
+## 🔄 The lifetime UX tradeoff
 
 Token lifetime is a UX vs security tradeoff that plays out differently for different application types:
 
@@ -54,7 +54,7 @@ Token lifetime is a UX vs security tradeoff that plays out differently for diffe
 
 **Customer-facing applications (external tenants/B2C)** 🛍️: Consumer applications often have even longer session lifetimes. "Remember me" behavior. Sessions measured in months, not days. The security model relies on device security and consumer MFA rather than frequent re-authentication.
 
-## 🌐 Conditional Access and Lifetime Interaction
+## 🌐 Conditional access and lifetime interaction
 
 Conditional Access session controls interact with token lifetimes and can create effective shorter sessions:
 
@@ -64,7 +64,7 @@ Conditional Access session controls interact with token lifetimes and can create
 
 Sign-in frequency through Conditional Access is often the right lever for security-sensitive scenarios, because it can be scoped to specific applications and user groups without affecting all tokens in the tenant.
 
-## ⚠️ What Can't Be Configured
+## ⚠️ What can't be configured
 
 Access token lifetime cannot be extended beyond one hour through policy (with the exception of CAE-enabled long-lived tokens). Microsoft made this non-configurable to prevent a common mistake where administrators would set very long access token lifetimes for convenience, creating large windows for stolen token abuse.
 
@@ -73,7 +73,7 @@ If an application needs longer than one-hour sessions, the correct implementatio
 ---
 
 💬 **Have you had to configure Token Lifetime Policies for a specific application in your tenant, and what drove the requirement?** The most common drivers are compliance requirements for high-security applications (shorter inactive times) and user experience requirements for productivity applications (avoiding excessive sign-out prompts). What lifetime configuration would most improve your users' experience while meeting your security requirements?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

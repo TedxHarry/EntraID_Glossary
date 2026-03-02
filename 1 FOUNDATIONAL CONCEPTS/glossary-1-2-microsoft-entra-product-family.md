@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟢 Beginner
 
-📚 **Part of Entra ID Glossary Series: Glossary#1.2 - Microsoft Entra Product Family**
+📚 Part of Entra ID Glossary Series #1.2 - Microsoft Entra Product Family
 
 ---
 
@@ -20,7 +20,7 @@ Six months later, they acquired a smaller company. Suddenly they needed to let 4
 
 Every one of those problems had a name. And every one of those names was part of the Microsoft Entra product family.
 
-## 💡 Why One Product Isn't Enough
+## 💡 Why one product isn't enough
 
 Entra ID is brilliant at managing your employees. It knows who works for you, what roles they have, what apps they're allowed into. That's its core job.
 
@@ -34,7 +34,7 @@ But modern organizations deal with three very different identity problems:
 
 One product solving all three equally well turns out to be harder than it sounds. Microsoft's answer was to build a family of products, each optimized for a specific challenge, all sharing the same underlying identity platform.
 
-## 📌 The Products and What They Actually Do
+## 📌 The products and what they actually do
 
 **Microsoft Entra ID** is the foundation. This is your employee directory, your SSO engine, your Conditional Access policy machine. If you only ever use one Entra product, it's this one. Everything else in the family extends or complements it.
 
@@ -48,7 +48,7 @@ One product solving all three equally well turns out to be harder than it sounds
 
 **Microsoft Entra Internet Access and Private Access** handle network security for the Zero Trust world. These are Secure Service Edge products that route and secure internet and private network access based on identity. They sit alongside the identity products to complete the access story.
 
-## 🔧 How They Work Together, A Real Scenario
+## 🔧 How they work together, a real scenario
 
 Let me connect this back to the startup I mentioned.
 
@@ -62,7 +62,7 @@ And when the CTO asked "do any of our apps have permissions they don't need?", t
 
 Four products. One coherent identity story.
 
-## 📌 Entra ID Is Still the Core
+## 📌 Entra ID is still the core
 
 You'll notice almost every scenario starts with Entra ID. That's intentional. It's the identity backbone. The other products extend it, add capabilities for specific use cases, or address security challenges that Entra ID alone doesn't cover.
 
@@ -72,7 +72,7 @@ When you're starting out, focus on Entra ID first, deeply. Understanding the fou
 
 
 **Your turn:** Which Entra products are you working with right now? Are you purely on Entra ID, or has your organization started using other products in the family? Curious what problems drove those decisions.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

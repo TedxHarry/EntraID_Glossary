@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.2 - Cloud-Based Sync (Advanced)**
+📚 Part of Entra ID Glossary Series #13.2 - Cloud-Based Sync (Advanced)
 
 ---
 
@@ -11,14 +11,14 @@
 
 - Cloud Sync (advanced) supports complex multi-forest topologies, directory extensions, and cloud-to-on-prem writeback
 - Troubleshooting: check agent connectivity, provisioning logs, and object matching rules
-- Group writeback v2 lets Entra ID groups sync to on-prem AD — useful for legacy app group-based access
+- Group writeback v2 lets Entra ID groups sync to on-prem AD : useful for legacy app group-based access
 
 
 A merger brought together two companies, each with its own on-premises Active Directory forest. The combined organization needed both forests synchronized to a single Entra ID tenant. One forest had 8,000 users. The other had 3,500. Their UPN suffixes overlapped. Their organizational unit structures were completely different.
 
 This isn't a "install Entra Connect Cloud Sync and you're done in an afternoon" scenario. This is the advanced territory where the choices made in synchronization configuration have long-term consequences for every identity in both organizations.
 
-## 🔧 Multi-Forest Synchronization
+## 🔧 Multi-Forest synchronization
 
 Entra Connect Cloud Sync supports synchronization from multiple Active Directory forests to a single Entra ID tenant. Each forest gets its own provisioning agent installed on a domain-joined server within that forest. Each agent connects to the cloud synchronization service and feeds identity data from its forest into Entra ID.
 
@@ -26,7 +26,7 @@ The challenge with multi-forest synchronization isn't the technical setup; it's 
 
 The matching is controlled by the source anchor attribute. A common approach in merger scenarios: use the `objectGUID` from each forest as the source anchor, accept that merged users will have two Entra ID accounts until a deliberate cleanup is done, and plan the consolidation separately. Trying to automatically merge identities from different forests often creates more problems than it solves.
 
-## 🎯 Scoping Filters
+## 🎯 Scoping filters
 
 Cloud Sync doesn't have to synchronize an entire forest. Scoping filters control which objects are included in synchronization.
 
@@ -38,7 +38,7 @@ Cloud Sync doesn't have to synchronize an entire forest. Scoping filters control
 
 Scoping filters can be combined. A common pattern in complex environments: synchronize users in specific OUs who are members of a specific group and have a specific attribute set, excluding all others.
 
-## 🔄 Attribute Mapping and Transformations
+## 🔄 Attribute mapping and transformations
 
 Cloud Sync's attribute mapping configuration defines how on-premises AD attributes populate Entra ID user attributes. Default mappings handle the standard cases. Advanced scenarios require custom mappings.
 
@@ -50,7 +50,7 @@ Cloud Sync's attribute mapping configuration defines how on-premises AD attribut
 
 The expression language for attribute mapping in Cloud Sync is the same as in Entra Connect sync rules, using functions like `Append`, `Replace`, `Join`, `Mid`, and `Switch`.
 
-## 📦 Provisioning On-Demand
+## 📦 Provisioning on-demand
 
 One of the most useful Cloud Sync features for advanced troubleshooting and testing: provisioning on-demand. You can trigger synchronization for a specific user or group without waiting for the next sync cycle.
 
@@ -62,7 +62,7 @@ This is invaluable for:
 
 On-demand provisioning surfaces the full attribute mapping output and any errors, making it far easier to debug than waiting through sync cycles and checking logs.
 
-## ⚠️ Cloud Sync vs Entra Connect for Complex Scenarios
+## ⚠️ Cloud sync vs entra connect for complex scenarios
 
 Cloud Sync has grown significantly in capability, but some complex scenarios still require Entra Connect:
 
@@ -76,7 +76,7 @@ For new deployments without Exchange hybrid or device hybrid requirements, Cloud
 ---
 
 💬 **Has your organization's synchronization architecture evolved beyond a single forest to single tenant setup, and what were the most complex attribute mapping or scoping challenges you had to solve?** Multi-forest scenarios from mergers and acquisitions are the most common driver of advanced synchronization complexity. What decision in your sync configuration do you wish you'd made differently at the start?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

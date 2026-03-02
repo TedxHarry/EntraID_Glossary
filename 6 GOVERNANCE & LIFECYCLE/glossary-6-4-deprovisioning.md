@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.4 - Deprovisioning**
+📚 Part of Entra ID Glossary Series #6.4 - Deprovisioning
 
 ---
 
 ## 🎯 TL;DR
 
-- Deprovisioning removes user accounts and their access when no longer needed — more complete than just disabling
+- Deprovisioning removes user accounts and their access when no longer needed : more complete than just disabling
 - Soft delete keeps the account for 30 days (recoverable); hard delete is permanent
 - Deprovisioning must cover: disable account, revoke tokens, remove licenses, remove group memberships
 
@@ -26,7 +26,7 @@ The Entra ID account was disabled. The person's identity to the organization's c
 
 Deprovisioning is about more than the Entra ID account.
 
-## 🗑️ What Deprovisioning Actually Means
+## 🗑️ What deprovisioning actually means
 
 Deprovisioning is the process of removing or disabling user accounts in applications when that access is no longer needed. It's the downstream complement to disabling the central identity.
 
@@ -36,7 +36,7 @@ But many applications have their own user databases. Disabling the Entra ID acco
 
 Deprovisioning handles the application account, not just the identity layer.
 
-## 🔧 Automated Deprovisioning via Provisioning
+## 🔧 Automated deprovisioning via provisioning
 
 For applications with SCIM provisioning configured in Entra ID, deprovisioning is automatic. When a user is unassigned from the application in Entra ID (or their account is disabled), the Entra provisioning service sends a DISABLE or DELETE operation to the application's SCIM endpoint. The application account is deactivated or removed without any manual intervention.
 
@@ -44,7 +44,7 @@ This is why provisioning matters for offboarding, not just onboarding. The same 
 
 Applications with SCIM provisioning in Entra ID's app gallery: Salesforce, ServiceNow, Workday, SAP, Box, Slack, Zoom, GitHub Enterprise, and hundreds of others.
 
-## 📋 The Non-SCIM Application Problem
+## 📋 The non-scim application problem
 
 For applications without SCIM provisioning, deprovisioning requires manual action. This is the category that generates abandoned accounts.
 
@@ -64,13 +64,13 @@ For these, organizations typically rely on:
 - Automated ticket creation on departure, with the application owner as the assignee
 - Regular reports comparing active app accounts to active Entra ID accounts
 
-## ⚠️ The License Leak Problem
+## ⚠️ The license leak problem
 
 Abandoned accounts in SaaS applications often mean abandoned license seats. Salesforce licenses at $150/user/month. ServiceNow at $100+. GitHub Enterprise at $19. Each former employee who wasn't deprovisioned is a license fee being paid for access no one is using.
 
 I've seen organizations save five figures monthly by running their first serious deprovisioning audit. The cost of not having automated deprovisioning isn't just security risk. It's a recurring operating expense.
 
-## 💡 Building the Application Inventory
+## 💡 Building the application inventory
 
 You can't deprovision accounts in applications you don't know about. The first step for organizations without mature deprovisioning is an application inventory:
 
@@ -84,7 +84,7 @@ That inventory is the map for building deprovisioning coverage, app by app.
 ---
 
 💬 **How many of your organization's SaaS applications have automated deprovisioning configured through Entra ID?** The gap between "we disabled the Entra ID account" and "all app accounts are removed" is where most offboarding security risk lives. What does your current deprovisioning coverage look like?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

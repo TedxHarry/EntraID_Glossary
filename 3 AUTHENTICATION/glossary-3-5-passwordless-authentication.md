@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#3.5 - Passwordless Authentication**
+📚 Part of Entra ID Glossary Series #3.5 - Passwordless Authentication
 
 ---
 
@@ -22,13 +22,13 @@ Here's what that annual ritual actually addresses: password *complexity*. Here's
 
 Passwordless authentication solves the right one.
 
-## 🔍 What Passwordless Actually Means
+## 🔍 What passwordless actually means
 
 Passwordless authentication eliminates the password from the authentication flow entirely. The user proves their identity using a method that cannot be phished or replayed.
 
 That's the key property. Phishing works because a user can be tricked into typing their password into a fake website that relays it to the real one. Passwordless methods are cryptographically bound to specific origins, device hardware, or biometrics. There's nothing a fake website can capture and replay.
 
-In Entra ID, three passwordless authentication options are supported:
+in Entra ID, three passwordless authentication options are supported:
 
 **🔑 FIDO2 security keys**
 Physical hardware devices. The user plugs in a USB key (or taps an NFC key) and authenticates with a PIN or biometric. The key generates cryptographic signatures that are specific to the legitimate website. A fake login page can't intercept and reuse them.
@@ -39,7 +39,7 @@ Biometric or PIN-based authentication on a Windows device. The credential is pro
 **📱 Microsoft Authenticator passwordless phone sign-in**
 The user registers their phone with Authenticator for passwordless sign-in. During login, they enter their username, then approve a number match on their phone. No password field appears. The authentication is bound to the registered device.
 
-## 💡 Passwordless vs MFA: How They Relate
+## 💡 Passwordless vs mfa: how they relate
 
 A common question: is passwordless better than MFA, or instead of MFA?
 
@@ -51,7 +51,7 @@ When a user authenticates with a passwordless method, they satisfy MFA requireme
 
 The shift isn't "passwordless instead of MFA." It's "passwordless as a superior implementation of MFA that also eliminates the password attack surface."
 
-## 📈 The Real-World Productivity Gain
+## 📈 The real-world productivity gain
 
 Rolling out passwordless to a 500-person organization taught me something I didn't fully expect: users liked it. Not just tolerated it. Actually preferred it.
 
@@ -63,7 +63,7 @@ Same security level. Dramatically better experience. The IT team fielded signifi
 
 Security that's easier than the insecure alternative actually gets used correctly.
 
-## 🛣️ Starting a Passwordless Rollout
+## 🛣️ Starting a passwordless rollout
 
 The common approach is to start with admins and IT staff, who are both higher risk targets and more comfortable with technology changes.
 
@@ -81,13 +81,13 @@ The goal isn't flipping a switch. It's making passwordless the default path of l
 ---
 
 💬 **Has your organization started a passwordless rollout?** Which method are you leading with: Windows Hello, FIDO2 keys, or Authenticator? And what's been the user reaction so far?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 
 > 🔑 **Licensing:** Passwordless authentication (FIDO2, WHfB, Authenticator) is included in **Entra ID Free** for up to 500K objects. No P1/P2 required for the methods themselves.
 
 
-### 🔧 Quick Reference: PowerShell
+### 🔧 Quick reference: PowerShell
 
 ```powershell
 # List users registered for passwordless methods

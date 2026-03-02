@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.1 - User Provisioning**
+📚 Part of Entra ID Glossary Series #6.1 - User Provisioning
 
 ---
 
 ## 🎯 TL;DR
 
 - User provisioning is the automated creation of user accounts when someone joins the organization
-- SCIM protocol is the standard for provisioning to SaaS apps — Entra ID supports SCIM provisioning
+- SCIM protocol is the standard for provisioning to SaaS apps : Entra ID supports SCIM provisioning
 - Provisioning vs. sync: provisioning creates new accounts; sync keeps attributes updated over time
 
 
@@ -20,7 +20,7 @@ The gap was the provisioning step. Entra ID knew she existed. Salesforce didn't.
 
 Automated provisioning is the fix for that gap. When it works, accounts in connected applications appear automatically, without anyone having to submit a request or remember to do something.
 
-## ⚙️ What Provisioning Is
+## ⚙️ What provisioning is
 
 User provisioning is the process of automatically creating, updating, and disabling user accounts in applications based on changes in the authoritative identity system (Entra ID for cloud, or HR system for joiner/mover/leaver events).
 
@@ -32,7 +32,7 @@ When provisioning is configured between Entra ID and an application:
 
 The key word throughout: automatically. No tickets. No manual steps. No dependency on someone remembering.
 
-## 🔧 How Entra ID Provisioning Works
+## 🔧 How entra ID provisioning works
 
 Entra ID provisioning uses the SCIM protocol (System for Cross-Domain Identity Management, covered in Glossary#9.8) to communicate with application provisioning endpoints. SCIM is a standardized REST API for user and group management.
 
@@ -47,7 +47,7 @@ The provisioning flow:
 
 Apps that support SCIM natively (most modern SaaS applications) have a standard provisioning endpoint. Apps without SCIM support require a custom connector or a gallery connector built by Microsoft or the vendor.
 
-## 📋 Provisioning vs Single Sign-On: Two Different Things
+## 📋 Provisioning vs single sign-on: two different things
 
 This distinction catches people out regularly.
 
@@ -61,7 +61,7 @@ You can have provisioning without SSO: accounts are created automatically, but u
 
 Ideally, both are configured. Provisioning handles the account lifecycle. SSO handles the authentication experience.
 
-## 🔄 Inbound Provisioning: HR as the Source
+## 🔄 Inbound provisioning: HR as the source
 
 A more advanced provisioning pattern goes in the other direction. Instead of Entra ID pushing to apps, an HR system (Workday, SAP SuccessFactors, BambooHR) pushes to Entra ID.
 
@@ -72,7 +72,7 @@ Inbound provisioning means:
 
 This makes the HR system the source of truth and removes the manual step of creating Entra ID users for new hires. Combined with outbound provisioning to apps, the entire joiner/leaver process becomes automated end-to-end.
 
-## ⚠️ What Breaks in Manual Provisioning
+## ⚠️ What breaks in manual provisioning
 
 The new hire who waited two days for her Salesforce account is the mild case. Other consequences of manual-only provisioning:
 
@@ -85,7 +85,7 @@ Automated provisioning solves all three.
 ---
 
 💬 **How many of your organization's applications have automated provisioning configured vs relying on manual account creation?** The gap between "Entra ID knows the user" and "every app the user needs has their account" is where most new hire friction lives. What was the first application you automated provisioning for?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

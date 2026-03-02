@@ -3,14 +3,14 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#9.10 - B2C**
+📚 Part of Entra ID Glossary Series #9.10 - B2C
 
 ---
 
 ## 🎯 TL;DR
 
 - Azure AD B2C is Microsoft's customer identity platform for building consumer-facing apps with social/local login
-- B2C is a separate tenant type — it's not the same as your organization's Entra ID tenant
+- B2C is a separate tenant type : it's not the same as your organization's Entra ID tenant
 - B2C supports custom user flows and branded sign-in experiences with social providers (Google, Facebook)
 
 
@@ -20,13 +20,13 @@ Building identity from scratch would take months. Maintaining it forever would b
 
 Azure AD B2C (now being superseded by External Identities) gave them a dedicated customer identity platform: customizable sign-up and sign-in pages, support for social identity providers (Google, Facebook, Apple, Microsoft consumer accounts), MFA for customers, token issuance for their application, and a scalable backend managed by Microsoft.
 
-## 👥 What B2C Is
+## 👥 What B2C is
 
 Azure Active Directory B2C (Business-to-Consumer) is a customer identity and access management (CIAM) service designed specifically for consumer-facing applications. It manages the identities of an organization's customers or end users, as opposed to its employees (handled by Entra ID) or business partners (handled by B2B Collaboration).
 
 B2C is a separate Azure service from Entra ID for enterprise users. Organizations create a B2C tenant specifically for their consumer identity use cases. The B2C tenant is dedicated to customer identity and operates independently from the corporate Entra ID tenant.
 
-## 🎯 What B2C Is Designed For
+## 🎯 What B2C is designed for
 
 **Scale** 📊: B2C is designed to handle millions of consumer accounts. Enterprise Entra ID is optimized for thousands to hundreds of thousands of organizational accounts. B2C's pricing and architecture scale to consumer-application loads.
 
@@ -40,7 +40,7 @@ B2C is a separate Azure service from Entra ID for enterprise users. Organization
 
 **Consumer MFA** 📱: B2C supports MFA for consumers via SMS or authenticator apps, presented in a consumer-friendly way.
 
-## 🔧 User Flows and Custom Policies
+## 🔧 User flows and custom policies
 
 B2C authentication experiences are defined through policies:
 
@@ -50,7 +50,7 @@ B2C authentication experiences are defined through policies:
 
 Custom policies are used for things like: integrating with an external CRM to look up customer data during sign-in, progressive profiling (collecting customer information incrementally over multiple sign-ins), complex step-up authentication scenarios, or migration from legacy identity systems.
 
-## 📋 B2C vs Enterprise Entra ID
+## 📋 B2C vs enterprise entra ID
 
 They're different products for different purposes:
 
@@ -66,7 +66,7 @@ They're different products for different purposes:
 
 Running consumer-facing applications on enterprise Entra ID creates mismatches: employees and customers in the same directory, corporate security policies applied to consumer authentication, pricing structures misaligned with consumer scale.
 
-## 🔮 B2C and Entra External Identities
+## 🔮 B2C and entra external identities
 
 Microsoft is transitioning the B2C product toward Microsoft Entra External ID, a newer CIAM platform that addresses some of B2C's architectural limitations with a more modern approach. Organizations starting new consumer identity projects should evaluate Entra External ID alongside B2C. Existing B2C deployments continue to be supported.
 
@@ -75,7 +75,7 @@ The underlying need remains the same: organizations building consumer-facing app
 ---
 
 💬 **Has your organization used B2C (or Entra External ID) for a customer-facing application?** The decision between building identity in-house and using a managed CIAM service is one every team building consumer applications faces. What was the factor that most influenced the decision to use a managed service?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

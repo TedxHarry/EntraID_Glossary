@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#4.4 - Authorization Server**
+📚 Part of Entra ID Glossary Series #4.4 - Authorization Server
 
 ---
 
@@ -18,7 +18,7 @@ Most people interact with Entra ID through three things: the admin portal, the s
 
 When you look at Entra ID through the lens of OAuth 2.0, you see something different. You see an authorization server, and understanding what that means explains why Entra ID behaves the way it does across dozens of scenarios that otherwise seem unrelated.
 
-## 🏛️ What an Authorization Server Is
+## 🏛️ What an authorization server is
 
 In the OAuth 2.0 specification, the authorization server is the system responsible for authenticating resource owners (users), authorizing client applications (your apps), and issuing tokens. It's the trusted intermediary that sits between applications and the resources they want to access.
 
@@ -30,7 +30,7 @@ Three other roles exist in the OAuth model:
 
 The authorization server is none of these. It's the trusted third party that all of them rely on. Applications don't trust each other directly. They both trust the authorization server, and use tokens it issues as the proof of authorization.
 
-## 🔑 Entra ID's Authorization Server Responsibilities
+## 🔑 Entra id's authorization server responsibilities
 
 When Entra ID acts as the authorization server for a sign-in or token request, it's doing a lot of work that happens invisibly:
 
@@ -49,7 +49,7 @@ Entra ID creates the token, embeds the relevant claims (user identity, permissio
 **Publishing public keys** 🔓
 Entra ID publishes its public keys at a well-known endpoint (the JWKS URI from the OpenID Connect discovery document). Resource servers fetch these keys and use them to validate token signatures offline, without making a network call to Entra ID for every API request.
 
-## 🌐 The Discovery Document: How Clients Find the Endpoints
+## 🌐 The discovery document: how clients find the endpoints
 
 Entra ID follows the OpenID Connect standard for publishing its configuration. The discovery document is available at:
 
@@ -61,7 +61,7 @@ This JSON document lists the authorization endpoint URL, the token endpoint URL,
 
 If you ever need to find the exact token endpoint or check what Entra ID supports for a given tenant, this is where to look.
 
-## 🤝 Multi-Tenant: The Authorization Server at Scale
+## 🤝 Multi-Tenant: the authorization server at scale
 
 One of the things that makes Entra ID's authorization server model interesting is multi-tenancy. A single application registration in one tenant can serve users from thousands of different tenants, because every Entra ID tenant runs the same authorization server infrastructure.
 
@@ -69,7 +69,7 @@ When a user from `contoso.com` signs in to a multi-tenant app registered in `fab
 
 This works because all Entra ID tenants follow the same protocol, publish their keys in the same format, and produce tokens with the same structure. The application doesn't need to know about `contoso.com` in advance. It just needs to know how to validate a standard Entra ID token.
 
-## 💡 Why This Mental Model Matters
+## 💡 Why this mental model matters
 
 Once you see Entra ID as an authorization server rather than just a user directory, a lot of things make more sense:
 
@@ -83,7 +83,7 @@ The authorization server is the trust anchor. Everything else is built on top of
 ---
 
 💬 **How has thinking about Entra ID as an authorization server (rather than just a user directory) changed how you approach identity architecture?** Or are you still mostly thinking in terms of "user accounts and permissions"? Both are valid starting points. The OAuth lens tends to become useful when you start integrating custom applications.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

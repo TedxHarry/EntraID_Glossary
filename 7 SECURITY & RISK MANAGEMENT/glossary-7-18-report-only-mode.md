@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.18 - Report-Only Mode**
+📚 Part of Entra ID Glossary Series #7.18 - Report-Only Mode
 
 ---
 
@@ -20,7 +20,7 @@ None of these devices showed up in any inventory. Nobody knew they were using le
 
 Report-Only mode exists so you can find those devices without breaking them.
 
-## 📊 What Report-Only Mode Does
+## 📊 What report-only mode does
 
 Report-Only mode is a Conditional Access policy state that evaluates the policy against every sign-in in its scope but does not enforce the policy. It logs what it would have done without actually doing it.
 
@@ -33,7 +33,7 @@ A policy in Report-Only mode:
 
 Users don't see any change. They don't get prompted. They don't get blocked. Their sign-ins proceed normally. Behind the scenes, the policy is watching every sign-in and recording what it would have done if it were live.
 
-## 🔍 Where to See Report-Only Results
+## 🔍 Where to see report-only results
 
 The results appear in two places:
 
@@ -43,7 +43,7 @@ The results appear in two places:
 
 For a legacy auth block policy, this view shows you exactly how many sign-ins used legacy protocols in the last 30 days, which applications, which users, and what the outcome would have been.
 
-## 🏗️ The Standard Deployment Workflow
+## 🏗️ The standard deployment workflow
 
 Report-Only mode is the right first step for every new Conditional Access policy. The workflow:
 
@@ -70,7 +70,7 @@ Report-Only mode is the right first step for every new Conditional Access policy
 - Monitor the sign-in logs for unexpected blocks in the first week
 - Have a rollback plan ready (switching back to Report-Only or Off)
 
-## ⚙️ The Three Policy States
+## ⚙️ The three policy states
 
 Conditional Access policies have three states:
 
@@ -82,7 +82,7 @@ Conditional Access policies have three states:
 
 Switching between states is instant and doesn't require creating a new policy. You can go from Report-Only to On, from On back to Report-Only, or from On to Off without losing the policy configuration.
 
-## ⚠️ What Report-Only Doesn't Catch
+## ⚠️ What report-only doesn't catch
 
 Report-Only mode is excellent for understanding coverage and identifying unexpected scope. It has one significant limitation: it tests what would happen based on current sign-in behavior. It doesn't predict future behavior.
 
@@ -90,7 +90,7 @@ The legacy auth scenario is a good example. If an application only uses legacy a
 
 To mitigate this: run report-only for at least a full business cycle that includes any monthly, quarterly, or irregular processes. 30 days is a reasonable minimum. 60 days captures more edge cases.
 
-## 💡 The "What If" Tool for Targeted Testing
+## 💡 The "what if" tool for targeted testing
 
 Report-Only mode captures results from real sign-ins. The "What If" tool in Conditional Access provides targeted hypothetical testing: specify a specific user, app, conditions, and see which policies would fire and what they'd do.
 
@@ -101,7 +101,7 @@ Use both: What If for pre-deployment spot checking, Report-Only for observing re
 ---
 
 💬 **What's the most surprising thing you discovered by running a policy in Report-Only mode before enforcement?** The legacy auth scenarios that appear are often genuinely unexpected. Printers, conference room displays, old integrations, monitoring tools. What did report-only reveal in your environment that would have caused an outage if you'd enforced immediately?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

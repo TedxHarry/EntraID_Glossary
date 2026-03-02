@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#8.7 - Domain Services**
+📚 Part of Entra ID Glossary Series #8.7 - Domain Services
 
 ---
 
@@ -22,7 +22,7 @@ Decommissioning their on-premises Active Directory would break all of them.
 
 Microsoft Entra Domain Services gave them a way out: a managed Active Directory service in Azure, fully compatible with Kerberos, NTLM, and LDAP, with no domain controllers to manage.
 
-## 🏗️ What Domain Services Is
+## 🏗️ What domain services is
 
 Microsoft Entra Domain Services (formerly Azure AD Domain Services, often called AADDS) is a managed service that provides traditional Active Directory capabilities in Azure without requiring you to deploy or manage domain controllers.
 
@@ -36,7 +36,7 @@ When you enable Domain Services, Microsoft creates a managed domain in your Azur
 
 Virtual machines in Azure can join the Domain Services managed domain and behave as if they were in a traditional on-premises AD domain. Legacy applications running on those VMs can use Kerberos, authenticate against LDAP, and receive Group Policy.
 
-## 🔗 How Domain Services Relates to Entra ID
+## 🔗 How domain services relates to entra ID
 
 Domain Services is not a replacement for Entra ID. It's a complement that adds traditional AD protocols on top of Entra ID's cloud-native identity.
 
@@ -44,7 +44,7 @@ When Entra ID synchronizes to Domain Services, users and groups from Entra ID ar
 
 The synchronization is one-way: Entra ID to Domain Services. You can't create users directly in Domain Services and have them appear in Entra ID. The source of truth for identities is Entra ID.
 
-## 🎯 When to Use Domain Services
+## 🎯 When to use domain services
 
 **Legacy application lift-and-shift** 🏗️: Applications that require domain join, Kerberos, NTLM, or LDAP can run on Azure VMs joined to Domain Services without modification.
 
@@ -54,7 +54,7 @@ The synchronization is one-way: Entra ID to Domain Services. You can't create us
 
 **SaaS applications that require LDAP** 📋: Some SaaS applications are configured to authenticate users via LDAP queries to a directory. Domain Services provides an LDAP endpoint that these applications can connect to.
 
-## ⚙️ What Domain Services Manages (and What You Still Control)
+## ⚙️ What domain services manages (and what you still control)
 
 **Microsoft manages** 🔵:
 - Domain controller VMs, including patching and updates
@@ -77,7 +77,7 @@ The synchronization is one-way: Entra ID to Domain Services. You can't create us
 
 Domain Services is "AD-as-a-service." Microsoft handles the infrastructure. You configure the domain behavior within the managed constraints.
 
-## ⚠️ Limitations and Considerations
+## ⚠️ Limitations and considerations
 
 **Read-only LDAP** 📋: By default, LDAP access to Domain Services is read-only. Secure LDAP can be enabled for read access over a certificate-protected connection, but write access via LDAP is not supported.
 
@@ -90,7 +90,7 @@ Domain Services is "AD-as-a-service." Microsoft handles the infrastructure. You 
 ---
 
 💬 **Have you used Domain Services to enable a legacy application lift-and-shift that couldn't use modern authentication?** The pattern of "everything modern goes to Entra ID, everything legacy gets Domain Services as a compatibility layer" is becoming common in cloud migrations. What was the application or workload that made Domain Services the right answer for your environment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

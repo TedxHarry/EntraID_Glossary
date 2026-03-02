@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.11 - Sync Agent**
+📚 Part of Entra ID Glossary Series #13.11 - Sync Agent
 
 ---
 
 ## 🎯 TL;DR
 
 - Sync agents (Connect Sync, Cloud Sync agent) are the software bridges between on-prem AD and Entra ID
-- Monitor agent health — a failed agent stops synchronization without obvious user impact until attributes drift
-- Keep sync agents updated — outdated agents may not support new features or may have security vulnerabilities
+- Monitor agent health : a failed agent stops synchronization without obvious user impact until attributes drift
+- Keep sync agents updated : outdated agents may not support new features or may have security vulnerabilities
 
 
 A hybrid identity team got an alert on a Tuesday morning: directory synchronization had failed. Users created in on-premises Active Directory in the last four hours hadn't appeared in Entra ID. The helpdesk was getting calls from new starters who couldn't access Microsoft 365.
@@ -20,7 +20,7 @@ The investigation found the issue in under five minutes: the sync agent service 
 
 The sync agent is the component that makes hybrid identity work. When it's healthy, nobody thinks about it. When it stops, identity synchronization stops with it.
 
-## ⚙️ What the Sync Agent Does
+## ⚙️ What the sync agent does
 
 The sync agent is a software component installed on-premises that performs the actual work of directory synchronization between on-premises Active Directory and Entra ID. It reads identity data from AD, applies transformation rules and filtering, and pushes the processed data to the Entra ID provisioning service in the cloud.
 
@@ -30,7 +30,7 @@ Microsoft provides two sync agent implementations with different architectures:
 
 **Cloud Sync provisioning agent** ☁️: The newer, lighter-weight agent. A small Windows service that connects to the cloud-based provisioning engine, where synchronization logic runs. The agent itself doesn't process rules locally; it's a relay between on-premises AD and the cloud service. Simpler to deploy, update, and support. Supports multiple agents per forest for high availability without the active/passive complexity of Entra Connect.
 
-## 🏗️ Installation and Server Requirements
+## 🏗️ Installation and server requirements
 
 Both agents run on Windows Server (2016 or later recommended). The server must be:
 
@@ -42,7 +42,7 @@ Both agents run on Windows Server (2016 or later recommended). The server must b
 
 **Service account** 🔑: The agent runs under a service account with appropriate permissions: read access to the Active Directory objects being synchronized, and permissions to write back attributes if writeback features (password writeback, device writeback) are configured.
 
-## 🔄 Agent Health and Monitoring
+## 🔄 Agent health and monitoring
 
 The Entra ID portal shows sync agent health in Entra Connect Health (for Entra Connect agents) and in the Cloud Sync monitoring section (for provisioning agents). Each agent's status, last sync time, and any errors are visible.
 
@@ -53,13 +53,13 @@ Sync errors are categorized:
 
 Individual object errors don't stop synchronization for other objects. The sync engine logs the error for the specific user or group and continues. A daily email digest (configurable in Entra Connect Health) summarizes new errors.
 
-## 🔀 High Availability
+## 🔀 High availability
 
 **Cloud Sync**: Supports multiple provisioning agents per AD forest. Multiple agents handle synchronization; if one fails, the others continue. No primary/secondary designation; all agents are active. Adding a second agent for high availability is strongly recommended for production environments.
 
 **Entra Connect**: Uses an active/passive staging mode. One server is active, a second is in staging mode (running sync logic but not exporting to Entra ID). If the active server fails, an administrator manually promotes the staging server to active. Failover isn't automatic; it requires deliberate administrator action.
 
-## ⚠️ Agent Updates
+## ⚠️ Agent updates
 
 Microsoft releases updates to the sync agents. Entra Connect can be configured for auto-upgrade or manual upgrade. Cloud Sync provisioning agents support auto-upgrade, which is enabled by default.
 
@@ -68,7 +68,7 @@ Keeping agents updated matters: security fixes, bug fixes, and new feature suppo
 ---
 
 💬 **What monitoring do you have in place for your sync agent health, and how quickly does your team get alerted when synchronization fails?** The sync agent is critical infrastructure: when it fails, identity operations fail. But it's often under-monitored compared to other infrastructure. What's the longest synchronization outage your environment has experienced, and what caused it?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

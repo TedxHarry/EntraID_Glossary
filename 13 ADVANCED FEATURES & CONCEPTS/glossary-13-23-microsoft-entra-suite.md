@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#13.23 - Microsoft Entra Suite**
+📚 Part of Entra ID Glossary Series #13.23 - Microsoft Entra Suite
 
 ---
 
@@ -11,7 +11,7 @@
 
 - Microsoft Entra Suite bundles: Entra ID P2, Private Access, Internet Access, ID Governance, Permissions Management, Verified ID
 - Suite pricing is typically more cost-effective than purchasing individual products separately
-- Evaluate which Suite features you'll actually use — don't pay for bundle components you won't deploy
+- Evaluate which Suite features you'll actually use : don't pay for bundle components you won't deploy
 
 
 A security architect was mapping the tools her organization used for identity and access: Entra ID P2 for Conditional Access and Identity Protection, Entra ID Governance for access reviews and entitlement management, Global Secure Access for network-level Zero Trust, Entra Permissions Management for cloud permissions visibility, and Entra Verified ID for identity verification workflows.
@@ -20,7 +20,7 @@ Five separate licensing conversations. Five separate admin surfaces. Capabilitie
 
 Microsoft Entra Suite is the licensing and product bundle that assembles these capabilities into a unified platform, and understanding what's in it matters for organizations making investment decisions about where their identity security program goes next.
 
-## 📦 What the Microsoft Entra Suite Contains
+## 📦 What the microsoft entra suite contains
 
 The Entra Suite is a licensing bundle introduced in 2024 that packages the following products together:
 
@@ -34,7 +34,7 @@ The Entra Suite is a licensing bundle introduced in 2024 that packages the follo
 
 **Microsoft Entra ID Protection (expanded)** ⚠️: The Suite includes expanded Identity Protection capabilities including workload identity risk detection.
 
-## 🔗 How the Suite Changes the Integration Story
+## 🔗 How the suite changes the integration story
 
 Before the Suite, Global Secure Access was licensed separately from Governance, which was licensed separately from Permissions Management. Each product worked independently, and connecting them required manual configuration work. Conditional Access policies from Entra ID P2 applied to Microsoft applications but not necessarily to internet destinations routed through Internet Access.
 
@@ -42,7 +42,7 @@ The Suite is designed so these products share a unified policy engine. Condition
 
 The practical result: an administrator defines a policy once and it enforces consistently across Microsoft 365 applications, private on-premises applications, and internet destinations, using the same Conditional Access framework.
 
-## 🎯 Microsoft Entra Permissions Management
+## 🎯 Microsoft entra permissions management
 
 Permissions Management is the cloud infrastructure entitlement management (CIEM) component of the Entra product family. It provides visibility into permissions across Azure, AWS, and Google Cloud, identifying:
 
@@ -54,7 +54,7 @@ Permissions Management is the cloud infrastructure entitlement management (CIEM)
 
 Permissions Management is available as a standalone product and as part of some Entra Suite configurations. It addresses the workload identity governance problem at the cloud permission layer rather than at the Entra ID service principal layer.
 
-## 📱 Microsoft Entra Verified ID
+## 📱 Microsoft entra verified ID
 
 Verified ID is the decentralized identity component of the Entra family. It issues and verifies digital credentials based on open standards (W3C Verifiable Credentials, DIF standards).
 
@@ -66,7 +66,7 @@ Organizations use Verified ID for:
 
 **B2B access provisioning** 👥: Using Verified ID to verify a partner organization's employee status before provisioning access, rather than relying solely on the partner's invitation through B2B collaboration.
 
-## 🗺️ Where the Entra Product Family Is Heading
+## 🗺️ Where the entra product family is heading
 
 The Entra brand encompasses an expanding set of identity and access management capabilities. Understanding the full scope helps with roadmap conversations: what capabilities exist today, what's in preview, and what requires additional licensing beyond Entra ID P1/P2.
 
@@ -75,7 +75,7 @@ For organizations planning identity investments, the Entra Suite represents Micr
 ---
 
 💬 **Is your organization evaluating the Microsoft Entra Suite as a consolidated licensing option, and which component represents the biggest gap in your current identity security stack?** The Entra product family has expanded significantly beyond the core Entra ID directory service. What identity capabilities are you most actively looking at to extend your current Entra ID deployment?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.24 - Terms of Use**
+📚 Part of Entra ID Glossary Series #7.24 - Terms of Use
 
 ---
 
@@ -20,7 +20,7 @@ They added a Terms of Use to their Conditional Access policy for the records app
 
 The next policy question came with documented, timestamped proof of acceptance from every user.
 
-## 📋 What Terms of Use Is in Conditional Access
+## 📋 What terms of use is in conditional access
 
 Terms of Use is a grant control in Conditional Access that requires users to review and explicitly accept a document before access is granted to a resource. The acceptance is recorded in Entra ID with the user identity, timestamp, and the specific ToU document version they accepted.
 
@@ -28,7 +28,7 @@ The ToU document is a PDF uploaded to Entra ID. It can be any document: acceptab
 
 When a Conditional Access policy with a Terms of Use requirement fires, users see a page displaying the document with an "Accept" and "Decline" button. If they accept, access is granted (assuming other grant controls are satisfied). If they decline, access is denied.
 
-## 🏗️ How Terms of Use Works Technically
+## 🏗️ How terms of use works technically
 
 **Document setup** 📄: In Entra admin center, under Protection > Terms of Use, upload a PDF of your document. Configure the display name, language, and acceptance settings.
 
@@ -38,7 +38,7 @@ When a Conditional Access policy with a Terms of Use requirement fires, users se
 
 **Re-acceptance** 🔄: ToU can be configured to require re-acceptance on a schedule (annually, on document update, etc.). When re-acceptance is triggered, users see the ToU page again on their next sign-in.
 
-## 🎯 Where Terms of Use Is Appropriate
+## 🎯 Where terms of use is appropriate
 
 **Regulated data access** 🏥: Healthcare (HIPAA), financial services, legal work. Users handling regulated data should explicitly acknowledge the data handling requirements and applicable regulations.
 
@@ -50,7 +50,7 @@ When a Conditional Access policy with a Terms of Use requirement fires, users se
 
 **Acceptable use for all employees** 👥: Some organizations require annual re-acceptance of the general acceptable use policy as a Conditional Access condition. Every user must acknowledge the policy annually to maintain access.
 
-## 📊 The Audit Trail Value
+## 📊 The audit trail value
 
 The most underappreciated feature of Conditional Access Terms of Use is the audit trail. Every acceptance is logged in Entra ID:
 
@@ -64,7 +64,7 @@ This data is available through the Entra admin center (under Protection > Terms 
 
 For compliance purposes, this is proof of acceptance that's tied directly to the user's authenticated identity, not a PDF form or checkbox in a training system that could have been completed by anyone.
 
-## ⚙️ Configuration Options
+## ⚙️ Configuration options
 
 **Per-device acceptance** 💻: Users can be required to accept the ToU on each device they use, rather than once per user. Useful for organizations that want explicit acceptance tied to each device access.
 
@@ -74,7 +74,7 @@ For compliance purposes, this is proof of acceptance that's tied directly to the
 
 **Require expanded view** 📜: Optionally require users to scroll through the entire document before the Accept button is available. Reduces rubber-stamping.
 
-## ⚠️ What Terms of Use Doesn't Do
+## ⚠️ What terms of use doesn't do
 
 ToU records that a user accepted a document. It doesn't verify that they read or understood it. A user who clicks Accept without reading has still "accepted" for audit purposes.
 
@@ -83,7 +83,7 @@ ToU also doesn't provide a legal guarantee that the acceptance is binding in all
 ---
 
 💬 **Have you used Terms of Use as a Conditional Access grant control for compliance or audit purposes?** The timestamp-and-identity audit trail it provides is often better evidence of policy acceptance than the traditional "sign here" onboarding document approach. What drove your organization to add ToU to your access policies?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

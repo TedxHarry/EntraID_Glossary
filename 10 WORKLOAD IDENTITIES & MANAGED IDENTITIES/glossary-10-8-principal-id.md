@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🔴 Advanced
 
-📚 **Part of Entra ID Glossary Series: Glossary#10.8 - Principal ID**
+📚 Part of Entra ID Glossary Series #10.8 - Principal ID
 
 ---
 
@@ -11,7 +11,7 @@
 
 - The Principal ID is the Object ID of the service principal created for a managed identity
 - Use Principal ID to assign RBAC roles to the managed identity in Azure resources
-- Don't confuse with Client ID — Client ID is the application ID used in code; Principal ID is for role assignment
+- Don't confuse with Client ID : Client ID is the application ID used in code; Principal ID is for role assignment
 
 
 A developer enabled a managed identity on an App Service and then went to assign it the Key Vault Secrets User role on a Key Vault. In the role assignment dialog, under "Select members," they searched for the App Service name.
@@ -22,7 +22,7 @@ They tried variations of the name. Still nothing. The App Service was there, run
 
 The role assignment UI searches Entra ID users, groups, service principals, and managed identities. The managed identity was created, but you have to know how to find it. The identifier that ties everything together is the Principal ID.
 
-## 🔑 What Principal ID Is
+## 🔑 What principal ID is
 
 The Principal ID is the object ID of the service principal that represents a managed identity in Entra ID. It's a GUID, and it's the identifier used when assigning RBAC roles to a managed identity.
 
@@ -30,11 +30,11 @@ When Azure creates a managed identity (system-assigned or user-assigned), two th
 
 In the Azure resource layer: the managed identity is configured on the Azure resource (or created as a standalone resource for user-assigned). It has a resource ID, a name, and a `clientId` (also called the application ID).
 
-In Entra ID: a service principal is created to represent that managed identity. This service principal has an object ID. That object ID is the Principal ID.
+in Entra ID: a service principal is created to represent that managed identity. This service principal has an object ID. That object ID is the Principal ID.
 
 RBAC role assignments in Azure are made against object IDs of principals in Entra ID. Users have object IDs. Groups have object IDs. Service principals have object IDs. The Principal ID of a managed identity is the service principal's object ID, which is what RBAC uses.
 
-## 📋 Principal ID vs Client ID
+## 📋 Principal ID vs client ID
 
 Managed identities have two identifiers that serve different purposes and are commonly confused:
 
@@ -44,7 +44,7 @@ Managed identities have two identifiers that serve different purposes and are co
 
 Same managed identity, two different GUIDs, two different use cases. Using the Client ID where the Principal ID is expected (or vice versa) is a common source of confusion when first working with managed identities.
 
-## 🔍 Where to Find the Principal ID
+## 🔍 Where to find the principal ID
 
 **For system-assigned managed identities** 💻: In the Azure portal, go to the resource (VM, App Service, Function App, etc.), then Identity in the left menu. The system-assigned tab shows the Object ID, which is the Principal ID. This is only visible after managed identity is enabled.
 
@@ -61,7 +61,7 @@ az webapp identity show --name my-app --resource-group my-rg --query principalId
 
 The CLI output explicitly calls it `principalId`. The portal calls it Object ID. They're the same value.
 
-## ⚙️ Using Principal ID in Role Assignments
+## ⚙️ Using principal ID in role assignments
 
 Once you have the Principal ID, assigning a role looks like this in the portal: navigate to the target resource (Key Vault, Storage account, etc.), go to Access Control (IAM), then Add role assignment. Choose the role, then in the Members tab, select "Managed identity" as the member type. Search by the managed identity name, or enter the Principal ID directly.
 
@@ -76,7 +76,7 @@ az role assignment create \
 
 The `--assignee-principal-type ServicePrincipal` flag is important. Without it, the CLI may try to look up the principal type and fail for managed identities, especially in automation contexts without full Entra ID read permissions.
 
-## ⚠️ System-Assigned Identity Lifecycle Implication
+## ⚠️ System-Assigned identity lifecycle implication
 
 For system-assigned managed identities, the Principal ID changes when the resource is deleted and recreated. A new resource, even with the same name, gets a new system-assigned managed identity with a new Principal ID. All role assignments referencing the old Principal ID are orphaned and must be recreated.
 
@@ -85,7 +85,7 @@ This is a real operational issue for teams that regularly rebuild resources (tes
 ---
 
 💬 **What's your team's approach to tracking managed identity Principal IDs and their associated role assignments?** The role assignment audit trail is straightforward in the Azure portal, but at scale, knowing which managed identities have which permissions across which resources requires deliberate tracking. Do you use Terraform state, ARM templates, or another mechanism to maintain that mapping?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

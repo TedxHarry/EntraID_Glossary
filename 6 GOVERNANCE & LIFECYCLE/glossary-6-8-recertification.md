@@ -3,13 +3,13 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#6.8 - Recertification**
+📚 Part of Entra ID Glossary Series #6.8 - Recertification
 
 ---
 
 ## 🎯 TL;DR
 
-- Recertification is a recurring access review — typically quarterly or annually for sensitive resources
+- Recertification is a recurring access review : typically quarterly or annually for sensitive resources
 - Users who don't recertify within the deadline lose access automatically
 - PIM requires recertification for privileged roles; access packages support scheduled review campaigns
 
@@ -20,7 +20,7 @@ By July, three of those people had changed roles. One had moved to a completely 
 
 Without a July recertification, the access would continue indefinitely. The January certification, accurate when it was done, had become stale. Recertification is the mechanism that prevents certifications from becoming out of date.
 
-## 🔄 What Recertification Is
+## 🔄 What recertification is
 
 Recertification is the periodic re-execution of an access certification for access that was previously certified. It's not a one-time event but a recurring checkpoint that verifies access remains appropriate over time.
 
@@ -35,7 +35,7 @@ In Microsoft Entra ID Governance, recertification is built into the access revie
 
 Each recurrence launches a new review instance. Reviewers receive notifications, evaluate current access, and certify or deny. The cycle repeats.
 
-## 💡 ⏱️ Why Recurrence Frequency Matters
+## 💡 ⏱️ why recurrence frequency matters
 
 Access drift is real and happens continuously. People change roles. Projects end. Contractors finish their engagements. Reorganizations shift reporting structures. Each change creates an opportunity for access to become misaligned with actual need.
 
@@ -43,7 +43,7 @@ A quarterly recertification of privileged admin roles means no admin has excess 
 
 For compliance frameworks (SOX, ISO 27001, SOC 2), recertification frequency requirements are often explicitly defined. SOX-relevant access is commonly required to be certified quarterly. Meeting those requirements means configuring appropriate recurrence intervals and retaining the evidence.
 
-## 📋 Recertification vs Initial Certification
+## 📋 Recertification vs initial certification
 
 Initial certification and recertification look identical from a reviewer's perspective. Both involve evaluating a list of users and approving or denying their access. The difference is context:
 
@@ -53,7 +53,7 @@ Initial certification and recertification look identical from a reviewer's persp
 
 Reviewers doing recertification well ask a different question than initial certification. Not just "should these people have access?" but "since last time, has anything changed that should affect this list?"
 
-## 🔧 Continuous vs Periodic Recertification
+## 🔧 Continuous vs periodic recertification
 
 Periodic recertification (quarterly, annually) catches access drift on a schedule. The alternative is event-driven recertification: triggering a review when a specific event occurs rather than on a calendar.
 
@@ -65,7 +65,7 @@ Event-driven triggers in Entra ID Governance:
 
 The most robust approach combines both: periodic recertification as the baseline, with event-driven reviews for significant identity changes that shouldn't wait for the next scheduled cycle.
 
-## ⚠️ The Recertification Fatigue Problem
+## ⚠️ The recertification fatigue problem
 
 Over-recertifying is as much a risk as under-certifying. If reviewers receive access reviews every 30 days for low-sensitivity resources, they will click through them without engaging. Review quality degrades. Rubber-stamp certification defeats the entire purpose.
 
@@ -74,7 +74,7 @@ Calibrate frequency to sensitivity and risk. Privileged access: frequent. Genera
 ---
 
 💬 **What recertification frequency does your organization use for privileged admin roles?** The gap between "we certified this 11 months ago" and "we recertify this quarterly" is the difference between access governance as an annual checkbox and access governance as an operational control. What drove your current schedule?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

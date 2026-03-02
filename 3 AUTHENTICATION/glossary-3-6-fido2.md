@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#3.6 - FIDO2**
+📚 Part of Entra ID Glossary Series #3.6 - FIDO2
 
 ---
 
@@ -11,7 +11,7 @@
 
 - FIDO2 security keys are hardware authenticators using public-key cryptography, making them phishing-proof
 - Registration binds the key to a specific origin (login.microsoftonline.com), so a phishing site can't capture it
-- FIDO2 is the strongest authentication method available — recommended for privileged accounts
+- FIDO2 is the strongest authentication method available : recommended for privileged accounts
 
 
 I handed a YubiKey to a sceptical security engineer and told her it would make her admin account essentially immune to phishing. She turned it over in her hand, looked at the USB plug on one end, and said: "This little thing?"
@@ -20,7 +20,7 @@ Yes. This little thing.
 
 FIDO2 is the reason why. Understanding what FIDO2 actually is, and specifically why it's phishing-resistant (not just phishing-harder), is what makes it click.
 
-## 📖 What FIDO2 Is
+## 📖 What FIDO2 is
 
 FIDO2 is not a product. It's a set of open standards developed by the FIDO Alliance, a consortium of technology companies including Microsoft, Google, Apple, and hardware manufacturers. The standard covers how devices and browsers perform passwordless, phishing-resistant authentication.
 
@@ -32,7 +32,7 @@ It has two components:
 
 When someone says "FIDO2 authentication," they mean authentication using this combined standard, where the authenticator generates a cryptographic signature that proves the user's identity without transmitting a secret that can be stolen.
 
-## 🔐 Why FIDO2 Is Actually Phishing-Resistant (Not Just Harder to Phish)
+## 🔐 Why FIDO2 is actually phishing-resistant (not just harder to phish)
 
 This is the property that matters most and gets explained poorly most often.
 
@@ -51,7 +51,7 @@ So if an attacker creates `login.micros0ft.com` to phish your credentials, and s
 
 The attacker gets nothing. Not "less than they wanted." Nothing. The key won't authenticate to a site it wasn't registered with, period. This is why phishing-resistant is the accurate term, not phishing-resistant.
 
-## 🔌 Hardware Keys vs Platform Authenticators
+## 🔌 Hardware keys vs platform authenticators
 
 FIDO2 authenticators come in two forms:
 
@@ -67,7 +67,7 @@ Advantages: nothing extra to carry, frictionless experience, already provisioned
 
 Disadvantages: credentials are tied to that specific device. If the device is replaced, the user must re-enroll. Not appropriate as a sole authentication method for admin accounts where device availability might vary.
 
-## 🏢 Deploying FIDO2 Keys in Entra ID
+## 🏢 Deploying FIDO2 keys in Entra ID
 
 Enabling FIDO2 in Entra ID takes two steps:
 
@@ -78,7 +78,7 @@ Users then register their keys at `mysignins.microsoft.com` under Security Info.
 
 💡 For admin accounts: consider requiring two FIDO2 keys per admin (registered as backup). A single key lost is a locked-out admin with no recovery path if no backup method is registered.
 
-## ✅ Where FIDO2 Fits in Your Authentication Strategy
+## ✅ Where FIDO2 fits in your authentication strategy
 
 FIDO2 security keys are the right choice for:
 
@@ -90,7 +90,7 @@ FIDO2 security keys are the right choice for:
 ---
 
 💬 **Have you deployed FIDO2 security keys in your organization?** Which hardware did you choose, and what was the user experience feedback? The enrollment process is surprisingly straightforward once people have the key in hand.
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

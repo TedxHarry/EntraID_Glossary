@@ -3,7 +3,7 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#3.3 - Authentication Method**
+📚 Part of Entra ID Glossary Series #3.3 - Authentication Method
 
 ---
 
@@ -20,7 +20,7 @@ Then they started calling users on the phone. "Hi, I'm from IT support. We're do
 
 The organization had authentication. They had MFA. What they didn't have was the *right* authentication method for the threat they faced.
 
-## 📊 The Spectrum of Authentication Methods
+## 📊 The spectrum of authentication methods
 
 Authentication methods in Entra ID range from highly phishable to completely phishing-resistant. Where a method falls on that spectrum matters more than whether you have MFA at all.
 
@@ -48,13 +48,13 @@ Hardware keys (YubiKey, Feitian, etc.) that are cryptographically bound to the s
 **✅ Windows Hello for Business**
 Biometric or PIN authentication backed by device-bound cryptographic keys. Phishing-resistant. The credential never leaves the device.
 
-## 🔧 Authentication Methods Policy in Entra ID
+## 🔧 Authentication methods policy in Entra ID
 
 Administrators control which authentication methods are available to users through the Authentication Methods Policy in Entra ID. This is where you enable or disable Microsoft Authenticator, FIDO2, SMS, voice calls, certificate-based auth, and others.
 
 ⚠️ One important distinction: there are two places where authentication methods get configured and they overlap in confusing ways. The **Authentication Methods Policy** (under Protection > Authentication Methods) is the modern, converged policy. The older **MFA settings page** is a legacy location that's been gradually deprecated. Microsoft is migrating everything to the Authentication Methods Policy. If you're seeing inconsistent behavior, check whether settings conflict between the two locations.
 
-## 🎯 Authentication Strength in Conditional Access
+## 🎯 Authentication strength in conditional access
 
 Starting in late 2022, Conditional Access gained a "Require authentication strength" grant control. Instead of just saying "require MFA," you can specify *which* MFA methods satisfy the requirement.
 
@@ -68,7 +68,7 @@ You can also define custom authentication strengths for specific scenarios.
 
 This matters enormously. "Require MFA" for administrators that allows SMS as a valid method means an admin account can be compromised via SIM swap or a phone call. Scoping admin Conditional Access policies to require phishing-resistant MFA closes that gap.
 
-## 💡 The Practical Takeaway
+## 💡 The practical takeaway
 
 Requiring MFA is the right baseline. But don't stop there. Look at *which* methods satisfy your MFA requirements for high-value scenarios.
 
@@ -80,7 +80,7 @@ The attacker who called twelve users and got them to approve push notifications 
 ---
 
 💬 **What authentication methods are you running in your environment?** Are you still on SMS for some user populations? What's been the biggest barrier to moving toward phishing-resistant methods?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 

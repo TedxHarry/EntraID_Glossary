@@ -3,15 +3,15 @@
 
 > **Difficulty:** 🟡 Intermediate
 
-📚 **Part of Entra ID Glossary Series: Glossary#7.10 - Zero Trust**
+📚 Part of Entra ID Glossary Series #7.10 - Zero Trust
 
 ---
 
 ## 🎯 TL;DR
 
-- Zero Trust operates on 'never trust, always verify' — no implicit trust based on network location
+- Zero Trust operates on 'never trust, always verify' : no implicit trust based on network location
 - Three principles: Verify explicitly (always authenticate and authorize), Use least privilege, Assume breach
-- Conditional Access is the technical implementation of Zero Trust for identity — every access request is verified
+- Conditional Access is the technical implementation of Zero Trust for identity : every access request is verified
 
 
 The breach happened inside the perimeter. An attacker had gotten a foothold through a phishing email, established persistence on one endpoint, and spent three months moving laterally through a network that treated all internal traffic as trusted.
@@ -20,7 +20,7 @@ When the forensics team reconstructed the timeline, they found the attacker had 
 
 Zero Trust is the answer to exactly this scenario. Not a product. Not a feature. A different assumption about what "secure" means.
 
-## 🏗️ The Principle
+## 🏗️ The principle
 
 Zero Trust starts from three core principles, stated plainly:
 
@@ -32,7 +32,7 @@ Zero Trust starts from three core principles, stated plainly:
 
 The perimeter model's failure was the first principle. It authenticated users at the perimeter and then trusted them implicitly for everything inside. Zero Trust removes that implicit trust entirely.
 
-## 🌐 Why the Perimeter Model Broke Down
+## 🌐 Why the perimeter model broke down
 
 The perimeter model made sense when:
 - All users worked in the office
@@ -48,7 +48,7 @@ None of those things are true anymore:
 
 When the perimeter dissolves, the assumption that "inside the network = safe" becomes dangerous. The attacker doesn't need to breach the firewall. They need to compromise one endpoint, steal one set of credentials, or get one user to click one phishing link. Then they're "inside."
 
-## 🔒 Identity as the New Control Plane
+## 🔒 Identity as the new control plane
 
 In a Zero Trust architecture, identity replaces the network as the primary trust boundary. Instead of asking "is this traffic coming from inside our network?", the system asks "is this identity verified, authorized, and accessing resources in a manner consistent with policy?"
 
@@ -60,7 +60,7 @@ This shifts where security controls live:
 
 **Least privilege is enforced, not assumed** 🛡️: Users have access to the specific resources their role requires, granted for the duration they need it, reviewed and recertified regularly.
 
-## 🔧 How Entra ID Implements Zero Trust
+## 🔧 How entra ID implements zero trust
 
 Entra ID is the identity plane of a Zero Trust architecture. Its components map directly to Zero Trust principles:
 
@@ -74,7 +74,7 @@ Entra ID is the identity plane of a Zero Trust architecture. Its components map 
 
 **Managed Identities and workload identities** remove human credentials from service-to-service authentication, eliminating a credential theft vector entirely.
 
-## ⚠️ What Zero Trust Isn't
+## ⚠️ What zero trust isn't
 
 Zero Trust is not:
 - A product you can buy and install
@@ -90,7 +90,7 @@ The attacker in the opening scenario succeeded because the organization had impl
 ---
 
 💬 **Where is your organization on the Zero Trust maturity journey?** Most organizations have MFA deployed. Fewer have device compliance enforced. Even fewer have risk-based access and JIT privilege. What's the next control you're working to implement, and what's the blocker?
-> ✍️ *Written by **TedxHarry***
+✍️ TedxHarry
 
 <!-- nav -->
 
