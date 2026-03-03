@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Intune is Microsoft's cloud-based MDM and MAM service for managing devices and apps
-- It sets compliance policies (which Conditional Access checks) and configuration profiles (settings pushed to devices)
-- Intune integrates with Entra ID : device compliance status flows from Intune into CA policy evaluation
-
 
 An IT manager asked me if Intune was "basically just a thing you need to make Conditional Access device compliance work."
 

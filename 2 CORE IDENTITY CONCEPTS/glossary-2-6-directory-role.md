@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Directory roles (like Global Administrator, User Administrator) grant permissions to manage Entra ID itself
-- Use least-privilege: prefer User Administrator over Global Administrator for day-to-day user management
-- Privileged Identity Management (PIM) lets you make roles eligible rather than permanently assigned
-
 
 The first security audit I ran on an inherited Entra ID tenant turned up 23 Global Administrators.
 

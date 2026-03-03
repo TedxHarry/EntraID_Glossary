@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Administrative Units (AUs) scope admin permissions to a subset of users, groups, or devices
-- Example: Help Desk staff can only reset passwords for users in their department's AU
-- AUs enable decentralized administration without granting tenant-wide permissions to local admins
-
 
 A university had 47 colleges within a single Entra ID tenant. Each college had its own IT support staff. The IT staff at the School of Medicine needed to manage users in their college: reset passwords, update attributes, manage group memberships. But they shouldn't be able to touch users in the School of Engineering.
 

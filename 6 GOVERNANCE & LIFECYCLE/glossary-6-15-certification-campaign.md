@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- A certification campaign is a time-bounded initiative to review and certify access across many users or resources
-- Campaigns are created by admins and assigned to reviewers with a deadline
-- Results are auditable : who reviewed, what decision was made, when : for compliance reporting
-
 
 A compliance team needed to certify that all 1,800 users with access to the company's financial applications had appropriate business justification for that access. Quarterly. Starting this quarter.
 

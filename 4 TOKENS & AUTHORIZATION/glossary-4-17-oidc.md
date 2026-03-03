@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- OpenID Connect (OIDC) is the identity layer built on top of OAuth 2.0 that adds user authentication
-- It introduces the ID token (JWT with user identity claims) alongside the access token
-- When you 'Sign in with Microsoft', you're using OIDC : OAuth alone can't tell you who the user is
-
 
 I was explaining OAuth 2.0 to a developer and they stopped me halfway through.
 

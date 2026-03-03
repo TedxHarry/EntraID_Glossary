@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Microsoft Entra Suite bundles: Entra ID P2, Private Access, Internet Access, ID Governance, Permissions Management, Verified ID
-- Suite pricing is typically more cost-effective than purchasing individual products separately
-- Evaluate which Suite features you'll actually use : don't pay for bundle components you won't deploy
-
 
 A security architect was mapping the tools her organization used for identity and access: Entra ID P2 for Conditional Access and Identity Protection, Entra ID Governance for access reviews and entitlement management, Global Secure Access for network-level Zero Trust, Entra Permissions Management for cloud permissions visibility, and Entra Verified ID for identity verification workflows.
 

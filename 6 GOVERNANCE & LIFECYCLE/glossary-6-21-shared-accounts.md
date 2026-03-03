@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Shared accounts are used by multiple people (kiosks, shared terminals) and violate non-repudiation requirements
-- Avoid them when possible; use Shared Device Mode or device-based sign-in instead
-- If required, implement strict access controls, session monitoring, and regular password rotation
-
 
 A manufacturing company had a shared admin account for their SCADA system. Username: `scada_admin`. Password: known to 14 people in three shifts. When a configuration change caused a production line to stop, the investigation needed to answer: who made the change?
 

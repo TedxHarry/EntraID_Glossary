@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- ABAC (Attribute-Based Access Control) grants access based on attributes of the user, resource, and environment
-- Azure ABAC uses condition expressions on role assignments: e.g., only access blobs with tag `Project=Alpha`
-- More granular than RBAC : reduces the number of role assignments needed for fine-grained control
-
 
 A financial services company had a data governance problem. Analysts in the Research department needed access to financial models. But not all financial models: only the ones tagged as belonging to their division, and only when those models were classified as internal or lower. Confidential-rated documents required a separate approval.
 

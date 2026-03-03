@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Managed identities are Azure-managed credentials for Azure resources : no secrets to store or rotate
-- System-assigned: tied to one resource's lifecycle. User-assigned: shared across multiple resources
-- Use managed identities for any Azure service that needs to call other Azure APIs : it's the secure default
-
 
 The connection string in the app config file had the Key Vault secret embedded in plain text. Not encrypted. Not in a secrets manager. Just sitting there, checked into the repository, visible to anyone with read access to the codebase.
 

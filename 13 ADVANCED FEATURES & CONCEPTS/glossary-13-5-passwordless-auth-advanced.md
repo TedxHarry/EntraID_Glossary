@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Passwordless authentication (advanced) requires planning: which users, which methods, phased rollout
-- Combine: WHfB for corporate devices, FIDO2 keys for shared/privileged workstations, Authenticator for mobile
-- Verify SSPR is configured with strong methods before deploying passwordless : users need a recovery path
-
 
 The demo always looks smooth. Admin enables passwordless in the policy. User opens the Authenticator app. Taps the number match. Signs in. No password. Applause.
 

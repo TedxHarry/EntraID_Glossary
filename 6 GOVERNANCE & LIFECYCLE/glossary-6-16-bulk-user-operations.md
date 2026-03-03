@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Bulk operations create, update, or delete multiple users at once via CSV upload or PowerShell/Graph API
-- CSV bulk upload supports up to 40,000 users; PowerShell/Graph supports larger batches
-- Always test bulk operations on a small group first : mistakes affect many users simultaneously
-
 
 A company acquired a smaller firm. 340 new employees needed Entra ID accounts, licenses, and initial group memberships created before the integration date. Doing this one at a time through the Entra admin portal would have taken two days of solid clicking.
 

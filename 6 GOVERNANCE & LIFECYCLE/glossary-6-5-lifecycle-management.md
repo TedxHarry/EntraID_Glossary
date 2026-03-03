@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Lifecycle Management automates the full identity lifecycle: joiners, movers, and leavers
-- Lifecycle Workflows (Entra ID P2) trigger tasks based on attribute values: start date, department, termination date
-- Integrates with HR systems (Workday, SAP SuccessFactors) as the authoritative source of identity data
-
 
 A CISO told me her organization spent roughly 3 hours of IT staff time per new hire on access setup, and another 2 hours per departure on access removal. With 400 hires and departures per year, that was 2,000 hours of manual identity work annually.
 

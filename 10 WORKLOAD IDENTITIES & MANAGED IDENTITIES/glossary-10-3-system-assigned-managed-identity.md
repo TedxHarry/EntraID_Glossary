@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- System-assigned managed identity is created with and deleted with the Azure resource it's attached to
-- One system-assigned identity per resource : can't be shared or reused across resources
-- Best for: VMs, App Services, Functions that need their own distinct identity
-
 
 Enabling managed identity on an Azure VM takes about ten seconds in the portal. A toggle. You enable it, Azure creates an identity in Entra ID with the same name as the VM, and that identity exists for exactly as long as the VM exists.
 

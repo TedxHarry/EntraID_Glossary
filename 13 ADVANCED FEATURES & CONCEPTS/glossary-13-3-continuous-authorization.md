@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Continuous Authorization evaluates access decisions continuously throughout a session, not just at sign-in
-- CAE is the Microsoft implementation : resource servers receive real-time revocation events from Entra ID
-- Without continuous authorization, a signed-in session persists even after account disable or policy change
-
 
 The traditional authorization model works like a photograph. The authentication happens at sign-in. Access is evaluated at that moment. A token is issued capturing that evaluation. For the next hour, the application trusts that photograph even though the world has moved on.
 

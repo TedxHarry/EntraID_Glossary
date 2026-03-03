@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Authentication methods are the mechanisms users prove identity: password, TOTP, phone call, FIDO2 key, etc.
-- The Authentication Methods Policy controls which methods are available and for which users in your tenant
-- Stronger methods (FIDO2, WHfB) are phishing-resistant; TOTP and SMS are not
-
 
 In 2022, a mid-sized organization I worked with had a credential breach. An attacker bought a list of username and password combinations from a dark web breach dump, ran them against the company's login page, and found 47 accounts where the password matched. They'd implemented MFA, though. The attacker was stopped... for about four hours.
 

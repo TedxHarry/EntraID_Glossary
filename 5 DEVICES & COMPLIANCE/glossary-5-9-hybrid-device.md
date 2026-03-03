@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Hybrid Entra-joined devices are domain-joined to on-premises AD AND registered in Entra ID
-- They appear in both on-prem AD (computer objects) and Entra ID (device objects)
-- Required for Conditional Access 'Require domain-joined device' : the on-prem and cloud worlds must sync
-
 
 An organization with 8,000 Windows desktops asked me how long their cloud migration would take. They wanted all devices eventually cloud-managed, no on-premises dependencies. I told them the device migration alone would be 18 to 24 months, minimum.
 

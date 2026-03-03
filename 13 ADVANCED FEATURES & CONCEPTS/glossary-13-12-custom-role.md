@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Custom roles allow creating Entra ID admin roles with exactly the permissions needed : no more, no less
-- Custom roles reduce blast radius compared to built-in roles : an admin can only do what the custom role allows
-- Custom role creation requires Entra ID P1; management through PIM requires P2
-
 
 A helpdesk team needed to reset passwords for users. The built-in Helpdesk Administrator role did that, but it also let helpdesk staff reset passwords for other administrators, which the CISO was uncomfortable with.
 

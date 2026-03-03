@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Device enrollment is the Intune MDM step that enables remote management, compliance checking, and policy push
-- Enrolled devices receive compliance policies, configuration profiles, and app deployments from Intune
-- Enrollment ≠ registration: registration is identity; enrollment is management
-
 
 After a security incident where a former employee's personal phone still had corporate email accessible three weeks after offboarding, the security team wanted a clear answer: "How do we make sure this never happens again?"
 

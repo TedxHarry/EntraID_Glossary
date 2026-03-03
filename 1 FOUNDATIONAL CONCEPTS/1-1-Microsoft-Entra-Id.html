@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Microsoft Entra ID - Glossary #1.1 (Beginner)</title>
+
+  <!-- Optional fonts (remove for fully-offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #06070b;
+      --bg2:#070914;
+      --surface: rgba(255,255,255,.04);
+      --surface2: rgba(255,255,255,.06);
+      --border: rgba(255,255,255,.10);
+
+      /* semantic colors */
+      --id: #38bdf8;       /* Identity / sign-in */
+      --policy: #c084fc;   /* Policy / CA logic */
+      --ok: #34d399;       /* Granted / verified */
+      --block:#fb7185;     /* Blocked / risk */
+      --warn:#fbbf24;      /* Challenge / needs action */
+
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+      --dim: rgba(255,255,255,.56);
+
+      --shadow: 0 18px 60px rgba(0,0,0,.55);
+      --radius-xl: 26px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+
+      --maxw: 980px;
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; }
+    body{
+      margin:0;
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 10% 0%, rgba(56,189,248,.12), transparent 55%),
+        radial-gradient(900px 600px at 90% 20%, rgba(192,132,252,.12), transparent 55%),
+        radial-gradient(800px 500px at 50% 110%, rgba(52,211,153,.10), transparent 55%),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      line-height:1.65;
+      overflow-x:hidden;
+    }
+
+    /* subtle grain */
+    body:before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E");
+      opacity:.10;
+      mix-blend-mode:overlay;
+    }
+
+    /* top bar */
+    .topbar{
+      position:fixed; top:0; left:0; right:0;
+      z-index:999;
+      backdrop-filter: blur(14px);
+      background: rgba(0,0,0,.35);
+      border-bottom: 1px solid var(--border);
+    }
+    .progress{
+      height: 3px;
+      width:100%;
+      background: rgba(255,255,255,.08);
+      position:relative;
+    }
+    .progress > i{
+      display:block;
+      height:100%;
+      width:0%;
+      background: linear-gradient(90deg, var(--id), var(--policy), var(--ok));
+      box-shadow: 0 0 24px rgba(56,189,248,.45);
+    }
+    .nav{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+      padding: 10px 16px;
+      max-width: var(--maxw);
+      margin:0 auto;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      min-width: 260px;
+    }
+    .badge{
+      padding:6px 10px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      border-radius: 999px;
+      font-weight:900;
+      letter-spacing:.10em;
+      font-size:.72rem;
+      color: var(--id);
+      white-space:nowrap;
+    }
+    .chapter{
+      font-size:.9rem;
+      color: var(--muted);
+      overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+      max-width: 360px;
+    }
+    .nav a{
+      color: var(--muted);
+      text-decoration:none;
+      font-weight:800;
+      font-size:.86rem;
+      padding:8px 10px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: .2s ease;
+      white-space:nowrap;
+    }
+    .nav a:hover{
+      color: var(--text);
+      border-color: rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+    }
+    .nav a.active{
+      color: var(--text);
+      background: rgba(56,189,248,.10);
+      border-color: rgba(56,189,248,.22);
+    }
+    .nav-right{ display:flex; gap:8px; align-items:center; }
+    .mini{
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+      border-radius: 999px;
+      padding:8px 10px;
+      font-weight:900;
+      cursor:pointer;
+      transition:.2s ease;
+    }
+    .mini:hover{ transform: translateY(-1px); background: rgba(255,255,255,.08); }
+    .mini:active{ transform: translateY(0px) scale(.98); }
+
+    /* layout */
+    .wrap{
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 96px 18px 80px;
+    }
+
+    header.hero{
+      padding: 34px 26px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      background:
+        radial-gradient(900px 500px at 30% -10%, rgba(56,189,248,.14), transparent 55%),
+        radial-gradient(900px 500px at 80% 10%, rgba(192,132,252,.14), transparent 55%),
+        rgba(255,255,255,.03);
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+
+    header.hero:after{
+      content:"";
+      position:absolute; inset:-2px;
+      background:
+        radial-gradient(600px 200px at 20% 0%, rgba(56,189,248,.08), transparent 65%),
+        radial-gradient(600px 200px at 80% 0%, rgba(192,132,252,.08), transparent 65%);
+      pointer-events:none;
+    }
+
+    h1{
+      margin: 6px 0 6px;
+      font-family: "Space Grotesk", Inter, system-ui, sans-serif;
+      letter-spacing: -.02em;
+      font-size: clamp(2.1rem, 3.2vw, 3.2rem);
+      line-height:1.15;
+    }
+    .subtitle{
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 76ch;
+    }
+
+    section{
+      margin-top: 26px;
+      padding: 22px 22px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      box-shadow: 0 12px 40px rgba(0,0,0,.35);
+    }
+    section > h2{
+      margin:0 0 10px;
+      font-size: 1.35rem;
+      letter-spacing: -.01em;
+    }
+    .muted{ color: var(--muted); }
+    .dim{ color: var(--dim); }
+
+    .story{
+      border-left: 4px solid rgba(192,132,252,.55);
+      background: rgba(192,132,252,.08);
+      padding: 18px 18px;
+      border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+      color: rgba(255,255,255,.88);
+    }
+
+    /* TLDR cards */
+    .grid3{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 14px;
+      margin-top: 14px;
+    }
+    .tcard{
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      padding: 14px;
+      position:relative;
+      overflow:hidden;
+      transition:.2s ease;
+    }
+    .tcard:hover{ transform: translateY(-2px); background: rgba(255,255,255,.05); }
+    .tcard b{ display:block; }
+    .tcard small{ color: var(--muted); display:block; margin-top:6px; }
+    .spark{
+      position:absolute; inset:-60px -60px auto auto;
+      width: 180px; height: 180px;
+      background: radial-gradient(circle at 30% 30%, rgba(56,189,248,.18), transparent 60%);
+      filter: blur(0px);
+      transform: rotate(18deg);
+      pointer-events:none;
+      animation: drift 6s ease-in-out infinite;
+    }
+    @keyframes drift{
+      0%,100%{ transform: translate(0,0) rotate(18deg); opacity:.85; }
+      50%{ transform: translate(-18px,14px) rotate(8deg); opacity:1; }
+    }
+
+    /* chips + tooltip */
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 2px 10px;
+      border-radius: 999px;
+      border: 1px dashed rgba(255,255,255,.20);
+      background: rgba(255,255,255,.03);
+      color: var(--text);
+      font-weight: 900;
+      cursor: help;
+      white-space:nowrap;
+      position:relative;
+      transition: .18s ease;
+    }
+    .chip:hover{
+      transform: translateY(-1px);
+      border-color: rgba(56,189,248,.35);
+      background: rgba(56,189,248,.06);
+    }
+    .chip i{ font-style:normal; font-weight:900; color: var(--id); }
+
+    .tip{
+      position:fixed;
+      z-index: 1000;
+      min-width: 220px;
+      max-width: 420px;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.78);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 20px 70px rgba(0,0,0,.7);
+      opacity:0;
+      pointer-events:none;
+      transition: .14s ease;
+    }
+    .tip.show{ opacity:1; }
+    .tip .t{ font-weight: 1000; margin-bottom: 6px; }
+    .tip .d{ color: var(--muted); font-size: .92rem; }
+    .tip .ex{
+      margin-top:8px;
+      font-size:.88rem;
+      color: rgba(255,255,255,.80);
+      border-top: 1px solid rgba(255,255,255,.10);
+      padding-top:8px;
+    }
+
+    /* flow */
+    .flow-card{
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      padding: 18px;
+      overflow:hidden;
+      position:relative;
+    }
+    .flow-grid{
+      display:grid;
+      grid-template-columns: 1.1fr .8fr 1.1fr;
+      gap: 16px;
+      align-items:center;
+    }
+    .pillbox{ display:flex; flex-wrap:wrap; gap:10px; }
+    .pill{
+      padding: 10px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-weight: 900;
+      font-size: .88rem;
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      transition: .2s ease;
+    }
+    .pill b{ color: var(--text); }
+    .core{
+      border-radius: 999px;
+      border: 1px solid rgba(192,132,252,.35);
+      background: radial-gradient(260px 120px at 50% 30%, rgba(192,132,252,.22), transparent 55%),
+                  rgba(255,255,255,.03);
+      text-align:center;
+      padding: 18px 14px;
+      font-weight: 1000;
+      letter-spacing:.18em;
+      text-transform: uppercase;
+      box-shadow: 0 0 34px rgba(192,132,252,.18);
+      position:relative;
+    }
+    .core:after{
+      content:"";
+      position:absolute; inset:-2px;
+      border-radius: 999px;
+      border: 1px solid rgba(192,132,252,.18);
+      pointer-events:none;
+      animation: corePulse 2.8s ease-in-out infinite;
+    }
+    @keyframes corePulse{ 0%,100%{ opacity:.55; } 50%{ opacity:1; } }
+
+    .outcome{
+      display:flex; gap: 12px;
+      align-items:center;
+      justify-content:flex-start;
+      padding: 14px 14px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(52,211,153,.22);
+      background: rgba(52,211,153,.06);
+      overflow:hidden;
+    }
+    .outcome .shield{
+      width: 42px; height: 42px;
+      border-radius: 14px;
+      display:grid; place-items:center;
+      background: rgba(0,0,0,.35);
+      border: 1px solid rgba(255,255,255,.10);
+      font-size: 1.3rem;
+      animation: floaty 3s ease-in-out infinite;
+    }
+    @keyframes floaty{ 0%,100%{ transform: translateY(0px); } 50%{ transform: translateY(-4px); } }
+    .outcome b{ display:block; }
+    .outcome span{ color: var(--muted); font-size:.92rem; }
+
+    .flow-svg{ width:100%; height: 96px; display:block; margin: 6px 0 0; }
+    .flow-path{
+      stroke: rgba(56,189,248,.45);
+      stroke-width: 3;
+      fill: none;
+      stroke-linecap: round;
+      stroke-dasharray: 10 12;
+      animation: dash 1.2s linear infinite;
+    }
+    @keyframes dash{ to{ stroke-dashoffset: -22; } }
+    .dot{
+      fill: rgba(56,189,248,.95);
+      filter: drop-shadow(0 0 10px rgba(56,189,248,.35));
+      animation: travel 2.1s ease-in-out infinite;
+    }
+    .dot.p{
+      fill: rgba(192,132,252,.95);
+      filter: drop-shadow(0 0 10px rgba(192,132,252,.28));
+      animation-delay: .25s;
+    }
+    @keyframes travel{
+      0%{ transform: translateX(0px); opacity:.25; }
+      15%{ opacity:1; }
+      60%{ opacity:1; }
+      100%{ transform: translateX(260px); opacity:.15; }
+    }
+
+    /* callout */
+    .callout{
+      margin-top:12px;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(251,191,36,.22);
+      background: rgba(251,191,36,.07);
+      color: rgba(255,255,255,.90);
+      font-size:.95rem;
+    }
+
+    /* mini lab */
+    .lab{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 16px;
+      align-items:stretch;
+    }
+    .panel{
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      padding: 16px;
+    }
+    .panel h3{ margin:0 0 8px; font-size:1.05rem; }
+    .toggles{ display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+    .btn{
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.03);
+      color: var(--muted);
+      font-weight: 1000;
+      cursor:pointer;
+      transition:.18s ease;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.06); color: var(--text); }
+    .btn.on{
+      color: var(--text);
+      border-color: rgba(56,189,248,.26);
+      background: rgba(56,189,248,.12);
+    }
+    .sliderRow{
+      margin-top: 10px;
+      display:flex;
+      align-items:center;
+      gap: 10px;
+      color: var(--muted);
+      font-weight:900;
+      flex-wrap:wrap;
+    }
+    input[type="range"]{ width: 240px; }
+    .console{
+      background: rgba(0,0,0,.55);
+      border: 1px dashed rgba(255,255,255,.18);
+      border-radius: var(--radius-lg);
+      padding: 12px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: rgba(255,255,255,.86);
+      line-height:1.5;
+    }
+    .status{
+      font-weight: 1000;
+      letter-spacing:.02em;
+      margin-bottom:10px;
+    }
+    .log{ white-space: pre-wrap; color: rgba(255,255,255,.78); font-size:.92rem; }
+
+    /* quiz */
+    .quiz{
+      border: 1px solid rgba(56,189,248,.22);
+      background: radial-gradient(700px 240px at 30% 0%, rgba(56,189,248,.12), transparent 55%),
+                  rgba(255,255,255,.03);
+    }
+    .opt{
+      width:100%;
+      text-align:left;
+      margin-top:10px;
+      padding: 14px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(0,0,0,.28);
+      color: rgba(255,255,255,.86);
+      font-weight: 1000;
+      cursor:pointer;
+      transition:.18s ease;
+    }
+    .opt:hover{ transform: translateY(-1px); border-color: rgba(56,189,248,.26); background: rgba(56,189,248,.06); }
+    .opt.good{ border-color: rgba(52,211,153,.35); background: rgba(52,211,153,.10); }
+    .opt.bad{ border-color: rgba(251,113,133,.35); background: rgba(251,113,133,.10); }
+
+    /* reveal */
+    .reveal{ opacity:0; transform: translateY(14px); transition: .65s cubic-bezier(.2,.9,.2,1); }
+    .reveal.on{ opacity:1; transform: translateY(0); }
+
+    @media (prefers-reduced-motion: reduce){
+      *{ animation: none !important; transition:none !important; scroll-behavior:auto !important; }
+      .reveal{ opacity:1 !important; transform:none !important; }
+    }
+
+    @media (max-width: 980px){
+      .grid3{ grid-template-columns: 1fr; }
+    }
+    @media (max-width: 880px){
+      .flow-grid{ grid-template-columns: 1fr; }
+      .lab{ grid-template-columns: 1fr; }
+      .chapter{ display:none; }
+      .brand{ min-width:auto; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="progress"><i id="progressBar"></i></div>
+    <div class="nav">
+      <div class="brand">
+        <span class="badge">ENTRA ID • GLOSSARY #1.1</span>
+        <div class="chapter" id="chapterLabel">You are here: Intro</div>
+      </div>
+
+      <div class="nav-right">
+        <a href="#intro" class="navlink active">Intro</a>
+        <a href="#tldr" class="navlink">TL;DR</a>
+        <a href="#what" class="navlink">What</a>
+        <a href="#why" class="navlink">Why</a>
+        <a href="#day" class="navlink">Day‑to‑day</a>
+        <a href="#name" class="navlink">Name</a>
+        <a href="#story" class="navlink">Story</a>
+        <a href="#lab" class="navlink">Try</a>
+        <a href="#quiz" class="navlink">Check</a>
+        <button class="mini" id="toggleTheme" title="Toggle extra contrast">🌓</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <!-- HERO (clean - no pills) -->
+    <header class="hero reveal" id="intro" data-chapter="Intro">
+      <div class="muted" style="font-weight:900; letter-spacing:.10em; text-transform:uppercase;">
+        The Foundation of Modern Identity • Beginner
+      </div>
+
+      <h1>Microsoft Entra ID</h1>
+
+      <p class="subtitle">
+        Microsoft Entra ID is Microsoft’s cloud identity platform.
+        It answers <b>who you are</b> and <b>what you can access</b> -
+        often in a few hundred milliseconds.
+      </p>
+
+      <div class="story" style="margin-top:16px">
+        Three years ago, a colleague called me in a mild panic… She’d read docs and watched videos and felt <i>more</i> confused.
+        “What does it actually do… like, in real life?” That’s where we’ll start.
+      </div>
+    </header>
+
+    <!-- What is it -->
+    <section class="reveal" id="what" data-chapter="What it is">
+      <h2>📌 So what is it, actually?</h2>
+      <p>
+        Microsoft Entra ID is a cloud-based identity and access management service.
+        Break that sentence down and you get everything you need:
+      </p>
+
+      <p>
+        <b>Identity management</b> means Entra ID keeps track of who exists in your organization -
+        employees, contractors, guests, apps, and devices. Each one gets a digital record.
+      </p>
+
+      <p>
+        <b>Access management</b> means Entra ID decides what each identity can do.
+        Can this user open SharePoint? Can that app read emails? Can this laptop access VPN?
+        Entra ID is the system making those calls.
+      </p>
+
+      <div class="callout">
+        The two questions it answers every time something tries to connect:
+        <b>Who are you?</b> and <b>What are you allowed to do?</b>
+      </div>
+    </section>
+
+    <!-- Why it matters -->
+    <section class="reveal" id="why" data-chapter="Why it matters">
+      <h2>💡 Why this matters to you as a beginner</h2>
+
+      <p>
+        A common beginner mistake: thinking Entra ID is “just a user list.” It isn’t.
+        It’s a <span class="chip" data-term="Decision engine"><i>⚙️</i>decision engine</span>.
+        Every sign-in checks credentials, evaluates risk signals, applies security policies,
+        and issues a token - fast.
+      </p>
+
+      <p class="muted">
+        If a user can’t access an app, the fix isn’t always “reset password.”
+        It might be <span class="chip" data-term="Conditional Access"><i>🧩</i>Conditional Access</span>,
+        missing group membership, a license not assigned, or a non‑compliant device.
+      </p>
+
+      
+    </section>
+
+    <!-- Day-to-day -->
+    <section class="reveal" id="day" data-chapter="Day-to-day">
+      <h2>📅 What it handles day‑to‑day</h2>
+
+      <p>
+        <span class="chip" data-term="Authentication"><i>🪪</i>Authentication</span>
+        is verifying identity: password, phone prompt, fingerprint - Entra says yes/no.
+      </p>
+
+      <p>
+        <span class="chip" data-term="Authorization"><i>🚪</i>Authorization</span>
+        happens right after: once Entra knows who you are, it determines what you can access.
+        It issues a <span class="chip" data-term="Token"><i>🎫</i>token</span> - a short‑lived digital pass.
+      </p>
+
+      <p>
+        <b>Device integration</b> means Entra can consider whether a device is compliant.
+        A laptop without disk encryption might be blocked from sensitive apps even if credentials are fine.
+      </p>
+
+      <p>
+        <span class="chip" data-term="Conditional Access"><i>🧩</i>Conditional Access</span>
+        is the security logic layer: evaluates context (where, device, risk) and decides allow, block, or require MFA.
+      </p>
+    </section>
+
+    <!-- Name change -->
+    <section class="reveal" id="name" data-chapter="Name change">
+      <h2>💭 The name change confusion (let’s clear this up)</h2>
+      <p>
+        Entra ID and Azure Active Directory are the same thing.
+        Microsoft rebranded Azure AD to Microsoft Entra ID in 2023.
+        Older docs and tutorials still say “Azure AD.” Same underlying tenant and technology - new name.
+      </p>
+      <div class="callout" style="border-color: rgba(56,189,248,.22); background: rgba(56,189,248,.06)">
+        You’ll still hear experienced admins say “Azure AD” out of habit. Totally normal.
+      </div>
+    </section>
+
+    <!-- Real story -->
+    <section class="reveal" id="story" data-chapter="Implementation story">
+      <h2>📖 A real implementation story</h2>
+      <p>
+        Early in my career, I worked with a 400‑person company moving from a legacy VPN setup to Entra ID‑based access.
+        Users had multiple passwords across systems, and password resets were a constant drain.
+      </p>
+      <p>
+        After setting up Entra ID with Single Sign‑On, users had one identity.
+        One sign‑in got them into Teams, SharePoint, Salesforce, and internal apps.
+        Password reset tickets dropped by ~60% in the first month.
+      </p>
+      <p class="muted">
+        Not because passwords got “easier,” but because there was only one to manage - and policies applied consistently.
+      </p>
+    </section>
+
+    <!-- Starting point -->
+    <section class="reveal" data-chapter="Starting point">
+      <h2>💡 Why this is your starting point</h2>
+      <p>
+        Every other identity concept - Conditional Access, device compliance, roles, MFA, hybrid identity -
+        connects back to Entra ID as the foundation.
+      </p>
+      <p class="muted">
+        Start here. Get this solid. Everything else builds on it. 🔑
+      </p>
+    </section>
+
+    <!-- Mini lab (kept, because it helps beginners "feel" the decisions) -->
+    <section class="reveal" id="lab" data-chapter="Try it">
+      <h2>🧪 Try it: make the engine decide</h2>
+      <p class="muted">
+        This is a simplified mental model. Toggle signals and watch how the decision changes.
+      </p>
+
+      <div class="lab">
+        <div class="panel">
+          <h3>Signals</h3>
+          <div class="toggles">
+            <button class="btn" data-toggle="pw">✅ Valid password</button>
+            <button class="btn" data-toggle="mfa">🔐 MFA approved</button>
+            <button class="btn" data-toggle="dev">💻 Compliant device</button>
+            <button class="btn" data-toggle="legacy">📟 Legacy auth</button>
+          </div>
+
+          <div class="sliderRow">
+            <span>Risk:</span>
+            <input id="risk" type="range" min="0" max="100" value="20" />
+            <span id="riskLabel" style="font-weight:1000; color:var(--warn)">Low</span>
+          </div>
+
+          <div class="callout" style="border-color: rgba(56,189,248,.22); background: rgba(56,189,248,.06)">
+            Try: password + compliant device + High risk → now toggle MFA on/off.
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>Decision</h3>
+          <div class="console" aria-live="polite">
+            <div class="status" id="decisionStatus">STATUS: WAITING…</div>
+            <div class="log" id="signInLog"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section class="quiz reveal" id="quiz" data-chapter="Check">
+      <h2>✅ Quick check</h2>
+      <p>
+        You have the correct password, but Entra blocks you because the login is risky.
+        Which feature is making that decision?
+      </p>
+
+      <button class="opt" data-answer="good">Conditional Access</button>
+      <button class="opt" data-answer="bad" data-why="Authentication only proves identity. It doesn’t decide policy outcomes.">Authentication</button>
+      <button class="opt" data-answer="bad" data-why="A simple user directory doesn’t evaluate risk signals or enforce MFA rules.">Just a user list</button>
+
+      <canvas id="confetti" width="1" height="1" style="width:0;height:0;position:fixed;left:0;top:0;pointer-events:none"></canvas>
+    </section>
+
+    <footer class="reveal" style="margin-top:26px; border:0; background:transparent; box-shadow:none">
+      <p class="muted" style="text-align:center; margin:0">
+        ✍️ TedxHarry
+      </p>
+    </footer>
+  </div>
+
+  <div class="tip" id="tip" role="tooltip" aria-hidden="true"></div>
+
+  <script>
+    /* scroll progress */
+    const bar = document.getElementById("progressBar");
+    const onScroll = () => {
+      const doc = document.documentElement;
+      const scrollTop = doc.scrollTop;
+      const scrollHeight = doc.scrollHeight - doc.clientHeight;
+      const pct = scrollHeight ? (scrollTop / scrollHeight) * 100 : 0;
+      bar.style.width = pct.toFixed(2) + "%";
+    };
+    addEventListener("scroll", onScroll, {passive:true});
+    onScroll();
+
+    /* reveal */
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("on"); });
+    }, {threshold: 0.12});
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+    /* chapter + active nav */
+    const chapterLabel = document.getElementById("chapterLabel");
+    const navlinks = Array.from(document.querySelectorAll(".navlink"));
+    const chapterIO = new IntersectionObserver((entries) => {
+      const visible = entries.filter(e => e.isIntersecting).sort((a,b)=> b.intersectionRatio - a.intersectionRatio)[0];
+      if (!visible) return;
+      const ch = visible.target.getAttribute("data-chapter") || "Reading";
+      chapterLabel.textContent = "You are here: " + ch;
+      const id = visible.target.id;
+      navlinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + id));
+    }, {threshold: [0.25, 0.35, 0.5]});
+    document.querySelectorAll("[data-chapter]").forEach(el => chapterIO.observe(el));
+
+    /* tooltips */
+    const defs = {
+      "Decision engine": {
+        d: "A system that takes signals + policies and outputs allow/deny + a token.",
+        ex: "Example: password ok + MFA ok + compliant device = allow."
+      },
+      "Authentication": {
+        d: "Proving your identity (who you are).",
+        ex: "Example: password + MFA."
+      },
+      "Authorization": {
+        d: "Determining what you can access (what you are allowed to do).",
+        ex: "Example: allow Teams, deny Admin portal."
+      },
+      "Conditional Access": {
+        d: "Policy engine that decides access based on conditions (MFA, device, risk, location).",
+        ex: "Example: require MFA when risk is medium+."
+      },
+      "Token": {
+        d: "A signed digital pass an app trusts for a short time.",
+        ex: "Example: token lets Teams accept you without asking your password again."
+      }
+    };
+
+    const tip = document.getElementById("tip");
+    const showTip = (el) => {
+      const key = el.getAttribute("data-term");
+      const info = defs[key];
+      if (!info) return;
+      tip.innerHTML = `
+        <div class="t">${key}</div>
+        <div class="d">${info.d}</div>
+        <div class="ex"><b>Example:</b> ${info.ex}</div>
+      `;
+      tip.classList.add("show");
+      tip.setAttribute("aria-hidden", "false");
+      const r = el.getBoundingClientRect();
+      const x = Math.min(r.left + 8, innerWidth - 430);
+      const y = Math.min(r.bottom + 10, innerHeight - 210);
+      tip.style.left = x + "px";
+      tip.style.top = y + "px";
+    };
+    const hideTip = () => {
+      tip.classList.remove("show");
+      tip.setAttribute("aria-hidden", "true");
+    };
+    document.querySelectorAll(".chip").forEach(el => {
+      el.addEventListener("mouseenter", () => showTip(el));
+      el.addEventListener("mouseleave", hideTip);
+      el.addEventListener("click", () => showTip(el));
+    });
+    document.addEventListener("scroll", hideTip, {passive:true});
+
+    /* mini lab */
+    const state = { pw:false, mfa:false, dev:false, legacy:false, risk: 20 };
+    const btns = Array.from(document.querySelectorAll("[data-toggle]"));
+    const risk = document.getElementById("risk");
+    const riskLabel = document.getElementById("riskLabel");
+
+    const decisionStatus = document.getElementById("decisionStatus");
+    const signInLog = document.getElementById("signInLog");
+
+    function riskBucket(v){
+      if (v < 35) return {name:"Low", color:"var(--warn)"};
+      if (v < 70) return {name:"Medium", color:"var(--warn)"};
+      return {name:"High", color:"var(--block)"};
+    }
+
+    function decide(){
+      const r = riskBucket(state.risk);
+      riskLabel.textContent = r.name;
+      riskLabel.style.color = r.color;
+
+      // Beginner-friendly sample rules:
+      // - Password must be true
+      // - Device must be compliant (simple example)
+      // - If risk is medium/high => require MFA
+      // - Legacy auth + medium/high risk => block (example)
+      const now = new Date();
+      const ts = now.toISOString().replace("T"," ").slice(0,19) + "Z";
+
+      let status = "";
+      let color = "var(--muted)";
+      let reasons = [];
+
+      if (!state.pw){
+        status = "DENIED ❌ (wrong password)";
+        color = "var(--block)";
+        reasons.push("Credentials failed.");
+      } else if (!state.dev){
+        status = "DENIED ⚠️ (device not compliant)";
+        color = "var(--policy)";
+        reasons.push("Device compliance failed.");
+      } else if (state.legacy && state.risk >= 35){
+        status = "DENIED ❌ (legacy auth blocked)";
+        color = "var(--block)";
+        reasons.push("Legacy auth not allowed at medium/high risk.");
+      } else if (state.risk >= 35 && !state.mfa){
+        status = "CHALLENGE 🔐 (MFA required)";
+        color = "var(--warn)";
+        reasons.push("Risk >= Medium requires MFA.");
+      } else {
+        status = "ACCESS GRANTED ✅ (token issued)";
+        color = "var(--ok)";
+        reasons.push("Signals satisfied policy requirements.");
+      }
+
+      decisionStatus.textContent = "STATUS: " + status;
+      decisionStatus.style.color = color;
+
+      const log = [
+        `[${ts}] signInAttempt`,
+        `  user: ted@example.com (mock)`,
+        `  password: ${state.pw ? "valid" : "invalid"}`,
+        `  mfa: ${state.mfa ? "approved" : "notApproved"}`,
+        `  device: ${state.dev ? "compliant" : "nonCompliant"}`,
+        `  legacyAuth: ${state.legacy ? "true" : "false"}`,
+        `  riskScore: ${state.risk} (${riskBucket(state.risk).name})`,
+        `  decision: ${status}`,
+        `  reasons: ${reasons.join(" ")}`,
+      ].join("\n");
+
+      signInLog.textContent = log;
+    }
+
+    btns.forEach(b => b.addEventListener("click", () => {
+      const key = b.getAttribute("data-toggle");
+      state[key] = !state[key];
+      b.classList.toggle("on", state[key]);
+      decide();
+    }));
+    risk.addEventListener("input", () => { state.risk = Number(risk.value); decide(); });
+    decide();
+
+    /* quiz + tiny confetti */
+    const canvas = document.getElementById("confetti");
+    const ctx = canvas.getContext("2d");
+    let confetti = [];
+    function resizeCanvas(){ canvas.width = innerWidth; canvas.height = innerHeight; }
+    addEventListener("resize", resizeCanvas); resizeCanvas();
+
+    function burst(x,y){
+      confetti = [];
+      for (let i=0;i<90;i++){
+        confetti.push({ x,y, vx:(Math.random()-0.5)*10, vy:(Math.random()-0.9)*12, g:0.28+Math.random()*0.2, s:2+Math.random()*3, a:1 });
+      }
+      canvas.style.width = "100%";
+      canvas.style.height = "100%";
+      tick();
+      setTimeout(()=>{ canvas.style.width="0"; canvas.style.height="0"; }, 900);
+    }
+
+    let ticking = false;
+    function tick(){
+      if (ticking) return;
+      ticking = true;
+      const start = performance.now();
+      function frame(t){
+        const dt = Math.min(32, t - (frame.last || t));
+        frame.last = t;
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+
+        confetti.forEach(p => {
+          p.vy += p.g * (dt/16);
+          p.x += p.vx * (dt/16);
+          p.y += p.vy * (dt/16);
+          p.a -= 0.018 * (dt/16);
+          ctx.globalAlpha = Math.max(p.a,0);
+          ctx.fillStyle = "white";
+          ctx.fillRect(p.x,p.y,p.s,p.s);
+        });
+
+        confetti = confetti.filter(p => p.a > 0 && p.y < canvas.height + 40);
+        if (confetti.length && (t - start) < 900) requestAnimationFrame(frame);
+        else { ticking = false; ctx.globalAlpha = 1; }
+      }
+      requestAnimationFrame(frame);
+    }
+
+    document.querySelectorAll(".opt").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const kind = btn.getAttribute("data-answer");
+        document.querySelectorAll(".opt").forEach(b => b.disabled = true);
+
+        if (kind === "good"){
+          btn.classList.add("good");
+          const r = btn.getBoundingClientRect();
+          burst(r.left + r.width*0.5, r.top + r.height*0.5);
+        } else {
+          btn.classList.add("bad");
+          const why = btn.getAttribute("data-why") || "Try again.";
+          alert(why);
+          setTimeout(()=> document.querySelectorAll(".opt").forEach(b => b.disabled=false), 50);
+        }
+      });
+    });
+
+    /* theme toggle */
+    const toggleTheme = document.getElementById("toggleTheme");
+    let contrast = false;
+    toggleTheme.addEventListener("click", () => {
+      contrast = !contrast;
+      document.documentElement.style.setProperty("--surface", contrast ? "rgba(255,255,255,.06)" : "rgba(255,255,255,.04)");
+      document.documentElement.style.setProperty("--border", contrast ? "rgba(255,255,255,.14)" : "rgba(255,255,255,.10)");
+    });
+  </script>
+</body>
+</html>

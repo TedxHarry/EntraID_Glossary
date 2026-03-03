@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Sign-in risk level scores the probability that a specific sign-in attempt is not from the legitimate user
-- It's evaluated per-session in real time using ML across Microsoft's global threat intelligence
-- Medium sign-in risk → require MFA. High sign-in risk → block or require MFA + password reset
-
 
 Two sign-in events. Same user account. Same credentials. Different risk levels.
 

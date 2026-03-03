@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- A workforce tenant is your organization's standard Entra ID tenant with employee identities and enterprise policies
-- Workforce tenants support B2B guest access for partners and contractors
-- This is the 'default' tenant type : what most organizations manage day-to-day
-
 
 When Microsoft introduced external tenants as part of Entra External ID, they needed a term for the thing that already existed: the standard Entra ID tenant that every organization uses to manage its employees.
 

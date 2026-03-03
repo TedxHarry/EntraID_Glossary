@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Audit logs record all administrative changes in Entra ID: user creation, role assignment, policy change
-- Retained for 7 days (free), 30 days (P1), or longer with Log Analytics/Sentinel integration
-- Every compliance investigation starts with the audit log : who made what change, when, from where
-
 
 A Security Operations team got a ticket: a user's account had been granted Global Administrator two weeks ago, and nobody could explain who authorized it. The change had been made. The role was assigned. But there was no change management ticket, no approval record, no memory of the decision.
 

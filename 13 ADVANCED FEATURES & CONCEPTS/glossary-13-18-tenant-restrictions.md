@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Tenant Restrictions v2 uses Global Secure Access to prevent users from signing into non-approved external tenants
-- Block employees from using personal Microsoft accounts or competitor tenants on corporate devices
-- Tenant Restrictions work at the network/proxy level : requires traffic inspection or GSA client
-
 
 A data governance team discovered that several employees had been uploading files to their personal OneDrive accounts from work devices. The files included customer data that should never leave corporate systems.
 

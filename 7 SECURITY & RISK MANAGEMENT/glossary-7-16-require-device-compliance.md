@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Require compliant device forces Intune compliance check before granting access : device must pass all compliance policies
-- This blocks AiTM token theft attacks : attackers can't satisfy compliance from their unmanaged device
-- Requires all targeted users to have enrolled, managed, compliant devices : or they'll be blocked
-
 
 The attacker had everything. Username. Password. They'd even intercepted the MFA session token through an AiTM proxy attack. The user had signed in, clicked approve on the MFA prompt, and never knew anything was wrong.
 

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Access control determines who can do what to which resource, based on identity, role, and context
-- Entra ID uses role-based access control (RBAC) for both admin permissions and application resource permissions
-- Conditional Access adds context (device, location, risk) on top of identity-based access decisions
-
 
 I once inherited an environment where the IT manager's answer to every access request was "just add them to the All Staff group." SharePoint permissions, Teams channels, Azure resources, application access, all of it collapsed into one giant group that eventually contained every person who'd ever worked there, including contractors who left two years ago.
 

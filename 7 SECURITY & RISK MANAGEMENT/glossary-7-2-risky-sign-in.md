@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- A risky sign-in is one flagged by Identity Protection as potentially not from the legitimate user
-- Sign-in risk levels: none, low, medium, high : each can trigger different CA policy responses
-- Remediating risky sign-ins: require MFA (self-remediation), or admin investigation + session revocation
-
 
 A senior manager's credentials had been phished three weeks earlier. She'd clicked a link in a convincing email, entered her password on a fake login page, and didn't realize it had happened. The attacker hadn't acted immediately.
 

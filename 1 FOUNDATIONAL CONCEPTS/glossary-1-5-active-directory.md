@@ -10,12 +10,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Active Directory (AD DS) is Microsoft's on-premises identity system using Kerberos and LDAP for Windows networks
-- It uses domains, forests, and domain controllers : concepts that don't map directly to Entra ID
-- Entra ID is not AD in the cloud; it's a fundamentally different system with a different protocol stack
-
 
 Every few months someone posts something along the lines of "Active Directory is legacy technology, just move everything to Entra ID." And every time, the comments fill up with experienced IT professionals gently (and sometimes not so gently) explaining why that's not how it works.
 

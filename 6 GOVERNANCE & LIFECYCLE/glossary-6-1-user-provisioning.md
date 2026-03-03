@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- User provisioning is the automated creation of user accounts when someone joins the organization
-- SCIM protocol is the standard for provisioning to SaaS apps : Entra ID supports SCIM provisioning
-- Provisioning vs. sync: provisioning creates new accounts; sync keeps attributes updated over time
-
 
 A new hire started on a Monday. By Wednesday, she still didn't have access to Salesforce. IT said her account was in Entra ID. HR confirmed she was in the HR system. The Salesforce admin said they'd never received a request to create her account.
 

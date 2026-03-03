@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Application Proxy publishes on-premises web apps to the internet without opening firewall ports
-- Outbound-only connector agents in the DMZ handle traffic : no inbound firewall rules needed
-- Users authenticate via Entra ID first; only authenticated sessions reach the internal application
-
 
 A company had 12 on-premises web applications. Legacy internal tools, a home-grown expense system, a facilities management portal. All running on on-premises web servers. None of them had been modified in years.
 

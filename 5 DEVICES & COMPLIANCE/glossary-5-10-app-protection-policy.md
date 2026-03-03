@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- App Protection Policies (APP/MAM) protect data within apps without requiring device enrollment
-- They can require PIN, block copy-paste to unmanaged apps, and wipe corporate data from the app
-- Ideal for BYOD: protect company data in Outlook mobile without managing the personal device
-
 
 An executive pushed back hard on Intune enrollment for his personal iPhone. "I'm not letting IT have any control over my personal device. Period."
 

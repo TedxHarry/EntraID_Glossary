@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- An App Registration is the global app definition; a Service Principal is the local instance in your tenant
-- Managed identities also create service principals : it's how Azure resources get Entra ID identities
-- Admin consent, user assignments, and Conditional Access targeting all happen on the service principal, not the registration
-
 
 Of all the concepts I explain to people learning Entra ID, service principals generate the most confused looks. Not because the idea is actually complicated, once you have the right mental model, it clicks quickly. The problem is that most explanations start in the wrong place.
 

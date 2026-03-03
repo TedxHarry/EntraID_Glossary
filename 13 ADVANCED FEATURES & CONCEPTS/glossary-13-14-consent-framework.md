@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- The Consent Framework is how users and admins authorize applications to access resources on their behalf
-- User consent = individual grants permission for their own data; Admin consent = tenant-wide grant for all users
-- Configure consent settings to require admin approval : prevents users from granting excessive permissions to unknown apps
-
 
 A developer registered an application that requested `Mail.ReadWrite.All` at the application level. Application-level permissions don't require a user to consent; they require an administrator to consent on behalf of the entire organization.
 

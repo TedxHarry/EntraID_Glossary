@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Federated applications use SAML or WS-Federation and redirect authentication to Entra ID as the IdP
-- Entra ID is the Identity Provider (IdP); the application is the Service Provider (SP)
-- Federated SSO passes a signed SAML assertion to the app : no password exchange between user and app
-
 
 An organization integrated their CRM system with Entra ID using SAML federation. The CRM had been running for eight years with its own internal user database: 6,000 user accounts, each with their own CRM-specific password that users had to manage separately.
 

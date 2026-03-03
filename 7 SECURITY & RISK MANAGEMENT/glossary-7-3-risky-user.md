@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- A risky user is an account Identity Protection has flagged as potentially compromised
-- User risk persists across sessions until remediated : unlike sign-in risk which is per sign-in
-- Remediation: force password reset (risk dismissed), admin investigation and confirmation/dismissal
-
 
 The IT team got the alert on a Tuesday morning. An account in their tenant had been flagged as high user risk. The reason: Microsoft's threat intelligence had found the account's credentials in a fresh breach database published on a criminal forum the night before.
 

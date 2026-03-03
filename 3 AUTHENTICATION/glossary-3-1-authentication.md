@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Authentication is the process of proving your identity : verifying that you are who you claim to be
-- Entra ID supports password, MFA, passwordless, certificate-based, and federated authentication methods
-- Authentication produces a token; authorization decides what that token allows you to access
-
 
 Picture a bouncer outside a club. Someone walks up and says "I'm on the list." The bouncer doesn't take their word for it. They ask for ID. The person hands over a driver's license. The bouncer compares the face on the card to the face in front of them, checks the name against the list, and either lets them in or doesn't.
 

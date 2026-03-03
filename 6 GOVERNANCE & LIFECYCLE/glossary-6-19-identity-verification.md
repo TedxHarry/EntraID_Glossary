@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Identity Verification validates that a user's real-world identity matches their digital identity claim
-- Entra Verified ID uses decentralized, VC-based verification without a central authority storing the data
-- Use cases: new employee onboarding verification, guest B2B identity assurance, age verification
-
 
 A new employee called the help desk on their first day. They needed a Temporary Access Pass to set up their phone for MFA. Standard request. The help desk asked them to confirm their employee ID and start date to verify they were who they claimed to be.
 

@@ -10,12 +10,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Hybrid identity connects on-premises Active Directory with Entra ID so users have one identity in both places
-- Entra Connect Sync replicates AD objects to Entra ID; Entra Cloud Sync is the lighter modern replacement
-- Three auth models: Password Hash Sync (most resilient), Pass-Through Auth, or Federation (most complex)
-
 
 If I had to pick one concept that trips up aspiring Entra ID specialists more than any other, it's hybrid identity. Not because it's complicated in theory, the theory is actually pretty clean. It's because the *reality* is messier than the diagrams suggest, and when it breaks, it tends to break in the quietest, most confusing ways possible.
 

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Insider risk signals from Microsoft Purview can feed into Adaptive Protection in Entra ID
-- Adaptive Protection automatically applies stricter CA policies to users with elevated insider risk scores
-- Requires both Microsoft Purview Insider Risk Management and Entra ID P2 + the integration enabled
-
 
 A software engineer at a technology company gave notice. Two weeks later, on her last day, she downloaded 14,000 files from SharePoint. Source code, customer data, internal architecture documents. She had legitimate access to all of it. Her credentials were valid. Her actions didn't trigger any fraud detection.
 

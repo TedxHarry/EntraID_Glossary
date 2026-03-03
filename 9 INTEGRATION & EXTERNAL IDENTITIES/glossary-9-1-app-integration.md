@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- App integration means registering an application in Entra ID to use it as the identity provider for authentication
-- Gallery apps have pre-configured SSO templates; non-gallery apps require manual SAML or OIDC config
-- Integration also includes provisioning setup : who gets accounts in the app and how attributes map
-
 
 A company had 47 different applications across their environment. Each one had its own username and password. Users managed 47 separate sets of credentials. The helpdesk managed 47 separate password reset processes. Offboarding a departing employee required manually deprovisioning from 47 systems.
 

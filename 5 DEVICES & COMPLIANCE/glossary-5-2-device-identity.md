@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Device identity is a device object registered in Entra ID, allowing it to be managed and trusted by policies
-- Devices can be Entra-registered (personal), Entra-joined (cloud-only corporate), or hybrid-joined (both)
-- Device identity enables device-based Conditional Access : stronger than user identity alone
-
 
 A user's laptop was stolen from a coffee shop. IT disabled the user's Entra ID account within the hour. What they didn't do was disable the device itself.
 

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- External Identity refers to identities managed outside your Entra ID tenant: B2B guests, B2C customers, or federated IdP users
-- Microsoft's External ID product consolidates B2B and B2C scenarios under one platform
-- Design external identity with lifecycle in mind : external accounts should expire, not persist indefinitely
-
 
 A company's Entra ID tenant had four types of people accessing it:
 

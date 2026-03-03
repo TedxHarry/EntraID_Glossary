@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Access tokens are short-lived JWTs (typically 60–75 min) that prove an app is authorized to call an API
-- They contain claims: who the user is (`sub`), what app made the request (`appid`), and what's allowed (`scp`)
-- Access tokens are opaque to apps that receive them : the API validates them, the app just presents them
-
 
 An access token looks like a random string of characters about 1,500 characters long. Developers copy-paste them into Postman headers, IT pros see them flash past in Fiddler traces, and most people treat them as opaque blobs that either work or don't.
 

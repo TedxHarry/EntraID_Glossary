@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Risk detections are machine-learning signals that indicate a sign-in or user account may be compromised
-- Examples: sign-in from anonymous IP, impossible travel, leaked credentials, malware-linked IP
-- Risk detections feed into sign-in risk score and user risk score used by Conditional Access policies
-
 
 A user signed in from Chicago at 9am. Two hours later, a sign-in attempt came from Singapore. No flight covers that distance in two hours. Nobody is in both places simultaneously.
 

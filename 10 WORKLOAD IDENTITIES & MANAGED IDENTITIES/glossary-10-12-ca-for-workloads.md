@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Conditional Access for workloads applies policies to service principals and managed identities accessing resources
-- Requires Entra ID Workload Identity Premium license for non-human identities
-- Apply location-based and risk-based policies to workload identities accessing sensitive Microsoft APIs
-
 
 A security team configured Conditional Access policies for every user sign-in scenario. MFA for all users. Device compliance for accessing sensitive data. Location-based restrictions for privileged roles. Months of policy design and testing.
 

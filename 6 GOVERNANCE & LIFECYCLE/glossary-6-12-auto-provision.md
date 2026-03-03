@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Automated provisioning creates, updates, and removes user accounts in downstream apps using SCIM or custom connectors
-- Once configured, it runs continuously : new users in Entra ID are automatically provisioned to connected apps
-- Requires Entra ID P1 for app provisioning; P2 for HR-driven provisioning workflows
-
 
 An HR coordinator asked me how a new hire on her team had a fully configured Workday account ready on their first day, including the right reporting structure and org chart position, when she hadn't submitted any ticket to have it created.
 

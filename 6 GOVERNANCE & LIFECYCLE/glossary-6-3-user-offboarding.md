@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- User offboarding removes access when an employee leaves: disable account, revoke sessions, remove licenses
-- Immediate revocation requires disabling the account + using CAE to invalidate existing tokens
-- Lifecycle Workflows can automate offboarding triggered by HR systems when termination date arrives
-
 
 A security audit found 47 active accounts belonging to employees who had left in the previous 12 months. Not suspended. Not disabled. Active, with valid passwords, valid MFA registrations, and in some cases valid access tokens still within their window.
 

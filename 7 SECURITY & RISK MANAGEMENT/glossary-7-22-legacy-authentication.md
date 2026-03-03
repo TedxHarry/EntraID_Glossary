@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Legacy authentication protocols (SMTP AUTH, POP3, IMAP, older Office clients) can't satisfy MFA
-- Blocking legacy auth is one of the highest-impact, lowest-disruption security improvements you can make
-- Create a CA policy: Block access for All Users where Client App = Legacy authentication clients
-
 
 An organization had MFA deployed. 100% of users had MFA registered. The Conditional Access policy requiring MFA had been running for six months. They felt protected.
 

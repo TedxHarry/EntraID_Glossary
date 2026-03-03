@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Access reviews are periodic assessments of who has access to what, with approval/removal workflow
-- Reviewers can be resource owners, managers, or the users themselves (self-attestation)
-- Access reviews are required for PIM role assignments and access packages : they enforce least-privilege over time
-
 
 A finance director completed an access review of her team's SharePoint permissions. She'd expected it to take 20 minutes. It took 2 hours because she kept stopping to ask questions.
 

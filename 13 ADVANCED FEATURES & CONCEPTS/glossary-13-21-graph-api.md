@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Microsoft Graph API is the unified REST API for accessing all Microsoft 365 and Entra ID data and operations
-- Base URL: `https://graph.microsoft.com/v1.0/` (GA) or `/beta/` (preview features)
-- Use Graph for: user management, group management, sign-in log queries, CA policy management, and more
-
 
 An operations team was manually processing new hire requests every Monday morning. HR sent a spreadsheet. The team created user accounts, assigned licenses, added users to the right groups, and set up mailboxes. For 30 new hires, that was three hours of work. For 150 new hires at the end of a hiring surge, it was the entire morning.
 

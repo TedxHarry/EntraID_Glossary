@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Cross-Tenant Access (XTA) policies control inbound and outbound B2B collaboration between Entra ID tenants
-- Configure per-tenant trust settings: which tenants' MFA claims you trust, which users can access your resources
-- Default XTA settings apply to all tenants; add organization-specific settings to override the defaults
-
 
 A company with 3,000 employees acquired a company with 800 employees. Both had Entra ID tenants. The combined organization needed the acquired company's employees to collaborate in Microsoft Teams, access SharePoint, and use shared applications, all while maintaining separate tenants for the integration period.
 

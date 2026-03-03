@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Grant controls are the actions enforced when a CA policy matches: Block, Require MFA, Require compliant device
-- Multiple grant controls can combine with AND (all required) or OR (any one sufficient)
-- Require compliant device is stronger than Require MFA : it's harder for attackers to satisfy
-
 
 A security architect described their Conditional Access design philosophy in one sentence: "The assignment tells us who. The condition tells us when. The grant control tells us what we're going to do about it."
 

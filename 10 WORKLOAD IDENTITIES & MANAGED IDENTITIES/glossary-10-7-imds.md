@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- IMDS (Instance Metadata Service) is the HTTP endpoint inside Azure VMs that managed identities use to get tokens
-- Call `http://169.254.169.254/metadata/instance` from within the VM : returns resource info and tokens
-- IMDS is only accessible from within the Azure VM : it's a local endpoint, not internet-accessible
-
 
 A developer debugging a managed identity issue asked a fair question: "If there's no credential stored anywhere, how does the application actually get a token?"
 

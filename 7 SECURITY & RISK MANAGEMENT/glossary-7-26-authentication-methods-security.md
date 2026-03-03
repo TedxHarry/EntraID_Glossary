@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Authentication Methods Policy (AMP) centrally controls which authentication methods are enabled for your tenant
-- AMP replaces legacy per-user MFA settings and per-app SSPR settings with one unified policy
-- Migrate to AMP before the legacy MFA settings retirement deadline (March 2025)
-
 
 A security team completed an MFA deployment. 100% of users had MFA registered. They reported success.
 

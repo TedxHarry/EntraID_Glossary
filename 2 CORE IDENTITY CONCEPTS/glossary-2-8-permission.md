@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Permissions define what an app can do: delegated (on behalf of a user) or application (app acts as itself)
-- Permissions must be both declared in App Registration AND granted via admin consent or user consent to take effect
-- Scope strings like `User.Read` or `Mail.ReadWrite` are how permissions are expressed in OAuth2 tokens
-
 
 A developer came to me once asking why their app wasn't working. They'd registered it in Entra ID, configured API permissions, even got admin consent granted. But the app kept getting 403 errors from Microsoft Graph.
 

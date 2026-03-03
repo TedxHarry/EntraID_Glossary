@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Just-in-Time (JIT) access grants elevated permissions only when needed and removes them automatically when done
-- PIM implements JIT for privileged roles: request, approve, activate for limited time, auto-expire
-- JIT eliminates standing access : a critical Zero Trust principle to reduce blast radius of compromised accounts
-
 
 I asked an IT team to show me their Global Administrators. The list had 11 names.
 

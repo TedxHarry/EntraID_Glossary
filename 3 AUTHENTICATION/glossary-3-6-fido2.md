@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- FIDO2 security keys are hardware authenticators using public-key cryptography, making them phishing-proof
-- Registration binds the key to a specific origin (login.microsoftonline.com), so a phishing site can't capture it
-- FIDO2 is the strongest authentication method available : recommended for privileged accounts
-
 
 I handed a YubiKey to a sceptical security engineer and told her it would make her admin account essentially immune to phishing. She turned it over in her hand, looked at the USB plug on one end, and said: "This little thing?"
 

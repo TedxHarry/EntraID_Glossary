@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Groups aggregate users for easier assignment of licenses, roles, and app access
-- Security Groups control access; Microsoft 365 Groups include a mailbox, SharePoint site, and Teams workspace
-- Dynamic membership rules auto-add/remove users based on attributes like department or job title
-
 
 Early in my career I inherited an environment where permissions had been assigned directly to individual users for years. SharePoint sites, Teams channels, app roles, Azure resource access, all of it assigned user by user.
 

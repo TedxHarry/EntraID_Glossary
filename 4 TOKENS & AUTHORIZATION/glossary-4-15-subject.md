@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- The subject (`sub` claim) identifies the user the token was issued for : unique per user per app
-- Unlike the Object ID (`oid`), the `sub` is app-specific (pairwise) to prevent cross-app user tracking
-- For user identity across apps, use `oid` + `tid`; for single-app identification, `sub` is appropriate
-
 
 A developer came to me with a collision problem. Their multi-tenant application was occasionally mixing up user identities. Two different people were being treated as the same user in the application database. The app stored the `sub` claim as the primary key.
 

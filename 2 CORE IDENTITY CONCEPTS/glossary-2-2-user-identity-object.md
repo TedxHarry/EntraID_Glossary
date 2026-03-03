@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- A user object stores the identity data for a person: UPN, display name, department, licenses, and group memberships
-- User objects can be cloud-only (created in Entra ID) or synced from on-premises Active Directory
-- The Object ID is the immutable identifier; UPN and email can change without breaking app access
-
 
 "Just create a user" is one of those phrases that sounds simple until you've done it wrong a few times.
 

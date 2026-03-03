@@ -10,12 +10,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Cloud-based identity means your identity store lives in Microsoft's globally distributed datacenters, not your servers
-- Unlike on-premises AD, cloud identity scales instantly, requires no infrastructure, and integrates natively with SaaS apps
-- The tradeoff: you need internet connectivity; the benefit: built-in HA, compliance, and 99.99% SLA
-
 
 I remember the exact moment "cloud-based" stopped being a buzzword for me and became something concrete. I was standing in a server room at 11 PM, watching a blinking drive activity light on the domain controller, waiting to see if a failed hardware component was going to corrupt the Active Directory database. It didn't. We got lucky.
 

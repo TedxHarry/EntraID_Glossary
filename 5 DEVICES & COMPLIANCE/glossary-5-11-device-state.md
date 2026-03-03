@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Device state signals (compliant, managed, registered) are evaluated by Conditional Access in real time
-- A device that fails a compliance check shows as non-compliant in Intune, which CA reads immediately
-- Device state is more reliable than IP-based location for access decisions : harder to spoof
-
 
 A user called saying she could access Teams without any issues but was getting blocked from SharePoint. Same device. Same location. Same time.
 

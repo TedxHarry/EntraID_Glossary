@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Access tokens live ~60–75 minutes; refresh tokens have a 90-day rolling window (or 24h for single-tenant apps)
-- Token lifetime policies can shorten (not lengthen) lifetimes for higher-security scenarios
-- Continuous Access Evaluation (CAE) can revoke tokens mid-lifetime when conditions change
-
 
 A security team I worked with wanted access tokens to expire every 15 minutes. Their reasoning was solid: shorter lifetime, less time for a stolen token to be useful. Hard to argue with.
 

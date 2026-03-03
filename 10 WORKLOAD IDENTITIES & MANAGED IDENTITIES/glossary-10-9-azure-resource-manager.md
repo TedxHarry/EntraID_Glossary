@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Azure Resource Manager (ARM) is the management layer for all Azure resources : it authenticates every API call
-- Managed identities get tokens scoped to ARM (`https://management.azure.com`) to manage Azure resources
-- ARM RBAC controls what the managed identity can do: Contributor, Reader, custom roles
-
 
 A developer gave their managed identity the right role in Entra ID. The application still couldn't read from the Storage account.
 

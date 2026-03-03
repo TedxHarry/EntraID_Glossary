@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- A role is a named collection of permissions; assigning a role grants all permissions in that collection
-- App roles are custom roles defined in App Registration for your own application's authorization logic
-- Directory roles (like Global Admin) use the same concept but grant permissions over Entra ID itself
-
 
 The conversation went sideways when the security architect asked, "What role does this service account have?"
 

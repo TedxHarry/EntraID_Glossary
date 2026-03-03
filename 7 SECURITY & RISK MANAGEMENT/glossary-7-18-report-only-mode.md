@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Report-Only mode lets you see what a CA policy would do without enforcing it
-- Sign-in logs show 'Would have been blocked' or 'Would have required MFA' for report-only policies
-- Always run in Report-Only for at least 1-2 weeks before enabling enforcement on production policies
-
 
 An organization wanted to block legacy authentication across the tenant. One engineer created the policy, set it to enabled, and pushed it live without testing. By the end of business, the helpdesk had 34 tickets. Three printers that authenticated via SMTP were offline. One business-critical ERP integration using basic auth was failing. A conference room display system couldn't connect to Exchange.
 

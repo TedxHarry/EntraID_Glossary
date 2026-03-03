@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Microsoft Threat Intelligence feeds real-time signals into Identity Protection: known malicious IPs, TOR nodes, botnets
-- These signals generate risk detections even before any action is taken in your tenant
-- Threat intelligence is one of the strongest sources of risk signal : block access from known-bad IPs via CA
-
 
 An IP address showed up in a sign-in log. The security team had never seen it before. There was no obvious reason to flag it. It was registered to a hosting provider in Germany. The sign-in had used correct credentials. MFA was satisfied.
 

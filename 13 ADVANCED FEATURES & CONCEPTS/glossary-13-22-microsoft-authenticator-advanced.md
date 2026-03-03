@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Microsoft Authenticator (advanced): configure number matching, additional context, GPS location reporting
-- Authenticator can be pushed as a managed app via Intune with MAM policies to protect corporate sign-ins
-- Authenticator registration can be controlled via Authentication Methods Policy : require for specific groups
-
 
 A security team deployed push notification MFA across 8,000 users. Three months later, an incident investigation revealed that a user had approved 11 fraudulent MFA push requests in a single week. The attacker had the user's password and sent rapid-fire push requests at 6am when the user was half asleep. The user kept tapping "Approve" to make the notifications stop.
 

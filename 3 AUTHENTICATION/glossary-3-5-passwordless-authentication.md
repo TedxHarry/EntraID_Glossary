@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Passwordless authentication replaces passwords with phishing-resistant factors: FIDO2 keys, WHfB, or the Authenticator app
-- Passwords are the #1 attack vector; eliminating them dramatically reduces credential-based attack surface
-- Microsoft Authenticator passwordless uses your phone biometric + a number match challenge on screen
-
 
 Every year, security teams send out the same email. "Please update your password. It must be at least 14 characters, contain uppercase and lowercase letters, numbers, and symbols, and cannot match your last 12 passwords."
 

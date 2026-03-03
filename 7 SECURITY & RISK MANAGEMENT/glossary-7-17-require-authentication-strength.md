@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Authentication strength specifies which authentication method combinations satisfy a CA policy requirement
-- Built-in strengths: MFA strength, Passwordless MFA strength, Phishing-resistant MFA strength
-- Create custom authentication strengths to require specific combinations (e.g., FIDO2 only for Global Admins)
-
 
 A Global Administrator had MFA enabled. They used SMS as their MFA method. An attacker who had their password called their mobile carrier, posed as the administrator, and convinced them to transfer the number to a new SIM. The attacker received the SMS code. They signed in.
 

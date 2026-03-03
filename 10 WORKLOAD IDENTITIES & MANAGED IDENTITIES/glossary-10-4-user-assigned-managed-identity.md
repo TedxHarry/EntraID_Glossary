@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- User-assigned managed identity is a standalone identity resource that can be attached to multiple Azure resources
-- Created independently and persists even when attached resources are deleted or recreated
-- Best for: stateless workloads, blue-green deployments, or when multiple resources share the same access needs
-
 
 A platform team was building a shared logging service. Fourteen microservices, all deployed as separate Azure Container Apps, all needed to write to the same Azure Storage account and the same Log Analytics workspace.
 

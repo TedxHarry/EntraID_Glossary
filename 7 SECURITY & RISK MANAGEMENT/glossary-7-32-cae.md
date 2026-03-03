@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- CAE allows resource servers (Exchange, SharePoint, Teams) to receive near-real-time revocation signals
-- Without CAE, a stolen token is valid until expiry (up to 75 min). With CAE, revocation happens in seconds
-- CAE requires: P1/P2 license, supported client app, supported resource, and CAE-enabled CA session control
-
 
 A user had a valid session open in Outlook. While they were working, an admin received a report that the account had been compromised. The admin disabled the user's account in Entra ID.
 

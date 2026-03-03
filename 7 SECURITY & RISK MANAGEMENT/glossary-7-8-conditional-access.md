@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Conditional Access evaluates every sign-in against IF-THEN policies: IF conditions match, THEN enforce controls
-- Policies have three parts: Assignments (who/what), Conditions (signals), and Grant/Session Controls (outcome)
-- Deploy new policies in Report-Only mode first : going straight to enforcement risks locking people out
-
 
 A company had MFA deployed. They thought they were protected.
 

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- The Authorization Code Flow is the secure full-sequence: auth code + PKCE/secret exchange → tokens
-- Step-by-step: redirect to /authorize → user authenticates → code returned → POST to /token → tokens issued
-- This is the correct flow for web apps with backends; SPA/mobile should use PKCE without client secret
-
 
 A developer was told to implement "Sign in with Microsoft" for a web application. They found an example online that used the implicit flow, returning tokens directly in the URL fragment. It was simple, it worked, and it was wrong.
 

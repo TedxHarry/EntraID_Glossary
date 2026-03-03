@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- A non-compliant device is enrolled but fails one or more compliance policy requirements
-- Conditional Access can block non-compliant devices even for valid, MFA-authenticated users
-- Common causes: OS update pending, BitLocker disabled, firewall turned off
-
 
 Monday morning, 8:47am. Three tickets arrive within 20 minutes of each other: users can't access SharePoint. By 9:15am there are 14 tickets. By 10am, 31.
 

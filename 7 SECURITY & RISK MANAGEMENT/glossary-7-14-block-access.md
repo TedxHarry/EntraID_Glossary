@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Block access is the most restrictive CA grant control : completely prevents access matching the policy scope
-- Use for: blocking legacy authentication, blocking access from specific countries, blocking risky users
-- Always exclude emergency access accounts from block policies : test in Report-Only before enabling
-
 
 An administrator wanted to stop sign-ins from countries where their organization had no business presence. Reasonable policy. They created a Conditional Access policy targeting All users, All cloud apps, with a location condition for the countries they wanted to block, and a grant control of Block access.
 

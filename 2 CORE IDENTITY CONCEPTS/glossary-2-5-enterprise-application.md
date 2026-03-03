@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Enterprise Applications is the portal view of a service principal : where you configure SSO, user assignments, and provisioning
-- When you add a gallery app, Entra ID creates an enterprise application (service principal) in your tenant
-- This is where you grant admin consent and manage which users/groups can access the app
-
 
 Here's a conversation I've had more times than I can count:
 

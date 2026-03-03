@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Delegation lets one identity act on behalf of another : like an app calling Microsoft Graph as the signed-in user
-- Delegated permissions require a signed-in user; application permissions let apps act without user context
-- The `on_behalf_of` flow enables service-to-service calls that preserve the original user's identity
-
 
 The helpdesk team had one job that required admin access: resetting user passwords. That's it. Basic, common, essential. But the IT manager before me had solved this the easy way, just give them User Administrator. Problem solved.
 

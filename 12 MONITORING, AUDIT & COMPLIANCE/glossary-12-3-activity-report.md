@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Activity reports aggregate sign-in and audit data into pre-built views: risky sign-ins, MFA usage, app usage
-- Usage reports help identify which apps are used, which aren't, and which users are high-risk
-- Export to Log Analytics for long-term retention and SIEM integration (Sentinel, Splunk, QRadar)
-
 
 An IT director asked a question that audit logs and sign-in logs couldn't easily answer: "Is anyone actually using the Salesforce integration we set up eight months ago?"
 

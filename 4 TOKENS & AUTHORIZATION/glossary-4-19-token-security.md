@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Token security threats: theft, replay, confusion attacks, and audience mismatch
-- Key defenses: short-lived tokens, CAE for revocation, strict audience validation, mTLS sender-constraint
-- Never log tokens, never store in localStorage, always validate signature + expiry + audience + issuer
-
 
 A developer shared a debug log with me over Teams. They were troubleshooting API call failures. The log was pasted directly into the chat message: a full OAuth flow trace, access tokens included.
 

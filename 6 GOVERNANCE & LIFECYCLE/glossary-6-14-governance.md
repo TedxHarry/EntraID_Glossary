@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Governance is the framework of policies and processes ensuring identities have appropriate access over time
-- Entra Identity Governance includes: Entitlement Management, Access Reviews, PIM, and Lifecycle Workflows
-- Requires Entra ID P2 or Entra ID Governance SKU for full feature access
-
 
 An organization had 4,200 users and roughly 340 Entra ID groups. Nobody had a clear picture of which groups granted access to what. Group owners had turned over. Several groups had no owner at all. The membership rules for dynamic groups hadn't been reviewed in two years.
 

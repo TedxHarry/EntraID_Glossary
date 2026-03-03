@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Authorization grants are the credentials that prove consent was given: auth code, refresh token, client credentials
-- Each grant type is designed for a specific client type and security profile
-- Never mix grant types : use auth code + PKCE for interactive flows, client credentials for app-only
-
 
 A developer was asked to call the Microsoft Graph API from a background job. They found an example using the authorization code flow, built it, and hit a problem: the authorization code flow requires a user to authenticate interactively in a browser. A background job has no browser and no user.
 

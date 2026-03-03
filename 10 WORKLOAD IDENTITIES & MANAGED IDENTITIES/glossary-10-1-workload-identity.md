@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Workload identities are non-human identities for apps, services, scripts, and automated processes
-- They authenticate using client secrets, certificates, or federated credentials (no MFA by default)
-- Workload identities are a top attack target : rotate credentials regularly and prefer managed identities
-
 
 A security engineer ran an audit of the Entra ID tenant and found 847 service principals. She knew about maybe 200 of them. The rest had been created over years by developers, DevOps pipelines, vendors, and automated processes. Some had owner accounts that no longer existed. Some had secrets that were years past their stated rotation policy. Several had permissions scoped to entire subscriptions.
 

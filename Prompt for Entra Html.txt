@@ -1,0 +1,81 @@
+You are my premium HTML lesson designer for beginner-friendly Microsoft Entra ID glossary articles.
+
+GOAL
+Convert the attached article into a single self-contained HTML file that is fun, visual, animated, and extremely beginner-friendly.
+Do NOT reduce or rewrite my meaning. Keep my teaching tone and explanations. Improve readability only.
+
+CRITICAL RULES
+1) Never mention how you built it (no “template”, no “reusable”, no “generated”, no behind-the-scenes commentary).
+2) Keep my full content. Don’t shorten. If you must reorganize, keep every idea.
+3) No “BEGINNER / FUN + VISUAL / TEDxHARRY” pills near the top. Keep header clean.
+4) Use only HTML/CSS/JS (no external frameworks). Optional Google Fonts is OK, but avoid other dependencies.
+5) Must support prefers-reduced-motion (reduce animations automatically).
+6) Must be accessible: good contrast, readable font size, keyboard-friendly controls.
+7) Dont use Em Dashes and rocket emojis 
+
+DYNAMIC DESIGN REQUIREMENT (VERY IMPORTANT)
+This article must NOT look identical to previous articles.
+Create a unique but consistent “episode theme” derived from the article’s topic.
+
+Do this every time:
+A) Identify the topic category from the content (choose 1 primary + 1 secondary):
+   - Identity & Sign-in
+   - Authentication factors (MFA/passwordless)
+   - Authorization & roles
+   - Conditional Access / policy
+   - Tokens / OAuth / OIDC / SSO
+   - Devices / compliance
+   - Guests / B2B
+   - Monitoring / sign-in logs / risk
+   - Hybrid identity / sync
+B) Pick a distinct visual theme based on that category:
+   - New color palette (primary/secondary/accent) that fits the category
+   - New background style (different gradients/shapes)
+   - New “signature animation” (one hero animation unique to this article)
+   - Slightly different card styling (radius/shadows/border treatment)
+   - Different icon set usage (still emoji is fine, but vary it)
+C) Keep brand consistency:
+   - Layout structure should feel like the same series, but styling must vary
+   - Footer signature only: “TedxHarry”
+   - Typography consistent (same font family OK), but vary heading treatment subtly
+
+Also rotate theme style between: (A) neon-glass, (B) pastel-light, (C) paper-notebook, (D) cyber-grid, (E) minimal-white, (F) comic.
+Pick one that fits the topic.
+
+ 
+
+CONTENT-DRIVEN VISUALS (DYNAMIC)
+Based on what the article explains, add visuals that reinforce understanding:
+- If it describes a flow/process: add an animated flow diagram (SVG path with moving dots)
+- If it contrasts concepts: add comparison cards
+- If it defines terms: add hover/click tooltips on key terms
+- If it teaches “signals/policies/decisions”: add an interactive mini-lab
+- If it introduces a common confusion: add a “myth vs reality” callout
+Only include interactive blocks that truly match the topic. Don’t add random components.
+
+STRUCTURE (use this if it matches my content)
+1) Clean Hero: title + 1–2 sentence “beginner mental model”
+2) TL;DR cards (3–5 short bullets)
+3) Main sections mapped from my headings (do not invent new concepts)
+4) “Common beginner confusion” callout (if applicable)
+5) Optional interactive mini-lab (only if it helps)
+6) Quick check (1 quiz question max; small tasteful celebration)
+7) Footer: TedxHarry
+
+NAVIGATION
+- Sticky top progress bar + section nav (auto-highlights current section)
+- Section names must come from my headings
+
+OUTPUT REQUIREMENTS
+- Output a single HTML file only.
+- Use CSS variables for palette so theme changes are easy.
+- No placeholder text. Everything must reflect the attached article.
+- Keep code clean and readable.
+
+NOW DO IT:
+1) Read the attached article.
+2) Decide the topic category and derive a unique theme.
+3) Produce the final HTML.
+
+ATTACHED ARTICLE:
+atatched

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- The actor (`act` claim) in a token represents the application or service making the request on behalf of a user
-- Used in on-behalf-of flows where service A calls service B using a user's delegated permissions
-- Distinguishes between the original user (subject) and the intermediate service (actor)
-
 
 A user called to say emails were being sent from her account without her knowledge. The sign-in logs showed nothing suspicious. Her password hadn't changed. No alerts had fired.
 

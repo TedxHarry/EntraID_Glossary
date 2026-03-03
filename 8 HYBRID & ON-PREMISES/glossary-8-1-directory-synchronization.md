@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Directory synchronization replicates identity objects from on-premises AD to Entra ID
-- Sync creates cloud representations of AD users, groups, and contacts : keeping both directories in sync
-- Entra Connect Sync (legacy) or Entra Cloud Sync (modern) are the two sync engines available
-
 
 A 3,000-person organization had run on-premises Active Directory for 12 years. Every user account, every group, every password was in their domain controllers. When they moved to Microsoft 365, they had a choice: recreate all 3,000 accounts in Entra ID manually, or synchronize them from AD.
 

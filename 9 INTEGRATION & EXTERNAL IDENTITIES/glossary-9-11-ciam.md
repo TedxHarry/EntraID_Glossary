@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- CIAM (Customer Identity and Access Management) is the identity discipline for customer-facing applications
-- Microsoft's CIAM solution: Entra External ID in external tenants (successor to Azure AD B2C)
-- CIAM needs: low-friction registration, branded UI, social login, progressive profiling, fraud prevention
-
 
 A product manager asked the question that leads to CIAM: "Can we use our corporate Active Directory for customer accounts?"
 

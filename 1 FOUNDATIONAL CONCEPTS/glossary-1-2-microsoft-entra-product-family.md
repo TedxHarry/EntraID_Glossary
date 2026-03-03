@@ -10,12 +10,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- The Entra family spans Identity (Entra ID), Permissions Management, Verified ID, Internet Access, and Private Access
-- You can use individual products or buy the Entra Suite bundle for full coverage
-- Most organizations start with Entra ID and add products as Zero Trust maturity grows
-
 
 A while back I was helping a startup set up their identity infrastructure. Straightforward enough, 80 employees, Microsoft 365, a handful of SaaS apps. Entra ID handled everything beautifully.
 

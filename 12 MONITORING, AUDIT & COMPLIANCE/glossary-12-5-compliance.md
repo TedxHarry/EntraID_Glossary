@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Compliance in Entra ID means meeting regulatory requirements for identity: MFA, access reviews, audit trails
-- Entra ID's compliance features: access reviews, PIM, audit logs, Conditional Access, and Verified ID
-- Compliance reports from Entra integrate with Microsoft Purview Compliance Manager for framework mapping
-
 
 An auditor preparing for an SOC 2 Type II assessment asked for evidence of access controls, least privilege, user access reviews, and administrative activity monitoring. The security team produced 14 pieces of evidence from Entra ID.
 

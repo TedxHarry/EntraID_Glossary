@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Pass-Through Authentication (PTA) authenticates users against on-premises AD in real time via a lightweight agent
-- Password never leaves the perimeter : Entra ID validates the credential with on-prem AD for each sign-in
-- Downside: if on-prem connectivity fails, cloud sign-in fails : less resilient than Password Hash Sync
-
 
 A financial services firm had a regulatory requirement: user passwords must not be stored outside their on-premises infrastructure. Even in hashed form. Even transformed. No representation of a credential could exist in the cloud.
 

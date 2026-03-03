@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Identity Protection is the Entra ID P2 feature that generates risk detections and risk scores
-- It requires P2 licensing : risk policies are powerful but P2 is needed for the full feature set
-- Risk-based CA policies should require password change for high user risk, MFA for medium sign-in risk
-
 
 A security analyst joined a company that had 12,000 users and one person managing identity security part-time. Before he'd found a way to review sign-in logs manually at scale, he enabled ID Protection and connected it to Conditional Access.
 

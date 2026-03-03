@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Entitlement Management bundles resources into Access Packages with policies for who can request and for how long
-- Access packages support multi-stage approval, automatic expiry, and access reviews on a schedule
-- Requires Entra ID P2 : designed to replace manual IT-driven access request processes
-
 
 A project manager needed access to three things for a new initiative: a SharePoint site, a Teams channel, and a Jira project. She opened three separate tickets. IT processed them over three separate days. She could start the project on day four.
 

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- An identity is any object that can be authenticated : user, service principal, managed identity, or device
-- Every identity gets a unique Object ID (OID) that persists even if the UPN or display name changes
-- Entra ID evaluates policies against identities, not just usernames, which enables fine-grained access control
-
 
 I counted once. In a 45-minute meeting about a security architecture review, the word "identity" came up 31 times. The project manager used it to mean "user accounts." The security architect used it to mean "authentication credentials." The developer used it to mean "the token." And I was using it to mean something slightly different from all three of them.
 

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- SSPR lets users reset their own passwords without calling IT, using pre-registered verification methods
-- Users can register: TOTP, email, phone, security questions as SSPR verification methods
-- SSPR writeback (requires P1) syncs the new password back to on-premises AD for hybrid environments
-
 
 A help desk manager calculated that password resets accounted for 34% of their total monthly ticket volume. Each reset took an average of 8 minutes of staff time: 4 minutes to verify the caller's identity, 2 minutes to perform the reset, 2 minutes to document.
 

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Enterprise Applications (advanced) includes app governance features: permission reviews, consent policies, app risk signals
-- Review app permissions regularly : over-privileged apps with tenant-wide permissions are a security risk
-- Use App Governance (Microsoft Defender for Cloud Apps) for continuous monitoring of app permission usage
-
 
 A tenant audit found 847 enterprise applications. The IT team recognized about 200 of them. The rest had been created by developers, added from the gallery, granted by OAuth consent, or automatically provisioned by various Azure and Microsoft 365 features.
 

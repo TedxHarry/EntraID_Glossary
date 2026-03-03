@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Workload Identity Federation lets workloads outside Azure (GitHub Actions, GKE pods, AWS Lambda) authenticate to Entra ID without secrets
-- The external workload presents a token from its OIDC provider; Entra ID validates and exchanges it for an Entra token
-- Eliminates the need to store Entra ID secrets in GitHub/GCP/AWS environments
-
 
 A GitHub Actions workflow was deploying infrastructure to Azure. The workflow needed credentials to authenticate to Azure. The team stored a service principal client secret in GitHub Secrets.
 

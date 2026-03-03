@@ -10,12 +10,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- A tenant is your organization's dedicated, isolated instance of Entra ID with its own users, apps, and policies
-- Tenants are identified by a unique domain (contoso.onmicrosoft.com) and a GUID (Tenant ID)
-- Everything in Entra ID : users, groups, apps, policies : lives inside a tenant
-
 
 The first time I had to explain tenants to a room full of IT pros, I used the wrong analogy. I said a tenant was "like a database." The blank stares told me I'd made a mistake. Then someone at the back said, "Is it like a virtual machine?" Closer, but no.
 

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- MFA requires two or more verification factors: something you know, have, or are
-- Entra ID MFA is configured per-user, via Conditional Access, or via Security Defaults
-- Conditional Access MFA is the recommended approach : it applies contextually rather than always
-
 
 Microsoft published a statistic that gets quoted constantly in security circles: enabling MFA blocks 99.9% of automated account compromise attacks. That number is real and remarkable.
 

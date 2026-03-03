@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- The authorization endpoint (`/authorize`) processes authentication requests and returns codes or tokens
-- Full URL format: `https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize`
-- Key parameters: `response_type=code`, `scope`, `redirect_uri`, `state`, `code_challenge`, `code_challenge_method`
-
 
 A developer pasted a sign-in URL into a browser to test authentication manually. The URL was 300 characters long. They recognized `client_id` and `redirect_uri`. Everything else looked like noise.
 

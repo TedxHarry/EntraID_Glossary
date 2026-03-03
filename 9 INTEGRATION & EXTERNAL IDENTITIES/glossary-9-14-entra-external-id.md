@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Entra External ID is Microsoft's unified external identity platform for both B2B and B2C scenarios
-- External tenants (for customers) vs. workforce tenants (for partners) are the two deployment models
-- Replacing standalone Azure AD B2C : new customer identity projects should use Entra External ID
-
 
 Microsoft's external identity landscape used to have multiple separate products: Azure AD B2C for customers, Azure AD B2B for business partners, and a growing number of overlapping features between them. Organizations building both customer-facing applications and partner collaboration tools had to learn two different systems with two different architectures.
 

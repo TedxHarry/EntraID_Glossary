@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Scopes define what permissions an access token grants: `User.Read`, `Mail.Send`, `Group.ReadWrite.All`
-- Delegated scopes require a signed-in user; `.default` requests all consented permissions
-- Apps should request minimum scopes needed : scope minimization is a security best practice
-
 
 A developer asked me to approve an API permission request for their new HR integration. The app needed to read employee display names to populate a dropdown in a dashboard. They'd requested `User.ReadWrite.All`.
 

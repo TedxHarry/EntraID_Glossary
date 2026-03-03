@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Policy Evaluation is the engine that determines which CA policies apply to a given sign-in and what they do
-- All matching policies are evaluated; the strictest set of grant controls wins
-- Policy evaluation happens in milliseconds at sign-in : it doesn't add significant latency
-
 
 A user called the helpdesk because they couldn't access Salesforce from their laptop. They could access everything else. The helpdesk agent couldn't reproduce the issue from their own workstation. An administrator spent 40 minutes reviewing the 37 active Conditional Access policies trying to figure out which one was blocking access and why.
 

@@ -10,6 +10,12 @@
 
 ---
 
+## 🎯 TL;DR
+
+- Microsoft Entra ID is Microsoft's cloud identity platform : it answers **who you are** and **what you can access**
+- Every sign-in triggers authentication (verify identity) then authorization (issue token granting access)
+- It replaced Azure Active Directory in 2023 : same product, new name
+
 
 Three years ago, a colleague called me in a mild panic. She'd just started a new IT role and her manager told her to "get up to speed on Azure AD before Monday." By Friday afternoon she'd read six different Microsoft docs, watched four YouTube videos, and was somehow *more* confused than when she started. "What does it actually *do*?" she asked. "Like, in real life?"
 

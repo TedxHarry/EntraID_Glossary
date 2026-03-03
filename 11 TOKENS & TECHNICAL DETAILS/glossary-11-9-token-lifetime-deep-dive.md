@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Access token lifetime: configurable 5 min – 1 day via Token Lifetime Policy (default 60-75 min)
-- Refresh token: 90-day sliding window (resets on each use); inactive for 90 days = expired
-- CAE-enabled access tokens: 24-hour lifetime but can be revoked in near-real-time by resource servers
-
 
 A help desk team was seeing an unusual number of complaints: users getting signed out of a critical application every hour during long working sessions. The application was a custom-built web app integrated with Entra ID. The developer had configured it correctly by the book. Access tokens expire in one hour, the app requested a new one using the refresh token, and it worked.
 

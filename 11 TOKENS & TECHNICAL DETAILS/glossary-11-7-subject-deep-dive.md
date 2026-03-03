@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- The subject (`sub`) claim is a pairwise identifier : unique per user per application, not globally unique
-- The `oid` (Object ID) claim IS globally unique across all apps in the tenant
-- For cross-app tracking, always use `oid + tid` not `sub`
-
 
 An application was using the `sub` claim from the access token as a stable user identifier to look up records in its database. It worked for a year. Then the application was reregistered in Entra ID with a new client ID for a security reason. Suddenly the `sub` values for every user changed. The user lookup logic broke for all 40,000 existing users.
 

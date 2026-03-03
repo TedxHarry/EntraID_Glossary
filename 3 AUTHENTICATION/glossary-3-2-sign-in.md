@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Sign-in is the full end-to-end user experience: authentication + Conditional Access evaluation + token issuance
-- Every sign-in is logged in the Sign-in Log, which records method used, risk level, CA policy outcomes, and result
-- Interactive sign-ins involve a user; non-interactive include background token refreshes by apps
-
 
 Most people click "Sign In" and think about it for roughly zero seconds. You type your email, type your password, maybe approve a phone notification, and you're in. The whole thing takes three seconds.
 

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- B2B Collaboration lets you invite guest users from other organizations to access your tenant's resources
-- Guest accounts use the invited user's home organization credentials : you don't manage their passwords
-- Control guest access with Entra ID B2B settings, Cross-Tenant Access policies, and Conditional Access
-
 
 A consulting firm worked with 40 different client organizations simultaneously. Their consultants needed access to client SharePoint sites, Teams channels, and shared project tools. Their clients needed access to the consulting firm's project management platform.
 

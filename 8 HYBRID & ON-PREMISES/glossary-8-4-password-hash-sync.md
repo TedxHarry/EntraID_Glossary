@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Password Hash Sync (PHS) syncs a hash of password hashes from AD to Entra ID
-- It's the most resilient hybrid auth option : authentication happens in the cloud even if on-prem is down
-- PHS also enables leaked credential detection : Microsoft can compare hashed passwords against breach databases
-
 
 An administrator asked a question that I hear often: "If we sync our passwords to the cloud, doesn't that mean Microsoft has our passwords?"
 

@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- OIDC app integration is the modern SSO approach for web and mobile apps using ID tokens + user info endpoint
-- Entra ID supports OIDC discovery (`/.well-known/openid-configuration`) for automatic configuration
-- Most new SSO integrations should use OIDC rather than SAML : it's simpler and has better library support
-
 
 A development team was building a new internal web application. Their first instinct was to add a login form: username, password, store it in their database. They'd done it before.
 

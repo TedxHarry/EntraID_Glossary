@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Anomaly detection compares current behavior to historical baseline and flags deviations as risks
-- Examples: token issued in one country, used in another (impossible travel); volume anomalies in Graph calls
-- Machine learning continuously refines the baseline : detection accuracy improves over time per-tenant
-
 
 A financial analyst had worked at the same company for six years. She signed in from the same office, on the same laptop, using the same browser, at roughly the same times every day. Her pattern was deeply established.
 

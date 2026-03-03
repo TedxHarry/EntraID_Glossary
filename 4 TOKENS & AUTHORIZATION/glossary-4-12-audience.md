@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- The audience (`aud` claim) in a token specifies which API the token is valid for
-- Tokens for Microsoft Graph have `aud: https://graph.microsoft.com`; your API should validate its own audience
-- Accepting tokens with the wrong audience is a critical security vulnerability
-
 
 A team had built two internal APIs. Both used Entra ID for authentication. During a security review, a developer noticed something: a token acquired for API A, when passed to API B, was sometimes accepted.
 

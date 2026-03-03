@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Identity Correlations link identities across systems : connecting an AD user, their Entra ID object, and their ServiceNow account
-- Used in IGA (Identity Governance and Administration) to build a unified identity record across all systems
-- Correlations enable joiner/mover/leaver automation across the full application portfolio
-
 
 A company acquired a smaller firm. The acquired firm had 400 employees. The acquiring company had 12 of those same people already in their system: contractors who had been working for both companies simultaneously.
 

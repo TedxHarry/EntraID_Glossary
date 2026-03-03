@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Device compliance means a device meets your organization's security requirements configured in Intune
-- Non-compliant devices can be blocked by Conditional Access policies even for authenticated users
-- Compliance requirements: encryption enabled, OS patch level, firewall on, approved apps only
-
 
 A remote worker called on a Monday morning, unable to access SharePoint. She'd been using it from the same laptop for two years. Nothing had changed on her end.
 

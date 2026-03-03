@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- OAuth2 app integration uses OAuth 2.0 and optionally OIDC for modern apps that need API access
-- Register the app, configure API permissions, implement the appropriate flow (auth code, client credentials)
-- Use MSAL (Microsoft Authentication Library) for OAuth2 integration : it handles token lifecycle automatically
-
 
 A developer on my team built an internal tool that needed to read from SharePoint. His first attempt was straightforward: store a service account's username and password in the application's configuration file, use them to authenticate against SharePoint.
 

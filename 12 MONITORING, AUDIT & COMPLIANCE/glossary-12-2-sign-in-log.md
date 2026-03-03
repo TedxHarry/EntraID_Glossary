@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Sign-in logs record every authentication event: interactive user, non-interactive, service principal, and managed identity
-- Each entry shows: user, app, result, CA policies evaluated, MFA method used, risk level, device
-- Sign-in logs are your first stop for troubleshooting access failures : search by user, app, or error code
-
 
 A SOC analyst got an alert: possible account compromise for a senior finance executive. The analyst opened the Entra ID sign-in logs for that account.
 

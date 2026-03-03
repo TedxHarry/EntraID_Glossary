@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- A CA policy is a specific IF-THEN rule: IF user is in Group A accessing App B from risky location, THEN require MFA
-- Multiple policies can apply to one sign-in : all applicable policies are evaluated and the strictest controls apply
-- Policies in Report-Only don't enforce : use this to test impact before enabling enforcement
-
 
 An organization had Conditional Access deployed. Their policy was: require MFA for all users, all apps.
 

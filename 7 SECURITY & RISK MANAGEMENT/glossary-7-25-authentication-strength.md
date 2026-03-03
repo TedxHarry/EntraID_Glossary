@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Authentication strength is a CA feature to require specific authentication methods, not just 'any MFA'
-- Phishing-resistant strength requires FIDO2 or WHfB : SMS and push notifications don't qualify
-- Assign phishing-resistant strength to admin roles and high-value application access policies
-
 
 Two users both had MFA enabled. Both completed MFA before accessing their accounts.
 

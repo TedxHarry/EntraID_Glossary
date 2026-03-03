@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- External users are users from outside your organization with accounts in your tenant as guests or via B2B
-- External user UPNs contain `#EXT#` to distinguish them from member users
-- Manage external user access with Cross-Tenant Access policies and lifecycle management (auto-expire invitations)
-
 
 A compliance auditor asked for a list of everyone who had access to the financial reporting SharePoint site. The IT team pulled the access list. 47 users.
 

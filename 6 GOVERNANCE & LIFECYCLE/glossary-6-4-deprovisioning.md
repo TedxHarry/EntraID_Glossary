@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Deprovisioning removes user accounts and their access when no longer needed : more complete than just disabling
-- Soft delete keeps the account for 30 days (recoverable); hard delete is permanent
-- Deprovisioning must cover: disable account, revoke tokens, remove licenses, remove group memberships
-
 
 An IT admin walked me through their offboarding process. It was clear and documented: disable the Entra ID account, revoke sessions, remove licenses. Done in under 10 minutes.
 

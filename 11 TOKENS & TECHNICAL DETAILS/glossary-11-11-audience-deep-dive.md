@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- The audience (`aud`) claim validation is mandatory for any API : reject tokens not intended for your service
-- Entra ID v2.0 tokens: `aud` = Application ID URI or client ID of the resource app
-- Common mistake: accepting tokens with `aud=https://graph.microsoft.com` in your own API : always validate
-
 
 A developer was building two APIs: a billing API and a reporting API, both protected by Entra ID. During testing, they noticed something: a token acquired for the billing API could also be used to call the reporting API. Both APIs had the same application ID as their intended audience.
 

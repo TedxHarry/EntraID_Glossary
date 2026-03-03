@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- CAE for workloads allows resource servers to revoke workload tokens mid-lifetime when conditions change
-- Without CAE, a workload token is valid until expiry even after the managed identity is disabled
-- CAE for workloads is newer than user CAE : check service support before relying on it
-
 
 A service principal had its permissions revoked at 9:47 AM. The security team revoked them because the associated application had a critical vulnerability disclosed that morning.
 

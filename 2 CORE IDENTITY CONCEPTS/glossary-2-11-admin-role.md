@@ -7,12 +7,6 @@
 
 ---
 
-## 🎯 TL;DR
-
-- Admin roles define what administrators can manage in Entra ID : from Global Admin (everything) to Helpdesk (limited)
-- Always use the least-privileged role for each task; Global Administrator should be used sparingly
-- Privileged Identity Management (PIM) provides just-in-time, time-bound, and approval-based admin role access
-
 
 The first thing I checked when I took over management of a new tenant was the Global Administrator list.
 
