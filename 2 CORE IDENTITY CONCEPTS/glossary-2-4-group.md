@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.4 - Group
 
+![Cover image](./images/glossary-2-4-group.png)
+
 ---
 
 

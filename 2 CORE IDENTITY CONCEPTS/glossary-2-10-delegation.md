@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.10 - Delegation
 
+![Cover image](./images/glossary-2-10-delegation.png)
+
 ---
 
 

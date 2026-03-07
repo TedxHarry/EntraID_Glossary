@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.5 - Enterprise Application
 
+![Cover image](./images/glossary-2-5-enterprise-application.png)
+
 ---
 
 

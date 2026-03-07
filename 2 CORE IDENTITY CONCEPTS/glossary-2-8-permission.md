@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.8 - Permission
 
+![Cover image](./images/glossary-2-8-permission.png)
+
 ---
 
 

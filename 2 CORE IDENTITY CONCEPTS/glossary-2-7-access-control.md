@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.7 - Access Control
 
+![Cover image](./images/glossary-2-7-access-control.png)
+
 ---
 
 

@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.11 - Admin Role
 
+![Cover image](./images/glossary-2-11-admin-role.png)
+
 ---
 
 

@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.9 - Role (Identity Role)
 
+![Cover image](./images/glossary-2-9-role-identity-role.png)
+
 ---
 
 

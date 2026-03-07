@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.2 - User (Identity Object)
 
+![Cover image](./images/glossary-2-2-user-identity-object.png)
+
 ---
 
 

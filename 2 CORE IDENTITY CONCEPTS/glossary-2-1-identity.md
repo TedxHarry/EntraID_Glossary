@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.1 - Identity
 
+![Cover image](./images/glossary-2-1-identity.png)
+
 ---
 
 

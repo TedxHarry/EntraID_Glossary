@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.6 - Directory Role
 
+![Cover image](./images/glossary-2-6-directory-role.png)
+
 ---
 
 

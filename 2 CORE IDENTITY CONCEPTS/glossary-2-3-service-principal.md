@@ -5,6 +5,8 @@
 
 📚 Part of Entra ID Glossary Series #2.3 - Service Principal
 
+![Cover image](./images/glossary-2-3-service-principal.png)
+
 ---
 
 
